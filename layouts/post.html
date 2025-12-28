@@ -1,1 +1,1 @@
-
+<!DOCTYPE html> <html> <head> <title>{{ page.title }}</title> <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> </head> <body> <div id="outer-wrapper"> <div id="header-wrapper"> <div id="header"> <h1>{{ site.title }}</h1> </div> </div> <div id="main-wrap1"><div id="main-wrap2"> <h2 class="date-header">{{ page.date | date: "%A, %B %e, %Y" }}</h2> <div class="post"> <h3 class="post-title">{{ page.title }}</h3> <div class="post-body"> {{ content }} </div> </div> </div></div> <div id="sidebar-wrap"></div> </div> </body> </html>
