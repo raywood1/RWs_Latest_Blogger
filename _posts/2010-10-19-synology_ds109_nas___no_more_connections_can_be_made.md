@@ -1,0 +1,25 @@
+---
+layout: post
+title: "Synology DS109 NAS:  No More Connections Can Be Made"
+date: 2010-10-19
+---
+
+<div class="post-body">
+<p>I was using <a href="https://web.archive.org/web/20120605070119/http://raywoodcockslatest.blogspot.com/2010/10/ubuntu-1004-connecting-to-synology.html">a Synology DS109</a> network attached storage (NAS) unit.  Everything was going along fine, and then suddenly I could not connect.  In Windows XP, I was getting this error message:<br/>
+<blockquote>An error occurred while reconnecting D: to \\Diskstation\SYNDATA<br/>
+Microsoft Windows Network: No more connections can be made to this remote computer at this time because there are already as many connections as the computer can accept.<br/>
+This connection has not been restored.</blockquote>I did <a href="https://web.archive.org/web/20120605070119/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;rlz=1B7GGLL_enUS379US380&amp;q=synology+%22no+more+connections+can+be+made%22&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">a search</a> but didn't find anything useful.  I was pretty sure it wasn't just a Windows XP problem, since I was also suddenly unable to connect using another computer running Ubuntu 10.04 (Lucid Lynx).  (It might also have been possible to test this on the Windows machine by just rebooting with an Ubuntu live CD; not sure.)  The best I could get in Ubuntu's Nautilus &gt; Places was "Unable to mount SYNDATA," and it didn't show up at all in Nautilus &gt; Tree.  Both machines were able to access the Internet; they just couldn't access the Synology unit.<br/>
+<br/>
+Weird thing, though:  using Synology's web-based DiskStation Manager (DSM) 3.0 &gt; File Browser on either machine, I was able to view the contents of SYNDATA on the Synology unit.  I was not able to view the contents of an eSATA drive connected to the Synology unit, however.  This made me wonder whether the eSATA drive was the problem.  I went into DSM &gt; Control Panel &gt; System &gt; External Devices, selected the eSATA drive, and clicked Eject.  When the drive's icon disappeared, I disconnected it and turned it off.  This did not seem to make a difference, though.<br/>
+<br/>
+I wondered if maybe I needed to do some kind of power cycle, like when a router or modem would start malfunctioning and you would have to power it down, disconnect it, wait 30 seconds, power it back up, etc. in order to get it working again.  I went to DSM &gt; Main Menu &gt; Shutdown and chose the shutdown option.  Its blue light was blinking, but it was still on.  I disconnected its ethernet cable.  The unit stayed on.  After five minutes, I pressed the power button next to the blue light.  This had no effect.  I pulled the plug and the lights went out.  I shut down both computers and waited a couple of minutes.  Then I started the computers and the Synology, but left the eSATA drive off.  The situation had not changed. <br/>
+<br/>
+I noticed that the Status light on the front of the Synology unit was off.  The LAN light was on, solid green, and the Disk light was flashing.  It may have been like that before, though I didn't think so -- it seemed like something I would have noticed.  I went into the web-based DSM.  When I tried to log in, it said "Processing.  Please wait."  The Disk light on the DSM finally stopped flashing, the unit beeped, and the Status light came on as solid green.  Apparently it had been doing a disk check.  I was now able to access the SYNDATA partition on the Synology unit via the Windows XP computer.  The Ubuntu computer was still not able to mount that partition.  In Ubuntu's Terminal, I typed "sudo mount -a."  That did it; it was now able to access the unit as well.  I turned on the eSATA drive.  The Windows XP computer was able to access it.  The problem seemed to be fixed.  The solution was apparently to let the Synology unit sit there until its Disk light was done flashing or, failing that, to power it down, power it back up, and let it clear its head.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
+**raywood**:
+When this problem recurred, I tried the approach just recommended:  go into DSM's Main Menu and select the Shutdown option in the bottom-right corner.  After a moment, DSM said, "DiskStation is powered off."  Yet its top two lights were still on, and I even saw its Disk light flicker.  I refreshed the DSM webpage and tried again.  Same thing.  I waited 15 minutes and then decided to take it at its word.  Instead of pulling the plug, I refreshed DSM again and tried going into File Browser.  It just said "Loading ..." and nothing more.  The power button still didn't do anything.  So then I did pull the plug (at a moment when the disk light wasn't flashing) and let it sit for a minute or so, and then plugged it back in and tried DSM again.  Its lights were flashing for maybe 10 minutes before the Synology beeped and its Status light finally came on solid green again.  I went back into DSM and I was now able to connect to the Synology again.
+
