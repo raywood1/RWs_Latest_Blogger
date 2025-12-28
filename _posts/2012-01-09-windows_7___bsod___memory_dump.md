@@ -1,0 +1,117 @@
+---
+layout: post
+title: "Windows 7:  BSOD:  Memory Dump"
+date: 2012-01-09
+---
+
+<div class="post-body">
+<p>As discussed in another post, I was trying to understand the words that appeared on a blue screen of death (BSOD) -- that is, a crash notice -- in Windows 7.  At the bottom of the screen, there was a mention of a "memory dump."  This post describes steps I took to learn more about that concept.<br/>
+<br/>
+The general idea seemed to be that Windows had stored information about the current contents of the system's RAM to a file somewhere on my computer.  <a href="https://web.archive.org/web/20150130101016/https://www.google.com/search?q=%22Windows+7%22+%22memory+dump%22+OR+%22crash+dump%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">A search</a> led to a <a href="https://web.archive.org/web/20150130101016/http://support.microsoft.com/kb/315263" target="_blank">Microsoft webpage</a> that said I could find a list of such files in "the %SystemRoot%\Minidump folder."  <a href="https://web.archive.org/web/20150130101016/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22find+%25SystemRoot%25%22+%22Windows+7%22&amp;oq=%22find+%25SystemRoot%25%22+%22Windows+7%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=155105l155529l0l157012l4l4l0l0l0l1l393l1112l2-3.1l4l0" target="_blank">Another search</a> led to suggestions that %SystemRoot% was <a href="https://web.archive.org/web/20150130101016/http://www.vistax64.com/731235-post5.html" target="_blank">the same</a> as %windir%, and that a person with a standard Start Menu could <a href="https://web.archive.org/web/20150130101016/http://www.vistax64.com/731124-post2.html" target="_blank">find</a> %SystemRoot% by going to Start and typing "%systemroot%\system32."  I found that if I went to Start &gt; Run and typed %systemroot% I would get a Windows Explorer session focused on C:\Windows.  This was consistent with my belief that the %SystemRoot% environment variable meant simply C:\Windows.<br/>
+<br/>
+Unfortunately, I didn't see a C:\Windows\Minidump folder, and a search of my system also yielded no files of the format suggested in the Microsoft webpage (e.g., Mini022900-01.dmp).  It was possible that the webpage was not relevant to Win7 x64:  <a href="https://web.archive.org/web/20150130101016/http://support.microsoft.com/kb/315263#appliesto" target="_blank">its list</a> of the Windows versions to which it applied went up only as far as Windows 7 Beta.  But I wasn't finding a lot of great sources of information, so I stuck with it for the time being.<br/>
+<br/>
+The Microsoft webpage posed the possibility that I lacked a Minidump folder because a memory dump would require "a paging file of at least 2 megabytes (MB) on the boot volume."  I had configured Win7 to use only a paging file on another drive.  So I went into Advanced System Settings.  (One way to get there was Control Panel &gt; System &gt; Advanced system settings.  Another way was Start &gt; Run &gt; SystemPropertiesAdvanced.exe.  I preferred the latter because, once I knew the name of the .exe file, I could put it into a batch file, if ever I wanted it to come up automatically, and also because the Run box would remember it, and that seemed faster:  the SystemPropertiesAdvanced.exe option would come up as soon as I hit S, so the whole thing could be done very quickly via WinKey-R-S, if I didn't have other items beginning with R in my Start Menu.)<br/>
+<br/>
+In Advanced System Settings, I went into Advanced tab &gt; Performance Settings &gt; Advanced tab &gt; Virtual Memory &gt; Change.  There, I highlighted drive C, selected Custom Size, and specified a minimum and maximum of 10MB.  (I wanted most paging done on a drive other than the one containing the Windows program files, in the belief that dividing tasks between drives would improve performance.)  Then I clicked Set.  I got an error:  "The initial paging file size must be between 16 MB and 16777216 MB."  So OK, 16.  Now I got another error:  "If you disable the paging file or set the initial size to less than 400 megabytes and a system error occurs, Windows might not record details that could help identify the problem."  Once again, then:  400MB.<br/>
+<br/>
+Then I hibernated the system and then restarted it, to see if now I would get a Minidump folder.  But I didn't get a BSOD.  I wondered why not.  The previous BSOD had come after leaving the system shut down all night.  Maybe I should have allowed a minute or two for the memory to clear itself out, before restarting the system.  I tried hibernating again, gave it a while, and then powered the machine up again.  Now I got a BSOD.  Same as before, but with the following change near the bottom:<br/>
+<blockquote>Dump file size is too small - requires at least 521307888 bytes.<br/>
+Future kernel memory dumps may require larger size.<br/>
+Switching to minidump ...<br/>
+Physical memory dump complete.</blockquote>So it seemed that creating the paging file on drive C had indeed been necessary, but that (by <a href="https://web.archive.org/web/20150130101016/http://www.t1shopper.com/tools/calculate/" target="_blank">my calculation</a>) it needed to be at least 497MB for a full memory dump.  But did I now have at least a minidump file?  I punched the Reset button.  Oddly, I didn't get the choice (above) between continuing or deleting restoration data.  Instead, I got the menu that offers a Normal boot or Safe Mode.  I went with Normal, and Windows proceeded to load.<br/>
+<br/>
+<a href="https://web.archive.org/web/20150130101016/http://support.microsoft.com/kb/315263" target="_blank">The Microsoft webpage</a> said that I could change the location of the memory dump files by going to Advanced System Settings (above) &gt; Advanced Tab &gt; Startup and Recovery Settings.  There, I saw that my dump file was presently set to go to %SystemRoot%\MEMORY.DMP.  So it seemed I had been looking in the wrong place:  there was not going to be a C:\Windows\Minidump folder.  I went into C:\Windows and saw that there was also no MEMORY.DMP file.  A search of my system found no such file anywhere.  Apparently MEMORY.DMP was the file that I would have gotten if I'd had a paging file of at least 500MB.  So, OK, was there at least a file of the kind mentioned above, mini*.dmp?  No, but a search did turn up several *.dmp files with much longer names (e.g., 38f2213f-dd1e-452d-932eac0a3f6911e7.dmp).  But those were in a Firefox program folder.  They seemed to be Firefox crash data.  So far, I was not succeeding in creating a dump file that would shed light on my BSOD.  I went back into the paging file settings (above), changed the Custom Size to 1000MB, and prepared to hibernate and retry.  Later, though, I saw <a href="https://web.archive.org/web/20150130101016/http://social.technet.microsoft.com/Forums/en-US/itproxpsp/thread/8632ead8-affb-4536-a939-7e7e9c5edc16/" target="_blank">an indication</a> that it might be necessary for drive C to have a pagefile large enough to hold "a file whose size equals your entire RAM plus one megabyte."  I had 8GB of RAM.  So I tried again with a 10,000MB pagefile on drive C.<br/>
+<br/>
+Before contining with that discussion, I should catch up, here, with some other information that came up along the way.  For one thing, the Microsoft webpage said that I could use Start &gt; Run &gt; dumpchk.exe to verify that my system was correctly creating memory dump files.  But it wasn't clear whether that program, available through the Windows XP Support Tools, could still somehow be available in Windows 7.  It didn't work to just go to Start &gt; Run &gt; dumpchk.exe.  It looked like I could find tools that would read the dump file if I downloaded and installed Microsoft's <a href="https://web.archive.org/web/20150130101016/http://msdn.microsoft.com/en-us/windows/hardware/gg463009.aspx" target="_blank">Debugging Tools for Windows</a>.  But that would require an MSDN subscription, which I didn't think I had, and it also seemed that I was getting into developer territory, over my head.  I took a look at the download webpage anyway.  It turned out that all I needed was my Hotmail login, and suddenly I was looking at options to download all kinds of Microsoft programs -- Windows, Office, Visio, etc.  But then I ran into a couple of problems when I searched in that page for "Debugging":  it didn't show Debugging Tools for Windows, and it said, "There is no subscription associated with your Live ID."  So I seemed to be at the end of the line there.<br/>
+<br/>
+Another possibility was to download and install the <a href="https://web.archive.org/web/20150130101016/http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=8279" target="_blank">Microsoft Windows SDK</a> (Software Development Kit) for Windows 7.  It was advertised as providing tools, among other things, and that sounded good; sometimes a tool I didn't need at one point would be useful later.  I ran the downloaded file (winsdk_web.exe) and, in the Installation Options, I selected all of the Common Utilities and all of the Redistributable Packages, except for the Application Verifiers.  I deselected Windows Native Code Development and .NET Development.  This would be a 517MB download that, after installing, would apparently take about 250MB of drive space.  It was probably somewhat more than I needed, but I was not entirely sure how to trim it further.  During the installation process, however, I got an error:<br/>
+<blockquote>Installation Failed<br/>
+<br/>
+A problem occurred while installing selected Windows SDK components.<br/>
+<br/>
+Setup could not find the file WinSDKRedist_amd64\WinSDKRedist_amd64.msi at any of the specified source locations http://download.microsoft.com/download/A/6/A/A6AC035D-DA3F-4F0C-ADA4-37C8E5D34E3D/setup</blockquote><a href="https://web.archive.org/web/20150130101016/https://www.google.com/search?q=%22Setup+could+not+find+the+file+WinSDKRedist_amd64%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">A search</a> for exactly that error message yielded no hits.  <a href="https://web.archive.org/web/20150130101016/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=IMK&amp;rls=org.mozilla:en-US:official&amp;sa=X&amp;ei=V_EJT7rMOoLEgAfo1YiZAg&amp;ved=0CBgQBSgA&amp;q=%22Setup+could+not+find+the+file+WinSDK_amd64%22&amp;spell=1&amp;biw=1250&amp;bih=854" target="_blank">A related search</a> led to <a href="https://web.archive.org/web/20150130101016/http://blogs.msdn.com/b/windowssdk/archive/2009/09/16/windows-7-sdk-setup-common-installation-issues-and-fixes.aspx" target="_blank">an MSDN blog post</a> that made me think the easiest way to proceed would be to download an ISO for the SDK and burn that to a blank DVD.  <a href="https://web.archive.org/web/20150130101016/http://www.microsoft.com/download/en/details.aspx?displaylang=en&amp;id=18950" target="_blank">The ISO download webpage</a> gave me several choices.  I selected the ISO for an AMD64 chip (GRMSDKX_EN_DVD.iso).  It would be a 1.4GB download.  I noticed that this would be a somewhat earlier version of the SDK; I hoped it did not matter for my purposes.<br/>
+<br/>
+While that was downloading, I ran across <a href="https://web.archive.org/web/20150130101016/http://www.w7forums.com/win-7-sdk-setup-error-t13188.html" target="_blank">a post</a> that said an easier way to read memory dump (.dmp) files was just to use Nirsoft's BlueScreenView.  BlueScreenView was a portable with good ratings at <a href="https://web.archive.org/web/20150130101016/http://www.softpedia.com/get/System/Back-Up-and-Recovery/BlueScreenView.shtml" target="_blank">Softpedia</a> and <a href="https://web.archive.org/web/20150130101016/http://download.cnet.com/BlueScreenView/3000-2094_4-10965136.html" target="_blank">CNET</a>.  I let the SDK download proceed -- I figured I'd have time to play with its possibilities, once I had the ISO burned to a DVD -- but in the meantime I wanted to move ahead with BlueScreenView if I could.  <a href="https://web.archive.org/web/20150130101016/http://www.nirsoft.net/utils/trans/blue_screen_view.html" target="_blank">Its homepage</a> answered one question I'd wondered about:  it seemed to indicate that Windows 7, like XP, did create minidump files, so my lack of them wasn't due to the fact that I was running Win7.<br/>
+<br/>
+When the SDK ISO finished downloading, I burned it to a DVD and ran its Setup.exe file.  That opened SDK options similar to those described above.  This was SDK for Win7 and NET Framework 3.5 SP1.  In this case, the installation options I selected were only the Debugging Tools for Windows and the Redistributable Components -- being uncertain, again, whether I would need all that.  I was kind of stuck, there, until I had a memory dump file to look at.<br/>
+<br/>
+I hibernated the system, let it sit for several minutes, and rebooted.  No BSOD.  Windows came up normally.  Maybe I hadn't let it sit long enough.  I hibernated again, this time for an hour and a half.  But still no BSOD.  The stupid thing wouldn't fail!  It seemed that my testing of BlueScreenView would have to wait until the system reverted to a more cooperatively uncooperative stance.<br/>
+<br/>
+Then I recalled seeing an indication that it was possible to generate a BSOD and/or a memory dump file manually.  I ran <a href="https://web.archive.org/web/20150130101016/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=l98&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22manually+generated+the+crash%22+%22Windows+7%22&amp;oq=%22manually+generated+the+crash%22+%22Windows+7%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=621560l624217l0l625140l11l8l0l0l0l2l294l1199l2.4.2l8l0" target="_blank">a search</a> and found <a href="https://web.archive.org/web/20150130101016/http://www.youtube.com/watch?v=R005YnuR_eQ" target="_blank">a YouTube video</a> whose four-minute duration could be summarized as advising me to create and run this REG file, which I saved (as shown) with the name of CrashOnCtrlScroll.reg:<br/>
+<blockquote>Windows Registry Editor Version 5.00<br/>
+<br/>
+; *** CrashOnCtrlScroll.reg ***<br/>
+<br/>
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\services\i8042prt\Parameters]<br/>
+<br/>
+"CrashOnCtrlScroll"=dword:00000001<br/>
+<br/>
+; Undo:  "CrashOnCtrlScroll"=dword:00000000</blockquote>and then reboot.  RightCtrl-ScrollLock x2 (i.e., hold the right-side Ctrl key and hit ScrollLock twice) would crash the computer and generate a BSOD.  As indicated by the last line of this batch file (which would function only as a comment, due to its leading semicolon), if CrashOnCtrlScroll value was set to 1, the crash would work.  If it was set to zero, it would not work.  So with a quick bit of editing in Notepad, this REG file could be used either to turn on the crash option or to turn it off.  I would just have to remember to reboot before relying on it.<br/>
+<br/>
+So I ran the REG file -- and it worked.  I got a BSOD that was somewhat different from the one shown above.  After the first sentence, it added this remark:  "The end-user manually generated the crashdump."  <a href="https://web.archive.org/web/20150130101016/https://www.google.com/search?q=%22The+end-user+manually+generated+the+crashdump.%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">A search</a> confirmed that lots of people were aware of this tweak.  The other difference was that the STOP error code was E2 (i.e., 0x000000E2).<br/>
+<br/>
+As before, the BSOD indicated that it had completed a dump of physical memory to disk.  Now I had both BlueScreenView and the SDK installed; surely I would be able to find the memory dump file.  <a href="https://web.archive.org/web/20150130101016/http://www.howtogeek.com/howto/6292/how-to-troubleshoot-the-blue-screen-of-death/" target="_blank">A Hotgeek webpage</a> informed me that BlueScreenView would search automatically for minidump files.  But on reboot, before I got to the point of starting BlueScreenView, Windows gave me a dialog that I had not seen before:<br/>
+<blockquote>Windows has recovered from an unexpected shutdown<br/>
+<br/>
+Windows can check online for a solution to the problem.<br/>
+<br/>
+View problem details.</blockquote>When I clicked to see the details, I got a nice presentation of information from this most recent, user-induced BSOD:<br/>
+<blockquote>Problem signature:<br/>
+Problem Event Name: BlueScreen<br/>
+OS Version: 6.1.7601.2.1.0.256.1<br/>
+Locale ID: 1033<br/>
+Additional information about the problem:<br/>
+BCCode: e2<br/>
+BCP1: 0000000000000000<br/>
+BCP2: 0000000000000000<br/>
+BCP3: 0000000000000000<br/>
+BCP4: 0000000000000000<br/>
+OS Version: 6_1_7601<br/>
+Service Pack: 1_0<br/>
+Product: 256_1<br/>
+Files that help describe the problem:<br/>
+C:\Windows\Minidump\010912-21075-01.dmp<br/>
+C:\Users\Ray\AppData\Local\Temp\WER-43040-0.sysdata.xml<br/>
+Read our privacy statement online:<br/>
+<a href="https://web.archive.org/web/20150130101016/http://go.microsoft.com/fwlink/?linkid=104288&amp;clcid=0x0409">http://go.microsoft.com/fwlink/?linkid=104288&amp;clcid=0x0409</a><br/>
+If the online privacy statement is not available, please read our privacy statement offline:<br/>
+C:\Windows\system32\en-US\erofflps.txt</blockquote>According to that, it seemed that now, at last, I did have a minidump file.  I saw that, at last, C:\Windows\Minidump did exist, and it contained the file shown in that list of details. I tried viewing that file in Notepad, but it was a mess.  Definitely not the tool for viewing .dmp files.<br/>
+<br/>
+The dialog offered a "Check for solution" button, so I clicked it.  It said it was checking, and then after a moment it disappeared.  I had hit a key on the keyboard, so maybe that was to blame.  Anyway, I started up BlueScreenView and, sure enough, it did show that file.  In its bottom pane, BlueScreenView seemed to be presenting that file's contents.<br/>
+<br/>
+I also started up the Microsoft SDK programs that I had installed from the downloaded ISO that I had burned to DVD.  The specific program I started was called WinDbg.  In WinDbg, I went into File &gt; Open Crash Dump.  It seemed to be looking for a file called MEMORY.DMP.  That was the name of the file that was supposed to have been created by SystemPropertiesAdvanced (see above) &gt; Startup and Recovery Settings.  But for some reason, my BSOD had not generated the specified kernel memory dump file called %SystemRoot%\MEMORY.DMP.  There did not seem to be any such file on my computer.  I tinkered with those Startup and Recovery Settings and saw that I had the option to create a Small Memory Dump (256KB) in %SystemRoot%\Minidump.  I changed to that setting.  But this was puzzling.  Why had Windows created a minidump when SystemPropertiesAdvanced was requesting a full kernel dump?  Would this change of settings in SystemPropertiesAdvanced make any difference to anything?<br/>
+<br/>
+If minidumps were only going to be 256KB, presumably the paging file on drive C wouldn't need to be any larger than 16MB (above).  While I was still in SystemPropertiesAdvanced, I went back into Advanced tab &gt; Performance Settings &gt; Advanced tab &gt; Virtual memory Change and set the drive C paging file to a minimum and maximum of 16MB.  Before rebooting to make that new paging file setting take effect, I went back into WinDbg &gt; File &gt; Open Crash Dump, navigated to C:\Windows\Minidump, and tried to open the minidump .dmp file there.  It gave me a warning:<br/>
+<blockquote>Kernel symbols are WRONG.  Please fix symbols to do analysis.<br/>
+<br/>
+Your debugger is not using the correct symbols.</blockquote>It went on from there.  But I felt this warning was not accurate.  What it should have said was, "You are a complete screwup!  You have no idea what you are doing!  Get the hell out of here!"  In other words, it presently appeared that the entire project of downloading and burning and trying to use the SDK was a complete farce, and I should just hang my head in shame and stop even pretending to utilize that software in an intelligent manner.  Which I did.  My tool of choice for minidump files, for the foreseeable future, would be BlueScreenView.<br/>
+<br/>
+I wasn't sure whether a crash at this point would accomplish the same thing as a proper reboot, for purposes of resetting the paging file.  But I wanted to generate another minidump file, so I hit RightCtrl-ScrollLock x2.  This gave me a forced reboot but no BSOD.  Odd.  Maybe the paging file situation had interfered with it somehow.  Anyway, Windows restarted.  I had, again, the same dialog as above -- "Windows has recovered from an unexpected shutdown" -- and, as before, it checked for a solution and then vanished without further ado.  I took a look at C:\Windows\Minidump.  Now there were two minidump files.  (Incidentally, their sizes were 270KB and 283KB, so I wasn't sure exactly what SystemPropertiesAdvanced meant, when it referred to a 256KB minidump.)  I wanted to see what the second .dmp file said -- what would have been displayed at the bottom of the BSOD, regarding the paging file -- so I fired up BlueScreenView and took a peek.  It didn't contain any comments like those shown above (e.g., "Future kernel memory dumps may require larger size.  Switching to minidump ...").  But then I realized I didn't really care.  I had the minidump; perhaps I wouldn't need the full kernel dump (which I still didn't know how to produce).<br/>
+<br/>
+What BlueScreenView did reveal, of possible interest, was a line referring to stdriver64.sys -- which was the driver mentioned in the original BSOD that had prompted me to commence this voyage of discovery.  I didn't know how to interpret that line, but I thought possibly its contents would be revealing in comparison against the next BSOD produced by a crash of stdriver.64, as distinct from these manually initiated minidumps.  So I would be keeping these two minidump files for future reference.<br/>
+<br/>
+I was done with BlueScreenView for now, pending the next stdriver.64 crash.  I had managed to configure my system, and had learned something, so that now I was possibly prepared to read and begin to understand what was happening when stdriver.64 crashed.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
+**raywood**:
+Sources of additional information includefurther instructionson using WinDbg to read minidump files andexamplesof MEMORY.DMP files.
+
+**raywood**:
+In Control Panel > Action Center > Maintenance, I noticed a message, "Address a Problem with Your Computer."  When I clicked on View Message Details, I got a link toa Knowledge Base article, "Windows feature lets you generate a memory dump file by using the keyboard."  That article discussed the Ctrl-ScrollLock option described above.
+
+**raywood**:
+Another postdiscusses the stdriver64.sys BSOD.
+
+**raywood**:
+ApparentlyNotMyFaultprovides a more multifaceted way to induce system crashes -- and in colors other than blue.
+
+**raywood**:
+Another postadds significantly to this one on the minidump and kernel dump intepretation.
+
+**raywood**:
+A later postprovides a summary of related steps.
+
