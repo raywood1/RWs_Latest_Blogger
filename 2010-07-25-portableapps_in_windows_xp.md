@@ -1,0 +1,29 @@
+---
+layout: post
+title: "PortableApps in Windows XP"
+date: 2010-07-25
+---
+
+<div class="post-body">
+<p>As of summer 2010, a portable application -- what I had been calling a "standalone" program -- was a program that did not have to be "registered" with Windows.  It might not exist on your computer at all until the moment when you would plug in a USB drive containing it, and then you could run it immediately from that drive without having to go through an installation process.  You would also thereby avoid the risk that this would be the straw that broke the camel's back -- the program that would cause Windows to crash.  Moreover, you could thus carry your toolbox around with you, and always have that particular program that you might need for some purpose.  You would also tend to be running lighter software, meaning that a netbook computer might find it easier to run.<br/>
+<br/>
+Within the world of <a href="https://web.archive.org/web/20190906052730/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=Z15&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22portable+apps%22+OR+%22portable+applications%22+%22windows+xp%22&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">portable applications</a> for Windows XP (or other operating systems), there was an actual <a href="https://web.archive.org/web/20190906052730/http://portableapps.com/">PortableApps</a> (PA) website.  The concept of this enterprise appeared to be that you begin by downloading and installing <a href="https://web.archive.org/web/20190906052730/http://portableapps.com/download">the PA platform</a>, optionally with a suite of basic programs (e.g., Firefox, OpenOffice), and then you add <a href="https://web.archive.org/web/20190906052730/http://portableapps.com/apps">other portable applications</a> from their directory or elsewhere.<br/>
+<br/>
+At about the time when I first started paying serious attention to PA, I was in the process of <a href="https://web.archive.org/web/20190906052730/http://raywoodcockslatest.blogspot.com/2010/07/tweaking-windows-xp-virtual-machine.html">configuring a minimal WinXP virtual machine</a> (VM), and wondered if this way of loading programs would help me to set up a faster and better-functioning VM.  To that end, I decided to err on the heavy side, by installing as many apps as possible on my USB drive.  I had a 4GB Kingston drive available, and if it looked promising I could always buy a larger one.  So, for now, it was a question of what I could get onto that 4GB drive.<br/>
+<br/>
+I didn't want all of the programs that came with the PortableApps.com suites, so I just downloaded the basic platform, along with a bunch of individual apps.  I installed the basic platform in the root of the 4GB Kingston, following <a href="https://web.archive.org/web/20190906052730/http://portableapps.com/support/portable_apps_suite#installing">instructions</a>.  It took about a minute.  Then, at the end of that installation process, I launched PA.  It seemed to disappear whenever I used the mouse or keyboard, and after each app installation was completed.  So I kept having to go back to re-run StartPortableApps.exe, there in the root of the USB drive.<br/>
+<br/>
+To install the individual apps, I went into PA's Options &gt; Install a New App and browsed to each of <a href="https://web.archive.org/web/20190906052730/http://portableapps.com/support/portable_apps_suite#addingapps">the .paf.exe</a> (PortableApps format) applications that I had decided to install.  There wasn't a batch process option, so I had to sit there and wait through each of these installations, one by one.  I ran into a problem when I decided to delete one of them.  The problem had to do with <a href="https://web.archive.org/web/20190906052730/http://raywoodcockslatest.blogspot.com/2010/07/windows-xp-administrator-lacks.html">administrative rights</a> in Windows XP.  It took a couple of hours to sort out.<br/>
+<br/>
+Some of these apps had multiple features.  I wasn't familiar with all  of them.  It appeared likely that, as I did get to know them, others  would become superfluous.  Also, many of these apps had their own  additional instructions or informational webpages.  I combined them into a PDF and put a copy on the jump drive itself, for future reference.<br/>
+<br/>
+The user could right-click on a particular app in PA to pull up a  menu of options:  Run, Run as Administrator, Rename, Refresh, Hide, Show  Hidden Icons, Favorite, Start Automatically, and Uninstall.  I used the  last of those with Sumatra PDF, when I decided in favor of Foxit; but  when I said to uninstall, I got an error message:  "Unable to uninstall  %APPNAME%."  <a href="https://web.archive.org/web/20190906052730/http://portableapps.com/support/portable_apps_suite#removingapps">PA's instructions</a>  said I could just use Windows Explorer to delete the item, followed by  the Options &gt; Refresh App Icons menu option in PA.<br/>
+<br/>
+These difficulties were overshadowed by a much larger problem.  At one point, I took the jump drive out of my computer and tried running it in another computer.  That computer had a different kind of antivirus software than mine.  I think it may have been McAfee.  Whatever it was, it decided that the PortableApps platform was malware, and promptly deleted it.  Presto!  The sleek interface was gone.  The antivirus software also wiped out a couple of individual apps within the PortableApps set.<br/>
+<br/>
+That pretty much ended my use of PortableApps.com.  Instead, I switched to <a href="https://web.archive.org/web/20190906052730/http://raywoodcockslatest.blogspot.com/2010/08/portable-applications-in-windows-xp.html">a different portable applications setup</a>, one that was not quite as slick but was much more robust.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
