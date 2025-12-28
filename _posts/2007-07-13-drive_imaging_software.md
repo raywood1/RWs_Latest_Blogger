@@ -1,0 +1,44 @@
+---
+layout: post
+title: "Drive Imaging Software"
+date: 2007-07-13
+---
+
+<div class="post-body">
+<p>I have been using PowerQuest's Drive Image 2002 (DI) for years.  I started well before 2002, with earlier versions of DI.  It has been a very reliable, very useful tool.
+
+As the DI name suggests, drive imaging software allows you to make a complete image of your drive, as distinct from just copying files.  Copying files won't give you an operating system that boots, especially in Windows.  A drive image will.
+
+So I have been using DI to make images, especially of my boot disk.  It lets me divide the images into disk-sized pieces, so that I can fit them onto a CD or DVD.  The maximum file size in DI is about 2.5GB, because it's old software.  So I have had to make my drive images in files of size 1,565 MB.  Three of those fit almost exactly onto a DVD.
+
+DI might or might not back up Linux partitions.  I haven't tried.  I could try now, but you can't really test backup software just like that.  I could spend hours experimenting with it and still not be confident that it was copying everything exactly like I imagined it was.  Some things you only find out at the worst possible time.
+
+Anyway, I can't use DI anymore.  Somehow, in the process of <a href="https://web.archive.org/web/20190906053853/http://raywoodcockslatest.blogspot.com/2007/07/ubuntuwinxp-pro-dual-boot-partitioning.html">setting up a dual-boot</a> Ubuntu (Linux) and Windows XP Professional (32-bit) system, my DI boot CD ceased to be bootable.  It happened to the disc for DI's sister program, PartitionMagic 8, at the same time.  They often recommend running these programs from the CD rather than from the hard drive, but it doesn't matter in this case:  I don't think either of them even run from within Windows XP.  They start; they look good while I'm using them within Windows; but if I am asking them to make changes that require a reboot, they don't do it.  The system reboots and goes right back into Windows without doing what I asked.
+
+So without the ability to run DI either from the disc or from within Windows, it was time for me to look at a replacement.  I was concerned about the ability to back up Ubuntu because, as I say, I have just set up this dual-boot system, and because I've discovered that Partition Magic, the sister program, really doesn't work too reliably with Linux partitions.  A lot has changed since 2002.  Probably it would be a good idea for me to upgrade.
+
+I started by looking for a DI update.  No dice:  Symantec has acquired PowerQuest and has ruined its products more or less as it ruined Norton's stuff when it acquired them from Peter Norton.  PartitionMagic isn't available at all now, and DI lives on only as the basis for the most recent versions of Norton Ghost, which had been a competing Symantec product.  Ghost has crappy ratings from users on both <a href="https://web.archive.org/web/20190906053853/http://software.pricegrabber.com/backup-utility/p/194/form_keyword=ghost/rd=1">PriceGrabber</a> and <a href="https://web.archive.org/web/20190906053853/http://www.newegg.com/Product/Product.aspx?Item=N82E16832108097&amp;Tpk=ghost">Newegg</a>.  I hadn't liked Ghost anyway, even as a Norton product, back when I first chose DI (though I'm not sure Ghost existed in the very early days of my usage).
+
+So, then, how to replace DI?  Somebody mentioned Acronis True Image 10.  But when I read the <a href="https://web.archive.org/web/20190906053853/http://www.newegg.com/Product/ProductReview.aspx?Item=N82E1681528708SF&amp;SortField=0&amp;SummaryType=ALL&amp;Pagesize=100&amp;Page=">Newegg</a> reviews of that, and especially when I saw <a href="https://web.archive.org/web/20190906053853/http://www.acronis.com/enterprise/products/ATICW/comparison.html">Acronis's own explanation</a> of that product, I realized that it was not what I wanted.  It had a better reputation for quality, by far, than Ghost, but I was concerned about what appeared to be Acronis's growing reputation for poor customer service.  It didn't mean I wouldn't buy from them; the products themselves sounded quite reliable.  It just meant that I felt I had to be sure of getting exactly the right product from them.
+
+One alternative that popped up was Simple Tech's <a href="https://web.archive.org/web/20190906053853/http://www.simpletech.com/support/support_downloads_storagesync1.42.php">StorageSync</a>.  But this turned out to be not much different, in functionality, from Windows' own built-in backup program.  I didn't know if that Windows program would capture an operating system in working form (i.e., with registry and all), as distinct from just a collection of files on the C drive; but I was pretty sure it wouldn't do a great job with a Linux partition.
+
+The best alternative I found was Acronis's True Image 9.1 Workstation.  A crucial difference, for me, justifying the extra $30 that it cost on top of the price that I would have paid for True Image 10 (not Workstation), was that it wasn't restricted to just one computer.  I expected to keep this software for a long time, as I had done with Drive Image.  I planned to upgrade it when new versions came out.  As I had seen with DI, there would be situations in which I would want to back up before installing, say, a new motherboard or hard drive, and then restore afterwards.  The last thing I needed was to find that my backup would work only on the system that I had taken it from.  It seemed pretty screwy, to me, that Acronis had introduced that distinction -- functionally speaking, that is -- but from a marketing perspective I realized that maybe a lot of people just want to use True Image for simple backups on one machine.
+
+Later, I found tons of <a href="https://web.archive.org/web/20190906053853/http://www.amazon.com/gp/product/customer-reviews/B000KZF3XE/sr=8-1/qid=1184325248/ref=cm_cr_dp_all_top/103-2358881-3815015?ie=UTF8&amp;n=229534&amp;s=software&amp;qid=1184325248&amp;sr=8-1#customerReviews">customer reviews</a> of TI 10 at Amazon.  These were really mixed.  Some of the negative ones had to do with the absence of a license key in the product box.  I hoped to avoid that problem by downloading the program rather than buying a CD.  Other negative reviews seemed to come from users' attempts to do backups by running the program from inside Windows, rather than from its own bootable CD (which I expected to burn).  It looked like even some experienced people had problems with the program -- but others, experienced or not, found it to be fantastic.  My best guess was that it was a matter of one's individual system; it was a bit of a gamble; I had not been able to find anything better; and I needed to make backups.
+
+I decided to proceed by <a href="https://web.archive.org/web/20190906053853/http://www.acronis.com/enterprise/download/ATICW/">downloading the free trial</a> of TI 9.1 Workstation from Acronis.  If it worked OK on my system, I would download the purchased product.  (The best price I found was <a href="https://web.archive.org/web/20190906053853/http://www.regnow.com/softsell/nph-softsell.cgi?item=4864-23&amp;affiliate=84044&amp;ss_coupon=DIES-SVDL">$71 from RegNow</a>.)  Hopefully I would remember to uninstall the trial before installing the full product, since I knew sometimes you could screw up a program's functionality by trying to install it when it was already installed.
+
+That, as it turned out, was not an issue.  I was able to put the free trial onto a CD, boot with that CD, and instruct the program to make a number of changes; but the program would not actually make those changes until I bought a copy.  Though I doubt it, possibly the program would have been capable of doing more if I had installed it on the hard drive; but as I knew from experience and advice, booting from the CD before making an image of a Windows program drive was sometimes necessary and generally safer.
+
+I also learned that you can back up Linux, unlike Windows, merely by copying program directories.  No need for a program that is capable of capturing a snapshot of the system from outside, via CD boot.  Moreover, replacing the unreliable new motherboard in my system resolved the issue of booting from CD:  suddenly I could do it again.
+
+I decided, in short, that I could and should just stay with Drive Image 2002 for now, and watch for further developments in (a) my possible transition to Linux and (b) other kinds of backup software.  DI seemed capable of keeping up with my backup needs, at least as long as I continued to use WinXP, and there was no telling what would develop after that.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
+**Anonymous**:
+thank,very helpfull, I was just wondering if I want to change vrom DI 2002 to TI 10 HomeBut maybe I'll better let it be.
+

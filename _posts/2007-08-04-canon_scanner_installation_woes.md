@@ -1,0 +1,293 @@
+---
+layout: post
+title: "Canon Scanner Installation Woes"
+date: 2007-08-04
+---
+
+<div class="post-body">
+<p>I was trying to install two Canon products.  One was the CanoScan 8400F flatbed and negative film scanner.  The other was the Canon imageCLASS MF5730 multifunction printer/scanner/copier.  I was having problems.  I decided to record the details, having seen that others had similar problems and did not always seem to reach resolution.
+
+I think I must have had the scanners plugged in (both power and USB cables) when I did a <a href="https://web.archive.org/web/20140703162049/http://raywoodcockslatest.blogspot.com/2007/07/running-winxp-pro-in-vmware-virtual.html">Windows XP operating system reinstallation</a>.  This, they tell you not to do.  I knew better; indeed, I wasn't not even sure this actually happened.  It was just that I had no other explanation for my difficulty in installing these two scanners, both of which had worked fine with Windows XP previously.
+
+One sign of trouble was the yellow circles with exclamation marks that appeared in Device Manager.  Another was that I got an error message when I tried to use the scanners.  The MF5730 would print OK, but it would not scan.  The error message I got was, "Cannot communicate with scanner.  Cable may be disconnected or scanner may be turned off.  Check status.  Scanner driver will be closed."
+
+I realized, at that point, that I may have had the machines plugged in when I was first installing the operating system.  I tried uninstalling the drivers and the accompanying software, rebooting, and reinstalling with the scanners unplugged (both power and USB cables).  This yielded varying results, but no actual success.  One variant result was that, at one point, I was able to go into the CanoScan Toolbox for the 8400F and try to scan.  In response to that, I got another error message:  "Unable to open TWAIN source.  Please check connection.  Then re-start Toolbox."  Another was, "Cannot start this hardware.  There was a problem installing this hardware:  CanoScan 8400F.  Windows cannot start this hardware device because its configuration information (in the registry) is incomplete or damaged. (Code 19)  Click Finish to start a troubleshooter that can help you resolve the problem."  Also, during one process -- an uninstall process, I think -- I received this message:  "MF Toolbox.  An installation support file '[long file path snipped] insthl32.dll' could not be installed.  Access is denied."
+
+I ran the Troubleshooter (which I think was also available by doing a search for Troubleshooter in WinXP's Help).  It suggested that I try an updated driver.  I recalled that I did have an updated driver.  In fact, I had already installed it before I had gotten to the point of actually needing to try to use these scanners.  Reinstalling it made no difference, except that I think then(after installing the update) is when I got one of the foregoing error messages.
+
+I sent Canon a message.  While waiting for a reply, I browsed.  Microsoft's suggestions didn't seem on point.  For example, <a href="https://web.archive.org/web/20140703162049/http://support.microsoft.com/kb/310123">they suggested</a> rolling the system back to a Last Known Good Configuration, but of course in the case of a new install where I had done the hardware installation right at the outset, the last known good configuration would have been within the first hour or two after inserting the Windows installation CD for the first time.  I found <a href="https://web.archive.org/web/20140703162049/http://www.pcreview.co.uk/forums/thread-126257-2.php">a number of suggestions</a> from third parties as well. None seemed to apply in my case. For example, there was a suggestion to use a shorter USB cable, but I was using the same USB cables I had used before.
+
+One option that I didn't pursue at this point was a <a href="https://web.archive.org/web/20140703162049/http://www.microsoft.com/windowsxp/using/helpandsupport/learnmore/tips/doug92.mspx">repair installation</a> of WinXP.  I didn't know this, but apparently it was possible, as <a href="https://web.archive.org/web/20140703162049/http://www.help2go.com/Tutorials/Windows/How_To_Repair_XP_and_Avoid_a_Full_Reinstall.html">a last resort</a>, to use the installation CD to restore the original copies of XP program files, without affecting the programs installed thereafter.  There seemed to be a lot of <a href="https://web.archive.org/web/20140703162049/http://www.webtree.ca/windowsxp/repair_xp.htm">variations on this theme</a>.  There were warnings that this could possibly <a href="https://web.archive.org/web/20140703162049/http://www.michaelstevenstech.com/XPrepairinstall.htm">cause data loss</a> and that there could be other complications.
+
+I noticed that my machine was behaving oddly in one seemingly unrelated way.  I was suddenly unable to move files from one particular folder.  I didn't experiment with it extensively.  I ran a disk check using Disk Management.  The odd behavior seemed to apply only to files that had been in that folder for a few days or longer.  So I thought that maybe my Windows installation did indeed have problems calling for a repair install.  But before I would do something like that, I decided, I would try two other approaches that some had recommended.  First, I would search the registry for references to "image" or "Canon," and see if I could figure out how to repair them manually.  Second, if necessary, I would try restoring an earlier <a href="https://web.archive.org/web/20140703162049/http://raywoodcockslatest.blogspot.com/2007/07/drive-imaging-software.html">drive image</a>.  While I figured the scanner misinstallation had been present at the time of that image, I thought that maybe uninstalling it would be more successful if the machine was not acting screwy.  I didn't want to do this because I had struggled through a number of changes since the last PQI drive  image backup, but it was better than nothing.
+
+First, I uninstalled the scanner utilities and drivers to the best of my ability.  Then, using <a href="https://web.archive.org/web/20140703162049/http://www.4techies.com/reghance/reghance-info.php">Lavasoft RegHance</a>, I searched the entire registry for references to "image."  That got 3,116 hits.  To narrow it down, following <a href="https://web.archive.org/web/20140703162049/http://www.tek-tips.com/viewthread.cfm?qid=475961">a tip</a>, I looked in the key that was referenced in the INF file of the Canon driver on the CD.  I couldn't find an INF file on the CanoScan 8400F CD, but I found three on the MF5730 CD, one for each of its functions (i.e., MF12FAX.inf, MF12PRN.INF, and MF12SCN.INF) (except that it didn't actually have a fax function, it had a copy function instead, which was evidently handled by the scan function).  I right-clicked and opened the one for the scanner with Notepad (which I designated as default opener for INF files).  Unfortunately, I was not able to interpret the contents of the INF file -- I didn't see the kind of straightforward registry change that I had learned to recognize in small registry edit files -- so I bailed out on that approach.  I searched the registry again, this time for "Canon."  Then I remembered that there is registry cleaning software and that surely those programs, however dangerous, could not be as dangerous as my larking around in there free-style.  Besides, I saw that some users had done manual registry cleaning with no success.  So I thought I might better try using someone else's registry cleaner.  But that seemed risky too.  So I postponed that for a bit longer.
+
+I was really reluctant to do the work of reloading the previous Drive Image PQI file and reinstalling everything done since then.  So I browsed some more.  One user said that Canon tech support had sent him an IMAGEDEVICEKEY file that solved everything.  So I had hope that Canon would eventually do this for me.  Another user suggested trying a different USB port.  I wondered ... could it be that my new computer's USB ports were not all created equal?  I prepared to do a reinstall of the CanoScan 8400F, with the cable soon to be connected to a known working USB port.  (This wasn't a solution for the MF5730, which had already been connected to a known working port.)  But before I completed this reinstall, I noticed, on the CanoScan's Install dialog box where I was given a choice of software to be installed, that it said the drivers were "already installed."  Not according to Add or Remove Programs, they weren't!
+
+About this time, I got an e-mail back from Canon.  It said this:
+<pre><blockquote>In order to assist with this issue, we will need more information.  Is
+the scanner connected directly to the computer or is it going through
+another device such as a hub?  Please let us know if the scanner is
+showing up correctly in Device Manager:
+
+1.  Click My Computer with the right mouse button and click Properties.
+
+2.  Click Hardware.
+
+3.  Click Device Manager.
+
+4.  Click the + next to Imaging Devices, does the scanner show up here?
+If not, please let us know if there are any entries in Device Manager
+that say either Unknown or Other Devices.
+
+Also, Please make sure the Windows Imaging Acquisition (WIA) service is
+running:
+
+1.  Click My Computer with the right mouse button and click Manage.
+
+2.  Click the + next to Services and Applications.
+
+3.  Click Services.
+
+4.  On the right, look for Windows Imaging Acquisition and see if the
+status is Started.  If not, right click the service and click Start.  If
+this sets the status at Started, try your scan again.  If this generates
+an error, please let us know the exact wording of the error.
+
+If the above steps do not resolve the issue, please try the scanner
+plugged into another available USB port on the computer.
+
+We look forward to your reply with the information we have requested
+regarding your MF5730.
+
+Thank you for choosing Canon.
+
+Sincerely,
+
+Karl
+Technical Support Representative
+
+Special Note: Certain issues are very difficult to resolve via email.
+If your question remains unanswered after you have received this email,
+you may call our special toll-free number for email customers with
+unresolved issues and speak to a technician* by dialing 1-866-261-9362,
+Monday - Friday 8:00 a.m. - 12:00 midnight ET, and Saturday 10:00 a.m. -
+8:00 p.m. ET (excluding holidays).
+
+If you prefer to continue to communicate via email, reply to this
+message and we will respond as quickly as possible.
+
+*Telephone support for products no longer covered under the
+manufacturer's warranty may require a $9.99 fee for support.</blockquote>
+</pre>I was impressed.  Four-hour turnaround on e-mailed tech support requests!  Unfortunately, Karl's advice didn't fit my situation, and I told him so.  Instead, I reviewed my options and decided to reinstall an earlier image of the drive.  I uninstalled the Canon software -- in Safe Mode, this time -- and tried reinstalling it (at least for the MF5730) with cables unplugged, as I should have done (and maybe had done) in the first place.  But this did not work either.
+
+I then had to deal more extensively with Windows Explorer's sudden <a href="https://web.archive.org/web/20140703162049/http://raywoodcockslatest.blogspot.com/2007/07/error-copying-file-or-folder-system.html">refusal to move files from one folder to another</a>.   That took days to resolve, and it wound up leading to a <a href="https://web.archive.org/web/20140703162049/http://raywoodcockslatest.blogspot.com/2007/07/system-crash-woes.html">monster of a problem</a> involving the new installation of my operating system.
+
+It occurred to me, somewhat belatedly, that I planned to sell the CanoScan 8400F soon, and that maybe I could get what I needed from it by hooking it up to my laptop instead.  I just needed to scan a few more negatives, and I would be done with it.  I was confident that I was not selling a piece of junk because I had used it for quite a bit of photo, document, and negative scanning; I was sure the problem was just in getting my new system's drivers to speak with it.
+
+Meanwhile, back in the world of the MF5730 scanner:  long before I had completed all of these travails, within hours of our previous conversation, I had received another reply from Canon.  This time I was speaking with Naomi, who said the following:
+<span style="font-size:85%;"><span style="font-family:courier new;"></span><blockquote><span style="font-family:courier new;">If you double-click on the scanner in the Device Manager, what does it say in the Status?  Is there an error code, if so, what is it?</span> <span style="font-family:courier new;">Try stopping and restarting the WIA service.</span> <span style="font-family:courier new;">What operating system is installed on your computer?  If you are using Vista, please let us know if you are using the 32bit or 64bit version.</span>
+</blockquote><span style="font-family:courier new;"></span></span>My reply to Naomi:
+<blockquote>When I double-click on the scanner in Device Manager, I get this:
+
+"Windows cannot start this hardware device because its configuration information (in the registry) is incomplete or damaged. (Code 19)."
+
+When I stop and start the Windows Image Acquisition (WIA) service via the Services tab via Run &gt; MSCONFIG (taking pains to hit Apply after each step, and then rebooting when I finished), nothing changes.  There is still a yellow exclamation circle in Device Manager, and the computer still says it can't communicate with the device when I try scanning from within a program.
+
+I'm using 32-bit Windows XP.</blockquote>While waiting for Naomi, I did a complete uninstall of all Canon scanner hardware (by removing both the 8400F and the MF 5730 from Device Manager) and software (via Add or Remove Programs), followed by a cleanup using both CCleaner until there were no more issues, as described in another post.
+
+Then I reinstalled the MF5730, doing the software installation before connecting the hardware.  The software installation process completed, and I was instructed to connect the USB cable.  I did.  The system went through the process of recognizing the machine.  At the end, sadly, it said that there was a problem and that the hardware might not work properly.  At this point, having gained a little more experience with the problems I was still having with my newly assembled computer, I rebooted.  Then I went into Device Manager and, sure enough, there was a yellow exclamation circle by the Canon MF5730.  I right-clicked Update Driver and indicated that I did not want to search, that I would tell the machine where to find the driver.  I hit "Have Disk" and kept navigating through the CD until I found what seemed to be the right folder -- for which I had a hint from the fact that some INF files showed up (not just all folders).  I selected that.
+
+This gave me a message that said, "Cannot Start This Hardware.  There was a problem installing this hardware:  Canon MF5730.  Windows cannot start this hardware device because its configuration information (in the registry) is incomplete or damaged.  (Code 19)"  The system then led me to a troubleshooter that advised me to uninstall in Device Manager and reinstall, using a link to the Add Hardware Wizard provided right there in the troubleshooter.  (I assume I could have gotten to the same place via Control Panel.)  Once again, the system began recognizing the machine, only to announce that, again, there had been a problem in installation.
+I was not getting the option described in the troubleshooter, of doing a manual selection.  So I did try using Add Hardware in Control Panel.  Same thing.  I realized that the problem must be that I still had the USB cable connected.  So I disconnected that and tried again.  I guess the troubleshooter was trying to be brief:  if Plug and Play detection was not working, then the next step was to defeat Plug and Play by unplugging the cable, so that the manual approach described in the troubleshooter would be the only option.  So now I was able to step through it manually.  I indicated that No, I had not added the hardware yet.  But no, that just led to the end of the Add Hardware process.
+
+So this time, I lied.  I said Yes, I have already connected the hardware (even though the USB cable was disconnected).  I went to the bottom of the list of hardware items that the system had detected, and I clicked "Add a new hardware device."  Then I selected "Install the hardware that I manuall select from a list."  Then "Show All Devices" (because I had discovered that the MF5730 printer was working, and it was only the scanner that was malfunctioning, and I had already removed the MF5730 from my list by uninstalling in Device Manager).  The system then took a while to assemble a complete list of hardware.  I was then able to designate, specifically, Canon MF5700 Series.  But now I realized that this was all just about installing drivers, which we had already tried and failed to do.  This did not get me through the registry problem.  Nonetheless, to round it out, I clicked Have Disk, pointed again toward the proper place on the disk, and let 'er rip.  What I needed, at this point, was a more specific pointer to the registry problem.  But --- what?  This time it worked!  No registry error message!  The dialog said, "Completing the Add Hardware Wizard.  The following hardware was installed:  Canon MF5700 Series.  Windows has finished installing the software for this device."
+
+<a href="https://web.archive.org/web/20140703162049/http://raywoodcockslatest.blogspot.com/2007/07/system-crash-woes.html">My new hardware</a> was (still? always going to be?) unstable.  So now Explorer crashed.  Just to be safe, I rebooted.  I went into Acrobat and tried to scan something.  Unfortunately, WIA was still not there, in the choice of scanners; CanoScan 8400F was still there, indicating that my attempt to uninstall it had been partially unsuccessful; and when I selected Canon MF5730, I got the same "Cannot communicate with scanner" error as before.  But, oops, I had not yet plugged in the USB cable.  So I did that.  Oddly, I did not get a bubble dialog telling me that I had connected new hardware.  I went into Device Manager and saw that I still had a yellow circle with an exclamation mark.
+
+It seemed to me that one problem might be that I had not yet learned how to completely uninstall hardware.  Having just made a Drive Image backup of my system, I felt that I could gamble with the registry.  I noticed that the MF5730 would disappear from Device Manager if I unplugged the USB cable, so first I uninstalled it from Device Manager; then I unplugged the USB cable; then I uninstalled the Canon Toolbox software and drivers in Add or Remove Programs, with a reboot.
+
+It occurred to me that this little feature of Device Manager might explain why the 8400F was still listed.  Since its sale was not yet complete, I reinstalled it.  I began with the software, reinstalling the same stuff that I had installed previously; and when that was done, I also made sure I had the MF5730 drivers and toolbox software installed.  In Add or Remove Programs, I now saw that, as had been the case in previous months, these two scanners' installation disks had installed both Canon MF Toolbox 4.7 and CanoScan Toolbox 4.8.  I plugged a USB cable into the 8400F.  The system said there was a problem installing the hardware.  I then plugged a USB cable into the MF5730.  Same thing.  In Device Manager, I had yellow circles by both scanners under the Imaging Devices heading.  I unplugged the USB cable from each machine and, sure enough, each one disappeared from Device Manager.
+
+With that knowledge in mind, I uninstalled the scanners from Device Manager, while they were still plugged in, and then I unplugged their USB cables.  Next, I removed both Toolboxes and the Canon MF Drivers from Add or Remove Programs, restarting the computer whenever the uninstall processes suggested doing so, and also again at the end.  I now had no trace of Canon software in Add or Remove  programs.  I ran CCleaner.  Then I did a Windows Explorer search across my entire C drive for "Cano" (including hidden and system folders) and found 34 files or folders.  While still in the search window, I deleted all of the folders that I could identify as being clearly related to these two scanners (now that I had no Canon software remaining on my system).  I ran the search again and deleted a few more files "cano" files that were clearly related to the scanners.
+
+Then I used Lavasoft RegHance to search the registry for all references to cano (searching keys, values, and data).  To my surprise, this yielded an estimated 200 entries.  I saw references to Acrobat, among other things, so I opened Acrobat and tried to scan, and, sure enough, the 8400F was still available as a scanner from the pull-down menu, though of course it did not run when I tried using it.  I tried another RegHance search, this time for "canon," for items (i.e., keys, values, and data) that would match the whole string.  This time I got only seven results, of which most were MRUs (most recently used) pointers.  None of these provided an obvious explanation for why the 8400F would still appear to be available in Acrobat, so I ran another search for "canon" without seeking a match of the whole string.  This gave me an estimated 120 hits, suggesting that many (but not all) of the registry's "cano" entries were "canon" entries.
+
+I looked at one of those 120 registry items at random, wondering why it came up in a search for canon.  I saw that one of its keys contained a reference to "Canonical" -- which was, of course, an entirely different matter.  Since this search wasn't producing ideal results (and, as I realized, wouldn't have necessarily turned up "CanoScan"), I tried again with a more targeted search for CanoScan.  This yielded about 60 hits.  I noticed that most of them followed a pattern, with about a dozen nearly identical entries, repeated for a half-dozen different registry branches.  Anyway, I went into System Restore and created a restore point.  Then, in RegHance, I clicked "Export as file" and designated a new folder to hold the results.  But this didn't give me a REG file, as I'd expected, which would have allowed me to just click on it and restore it.  Instead, it just gave me a list of these registry entries, which wasn't helpful.  Whatever.  I clicked on Delete, in RegHance, and immediately got "Error 2 : The system cannot find the file specified."  Evidently CCleaner had failed to detect some registry links to nonexistent files.
+
+I exited RegHance and ran Norton WinDoctor, which was a part of Norton SystemWorks.  My old version of this program detected 185 problems on my computer.  It was not able to apply an automatic solution to most of those problems; indeed, it was not able to comply with my semi-manual instructions to either fix or delete invalid registry entries.  I went into the <a href="https://web.archive.org/web/20140703162049/http://www.download.com/Diagnostic-Software/3150-2086_4-0.html?tag=catat">Diagnostic Software section</a> at Download.com and searched for WinXP freeware.  I sorted by user rating and identified several promising programs, noticing that CCleaner was the highest in rating and also in downloads.  Of these several programs, the most highly rated and also most popular appeared to be <a href="https://web.archive.org/web/20140703162049/http://www.download.com/Advanced-WindowsCare-Personal/3000-2086_4-10702655.html?tag=lst-3-9">Advanced WindowsCare Personal</a> (AWC).  I downloaded, installed, and ran it.  Among its many features (spyware removal, security defense, registry fix, system optimization, startup management, privacy sweep, and junk files cleaning), I chose only registry fix and junk files cleaning.  In about one minute, it found 518 registry problems and 15MB of junk files.  The contrast in the number of registry problems, while not necessarily definitive, did make me think that perhaps times had changed since 2002, or whenever it was that I had purchased the Norton product.  I selected Repair, and AWC claimed to have resolved all of those problems.  I scanned again, just to be sure, and this time AWC found four registry problems.  This time, it reported no problems.
+
+I went back into RegHance and searched the entire registry again for keys, values, and data entries containing CanoScan.  There were still about 50 of them.  The ones that were gone were those that had seemed nonstandard, last time around -- that is, those that were not part of the half-dozen sets of a dozen nearly identical items related to scanner buttons.  So I ran Acrobat and tried scanning.  This time, the reference to the 8400F was gone; there were no scanners listed.  That was encouraging.  So I went back to RegHance, to the first of these CanoScan items, and manually exported a registry key as a backup.  Then I deleted that key and re-ran my RegHance search for CanoScan.  I had expected that deleting that single key would take care of a dozen of the remaining CanoScan hits.  What I found, instead, was that there were no CanoScan references left at all in the registry.  Apparently that one key had contained them all.  I followed up by searching the registry for 8400F.  I found only one key; and in it, the 8400F string appeared to occur as part of a meaningless sequence of numbers and letters in a longer stream of gibberish used as a name for something unrelated.
+
+Now I searched for MF5730.  This produced only two hits.  Both appeared to be Acrobat-related, and both were designated as cRecentFiles.  I gathered, from this, that they were historical references, not involved in current program operation.
+
+These efforts had not removed all possible registry references to Canon.  Since I did not care to examine each registry key, string, or value that might contain those five letters in a row, it was time to reboot the system and see what happened.  Unfortunately, the system would not boot.  It seemed that my screwing around had wrecked it.  I went into Safe Mode and did a system restore.  This time around (after booting back into Normal Mode), I used only AWC, and I used only its Registry Fix.  Then I rebooted.  There were no Canon products in Add or Remove Programs, and no scanner was visible in Acrobat.  This time, oddly, RegHance found no references to CanoScan.
+
+I set a system restore point, took a deep breath, and tried installing the MF5730 software.  There was no warning about disabling antivirus software before installing the drivers, so I just sailed on through that.  But when I saw such a warning before installing the Toolbox, I realized that possibly I had failed to take that precaution in the past.  I had several antispyware programs running in addition to Symantec Antivirus.  I was not confident that I was disabling them all, but I unplugged my Internet connection and did my best.  For good measure, I closed down all of the other things shown in the system tray, to the extent possible.  I felt I probably should have been doing this in Safe Mode, but we were halfway through now, so I just proceeded.  But it still said it had a problem with the hardware.
+
+It then occurred to me to go to the Canon website and check for updated software.  I had done this a while back, but possibly not recently enough.  While doing that on the laptop, I rebooted into Safe Mode on the problem machine.  There, I got this message:  "Found New Hardware Wizard.  Cannot Install this Hardware.  There was a problem installing this hardware:  Canon MF5730. An error occurred during the installation of the device.  The required section was not found in the INF."  So there it was:  the INF file on the installation CD was not good.
+
+On the website, I found three programs:  drivers, Toolbox, and also a firmware update for the MF5730.  In Safe Mode, I followed more or less the previous routine -- uninstall hardware and software, and run AWC, though this time I did not bother to reboot -- and then I tried installing these new items.  (I became aware, at this time, that my scanner problems could also be causing difficulties I was having with my monitor, though that seemed unlikely.)  I was able to install the driver, but not the Toolbox, in Safe Mode.
+
+By the time I was next able to get back into Normal Mode, I had reverted to a previous system state, so I started over.  I disconnected the Internet connection; made sure there was no Canon hardware or software in Device Manager or Add/Remove Programs; scanned with ACP; shut down all possible programs; and tried installing the updated driver, the Toolbox, and the firmware update.  I realized that I probably should not try to update the firmware until the computer and the scanner were on speaking terms, so I installed the first two and rebooted.
+
+On reboot, the Canon MF Drivers and Canon MF Toolbox 4.9 appeared in Add or Remove  Programs, but there was no sign of the scanner in Device Manager.  Then I remembered that the next step was to plug in the USB cable.  I was prepared to do that, but when I went into Acrobat and tried to scan, I saw that the 8400F was still installed.  Now I vaguely recalled that my measures to remove its last traces had occurred after the time of the drive image to which I had recently reverted.
+
+I wasn't sure how to proceed to remove the 8400F from Acrobat's list of printers.  I went into Printers and Faxes in Control Panel, but there was no 8400F there.  I decided to go ahead and try what I had tried before, but with greater caution.  I set a restore point, and then I used RegHance to search the registry for references to CanoScan.  I got the familiar list of fifty or so registry entries, all seemingly traceable to one node.  Within that node were three subnodes.  One related to my webcam; the other two to the 8400F.  There were still too many things I didn't understand about the registry.  So the best I could do, if I hoped to eliminate the 8400F, was to just delete those two subnodes.
+
+After doing that, another search for 8400F in the registry showed that I was back to having only seven lines in the registry.  I deleted what seemed to be the bare minimum in each of those cases.  Another registry search turned up no remaining references to CanoScan.  Now the question was whether the registry would still run.  I rebooted and found that the 8400F was gone from Acrobat's list of scanners.  I ran AWC and found that the registry had gone from having no problems to having 11 problems.  Upon closer examination, it appeared that several might have resulted from my registry edits.  None appeared profound, however.
+
+I was concerned that these registry edits might have messed up my new but ill-timed installation of MF5730 drivers.  Therefore,  I reinstalled the driver, without bothering to remove the previous installation, and I ran a Repair on the Toolbox.  Then I ran AWC again.  It found no problems.  It was time, at long last, to plug in the MF5730's USB cable and see what might happen ... and, sure enough, I got the same error message as before.
+
+This left three possibilities.  One was that the drivers were simply no good for use with my new system.  Another was that I hadn't been quite precise enough in my tinkerings with the registry.  A third possibility was that the drivers would never work until I installed the firmware update in the MF5730.  Since I had already gotten somewhat sick of the first two, I decided to see what I could accomplish on the third.
+
+The Canon webpage provided a step-by-step guide on updating the firmware.  It was a little spooky.  But I had a perfect record with firmware upgrades, and this time was no exception.  When we were done, I rebooted.  For some reason, I got a BSOD partway through the bootup process.  This, and other BSODs that I would still get sometimes (primarily during bootup), suggested that I might still have an unresolved hardware conflict.  But as with most of those other startup-BSOD instances, the system sailed on through to Normal Mode on the second try.
+
+The MF5730 was now detected as a scanner in Acrobat.  But an attempt to use it resulted in the same error message.  At this point, I had another tech support message from Canon:
+<span style="font-size:85%;"><span style="font-family:courier new;"></span><span style="font-family:courier new;"></span></span><blockquote><span style="font-size:85%;"><span style="font-family:courier new;">Thank you for writing to us. We value you as a Canon customer and appreciate the opportunity to assist you. </span> <span style="font-family:courier new;">I recommend right clicking on the scanner driver in the Device Manager and clicking Uninstall to remove it. After this is done, Please try the following to resolve the issue: </span> <span style="font-family:courier new;">1. From the Windows desktop, right-click 'Start', then click 'Explore'. </span> <span style="font-family:courier new;">2. In Windows Explorer, click 'Tools', then click 'Folder Options'. </span> <span style="font-family:courier new;">3. Click the 'View' tab. </span> <span style="font-family:courier new;">4. Be sure that the 'Show hidden files and folders' radio button is selected, then click 'OK'. Close the Folder Options and Explorer windows. </span> <span style="font-family:courier new;">5. Click 'Start', 'Search' and select 'For Files or Folders'. </span> <span style="font-family:courier new;">6. At 'Search Results' window, type oem*.inf in 'Search for files or folders named' field. </span> <span style="font-family:courier new;">7. In 'Containing text' field, type canon. </span> <span style="font-family:courier new;">8. At 'Look in' drop-down menu, confirm your computer's hard drive is selected. In most cases, C: is the computer's hard drive. </span> <span style="font-family:courier new;">9. Click 'Search Now' button. </span> <span style="font-family:courier new;">10. Once search has completed, if a file is listed under 'Name' column, double-click to open it. </span> <span style="font-family:courier new;">11. Verify the model name appears in the document, close the file and then proceed to step eight. If the model does not appear in that .INF file, please close the file without saving it. If another file is listed, open that .INF file and check if the model name appears. If the model does not appear in any of the INF files, proceed to section 'Update Driver'. </span> <span style="font-family:courier new;">12. If the model name does appear in the .INF file, note the number in the file name and then right-click the file and select 'Delete'. </span> <span style="font-family:courier new;">13. At 'Confirm File Delete' dialog box, select 'Yes'. </span> <span style="font-family:courier new;">14. There will be a corresponding .PNF file with the same number as the .INF file. Search for and delete the .PNF file in the same manner. </span> <span style="font-family:courier new;">15. At 'Confirm File Delete' dialog box, select 'Yes'. </span> <span style="font-family:courier new;">16. After the files have been removed, close the 'Search Results' window. </span> <span style="font-family:courier new;">Remove and reseat the USB cable on the printer. At this point the scanner should be redetected. Does the exclamation point return? </span> <span style="font-family:courier new;">Please let us know if we can be of any further assistance with your MF5730.</span></span>
+</blockquote>Of course, the state of <span style="font-family:georgia;">affairs t</span>o which the Canon technician was responding was now ancient history.  But like history within the larger web of the eternal recurrence, in some ways we were now back at a landscape that the Canon tech just might have recognized from long ago.  After <span style="font-family:georgia;">updating Canon on what I had tried, and after going through their steps, I reported that I did</span> still have a yellow mark next to the MF5730 in Device Manager, only this time it was a yellow question mark with no properties available for the device.
+
+This time, I did not receive a very prompt reply from Canon.  It took several days.  But then they got back to me with this advice:
+<pre><blockquote>Thank you for your response.  Sorry to hear the issue remains.
+
+It is recommended to do the following:
+
+A. First, please disconnect any other printers you may connected to your
+computer to isolate the Canon unit.
+
+B. Remove the Canon listing under Other Devices in Device Manager
+
+C. Remove the USB Printing Support from the Universal Serial Bus
+Controllers Listing in Device Manger
+
+D. Uninstall the current driver via the 'uninstall' option under the
+Programs Listing via the Start menu
+
+E. Disconnect the usb cable from the printer.
+
+F. Set the unit to selective startup mode.  Below are steps to assist
+you:
+
+Follow these steps to keep background programs from starting
+automatically when you start your computer.  This can help to avoid
+possible software conflicts during the installation process:
+
+1.  Click "Start".
+2.  Click "Run".
+3.  Delete any text in Run box.
+4.  Type the following:   msconfig
+5.  Click "OK".  The System Configuration Utility will appear.
+6.  Click on the box in front of Selective Start up.
+7.  Remove the check mark in front of Load Start Up Group Items.
+8.  Click on Apply and then "OK".
+9.  A message will prompt you to restart the computer.
+10. Once restarted, you may see the utility again.  Click "OK".
+11. One to two more utility screens may appear depending on the version
+of WinXP you are running.  If you have a "Exit Without Restarting"
+option, click the button.  Otherwise you will have another "OK" option
+(Click) and then the option to Exit Without Restarting.
+
+NOTE: This will temporarily close all applications running in the
+background.
+
+Try the installation process again using the downloaded printer driver
+(firmware update not needed) attaching the USB cable when prompted by
+the software.  Follow with a test print.
+
+You will want to reset your computer to its original startup mode in the
+System Configuration Utility:
+
+1.  Click "Start".
+2.  Click "Run".
+3.  Delete any text in Run box.
+4.  Type the following:   msconfig
+5.  Click "OK".  The System Configuration Utility will appear.
+6.  Click on the box in front of Normal Start up.
+7.  Click on Apply and then "OK"
+8.  A message will prompt you to restart the computer.
+
+Try scanning.  If successful, the issue is due to a software/device
+conflict.  A process of elimination will have to be performed to
+determine which application or device is causing the interference.
+
+Should the issue remain, it is recommended to contact our live
+technicians via the Personal Copier Technical Support at 1-800-828-4040,
+8A-8P EST or 10A-8P EST, Saturday for further direct support is
+narrowing down the cause of the issue for you.  At the time of your
+call, please be near your unit and have the 8 digit serial number from
+the back of the unit handy.
+
+We hope this information is helpful to you.  Please let us know if we
+can be of any further assistance with your MF5730.</blockquote></pre>I set a system restore point and then proceeded exactly according to their advice.  I got two or three BSODs (and on this system, BSODs always seemed to be too fast to read before going into an automatic reboot) before I was able to progress past step 11 and its instructions regarding the Exit Without Restarting option.  The downloaded printer driver, by itself, did not prompt me to install the USB cable.  For that, I would have had to uninstall and reinstall the Toolbox.  Since their instructions had not called for me to remove Toolbox, I saw that it was still present in Add or Remove Programs; therefore I did not reinstall it.  Instead, I just plugged in the USB cable after finishing with the driver installation.  Unfortunately, I still got a message indicating that the hardware installation did not complete properly.  I rebooted back into Normal Mode and tried scanning.  Again, as before, I got the "Cannot communicate with scanner" message, as described above.
+
+So on the next business day, I called Canon's tech support at 800-828-4040.  With little delay, I got a very helpful and knowledgeable guy with a strong Indian accent.  He had a couple of suggestions:  (1) Maybe I got a bad download.  Try downloading the driver again and reinstall it.  (2) See if I can scan using a different computer.  (3) Since it turned out that I had plugged the scanner into an extension from my motherboard (i.e., a cable running from a socket on the motherboard to a faceplate on the back panel of the computer), try uninstalling and reinstalling the software with the computer plugged directly into one of the USB sockets that are wired into the motherboard.
+
+I didn't think the third suggestion was likely to make much difference.  I had another USB device plugged into another USB port on that same faceplate, and it was working fine.  I also told him I didn't see what help there would be from finding that my laptop could scan, because I needed to be able to do scanning on my desktop.  Nonetheless, to humor him, I tried these things.  I had already installed some version of the MF5730 software on the laptop, so it just took a second to plug in the USB cable and, sure enough, it scanned just fine.  So the problem wasn't in the MF5730 hardware or firmware as updated.
+
+To try the two other suggestions, I uninstalled all Canon hardware and software from the desktop computer, ran CCleaner and AWC, downloaded and installed new copies of the latest driver and Toolbox software, and plugged the USB cable into the preferred USB port at the appropriate time.  This time, I varied the approach by doing a cold shutdown and leaving the machine off for more than a minute (actually, more than an hour) before rebooting to install the new download of the driver and Toolbox.  I also re-ran AWC after booting and before installing, and saw that it found no new registry problems.  Another variation was to install the Toolbox first, then the driver.  I also thought maybe I would vary the approach by rebooting again, after installing the software and before plugging in the USB cable.  Then I thought about rebooting into Safe Mode and trying it again there.  So I did that.  Then, in Safe Mode, I took a deep breath, plugged in the cable, and waited for the inevitable indication that there was a hardware problem and my scanner might not work properly.
+
+That's not exactly what I got.  What I got was this:
+<blockquote></blockquote><blockquote>Found New Hardware Wizard
+
+Cannot install this hardware.
+There was a problem installing this hardware.
+
+CanonMF5730
+
+An error occurred during the installation of this device.
+The RPC server is unavailable.
+Click Finish to close the wizard.
+</blockquote>Then I got a Found New Hardware bubble, down by the taskbar.  This one was different from the ones I had gotten during previous attempts, however.  This one said, "Your new hardware is installed but might not work properly until you reboot."  This was encouraging, if only because it was different from what I had gotten before.  So I rebooted into Normal Mode.  As the system was settling into Normal Mode, I got two familiar Found New Hardware bubbles, down by the taskbar.  I say they were familiar because I think I had seen them on previous installation attempts.  They varied only slightly:  both referred essentially to the "CanonMF5730" (with or without spaces).  What was more interesting was what I <span style="font-style: italic;">didn't</span> get, namely, a bubble telling me that my installation had failed.  I also got one other thing that I hadn't seen before.  It was a dialog box with these contents:
+<blockquote>Just-In-Time Debugging
+
+Please select a debugger.
+Possible Debuggers:
+New instance of Microsoft Script Editor [only option shown]
+[Check box containing option to] Set the currently selected debugger as the default.
+
+Do you want to debug using the selected debugger?
+</blockquote>I didn't know whether this dialog related to the MF5730.  It seemed like it might, since that was substantially the only change in the system since the previous bootup.  I ignored this debugging dialog for the moment and went into Device Manager.  There, I saw that, unfortunately, the Canon MF5730 still had a yellow exclamation circle next to it.  I printed a page; the printing part of the MF5730 worked fine.  I tried scanning a page into Acrobat; once again, I got the "Cannot communicate with scanner" message.  I concluded that all of these variations had not made any difference, and I was concerned that I had used up the last of what Canon could recommend.
+
+I called Canon (800-828-4040) again.  The guy I spoke with didn't know if the debugger was related to this issue.  So he and I got back to a place we had seen before, which was that, after pointing Device Manager to the driver and going through the install process, I got an error dialog reading thus:
+<blockquote>Hardware Update Wizard
+
+Cannot Start this Hardware
+
+There was a problem installing this hardware:
+Canon MF5730
+
+Windows cannot start this hardware device because its configuration information (in the registry) is incomplete or damaged. (Code 19)
+</blockquote>We then went through some of the same things that I had tried previously.  A somewhat new approach, this time around, was to go into Start &gt; Run &gt; msconfig &gt; Services &gt; Hide all Microsoft services.  However, the system did not seem to swallow this -- it objected that I did not have administrative privileges -- and in any event this effort made no difference in the outcome.  The Canon technician's conclusion was that there was a problem in Windows that was preventing the driver from loading properly.  Having gone through variations on the Canon software installation scheme for at least a dozen times, it seemed likely to me that the problem was a non-Canon one.
+
+My next step was to reinstall Windows, in hopes that I would then have a normal system.  That story appears on a later post here in my blog.
+
+*****************************************
+
+If you have found this post useful, please post a comment saying so.  Thanks!</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
+**Thomas**:
+I was rivited and left hanging when your post ended regarding the MF5730 scan issue you were having. I have the MF5770 and have had to reinstall the driver and MF Toolbox numerous times only to find the next day that MF Toolbox can no longer communicate with the scanner. I am only able to scan using Window's "Sanner and Camera" Wizard in Control Panel. I was hoping to find a solution in your post but am unable to locate it.
+
+**Ray**:
+Thomas -- first, let me express my admiration for your ability to read that long post and remain interested.  I was logging the blow-by-blow events, but as you can tell, it just went on and on ...What I ultimately had to do was to give up.  I was getting nowhere.  I decided it would be faster to start from scratch than to spend days and days fooling with this.  So I reinstalled Windows XP from scratch.That did the trick.  In the process of normal installation of the operating system and the printer drivers, the problems cleared up.  It may have helped that, by that point, I had sold the CanoScan 8400F, thereby removing one complication from the system.I hope that helps!
+
+**raywood**:
+Thomas e-mailed back to say this:I purchased a MF5770 and am relatively pleased with it.  The only issue I have is that MF Toolbox forgets where the scanner is and it is difficult to get communications re-established.  Once the problem reappears, neither the buttons on the scanner or the MF Toolbox interface will initiate a scan.  The problem occurs very frequently (possibly daily) and the corrective action is still not clear.  The Windows “Scanner and Camera” wizard has no trouble finding and operating the scanner so it appears to be a problem with MF Toolbox although I’m not sure how.The MF5770 is connected to a small business server running Server 2003 and reinstalling the OS is not an option.
+
+**ray**:
+My reply, in that case, is that sometimes I got the Toolbox to work only by turning it on manually.  In other words, I would open the Toolbox interface and *then* press the button on the machine.  But I don't think that's quite the situation you're describing.
+
+**Anonymous**:
+I've got the cannon mf5770 as well.  The functionality it promises are good but trying to get them to work reliably is an issue.  I've had so many probelm with paper settings, scanner problems (as above) and technical support is all but useless.  I would never buy another canon product. - from Australia
+
+**Anonymous**:
+Just add the path to the TWAIN files to your enviroment.Right click My Computer, select Properties | Advanced Enviroment Variables.Click on Path and Edit. For me, I entered, "C:\WINDOWS\twain_32\CNQL500" for a Lide 500F. Besure to add a ";" after the last item before you add this.
+
+**Anonymous**:
+Thank you so much for posting this. I only needed the 1st part. After all this time, and much internet searching, it turns out Windows Image Acquisition was the problem. It had been turned off in Services.
+

@@ -1,0 +1,214 @@
+---
+layout: post
+title: "RAM Drives, Pagefiles, the i-RAM, and Virtual Machines"
+date: 2007-06-25
+---
+
+<div class="post-body">
+<p>This is a report on my process in thinking about RAM drives, pagefiles, the i-RAM, virtual machines, and other things having to do with system RAM.  It represents merely an effort to log the questions that arose, and how I resolved them.  I have not attempted to make it very organized or publishable.  Some items reported early did not come to mind until later, and vice versa.
+
+* * * * * *
+
+I was trying to decide what to do about RAM.
+
+Since I was bumping up against capacity limits in several areas, I decided to move to a new level in my motherboard.  I ordered a replacement for my old Pentium 4 2.4GHz mobo using 2GB of 400MHz DDR RAM.  The new motherboard used a Core 2 Duo processor with 2GB of 800MHz DDR2.  Of course, the new mobo featured a number of other improvements that have come on the scene since the Pentium Socket 478 era.
+
+This was where the RAM question arose.  As I say, I had not increased the amount of RAM.  But there were indications that I should.  It did seem that video editing and other combinations of programs were pushing up against some limits, even with 2GB.
+
+A particular problem was my pagefile.  I was getting lots of hard drive activity.  As I recalled, there were multiple possible explanations for that, but it did seem to vary according to workload:  silent when I was not using the system, very active when I was doing video editing or keeping lots of programs open, along with (sometimes) dozens of tabs in Firefox.<a href="https://web.archive.org/web/20190906053846/http://digg.com/hardware/How_Much_RAM_Do_You_Really_Need__2"></a>
+
+So I wondered if I could put my pagefile into RAM, possibly in a RAM drive, rather than having my pagefiles on hard drives.  As mentioned above, I had just ordered 2GB of good DDR2 800MHz RAM.  If I filled out my motherboard's four RAM slots with two sticks of cheaper RAM, they would drag down the performance of the two good sticks I already had.  So at this point, if I was going to fill all four slots, I was already somewhat obligated to buy another two sticks of the more expensive RAM.
+
+There would also be a problem if I would need the pagefile (and therefore the RAM drive) to be larger than 2GB.  That would entail reducing, below 2GB, the amount of system RAM left for WinXP to use, since all four of my RAM slots would be full with a total of 4GB.  This was exactly the wrong direction, for me.  If anything, I wanted to keep those second two RAM slots empty, in case I did upgrade to a 64-bit operating system (i.e., WinXP Professional x64 or Vista) and install more system RAM.
+
+My impression was that, most likely, I would want the RAM drive to be larger than 2GB.  It would need to accommodate my pagefile, and I also thought I might put various caches there.  It wouldn't need to be huge, but I would probably find a use for at least several gigabytes of temporary working RAM drive space.
+
+Also, I came to realize that, for purposes of a RAM drive, I probably did not need cutting-edge performance.  Any RAM drive would be much faster than a mechanical hard drive.  What I needed was just some form of RAM, and apparently it would have to be located somewhere other than in the motherboard's four RAM slots.
+
+I had heard that Vista has a RamBoost feature that allows users to employ USB flash drives to provide an assist to the pagefile.  I ran across some comments suggesting that this feature might not actually be all that helpful.  One reason, it seems, is that random writes in flash memory are very slow.  There was also the concern that, unless your drive employs a wear leveling scheme (which I think is not standard on basic USB flash drives), you can quickly wear out a flash drive.  Apparently the usual kind of flash memory dies after something like 100,000 read-write cycles.  If there's one thing I'd expect to find in a pagefile, it's a lot of reading and writing.  For such reasons, I didn't think it would work to just set up my RAM drive, with my pagefile, on an 8GB flash drive.
+
+About this time, I came across various indications that people have been busily inventing a variety of exotic drives.  I found a list of them at DV Nation (<a href="https://web.archive.org/web/20190906053846/http://www.dvnation.com/nand-flash-ssd.html">http://www.dvnation.com/nand-flash-ssd.html</a>).  Among other things, it seemed that Samsung and other manufacturers had been working on developing larger-capacity (e.g., 32MB and 64MB) flash drives with greatly improved read times.  I still wasn't confident that a flash drive would fare well with the constant writing of a page file, which was my focus at this point.  These drives also seemed pretty expensive. 
+
+I figured that, in a year or two, I would probably be able to choose from a selection of affordable flash drives that would be large enough to install the whole operating system on.  Not too many people seemed to be doing that sort of thing now.  So for the time being, my primary concern was just on this matter of setting up a suitable RAM drive.
+
+Otherwise, among the various exotic drives that I had found, I was interested in Gigabyte's GC-RAMDISK, which they had previously been calling the i-RAM.  I read several reviews on it.  It was a PCI 2.2 card with slots for four RAM sticks, up to a total of 4GB.  It had a SATA connector that would let it function just like a regular disk drive.  RAM sticks have the advantage, over flash RAM, of being designed for the constant reads and writes that would occur in a pagefile.
+
+People found the i-RAM impressively fast, though expensive and suffering from some limitations.  It seemed that it had become less expensive since its launch, circa 2005, which was when those reviews had been published.  I also felt that, for my RAM drive purposes, its limitations were not significant.
+
+Evidently Gigabyte displayed an updated version of the i-RAM (which seems to be what most people still call it) at Comdex in 2006.  At that point, they apparently thought they would have it on the market within a few months.  As of now, mid-2007, it has still not materialized.  It may show up any day; or maybe Gigabyte has decided that flash drives will crush the i-RAM within a year or two.  For whatever reason, as of now, there does not appear to be an i-RAM 2, and I'm not sure there ever will.
+
+One limitation that people mentioned was that the i-RAM would accommodate only 4GB of RAM.  That seemed adequate for my present needs, though.
+
+Another limitation was that the i-RAM used DDR rather than DDR2.  But this, too, was alright with me:  I still had the two DDR sticks from my previous motherboard.  So it seemed, for a while, that I might have to buy only two more.  My two old modules had heat spreaders on them, but in one of the reviews I saw a photo of how the reviewers had managed to jam in four RAM modules with heat spreaders, even though Gigabyte said not to.  That was just as well, because some webpages said that it could be difficult to do so.  I figured I'd get two sticks without heat spreaders, and just intersperse them between the two modules I already had.  After all, the reviewers had shown photos of assorted RAM modules crammed into the i-RAM in no particular order.  Its bottleneck was in the SATA connection, not in the 200MHz (PC 1600), or 266MHz (PC 2100), or 333MHz (PC 2700), or 400MHz (PC 3200) RAM that it could accommodate according to Gigabyte's website.
+
+I wasn't sure whether the doubled speed potential of a SATA-II connector would have created a highly different situation, heat-wise.  I think not.  Otherwise, I doubt that the prototype i-RAM 2 displayed by Gigabyte in 2006 would have been designed to fit in a disk drive bay.  Probably it wouldn't get much hotter than a hard drive.
+
+I found the i-RAM for $119 at eWiz.  (If it's not available there anymore, somebody said it's also available at CyberSprint and PCSuperDeals, and I found it listed at eight other stores on PriceGrabber.)  This was actually cheaper than the offerings on eBay.  Before buying it, however, I did various searches for terms like "memory expansion card" and "memory board."  These turned up everything from digital camera memory cards to server components costing thousands.  To my surprise -- having bought a memory expansion card for my first PC in 1984 -- I did not find anything else quite like the i-RAM.  (I realized that an ordinary memory expansion board would not have the i-RAM's continuous power source.  Their contents would vanish when the machine powered down.  Since I was interested in cache and pagefile uses, that was OK for my purposes.)
+
+To populate the i-RAM, I went looking for what I was sure would be cheap RAM.  Much to my surprise, Newegg, and the merchants listed on PriceGrabber generally, were asking $50+ per stick, even if I was just looking for the oldest, slowest RAM that would work.  Instead, I searched eBay for Samsung RAM (after doing a small search to support my sense that Samsung produced quality RAM), so as to cut through the hundreds of no-brand RAM ads posted by other eBay sellers.
+
+There didn't seem to be much price difference between the various flavors of old Samsung RAM offered for sale on eBay.  I could get a pair of 400MHz sticks for about $78 (including shipping).  It developed that my existing 400MHz modules were worth $120 or more.  So I figured I would sell those and buy two pairs of the cheaper stuff, for a net cost of about $35 (i.e., 2 x $78 minus $120).  This would give me 2GB of fast 800MHz system RAM plus 4GB in the i-RAM.
+
+If I went the other route, I would have a total of 4GB of system RAM, and no i-RAM.  Having already ordered two 1GB sticks of 800MHz RAM, I would have to order two more.  Bizarrely, their price -- $89 on sale at Buy.com -- was less than the $120 I would get from selling my used 400MHz sticks.  So the additional cost of this route was a negative $30 -- that is, a profit from selling the old and buying the new.
+
+In short, I was looking at a $185 price spread (spending $155 for the i-RAM plus 4GB of 400MHz RAM, as compared to a $30 profit) between the two alternatives.  At this point, before going any further, I decided I had better verify some of my assumptions about page files and RAM drives.
+
+First, I noticed that some sites recommended setting the page file minimum and maximum to the same size, so as to save WinXP the trouble of constantly resizing the file.  Regardless of the wisdom of that advice, which was disputed, at least it seemed that I could set the page file at a size that would definitely fit within my RAM drive.  The question, in my mind, was whether the resulting page file would hold everything that the processor would be working on at any given point, so as to avoid making the system go all the way back out to wherever it would go if there is insufficient physical and virtual RAM.
+
+Some people advised allowing the system to manage the page file; others recommended specifying a page file of 1.5 to 3 times the size of RAM.  If that latter recommendation was accurate, then plainly it would be important to go with the 6GB i-RAM solution rather than just add two more 1GB memory modules to the system.  On this question, Microsoft said that 1.5 is "the normal recommendation."  See <a href="https://web.archive.org/web/20190906053846/http://support.microsoft.com/?kbid=555223">http://support.microsoft.com/?kbid=555223</a>.  Microsoft also said (at <a href="https://web.archive.org/web/20190906053846/http://www.microsoft.com/technet/prodtechnol/windows2000serv/reskit/prork/prec_evl_bsaq.mspx?mfr=true">http://www.microsoft.com/technet/prodtechnol/windows2000serv/reskit/prork/prec_evl_bsaq.mspx?mfr=true</a>) that the system default value in Windows 2000, at least, was 1.5 times the amount of physical RAM.  On that page, Microsoft also stated that efficiency is indeed increased if you set the initial and maximum to the same value.
+
+Microsoft also said, on that page, that you could improve efficiency by setting up multiple page files, if you had multiple hard drives.  I wasn't sure how that would work in my case, where I would set up one page file in RAM and would then have to set up the other on a hard drive.  Maybe restricting the size of the hard drive page file would provide some relief while keeping most of the burden on the RAM drive.  Possibly I could have used a flash drive instead of the hard drive; maybe sharing the burden would extend the life of the flash drive.  But it wouldn't make it any faster on writes.
+
+Several webpages reminded me that, if you have enough RAM, you don't need as much of a page file.  The system won't be swapping things out of RAM to a page file as long as there is still some free RAM.  So the question of page file size was this:  will a total of 4GB of RAM (i.e., 2GB available to WinXP, plus 2GB in a RAM drive) be sufficient for the things that I am doing, or will I need more?  I was not inclined to spend $185 without knowing the answer, and I was not sure how to find the answer. 
+
+So at this point I decided to hold off on the i-RAM purchase, choosing instead to go with the purchase of the extra 2GB in system RAM from Buy.com.  It belatedly occurred to me that, of course, this would also be the much more sensible approach for purposes of planning for the future.  Eventually I would probably be using an operating system that would need at least 4GB of system RAM (plus whatever flash drives or whatnot might be available as RAM supplements by then).
+
+Having seen the matter in that light, I suddenly realized that I had been just assuming that I had to fill my new motherboard's four RAM slots with 1GB modules.  Checking the documentation, I found that the system would actually accommodate a total of 8GB.  I think I had assumed that 2GB modules would cost more than they were worth; but now that I had looked down the barrel of spending $185 to insure that I would have enough RAM for a RAM drive, I was not so sure.  Checking around, I found that, at Newegg, after rebate, I could get two 2GB modules of Corsair 800MHz DDR2 for $229.
+
+That was a lot more than the total of $160 that I was looking at paying, after rebates etc., for the two 1GB modules that I now had on order plus the other two that I was preparing to order.  Was it worth $70 extra to have the option of keeping two slots open, so that I could add more RAM later?  This, I realized, was not really the question I had spent all this time considering.  What I wanted to know was, how much would it cost me to have a total of 6GB of RAM?  The answer:  $185, plus the two 1GB modules already on order, if I went the i-RAM route; or $229, plus the two 1GB modules on order, if I beefed up system RAM with an additional two 2GB modules.  Basically, it seemed I was doing my best to invent the fastest and most expensive RAM drive imaginable.
+
+Then I noticed that the timings of the 1GB modules did not match those of the 2GB modules.  The former were of the faster 4-4-4-12 variety; the latter were of the slower 5-5-5-18 sort.  One or two webpages confirmed my fear that this incompatibility could (not necessarily *would*) enhance instability.  At best, the new ones would wipe out the speed advantage I had anticipated from the ones on order. 
+
+This matter of timings had not been a concern when I was considering the i-RAM approach.  There, RAM timing did not matter.  Certainly I was not inclined to spend the extra $70 for what might be a less stable system, just for the privilege of holding one or two memory slots open for some future date when I might (but probably would not) replace the 1GB modules with 2GB modules.  By then, more likely, I would be buying a 16GB flash drive to hold, in a large page file, whatever didn't fit within RAM.
+
+An alternative was to buy three 2GB modules, rather than two (assuming the system would work if I didn't add RAM modules in pairs).  They would all match, and they would hold one of my four slots open for future expansion, and they would give me the desired 6GB of RAM.  They would be slower, though; and even after taking into account the cancellation of my order for two 1GB modules, I would still have to spend approximately $300 for this solution (or a little less if I chose to order two 2 GB modules plus two matchingly slow 1GB modules -- though, honestly, this memory was going to be really fast in any case).
+
+So it looked like I had really talked myself out of all other options, and therefore would just order a second set of 1GB modules to match the set that was on order.  This would not give me the desired 6GB of RAM.  So the problem remained unsolved on the hardware side.
+
+I decided to let that issue sit for the moment.  Meanwhile, I had things to figure out on the software side.  How, exactly, would a person set up a RAM drive in Windows XP?
+
+I found numerous Ram disk programs, as follows:
+
+(1) Cenatek's RAMDisk XP:  $25 from
+<a href="https://web.archive.org/web/20190906053846/https://www.cenatek.com/store/product_info.php?products_id=23&amp;osCsid=d91950794c72649e32ff47eafca2d04a">https://www.cenatek.com/store/product_info.php?products_id=23&amp;osCsid=d91950794c72649e32ff47eafca2d04a</a>
+(Many older links also lead to a Cenatek page at <a href="https://web.archive.org/web/20190906053846/http://www.cenatek.com/product_ramdisk.cfm">http://www.cenatek.com/product_ramdisk.cfm</a>, but that page has apparently changed.)  A key is required for installation.  They specify a maximum 4GB drive on XP.  I was not sure if that meant 4GB in addition to the 4GB that WinXP could supposedly recognize.
+
+(2) RamDisk 2.4, which appears different from the above but is not explained very well, except to say that its size is limited only by Windows and available physical memory:  $35 from
+<a href="https://web.archive.org/web/20190906053846/http://www.winsoft.sk/ramdisk.htm">http://www.winsoft.sk/ramdisk.htm</a>
+
+(3) AR Soft:  cited by many, with caveats about backing up your data before using it; apparently no longer maintained but still available from <a href="https://web.archive.org/web/20190906053846/http://majorgeeks.com/download1356.html">http://majorgeeks.com/download1356.html</a>
+Installation instructions at <a href="https://web.archive.org/web/20190906053846/http://www.mdgx.com/newtip12.htm">http://www.mdgx.com/newtip12.htm</a> and <a href="https://web.archive.org/web/20190906053846/http://www.fiveanddime.net/windows-vista-notes/ram-disk-howto.html">http://www.fiveanddime.net/windows-vista-notes/ram-disk-howto.html</a>
+
+(4) QSoft's RAMDisk Enterprise Lite:  $12 from <a href="https://web.archive.org/web/20190906053846/http://www.ramdisk.tk/">http://www.ramdisk.tk/</a>
+Described at <a href="https://web.archive.org/web/20190906053846/http://www.surasoft.com/articles/ramdisk.php">http://www.surasoft.com/articles/ramdisk.php</a> as being easy to install and allowing for changes of RAM disk size without rebooting.
+
+(5) RamDisk and RamDiskPlus from SuperSpeed:  $35/50 from
+<a href="https://web.archive.org/web/20190906053846/http://www.superspeed.com/desktop/ramdisk.php">http://www.superspeed.com/desktop/ramdisk.php</a>
+Certified by Microsoft.  Reviewed at <a href="https://web.archive.org/web/20190906053846/http://www.pcmag.com/article2/0,1759,15632,00.asp">http://www.pcmag.com/article2/0,1759,15632,00.asp</a>
+RamDiskPlus includes, among other things, a backup feature that optionally saves the contents of the drive to a hard disk on shutdown and automatically restores them on reboot.  (This would be valuable if, someday, I would be using this program to boot my operating system from a larger RAM drive; I might have to be keeping its contents on a hard drive on those hopefully infrequent occasions when I would have to shut down the system.)
+
+(6) Apparently there is a RAM drive feature in Tweak-XP.  See
+<a href="https://web.archive.org/web/20190906053846/http://www.soft32.com/Download/free-trial/TweakXP_Pro/4-555-5.html">http://www.soft32.com/Download/free-trial/TweakXP_Pro/4-555-5.html</a>
+Instructions at <a href="https://web.archive.org/web/20190906053846/http://www.tweakxp.com/article37323.aspx">http://www.tweakxp.com/article37323.aspx</a>
+
+(7) Ramdisk Driver:  free from
+<a href="https://web.archive.org/web/20190906053846/http://www.speedguide.net/read_articles.php?id=131">http://www.speedguide.net/read_articles.php?id=131</a>
+Seemingly simple instructions on creating a RAM drive in Windows 2000/XP/2003.
+
+I also found several programs that looked like non-starters:
+
+Microsoft Sample Ramdisk.sys Driver for Windows 2000
+<a href="https://web.archive.org/web/20190906053846/http://support.microsoft.com/kb/q257405/">http://support.microsoft.com/kb/q257405/</a>
+Instructions for making it bigger appear at <a href="https://web.archive.org/web/20190906053846/http://cyberwizardpit.net/article3.htm">http://cyberwizardpit.net/article3.htm</a>.  Even then, though, it is limited to 32 MB.  Apparently not recognized by some programs because it does not identify itself as a hard drive.
+
+RamDiskNT:  may be free (but cannot create a drive larger than 30MB) from
+<a href="https://web.archive.org/web/20190906053846/http://cyberwizardpit.net/article3.htm">http://cyberwizardpit.net/article3.htm</a>
+
+VM Back:  allows you to mount a VMware virtual disk and use it as a virtual disk drive.  Since I don't know VMware, I can't tell if you have to have VMware to use it.  Free, from
+<a href="https://web.archive.org/web/20190906053846/http://chitchat.at.infoseek.co.jp/vmware/vdk.html">http://chitchat.at.infoseek.co.jp/vmware/vdk.html</a>
+
+RAMDisk WindowsXP:  nobody home at <a href="https://web.archive.org/web/20190906053846/http://www.xp-erience.org/">http://www.xp-erience.org/</a>
+Comments at <a href="https://web.archive.org/web/20190906053846/http://forum.osnn.net/archive/index.php?t-14463.html">http://forum.osnn.net/archive/index.php?t-14463.html</a>
+
+There were also a number of other postings in various discussion forums, addressing the question of how to tweak some RAM drive possibilities (notably, the free one from Microsoft that is limited to 30MB) to make them work, or to change their functioning (e.g., <a href="https://web.archive.org/web/20190906053846/http://www.mdgx.com/newtip12.htm">http://www.mdgx.com/newtip12.htm</a>).  Most of those seemed to date from around 2001-2002.  I also encountered some warnings that made me a little nervous about using some of these approaches.  Example:  "Installing the Ramdisk sample driver in a NTFS-only machine might make it unusable."  Not sure if "it" refers to the Ramdisk or the whole machine.
+
+In reviewing these webpages, I was most impressed with RamDiskPlus.  Its webpage indicated that the maximum supported RAM disk would be about 3GB.  Apparently, then, at least in their case (and perhaps in all cases), RAM drives in WinXP Home (and in WinXP Professional 32-bit) would be taken out of system RAM, of which there could be a maximum of 4GB.  (In Windows XP Professional x64 and other 64-bit operating systems, the maximum would be 127GB.)
+
+Now, suddenly, it seemed that the i-RAM memory could not be made into a RAM drive because it was not part of system RAM; it was just RAM that behaved like a drive.  Moreover, you wouldn't need to set up a RAM drive within the i-RAM; you would just *use* the i-RAM.  If the i-RAM got designated as drive E, then you would just set your pagefile and various caches to be on drive E, as someday supplemented or replaced by i-RAM 2 and/or by a flash drive.
+
+This wasn't the way Wikipedia had talked about RAM drives:  they had used the i-RAM as an example of a RAM drive.  And well they should.  It is, after all, a drive consisting of, or based on, RAM.  But this didn't seem exactly like the concept of a RAM drive (i.e., based on *system* RAM) that emerged from the foregoing review of RAM drive software.
+
+Wikipedia's distinction, at this point in time, was between a software RAM drive (i.e., what the foregoing programs try to do) and the hardware RAM drive, like the i-RAM.  So one conclusion seemed to be that a software RAM drive would be limited by the operating system's ability to recognize system RAM (i.e., 4GB, in the case of WinXP), whereas a hardware RAM drive would be limited by the system's ability to recognize hard drives (which means they can be vastly larger than 4GB).
+
+*************************
+
+Note:  I have been focused upon using a RAM drive to speed up my pagefile and caches.  It is also possible to use RAM instead of your hard drive to reduce the use of your laptop's battery (but remember that RAM drive data vanishes when you power down).
+
+For general info on RAM drives, see:
+<a href="https://web.archive.org/web/20190906053846/http://en.wikipedia.org/wiki/RAM_drive">http://en.wikipedia.org/wiki/RAM_drive</a>
+<a href="https://web.archive.org/web/20190906053846/https://answers.google.com/answers/threadview?id=771235">https://answers.google.com/answers/threadview?id=771235</a>
+
+For instructions on how to move your browser cache and cookies to the RAM drive, see
+<a href="https://web.archive.org/web/20190906053846/http://www.surasoft.com/articles/ramdisk.php">http://www.surasoft.com/articles/ramdisk.php</a>
+
+*************************
+
+I returned to the question of whether the system could make use of the entire 4GB in WinXP, if I did decide to acquire that much in system RAM.  I had previously seen various opinions on the matter, but had not tried to get a definitive answer.
+
+Microsoft said that 32-bit Windows (including XP Home) could support up to 4GB of system memory.  It seemed, however, that Intel had developed a Physical Address Extension (PAE) that would allow developers to write software that would support more than 4GB.  (See <a href="https://web.archive.org/web/20190906053846/http://www.microsoft.com/whdc/system/platform/server/PAE/PAEdrv.mspx">http://www.microsoft.com/whdc/system/platform/server/PAE/PAEdrv.mspx</a>.)  So it stood to reason that a RAM drive developer could have written software that would allow for huge RAM drives in WinXP Home, using PAE.  But my review of RAM drive programs (above) did not suggest that anyone had actually done so.  (The webpage just cited raises the thought that limitations of specific motherboards may cause problems with use of PAE, so perhaps developers have not considered it worthwhile to develop something that would work only on some systems.)  More details at <a href="https://web.archive.org/web/20190906053846/http://www.dansdata.com/askdan00015.htm">http://www.dansdata.com/askdan00015.htm</a>
+
+Although I have been talking, here, about a 4GB RAM limit in WinXP Home, it began to appear that in practice XP Home would recognize only 2.7GB or 3GB, not 4GB, even if the system had 4GB installed.  See e.g., <a href="https://web.archive.org/web/20190906053846/http://techrepublic.com.com/5208-6230-0.html?forumID=101&amp;threadID=207567&amp;messageID=2146489">http://techrepublic.com.com/5208-6230-0.html?forumID=101&amp;threadID=207567&amp;messageID=2146489</a>.  Also, of the RAM that the system would recognize, it seemed that a large chunk was used by various pieces of hardware in the system.  See <a href="https://web.archive.org/web/20190906053846/http://www.petri.co.il/cannot_install_update_windows_vista_kb929777.htm">http://www.petri.co.il/cannot_install_update_windows_vista_kb929777.htm</a> and <a href="https://web.archive.org/web/20190906053846/http://techrepublic.com.com/5208-6230-0.html?forumID=89&amp;threadID=194927&amp;tag=rbxccnbd1">http://techrepublic.com.com/5208-6230-0.html?forumID=89&amp;threadID=194927&amp;tag=rbxccnbd1</a>
+
+One possibility was to upgrade, either to WinXP Professional x64 64-bit or Windows Vista 64-bit (apparently there was also a 32-bit version of Vista, which would not solve the problem).  From browsing various webpages, though, it seemed that many people were frustrated with those two operating systems, due to such factors as driver availability and Vista's enhanced security arrangements.  There also seemed to be some difficulties, even in the 64-bit versions of Vista, in getting that operating system to recognize a full 4GB of RAM.  See <a href="https://web.archive.org/web/20190906053846/http://support.microsoft.com/kb/929605#appliesto">http://support.microsoft.com/kb/929605#appliesto</a>
+
+This was an odd outcome.  It seemed that there existed these RAM drive programs to help you create RAM drives of up to 3GB in WinXP Home; yet there was no practical way to have enough RAM available that you could actually go ahead and set aside 3GB of RAM in a 32-bit Microsoft operating system (i.e., either WinXP Home or 32-bit Vista).  The only way I was going to have a multi-GB pagefile in a RAM drive was to use non-system RAM.  In that category, the i-RAM was my best candidate, unless I wanted to wait until flash drives matured.
+
+To review:  WinXP Home, as it had been functioning for me, needed more RAM.  I could give it about 0.7 GB more than the 2GB that had already been in my system.  But if that was not enough, it would resume its aggravatingly slow habit of swapping stuff out to a virtual page file on a hard drive.  My best alternative to that scenario was to spend hundreds to put the pagefile on a measly 4GB i-RAM drive.
+
+So I could define it as a hardware problem, and wait until superior flash drives or the i-RAM2 came out.  Or I could define it as an operating system problem, and find another operating system that would resolve it.
+
+I had been interested in WinXP x64, and also in the Ubuntu version of Linux.  It seemed likely that I could begin by using one of these operating systems (or 64-bit Vista) to recognize the full amount of RAM I had in the machine -- 4GB, 6GB, or whatever. 
+
+My fear was that those operating systems wouldn't run all the scads of programs, big and little, that hopefully make me more efficient during the day.  What I really wanted was to have my cake and eat it -- to have another operating system without these hardware limitations, and yet also to have WinXP Home for its convenience.
+
+This brought to mind the possibility of virtualization, where you set up your computer to run one operating system within another.  The introductory concept was to install a 64-bit OS first, and then install WinXP Home inside it.
+
+Since I was concerned about reports that these 64-bit operating systems do not tend to have all of the drivers that a person might need, my question was this:  if a 64-bit operating system recognized the RAM but didn't recognize my printer, could WinXP Home (installed as a guest operating system through e.g., VMWare or Microsoft's new, free Virtual PC 2007 -- see <a href="https://web.archive.org/web/20190906053846/http://arstechnica.com/news.ars/post/20060712-7251.html">http://arstechnica.com/news.ars/post/20060712-7251.html</a>) use its share of RAM (e.g., 1-2 GB) and also recognize the printer?
+
+If that would work, I could maximize system RAM rather than use i-RAM.  Or I might be able to set up the RAM drive in the 64-bit operating system, and then use it from within the 32-bit system.
+
+Starting in 1979, when I took my first computer class, I had been familiar with command-line operating systems.  I began with Unix at Columbia University.  I got my own IBM PC in 1983 and learned DOS.  It wasn't until the mid-1990s that I found it advisable -- necessary, I think, given Microsoft's abandonment of DOS in favor of Windows -- to switch to a graphic user interface (GUI).  I chose IBM's OS/2 over Windows 3.1, though I did pick up some 3.1 knowledge along the way.  Eventually, OS/2 didn't keep up, so I bit the bullet and switched to Microsoft Windows 95, where I proceeded to waste huge amounts of time on poorly written and very frustrating efforts to recover the kind of functionality I had learned to expect.  Windows 98 was an improvement, particularly when I discovered DriveImage as a tool for letting me roll back to a previous installation and try again.  I entirely skipped Windows ME and was very pleased with Windows XP when, at last, I found that it provided me with an operating system that would not crash so often, taking small or large amounts of my hard work along with it.  Windows XP does sometimes crash, but it has been a great improvement.
+
+Because of these various frustrations, I was interested in Linux since it first came out.  I was also interested in VMWare, which at this point was, apparently, the leading virtualization tool.  I had bought a copy of VMWare in the mid-1990s, but never used it.  Since then, from what I see at their webpage, VMware had come a long way.  And so had Linux.  It now appeared possible to install Ubuntu as a flavor of Linux that would not bog me down for extended periods of time with computer technicalities that I didn't want to learn.
+
+So I was prepared to install a 64-bit operating system, and make that the basis for my efforts to gain access to more RAM.  I felt that Ubuntu was up-and-coming, and that the Linux community would keep on developing it, whereas Windows XP x64 had pretty much died on the vine, as far as device drivers were concerned; and I just did not want, anymore, to be forced to learn whole new programs that did not improve my functionality. 
+
+That may seem odd to say -- for a longtime Windows user, Linux may seem to require far more learning than a new flavor of Windows -- but at this point things had begun to seem different.  I had noticed, in particular, that Office 2007 was a sharp departure from Office 2003, in which I was proficient.  Office 2007 seemed to have been designed for people who were not already familiar with office software.  It didn't seem to offer much new to me -- nor, I should say, to a great many others.  Likewise, it appeared that much of my investment of time in Windows XP would be overruled -- that, once again, I would have to start from scratch, investing large amounts of time to figure out solutions to problems that hadn't been problems until Vista came along.  I hoped for better from the seemingly greater continuity of the Linux approach.
+
+*************************
+
+Windows XP RAM Sites of Interest
+(potentially unnecessary, in light of Ubuntu decision)
+
+<a href="https://web.archive.org/web/20190906053846/http://support.microsoft.com/kb/889654">http://support.microsoft.com/kb/889654</a>
+<a href="https://web.archive.org/web/20190906053846/http://support.microsoft.com/kb/308417">http://support.microsoft.com/kb/308417</a>
+<a href="https://web.archive.org/web/20190906053846/http://www.windowsitpro.com/Article/ArticleID/42035/42035.html">http://www.windowsitpro.com/Article/ArticleID/42035/42035.html</a>
+<a href="https://web.archive.org/web/20190906053846/http://www.ozzu.com/ftopic23437.html">http://www.ozzu.com/ftopic23437.html</a>
+<a href="https://web.archive.org/web/20190906053846/http://www.velocityreviews.com/forums/t171899-page-file-in-xp-pro.html">http://www.velocityreviews.com/forums/t171899-page-file-in-xp-pro.html</a>
+<a href="https://web.archive.org/web/20190906053846/http://www.hardforum.com/showthread.php?t=820472">http://www.hardforum.com/showthread.php?t=820472</a>
+
+*************************
+
+So my preliminary plan was to install Ubuntu and then install a virtualization program over the top of that.  This seemed likely to mean VMWare.  From what I could see, VMWare was more professionally developed and managed and was more open to the involvement of Linux.  See <a href="https://web.archive.org/web/20190906053846/http://arstechnica.com/news.ars/post/20060712-7251.html">http://arstechnica.com/news.ars/post/20060712-7251.html</a> and <a href="https://web.archive.org/web/20190906053846/http://arcanecode.wordpress.com/tag/virtualization/">http://arcanecode.wordpress.com/tag/virtualization/</a>
+
+In any case, the solution that seemed to make the most sense, to me, was to try installing a 64-bit foundation (starting with Linux rather than Windows); and then, to get quickly back to my former level of functionality, to install Windows XP Home in a virtual machine on top of the 64-bit foundation. 
+
+For the memory situation, this did not necessarily mean an end to the pagefile question; it seemed that Linux uses swap files.  Also, I might not need as much RAM as had been necessary in Windows (because it seemed Linux had a reputation for using its resources more effectively), but I would need extra RAM for the virtual machine in which I would propose to run Windows XP Home.  But would Ubuntu require more than 2GB?  One user claimed that his Linux machine, with 512MB, rarely used its swap file, even with many programs operating at once.  See <a href="https://web.archive.org/web/20190906053846/http://digg.com/hardware/How_Much_RAM_Do_You_Really_Need__2">http://digg.com/hardware/How_Much_RAM_Do_You_Really_Need__2</a>.  As of two years ago, a number of other contributors had similar opinions -- see <a href="https://web.archive.org/web/20190906053846/http://www.linuxquestions.org/questions/showthread.php?t=305280">http://www.linuxquestions.org/questions/showthread.php?t=305280</a>
+
+I figured that 1GB would probably be enough for Ubuntu.  I wasn't sure how much WinXP Home would require inside a VMWare virtual machine.  While the RAM was on sale, I decided to go ahead and get the second set of 2GB modules.  This, I felt, would probably be all I would need in the machine.  By the time I needed more, flash drives or the i-RAM 2 would arrive to save me.
+
+It was kind of exciting to anticipate setting up virtual machines and saving and using them in the ways VMWare's webpage describes.  I wished I had one for operating systems gone by, if only to fire them up and recall what it used to be like to work on the computer.  It seemed like it could be handy to save one, now and then, in case I ever needed to use some ancient program from 2007 to open an old file.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
+**wassname**:
+Nice post! I've been researching the same thing and came to the same conlusion. Ramdisks are superior to iram in terms of speed. And the problem of data loss on reboot can be fixed by using a virtual machine.Seen any software that will queue to the harddrive a real time backup of the ramdisk incase of faliures?Which version of vmware will you use? (look into bare metal that uses a native vmware kernal to boot further operating systems instead of an underlying os to host vmware)Did you see anything good to reduce the size of an xp install so thta it can be run on a ram drive? (compression, reducing unnesecary components etc)Thanks, Wassname
+
+**raywood**:
+Thanks.  I continued working through these issues and posted some other items you may find interesting.  Try http://raywoodcockslatest.blogspot.com/search?q=vmwareThat's about all I know on the subject at present.  It's a very long answer, so you may want to Ctrl-F through it.I didn't pursue the idea of a reduced XP install.  It would be nice, but previous attempts to play with Windows tended to consume a huge amount of time and were not too stable.  But that was a while back.  XP may be different.  Might want to Google for XP tweaks to see what has developed there.
+
+**raywood**:
+Sorry.  That link again:http://raywoodcockslatest.blogspot.com/search?q=vmware
+

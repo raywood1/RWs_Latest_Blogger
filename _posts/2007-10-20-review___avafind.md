@@ -1,0 +1,21 @@
+---
+layout: post
+title: "Review:  AvaFind"
+date: 2007-10-20
+---
+
+<div class="post-body">
+<p><div class="snap_preview"><p>I have used the <a href="https://web.archive.org/web/20190906052243/http://www.think-less-do-more.com/avafind/" target="_blank">free download of AvaFind</a> for several years.  It is one of the most useful and trouble-free programs I have ever used.  Its purpose is very simple:  it finds files on my computer.  But it does so very easily and accurately.  I hit Shift-Esc from anywhere, and its window pops up.  I type in the name of the file I am looking for, and it finds it.  I double-click on the file’s name, and it opens.  Very easy!</p> <p>The search feature allows me to use multiple wildcards.  For example, a search for “simon*bridge*water” brings up the file that I have named “Simon &amp; Garfunkel–Bridge Over Troubled Water.mp3.”  The <a href="https://web.archive.org/web/20190906052243/http://www.think-less-do-more.com/avafind/info/" target="_blank">relevant webpage</a> describes other advanced and wildcard search options.</p> <p>The search engine does not search for file contents.  For instance, a search for “Uncle Henry” will not bring up the file named “Letter to Aunt Sally.doc” in which the words “Uncle Henry” appear; that search will bring up only those files that have “Uncle Henry” in their filename.  Thus, this search will not find files that <a href="https://web.archive.org/web/20190906052243/http://desktop.google.com/" target="_blank">Google Desktop</a> would find.</p> <p>One advantage of this approach is that AvaFind is updated much more quickly than Google Desktop (GD).  If I have moved a bunch of files and now want to delete the empty folder, GD will not let me; it will have locked the folder until it can finish moving.  GD is constantly improving, unlike AvaFind, which has not been updated since 2003.  But GD still imposes a burden on my computer, as it does its searching, whereas I never notice any slowdowns from AvaFind as it indexes my files.  Both programs’ indexes sometimes require a manual instruction compelling them to re-index the drive, but AvaFind’s simpler re-indexing is done within minutes, not hours.  Usually, the filename contains the information I am searching for, so I rarely need GD; and AvaFind is much faster to call up and use, so I always prefer it over GD.</p> <p>AvaFind allows me to block folders that I do not want to search.  That can include program directories as well as folders in which, for some reason, I have temporarily stored backups or duplicates of the files that I want to use and update.  The professional version of AvaFind ($39.95) lets you perform various Windows Explorer functions on the files you find.  I just bought my professional subscription, after years of thinking that I should pay them something but being unwilling to pay so much.  I once sent them an e-mail suggesting that they lower the price, because I did not think that I or other users would be prepared to spend so much for a single-purpose utility, but I never got a reply.</p> <p>The freeware version of AvaFind is powerful and has been incredibly useful for me, right on up through Windows XP, my current operating system, and I highly recommend it.  I also think the pro version will be worth my money.</p><p>Postscript:  the Pro version does add some features and makes life easier.  It would have paid for itself by now; I should have bought it a long time ago, despite its high price tag ($39.95 for a file-finding utility, unless you make what I consider the mistake of going for the $19.95 annual approach).
+</p><p></p>
+</div></p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
+**raywood**:
+I had this originally posted in my other blog.  There, someone named Donough posted this comment:"I’ve been using AvaFind religiously since 2002, but I’ve been having licensing problems. I have a single user, single version license, but recently it just delicenses the application without warning. I even went as far as to buy another license in the hope of fixing the problem. No joy though!I e-mailed the author directly from his domain whois, so I’m hoping he might have a fix, but it’s unlikely because he hasn’t updated it since 2003."
+
+**Anonymous**:
+hi Ray,Does Avafind detects hidden files too?
+

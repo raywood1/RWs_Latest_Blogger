@@ -1,0 +1,37 @@
+---
+layout: post
+title: "Speculation on Mass Relocation in the U.S."
+date: 2007-11-09
+---
+
+<div class="post-body">
+<p>This is another speculative piece.  I haven't researched it.  It's based on general reading.  It may be entirely mistaken.  The purpose of posting it is to advance thinking on the subject, for me and for anyone else who may read it.
+
+* * * * *
+
+Water is becoming increasingly scarce in large sections of the country.  There are no immediately obvious signs that this trend will reverse in the foreseeable future.  Desalination of ocean water could make a substantial difference at some point, but I understand that process is energy-intensive, the plants have not yet begun to be constructed, it is not clear how much that water would cost or how much would be available, and generally that solution is years away.
+
+The U.S. population continues to grow, from births and from immigration.  Much of that growth occurs in places like Los Angeles.  The present impression is that, at some point, water supply will fall short of water demand.  There will be some hardships.  Those will tend to fall especially on those who cannot arrange filtration, bottling, or other sources of water.
+
+Hurricane Katrina seemed to say that poor people will stay where they are, to some large extent, even if doing so will cost them their lives.  It is not likely that the entire populations of L.A. slums, barrios, and ghettos will pack up and leave town.  But for some lower-income families, greener parts of the country will seem very, very appealing, just as they do for a Chinese friend who views this greenery with eyes that have seen large quantities of barrenness and environmental degradation in her home country.
+
+L.A. generally is said to be due for a substantial correction in real estate prices.  It is not clear what will happen to those who then find themselves upside down, financially speaking.  Some of them will become renters and, as such, will be more mobile.  Given the growing odds of a recession, it is not clear whether, or when, large numbers of these people will once again be buying real estate in southern California.  They, too -- these members of the middle class -- may find themselves going elsewhere.
+
+In short, these forces -- water shortage, real estate price correction, recession -- may augur some migration of lower- and middle-income workers away from previous high-growth places like southern California (along with other western cities, e.g., Phoenix, Las Vegas).  It appears possible, then, that other cities will import some of the problems that places like L.A. have experienced in recent years.  Cities to the north and east may increasingly experience a different and more shocking kind of crime, for example, and a corresponding increase in police brutality. 
+
+Population pressures already exist in those other places:  many already have their own water concerns, for example, and many will be struggling to find jobs for the people who are already there.  A large migration is possible, though of course not certain; and if it did occur, one could expect some locals to put up legal and informal barriers against out-of-towners.  As an example of an informal barrier, some communities (in e.g., the Midwest) could witness a revival of the Ku Klux Klan, based upon fear of a perceived threat posed by incoming black or Hispanic people.
+
+There was something of an exodus from southern California in the 1980s, based (if memory serves) upon a reversal in the housing market.  In that instance, it seemed that transplants went especially to the Pacific Northwest and to Denver, though they also populated previously remote patches in places like Idaho and Montana.  That exodus may predict, to some extent, what would happen this time around.  But prices are not as low (in some of those northern locations) and water supplies are not as reliable (in e.g., Denver) as they were a quarter-century ago.  Sooner or later, if trends continue, water (and perhaps financial) pressures may scoot people along, either to the Northwest or to the Midwest.
+
+People who have been burned by real estate investments, and who perhaps bear the scars on their credit ratings, may not be in a position to bid up real estate to its former levels for quite some time.  Even if they were so inclined, they may lack the means.  In the present time of tightening credit, it appears that it will be many years before lenders return to their previous liberal attitude toward supplying mortgages.  Again, water is an issue, and <a href="https://web.archive.org/web/20190906053840/http://raywoodcockslatest.blogspot.com/2007/10/speculation-on-home-prices.html">as I commented previously</a>, so is the ability of municipalities to keep the basic services coming. 
+
+So it appears that there may be more demand for rental property than for ownership, for some time.  That demand may be increased if people become more concerned about retaining mobility -- about not being financially trapped again in, say, a house in San Diego or a condo in Tucson.  The concept of home ownership could thus, conceivably, be entering a period of long-term revision.  Depending on how things shake out, it could be decades before the general public re-embraces the notion that it is normal, natural, sensible, and affordable to buy a house.  That notion is still very much rooted in our culture, and it would take a lot to shake it; but the forces in motion now are so monumental as to pose that kind of possibility.  You really cannot have the American Dream without water.  And if that notion does get shaken, then some fundamental assumptions about life in the U.S. will be in flux.
+
+Do I expect this?  Eventually, yes, of course, in some form.  India is a case study in how far population growth can go, and how far the people of a nation can go in endorsing extremes of wealth and poverty.  The U.S. is not India, obviously.  But it presently appears that extremes of wealth are accepted in the United States, and that they are influential in manipulating the government and the media, and generally in creating conditions for their own expansion.  We will have substantially more people in the future, and we will keep on having them.  We will have them at an accelerating rate, I would expect, if the affordabilty of a good education becomes increasingly problematic for the people who live here -- if, that is, education in the future serves less of its traditional role in mitigating birth rates.  There is just not enough water.  (And, eventually, there will not be enough affordable food, for all these people.  If we are able to convert food to fuel while people in Africa are starving, eventually we will be able to do something of that nature while people in the U.S. are starving -- as, indeed, some already are).
+
+It will surely not all turn out precisely this way.  This has been a merely speculative piece.  Its gist is that there are forces at work, pertaining to the economy and also to resources like water, that seem likely to encourage migration of large numbers of people away from some cities toward others; and that if such migrations do occur, they will have their own consequences on such things as attitudes toward race (in some places, at least) and on the sort of dwelling that a sensible person will be inclined to seek.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
