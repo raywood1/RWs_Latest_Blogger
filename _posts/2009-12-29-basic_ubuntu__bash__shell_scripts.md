@@ -1,0 +1,53 @@
+---
+layout: post
+title: "Basic Ubuntu (Bash) Shell Scripts"
+date: 2009-12-29
+---
+
+<div class="post-body">
+<p>In Ubuntu 9.04, I wanted to write a script that would execute an rsync command, so that I could put a brief reference to the script into <a href="https://web.archive.org/web/20190906053729/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-schedule-items-with-cron.html">my crontab file</a>, instead of putting <a href="https://web.archive.org/web/20190906053729/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-backup-with-rsync.html">the whole long rsync command</a> there.<br/>
+<br/>
+For a brief, tiny moment, I was almost tempted to consider learning the GAMBAS (Gambas Almost Means BASIC) programming language, just because (pre-Visual) BASIC was the only programming language I ever learned.  Instead, I moved toward <a href="https://web.archive.org/web/20190906053729/http://linuxcommand.org/writing_shell_scripts.php">basic instructions</a> on writing a shell script.  Here's what I wrote:<br/>
+<blockquote>#!/bin/bash<br/>
+# This is backup-hour.sh<br/>
+# It backs up CURRENT to CURRBACKUP every few hours<br/>
+rsync -qhlEtrip --progress --delete-after --ignore-errors --force --exclude=/.Trash-1000/ --exclude=/lost+found/ /media/CURRENT/ /media/CURRBACKUP<br/>
+</blockquote><br/>
+As <a href="https://web.archive.org/web/20190906053729/http://linuxcommand.org/wss0010.php">the instructions</a> said, the first line was essential to tell the computer to use BASH to interpret the following lines.  The next two lines were comments, and the final line (wrapping over onto multiple lines here) was exactly the rsync line I'd been using to do the backup.  In other words, learning how to write the command was almost all I needed to write the script. <br/>
+<br/>
+The next step was to save it somewhere.  I had previously heard, and the instructions said, that the common place to put it is in your bin folder.  I went with that, but made a note that I would need to be sure to back up my bin folder, because I didn't want to go to the trouble of writing all these scripts and then see them vanish.<br/>
+<br/>
+The usual location for the user's bin folder is at /home/[username]/bin.  In my case, that's /home/ray/bin.  Getting there in Nautilus (i.e., Ubuntu's File Browser, also started by typing "nautilus" in Terminal) can be confusing:  you can get there via the Home Folder option (assuming you're showing Tree rather than Places or something else (or nothing) at the left side of the file browser), or you can go to File System/home/[username]/bin.  Same thing, either way.  So I saved the script (above) in my bin folder as backup-hour.sh.  That turned the comment lines (beginning with #) blue in gedit.<br/>
+<br/>
+Next, the instructions said, I needed to set permissions.  This was a confusing aspect of Ubuntu.  <a href="https://web.archive.org/web/20190906053729/https://help.ubuntu.com/community/FilePermissions">The documentation</a> seemed to say that there were ten permissions that a person could set.  These were represented by ten hyphens or minus signs:  ----------.  I couldn't tell what the first one was for, but the remaining nine were divided into three sets of three.  The first three belonged to the owner, the second three to the group, and the last three to "other."  Within each set of three, the first one was for read, the second was for write, and the third was for execute (i.e., run it as a program).  So if you set the owner's permissions to read (r), write (w), and execute (x), your ten hyphens would now change to this:  -rwx------.  If you set all <a href="https://web.archive.org/web/20190906053729/http://linux.about.com/od/ubuntu_doc/a/ubudg24t3.htm">three parties</a> (i.e., owner, group, and other) the same, they would look like this:  -rwxrwxrwx.<br/>
+<br/>
+You could set the permissions using the chmod command.  I found an Ubuntu manual <a href="https://web.archive.org/web/20190906053729/http://manpages.ubuntu.com/manpages/jaunty/man1/chmod.1.html">page on chmod</a>.  It was not really that complicated, but it looked like it was going to require a time investment to make sure I had it right, and at this point I was getting impatient.  The basic idea seemed to be that you could use chmod to enter values of 4 (for read permission), 2 (for write permission), and/or 1 (for execute permission).  So, for example, you could type "chmod 755" and that would give a value of 7 to the first of the three users mentioned above (i.e., the owner), a value of 5 to the second of the three (i.e., the group), and a value of five to the third of the three (i.e., other).  The 7 would mean that you gave read + write + execute (4 + 2 + 1) permissions to the owner, whereas the 5 would mean that you gave only read + execute (4 + 1) permissions to the rest.  Since that's what <a href="https://web.archive.org/web/20190906053729/http://linuxcommand.org/wss0010.php">the instructions</a> suggested, I went with that.  To set the script with those permissions, I typed "chmod 755 backup-hour.sh."<br/>
+<br/>
+I wasn't too sure of who the owner was (i.e., me or root), not to mention the group or other.  I mean, this was for my home computer.  Not a lot of people milling around, waiting to take my hard drive for a spin.  These kinds of options seemed to be set up for networked computers, where <a href="https://web.archive.org/web/20190906053729/http://www.yolinux.com/TUTORIALS/LinuxTutorialManagingGroups.html">the "accounting" department</a> might be a group that would own a file.  I found what looked like <a href="https://web.archive.org/web/20190906053729/http://www.freesoftwaremagazine.com/articles/users_in_ubuntu">a good tutorial</a> on file owners, and another interesting (yawn!) <a href="https://web.archive.org/web/20190906053729/http://www.linuxforums.org/articles/file-permissions_94.html">page about permissions</a>, but fortunately I did not have time to work through them.<br/>
+<br/>
+When I typed "chmod 755 backup-hour.sh," I got "cannot access 'backup-hour.sh': No such file or directory."  One solution was to use a change directory (cd) command to get the Terminal prompt into the bin subfolder, so it would see what I was looking for.  But since I planned to put more scripts into that folder, and anyway since I wanted cron or other programs to know right away what I was talking about when I referred to something like backup-hour.sh, I decided to figure out how to put the bin folder in my "path."  The path is the list of folders where the operating system looks for guidance on what a command means.  To change my path so that the system would always know to look in bin, they said I needed to find and edit my .bash_profile file.  Unfortunately, they didn't say where it was.  It <a href="https://web.archive.org/web/20190906053729/http://ubuntuforums.org/showthread.php?t=609376">wasn't easy to find</a>.  I ran searches in Nautilus (both user and root), but while those were grinding away, I found that I could just type "locate .bash_profile."  That turned up nothing, but very quickly.  Then I got <a href="https://web.archive.org/web/20190906053729/http://ubuntuforums.org/showpost.php?p=3747706&amp;postcount=4">some advice</a> that, if it didn't exist, I could create it by using "touch ~/.bash_profile."  So I did that, and then tried again with "chmod 755 backup-hour.sh."  Still no joy.  Ah, but maybe that was because I hadn't rebooted; backup-hour.sh would run only on startup.  OK, so I used the other approach after all:  I changed directory to the bin folder and tried again.  Now I got "Permission denied."  What if I gave everybody full permissions with <a href="https://web.archive.org/web/20190906053729/http://www.ax697.org/writing-a-basic-ubuntu-script-200786.html">chmod 777</a>?  I tried that instead of chmod 755.  That seemed to do it.  The hard drive was doing its thing now.<br/>
+<br/>
+I wanted to see what was going on, so I decided to create a log file.  I wanted it to store only the error messages, not to list the thousands of files that backup-hour.sh was backing up successfully, so I put this on the end of (that is, on the same command line as) my rsync command in backup-hour.sh (above):<br/>
+<blockquote>2&gt; /media/CURRENT/backup-hour.log<br/>
+</blockquote><br/>
+The log filename thus matched the script filename.  I put "backup" first so that I could see all of my backup scripts in the same part of the folder's directory listing, and then I set up a backup-day.sh script along the same lines.  New problem:  these backup scripts would generate empty log files if there were no errors, and I didn't want to have to delete them manually.  So I found <a href="https://web.archive.org/web/20190906053729/http://www.unix.com/shell-programming-scripting/125304-deleting-all-empty-files-sub-directories-command.html#post302377529">a forum post</a> with advice on how to delete them automatically, using <a href="https://web.archive.org/web/20190906053729/http://www.unix.com/shell-programming-scripting/125304-deleting-all-empty-files-sub-directories-command.html#post302377529">the "find" command</a>.  In my version, it looked like this:<br/>
+<blockquote>find /media/CURRENT/ -name "*.log" -size 0c -exec rm -f {} \;<br/>
+</blockquote><br/>
+I put that at the end of the backup-day.sh script, and it seemed to work.  It said, basically, look in the CURRENT folder for files whose name ends with .log and have zero bytes; and if you find any files like that, execute the "remove" command without asking for permission.  I didn't know what that ending punctuation is about, but that's what the advisor suggested.<br/>
+<br/>
+In my backup-day.sh (not backup-hour.sh) script, I included the instructions for updating my USB jump drive (above).  I also included a set of commands to save my e-mail (I was using Thunderbird in Ubuntu) as a .tar compressed file. Actually, as seven .tar files, one for each day of the week.  That part of backup-day.sh looked like this:<br/>
+<blockquote># Assign Thunderbird mail &amp; profile to be backed up<br/>
+backup_files="/home/ray/.mozilla-thunderbird"<br/>
+dest="/media/BACKROOM/Backups/Tbird"<br/>
+# Create archive filename<br/>
+day=$(date +%A)<br/>
+hostname=$(hostname -s)<br/>
+archive_file="$hostname-$day.tgz"<br/>
+# Back up to a tgz file<br/>
+tar zcvf $dest/$archive_file $backup_files 2&gt;&gt; /media/CURRENT/A-INCOMING/T-bird-Backup.log<br/>
+</blockquote>So these seemed to be the basic kinds of tools I needed to set up rsync scripts and crontab entries.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments

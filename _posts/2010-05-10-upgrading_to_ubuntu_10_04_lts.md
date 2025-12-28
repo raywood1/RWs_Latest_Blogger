@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Upgrading to Ubuntu 10.04 LTS"
+date: 2010-05-10
+---
+
+<div class="post-body">
+<p>I installed Ubuntu 9.10.  In April 2010, System &gt; Administration &gt; Update Manager gave me the option of upgrading to 10.04 (Lucid Lynx).  I went with this option in May.  Shortly after starting the upgrade, I got this message:<br/>
+<blockquote>Third party sources disabled</blockquote><blockquote>Some third party entries in your source list were disabled.  You can re-enable them after the upgrade with the 'software-properties' tool or your package manager.</blockquote>I went ahead with the upgrade.   Next, I got this message:<br/>
+<blockquote><span class="Apple-style-span" style="color: black;">Support for some applications ended.</span></blockquote><blockquote>Canonical Ltd. no longer provides support for the following software packages.  You can still get support from the community.</blockquote>The community was the only place I had ever gotten support anyway, so that was fine.  I started the process, and I got an indication that the upgrade would be upgrading 1500 files, and it would take nearly an hour.  I went with that.  Next, it asked me where I wanted to install grub-pc.  I had two partitions on a hard drive, one for Windows XP programs, and one for Ubuntu, so (following the advice in the yellow pop-up) I selected both of those, but not the hard drive itself.  I had data partitions on another drive, and didn't install grub-pc to any of those.  Then I got a question about removing obsolete packages, and I affirmed that.  It installed more stuff and then wanted to reboot.  When it did, it got this far:<br/>
+<blockquote>GRUB loading.</blockquote><blockquote>error: the symbol 'grub_puts_' not found</blockquote><blockquote>grub rescue&gt;</blockquote>To fix this, following the advice of <a href="https://web.archive.org/web/20190906053724/http://ubuntuforums.org/showpost.php?p=8773382&amp;postcount=14">Vanishing</a>, I inserted an Ubuntu CD, punched the reset button on the computer, and when I got a menu, I looked for the "Rescue a broken system" option.  I didn't see one, so I checked <a href="https://web.archive.org/web/20190906053724/http://www.mydellmini.com/forum/dual-booting/16999-dual-boot-sl-ubuntu-grub-error-no-such-partition.html#post137243">and found</a> this was an option on the Alternative CD.  I didn't seem to have one for a recent version of Ubuntu, so I <a href="https://web.archive.org/web/20190906053724/http://cdimage.ubuntu.com/daily/current/">downloaded the ISO</a> on another computer, burned it to CD, and booted from that.  I worked my way around to an option to "Reinstall GRUB boot loader."  I tried doing that to /dev/sda.  Then I rebooted.  This time, it went OK.  Now I saw one reason why it might not have been working right before.  It said this:<br/>
+<blockquote>The disk drive for /media/DAILY is not ready yet or not present</blockquote><blockquote>Continue to wait; or Press S to skip mounting or M for manual recovery</blockquote>DAILY was my external USB hard drive.  I think I must have had an entry for it in /etc/fstab in the previous installation.  I pressed S to skip it.  It went through various updates (to Firefox, VMware, etc.).  Then it was done.  I wanted to make some changes to the installation, but that would be the subject of <a href="https://web.archive.org/web/20190906053724/http://raywoodcockslatest.blogspot.com/2010/05/tweaking-ubuntu-1004.html">a separate post</a>.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments

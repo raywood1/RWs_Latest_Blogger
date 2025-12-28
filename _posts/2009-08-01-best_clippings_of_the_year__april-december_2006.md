@@ -1,0 +1,399 @@
+---
+layout: post
+title: "Best Clippings of the Year, April-December 2006"
+date: 2009-08-01
+---
+
+<div class="post-body">
+<p>Up through this past March, I was posting the best items from my personal newsletter here, on a month-by-month basis, on a three-year lookback.  But now I'm going to speed it up a bit.  This post covers the remainder of 2006, with a focus particularly on the best clippings from that period.
+
+These clippings come from various sources.  Virtually all are online.  While I try to shorten them, I also take pains to keep the wording pretty much intact, except as indicated by ellipses ( . . . ) and brackets [which indicate something that wasn't in the original].  So you should be able to search by a phrase in the clipping to find its source and more information, if you're curious.
+
+Anyway, here they are.
+
+* * * * *
+
+If you're down in the dumps, you might just think about watching a funny movie. A new study suggests that the mere expectation of laughter makes us feel good. 
+
+In a new University of Chicago study of men and women 50 to 68 years old, those who scored highest on measures of loneliness also had higher blood pressure.
+
+Roughly 8,000 years before Novocaine and some 7,300 years before they could even swig whiskey to dull the pain, prehistoric patients were having holes drilled into their teeth with drill bits carved from stone.
+
+Nobody likes a freeloader. Social parasites live off the work of others, and a society infested with too many of them falls apart. Given the chance, most people will punish moochers with "freeloader fines," even if it means taking a financial hit themselves, a new study finds.
+
+Researchers showed test subjects virtual faces portraying sadness, anger, fear and happiness. They used eye-tracking technology to record which faces the subjects looked at and for how long. Test subjects age 18-21 focused on the fear faces. Those 57 to 84 zeroed in on the happy faces and avoided the angry ones. The participants were screened for cognitive ability - all were sharp.
+
+Crucian carp, a fish closely related to the goldfish, can live months without oxygen.
+
+Next time you are too drunk to drive, walk to the nearest pizza shop and place an order. When they go to deliver it, catch a ride home with them.
+
+In what is sure to go down as one of his more memorable sound bites, President Bush declared this week, "I'm the decider, and I decide what is best. And what's best is for Don Rumsfeld to remain as the Secretary of Defense."
+
+Many historians are now wondering whether Bush, in fact, will be remembered as the very worst president in all of American history. ... Among those who called Bush a success, many gave the president high marks only for his ability to mobilize public support and get Congress to go along with what one historian called the administration's "pursuit of disastrous policies."
+
+The Oasis Sanctuary is far from the largest retirement community in the Arizona desert, but it is certainly the noisiest. Along with the morning sun each day, there climbs a riotous opera of screeches, shrieks and squawks along with the occasional wolf whistle, "What's up?" and "I love you." ... The sanctuary is a "life care facility" for some 450 parrots, cockatoos, macaws and other tropical birds. With life spans that for some species can be 80 years or longer, many of the birds have outlived their human caretakers. Others reached the end of their productivity as commercial breeders. Most were deemed too ornery or skittish for adoption as pets and faced euthanasia. ... A parrot can take months or years to recover from losing a companion. "People call and say, 'We've had a bird for two months, and it just doesn't like us.' " ...  Billy, a yellow-naped Amazon, delivered the extended monologue that staff members call a "one-sided phone conversation." "Hello," he said as a visitor approached and then continued with considered pauses between phrases: "Uh huh" ... "Yeah" ... "O.K." ... "Then what happened?"
+
+Take it from bees. Intense competition is better than touchy-feely "win-win" negotiations when it comes to making big decisions. ... How the scout bees select candidate sites, deliberate among choices and reach a verdict is a process complicated enough to rival the dealings of any corporate committee.
+
+Despite the wall-to-wall coverage of the damage from Hurricane Katrina, nearly one-third of young Americans recently polled couldn't locate Louisiana on a map and nearly half were unable to identify Mississippi.
+
+If you can walk a quarter-mile, odds are you have at least six years of life left in you, scientists announced today. And the faster you can do it, the longer you might live. While walking is no guarantee of health or longevity, a new study found that the ability of elderly people to do the quarter-mile was an "important determinant" in whether they'd be alive six years later and how much illness and disability they would endure.
+
+A new study of 8,000 people age 2 to 90 found females handle timed tasks more quickly than males. The difference is most pronounced among pre-teens and teenagers. ... "It's the ability to effectively, efficiently and accurately complete work that is of moderate difficulty," Camarata said. ... The study also found that boys consistently outperformed girls in identifying objects, knowing antonyms and synonyms, and completing verbal analogies. The researchers say that debunks the popular notion that girls develop all communication skills earlier than boys.
+
+A survey was done on 127 students at Rutgers University in New Jersey. They were asked whether they support extreme military actions such as the use of nuclear and chemical weapons and pre-emptive strikes against countries that might pose a threat to the United States. Support for extreme measures increased among those Rutgers test subjects who were first asked to ponder their own deaths.
+
+By routing signals from helmet-mounted cameras ... through the tongue, [researchers] hope to give elite soldiers superhuman senses similar to owls, snakes and fish. Researchers at the Florida Institute for Human and Machine Cognition envision their work giving Army Rangers 360-degree unobstructed vision at night .... In testing, blind people found doorways, noticed people walking in front of them and caught balls.
+
+A new study suggests that constant bullying prevents overweight children from exercising, and all the teasing can make it harder to shed the pounds as an adult. About one out of every five children is chronically bullied. Overweight kids are targeted more frequently, and oftentimes while in gym class or playing sports.
+
+HALBERSTADT, Germany, May 4 - If you miss Friday's musical happening at St. Burchardi Church in this eastern German town, no worries. ... You have about six more centuries to hear developments in the work being performed, a version of a composition by John Cage called "As Slow as Possible." A group of musicians and town boosters has given the title a ridiculously extreme interpretation, by stretching the performance to 639 years. Like the imperceptible movement of a glacier, a chord change was planned for Friday. ... The organ's bellows began their whoosh on Sept. 5, 2001, on what would have been Cage's 89th birthday. But nothing was heard because the musical arrangement begins with a rest - of 20 months. ... Each movement lasts roughly 71 years. ... St. Burchardi is open six days a week, and the notes have been sounding continuously.
+
+Lesbians' brains react differently to sex hormones than those of heterosexual women .... Lesbians' brains reacted somewhat, though not completely, like those of heterosexual men .... A year ago, the same group reported findings for gay men that showed their brain response to hormones was similar to that of heterosexual women.
+
+"The great library at Alexandria, constructed around 300 B.C., was designed to hold all the scrolls circulating in the known world. At one time or another, the library held about half a million scrolls, estimated to have been between 30 and 70 percent of all books in existence then. [The weird thing, to me, is that there were already perhaps a million books (or scrolls) in existence in 300 BC. There are only 9 million records in Harvard's library catalog, and those include not only books but also music scores, data files, and other non-book items.]
+
+Much of the concern over sex offenders stems from the perception that if they have committed one sex offense, they are almost certain to commit more ... [but] in the largest and most comprehensive study ever done of prison recidivism, the Justice Department found that sex offenders were in fact less likely to reoffend than other criminals. ... Sex offenders had a re-arrest rate 25 percent lower than for all other criminals. Part of the reason is that serial sex offenders-those who pose the greatest threat-rarely get released from prison, and the ones who do are unlikely to re-offend.
+
+There are 10 kinds of people in the world - those who understand binary and those who don't.
+
+A single genetic mutation is all it takes to transform selfish bacteria into altruistic team players that contribute resources to the entire group, even when they themselves might not survive to benefit.
+
+A scientist says his team has made light go backward. ... A pulse of light is given a negative speed and - as if just to make your head spin - the researcher says the experiment made light appear to exceed its theoretical speed limit.
+
+The decibel level at a typical hospital during the day has risen from 57 in 1960 to 72 today. A Mayo clinic study at one facility in 2004 measured peak noise levels during overnight hours at 113 decibels - roughly equivalent to a chainsaw or a jackhammer.
+
+Women who consume animal products, specifically dairy, are five times more likely to have twins than those who do not. ... The reason may involve growth hormones fed to cows. ... The concentration of IGF in the blood is about 13 percent lower in vegan women than in women who consume dairy.
+
+What's really wrong with sperm donation? Einstein wouldn't have stood a chance. He would have been deemed too short. ... Most sperm banks draw the line at 5'11". ... Sperm banks can't be expected to screen for rare genetic disorders when there are so many more pressing concerns to find out about the donor, such as baldness, salary history, hobbies and taste in clothing.
+
+If you think keeping fit is merely mind over matter, Lester Clancy has an invention for you - a cordless jump-rope. That's right, a jump-rope minus the rope. All that's left is two handles, so you jump over the pretend rope. Or if you are truly lazy, you can pretend to jump over the pretend rope. ... What makes this invention work is the moving weights inside the handles. They simulate the feel of a rope moving, Clancy said. Well, it's only one handle so far because Clancy is waiting for financial backers before building its partner. ... It's perfect for the clumsy, Clancy said. "If you are still jumping, you're still using your legs as well as your arms, and getting the cardiovascular workout. You just don't have to worry about tripping on the rope." It is also good for mental institutions and prisons where rope is a suicide risk, said Clancy, who works as a laundry coordinator in a state prison. And low ceiling fans aren't a hazard any more, he said. Daniel Wright, who features the cordless jump-rope on his Web site www.patentlysilly.com, can barely talk about Clancy's invention without laughing. ... "Do you need to jump with a rope? You don't," Ernst said. "But I wouldn't buy the product, I can tell you that. I'm not an idiot."
+
+As late as 1998, Brussels - the political capital of the European Union - had no treatment whatsoever on 70% of its sewage prior to directing it into the waterways.
+
+Recent research finds that a snap decision to quit smoking cigarettes is actually two to three times more effective than planning ahead for the big day.
+
+During the African dust storm season, which runs May to October, strong winds in the Sahara Desert kick up major clouds of dust that can drift across the Atlantic Ocean in just a few days. ... Traces of African dust have been discovered as far west as New Mexico.
+
+The top sides of toilet seats are low in bacterial numbers compared with surfaces that you actually touch in a public restroom, like the faucet and countertop.
+
+The afternoon siesta is not just a cultural tradition in some countries. It's a biological reaction to lunch. Researchers have revealed how the sugar in food, called glucose, can stop brain cells from producing signals that keep us awake.
+
+Aiding the large intestine ... are trillions of microbes that reside in the gut, where they help digest foods we would otherwise have to avoid. ... Some of these tiny settlers are with us from birth, imparted from our mothers, while others gradually colonize our bodies as we grow. This microbial community ... [consists of] more than 1,000 different species. This is the densest bacterial ecosystem known in nature.
+
+For male guppies, being unique is good for more than just attracting the ladies - it could mean the difference between life and death. A new study finds that guppies with rare color patterns are less likely to be gobbled by prowling predators than their commonly colored counterparts. The finding is an example of how nature sometimes favors rare traits.
+
+Portions of the immune system actually require periodic infections in order to develop properly. Some exposure to dirt, bacteria and even worms can be beneficial. "By living in an ultra-clean environment,'' Mansfield said, "we're removing some of the things that helped to educate our immune system.''
+
+Many moms might worry about their kids getting hurt playing football, but a new study shows that playing basketball and riding bicycles sent more Americans to the emergency room in 2005. ... Believe it or not, some 47,000 people managed to get hurt playing golf.
+
+Middle-aged smokers whose faces are heavily lined with wrinkles are five times as likely to have emphysema, bronchitis, or another such progressive, chronic lung disease.
+
+Changing the mix of bacteria in the intestine could influence how much people weigh.
+
+Gritty rats and mice living in sewers and farms seem to have healthier immune systems than their squeaky clean cousins that frolic in cushy antiseptic labs .... The theory, called the hygiene hypothesis, figures that people's immune systems aren't being challenged by disease and dirt early in life, so the body's natural defenses overreact to small irritants such as pollen.
+
+Police discovered a suspicious package at a police station in southern Japan Friday, prompting them to evacuate the surrounding area and dispatch a bomb disposal team - which used its expertise to identify the parcel as a box filled with cans of beer.
+
+People in America have [far] fewer close friends nowadays than two decades ago, researchers announced today. New research compared studies from 1985 and 2004. On average, each person in 2004 reported 2.08 close friends - those they can discuss important matters with. That's down from 2.94 people in 1985. People who said they had no one with whom to discuss such matters more than doubled, to nearly 25 percent.
+
+More than 210,000 Americans, mostly pedestrians and about half of them children, were killed in traffic accidents from 1920 to 1929, estimates Peter Norton of the University of Virginia. That's four times the previous decade's number. [Nowadays, by contrast, each year] about 4,800 pedestrians are killed in traffic accidents, and another 71,000 are injured.
+
+A large cat dining on ... [an early human] contracted an ulcer-causing bacteria that spread to lions, cheetahs and tigers and which persists to this day.
+
+A 1-hour nap has many more restorative effects than a 30-minute nap, including a much greater improvement in cognitive functioning.
+
+"For the last two decades China has enjoyed the advantage of having a high ratio of working-age people in the population, but that situation is about to change," said Zuo Xuejin, vice president of the Shanghai Academy of Social Sciences. "With the working-age population decreasing, our labor costs will become less competitive, and industries in places like Vietnam and Bangladesh will start becoming more attractive." India, the world's other emerging giant, also stands to benefit, with low wages and a far younger population than China.
+
+Doctors conclude in the July issue of Harvard Health Letter that one of the best ways to help ensure you'll live past 80 is to first set your sights on making it to 65. ... Today, an American man who makes it to 65 can expect to live 81.6 years. Then if he manages to make it to 85, he can expect to live long enough to blow out the candles on his 90th birthday cake.
+
+Desert ants on foraging expeditions use [stars] to orient themselves in the homeward direction, but with few landmarks in the barren land, scientists have wondered how the insects always take the most direct route and know exactly how far to march. The new study reveals that counting their steps is a crucial part of the scheme.
+
+ [Researchers surveyed a] group of women in 2005. In this study, participants not only recorded their overall satisfaction with life but a moment-to-moment account of their contentment. ... Those with higher incomes had more chores and less fun. They devoted more time to working, commuting, childcare, and shopping and were under more stress and tension than those in lower income brackets.
+
+Even without a documented connection to a notable forebear, experts say the odds are virtually 100 percent that every person on Earth is descended from one royal personage or another. ... Anybody who had children more than a few hundred years ago is likely to have millions of descendants today, and quite a few famous ones. ... The longer ago somebody lived, the more descendants a person is likely to have today. Humphrys estimates that Muhammad, the founder of Islam, appears on the family tree of every person in the Western world.
+
+A new study finds people aren't sleeping as much as they report in other studies.
+
+People who took an illegal drug made from mushrooms reported profound mystical experiences that led to behavior changes lasting for weeks - all part of an experiment that recalls the psychedelic '60s. Many of the 36 volunteers rated their reaction to a single dose of the drug, called psilocybin, as one of the most meaningful or spiritually significant experiences of their lives. Some compared it to the birth of a child or the death of a parent. ... Almost a third of the research participants found the drug experience frightening even in the very controlled setting.
+
+During a joint news conference Saturday in St. Petersburg, Bush said he raised concerns about democracy in Russia during a frank discussion with  [Russian leader Vladimir Putin]. "I talked about my desire to promote institutional change in parts of the world, like Iraq where there's a free press and free religion, and I told him that a lot of people in our country would hope that Russia would do the same," Bush said. To that, Putin replied, "We certainly would not want to have the same kind of democracy that they have in Iraq, quite honestly."
+
+Special prosecutors said Wednesday that scores of criminal suspects were routinely brutalized by police officers on the South Side of Chicago in the 1970's and 1980's .... Prosecutors said they could prove beyond a reasonable doubt in court at least three cases of torture by the police, involving five former officers, and that they had found credible evidence of abuse in about half the 148 complaints they thoroughly investigated. ... The political implications were clear from the roster of people questioned in the inquiry, including Mayor Richard M. Daley, who was Cook County's top prosecutor when some of the most egregious complaints were lodged, and his former assistant, Richard A. Devine, now the Cook County state's attorney.
+
+Melanoma is the most common type of cancer in women between the ages of 25 and 29.
+
+More than a third of the 28 million Americans with hearing difficulties lost their hearing at least partially due to noise. ... The culprits are headphones, killer amps, and the proliferation of power tools and other loud home appliances that our grandparents didn't have.
+
+In school, teachers emphasize reading literature and talking about character and feelings," she said. "This way of teaching reading does not turn boys on. Boys prefer reading nonfiction, such as history and adventure books. When they are taught at home, parents are more likely to let them follow their interests.
+
+A new study finds that seniors who don't drive are four times as likely to enter assisted living centers compared to those who stay behind the wheel.
+
+Automotive production in Mexico is expected to hit record levels this year, surpassing two million cars, as automakers pour billions of dollars of new investment into their Mexican factories. The expansion, being fueled by Mexico's top five automakers - General Motors, Ford Motor, DaimlerChrysler, Nissan and Volkswagen - stands in contrast to the plans by G.M. and Ford to cut 60,000 jobs in the United States and close two dozen North American plants through 2012.
+
+Alan Beggerow has stopped looking for work. Laid off as a steelworker at 48, he taught math for a while at a community college. But when that ended, he could not find a job that, in his view, was neither demeaning nor underpaid. So instead of heading to work, Mr. Beggerow, now 53, fills his days with diversions: playing the piano, reading histories and biographies, writing unpublished Western potboilers in the Louis L'Amour style - all activities once relegated to spare time. He often stays up late and sleeps until 11 a.m. ... Millions of men like Mr. Beggerow - men in the prime of their lives, between 30 and 55 - have dropped out of regular work. ... About 13 percent of American men in this age group are not working, up from 5 percent in the late 1960's.
+
+[Punishments in medieval England] were perhaps even more sensible and humane than they are now .... Most criminals received gentle sentences merely meant to shame them, Carrel said, with the punishments often carried out in the open so townspeople could bring them charity. ... "There is a real downside to keeping those who are punished out of the public eye - we often have no idea how they are being treated," Carrel told LiveScience. With most medieval communities lacking any proper policing, crime prevention was trusted in the hands of the village common-folk. ... Punishments therefore had to be simple and generally seen to be fair. ... "Charity towards criminals was much more acceptable and much more common in the Middle Ages," Carrel said. "Many people left bequests to help prisoners in their wills, for example." Town officials looking for good press would also leave baskets of food or ale for the jailed. ... The system was designed to force the victim or, if he was dead or incapacitated, his family to accept compensation rather than turn to violence. ... Murder rates per capita in 14th-century England were a fifth that of Washington D.C. in the 1990s.
+
+A parasitic microbe commonly found in cats might have helped shape entire human cultures by manipulating the personalities of infected individuals, according to a new study. Infection by a Toxoplasma gondii could make some individuals more prone to some forms of neuroticism and could lead to differences among cultures if enough people are infected .... In a survey of different countries, Lafferty found that people living in those with higher rates of T. gondii infection scored higher on average for neuroticism, defined as an emotional or mental disorder characterized by high levels of anxiety, insecurity or depression.
+
+For male nightingales, the key to scoring with the ladies is to cut their opponents off. Male songbirds often compete for mates through singing contests. The dominant ones usually start singing before an opponent finishes his song, signaling aggression that female birds sometimes find attractive. ... This phenomenon does not only occur in birds, but also in crickets, frogs and toads.
+
+Previously hidden writings of the ancient Greek mathematician Archimedes are being uncovered with powerful X-ray beams nearly 800 years after a Christian monk scrubbed off the text and wrote over it with prayers. ... The X-rays, generated by a particle accelerator, cause tiny amounts of iron left by the original ink to glow without harming the delicate goatskin parchment.
+
+In the past four years, reports of bedbugs have significantly increased in U.S. cities, from New York to Honolulu, especially in hotels, hospitals and college dormitories - all places with high resident turnover.
+
+China produces an impressive 600,000 university-trained engineers annually. But thanks to an educational system that stresses rote and memorization, McKinsey calculates that only about one-third of those engineers have the skill level demanded of an engineer by a global economy.
+
+Wherever humans exist, they have established a strong relationship with the land, and with the biodiversity that exists there .... They have developed a deep knowledge of the plants and animals.
+
+Everyone knows hot dogs aren't exactly healthy for you, but in a new study chemists find they may contain DNA-mutating compounds that might boost one's risk for cancer. ... Salted dried fish and seasonings such as soy sauce may contain similar levels of these chemicals.
+
+Children watching cartoons suffered less pain from a hypodermic needle than kids not watching TV. Especially disturbing to the author of the scientific study was that the cartoons were even more comforting than Mom. ... Those watching TV cartoons reported half the pain as those who were being soothed by Mom.
+
+Some of the best hospitals in the world today are located outside the United States, in countries like Thailand and India. ... [There,] a quintuple-bypass might run $12,000, as opposed to $100,000 or so in the States. ... If you prefer to stay in the Western Hemisphere, Costa Rica Health Escapes advertises that "Costa Rica not only offers quality medical care, but offers it at a fraction of the cost for the same procedures in the United States." Of course, wherever you go for surgery, whether in the United States or abroad, very carefully check credentials and get referrals.
+
+Patients who listen to tunes after surgery have less pain (and need fewer painkillers) than those who don't.
+
+Michael Noonan ... has been studying the captive killer whales at the theme park Marineland of Canada in Niagara Falls. ... [After quarrels, the mother and father] each zipped away to separate aquatic quarters to cool off for about 10 minutes. Then, the mates smoothed over their clash with side-by-side swimming, called echelon swimming. "In eight out of eight instances, the animals engaged in a pro-social, affiliative behavior shortly after the period of tension," Noonan told LiveScience.
+
+The doctors of ancient Greece and China had it right when they applied cool and minty salves to soothe aches and pains, a new study suggests. A synthetic treatment with the same properties as mint oil is an effective painkiller when applied directly to the skin. The new cooling compounds could be especially beneficial to millions suffering with the chronic pain of arthritis and diseases affecting nerve endings.
+
+The researchers exposed a group of people to 21 minutes of bright white light in the morning while they imaged their brains. Not only were the participants more alert, but responses in certain parts of their brain also got a boost. This boost was correlated with regions of the brain that are involved in alertness and some cognitive processes and can briefly prevent the sleepiness developed in continuous darkness.
+
+Earth might have spun on its side to keep its balance in the distant past, and could do so again .... Alaska was suddenly at the equator, the thinking goes. ... A theory known as true polar wander suggests that if a very heavy object, like an oversized volcano, forms far from the equator, the force of the planet's rotation would pull the object away from the axis the Earth spins around.
+
+TM9 turf mats are now ready for you to buy, making that grass roof you've always wanted a real possibility. Toyota Roof Garden (subsidiary of the car company) is now taking orders for its modular grass tiles. The idea is that companies can reduce the urban heat island effect, thus cooling our great cities. The mats are planted with a special brand of Korean velvet grass - it only needs to be cut once per year. The mats are irrigation system-ready; water can flow through tubes to channels in the mats, providing moisture to roots.
+
+Scientists have generated rats from mice that developed rat sperm. ... While this breakthrough raises the possibility of growing human sperm in other animals to generate viable human offspring, "it is not a good idea," Shinohara said. Besides the ethical issues, he noted there are viruses present in animals that could write themselves into genetic codes of the human sperm.
+
+The human brain does not contain a single "God spot" responsible for mystical and religious experiences, a new study finds. Instead, the sense of union with God or something greater than the self often described by those who have undergone such experiences involves the recruitment and activation of a variety brain regions normally implicated in different functions such as self-consciousness, emotion and body representation.
+
+The level of nicotine that smokers typically consume per cigarette has risen about 10 percent in the past six years, making it harder to quit and easier to get hooked.
+
+Building muscle is much easier than you might think. Strength training just 20 minutes a day, two or three times a week, for 10 to 12 weeks can rebuild three pounds of muscle and increase your metabolism by 7 percent. ... A regular exercise program (30 minutes of physical activity at least three days a week) can reduce your risk of dying in the next eight years by 40 percent, improve brain function, cut your risk of Alzheimer's disease by up to 60 percent, and blunt the symptoms of depression.
+
+Researchers studied 670 men age 45 to 86 ... over an average of eight years. Lung function was "significantly poorer" at the outset among those deemed more angry and hostile, and it got worse with these men at each examination.
+
+People 65 and older who were regularly involved in participatory arts programs reported fewer doctors' visits and less need for medication and were less prone to depression.
+
+Advanced brain scanning uncovered startling signs of awareness in a woman in a vegetative state - a finding that complicates one of medicine's ethical minefields.
+
+The Everland amusement park [in Korea] said Friday its 16-year-old male Asian elephant, named Kosik, can make sounds imitating up to eight Korean words, including "sit,'' "no,'' "yes,'' and "lie down.'' The pachyderm produces humanlike sounds by putting his trunk in his mouth and shaking it while exhaling - similar to how people whistle with their fingers. But the park said it's unclear if Kosik knows the meaning of the sounds he makes.
+
+Rituals that cleanse the body to purify the soul are at the core of religions worldwide. Now scientists find these ceremonies apparently have a psychological basis. Researchers discovered sins actually seem to urge people to clean themselves, a phenomenon they dubbed the "Macbeth effect" after dramatized murderess Lady Macbeth, who vainly tried scrubbing her hands clean of imaginary blood in Shakespeare's famed Scottish play. Intriguingly, the researchers also found purifying the body then helped people absolve their consciences. "Showering and handwashing occur daily, but now we find these core routines can really have a psychological impact," behavioral researcher Katie Liljenquist at Northwestern University in Chicago told LiveScience. Future studies could see whether "living in a very clean environment facilitates more ethical behavior, or ironically licenses unethical behavior," Liljenquist added.
+
+If you ever sense teenagers are not taking your feelings into account, it's probably because they're just incapable of doing so. The area of the brain associated with higher-level thinking, empathy, and guilt is underused by teenagers, reports a new study. ... Thinking strategies change with age.
+
+Destructive insects in unprecedented numbers are finding Alaska forests to be a congenial home, said University of Alaska forestry professor Glenn Juday, and climate change could be the welcome mat. Warmer winters kill fewer insects. Longer, warmer summers let insects complete a life cycle and reproduce in one year instead of two, the forest ecologist said.
+
+Elementary school children aren't the only ones who need crossing guards. Scientists report that wild chimpanzees safely cross roads with the aid of adult males that serve as traffic patrollers. Dominant male chimpanzees walk ahead of their groups and evaluate risks of crossing a road before signaling the rest of the crew to move ahead.
+
+Asian-American women living in Bergen County, N.J., lead the nation in longevity, typically reaching their 91st birthdays. Worst off are American Indian men in swaths of South Dakota, who die around age 58 - three decades sooner. Millions of the worst-off Americans have life expectancies typical of developing countries.
+
+When school children avert their gaze away from a teacher or other person's face, they are much more likely to come up with the correct answer.
+
+Jody Pardoe, 43, will receive a kidney from a stranger who has compatible blood and tissue types. Meanwhile, her husband Peter has turned out to be a compatible donor for the other man's wife. They do not know the identities of the other couple.
+
+Neanderthals might have held out in isolated refuges for thousands of years longer than previously thought, scientists reported today. Their survival at what seems to have been their last refuge in Gibraltar for far longer after the arrival of modern humans than once believed suggests our ancestors may not have driven the Neanderthals to extinction. Instead, researchers speculate the Neanderthals fell victim to a cooling of the climate that deteriorated their environment too rapidly for them to adapt.  [Or maybe Gibraltar was like an Indian reservation and they were exiled there.]
+
+After the fall of Saddam Hussein's government in April 2003, the opportunity to participate in the U.S.-led effort to reconstruct Iraq attracted all manner of Americans ... [but] they had to get past Jim O'Beirne's office in the Pentagon. ... O'Beirne's staff ... [asked such questions as] Did you vote for George W. Bush in 2000? Do you support the way the president is fighting the war on terror? Two people who sought jobs with the U.S. occupation authority said they were even asked their views on Roe v. Wade. Many of those chosen by O'Beirne's office ... lacked vital skills and experience. A 24-year-old who had never worked in finance - but had applied for a White House job - was sent to reopen Baghdad's stock exchange. The daughter of a prominent neoconservative commentator and a recent graduate from an evangelical university for home-schooled children were tapped to manage Iraq's $13 billion budget, even though they didn't have a background in accounting. ... Many of those selected because of their political fidelity spent their time trying to impose a conservative agenda on the postwar occupation that sidetracked more important reconstruction efforts and squandered goodwill among the Iraqi people.
+
+Studies by Dutch researchers that began in the 1990s found that some healthy people regularly hear voices. The scientists ran a program on Dutch television asking for volunteers who heard voices, and they got a surprising response. Many of the people who contacted them did not find the voices disruptive and had never felt the need to consult mental health services. Some even said they found the experience to be positive or inspirational. The resulting studies found that more people might hear voices than psychologists had thought, perhaps around 4 percent of the population.
+
+Chinese doctors say they successfully transplanted a penis on a man who lost his own in an accident, but had to remove it two weeks later because of psychological problems experienced by the man and his wife. The case appears to be the first such transplant reported in a medical journal - European Urology, published by the European Association of Urology.
+
+Scientists split a group of 16 college-aged students into two groups, each one performing a different exercise schedule for two weeks. Eight students cycled four to six times for 30-seconds separated by four minutes of recovery daily, while the other group cycled for 90 to 120 minutes each day. ... "The most striking finding from our study was the remarkably similar improvements in muscle health and performance induced by two such diverse training strategies," said Martin Gibala, an associate professor of kinesiology at McMaster University in Canada.
+
+Psychiatrists, often in need and hard to find in rural areas, are increasingly turning to video to treat their far-flung patients .... Anthony Presciano said he probably wouldn't get treatment for his post-traumatic stress disorder if he had to drive the 60 miles through heavy traffic to see his therapist in Dallas.
+
+A U.S. team has found a variant of the serotonin transporter gene that may predispose individuals to depression in stressful circumstances. But the opposite also held true: People without the variant almost seemed to thrive on stress.
+
+Researchers at the Massachusetts Institute of Technology and Hong Kong University have developed a simple biodegradable liquid that can stop bleeding in rodents within seconds.
+
+Hunters stalked giant camels as tall as some modern-day elephants in the Syrian desert tens of thousands of years ago.
+
+All of the gold ever mined can fit into a cube with 72-foot sides.
+
+Always on the cutting edge of all things environmental, California is encouraging public and private-sector employees to bring worms to work so that the creatures can chew up apple cores, sandwich scraps and other lunch leftovers and produce compost.
+
+Almost all decaf coffee contains some caffeine.
+
+"Overshoot day is what we calculate as the day that global human society has used up all of the resources" for that year, said Justin Kitzes, a scientist with the Global Footprint Network. This year the overshoot day fell on Oct. 9, nearly two months earlier than when the organization calculated it for 1987.
+
+Hummingbirds have the highest energy expenditure of any warm-blooded animal, with a heart rate of up to 500 beats per minute, blindingly fast wing beats and sustained hovering. So this bird is nearly always on the edge of starvation, needing to slurp up more than its body weight in nectar each day.
+
+Polar Rose is a new search engine now being tested that will allow you to find anyone in any photo on any site. Type in the name of a person you know, and find pictures of that person all over the web, on sites like MySpace or blog pages using face-recognition technology.
+
+Nearly one in five soldiers leaving the military after serving in Iraq and Afghanistan has been at least partly disabled as a result of service, according to documents of the Department of Veterans Affairs obtained by a Washington research group.
+
+Europe appears to be crossing an invisible line regarding its Muslim minorities: more people in the political mainstream are arguing that Islam cannot be reconciled with European values. "You saw what happened with the pope," said Patrick Gonman, 43, the owner of Raga, a funky wine bar in downtown Antwerp, 25 miles from here. "He said Islam is an aggressive religion. And the next day they kill a nun somewhere and make his point. Rationality is gone."
+
+Britain's highest court ruled Wednesday for the first time that journalists have the right to publish allegations about public figures, as long as their reporting is responsible and in the public interest. The ruling, a unanimous judgment by the Law Lords, is a huge shift in British law.
+
+The Abecedarians was also the name of a now extinct German Anabaptist sect, founded in 1520 at Zwickau in Saxony, by Nicholas Storch. Since they believed that all their earthly and spiritual benefits, including salvation, would come directly from God or the Holy Sprit, every other form of acquired knowledge, especially that which might be gained from education and especially from books, was unnecessary. Indeed such knowledge was considered a hindrance, since it might interfere with these other, more important sources of inspiration.
+
+Harmful reactions to some of the most widely used medicines - from insulin to a common antibiotic - send more than 700,000 Americans to emergency rooms each year.
+
+The teenager said the stabbing pains in her face felt like electrical shocks that lasted 10 to 30 seconds and struck 20 to 30 times a day. Her doctors diagnosed trigeminal neuralgia .... Doctors tried painkillers, then stronger medication, but in the end, a cure proved more simple: The young woman removed the metal stud from her pierced tongue.
+
+Marijuana might contain compounds that slow memory loss in Alzheimer's patients .... Old rats treated with a synthetic compound similar to marijuana got smarter.
+
+Tag, you're out! Officials at an elementary school south of Boston have banned kids from playing tag, touch football and any other unsupervised chase game during recess for fear they'll get hurt and hold the school liable.
+
+Kids who are turned off by math often say they don't enjoy it, they aren't good at it and they see little point in it. Who knew that could be a formula for success? The nations with the best scores have the least happy, least confident math students.
+
+Young female rats afraid of new environments developed cancer tumors sooner than their more adventuresome sisters.
+
+From bonobo chimpanzees to fruit flies, many female animals mate with multiple partners that often queue up for the event. Studies have shown that the the last male to mate with a female is the most successful at impregnating her.
+
+Sucking up to win the support of the boss dates back to our furry ancestors. ... Monkeys [pick] dead skin and bugs from the fur of higher-ranking monkeys. They do it in exchange for backing in fights.
+
+A microscopic robot hand, made of silicon and plastic balloons, could help perform surgery and defuse bombs. The "microhand" is so tiny that when clenched into a fist it measures a little over one millimeter across, or roughly as thick as a dime. It is made using silicon finger bones and balloons for joints that inflate and deflate to flex the fingers.
+
+Want to preserve your mental edge as you age? ... People who consumed two or more vegetables a day had a 35 to 40 percent decrease in the decline in thinking ability over six years.
+
+Our actions can be swayed by erotic images even when they don't consciously register in our awareness. In an experiment, 40 men and women were shown erotic images that had been manipulated to bypass conscious detection. ... The researchers found that subjects identified [a pattern] more accurately when it appeared where the erotic images had been, suggesting that the invisible images exerted an effect on their spatial attentions.
+
+Smoking cannabis, even long-term, is not positively associated with increased incidence of lung-cancer. ... One subset of moderate lifetime users (10-&lt;30 "joint years") actually had an inverse association between cannabis use and lung cancer.
+
+Latin America has the world's strictest laws on abortion. But that does not discourage it. Latin America also has the world's highest abortion rates, averaging nearly one per woman over the course of her reproductive lifetime. ... [In El Salvador,] if doctors find evidence of an abortion, they are required to report their patients to the police. Women who sought medical help after a botched abortion have been handcuffed to their hospital beds. And some women with late-term abortions have been given 30-year prison terms.
+
+Huge amounts of a red wine extract seemed to help obese mice eat a high-fat diet and still live a long and healthy life, suggests a new study that some experts are calling "landmark" research. ... Scientists say it's far too early to start swilling barrels of red wine. But they are calling the latest research promising and even "spectacular."
+
+Elephants can recognize themselves in a mirror, joining only humans, apes and dolphins as animals that possess this kind of self-awareness.
+
+The act of getting a divorce produced no immediate effects on [women’s phys] health, but it did have effects on mental health,'' Lorenz said. "Ten years later, those effects on mental health led to effects in physical health.''
+
+Two-thirds of [depression] sufferers eventually can be helped if they are patient enough to keep trying medications until they find one that works. ... But there is a downside to so many attempts: The more tries people made, the more likely it was that they later would relapse and slide back into depression.
+
+In a recent study, bullied employees likened their experiences to a battle, water torture, a nightmare or a noxious substance. ... Many Americans are familiar with sexual and racial harassment, but not generalized workplace bullying. ... Subtle behaviors, such as silent treatment, disregard of requests and exclusion from meetings, count as bullying.
+
+ [Russia's] sales to improve Iran's air-defense system are particularly troubling to the United States because they would complicate the task of Pentagon planners should the president order airstrikes on Iran's nuclear weapons facilities. ... North Korea shipped about 40 ballistic missiles to other nations in the four-year period ending in 2005, the only nation to have done so. Transfers of these weapons are prohibited under international agreements to control the trade of ballistic missiles.
+
+[T]he inspector general's office ... found major discrepancies in American military records on where thousands of 9-millimeter pistols and hundreds of assault rifles and other weapons have ended up. The American military did not even take the elementary step of recording the serial numbers of nearly half a million weapons provided to Iraqis.
+
+A series of secret U.S. war games in 1999 showed that an invasion and post-war administration of Iraq would require 400,000 troops, nearly three times the number there now. And even then, the games showed, the country still had a chance of dissolving into chaos.
+
+Because birds communicate mainly by sound, loud environments interfere with their communications and reduces pairing by almost 15 percent.
+
+A study subjecting aged mice to changing light cycles (equivalent to jet lag or rotating shift work) over an eight-week period found that the mice had higher death rates than those that experienced a normal light cycle.
+
+From medieval days until the early 19th century, diaries and letters more often used the word love to refer to neighbors, cousins and fellow church members than to spouses. When honeymoons first gained favor in the 19th century, couples often took along relatives or friends for company. ... The Victorian refusal to acknowledge strong sexual desires among respectable men and women gave people a wider outlet for intense emotions, including physical touch, than we see today. Men wrote matter-of-factly about retiring to bed with a male roommate, "and in each other's arms did friendship sink peacefully to sleep." Upright Victorian matrons thought nothing of kicking their husbands out of bed when a female friend came to visit. They spent the night kissing, hugging and pouring out their innermost thoughts. ... Under the influence of Freudianism, society began to view intense same-sex ties with suspicion and people were urged to reject the emotional claims of friends and relatives who might compete with a spouse for time and affection.
+
+[Jim Carrey:]  I think everybody should get rich and famous and do everything they ever dreamed of so they can see that it's not the answer.
+
+ALBUQUERQUE, New Mexico (AP) - Two police officers sued Burger King Corp., claiming they were served hamburgers that had been sprinkled with marijuana.
+
+Diplomats in New York [i.e., at the United Nations] rack up a lot of unpaid parking tickets, but not all rack them up at the same rates. ... Diplomats from countries that rank high on the Transparency International corruption index pile up huge numbers of unpaid tickets, whereas diplomats from countries that rank low on the index barely get any at all. Between 1997 and 2002, the U.N. Mission of Kuwait picked up 246 parking violations per diplomat. ... If you're Swedish and you have a chance to pull up in front of a fire hydrant, you still don't do it. You're Swedish. That's who you are.
+
+According to the current issue of the medical journal The Lancet, illegal abortions are as common as legal ones worldwide. ... Illegal abortions lead to 70,000 unintended deaths of women each year and millions of injuries, many permanent. The death rate from legal abortions is less than 0.001 percent.
+
+An estimated 50 million people caught diseases from animals such as dogs, cattle, chickens and mosquitoes between 2000 and 2005, according to a new study. Some 78,000 of them died.
+
+Australian researchers have come up with a way to reduce water used during showers by a third, and all they did was add air. ... [S]cientists developed a nozzle that fits into an existing shower head and fills the water droplets with tiny bubbles of air. ... People who tested these "air showers" didn't notice any didn't notice any difference in water pressure or sensation.
+
+Using three to five search terms from 26 [medical] cases from the New England Journal of Medicine, researchers did a Google search to see what kind of diagnosis they could get. Google searches found the correct diagnoses in 15 of the cases .... "Our study suggests that in difficult diagnostic cases, it is often useful to Google for a diagnosis," the researchers note.
+
+People who are happy, lively, calm or exhibit other positive emotions are less likely to catch colds and report fewer symptoms of the illness when they are under the weather.
+
+On long-distance voyages, pigeons calculate the direction they need to fly by comparing the position of the sun with their internal clock. By keeping birds under artificial lights, scientists have manipulated the birds' sense of time and tricked them into flying in the wrong direction.
+
+Women can be allergic to sex with men, but doctors are finding women can overcome this allergy through regular sex combined with treatments derived from semen.
+
+French researchers say they've discovered a natural painkiller in human saliva that's several times more potent than morphine used in animal studies.
+
+The very act of taking a test is enough to enhance long-term memory. Furthermore, testing helps students remember not only what they studied for the test, but also related, non-tested concepts.
+
+Female guppies mating with four different males gave birth to 73 percent more young than their monogamous sisters. Plus, the young were more skilled at swimming in tandem with another fish and jetting out of trouble.
+
+While Iraqi Sunnis were always in favor of blowing up Americans, members of the Shiite majority are now 50 percent more likely to support violent attacks against Americans than they were in January. ... The belief that the United States plans to have permanent bases in Iraq is highly correlated with support for attacks on U.S.-led forces. ... Al Qaeda itself is rooting for the U.S. to "stay the course" rather than withdraw. "Prolonging the war is in our interest," the Qaeda letter says, presumably as a tool for propaganda and recruitment.
+
+Cost of the Iraq war:  $23 million per hour.
+
+Far fewer polar bears cubs are surviving off Alaska's northern coast, a federal government report released Wednesday has concluded.
+
+A small burrowing owl lines its underground nest with the poop of other animals to lure insects and other prey.
+
+Just the mere thought of money can turn a person selfish, so that he helps others less often and prefers to play alone, a new study shows. In a series of nine experiments, researchers found that money enhanced people's motivation to achieve their own goals and degraded their behavior toward others. ... The scientists said the study had nothing to do with making a person feel wealthy. When real or fake money, or even a photo of cash, was placed in sight of participants, they became selfish.
+
+Athletes and non-athletes alike may want to raise a glass to resveratrol, an ingredient in red wine that researchers say doubled the physical endurance of mice in a new study, while protecting them against diabetes and obesity. Mice given high doses of the compound were able to run twice as far on treadmills than they normally could, French researchers reported.
+
+People born to women younger than 25 [are] about twice as likely to live for a century or longer than people born to older mothers.
+
+After years of painstaking research, scientists say they have unleashed a baby boom among one of the world's most beloved but endangered animals, China's giant panda. A bit of panda porn has helped too, they say. "It works," enthuses Zhang Zhihe, a leading Chinese expert, about showing uninitiated males DVDs of fellow pandas mating.
+
+The impact of running can be lessened by having strong joints. Most people blame impact for injury, when in fact it is weak joints that is the problem.
+
+Women who bicycle frequently run the risk of decreased sensitivity in their genitals as well as pain, a new study suggests.
+
+[In synesthesia,] two or more of the senses are crossed. Some see colors when listening to music, while others associate tastes with shapes or words with colors. A very small number of synesthetes can "taste" words.
+
+Sigard, a new software package developed by Sound Intelligence, [can] detect verbal aggression with a high level of accuracy. Combined with closed circuit television systems, Sigard can quickly notify security personnel about loud, angry people in outdoor public spaces, public transportation, nightclubs and bars.
+
+Humpback whales possess a [very] elaborate vocabulary.
+
+The longstanding advice to "sit up straight" has been turned on its head by a new study that suggests leaning back is a much better posture. Researchers analyzed different postures and concluded that the strain of sitting upright for long hours is a perpetrator of chronic back problems.
+
+Researchers have now found a blind man who experiences déjà vu through smell, hearing and touch.
+
+Church could benefit health in several ways, Maselko and her colleagues speculate. It provides social contact and emotional support, reducing the isolation many older people experience and boosting psychological well-being.
+
+Anthropologists said they have pieced together Leonardo da Vinci's left index fingerprint - a discovery that could help provide information on such matters as the food the artist ate and whether his mother was of Arabic origin.
+
+When it comes to differentiating a friend from a rival, invasive ants have it easier than humans: They can spot genetic differences. ... The largest supercolony in southern California extends some 600 miles and borders three smaller colonies. Battles in [one area of southern California during a six-month period] killed at least 15 million worker ants.
+
+The ultimate goal of the researchers is for everyone to have a sobot - an intelligent [software] agent that knows all of your needs, and follows you around to help you with whatever you do.
+
+The imaginary friends a child dreams up, naughty or nice, are good to have around. They have emotional, social, and cognitive benefits, and they help prepare children for real life, scientists say. "There's a certain amount of control over a relationship with an imaginary friend that you don't have with a real friend. It's a practice ground," said Stephanie Carlson, a developmental psychologist at the University of Washington.
+
+Neanderthals suffered periods of starvation and may have supplemented their diet through cannibalism, according to a study of remains from northwest Spain.
+
+Today only 13 slaughterhouses process the majority of the beef consumed by 300 million Americans.
+
+Men with osteoarthritis in the knee experience more severe pain and more loss of cartilage if they smoke.
+
+At least one U.S. child has died and 19 others have needed surgery since 2003 after swallowing magnets used in toys, the government reported Thursday. Most of those cases were believed to involve tiny but strong "rare earth'' magnets that can link together in children's digestive tracts, squeezing and even perforating the intestines.
+
+A small-scale, regional nuclear war could disrupt the global climate for a decade or more, with environmental effects that could be devastating for everyone on Earth.
+
+According to a new study, laughter truly is contagious: the brain responds to the sound of laughter and preps the muscles in the face to join in the mirth.
+
+The floor space in new private one-family homes has expanded to 2,227 square feet in 2005 from 1,905 square feet in 1990. ... More people are injured by wheelchairs than by lawnmowers. ... Bicycles are involved in more accidents than any other consumer product, but beds rank a close second. ... With medical costs rising, more people said they pray for their health than invest in every form of alternative medicine or therapy combined.
+
+More Americans were born in 2004 than in any years except 1960 and 1990. Meanwhile, the national divorce rate, 3.7 divorces per 1,000 people, was the lowest since 1970.
+
+From 2000 to 2005, the number of manufacturing jobs declined nearly 18 percent. Virtually every job category registered decreases except pharmaceuticals. Employment in textile mills fell by 42 percent. The job projected to grow the fastest by 2014 is home health aide.
+
+More than half of American households owned stocks and mutual funds in 2005. The 91 million individuals in those households had a median age of 51 and a median household income of $65,000.  That might help explain a shift in what college freshmen described as their primary personal objectives. In 1970, 79 percent said their goal was developing a meaningful philosophy of life. By 2005, 75 percent said their primary objective was to be financially very well off.
+
+Among graduate students, 27 percent had at least one foreign-born parent. The number of foreign students from India enrolled in American colleges soared to 80,000 in 2005 from 10,000 in 1976.
+
+The chirps of crickets are love songs that males sing to entice females, but that is not all they attract. Chirping at times can lure doom, drawing parasitic flies that infest crickets with larvae, new research shows. The parasites, called Ormia ochracea, burrow into their amorous hosts and then, after a week or so of feeding on organs, tear their way out, killing the cricket as they emerge.
+
+When rats snuggle up for a nap, they replay "movies" of their daily activities in what scientists suggest is the animal equivalent of dreaming, a new study suggests. ... To find out if rats replay visuals, Wilson and Daoyun Ji, also of MIT, measured brain activity in the hippocampus and visual cortex while rats ran through mazes with different designs on the floors and walls. The brain regions showed specific patterns as the animals sensed their surroundings in the maze.
+
+Women in a threatening situation show signs of immediate relief, as revealed in brain scans, when holding their husband's hand.
+
+Mathematical gifts and a variety of aptitudes have a significant impact [on the development of high intelligence from childhood to adulthood, but] special educational opportunities and commitment can dramatically increase this impact. ... These students are intellectually gifted, and those gifts are best fully realized when they have the full support and understanding of their teachers, their parents and their social network.
+
+The size of your gut may be partly shaped by which microbes call it home, according to new research linking obesity to types of digestive bacteria.
+
+A man who went missing in western Japan survived in near-freezing weather without food and water for over three weeks by falling into a state similar to hibernation, doctors said. Mitsutaka Uchikoshi had almost no pulse, his organs had all but shut down and his body temperature was 71 degrees Fahrenheit when he was discovered on Rokko mountain in late October, said doctors who treated him at the nearby Kobe City General Hospital. He had been missing for 24 days.
+
+The air you breathe is teeming with more than 1,800 kinds of bacteria.
+
+Scientists have discovered a new gene that makes mice happy, a finding that suggests another avenue of drugs for improving depression in humans. The research represents the first time that depression has been eliminated genetically in any organism.
+
+People taking powerful antacid drugs called proton pump inhibitors face an increased risk of hip fracture .... Common proton pump inhibitors include Aciphex, Nexium, Prevacid, Prilosec and Protonix; they are often prescribed for stomach conditions such as gastroesophageal reflux disease (GERD).
+
+If the trend continues for the next 60 years or so as it has in the past, the degree of fire occurrence in the West could be unprecedented compared to anything in recent memory.
+
+Olaf Blanke, a Swiss neuroscientist, used an implanted electrode to send a current into a region of the brain called the angular gyrus. The test was focused on language processing. But as a side effect, one of the test subjects nervously reported sensing another person in bed with her, silent and shadowy. Her creepy companion came and went with the ebb and flow of current.
+
+Zurich ranks as the world's top city for quality of living, according to a survey by Mercer Human Resource Consulting.  The city scores 108.2 .... Cities are ranked against New York as the base city, which has an index score of 100. Almost half the top 30 scoring cities are in Western Europe. ... Honolulu, the highest ranking city in the U.S., drops two positions to 27th with a score of 103.3. ... [Chicago] has moved up 11 places due to decreased crime rates. ... Beijing and Shanghai are on the rise and should experience rapid improvements in quality of living in the coming years.</p>
+<div style="clear: both;"></div>
+</div>
+
+---
+### Comments
