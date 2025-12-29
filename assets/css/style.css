@@ -1,72 +1,95 @@
-/* 1. Global Page Settings - Matches your sample's green background and fonts */
+/* Matches the original Blogger "Rounders 4" theme */
+
+/* 1. Global Page Settings */
 body { 
   background: #bca; 
   margin: 0; 
   padding: 20px 10px;
-  text-align: center; /* Centers the #outer-wrapper only */
+  text-align: center;
   line-height: 1.5em; 
-  font: small 'Trebuchet MS', Verdana, Arial, Sans-serif; 
-  color: #333333; 
+  font: x-small 'Trebuchet MS', Verdana, Arial, Sans-serif; 
+  color: #e6ffa2;
+  font-size: small;
 } 
 
 /* 2. Main Container */
 #outer-wrapper { 
   width: 740px; 
   margin: 0 auto; 
-  text-align: left; /* All text inside is left-aligned by default */
+  text-align: left;
+  font: normal normal 100% 'Trebuchet MS', Verdana, Arial, Sans-serif;
 } 
 
-/* 3. Centered Header & Site Title */
+/* 3. Header & Site Title */
 #header-wrapper { 
   background: #476 url("https://web.archive.org/web/20180904033122im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top; 
   margin-top: 22px; 
   padding: 8px 0; 
   color: #ffffff; 
-  text-align: center; /* Centered Site Title */
+  text-align: center;
 } 
 
 #header h1 { 
   margin: 0; 
   padding: 10px 30px 5px; 
   font: normal bold 200% 'Trebuchet MS', Verdana, Arial, Sans-serif; 
+  color: #ffffff;
 } 
 
-/* 4. Centered Archive Heading */
-#main-wrap1 h1 { 
-  text-align: center !important;
+#header a,
+#header a:visited {
+  text-decoration: none;
   color: #ffffff;
-  margin: 20px 0;
 }
 
-#main-wrap1 h2 {
-  text-align: center !important; /* Centers the Year headings */
-  color: #ccff44;
-}
-
-/* 5. Main Content Area - Dark teal blocks */
+/* 4. Main Content Area - Dark teal block */
 #main-wrap1 { 
   width: 485px; 
   float: left; 
   background: #446666 url("https://web.archive.org/web/20180904033122im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom; 
   margin: 15px 0 0; 
   padding: 0 0 10px; 
-  color: #e6ffa2; /* Light lime text for dark background */
+  color: #e6ffa2;
+  font-size: 97%;
+  line-height: 1.5em;
+  word-wrap: break-word;
+  overflow: hidden;
 } 
 
 #main-wrap2 { 
   background: url("https://web.archive.org/web/20180904033122im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top; 
   padding: 10px 0 0; 
+  float: left;
+  width: 100%;
 } 
 
-/* 6. Date and Post Formatting */
+/* 5. Archive Page Headings */
+#main-wrap1 h1 { 
+  text-align: center;
+  color: #ffffff;
+  margin: 20px 0;
+  font: normal bold 200% 'Trebuchet MS', Verdana, Arial, Sans-serif;
+}
+
+#main-wrap1 h2 {
+  text-align: center;
+  color: #ccff44;
+  margin: 30px 43px 10px;
+  font-size: 120%;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+}
+
+/* 6. Date Headers (for blog posts) */
 h2.date-header { 
   margin: 10px 43px 0; 
   font-size: 85%; 
-  color: #ccff44; /* Bright lime green dates */
+  color: #ccff44;
   text-transform: uppercase; 
   letter-spacing: .2em; 
 } 
 
+/* 7. Post Formatting */
 .post { 
   margin: .3em 0 25px; 
   padding: 0 13px; 
@@ -86,13 +109,13 @@ h2.date-header {
 .post-body { 
   padding: 10px 29px; 
   color: #e6ffa2; 
-  text-align: left; /* Post text is left-justified */
+  text-align: left;
 } 
 
-/* 7. Spacing & List Fixes */
+/* 8. Lists */
 ul, ol {
   text-align: left !important;
-  padding-left: 60px !important; /* Adds space from the left margin */
+  padding-left: 60px !important;
   margin: 10px 0;
 }
 
@@ -101,40 +124,36 @@ li {
   margin-bottom: 5px;
 }
 
-/* 8. Links */
-a:link { color: #ffff66; } 
-a:visited { color: #f3ffd1; }
+/* 9. Links - Bright yellow on dark background */
+a:link { 
+  color: #ffff66; 
+} 
 
-/* 9. Archive Page Styles - Matching your green theme */
+a:visited { 
+  color: #f3ffd1; 
+}
+
+a:hover {
+  color: #f3ffd1;
+  text-decoration: underline;
+}
+
+/* 10. Archive Page Specific Styles */
 #main-wrap1 ul {
     list-style: none;
-    padding-left: 40px !important;
-    margin: 10px 0;
+    padding-left: 43px !important;
+    margin: 10px 0 25px;
 }
 
 #main-wrap1 li {
-    margin-bottom: 12px;
-    padding-left: 20px;
+    margin-bottom: 8px;
+    padding-left: 0;
     text-align: left !important;
-}
-
-#main-wrap1 a {
-    color: #ffff66;
-    text-decoration: none;
-}
-
-#main-wrap1 a:visited {
-    color: #f3ffd1;
-}
-
-#main-wrap1 a:hover {
-    text-decoration: underline;
-    color: #ccff44;
 }
 
 #main-wrap1 li span {
     opacity: 0.8;
-    font-size: 0.9em;
-    margin-left: 8px;
+    font-size: 90%;
+    margin-left: 6px;
     color: #ccff44;
 }
