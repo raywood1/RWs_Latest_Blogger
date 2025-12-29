@@ -105,47 +105,36 @@ li {
 a:link { color: #ffff66; } 
 a:visited { color: #f3ffd1; }
 
-
-
-
-/* Archive Page Styles */
-
-/* Year headers */
-h2 {
-    font-size: 1.5em;
-    color: #7a5839;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    border-left: 4px solid #d4a574;
-}
-
-/* Archive list */
-ul {
+/* 9. Archive Page Styles - Matching your green theme */
+#main-wrap1 ul {
     list-style: none;
-    padding: 0;
+    padding-left: 40px !important;
+    margin: 10px 0;
 }
 
-li {
+#main-wrap1 li {
     margin-bottom: 12px;
     padding-left: 20px;
+    text-align: left !important;
 }
 
-/* Links */
-a {
-    color: #3366cc;
+#main-wrap1 a {
+    color: #ffff66;
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #cc0000;
+#main-wrap1 a:visited {
+    color: #f3ffd1;
 }
 
-/* Date styling */
-li span {
-    opacity: 0.7;
+#main-wrap1 a:hover {
+    text-decoration: underline;
+    color: #ccff44;
+}
+
+#main-wrap1 li span {
+    opacity: 0.8;
     font-size: 0.9em;
     margin-left: 8px;
-    color: #666;
+    color: #ccff44;
 }
