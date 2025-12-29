@@ -1,8 +1,8 @@
-/* Matches the original Blogger "Rounders 4" theme */
+/* Dark green theme matching your Blogger sample */
 
-/* 1. Global Page Settings */
+/* 1. Dark green page background */
 body { 
-  background: #bca; 
+  background: #446666;
   margin: 0; 
   padding: 20px 10px;
   text-align: center;
@@ -18,11 +18,12 @@ body {
   margin: 0 auto; 
   text-align: left;
   font: normal normal 100% 'Trebuchet MS', Verdana, Arial, Sans-serif;
+  background: #446666;
 } 
 
-/* 3. Header & Site Title */
+/* 3. Header */
 #header-wrapper { 
-  background: #476 url("https://web.archive.org/web/20180904033122im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top; 
+  background: #476;
   margin-top: 22px; 
   padding: 8px 0; 
   color: #ffffff; 
@@ -42,118 +43,75 @@ body {
   color: #ffffff;
 }
 
-/* 4. Main Content Area - Dark teal block */
+/* 4. Main Content Area */
 #main-wrap1 { 
-  width: 485px; 
-  float: left; 
-  background: #446666 url("https://web.archive.org/web/20180904033122im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom; 
-  margin: 15px 0 0; 
-  padding: 0 0 10px; 
+  width: 100%;
+  background: #446666;
+  margin: 0;
+  padding: 20px 43px;
   color: #e6ffa2;
   font-size: 97%;
   line-height: 1.5em;
-  word-wrap: break-word;
-  overflow: hidden;
 } 
 
 #main-wrap2 { 
-  background: url("https://web.archive.org/web/20180904033122im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top; 
-  padding: 10px 0 0; 
-  float: left;
+  background: #446666;
+  padding: 0;
   width: 100%;
 } 
 
-/* 5. Archive Page Headings */
-#main-wrap1 h1 { 
+/* 5. All headings - light colors on dark background */
+h1 { 
   text-align: center;
   color: #ffffff;
   margin: 20px 0;
   font: normal bold 200% 'Trebuchet MS', Verdana, Arial, Sans-serif;
 }
 
-#main-wrap1 h2 {
+h2 {
   text-align: center;
   color: #ccff44;
-  margin: 30px 43px 10px;
+  margin: 30px 0 10px;
   font-size: 120%;
   text-transform: uppercase;
   letter-spacing: .2em;
 }
 
-/* 6. Date Headers (for blog posts) */
-h2.date-header { 
-  margin: 10px 43px 0; 
-  font-size: 85%; 
-  color: #ccff44;
-  text-transform: uppercase; 
-  letter-spacing: .2em; 
-} 
-
-/* 7. Post Formatting */
-.post { 
-  margin: .3em 0 25px; 
-  padding: 0 13px; 
-  border: 1px dotted #bbbbbb; 
-  border-width: 1px 0; 
-} 
-
-.post h3 { 
-  margin: 0; 
-  color: #ffffff; 
-  font: normal bold 135% 'Trebuchet MS', Verdana, Arial, Sans-serif; 
-  padding: 5px 29px; 
-  border: 1px dotted #bbbbbb; 
-  border-width: 0 1px 1px; 
-} 
-
-.post-body { 
-  padding: 10px 29px; 
-  color: #e6ffa2; 
+/* 6. Lists - no bullets, proper spacing */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 25px;
   text-align: left;
-} 
-
-/* 8. Lists */
-ul, ol {
-  text-align: left !important;
-  padding-left: 60px !important;
-  margin: 10px 0;
 }
 
 li {
-  text-align: left !important;
-  margin-bottom: 5px;
+  text-align: left;
+  margin-bottom: 8px;
+  padding-left: 0;
+  color: #e6ffa2;
 }
 
-/* 9. Links - Bright yellow on dark background */
+/* 7. Links - bright yellow */
+a,
 a:link { 
-  color: #ffff66; 
+  color: #ffff66;
+  text-decoration: none;
 } 
 
 a:visited { 
-  color: #f3ffd1; 
+  color: #f3ffd1;
 }
 
 a:hover {
-  color: #f3ffd1;
+  color: #ffffff;
   text-decoration: underline;
 }
 
-/* 10. Archive Page Specific Styles */
-#main-wrap1 ul {
-    list-style: none;
-    padding-left: 43px !important;
-    margin: 10px 0 25px;
-}
-
-#main-wrap1 li {
-    margin-bottom: 8px;
-    padding-left: 0;
-    text-align: left !important;
-}
-
-#main-wrap1 li span {
-    opacity: 0.8;
-    font-size: 90%;
-    margin-left: 6px;
-    color: #ccff44;
+/* 8. Date spans */
+li span {
+  opacity: 0.8;
+  font-size: 90%;
+  margin-left: 6px;
+  color: #ccff44;
 }
