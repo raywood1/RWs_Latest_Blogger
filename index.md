@@ -1,22 +1,10 @@
 ---
 layout: default
-title: Archive
+title: Home
 ---
 
-# Archive
+# Ray Woodcock's Latest (from Blogger)
 
-{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+Welcome! This is an archive of posts from my Blogger site.
 
-{% for year in posts_by_year %}
-  {% if year.items.size > 0 %}  <-- ADD THIS LINE
-    ## {{ year.name }}
-    <ul>
-    {% for post in year.items %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        <span style="opacity:0.7;">({{ post.date | date: "%b %d" }})</span>
-      </li>
-    {% endfor %}
-    </ul>
-  {% endif %}                    <-- ADD THIS LINE
-{% endfor %}
+[View the complete archive →](/RWs_Latest_Blogger/archive)
