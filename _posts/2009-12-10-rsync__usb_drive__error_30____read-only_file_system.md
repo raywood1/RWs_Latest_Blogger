@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "rsync, USB Drive, Error 30:  "Read-Only File System""
+title: "rsync, USB Drive, Error 30:  'Read-Only File System'"
 date: 2009-12-10
 ---
 
@@ -22,3 +22,4 @@ The fix, for me, was to reformat the USB drive in Windows.  It would probably w
 
 ---
 ### Comments
+
