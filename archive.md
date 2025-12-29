@@ -13,7 +13,7 @@ title: Archive
 <ul>
 {% for post in year.items %}
   <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <a href="{{ post.url | relative_url }}" target="_blank">{{ post.title }}</a>
     <span style="opacity:0.7;">({{ post.date | date: "%b %d" }})</span>
   </li>
 {% endfor %}
