@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Microsoft Word:  "Attempting to open a file created in earlier version""
+title: "Microsoft Word:  'Attempting to open a file created in earlier version'"
 date: 2012-03-17
 ---
 
@@ -43,3 +43,4 @@ date: 2012-03-17
 
 ---
 ### Comments
+
