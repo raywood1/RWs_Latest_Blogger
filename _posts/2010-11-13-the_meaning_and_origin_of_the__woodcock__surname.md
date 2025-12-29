@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Meaning and Origin of the "Woodcock" Surname"
+title: "The Meaning and Origin of the 'Woodcock' Surname"
 date: 2010-11-13
 ---
 
