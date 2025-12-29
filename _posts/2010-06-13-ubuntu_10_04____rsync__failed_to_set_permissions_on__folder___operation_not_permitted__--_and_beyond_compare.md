@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Ubuntu 10.04:  "rsync: failed to set permissions on [folder]: Operation not permitted" -- and Beyond Compare"
+title: "Ubuntu 10.04:  'rsync: failed to set permissions on [folder]: Operation not permitted' -- and Beyond Compare"
 date: 2010-06-13
 ---
 
