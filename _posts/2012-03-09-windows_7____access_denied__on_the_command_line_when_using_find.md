@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows 7:  "Access Denied" on the Command Line When Using FIND"
+title: "Windows 7:  'Access Denied' on the Command Line When Using FIND"
 date: 2012-03-09
 ---
 
@@ -86,4 +86,5 @@ Holy Crap... Thank you, Thank you, Thank you...
 
 **Anonymous**:
 Operator error indeed.  Kill me now - man, I'm stupid.
+
 
