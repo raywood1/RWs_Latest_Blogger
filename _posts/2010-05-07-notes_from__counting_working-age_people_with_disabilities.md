@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes from "Counting Working-Age People with Disabilities""
+title: "Notes from 'Counting Working-Age People with Disabilities'"
 date: 2010-05-07
 ---
 
@@ -92,3 +92,4 @@ One section of this chapter discusses shortcomings in statistical knowledge abou
 
 ---
 ### Comments
+
