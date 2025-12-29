@@ -1,22 +1,37 @@
----
-layout: default
-title: Archive
----
+/* Archive Page Styles - Matching your green theme */
 
-# Archive
+/* Archive list - override the general ul styles for archive page */
+#main-wrap1 ul {
+    list-style: none;
+    padding-left: 40px !important;
+    margin: 10px 0;
+}
 
-{% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+#main-wrap1 li {
+    margin-bottom: 12px;
+    padding-left: 20px;
+    text-align: left !important;
+}
 
-{% for year in postsByYear %}
-## {{ year.name }}
+/* Archive links - brighter for dark background */
+#main-wrap1 a {
+    color: #ffff66;
+    text-decoration: none;
+}
 
-<ul>
-{% for post in year.items %}
-  <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-    <span style="opacity:0.7;">({{ post.date | date: "%b %d" }})</span>
-  </li>
-{% endfor %}
-</ul>
+#main-wrap1 a:visited {
+    color: #f3ffd1;
+}
 
-{% endfor %}
+#main-wrap1 a:hover {
+    text-decoration: underline;
+    color: #ccff44;
+}
+
+/* Date styling - matches your date-header color */
+#main-wrap1 li span {
+    opacity: 0.8;
+    font-size: 0.9em;
+    margin-left: 8px;
+    color: #ccff44;
+}
