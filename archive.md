@@ -1,41 +1,22 @@
-/* Archive Page Styles */
+---
+layout: default
+title: Archive
+---
 
-/* Year headers */
-h2 {
-    font-size: 1.5em;
-    color: #7a5839;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-left: 10px;
-    border-left: 4px solid #d4a574;
-}
+# Archive
 
-/* Archive list */
-ul {
-    list-style: none;
-    padding: 0;
-}
+{% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
 
-li {
-    margin-bottom: 12px;
-    padding-left: 20px;
-}
+{% for year in postsByYear %}
+## {{ year.name }}
 
-/* Links */
-a {
-    color: #3366cc;
-    text-decoration: none;
-}
+<ul>
+{% for post in year.items %}
+  <li>
+    <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    <span style="opacity:0.7;">({{ post.date | date: "%b %d" }})</span>
+  </li>
+{% endfor %}
+</ul>
 
-a:hover {
-    text-decoration: underline;
-    color: #cc0000;
-}
-
-/* Date styling */
-li span {
-    opacity: 0.7;
-    font-size: 0.9em;
-    margin-left: 8px;
-    color: #666;
-}
+{% endfor %}
