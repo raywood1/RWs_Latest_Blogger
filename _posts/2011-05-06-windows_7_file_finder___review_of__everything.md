@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows 7 File Finder:  Review of "Everything""
+title: "Windows 7 File Finder:  Review of 'Everything'"
 date: 2011-05-06
 ---
 
