@@ -1,80 +1,77 @@
-/* Updated style.css */
-
+/* General Page Settings */
 body { 
-  background: #bca; 
+  background: #f4f4f4; /* Light grey background instead of dark green */
   margin: 0; 
-  /* text-align: center;  <-- Removed this to stop global centering */
-  line-height: 1.5em; 
-  font: small 'Trebuchet MS', Verdana, Arial, Sans-serif; 
-  color: #e6ffa2; 
+  line-height: 1.6em; 
+  font: 14px 'Trebuchet MS', Verdana, Arial, Sans-serif; 
+  color: #333333; /* Darker text for better readability */
+  text-align: center; /* This centers the #outer-wrapper only */
 } 
 
+/* The main container for the blog */
 #outer-wrapper { 
   width: 740px; 
   margin: 0 auto; 
-  text-align: left; 
+  text-align: left; /* This ensures all content inside the blog is left-justified */
+  background: #ffffff;
+  border: 1px solid #cccccc;
 } 
 
+/* Header Styling */
 #header-wrapper { 
-  background: #476 url("https://web.archive.org/web/20180904033122im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top; 
-  margin-top: 22px; 
-  padding-top: 8px; 
+  background: #446688; /* Solid blue/grey header */
+  margin: 0; 
+  padding: 20px; 
   color: #ffffff; 
 } 
 
 #header h1 { 
   margin: 0; 
-  padding: 10px 30px 5px; 
-  font: normal bold 200% 'Trebuchet MS', Verdana, Arial, Sans-serif; 
+  font-size: 250%; 
+  font-weight: bold;
 } 
 
+/* Main Content Area */
 #main-wrap1 { 
-  width: 485px; 
-  float: left; 
-  background: #446666 url("https://web.archive.org/web/20180904033122im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom; 
-  margin: 15px 0 0; 
-  padding: 0 0 10px; 
+  width: 100%; /* Spans the width of the wrapper */
+  padding: 20px 0;
 } 
 
-#main-wrap2 { 
-  background: url("https://web.archive.org/web/20180904033122im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top; 
-  padding: 10px 0 0; 
-} 
-
+/* Post Formatting - Matches your uploaded sample structure */
 h2.date-header { 
-  margin: 10px 43px 0; 
-  font-size: 85%; 
-  color: #ccff44; 
+  margin: 1.5em 20px 0.5em; 
+  font-size: 90%; 
+  color: #888888; 
   text-transform: uppercase; 
-  letter-spacing: .2em; 
+  letter-spacing: .1em; 
 } 
 
 .post { 
-  margin: .3em 0 25px; 
-  padding: 0 13px; 
-  border: 1px dotted #bbbbbb; 
-  border-width: 1px 0; 
+  margin: 0 20px 1.5em; 
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #eeeeee;
 } 
 
 .post h3 { 
-  margin: 0; 
-  color: #ffffff; 
-  font: normal bold 135% 'Trebuchet MS', Verdana, Arial, Sans-serif; 
-  padding: 5px 29px; 
-  border: 1px dotted #bbbbbb; 
-  border-width: 0 1px 1px; 
+  margin: 0.25em 0; 
+  color: #224466; 
+  font-size: 160%; 
+  font-weight: bold;
 } 
 
 .post-body { 
-  padding: 10px 29px; 
-  color: #e6ffa2; 
-  text-align: left; /* Ensures the post content itself stays left-aligned */
+  padding: 10px 0; 
+  color: #333333; /* Dark text as seen in standard blog samples */
+  line-height: 1.6;
+  text-align: left; /* Explicitly forces the text to the left */
 } 
 
-a:link { color: #ffff66; } 
-a:visited { color: #f3ffd1; }
+/* Links */
+a:link { color: #2266aa; text-decoration: none; } 
+a:visited { color: #666666; }
+a:hover { text-decoration: underline; }
 
-/* Force all list items to be left-justified */
+/* Global List Alignment */
 ul, ol, li {
   text-align: left !important;
 }
