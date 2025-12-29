@@ -80,7 +80,7 @@ h2 {
 /* 6. Lists - no bullets, proper spacing */
 ul {
   list-style: none;
-  padding-left: 0;
+  padding-left: 40px;
   margin: 10px 0 25px;
   text-align: left;
 }
