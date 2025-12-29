@@ -1,25 +1,28 @@
-/* Updated style.css */
-
+/* 1. Global Page Settings - Matches your sample's green background and fonts */
 body { 
   background: #bca; 
   margin: 0; 
-  /* text-align: center;  <-- Removed this to stop global centering */
+  padding: 20px 10px;
+  text-align: center; /* Centers the #outer-wrapper only */
   line-height: 1.5em; 
   font: small 'Trebuchet MS', Verdana, Arial, Sans-serif; 
-  color: #e6ffa2; 
+  color: #333333; 
 } 
 
+/* 2. Main Container */
 #outer-wrapper { 
   width: 740px; 
   margin: 0 auto; 
-  text-align: left; 
+  text-align: left; /* All text inside is left-aligned by default */
 } 
 
+/* 3. Centered Header & Site Title */
 #header-wrapper { 
   background: #476 url("https://web.archive.org/web/20180904033122im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top; 
   margin-top: 22px; 
-  padding-top: 8px; 
+  padding: 8px 0; 
   color: #ffffff; 
+  text-align: center; /* Centered Site Title */
 } 
 
 #header h1 { 
@@ -28,12 +31,26 @@ body {
   font: normal bold 200% 'Trebuchet MS', Verdana, Arial, Sans-serif; 
 } 
 
+/* 4. Centered Archive Heading */
+#main-wrap1 h1 { 
+  text-align: center !important;
+  color: #ffffff;
+  margin: 20px 0;
+}
+
+#main-wrap1 h2 {
+  text-align: center !important; /* Centers the Year headings */
+  color: #ccff44;
+}
+
+/* 5. Main Content Area - Dark teal blocks */
 #main-wrap1 { 
   width: 485px; 
   float: left; 
   background: #446666 url("https://web.archive.org/web/20180904033122im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom; 
   margin: 15px 0 0; 
   padding: 0 0 10px; 
+  color: #e6ffa2; /* Light lime text for dark background */
 } 
 
 #main-wrap2 { 
@@ -41,10 +58,11 @@ body {
   padding: 10px 0 0; 
 } 
 
+/* 6. Date and Post Formatting */
 h2.date-header { 
   margin: 10px 43px 0; 
   font-size: 85%; 
-  color: #ccff44; 
+  color: #ccff44; /* Bright lime green dates */
   text-transform: uppercase; 
   letter-spacing: .2em; 
 } 
@@ -68,13 +86,21 @@ h2.date-header {
 .post-body { 
   padding: 10px 29px; 
   color: #e6ffa2; 
-  text-align: left; /* Ensures the post content itself stays left-aligned */
+  text-align: left; /* Post text is left-justified */
 } 
 
+/* 7. Spacing & List Fixes */
+ul, ol {
+  text-align: left !important;
+  padding-left: 60px !important; /* Adds space from the left margin */
+  margin: 10px 0;
+}
+
+li {
+  text-align: left !important;
+  margin-bottom: 5px;
+}
+
+/* 8. Links */
 a:link { color: #ffff66; } 
 a:visited { color: #f3ffd1; }
-
-/* Force all list items to be left-justified */
-ul, ol, li {
-  text-align: left !important;
-}
