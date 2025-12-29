@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Notes from "Philosophical Reflections on Disability""
+title: "Notes from 'Philosophical Reflections on Disability'"
 date: 2010-09-23
 ---
 
