@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows 7:  Eliminating "This Folder Is Shared With Other People" Message"
+title: "Windows 7:  Eliminating 'This Folder Is Shared With Other People' Message"
 date: 2012-04-02
 ---
 
@@ -38,4 +38,5 @@ Teracopy seems to get past the issue.  Integrates with explorer.
 
 **Lewis**:
 Thanks for this - because the standard del command with /y doesn't do the trick.
+
 
