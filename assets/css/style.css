@@ -1,27 +1,24 @@
-/* 1. Global Page Settings */
+/* 1. Global Page and Colors */
 body { 
-  background: #f4f4f4; 
+  background: #f0f2f5; /* Light grey/blue background */
   margin: 0; 
   line-height: 1.6em; 
   font: 14px 'Trebuchet MS', Verdana, Arial, Sans-serif; 
-  color: #333333; 
-  text-align: center; /* Required to center the #outer-wrapper box */
+  color: #333333; /* Darker, readable text */
 } 
 
-/* 2. The Main Content Container */
+/* 2. Main Container */
 #outer-wrapper { 
-  width: 760px; 
+  width: 760px; /* Slightly wider to accommodate padding */
   margin: 20px auto; 
-  text-align: left; /* Ensures post content inside remains left-aligned */
   background: #ffffff;
-  border: 1px solid #cccccc;
+  border: 1px solid #d1d1d1;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 } 
 
-/* 3. Centered Header/Title */
+/* 3. Centering the Title and Header */
 #header-wrapper { 
-  background: #446688; 
-  margin: 0; 
+  background: #4a6b8a; /* Solid professional blue */
   padding: 30px 20px; 
   color: #ffffff; 
   text-align: center; /* Centers the Site Title */
@@ -30,51 +27,37 @@ body {
 #header h1 { 
   margin: 0; 
   font-size: 250%; 
-  font-weight: bold;
-} 
-
-/* 4. Centered Archive Heading */
-#main-wrap1 h1 { 
-  text-align: center;
-  color: #224466;
-  margin-top: 20px;
 }
 
-#main-wrap1 h2 {
-  text-align: center; /* Centers the Year headings (2007, etc) */
-  color: #446688;
-}
-
-/* 5. Content Spacing (The 40px Margin) */
-.post, .post-body, #main-wrap1 ul {
-  padding-left: 40px !important;
+/* 4. Left Margin Spacing (Padding) */
+.post-body, .post, #main-wrap1 {
+  padding-left: 40px !important;  /* Creates space so text doesn't hit the edge */
   padding-right: 40px !important;
+  text-align: left;
 }
 
-/* 6. Post and List Formatting */
+/* 5. Centering the Archive Heading */
+/* Note: Adjust the selector below if your Archive heading uses a different tag */
+h2.archive-heading, .sidebar h2, #archive-title {
+  text-align: center !important;
+  padding-left: 0 !important; /* Reset padding for centered items */
+  margin-top: 30px;
+  color: #4a6b8a;
+}
+
+/* 6. Fix Colors for Links and Dates */
 h2.date-header { 
-  margin: 1.5em 40px 0.5em; 
-  font-size: 90%; 
-  color: #888888; 
+  margin: 2em 40px 0.5em; 
+  font-size: 85%; 
+  color: #666666; 
   text-transform: uppercase; 
 } 
 
-.post { 
-  margin: 0 0 1.5em; 
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #eeeeee;
-}
-
-.post-body { 
-  padding: 10px 0; 
-  text-align: left; 
-} 
-
-/* 7. Links and Lists */
-a:link { color: #2266aa; text-decoration: none; } 
-a:visited { color: #666666; }
+a:link { color: #1a73e8; text-decoration: none; } 
+a:visited { color: #5f6368; }
 a:hover { text-decoration: underline; }
 
+/* 7. Ensure Lists are Left-Justified */
 ul, ol, li {
   text-align: left !important;
 }
