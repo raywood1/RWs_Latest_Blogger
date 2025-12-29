@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Windows 7:  Deleting Excess "User" Accounts"
+title: "Windows 7:  Deleting Excess 'User' Accounts"
 date: 2012-04-01
 ---
 
@@ -33,4 +33,5 @@ I decided to zip the Default User folder, delete it, and save the ZIP for future
 ### Comments
 **raywood**:
 Several weeks later -- still no adverse effects attributable to any of these removals.
+
 
