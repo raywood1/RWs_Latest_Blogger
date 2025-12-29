@@ -1,28 +1,30 @@
-/* General Page Settings */
+/* 1. Global Page Settings */
 body { 
-  background: #f4f4f4; /* Light grey background instead of dark green */
+  background: #f4f4f4; 
   margin: 0; 
   line-height: 1.6em; 
   font: 14px 'Trebuchet MS', Verdana, Arial, Sans-serif; 
-  color: #333333; /* Darker text for better readability */
-  text-align: center; /* This centers the #outer-wrapper only */
+  color: #333333; 
+  text-align: center; /* Required to center the #outer-wrapper box */
 } 
 
-/* The main container for the blog */
+/* 2. The Main Content Container */
 #outer-wrapper { 
-  width: 740px; 
-  margin: 0 auto; 
-  text-align: left; /* This ensures all content inside the blog is left-justified */
+  width: 760px; 
+  margin: 20px auto; 
+  text-align: left; /* Ensures post content inside remains left-aligned */
   background: #ffffff;
   border: 1px solid #cccccc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 } 
 
-/* Header Styling */
+/* 3. Centered Header/Title */
 #header-wrapper { 
-  background: #446688; /* Solid blue/grey header */
+  background: #446688; 
   margin: 0; 
-  padding: 20px; 
+  padding: 30px 20px; 
   color: #ffffff; 
+  text-align: center; /* Centers the Site Title */
 } 
 
 #header h1 { 
@@ -31,47 +33,48 @@ body {
   font-weight: bold;
 } 
 
-/* Main Content Area */
-#main-wrap1 { 
-  width: 100%; /* Spans the width of the wrapper */
-  padding: 20px 0;
-} 
+/* 4. Centered Archive Heading */
+#main-wrap1 h1 { 
+  text-align: center;
+  color: #224466;
+  margin-top: 20px;
+}
 
-/* Post Formatting - Matches your uploaded sample structure */
+#main-wrap1 h2 {
+  text-align: center; /* Centers the Year headings (2007, etc) */
+  color: #446688;
+}
+
+/* 5. Content Spacing (The 40px Margin) */
+.post, .post-body, #main-wrap1 ul {
+  padding-left: 40px !important;
+  padding-right: 40px !important;
+}
+
+/* 6. Post and List Formatting */
 h2.date-header { 
-  margin: 1.5em 20px 0.5em; 
+  margin: 1.5em 40px 0.5em; 
   font-size: 90%; 
   color: #888888; 
   text-transform: uppercase; 
-  letter-spacing: .1em; 
 } 
 
 .post { 
-  margin: 0 20px 1.5em; 
+  margin: 0 0 1.5em; 
   padding-bottom: 1.5em;
   border-bottom: 1px solid #eeeeee;
-} 
-
-.post h3 { 
-  margin: 0.25em 0; 
-  color: #224466; 
-  font-size: 160%; 
-  font-weight: bold;
-} 
+}
 
 .post-body { 
   padding: 10px 0; 
-  color: #333333; /* Dark text as seen in standard blog samples */
-  line-height: 1.6;
-  text-align: left; /* Explicitly forces the text to the left */
+  text-align: left; 
 } 
 
-/* Links */
+/* 7. Links and Lists */
 a:link { color: #2266aa; text-decoration: none; } 
 a:visited { color: #666666; }
 a:hover { text-decoration: underline; }
 
-/* Global List Alignment */
 ul, ol, li {
   text-align: left !important;
 }
