@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "What Is a "Christian"?"
+title: "What Is a 'Christian'?"
 date: 2011-10-15
 ---
 
