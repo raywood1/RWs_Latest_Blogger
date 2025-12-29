@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Microsoft Word 2003: "Saving the Autorecovery File is Postponed""
+title: "Microsoft Word 2003: 'Saving the Autorecovery File is Postponed'"
 date: 2010-11-14
 ---
 
