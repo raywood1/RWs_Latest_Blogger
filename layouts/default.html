@@ -22,19 +22,21 @@
 document.addEventListener('DOMContentLoaded', () => {
   const fullTitle = document.title || '';
   const pageTitle = fullTitle.split(' | ')[0].trim();
-
   if (!pageTitle) return;
 
+  // Create the <h1> for the title
   const h1 = document.createElement('h1');
   h1.textContent = pageTitle;
   h1.className = 'post-title';
 
-  const postBody = document.querySelector('.post-body');
-  if (postBody && !postBody.querySelector('.post-title')) {
-    postBody.insertBefore(h1, postBody.firstChild);
+  // Insert it at the top of the content container
+  const mainWrap = document.querySelector('#main-wrap2');
+  if (mainWrap) {
+    mainWrap.insertBefore(h1, mainWrap.firstChild);
   }
 });
 </script>
+
 
 
 </body>
