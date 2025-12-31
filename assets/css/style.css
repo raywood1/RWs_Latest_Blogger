@@ -123,12 +123,14 @@ li span {
   text-align: left;
 }
 
+.post h3,
 .post-title {
   margin: 0;
   padding: 5px 29px;
   color: #ffffff;
   font: normal bold 135% 'Trebuchet MS', Verdana, Arial, Sans-serif;
   text-align: left;
+  display: block;
 }
 
 .post-body {
@@ -139,7 +141,7 @@ li span {
 
 .post-body p {
   text-align: left;
-  margin: 1em 0;
+  margin: 1.5em 0;
 }
 
 .date-header {
