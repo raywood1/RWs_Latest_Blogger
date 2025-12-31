@@ -1,3 +1,4 @@
 title: "Ray Woodcock's Latest (from Blogger)"
 url: "https://raywood1.github.io"
-baseurl: "/RWs_Latest_Blogger" # This tells Jekyll to include the folder name in links
+baseurl: "/RWs_Latest_Blogger"
+theme: null
