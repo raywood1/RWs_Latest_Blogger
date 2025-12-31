@@ -1,0 +1,930 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151125210025im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/2011/03/windows-7-kvm-in-multimonitor-setup.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/feeds/7496870244009477434/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Windows 7:  KVM in a Multimonitor Setup
+  </title>
+  <link href="https://web.archive.org/web/20151125210025cs_/https://www.blogger.com/static/v1/widgets/3053256790-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151125210025cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151125210025im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151125210025im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151125210025im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151125210025im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151125210025im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151125210025im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151125210025im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151125210025im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151125210025im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151125210025im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151125210025im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151125210025im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151125210025im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151125210025im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151125210025im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151125210025im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151125210025im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151125210025im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Friday, March 25, 2011
+        </h2>
+        <div class="post">
+         <a name="7496870244009477434">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/2011/03/windows-7-kvm-in-multimonitor-setup.html">
+           Windows 7:  KVM in a Multimonitor Setup
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I was using two monitors with two computers.  After
+           <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/2011/01/windows-7-multiple-monitors-multiple.html">
+            reflecting on multiple monitor
+           </a>
+           possibilities, I installed an
+           <a href="https://web.archive.org/web/20151125210025/http://www.google.com/search?as_qdr=all&amp;num=50&amp;q=%22ASUS+EN210%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">
+            ASUS EN210
+           </a>
+           video card in each computer.  This allowed me to connect dual displays.  I decided that monitor A would be available to both computers, and monitor B would be available only to computer B.  To make this happen, I connected monitor A to a keyboard-video-mouse (KVM) switch.  So computer A was visible only on monitor A, whereas computer B was visible across the two monitors (assuming that's where I had the KVM set).
+           <br/>
+           <br/>
+           Problem:  every time I switched back to computer B on the KVM, monitor A would go blank.  This was not a problem when I was using the KVM only to switch the mouse and keyboard, leaving each monitor dedicated to one computer.  It arose only in the dual-monitor setup.  It seemed that the computer was not remembering the dual-monitor settings for monitor A on computer B.  Each time, I had to go back into Control Panel &gt; Display &gt; Change Display Settings &gt; Detect.  (This KVM problem also seemed responsible for screwing up Adobe Acrobat 9. It was no longer remembering my toolbar settings the way I had previously set them. This seemed to be fixed by going into Acrobat's Help &gt; Repair Acrobat installation.)
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20151125210025/http://www.google.com/search?as_qdr=all&amp;num=50&amp;q=%22Windows+7%22+monitor+OR+display+detect+KVM&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">
+            A search
+           </a>
+           led to
+           <a href="https://web.archive.org/web/20151125210025/http://answers.microsoft.com/en-us/windows/forum/windows_7-hardware/kvm-switch-windows-7-creates-monitor-switching/84f41660-1933-4109-9b13-1ea8a1c27be7">
+            the suggestion
+           </a>
+           that the problem I was having with monitor A was with the KVM:
+           <br/>
+           <blockquote>
+            It is a problem found with those KVM switches which did not pass the console display's EDID and DDC information to all the systems connected to the KVM switch. ...
+            <br/>
+            Windows 7 checks display and display card constantly different from what XP and other operating systems did.
+            <br/>
+            To solve this issue, just replace the KVM switch with those KVM switches supporting FULL TIME Active DDC function.
+            <br/>
+            Please check ConnectPRO new UR or PR serial KVM switches which support Active DDC function to all the ports.
+           </blockquote>
+           That post pointed me toward
+           <a href="https://web.archive.org/web/20151125210025/http://msdn.microsoft.com/en-us/windows/hardware/gg487352.aspx">
+            a Microsoft webpage
+           </a>
+           with more technical information.  I did
+           <a href="https://web.archive.org/web/20151125210025/http://www.google.com/search?as_qdr=all&amp;num=50&amp;q=%22Windows+7%22+KVM+EDID+%22full+time%22+%22active+DDC%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">
+            another search
+           </a>
+           and saw references to ConnectPRO there too.
+           <a href="https://web.archive.org/web/20151125210025/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;as_qdr=all&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22Windows+7%22+KVM+site%3Anewegg.com&amp;tbs=&amp;lr=&amp;as_filetype=&amp;aq=f&amp;aqi=&amp;aql=f&amp;oq=">
+            A different search
+           </a>
+           suggested that lots of users were running into this problem.
+           <a href="https://web.archive.org/web/20151125210025/http://www.newegg.com/Product/PowerSearch.aspx?N=100007790&amp;IsNodeId=1&amp;SubCategory=143&amp;GASearch=3">
+            Newegg's Power Search
+           </a>
+           didn't offer an operating system selection, and they didn't seem to carry ConnectPRO KVMs.  A
+           <a href="https://web.archive.org/web/20151125210025/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=MPY&amp;as_qdr=all&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;biw=938&amp;bih=837&amp;q=%22Windows+7%22+KVM+%22active+DDC%22&amp;tbs=shop%3A1&amp;lr=&amp;as_filetype=&amp;aq=f&amp;aqi=&amp;aql=f&amp;oq=">
+            Google Shopping search
+           </a>
+           led to two ConnectPRO KVMs, each costing at least $130.  I ran across
+           <a href="https://web.archive.org/web/20151125210025/http://www.sevenforums.com/graphic-cards/127567-connection-monitor-via-vga-switch.html">
+            a workaround
+           </a>
+           suggestion to hit Win-D before and after switching with the KVM, but apparently that worked only with XBOXes, or anyway it didn't work for me.  There was
+           <a href="https://web.archive.org/web/20151125210025/http://msdn.microsoft.com/en-us/windows/hardware/gg487330.aspx">
+            another workaround
+           </a>
+           , too technical for my blood.
+           <a href="https://web.archive.org/web/20151125210025/http://www.windows7update.com/windows-7-rc-versus-aten-kvm-switch-comments.html">
+            Another thread
+           </a>
+           prompted me to check for the most current driver for my ASUS EN210 graphics card.  As I recalled, the usual advice was to look for the latest drivers on the chipset manufacturer's webpage, so after consulting the details on the EN210, I went to
+           <a href="https://web.archive.org/web/20151125210025/http://www.nvidia.com/Download/Find.aspx?lang=en-us">
+            the NVIDIA website
+           </a>
+           and searched for GeForce 210 drivers.  I went with the most recent WHQL-certified driver.  After reboot, I saw that this did not solve the problem.  Note:  the machine had all current Windows updates at this point.
+           <br/>
+           <br/>
+           It seemed I had a choice.  I could go back to using one monitor per computer, or I could look for a hardware multimonitor solution.  Going back would mean waiting for Microsoft to fix this problem with Win7.  There was no guarantee that that would ever happen.  Basically, if I wanted multimonitor support for KVM-type functionality for two computers running Win7 (as distinct from one Win7 and
+           <a href="https://web.archive.org/web/20151125210025/http://www.amazon.com/TRENDnet-2-Port-Switch-Cables-TK-209K/product-reviews/B000L4D42Q/ref=cm_cr_dp_all_summary?ie=UTF8&amp;showViewpoints=1&amp;sortBy=bySubmissionDateDescending">
+            one WinXP
+           </a>
+           ), it seemed I would either have to buy an expensive KVM or maybe come up with some other kind of
+           <a href="https://web.archive.org/web/20151125210025/http://www.tomshardware.com/forum/2129-63-windows-compatibility">
+            funky plugging and switching
+           </a>
+           .  For instance, I wondered whether I could make a go of it with two keyboards, two mice, and a switch just to flip monitor A from one computer to the other.  But this wouldn't circumvent the problem that Windows 7 was constantly polling the monitor, and that was the only thing that counted.  I found a device called the Geffen DVI Detective, which for $80 would remember the EDID and therefore defeat the problem (but only for monitors using DVI connectors).
+           <br/>
+           <br/>
+           Then I saw that
+           <a href="https://web.archive.org/web/20151125210025/http://www.amazon.com/s/ref=bl_sr_electronics?_encoding=UTF8&amp;node=172282&amp;field-brandtextbin=ConnectPro">
+            Amazon carried
+           </a>
+           a bunch of ConnectPRO KVMs, and some were far less expensive.  They did not carry the PR-12, which was the one PS/2 (as distinct from USB) KVM that ConnectPRO offered for my humble purposes:  two computers, one keyboard, one monitor, one mouse.  USB did not work reliably for both keyboard and mouse when Win7 was not running -- when, for instance, I was booting from a CD, or was adjusting the BIOS settings before the operating system booted.  But then I remembered that my new motherboards had only one PS/2 port, and the PR-12 would definitely require two (one each for keyboard and mouse).  I did have the option of using USB mice, one dedicated to each computer, and in fact had been doing that for a while, partly for the reason of pre-boot capability just mentioned and partly to reduce the strain on either wrist.  Another option was to use
+           <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/2011/03/adding-ps2-port.html">
+            an adapter
+           </a>
+           or some other gizmo to give me a second PS/2 port.
+           <br/>
+           <br/>
+           From ConnectPRO's
+           <a href="https://web.archive.org/web/20151125210025/http://connectpro.com/prod_kvm_usb.html">
+            product comparison page
+           </a>
+           , it seemed there were several options to consider.  One was the choice between VGA and DVI.  DVI provided superior video, but VGA (using D-Sub connectors) was functioning well for me at the moment.  (DVI achieved using DVI-VGA adapters had, in my impression, the same risk of video problems as plain old VGA.)  It seemed that a couple of inexpensive video cards had eliminated problems of ghosting that I was getting when I had the monitors connected directly to the motherboards.  There was also the choice of two- or four-computer KVMs.  I needed only two.  Switching via hotkey was preferable to having to reach up and punch a button on the KVM in order to switch between computers.  All of the relevant ConnectPRO KVMs had All-time Full DDC, which was evidently the core need behind this KVM search.  ConnectPRO's Pro line of KVMs apparently did not have the Dynamic Device Mapping (DDM) technology that would remember attached USB peripherals (e.g., speakers, mice) and would thus eliminate lag time required for the switched computer to re-detect the devices.  It was confusing, shopping among these devices on Amazon, because there were various "kit" options that were described as "new" and yet did not appear on ConnectPRO's website, and also because now it started to look like some of these products did not have Full DDC and/or DDM.  What I came up with was a choice, for me, between
+           <a href="https://web.archive.org/web/20151125210025/http://www.amazon.com/gp/offer-listing/B001TK8NR2/ref=dp_olp_new?ie=UTF8&amp;condition=new">
+            the UR-12 PRO
+           </a>
+           , with VGA and DDC but not DDM and no hotkey option ($102 with shipping from ConnectPRO through Amazon);
+           <a href="https://web.archive.org/web/20151125210025/http://www.amazon.com/ConnectPRO-UR-12-2-port-Switch-Cables/dp/B003HNF714/ref=sr_1_2?ie=UTF8&amp;s=electronics&amp;qid=1301093482&amp;sr=1-2">
+            the UR-12 PLUS
+           </a>
+           , with VGA, DDC, DDM, and a hotkey option ($176); and the
+           <a href="https://web.archive.org/web/20151125210025/http://www.amazon.com/gp/offer-listing/B003X5FM6Q/ref=dp_olp_new?ie=UTF8&amp;qid=1301094826&amp;sr=1-1&amp;condition=new">
+            UD-12 PLUS
+           </a>
+           , which was the same as the UR-12 PLUS but with DVI (and therefore with VGA as an option, via adapter) ($191 from a couple of sellers).
+           <br/>
+           <br/>
+           Since I was having no video issues at the moment, and might not have any again for some time, I decided to go with VGA rather than DVI, all other things being equal.  If I did get video problems, I could sell one KVM and upgrade to another later.  So then it was a question of whether I was willing to pay an extra $74 for DDM and a hotkey option.  DDM was nice -- I had noticed the lag in responsiveness at some point, hard to recall at the moment but apparently when I had upgraded from Windows XP to Windows 7 -- but that was not really bothering me much at present.  Those delays, and the hotkey, were especially important when I was doing a lot of switching between computers, which happened primarily when I was testing or tinkering with hardware or software on one machine and logging the developments on the other.  I was not presently doing much of that, and didn't plan to be doing much of it anytime soon.  It occurred to me that, if the DDM lags did bother me at such times, I could always dedicate one mouse, one monitor, and one keyboard to each computer at those times.  I could arrange that on my desk, and then the only lag would be the time needed to reorient my hands on the other keyboard.  Indeed, for purposes of working with the BIOS and such, I could simply keep a PS/2 keyboard always plugged in and standing off to the side of each computer, in addition to the USB keyboard connected to the KVM.  (PS/2 was not hot-swappable; it would be necessary to reboot to have the keyboard be recognized if it were not plugged in at time of bootup.)  Looking at the choice again, I reconsidered that the price difference between the UR-12 PLUS and the UD-12-PLUS was only $15.  From that perspective, I would choose the latter over the former, so as to wrap up the best product at not much additional cost; and in that case, the price difference between the solution with or without DDM, hotkey, and DVI was substantial:  the UD was almost twice the price of the UR.
+           <br/>
+           <br/>
+           As long as I was sure I did want to use dual monitors on computer B, sometimes swapping monitor A between computers A and B, I would need Full DDC, and it seemed the choice was then to spend $102 on a ConnectPRO UR-12 PRO KVM.  If I hadn't gotten the video cards for only $18 each, the decision to add dual monitor capability (with KVM and video cards) would then have cost me more than $150.  It was worth it -- dual monitor capability added a lot to a workspace -- but it was turning into more hassle and expense than it should have been.  I belatedly realized that perhaps I should have looked for a motherboard with dual monitor capability and with enough video memory so that the computer would not struggle to switch between windows on the same monitor, as computer A had been doing before I added the video card.  Desk space permitting, that kind of expense also raised the question of perhaps having three dedicated monitors -- one for computer A and two for computer B, and recabling one of the latter to computer A if a multimonitor need arose there -- thereby reducing the KVM need to a simple $20-30 device that would swap keyboards and mice, assuming those were not likewise dedicated to single machines.  The temptation to just get a third monitor and forget about the Full DDC KVM would be even stronger if I were looking at the nearly $200 price tag for a ConnectPRO UD-12 PLUS KVM.  But even without that, as I considered the time I had devoted to screwing around with KVMs, on this and on previous occasions, I did think that possibly the best approach would be to go with the third monitor, wait for someone to compete with ConnectPRO and/or for Microsoft to get its act together -- to buy a third monitor as an interim solution, in other words, and to sell it when and if a superior KVM alternative emerged.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151125210025/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=7496870244009477434&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/7" rel="tag">
+             7
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/ConnectPRO" rel="tag">
+             ConnectPRO
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/DDM" rel="tag">
+             DDM
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/display" rel="tag">
+             display
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/dual" rel="tag">
+             dual
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/EDID" rel="tag">
+             EDID
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/Full%20Time%20Active%20DDC" rel="tag">
+             Full Time Active DDC
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/ghosting" rel="tag">
+             ghosting
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/keyboard" rel="tag">
+             keyboard
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/KVM" rel="tag">
+             KVM
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/monitor" rel="tag">
+             monitor
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/mouse" rel="tag">
+             mouse
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/multiple" rel="tag">
+             multiple
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/PS%2F2" rel="tag">
+             PS/2
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/usb" rel="tag">
+             usb
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/video" rel="tag">
+             video
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/windows" rel="tag">
+             windows
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/search/label/XP" rel="tag">
+             XP
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          1 comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-6116841156067830960">
+           <a name="comment-6116841156067830960">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            For the record another thing you can try is just pulling the DDC pin out of the VGA or DVI connector. It stops windows from realizing the monitor has been switched off and it leaves dual monitor mode running the whole time.
+            <br/>
+            Pin 7 on a DVI connector and pin 12 on a VGA connector, just pull the pin out with some pliers and the issue goes away.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-6116841156067830960" title="comment permalink">
+             October 17, 2013 at 11:39 PM
+            </a>
+            <span class="item-control blog-admin pid-1538846181">
+             <a href="https://web.archive.org/web/20151125210025/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=6116841156067830960" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151125210025/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=7496870244009477434" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151125210025/http://raywoodcockslatest.blogspot.com/feeds/7496870244009477434/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:00:25 Nov 25, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:27:48 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.797
+  exclusion.robots: 0.12
+  exclusion.robots.policy: 0.108
+  esindex: 0.013
+  cdx.remote: 6.236
+  LoadShardBlock: 73.78 (3)
+  PetaboxLoader3.datanode: 91.419 (4)
+  load_resource: 83.752
+  PetaboxLoader3.resolve: 37.225
+-->

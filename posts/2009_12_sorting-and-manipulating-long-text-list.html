@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053726cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053726im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053726/http://raywoodcockslatest.blogspot.com/2009/12/sorting-and-manipulating-long-text-list.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/feeds/8656447940423482706/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053726/http://raywoodcockslatest.blogspot.com/2009/12/sorting-and-manipulating-long-text-list.html" property="og:url"/>
+  <meta content="Sorting and Manipulating a Long Text List to Eliminate Some Files" property="og:title"/>
+  <meta content="In Windows XP, I made a listing of all of the files on a hard drive.  For that, I could have typed DIR *.* &gt; OUTPUTFILE.TXT, but instead I u..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Sorting and Manipulating a Long Text List to Eliminate Some Files
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053726im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053726im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053726im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053726im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053726im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053726im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053726im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053726im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053726im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053726im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053726im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053726im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053726im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053726im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053726im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053726im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053726im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053726im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053726cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053726cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Wednesday, December 30, 2009
+        </h2>
+        <div class="post">
+         <a name="8656447940423482706">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/2009/12/sorting-and-manipulating-long-text-list.html">
+           Sorting and Manipulating a Long Text List to Eliminate Some Files
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           In Windows XP, I made a listing of all of the files on a hard drive.  For that, I could have typed DIR *.* &gt; OUTPUTFILE.TXT, but instead I used
+           <a href="//web.archive.org/web/20190906053726/https://www.google.com/search?hl=en&amp;q=printfolders&amp;sourceid=navclient-ff&amp;rlz=1B3GGGL_enUS318US318&amp;ie=UTF-8">
+            PrintFolders
+           </a>
+           .  I selected the option for full pathnames, so each line in the file list was like this:  D:\FOLDER\SUBFOLDER\FILENAME.EXT, along with date and file size information.
+           <br/>
+           <br/>
+           I wanted to sort the lines in this file list alphabetically.  They already were sorted that way, but DIR and PrintFolders tended to insert blank lines and other lines (e.g., "=======" divider lines) that I didn't want in my final list.  The question was, how could I do that sort?  I tried the SORT command built into WinXP, but it seemed my list was too long.  I tried importing OUTPUTFILE.TXT into Excel, but it had more than 65,536 lines, so Excel couldn't handle it.  It gave me a "File not loaded completely" message.  I tried importing it into Microsoft Access, but it ended with this:
+           <br/>
+           <blockquote>
+            Import Text Wizard
+            <br/>
+            <br/>
+            Finished importing file 'D:\FOLDER\SUBFOLDER\OUTPUTFILE.TXT to table 'OUTPUTTXT'.  Not all of your data was successfully imported.  Error descriptions with associated row numbers of bad records can be found in the Microsoft Office Access table 'OUTPUTFILE.TXT'.
+            <br/>
+           </blockquote>
+           <br/>
+           And then it turned out that it hadn't actually imported anything.  At this point, I didn't check the error log.  I looked for freeware file sorting utilities, but everything was shareware.  I was only planning to do this once, and didn't want to spend $30 for the privilege.  I did download and try one shareware program called Sort Text Lists Alphabetically Software (price $29.99), but it hung, probably because my text file had too many lines.  After 45 minutes or so, I killed it.
+           <br/>
+           <br/>
+           Eventually, I found I was able to do the sort very quickly using
+           <a href="https://web.archive.org/web/20190906053726/http://linux.die.net/man/1/sort">
+            the SORT command
+           </a>
+           in Ubuntu.  (I was running WinXP inside a VMware virtual machine on Ubuntu 9.04, so switching back and forth between the operating systems was just a matter of a click.)  The sort command I used was like this:
+           <br/>
+           <blockquote>
+            sort -b -d -f -i -o SORTEDFILE.TXT INPUTFILE.TXT
+            <br/>
+           </blockquote>
+           That worked.  I edited SORTEDFILE.TXT using Ubuntu's GEDIT program (like WinXP's Notepad).  For some reason, PrintFolders (or something) had inserted a lot of lines that did not match the expected pattern of D:\FOLDER\SUBFOLDER\FILENAME.EXT.  These may have been shortcuts or something.  Anyway, I removed them, so everything in SORTEDFILE.TXT matched the pattern.
+           <br/>
+           <br/>
+           Now I wanted to parse the lines.  My purpose in doing the file list and analysis was to see if I had any files that had the same names but different extensions.  I suspected, in particular, that I had converted some .doc and .jpg files to .pdf and had forgotten to zip or delete the original .doc and .jpg files.  So I wanted to get just the file names, without extensions, and line them up.  But how?  Access and Excel still couldn't handle the list.
+           <br/>
+           <br/>
+           This time around, I took a look at the Access error log mentioned in its error message (above).  The error, in every case, was "Field Truncation."  According to a
+           <a href="https://web.archive.org/web/20190906053726/http://office.microsoft.com/en-us/access/HA012194191033.aspx">
+            Microsoft troubleshooting page
+           </a>
+           , truncation was occurring because some of the lines in my text file contained more than 255 characters, which was the maximum Access could handle.  I tried importing into Access again, but this time I chose the Fixed Width option rather than Delimited.  It only went as far as 111 characters, so I just removed all delimiting lines in the Import Text Wizard and clicked Finish.  That didn't give me any errors, but it still truncated the lines.  Instead of File &gt; Get External Data &gt; Import, I tried Access's File &gt; Open command.  Same result.
+           <br/>
+           <br/>
+           I probably could have worked through that problem in Access, but I had not planned to invest so much time in this project, and anyway I still wasn't sure how I was going to use Access to remove file extensions and folder paths so that I would just have filenames to compare.  I generally used Excel rather than Access for that kind of manipulation.  So I considered dividing up my text list into several smaller text files, each of which would be small enough for Excel to handle.  I'd probably have done that manually, by cutting and pasting, since I assumed that
+           <a href="//web.archive.org/web/20190906053726/https://www.google.com/search?hl=en&amp;q=%22file+splitter%22+freeware&amp;sourceid=navclient-ff&amp;rlz=1B3GGGL_enUS318US318&amp;ie=UTF-8">
+            a file splitter program
+           </a>
+           would give me files that Excel wouldn't recognize.  Also, to compare the file names in one subfile against the file names in another subfile would probably require some kind of lookup function.
+           <br/>
+           <br/>
+           That sounded like a mess, so instead I tried going at the problem from the other end.  I did another directory listing, this time looking only for PDFs.  I set the file filter to *.pdf in PrintFolders.  I still couldn't fit the result into Excel, so I did the Ubuntu SORT again, this time using a slightly more economical format:
+           <br/>
+           <blockquote>
+            sort -bdfio OUTPUTFILE.TXT INPUTFILE.TXT
+            <br/>
+           </blockquote>
+           This time, I belatedly noticed that PrintFolders and/or I had somehow introduced lots of duplicate lines, which would do much to explain why I had so many more files than I would have expected.
+           <a href="https://web.archive.org/web/20190906053726/http://www.cyberciti.biz/faq/unix-linux-shell-removing-duplicate-lines/">
+            As advised
+           </a>
+           , I used another Ubuntu command:
+           <br/>
+           <blockquote>
+            sort OUTPUTFILE.TXT | uniq -u
+            <br/>
+           </blockquote>
+           to remove duplicate lines.  But this did not seem to make any difference.  Regardless, after I had cleaned out the junk lines from OUTPUTFILE.TXT, it did all fit into Excel, with room to spare.  My import was giving me lots of #NAME? errors, because Excel was splitting rows in such a way that characters like "-" (which is supposed to be a mathematical operator) were the first characters in some rows, but were followed by letters rather than numbers, which did not compute.  (This would happen if e.g., the split came at the wrong place in a file named "TUESDAY--10AM.PDF."  So when running the Text Import Wizard, I had to designate each column as a Text column, not General.
+           <br/>
+           <br/>
+           I then used Excel text functions (e.g., MID and FIND) on each line, to isolate the filenames without pathnames or extensions.  I used Excel's text concatenations functions to work up a separate DIR command for each file I wanted to find.  In other words, I began with something like this:
+           <br/>
+           <blockquote>
+            D:\FOLDER\SUBFOLDER\FILENAME.EXT
+            <br/>
+           </blockquote>
+           <br/>
+           and I ended with something like this:
+           <br/>
+           <blockquote>
+            DIR "FILE NAME."* /b/s/w &gt;&gt; OUTPUT.TXT
+            <br/>
+           </blockquote>
+           <br/>
+           The quotes were necessary because some file names have spaces in them, which confuses the DIR command.  I forget what the /b and other options were about, but basically they made the output look the way I wanted.  The &gt;&gt; told the command to put the results in a file called OUTPUT.TXT.  If I had used just one &gt; sign then that would have meant I wanted OUTPUT.TXT to be recreated every time a match was found.  Using two &gt;&gt; signs was an indication that OUTPUT.TXT should be created if it does not yet exist, but otherwise the results of the command should just be appended to whatever is already in OUTPUT.TXT.
+           <br/>
+           <br/>
+           In cooking up the final batch commands, I would have been helped by the MCONCAT function in the
+           <a href="https://web.archive.org/web/20190906053726/http://xcell05.free.fr/morefunc/english/index.htm">
+            Morefunc
+           </a>
+           add-in, but I didn't know about it yet.  I did use Morefunc's TEXTREVERSE function in this process, but I found that it would crash Excel when the string it was reversing was longer than 128 characters.  Following
+           <a href="https://web.archive.org/web/20190906053726/http://www.mrexcel.com/archive/General/30895.html">
+            other advice
+           </a>
+           , I used Excel's SUBSTITUTE command instead.
+           <br/>
+           <br/>
+           I took the thousands of resulting commands (such as the DIR FILENAME.* &gt;&gt; OUTPUT.TXT shown above), one for each file type (e.g., FILE NAME.*) that I was looking for, into a DOS batch file (i.e., a text file created in Notepad, with a .bat extension, saved in ANSI format) and ran it.  It began finding files (e.g., FILENAME.DOC, FILENAME.JPG) and listing them in OUTPUT.TXT.  Unfortunately, this thing was running very slowly.  Part of the slowness, I thought, was due to the generally slower performance of programs running inside a virtual machine.  So I thought I'd try my hand at creating an equivalent shell script in Ubuntu.  After several false starts, I settled on the FIND command.  I got some help from
+           <a href="https://web.archive.org/web/20190906053726/http://oreilly.com/linux/command-directory/cmd.csp?path=f/find">
+            the Find page
+           </a>
+           in O'Reilly's
+           <a href="https://web.archive.org/web/20190906053726/http://oreilly.com/linux/command-directory/">
+            Linux Command Directory
+           </a>
+           , but also found some useful tips in
+           <a href="https://web.archive.org/web/20190906053726/http://content.hccfl.edu/pollock/Unix/FindCmd.htm">
+            Pollock's Find tutorial
+           </a>
+           .  It looked like I could recreate the DOS batch commands, like the example shown above, in this format:
+           <br/>
+           <br/>
+           <blockquote>
+            find -name "FILE NAME.*" 2&gt;/dev/null | tee -a found.txt
+            <br/>
+           </blockquote>
+           <br/>
+           The "-name" part instructed FIND to find the name of the file.  There were three options for the &gt; command, called
+           <a href="https://web.archive.org/web/20190906053726/http://tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html">
+            a redirect
+           </a>
+           :  1&gt; would have sent the desired output to the null device (i.e., to nowhere, so that it would not be visible or saved anywhere), which was not what I wanted; 2&gt; sent error messages (which I would get because the lost+found folder was producing them every time the FIND command tried to search that folder) to the null device instead; and
+           <a href="https://web.archive.org/web/20190906053726/http://www.linuxtopia.org/online_books/advanced_bash_scripting_guide/io-redirection.html">
+            &amp;&gt; would have sent
+           </a>
+           both the standard output and the error messages to the same place, whatever I designated.  Then the pipe ("|") said to send everything else (i.e., the standard output) to TEE.
+           <a href="https://web.archive.org/web/20190906053726/http://ss64.com/bash/tee.html">
+            TEE would T the standard output
+           </a>
+           ; that is, it would send it to two places, namely, to the screen (so that I could see what was happening) and also to a file called found.txt.  The -a option served the same function as the DOS &gt;&gt; redirection, which is also available in Ubuntu's BASH script language, which is what I was using here:  that is, -a appended the desired output to the already existing found.txt, or created it if it was not yet existing.  I generated all of these commands in Excel - one for each FILE NAME.* - and saved them to a Notepad file, as before.  Then, in Ubuntu, I
+           <a href="https://web.archive.org/web/20190906053726/http://ubuntuforums.org/showpost.php?p=8349209&amp;postcount=5">
+            made the script executable
+           </a>
+           by typing "chmod +x
+           <file>
+            " at the BASH prompt and then ran it by typing "./
+            <file>
+             " and it ran.  And the trouble proved to be worthwhile:  instead of needing a month to complete the job (which was what I had calculated for the snail's-pace search underway in the WinXP virtual machine), it looked like it could be done in a few hours.
+            </file>
+           </file>
+           <br/>
+           <br/>
+           <file>
+            <file>
+             And so it was.  I actually ran it on two different partitions, to be sure I had caught all duplicates.  Being cautious, I had the two partitions' results output to two separate .txt files, and then I merged them with the concatenation command:  "cat *.txt &gt; full.lst."  (I used a different extension because I wasn't sure whether cat would try to combine the output file back into itself.  I think I've had problems with that in DOS.)  Then I renamed full.lst to be Found.txt, and made a backup copy of it.
+            </file>
+           </file>
+           <br/>
+           <br/>
+           <file>
+            <file>
+             I wanted to save the commands and text files I had accumulated so far, until I knew I wouldn't need them anymore, so I zipped them using the right-click context menu in Nautilus.  It didn't give me an option to simultaneously combine and delete the originals.
+            </file>
+           </file>
+           <br/>
+           <file>
+            <file>
+             <br/>
+            </file>
+           </file>
+           <br/>
+           <file>
+            <file>
+             Next, I needed to remove duplicate lines from Found.txt.  I now understood that the command I had used earlier (above) had failed to specify where the output should go.  So I tried again:
+            </file>
+           </file>
+           <br/>
+           <file>
+            <file>
+            </file>
+           </file>
+           <br/>
+           <blockquote>
+            <file>
+             <file>
+              sort Found.txt | uniq -u &gt;&gt; Sorted.txt
+             </file>
+            </file>
+            <br/>
+           </blockquote>
+           <file>
+            <file>
+            </file>
+           </file>
+           <br/>
+           <file>
+            <file>
+             This produced a dramatically shorter file - 1/6 the size of Found.txt.  Had there really been that many duplicates?  I wanted to try sorting again, this time by filename.  But, of course, the entries in Sorted.txt included both folder and file names, like this:
+            </file>
+           </file>
+           <br/>
+           <file>
+            <file>
+            </file>
+           </file>
+           <br/>
+           <blockquote>
+            <file>
+             <file>
+              ./FOLDER1/File1.pdf
+             </file>
+            </file>
+            <br/>
+            <file>
+             <file>
+              ./SomeotherFolder/AAAA.doc
+             </file>
+            </file>
+            <br/>
+           </blockquote>
+           <file>
+            <file>
+             Sorting normally would put them in the order shown, but sorting by their ending letters would put the .doc files before the .pdfs, and would also alphabetize the .doc files by filename before foldername.  Sorting them in this way would show me how many copies of a given file there had been, so that I could eyeball the possibility that the ultimate list of unique files would really be so much shorter than reported in Found.txt.  I didn't know how to do that in bash, so I
+             <a href="https://web.archive.org/web/20190906053726/http://ubuntuforums.org/showthread.php?t=1367785">
+              posted a question on it
+             </a>
+             .
+             <br/>
+            </file>
+           </file>
+           <br/>
+           <br/>
+           <file>
+            <file>
+             Meanwhile, I found that the output of the whole Found.txt file would fit into Excel.  When I sorted it, I found that each line was duplicated - but only once.  So plainly I had done something wrong in arriving at Sorted.txt.  From this point, I basically did the rest of the project in Excel, though it belatedly appeared that there were some workable answers in response to my post.
+             <br/>
+            </file>
+           </file>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053726/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=8656447940423482706&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/bash" rel="tag">
+             bash
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/duplicate%20files" rel="tag">
+             duplicate files
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/duplicates" rel="tag">
+             duplicates
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/excel" rel="tag">
+             excel
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/freeware" rel="tag">
+             freeware
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/import" rel="tag">
+             import
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/lists%20of%20files" rel="tag">
+             lists of files
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/PrintFolders" rel="tag">
+             PrintFolders
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/redirect" rel="tag">
+             redirect
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/redirection" rel="tag">
+             redirection
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/script" rel="tag">
+             script
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/shell" rel="tag">
+             shell
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/sort" rel="tag">
+             sort
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/sorted" rel="tag">
+             sorted
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/sorting" rel="tag">
+             sorting
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/text%20lists" rel="tag">
+             text lists
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/search/label/windows%20xp" rel="tag">
+             windows xp
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053726/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=8656447940423482706" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053726/https://raywoodcockslatest.blogspot.com/feeds/8656447940423482706/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:37:26 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:16:05 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.529
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.061
+  esindex: 0.008
+  cdx.remote: 7.038
+  LoadShardBlock: 312.283 (3)
+  PetaboxLoader3.datanode: 161.405 (4)
+  PetaboxLoader3.resolve: 170.702
+  load_resource: 22.547
+-->

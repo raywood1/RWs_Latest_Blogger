@@ -1,0 +1,1022 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151210035401im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/2012/02/robocopy-commands-for-file-and-folder.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/feeds/2868657813855192805/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Robocopy Commands for File and Folder Synchronization
+  </title>
+  <link href="https://web.archive.org/web/20151210035401cs_/https://www.blogger.com/static/v1/widgets/1708208307-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151210035401cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151210035401im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151210035401im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151210035401im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151210035401im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151210035401im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151210035401im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151210035401im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151210035401im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151210035401im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151210035401im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151210035401im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151210035401im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151210035401im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151210035401im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151210035401im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151210035401im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151210035401im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151210035401im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Saturday, February 25, 2012
+        </h2>
+        <div class="post">
+         <a name="2868657813855192805">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/2012/02/robocopy-commands-for-file-and-folder.html">
+           Robocopy Commands for File and Folder Synchronization
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I wanted to know if Robocopy could replace
+           <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/2012/03/synchronizing-two-computers-goodsync.html" target="_blank">
+            synchronization programs
+           </a>
+           like GoodSync and Allway Sync.  I decided to take a look at its options.  This post describes what I found.
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20151210035401/http://theether.net/download/Microsoft/Utilities/robocopy.pdf" target="_blank">
+            The manual for Robocopy
+           </a>
+           itself seemed to confirm my prior sense that Robocopy was a unidirectional copying utility.  That is, you could command it to copy from A to B, or from B to A, but not bidirectionally between A and B, never mind multidirectionally.  In particular, manual page 16, discussing Robocopy's /XO option, said this:
+           <br/>
+           <blockquote class="tr_bq">
+            The most appropriate use for /XO is to synchronize two directory trees so that they can be updated simultaneously in separate areas. To ensure that the latest files are present in both directory trees, copy with /XO first in one direction and then in the other.
+           </blockquote>
+           So apparently synchronization with Robocopy would require reciprocal commands:  one to copy newer files from A to B, and another, otherwise identical, command to copy from B to A.
+           <a href="https://web.archive.org/web/20151210035401/https://en.wikipedia.org/wiki/Robocopy#Features" target="_blank">
+            Wikipedia
+           </a>
+           noted that Robocopy would not copy open files, but that seemed to be true of GoodSync as well.  I didn't expect it to be a problem for my purposes.
+           <br/>
+           <br/>
+           (The information from the manual seemed pretty similar to what I got from a command-line "robocopy /?" command.
+           <a href="https://web.archive.org/web/20151210035401/http://technet.microsoft.com/en-us/library/cc733145%28WS.10%29.aspx" target="_blank">
+            A Windows Server webpage
+           </a>
+           provided yet another list of Robocopy commands.  I had noticed, though, that Wikipedia said Robocopy was not entirely consistent between platforms.  It seemed I had better verify that my solutions would work on Windows 7 specifically.)
+           <br/>
+           <br/>
+           I wasn't yet sure what kind of analysis /XO or other Robocopy commands would perform.  I assumed, but was not yet positive, that they would take account of time as well as date, down to the minute if not the second.  This thought prompted me to look into something that would improve the present gap of about 20 seconds between the clocks on the two computers -- something more fun than just resetting the clock manually, that is.  It seemed I would want one or two minutes' tolerance in timestamp comparisons in any case; but in
+           <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/2012/02/windows-7-setting-and-maintaining.html" target="_blank">
+            a separate post
+           </a>
+           , I took a closer look at possible solutions to get the two machines closer to chronological synchronization.  (Later I saw that the manual (p. 17) said, "File-time granularity is 100 nanoseconds on NTFS, and two seconds on FAT.")
+           <br/>
+           <br/>
+           The next step seemed to be to peruse the Robocopy command-line options, to see which ones might work for my synchronization project.  The manual (pp. 7-11) provided a concise command-line reference.   (
+           <a href="https://web.archive.org/web/20151210035401/http://technet.microsoft.com/en-us/library/cc733145%28WS.10%29.aspx" target="_blank">
+            Apparently
+           </a>
+           lowercase versions of the commands worked; I use uppercase here for visibility.)  The options that seemed most relevant were as follows, leaving out those that would be included by default:
+           <br/>
+           <blockquote>
+            /S   copy subdirectories, excluding empty ones
+            <br/>
+            <br/>
+            /ZB   resume a copying task from a point of previous failure (presumably instead of starting over), but switch to backup mode if restartable mode fails (as when using an unreliable network); but
+            <a href="https://web.archive.org/web/20151210035401/https://en.wikipedia.org/wiki/Robocopy#Common_usage_scenarios" target="_blank">
+             Wikipedia
+            </a>
+            said that /Z would slow copying significantly
+            <br/>
+            <br/>
+            /MOT:X and /MON:Y   monitor the source directory and run Robocopy again when X number of files have changed and Y minutes have elapsed
+            <br/>
+            <br/>
+            /XD   exclude specified directories
+            <br/>
+            <br/>
+            /XO   don't overwrite destination files with source files having the same name and an older timestamp
+            <br/>
+            <br/>
+            /R   specify the number of retries
+            <br/>
+            <br/>
+            /W   specify wait time between retries
+            <br/>
+            <br/>
+            /REG   save /R and /W in registry as default settings
+            <br/>
+            <br/>
+            /L   list files
+            <br/>
+            <br/>
+            /V   produce verbose output
+            <br/>
+            <br/>
+            /TS   display source file timestamps in output log
+            <br/>
+            <br/>
+            /FP   display full pathnames in output log
+            <br/>
+            <br/>
+            /NC   suppress output of Robocopy file class information
+            <br/>
+            <br/>
+            <span id="goog_1099412079">
+            </span>
+            <a href="https://web.archive.org/web/20151210035401/http://www.blogger.com/">
+            </a>
+            <span id="goog_1099412080">
+            </span>
+            <br/>
+            /NS   suppress output of file and directory sizes
+            <br/>
+            <br/>
+            /NJH and /NJS   turn off logging of job header and summary
+            <br/>
+            <br/>
+            /ETA   show estimated time of completion
+            <br/>
+            <br/>
+            /LOG:filename or /LOG+:filename   redirect output to named file, overwriting or (+) appending if it already exists
+            <br/>
+            <br/>
+            /TEE   display output as well as writing LOG
+            <br/>
+            <br/>
+            /JOB:jobfile   read parameters from jobfile; optionally /IF to include files with specified names or paths; optionally /SD:path and /DD:path   to specify source and destination directories; optionally /QUIT to view job file contents without any actual copying
+            <br/>
+            <br/>
+            /SAVE:jobfile   write current parameter settings to jobfile
+           </blockquote>
+           This was an intimidating set of potentially relevant options.  There were many things that could go wrong with so many choices.  I decided to look for examples and more information.  As the manual said (p. 22), these options could result in long, unwieldy commands, and it did appear that the JOB options would help with that.  I ran
+           <a href="https://web.archive.org/web/20151210035401/https://encrypted.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22Windows+7%22+%22job+options%22+Robocopy+sync+OR+synchronize+folders&amp;oq=%22Windows+7%22+%22job+options%22+Robocopy+sync+OR+synchronize+folders&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=3&amp;gs_upl=10630l20770l0l22024l21l16l1l0l0l6l467l4328l2-12.1.2l15l0" target="_blank">
+            a search
+           </a>
+           with that in mind.  It led most immediately to some general-reference sites (e.g.,
+           <a href="https://web.archive.org/web/20151210035401/http://ss64.com/nt/robocopy.html" target="_blank">
+            SS64
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20151210035401/http://www.powercram.com/2009/11/robocopy-syntax-command-line-switches.html" target="_blank">
+            PowerCram
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20151210035401/http://fixmyitsystem.com/2011/04/using-robocopy-for-enhance-file.html" target="_blank">
+            FixMyITSystem
+           </a>
+           ).  I tried again.
+           <a href="https://web.archive.org/web/20151210035401/https://encrypted.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22Windows+7%22+Robocopy+intitle%3Ajob+%22job+options%22+sync+OR+synchronize+folders&amp;oq=%22Windows+7%22+Robocopy+intitle%3Ajob+%22job+options%22+sync+OR+synchronize+folders&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=3&amp;gs_upl=382773l388655l0l389930l14l12l0l0l0l2l442l2741l1.5.2.2.2l12l0" target="_blank">
+            That search
+           </a>
+           led almost nowhere.  Likewise another, seemingly
+           <a href="https://web.archive.org/web/20151210035401/https://encrypted.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=Robocopy+intitle%3Ajob+%22sync+folders%22+OR+%22synchronize+folders%22&amp;oq=Robocopy+intitle%3Ajob+%22sync+folders%22+OR+%22synchronize+folders%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=3&amp;gs_upl=5240l10586l0l11238l12l8l0l0l0l1l567l1696l1.4.2.5-1l8l0" target="_blank">
+            broader search
+           </a>
+           .
+           <br/>
+           <br/>
+           Eventually, I found
+           <a href="https://web.archive.org/web/20151210035401/http://www.ehow.com/how_7234428_sync-folders-xcopy.html" target="_blank">
+            an eHow website
+           </a>
+           that said I could use XCopy to synchronize computers.  Was I trying to use the wrong tool?  It didn't seem so.  I saw indications that Robocopy had
+           <a href="https://web.archive.org/web/20151210035401/http://www.ehow.com/info_8461260_differences-between-robocopy-xcopy.html" target="_blank">
+            more options
+           </a>
+           and
+           <a href="https://web.archive.org/web/20151210035401/http://stackoverflow.com/questions/9215661/parallel-copy-using-xcopy" target="_blank">
+            better performance
+           </a>
+           , and that use of XCopy was
+           <a href="https://web.archive.org/web/20151210035401/https://en.wikipedia.org/wiki/XCOPY#Deprecation" target="_blank">
+            deprecated
+           </a>
+           .  But why was I not seeing tons of obvious references to the use of Robocopy JOB options for synchronization?  (Another possibility with lots of options:
+           <a href="https://web.archive.org/web/20151210035401/http://www.xxcopy.com/xxcopy30.htm" target="_blank">
+            XXCOPY
+           </a>
+           .  But the least expensive version
+           <a href="https://web.archive.org/web/20151210035401/http://www.xxcopy.com/xcpyofaq.htm" target="_blank">
+            for networked computers
+           </a>
+           cost $100, and its reception at
+           <a href="https://web.archive.org/web/20151210035401/http://download.cnet.com/XXCOPY/3000-2248_4-10648429.html?tag=contentMain;contentBody;1d" target="_blank">
+            CNET
+           </a>
+           was underwhelming.)
+           <br/>
+           <br/>
+           I tried
+           <a href="https://web.archive.org/web/20151210035401/https://encrypted.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=Robocopy+%22job+options%22+intitle%3Ajob+OR+intitle%3Ajobs&amp;oq=Robocopy+%22job+options%22+intitle%3Ajob+OR+intitle%3Ajobs&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=3&amp;gs_upl=21451l25416l0l25659l28l25l0l0l0l0l254l2798l12.9.4l25l0" target="_blank">
+            another search
+           </a>
+           , focusing only on Robocopy job options.  Posts at
+           <a href="https://web.archive.org/web/20151210035401/http://serverfault.com/questions/55733/the-job-and-monitoring-options-of-robocopy" target="_blank">
+            Serverfault
+           </a>
+           and
+           <a href="https://web.archive.org/web/20151210035401/http://www.skonet.com/Articles_Archive/Robocopy_Job_Template.aspx" target="_blank">
+            Skonet
+           </a>
+           seemed to suggest that I could work up my desired Robocopy command on the command line itself, and then add the /SAVE option to save it to a file, and that my job options would go into a separate file with an .RCJ extension.  I wasn't sure exactly how all that would work in practice, but at least there seemed to be a starting point.
+           <br/>
+           <br/>
+           It appeared that the slash (/) character was the signal, in the job options file and probably also for Robocopy generally, indicating that one option had ended and a new one was starting.  So, for instance, if I gave the /XD command, I could then proceed to list a boatload of directories to exclude, without worrying too much about format -- putting them on the same line, putting each on a different line, or whatever.  Everything I wrote after /XD would be treated as another directory to exclude, until I came to another / command (e.g., /S) or else reached the end of the job options file.
+           <br/>
+           <br/>
+           One thing that was not clear to me, from the foregoing options:  what if I had deleted a file on computer B, intending that synchronization should delete it on computer A as well?  GoodSync knew how to interpret such situations.  I suspected that Robocopy, run in a reciprocal setup starting with robocopy A &gt; B, would just restore the file from computer A to computer B.  That, as I found in tinkering, was what Beyond Compare might do.  In other words, there was a real difference between a backup program and a synchronization program.  The former would just make sure that the target contained what was on the source; the latter would keep track of what had been removed from each side, and would decide whether the removal occurred later than the most recent update of those files on the other side.  I could control such things manually, more easily in Beyond Compare than in robocopy, but for an automated solution I would need a program that would keep track of dates and times of deletions as well as of file changes.  I posted
+           <a href="https://web.archive.org/web/20151210035401/http://forum.sysinternals.com/topic27728_post134253.html#134253" target="_blank">
+            a question
+           </a>
+           on this, just to make sure I was understanding Robocopy correctly.  The response confirmed it, and suggested using regular synchronization programs.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151210035401/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=2868657813855192805&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/search/label/commands" rel="tag">
+             commands
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/search/label/computers" rel="tag">
+             computers
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/search/label/JOB" rel="tag">
+             JOB
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/search/label/options" rel="tag">
+             options
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/search/label/Robocopy" rel="tag">
+             Robocopy
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/search/label/synchronize" rel="tag">
+             synchronize
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/search/label/Xcopy" rel="tag">
+             Xcopy
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/search/label/XXCOPY" rel="tag">
+             XXCOPY
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          3
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-1627918499608089037">
+           <a name="comment-1627918499608089037">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Thank you.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-1627918499608089037" title="comment permalink">
+             January 22, 2013 at 6:05 PM
+            </a>
+            <span class="item-control blog-admin pid-305472166">
+             <a href="https://web.archive.org/web/20151210035401/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=1627918499608089037" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-5276062782710153331">
+           <a name="comment-5276062782710153331">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Robocopy is a great tool though we ran into an issue when we wanted to copy open files from users computers like PST file which are locked by outlook.  We found gscopypro which works exactly like robocopy but can copy open and locked files. It is like 30 dollars or so and if you need a lot of licenses, you can talk to the software vendor and they can work a deal easily to get a volume license.
+            <br/>
+            <br/>
+            Give it a try.. the link is
+            <br/>
+            http://www.gurusquad.com/GSCOPYPRO
+            <br/>
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-5276062782710153331" title="comment permalink">
+             February 22, 2013 at 2:39 PM
+            </a>
+            <span class="item-control blog-admin pid-1535211294">
+             <a href="https://web.archive.org/web/20151210035401/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=5276062782710153331" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-1487844839304747587">
+           <a name="comment-1487844839304747587">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            We were looking for a tool to keep folders in sync.. based on the comment here we tried gscopypro from gurusquad and it was a great recommendation. It copies open files nicely.
+            <br/>
+            <br/>
+            Thank you
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-1487844839304747587" title="comment permalink">
+             August 5, 2013 at 1:49 AM
+            </a>
+            <span class="item-control blog-admin pid-1977660278">
+             <a href="https://web.archive.org/web/20151210035401/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=1487844839304747587" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151210035401/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=2868657813855192805" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151210035401/http://raywoodcockslatest.blogspot.com/feeds/2868657813855192805/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 03:54:01 Dec 10, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:32:26 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.892
+  exclusion.robots: 0.093
+  exclusion.robots.policy: 0.083
+  esindex: 0.015
+  cdx.remote: 8.214
+  LoadShardBlock: 173.371 (3)
+  PetaboxLoader3.datanode: 139.953 (4)
+  PetaboxLoader3.resolve: 95.049 (2)
+  load_resource: 112.727
+-->

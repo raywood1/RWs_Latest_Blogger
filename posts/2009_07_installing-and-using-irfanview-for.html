@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053802cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053802im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053802/http://raywoodcockslatest.blogspot.com/2009/07/installing-and-using-irfanview-for.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/feeds/7793430496558309635/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053802/http://raywoodcockslatest.blogspot.com/2009/07/installing-and-using-irfanview-for.html" property="og:url"/>
+  <meta content="Installing and Using IrfanView for Audio in Ubuntu 9.04" property="og:title"/>
+  <meta content="I have an Olympus VN-960PC  digital voice recorder (DVR).  It saves its recordings in compressed .wav format files.  When I listen to those ..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Installing and Using IrfanView for Audio in Ubuntu 9.04
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053802im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053802im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053802im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053802im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053802im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053802im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053802im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053802im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053802im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053802im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053802im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053802im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053802im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053802im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053802im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053802im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053802im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053802im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053802cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053802cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Tuesday, July 28, 2009
+        </h2>
+        <div class="post">
+         <a name="7793430496558309635">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/2009/07/installing-and-using-irfanview-for.html">
+           Installing and Using IrfanView for Audio in Ubuntu 9.04
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I have an
+           <a href="https://web.archive.org/web/20190906053802/http://raywoodcockslatest.blogspot.com/2009/07/review-olympus-ws-321m-digital-voice.html">
+            Olympus VN-960PC
+           </a>
+           digital voice recorder (DVR).  It saves its recordings in compressed .wav format files.  When I listen to those recordings, I usually use
+           <a href="https://web.archive.org/web/20190906053802/http://www.irfanview.com/">
+            IrfanView
+           </a>
+           to listen to them.  I have been using IrfanView for years, and have found it to be markedly more useful and flexible than any other program for many image editing, audio listening, file viewing, and other multimedia tasks.  It is really amazing freeware.
+           <div>
+           </div>
+           <div>
+            I use IrfanView for this particular task because I have not yet found another program that allows me to move from one recording to the next so quickly.  I listen to the notes I have saved on the DVR; I highlight some of them, one by one, in Windows Explorer, and then I cut and paste the selected recordings to subfolders for further use.  I have developed the habit of beginning many of my recordings with a single word (e.g., "Monday" or "shopping"), so I know right away which folder it goes into.  Sorting a number of audio recordings this way is very fast.
+           </div>
+           <div>
+           </div>
+           <div>
+            IrfanView was a Windows-only program.  I could not find anything in the Linux world that could replace it, for my purposes, so I looked for ways to run it in Ubuntu.  One possibility, which I used for a long time, was to run it in a virtual machine
+            <a href="https://web.archive.org/web/20190906053802/http://raywoodcockslatest.blogspot.com/2009/05/installing-vmware-workstation-652-on.html">
+             in VMware Workstation
+            </a>
+            (or perhaps I could have used a
+            <a href="https://web.archive.org/web/20190906053802/http://raywoodcockslatest.blogspot.com/2007/07/running-winxp-pro-in-vmware-virtual.html">
+             freeware
+            </a>
+            virtualization program) on Ubuntu.  I was engaged in a long-term effort to move away from dependence on Windows, though, and sometimes virtual machines could be
+            <a href="https://web.archive.org/web/20190906053802/http://raywoodcockslatest.blogspot.com/2009/05/installing-vmware-workstation-652-on.html">
+             somewhat clunky
+            </a>
+            .
+           </div>
+           <div>
+           </div>
+           <div>
+            Finally, at one point I reached a situation where I invested a bunch of time and still could not resolve a VMware audio problem.  This seemed to be the opportunity to try running IrfanView, a Windows program, in Ubuntu.  I planned to do so via
+            <a href="https://web.archive.org/web/20190906053802/http://www.winehq.org/">
+             Wine
+            </a>
+            , which (in that wacky Linux way) is short for "
+            <a href="https://web.archive.org/web/20190906053802/http://www.winehq.org/myths">
+             Wine is not an emulator
+            </a>
+            ."  The
+            <a href="https://web.archive.org/web/20190906053802/http://www.winehq.org/announce/1.0.1">
+             stable release
+            </a>
+            of Wine at this point was 1.0.1, and that is the version that was available in Ubuntu's (System &gt; Administration &gt; ) Synaptic Package Manager.  I searched for wine in Synaptic, marked it, and clicked Apply.  It downloaded and installed the necessary stuff.  Next, following the steps I had researched when I had tried Wine
+            <a href="https://web.archive.org/web/20190906053802/http://raywoodcockslatest.blogspot.com/2008/07/vmware-in-ubuntu-putting-it-all.html">
+             a year earlier
+            </a>
+            , I proceeded as follows, typing these commands into Ubuntu's (Applications &gt; Accessories &gt; ) Terminal at the command prompt:
+           </div>
+           <div>
+           </div>
+           <div>
+            wget http://www.kegel.com/wine/winetricks
+           </div>
+           <div>
+           </div>
+           <div>
+            sh winetricks mfc42
+           </div>
+           <div>
+           </div>
+           <div>
+            Then, in Ubuntu's File Browser (Places &gt; Computer), I navigated to the folder where I had saved the downloaded IrfanView program.  This program was called iview425_setup.exe.  I copied the Location of this folder from the address bar at the top of File Browser and put it, between quotation marks, after a cd command in Terminal, as follows:
+           </div>
+           <div>
+           </div>
+           <div>
+            cd "/media/CURRENT/Miscellany/Installation/Programs"
+           </div>
+           <div>
+           </div>
+           <div>
+            and then I typed the Wine command to install IrfanView:
+           </div>
+           <div>
+           </div>
+           <div>
+            wine iview425_setup.exe
+           </div>
+           <div>
+           </div>
+           <div>
+            This gave me the regular IrfanView Setup dialog, just as if I had been installing it in Windows.  I told it to install a link on the desktop, and it did; but I could not get that link to run.  So I used cd again, to get to where it had been installed (cd "/home/ray/.wine/drive_c/Program Files/Irfanview", where "ray" was my username), and typed wine iv_uninstall.exe.  This removed everything except iv_uninstall.exe itself from that folder; I deleted that last file manually.
+           </div>
+           <div>
+           </div>
+           <div>
+            I decided to try an older, simpler version of IrfanView.  I went to
+            <a href="https://web.archive.org/web/20190906053802/http://www.oldapps.com/irfanview.php">
+             OldApps.com
+            </a>
+            and downloaded
+            <a href="https://web.archive.org/web/20190906053802/http://www.oldapps.com/irfanview.php?old_irfanview=69#Download">
+             IrfanView 3.0
+            </a>
+            .  Then, as above, I used cd to navigate to the place where the downloaded file was.  In this case, the program (after extraction from the downloaded .zip file) was named i_view32.exe, so I used that instead of iview425_setup.exe in the installation command presented above, as follows:
+           </div>
+           <div>
+           </div>
+           <div>
+            wine i_view32.exe
+           </div>
+           <div>
+           </div>
+           <div>
+            Unfortunately, this installer did not run at all.  About this time, I rediscovered Wine's reports on the various efforts people made to run different Windows programs under Wine.  In particular, I found the
+            <a href="https://web.archive.org/web/20190906053802/http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7834">
+             reports on IrfanView
+            </a>
+            .  These, supplemented with the instructions and replies posted at
+            <a href="https://web.archive.org/web/20190906053802/http://www.wine-reviews.net/wine-reviews/wine/irfanview-423-on-linux-with-wine.html">
+             Wine-Reviews.net
+            </a>
+            , seemed to indicate that what I really needed was to use relatively recent versions of both Wine and IrfanView.
+           </div>
+           <div>
+           </div>
+           <div>
+            To get a version of Wine more recent than the one that was available in Synaptic (above), I had to modify Synaptic.  That is, I had been using Synaptic out of the box, the way it came in the original Ubuntu installation; but Synaptic could be configured to look in additional places for more software.  In this case, I wanted it to look in the WineHQ repository.  So I went back into Synaptic and clicked on Settings &gt; Repositories &gt; Third-Party Software &gt; Add.  In the APT line box, following
+            <a href="https://web.archive.org/web/20190906053802/http://www.winehq.org/download/deb">
+             the WineHQ instructions
+            </a>
+            for Ubuntu 9.04, I typed this:
+           </div>
+           <div>
+           </div>
+           <div>
+            deb http://wine.budgetdedicated.com/apt jaunty main #WineHQ
+           </div>
+           <div>
+           </div>
+           <div>
+            Then I clicked on Add Source.  Next, while still there in Software Sources, I went to the Authentication tab and clicked on Import Key File.  I didn't have the key file yet, so I had to go to the webpage that they call
+            <a href="https://web.archive.org/web/20190906053802/http://wine.budgetdedicated.com/apt/Scott%20Ritchie.gpg">
+             Scott Ritchie's Key
+            </a>
+            to get it.  I saved that page (in Firefox, the command is File &gt; Save Page As).  Its default name was Scott Ritchie.gpg, so I accepted that.  So now, back in the Software Sources &gt; Authentication &gt; Import Key File window, I navigated to where I had saved Scott Richie.gpg and selected it.  Then I clicked on Close &gt; Close.  Now, back in Synaptic, I clicked Reload.  I could have done a Quick Search, there in Synaptic, to see that Wine now needed to be updated; but I decided instead to update everything on my system that might need to be updated at that point.  So I closed Synaptic and went to System &gt; Administration &gt; Update Manager and installed everything it had for me.
+           </div>
+           <div>
+           </div>
+           <div>
+            Normally, it can be more convenient and/or easier to remember one's way around by using the Graphical User Interface (GUI), as just described.  In this case, though, for some reason the whole thing about Scott Ritchie was a little weird and hard to remember (though not Scott Richie himself, oh, no, we'll never forget ol' Scott), and I would probably have found it simpler just to copy and paste these lines into Terminal from the bottom of the
+            <a href="https://web.archive.org/web/20190906053802/http://www.winehq.org/download/deb">
+             WineHQ instructions page
+            </a>
+            :
+           </div>
+           <div>
+           </div>
+           <div>
+            wget -q http://wine.budgetdedicated.com/apt/387EE263.gpg -O- | sudo apt-key add -
+           </div>
+           <div>
+           </div>
+           <div>
+            sudo wget http://wine.budgetdedicated.com/apt/sources.list.d/jaunty.list -O /etc/apt/sources.list.d/winehq.list
+           </div>
+           <div>
+           </div>
+           <div>
+            sudo apt-get update
+           </div>
+           <div>
+           </div>
+           <div>
+            sudo apt-get install wine
+           </div>
+           <div>
+           </div>
+           <div>
+            but whatever.  It was done, and I had my other updates to boot.  Plus, I got a free opportunity to screw around with Synaptic.  (Later, I discovered that I
+            <a href="https://web.archive.org/web/20190906053802/http://wiki.winehq.org/HowTo">
+             should have uninstalled
+            </a>
+            the older version of Wine first.  I also discovered that apparently I should have been doing my work in
+            <a href="https://web.archive.org/web/20190906053802/http://ubuntuforums.org/showthread.php?t=1210308">
+             a folder dedicated to Irfanview
+            </a>
+            .)  Now, at any rate, I had some more recent version of Wine installed.  To see which one, I went back into Synaptic and searched for Wine again.  It was 1.1.26.  This was more bleeding-edge than the 1.1.14 that they had used in that Wine-Reviews article.  I wasn't sure how to get back to 1.1.14, though, and anyway that was a half-year earlier, and they were using Ubuntu 8.04, so maybe this was better for my purposes.
+            <a href="https://web.archive.org/web/20190906053802/http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7834">
+             The Wine-HQ report
+            </a>
+            indicated that Sven Plaga had just recently used 1.1.25 with great success.  The version of IrfanView that Sven had used was apparently 4.25.  He had used it with a beta release of Ubuntu 9.10, which I wasn't up to yet; but if it worked now, I figured that might defer whatever updating I might otherwise have to do later.
+           </div>
+           <div>
+           </div>
+           <div>
+            So now I tried again to install IrfanView on this newer version of Wine.  I had already done the whole winetricks and mfc42.dll routine (above), so this simplified the process for me.  Following the Wine-Reviews and Wine-HQ instructions and comments (with some help from some older
+            <a href="https://web.archive.org/web/20190906053802/https://help.ubuntu.com/community/Wine/IrfanView">
+             Ubuntu Community Documentation
+            </a>
+            ), I repeated the foregoing steps of navigating to the folder where I had stored iview425_setup.exe, and then I typed this:
+           </div>
+           <div>
+           </div>
+           <div>
+            wine iview425_setup.exe
+           </div>
+           <div>
+           </div>
+           <div>
+            The installer ran, but again I couldn't get IrfanView to start.  This time, though, it was not surprising.  According to the instructions, I next needed to go into the installation directory (in my case, /home/ray/.wine/drive_c/Program Files/IrfanView) and delete the i_view32.ini file.  The comments indicated that IrfanView would replace it with a simpler i_view32.ini that would cause no problems.  I had forgotten to download and install the
+            <a href="https://web.archive.org/web/20190906053802/http://irfanview.com/">
+             IrfanView plugins
+            </a>
+            , so I did that now:
+           </div>
+           <div>
+           </div>
+           <div>
+            wine irfanview_plugins_425_setup.exe
+           </div>
+           <div>
+           </div>
+           <div>
+            Now I had an embarrassment of riches, in terms of IrfanView launchers.  There were three different Ubuntu icons on my desktop, and they all worked.  I deleted the two that didn't have the Ubuntu red cat (or whatever that is) on them.  I also saw that Wine had installed itself as an option under Applications on the Ubuntu menu, and under Wine &gt; Programs I had an IrfanView menu plus an apparent freebie, a link to an actual working copy of Notepad.
+           </div>
+           <div>
+           </div>
+           <div>
+            The key question, now, was whether IrfanView would now function in Ubuntu as it had functioned in Windows, for purposes of listening to and moving through .wav files.  I went into IrfanView's Options &gt; Properties and adjusted the settings to my preference.  Then I double-clicked on an audio file . . . and watched it open in Totem Movie Player.  OK, so this was my opportunity to learn how to set the default application program in Ubuntu.  I started to Google for some guidance, and then I realized this was probably somewhere under System &gt; Preferences - and, sure enough, there it was:  Preferred Applications.  I went to Multimedia and indicated that I wanted to use a Custom multimedia player.  I right-clicked on the IrfanView desktop icon and went into its Properties &gt; Basic tab.  I copied its Command line to Terminal, to try it out.  It worked:  IrfanView started.  So then I copied that same command line into the Multimedia command box.  But either way, with or without the "Run in terminal" box checked, it didn't default to IrfanView; I was still getting Totem.  So yes, I had to
+            <a href="//web.archive.org/web/20190906053802/https://www.google.com/search?hl=en&amp;q=ubuntu+irfanview+%22default+application%22&amp;sourceid=navclient-ff&amp;rlz=1B3GGGL_enUS318US318&amp;ie=UTF-8">
+             Google the question
+            </a>
+            after all.  The answer was easy enough (apparently a lot easier than it had been
+            <a href="https://web.archive.org/web/20190906053802/http://ubuntuforums.org/archive/index.php/t-816869.html">
+             a year earlier
+            </a>
+            ):  right-click on a .wav file and select Properties &gt; Open With &gt; IrfanView &gt; Close.
+           </div>
+           <div>
+           </div>
+           <div>
+            Ah, but now, when I double-clicked on a .wav file, I got an error message:
+           </div>
+           <div>
+            <blockquote>
+             Error:  Windows can't play this file!  Windows error text: Invalid MCI device ID. Use the ID returned when opening the MCI device..  You can try to install additional video/audio codecs from this site:  http://www.fourcc.org/indexcod.htm or try the DirectShow option in Properties-&gt;Video.
+            </blockquote>
+           </div>
+           <div>
+            Weird thing:  I got that same error message three or four times in a row.  I'd click OK, and there it would be again.  And then, when it stopped, I got a little "No Device" window and the audio file played after all.  But then that No Device window wouldn't go away; I had to kill IrfanView to banish it.  I went into IrfanView's Properties and tried clicking the DirectShow option as advised.  Same result.  Seeking truth, I went back to Google.  And I could tell that I was at last getting close to the truth indeed, because this time
+            <a href="//web.archive.org/web/20190906053802/https://www.google.com/search?hl=en&amp;safe=off&amp;rlz=1B3GGGL_enUS318US318&amp;num=50&amp;newwindow=1&amp;q=%22no+device%22+ubuntu+irfanview+error&amp;aq=f&amp;oq&amp;aqi">
+             my search
+            </a>
+            turned up only a small number of results, none of which seemed relevant.  Fortunately, I was able to
+            <a href="//web.archive.org/web/20190906053802/https://www.google.com/search?hl=en&amp;safe=off&amp;rlz=1B3GGGL_enUS318US318&amp;num=50&amp;newwindow=1&amp;q=ubuntu+irfanview+error+DirectShow+9.04+OR+jaunty&amp;aq=f&amp;oq&amp;aqi">
+             revise my search
+            </a>
+            into something even less helpful.  As the day drew to a close, I
+            <a href="https://web.archive.org/web/20190906053802/http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7834">
+             posted a question
+            </a>
+            on this at Wine-HQ.  Someone there suggested that I should post it as a bug in Wine, so I did that.  I didn't know how long it would take them to address and resolve this bug, if that's what it was, so I decided it was time to post this message as-is and think about other ways of getting Irfanview to work.
+           </div>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053802/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=7793430496558309635&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/search/label/9.04" rel="tag">
+             9.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/search/label/Error" rel="tag">
+             Error
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/search/label/IrfanView" rel="tag">
+             IrfanView
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/search/label/jaunty%20jackalope" rel="tag">
+             jaunty jackalope
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/search/label/wine" rel="tag">
+             wine
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          1 comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-7484165390516377890">
+           <a name="comment-7484165390516377890">
+           </a>
+           <a href="https://web.archive.org/web/20190906053802/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I updated this investigation with additional information in another post.  See http://raywoodcockslatest.blogspot.com/2009/07/other-virtualization-solutions-to-play.html
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7484165390516377890" title="comment permalink">
+             July 29, 2009 at 9:46 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053802/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7484165390516377890" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053802/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=7793430496558309635" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053802/https://raywoodcockslatest.blogspot.com/feeds/7793430496558309635/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:38:02 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:12:19 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.76
+  exclusion.robots: 0.135
+  exclusion.robots.policy: 0.121
+  esindex: 0.011
+  cdx.remote: 5.819
+  LoadShardBlock: 63.037 (3)
+  PetaboxLoader3.datanode: 68.404 (4)
+  load_resource: 183.597
+  PetaboxLoader3.resolve: 172.951
+-->

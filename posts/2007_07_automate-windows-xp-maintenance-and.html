@@ -1,0 +1,1425 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20171128051124cs_/https://www.blogger.com/static/v1/widgets/3332739511-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20171128051124im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20171128051124/http://raywoodcockslatest.blogspot.com/2007/07/automate-windows-xp-maintenance-and.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20171128051124/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20171128051124/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20171128051124/http://raywoodcockslatest.blogspot.com/feeds/8406647326994636308/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20171128051124/http://raywoodcockslatest.blogspot.com/2007/07/automate-windows-xp-maintenance-and.html" property="og:url"/>
+  <meta content="Automate Windows XP Maintenance and Shutdown" property="og:title"/>
+  <meta content="Using Notepad, copy the following text and paste it into a file named PowerDown.bat.  Double-click on it to run it.  Better -- put it in a f..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Automate Windows XP Maintenance and Shutdown
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20171128051124im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20171128051124im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20171128051124im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20171128051124im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20171128051124im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20171128051124im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20171128051124im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20171128051124im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20171128051124im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20171128051124im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20171128051124im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20171128051124im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20171128051124im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20171128051124im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20171128051124im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20171128051124im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20171128051124im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20171128051124im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20171128051124cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=8996288a-7764-41c2-b97e-ad2080482fed" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20171128051124cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=8996288a-7764-41c2-b97e-ad2080482fed" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Saturday, July 28, 2007
+        </h2>
+        <div class="post">
+         <a name="8406647326994636308">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20171128051124/http://raywoodcockslatest.blogspot.com/2007/07/automate-windows-xp-maintenance-and.html">
+           Automate Windows XP Maintenance and Shutdown
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           Using Notepad, copy the following text and paste it into a file named PowerDown.bat.  Double-click on it to run it.  Better -- put it in a folder somewhere and create a shortcut to it.  If you like it, please post a kind comment on this webpage.
+
+***************************************
+
+:: PowerDown.bat
+:: by Ray Woodcock
+
+:: Please post a kind word on my blog:
+::      Ray Woodcock's Latest
+:: This item posted on July 28, 2007
+
+echo off
+cls
+:Menu1
+echo.
+echo What would you prefer?
+echo.
+echo 1   Power Down
+echo 2   Hibernate (if available on your computer)
+echo 3   Restart
+echo 4   Maintenance
+echo 5   Nothing Further (Exit)   
+echo.
+echo.
+echo Note:  Ctrl-Break provides an emergency exit.
+echo.
+echo.
+echo.
+echo Choose a number and hit Enter ...
+echo.
+echo.
+echo.
+set /p x1=
+cls
+
+set x1=%x1:~0,1%
+if "%x1%"=="1" goto PowerDown
+if "%x1%"=="2" goto Hibernate
+if "%x1%"=="3" goto Restart
+if "%x1%"=="4" goto Maint
+if "%x1%"=="5" goto eof
+
+echo.
+echo Not a valid choice.
+echo.
+goto Menu1
+
+:PowerDown
+shutdown -s -f -t 15
+goto Undoit
+
+:Hibernate
+shutdown -h -f -t 15
+goto Undoit
+
+:Restart
+shutdown -r -f -t 15
+goto Undoit
+
+:Maint
+echo.
+echo What kind of maintenance would you like?
+echo.
+echo 1   Run System File Checker
+echo 2   Fix file system errors (/f)
+echo 3   Recover bad sectors (/r)
+echo 4   Defragment all drives
+echo 5   Previous Menu
+echo.
+echo Choose a number and hit Enter ...
+set /p x1=
+cls
+
+set x1=%x1:~0,1%
+if "%x1%"=="1" goto SFC
+if "%x1%"=="2" goto FixErrors
+if "%x1%"=="3" goto BadSectors
+if "%x1%"=="4" goto Defrag
+if "%x1%"=="5" goto Menu1
+
+echo.
+echo Not a valid choice.
+echo.
+goto Maint
+
+:SFC
+sfc /scannow
+echo.
+echo System File Checker is now running in a separate process.
+echo Meanwhile, you are returning to the main menu in this program.
+echo.
+goto Menu1
+
+:FixErrors
+echo.
+echo You will now choose the drives to check.
+echo Some will be fixed now.  Most will require reboot.
+echo.
+pause
+cls
+echo.
+echo Checking drive C ...
+echo.
+chkdsk c: /f
+cls
+echo.
+echo Checking drive D ...
+echo.
+chkdsk d: /f
+cls
+echo.
+echo Checking drive E ...
+echo.
+chkdsk e: /f
+cls
+echo.
+echo Checking drive F ...
+echo.
+chkdsk f: /f
+cls
+echo.
+echo Checking drive G ...
+echo.
+chkdsk g: /f
+cls
+echo.
+echo Checking drive H ...
+echo.
+chkdsk h: /f
+cls
+echo.
+echo Checking drive I ...
+echo.
+chkdsk i: /f
+cls
+echo.
+echo Checking drive J ...
+echo.
+chkdsk j: /f
+cls
+echo.
+echo Checking drive K ...
+echo.
+chkdsk k: /f
+cls
+echo.
+echo Checking drive L ...
+echo.
+chkdsk l: /f
+cls
+echo.
+echo Checking drive M ...
+echo.
+chkdsk m: /f
+cls
+echo.
+echo Checking drive N ...
+echo.
+chkdsk n: /f
+cls
+echo.
+echo Checking drive O ...
+echo.
+chkdsk o: /f
+cls
+echo.
+echo Checking drive P ...
+echo.
+chkdsk p: /f
+cls
+echo.
+echo Checking drive Q ...
+echo.
+chkdsk q: /f
+cls
+echo.
+echo Checking drive R ...
+echo.
+chkdsk r: /f
+cls
+echo.
+echo Checking drive S ...
+echo.
+chkdsk s: /f
+cls
+echo.
+echo Checking drive T ...
+echo.
+chkdsk t: /f
+cls
+echo.
+echo Checking drive U ...
+echo.
+chkdsk u: /f
+cls
+echo.
+echo Checking drive V ...
+echo.
+chkdsk v: /f
+cls
+echo.
+echo Checking drive W ...
+echo.
+chkdsk w: /f
+cls
+echo.
+echo Checking drive X ...
+echo.
+chkdsk x: /f
+cls
+echo.
+echo Checking drive Y ...
+echo.
+chkdsk y: /f
+cls
+echo.
+echo Checking drive Z ...
+echo.
+chkdsk z: /f
+cls
+goto Summary
+
+:BadSectors
+echo.
+echo This can be very time-consuming, especially on large drives.
+echo Select only those drives that need this now.
+echo.
+pause
+cls
+echo.
+echo Checking drive C ...
+echo.
+chkdsk c: /r
+cls
+echo.
+echo Checking drive D ...
+echo.
+chkdsk d: /r
+cls
+echo.
+echo Checking drive E ...
+echo.
+chkdsk e: /r
+cls
+echo.
+echo Checking drive F ...
+echo.
+chkdsk f: /r
+cls
+echo.
+echo Checking drive G ...
+echo.
+chkdsk g: /r
+cls
+echo.
+echo Checking drive H ...
+echo.
+chkdsk h: /r
+cls
+echo.
+echo Checking drive I ...
+echo.
+chkdsk i: /r
+cls
+echo.
+echo Checking drive J ...
+echo.
+chkdsk j: /r
+cls
+echo.
+echo Checking drive K ...
+echo.
+chkdsk k: /r
+cls
+echo.
+echo Checking drive L ...
+echo.
+chkdsk l: /r
+cls
+echo.
+echo Checking drive M ...
+echo.
+chkdsk m: /r
+cls
+echo.
+echo Checking drive N ...
+echo.
+chkdsk n: /r
+cls
+echo.
+echo Checking drive O ...
+echo.
+chkdsk o: /r
+cls
+echo.
+echo Checking drive P ...
+echo.
+chkdsk p: /r
+cls
+echo.
+echo Checking drive Q ...
+echo.
+chkdsk q: /r
+cls
+echo.
+echo Checking drive R ...
+echo.
+chkdsk r: /r
+cls
+echo.
+echo Checking drive S ...
+echo.
+chkdsk s: /r
+cls
+echo.
+echo Checking drive T ...
+echo.
+chkdsk t: /r
+cls
+echo.
+echo Checking drive U ...
+echo.
+chkdsk u: /r
+cls
+echo.
+echo Checking drive V ...
+echo.
+chkdsk v: /r
+cls
+echo.
+echo Checking drive W ...
+echo.
+chkdsk w: /r
+cls
+echo.
+echo Checking drive X ...
+echo.
+chkdsk x: /r
+cls
+echo.
+echo Checking drive Y ...
+echo.
+chkdsk y: /r
+cls
+echo.
+echo Checking drive Z ...
+echo.
+chkdsk z: /r
+cls
+goto Summary
+
+:Defrag
+defrag c: /f
+defrag d: /f
+defrag e: /f
+defrag f: /f
+defrag g: /f
+defrag h: /f
+defrag i: /f
+defrag j: /f
+defrag k: /f
+defrag l: /f
+defrag m: /f
+defrag n: /f
+defrag o: /f
+defrag p: /f
+defrag q: /f
+defrag r: /f
+defrag s: /f
+defrag t: /f
+defrag u: /f
+defrag v: /f
+defrag w: /f
+defrag x: /f
+defrag y: /f
+defrag z: /f
+cls
+goto Summary
+
+:Summary
+echo.
+echo Your requested maintenance is complete.
+echo If maintenance requires rebooting, you
+echo will have that option now.
+echo.
+goto Menu1
+
+:Undoit
+cls
+echo.
+echo If you want to cancel the reboot/shutdown,
+echo please hit Enter, quickly.
+echo.
+pause &gt; nul
+shutdown -a
+cls
+goto Menu1
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=8406647326994636308&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20171128051124/http://raywoodcockslatest.blogspot.com/search/label/shutdown%20power%20down%20hibernate%20reboot%20restart%20batch%20file%20program%20windows%20xp%20winxp%20sfc%20system%20file%20checker%20scannow%20chkdsk%20%2Fr%20maintenance%20utility%20defrag%20defragment%20drive%20errors" rel="tag">
+             shutdown power down hibernate reboot restart batch file program windows xp winxp sfc system file checker scannow chkdsk /r maintenance utility defrag defragment drive errors
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          12
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-7253475749177381435">
+           <a name="comment-7253475749177381435">
+           </a>
+           <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/profile/09052834290473604388" rel="nofollow">
+            Rahmanic
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Thanks for the code now i can set the timer and peacefully sleep while listening to songs!!!!!
+            <br/>
+            Gr8 work dude
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7253475749177381435" title="comment permalink">
+             March 28, 2008 at 1:26 AM
+            </a>
+            <span class="item-control blog-admin pid-2112818568">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7253475749177381435" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-4775668640080766753">
+           <a name="comment-4775668640080766753">
+           </a>
+           <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/profile/17264158952532513362" rel="nofollow">
+            santeriajack
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            gday mate been looking for one of these? nice. . . . But how do i set the timer??? I press 1 then enter and it shuts down in 10 secs. am i missing some thing? I wouldn't mind being able to set it for an hour or so.
+            <br/>
+            <br/>
+            cheers
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-4775668640080766753" title="comment permalink">
+             October 8, 2008 at 8:22 AM
+            </a>
+            <span class="item-control blog-admin pid-1912326338">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=4775668640080766753" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-2921768430648609221">
+           <a name="comment-2921768430648609221">
+           </a>
+           <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Santeriajack -- I'm a little rusty.  As I look at it, I think you'll need to change the number after the -t.  Try altering that number and see what happens.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2921768430648609221" title="comment permalink">
+             October 8, 2008 at 9:02 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2921768430648609221" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-4699915070847402348">
+           <a name="comment-4699915070847402348">
+           </a>
+           <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/profile/17264158952532513362" rel="nofollow">
+            owen
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            thats it! works a treat cheers.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-4699915070847402348" title="comment permalink">
+             October 8, 2008 at 4:33 PM
+            </a>
+            <span class="item-control blog-admin pid-1912326338">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=4699915070847402348" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-2260530270741724867">
+           <a name="comment-2260530270741724867">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            This code was exactly what I was looking for. Thanks a lot! Beats looking through tons of 30-day trial garbage apps on versiontrackers.com!
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2260530270741724867" title="comment permalink">
+             March 21, 2009 at 3:58 AM
+            </a>
+            <span class="item-control blog-admin pid-1822568636">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2260530270741724867" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-6508937379120474474">
+           <a name="comment-6508937379120474474">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            really great....except it doesn't work!!!!
+            <br/>
+            <br/>
+            shutdown never happens...just sits there...tried on several computers....
+            <br/>
+            <br/>
+            thanks for nothing!
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-6508937379120474474" title="comment permalink">
+             April 11, 2009 at 11:40 AM
+            </a>
+            <span class="item-control blog-admin pid-1211289346">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=6508937379120474474" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-7307448938419209028">
+           <a name="comment-7307448938419209028">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            WORKS PERFECT, thanks mate
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7307448938419209028" title="comment permalink">
+             July 2, 2009 at 9:37 AM
+            </a>
+            <span class="item-control blog-admin pid-1834659043">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7307448938419209028" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-642338321710543495">
+           <a name="comment-642338321710543495">
+           </a>
+           <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/profile/12815567181102436824" rel="nofollow">
+            lifecycled
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Nice one, worked first shot. Under XP anyone know how to suppress the System Shutdown window? I have the timer set for two hours but want to leave the screen free for use during that period.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-642338321710543495" title="comment permalink">
+             May 5, 2010 at 10:04 AM
+            </a>
+            <span class="item-control blog-admin pid-9099393">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=642338321710543495" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-4189935384230702164">
+           <a name="comment-4189935384230702164">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            COOOOLLLLLL
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-4189935384230702164" title="comment permalink">
+             October 5, 2010 at 7:06 AM
+            </a>
+            <span class="item-control blog-admin pid-587872015">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=4189935384230702164" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-90294169486246811">
+           <a name="comment-90294169486246811">
+           </a>
+           Bruce E. Baby
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Nice one Ray.  Thanks
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-90294169486246811" title="comment permalink">
+             October 24, 2010 at 11:44 PM
+            </a>
+            <span class="item-control blog-admin pid-489924217">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=90294169486246811" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-4617588145290167679">
+           <a name="comment-4617588145290167679">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Nice job, Ray!
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-4617588145290167679" title="comment permalink">
+             November 22, 2010 at 3:25 PM
+            </a>
+            <span class="item-control blog-admin pid-1458539488">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=4617588145290167679" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-4925076084256934818">
+           <a name="comment-4925076084256934818">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Very, very, useful. Thank you!
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-4925076084256934818" title="comment permalink">
+             April 7, 2011 at 1:27 AM
+            </a>
+            <span class="item-control blog-admin pid-744612359">
+             <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=4925076084256934818" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20171128051124/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=8406647326994636308" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20171128051124/http://raywoodcockslatest.blogspot.com/feeds/8406647326994636308/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:11:24 Nov 28, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:00:27 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.692
+  exclusion.robots: 0.091
+  exclusion.robots.policy: 0.079
+  esindex: 0.01
+  cdx.remote: 10.904
+  LoadShardBlock: 197.6 (3)
+  PetaboxLoader3.datanode: 110.179 (4)
+  PetaboxLoader3.resolve: 349.987 (2)
+  load_resource: 340.135
+-->

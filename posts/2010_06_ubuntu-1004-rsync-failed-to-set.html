@@ -1,0 +1,968 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="true" name="MSSmartTagsPreventParsing"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20130520224315im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/2010/06/ubuntu-1004-rsync-failed-to-set.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="http://www.blogger.com/rsd.g?blogID=3377753575825500498" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+  <link href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/feeds/3131445128718788367/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu 10.04:  "rsync: failed to set permissions on [folder]: Operation not permitted" -- and Beyond Compare
+  </title>
+  <link href="//web.archive.org/web/20130520224315cs_/http://www.blogger.com/static/v1/widgets/1832531788-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="//web.archive.org/web/20130520224315cs_/http://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=b3080096-f976-4bee-be75-441271c065a0" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20130520224315im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20130520224315im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20130520224315im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20130520224315im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20130520224315im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20130520224315im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20130520224315im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20130520224315im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20130520224315im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20130520224315im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20130520224315im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20130520224315im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20130520224315im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20130520224315im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20130520224315im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20130520224315im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20130520224315im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20130520224315im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Sunday, June 13, 2010
+        </h2>
+        <div class="post">
+         <a name="3131445128718788367">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/2010/06/ubuntu-1004-rsync-failed-to-set.html">
+           Ubuntu 10.04:  "rsync: failed to set permissions on [folder]: Operation not permitted" -- and Beyond Compare
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-backup-with-rsync.html">
+            Using rsync
+           </a>
+           to automate backups on Ubuntu 10.04 (Lucid Lynx), I got a million iterations of this message:  "rsync: failed to set permissions on [target drive &amp; folder]: Operation not permitted."
+           <br/>
+           <br/>
+           I had previously had a
+           <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/2009/12/rsync-usb-drive-error-30-read-only-file.html">
+            somewhat similar problem
+           </a>
+           with an external USB drive.  The solution there had been to reformat the drive.  I didn't want to have to do that again if it wasn't necessary.  I ran
+           <a href="https://web.archive.org/web/20130520224315/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;safe=off&amp;client=firefox-a&amp;hs=PSC&amp;rlz=1R1GGGL_en___US333&amp;q=rsync+%22failed+to+set+permissions%22+%22operation+not+permitted%22+-tiger&amp;btnG=Search">
+            a search
+           </a>
+           and, following what i understood from one post, I set out to change ownership on the target folder so as to match the ownership of the source folder.  To do that, I went into Ubuntu's Terminal and typed "sudo nautilus," and then navigated Nautilus to File System/media/[target drive].  (It could instead have been in File System/mnt/.)  I right-clicked on that and got Properties &gt; Permissions.  The owner was root.  When I tried to change it, it changed back.
+           <br/>
+           <br/>
+           I exited Nautilus and followed
+           <a href="https://web.archive.org/web/20130520224315/https://help.ubuntu.com/community/FilePermissions#Changing%20the%20File%20Owner%20and%20Group">
+            instructions
+           </a>
+           in Ubuntu Community Documentation, combined with advice from
+           <a href="https://web.archive.org/web/20130520224315/https://lists.ubuntu.com/archives/ubuntu-users/2005-August/045181.html">
+            another post
+           </a>
+           and the
+           <a href="https://web.archive.org/web/20130520224315/http://manpages.ubuntu.com/manpages/lucid/man1/chown.1.html">
+            Ubuntu manual
+           </a>
+           page for chown.  I typed "sudo chown -R ray /media/[target drive]."  That ran for five or ten minutes, as the chown (change ownership) command recursed (i.e., -R) all of the subdirectories on the target drive.  But that, by itself, did not fix the problem; indeed, it didn't seem to change anything.  Root was still the owner of the target drive.  Then again, the properties of the target allowed others to create and delete files as well, so why was rsync complaining?
+           <br/>
+           <br/>
+           There appeared to be
+           <a href="https://web.archive.org/web/20130520224315/https://help.ubuntu.com/community/Fstab">
+            another way
+           </a>
+           .  In Terminal, I typed "sudo gedit /etc/fstab."  I already had a line for the target drive, which I'll call simply TARGET.  That line was as follows:
+           <br/>
+           <br/>
+           UUID=[UUID for the drive] /media/TARGET ntfs-3g defaults,umask=000 0 0
+           <br/>
+           <br/>
+           The Ubuntu documentation I was now looking at said, "Permissions are set at the time of mounting the partition with umask, dmask, and fmask and can not be changed with commands such as chown or chmod."  So possibly that's why my chown command wasn't doing anything.  Following the advice, I changed it to dmask=027,fmask=137, since this was going to be just a backup drive anyway.  I also saw that "defaults" meant these options:  rw,suid,dev,exec,auto,nouser,async.  All of those were fine, as far as I knew, except for this information from the documentation:
+           <br/>
+           <blockquote>
+            user - Permit any user to mount the filesystem. This automatically implies noexec, nosuid,nodev unless overridden.
+            <br/>
+            <br/>
+            nouser - Only permit root to mount the filesystem. This is also a default setting.
+           </blockquote>
+           I wanted user, not nouser.  I decided it might be easier to spot this sort of thing, in future visits to fstab, if I just changed all occurrences of "defaults" to make these options explicit.  Besides, in light of the statements just quoted, it seemed that I would have to override several defaults anyway.  So the resulting fstab line looked like this:
+           <br/>
+           <br/>
+           UUID=[UUID for the drive] /media/TARGET ntfs-3g rw,suid,dev,exec,auto,user,async,dmask=027,fmask=137 0 0
+           <br/>
+           <br/>
+           I saved fstab and, in Terminal, typed "sudo mount -a" to mount the partitions according to these new instructions.  Then I ran the rsync command again.  Sadly, these changes made no visible difference.  I still got a million error messages.  So, OK.  I had been overlooking the first three error lines in the log output of my rsync command.  The second and third lines followed the pattern of this first line, but were for subdirectories:
+           <br/>
+           <br/>
+           rsync: failed to set times on /media/TARGET/.": Operation not permitted (1)
+           <br/>
+           <br/>
+           I hadn't previously investigated the "failed to set times" error, so now I did.  What I got out of the forums I came across was that possibly I had a syntax error in my rsync command.  Here's how it went:
+           <br/>
+           <br/>
+           rsync -qhlEtrip --progress --delete-after --ignore-errors --force --exclude=/.Trash-0 --exclude=/.Trash-1000/ --exclude=/lost+found/ /media/SOURCE /media/TARGET 2&gt; /media/SOURCE/Backuplog.log
+           <br/>
+           <br/>
+           This was identical to the perfectly working rsync command that I was occasionally using to back up SOURCE to a different partition, with one exception:  in the one shown above, I didn't have a slash after Trash-0.  So I changed that to --exclude=/.Trash-0/ and re-ran it.  That didn't solve it.  I then noticed (I was using two desktops) that I had gotten a message telling me that the system was not able to mount the partition:  "Device or resource busy."  So possibly that fstab step still needed to be tested.  I rebooted the system.  None of the the parittions that I had adjusted in fstab were mounted.  I went back, deleted the dmask and fmask parts, and returned it to umask=000, and rebooted.  Now the partitions were all mounted.  I ran the rsync command again.  The problem had not changed.
+           <br/>
+           <br/>
+           I found
+           <a href="https://web.archive.org/web/20130520224315/http://ubuntuforums.org/archive/index.php/t-87038.html">
+            an informative thread
+           </a>
+           in which bscbrit suggested trying to use cp to copy a single file from the source partition to the target partition.  If it worked, s/he said, the problem was not with permissions; it was just with trying to use rsync.  So in SOURCE I copied a file, renamed it "x.txt," and typed "cp /media/SOURCE/x.txt /media/TARGET," and it worked:  there was a copy of x.txt on TARGET.  It sounded like there could be a kind of mismatch between the ext3 source drive and the ntfs target.  I also came across an informative post by
+           <a href="https://web.archive.org/web/20130520224315/http://ubuntuforums.org/showpost.php?p=6516811&amp;postcount=34">
+            djgrandmarquis
+           </a>
+           that said rsync could have problems with Windows file systems.  That was in response to a question about very slow backup times, which  I had also experienced.  I needed Windows file systems because I was backing up to an offsite drive that I sometimes shared with a Windows system.
+           <br/>
+           <br/>
+           I had previously investigated
+           <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/2009/12/long-term-backup-verification-beyond.html">
+            Beyond Compare
+           </a>
+           (BC) as another way of synchronizing drives.  BC had drawn
+           <a href="https://web.archive.org/web/20130520224315/http://www.google.com/search?q=%22beyond+compare%22+&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+            a lot of praise
+           </a>
+           .  Since my previous writeup, I had bought a copy and had been using it for several months on Ubuntu, WinXP, and Linux.  I had subsequently found
+           <a href="https://web.archive.org/web/20130520224315/http://en.wikipedia.org/wiki/Comparison_of_file_comparison_tools">
+            a comparison
+           </a>
+           of many such programs; but since I had already bought BC and was using it with good results, I didn't explore that comparison.  I could verify that BC was fast and trouble-free when compared to rsync, especially when going between ext3 and ntfs drives.  I also liked the visible information about what was being changed and backed up.  So I decided to stop using rsync and start relying only on BC for my backups.
+           <br/>
+           <br/>
+           There were a few differences between the Windows and Linux versions of BC; but in an impressively thorough reply to my post, Craig from BC said that the portable version of BC ran well on
+           <a href="https://web.archive.org/web/20130520224315/http://www.google.com/search?q=wine+ubuntu&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+            Wine
+           </a>
+           in Ubuntu.  I had already installed Wine, and I had also already been using the portable version of BC3; I preferred portable versions to save time during reinstallations, as I was able to save them elsewhere than drive C and therefore they weren't wiped out during a Windows reinstall.  So to try this out, I copied over the BC3 portable installation and tried using a
+           <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/2010/06/ubuntu-1004-irfanview-and-other.html">
+            funky procedure
+           </a>
+           involving PortableApps to try the Windows version.  But now it seemed I had not properly understood or used that procedure:  PortableApps now appeared to be looking, not for .exe files, but for ".paf exe" files.  Meanwhile, it looked like Beyond Compare 3 would run fairly well
+           <a href="https://web.archive.org/web/20130520224315/http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=18009&amp;iTestingId=50153">
+            under Wine
+           </a>
+           , so I gave it a try.  Following the steps described in that
+           <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/2010/06/ubuntu-1004-irfanview-and-other.html">
+            previous post
+           </a>
+           , in Terminal I navigated to the folder where I had the original BC installer, typed "ls" to get the exact filename, and typed "wine BCompare-3.1.10.11626.exe" to install that file.  Terminal reported some "fixme" and "err" messages; nonetheless, the Beyond Compare 3 Setup Wizard ran.  I had a licensed version, so I entered the license key, and followed the instruction to restart.  It worked, but now I came to the new realization that Windows identifies drives by letter (C: etc.), while Ubuntu identifies them by name (/media/DATA, etc.).  So of course a Windows version of Beyond Compare, looking for Windows-type folder paths, running in Ubuntu, is going to find only a limited number of Ubuntu locations.  I didn't pursue that problem.
+           <br/>
+           <br/>
+           This left at least one issue unresolved.  While I was OK with doing manual comparisons for now, I was still not at the point of being able to write
+           <a href="https://web.archive.org/web/20130520224315/http://www.scootersoftware.com/vbulletin/forumdisplay.php?f=17">
+            scripts
+           </a>
+           to automate BC backup processes.  I started
+           <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/2010/06/beyond-compare-mirroring-scripts.html">
+            another post
+           </a>
+           on that.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20130520224315/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=3131445128718788367&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/Beyond%20Compare%203" rel="tag">
+             Beyond Compare 3
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/chmod" rel="tag">
+             chmod
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/chown" rel="tag">
+             chown
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/fstab" rel="tag">
+             fstab
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/lucid%20lynx" rel="tag">
+             lucid lynx
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/permissions" rel="tag">
+             permissions
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/PortableApps" rel="tag">
+             PortableApps
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/rsync" rel="tag">
+             rsync
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/Ubuntu%2010.04" rel="tag">
+             Ubuntu 10.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/UUID" rel="tag">
+             UUID
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/windows%20xp" rel="tag">
+             windows xp
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/search/label/wine" rel="tag">
+             wine
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          3
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-3108802410724415026">
+           <a name="comment-3108802410724415026">
+           </a>
+           <a href="https://web.archive.org/web/20130520224315/http://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I posted a question about that Ubuntu-Windows folder mismatch problem in a Scooter Software (Beyond Compare) forum.  See http://www.scootersoftware.com/vbulletin/showthread.php?p=24394#post24394
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-3108802410724415026" title="comment permalink">
+             June 13, 2010 at 8:22 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20130520224315/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=3108802410724415026" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-7287265567430291314">
+           <a name="comment-7287265567430291314">
+           </a>
+           <a href="https://web.archive.org/web/20130520224315/http://www.ubuntubuzz.com/" rel="nofollow">
+            mahmudin ashar
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            sometime i trough the same thing, it's happend because file/folder/data i want to backup is owened by root or other user different with user run my rsync
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7287265567430291314" title="comment permalink">
+             July 21, 2010 at 9:03 AM
+            </a>
+            <span class="item-control blog-admin pid-1522669769">
+             <a href="https://web.archive.org/web/20130520224315/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7287265567430291314" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-9177666729959955451">
+           <a name="comment-9177666729959955451">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            It sounds like you were trying to set UNIX permissions on the NTSF file system. It would probably work if you removed the copy permissions option.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-9177666729959955451" title="comment permalink">
+             August 21, 2011 at 5:55 PM
+            </a>
+            <span class="item-control blog-admin pid-1761308662">
+             <a href="https://web.archive.org/web/20130520224315/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=9177666729959955451" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20130520224315/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=3131445128718788367" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20130520224315/http://raywoodcockslatest.blogspot.com/feeds/3131445128718788367/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 22:43:15 May 20, 2013 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 23:56:07 Dec 27, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.945
+  exclusion.robots: 0.115
+  exclusion.robots.policy: 0.099
+  esindex: 0.014
+  cdx.remote: 6.23
+  LoadShardBlock: 430.826 (3)
+  PetaboxLoader3.datanode: 158.157 (4)
+  PetaboxLoader3.resolve: 624.294 (2)
+  load_resource: 384.91
+-->

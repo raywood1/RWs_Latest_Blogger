@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053807cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053807im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053807/http://raywoodcockslatest.blogspot.com/2011/01/windows-7-multiple-desktops-dexpot.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/feeds/8602352111533570141/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053807/http://raywoodcockslatest.blogspot.com/2011/01/windows-7-multiple-desktops-dexpot.html" property="og:url"/>
+  <meta content="Windows 7:  Multiple Desktops:  A Look at Dexpot and Sysinternals" property="og:title"/>
+  <meta content="As noted previously , I wanted to try using multiple or virtual desktops in Windows 7, so as to have different workspaces for different proj..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Windows 7:  Multiple Desktops:  A Look at Dexpot and Sysinternals
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053807im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053807im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053807im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053807im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053807im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053807im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053807im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053807im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053807im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053807im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053807im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053807im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053807im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053807im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053807im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053807im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053807im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053807im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053807cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053807cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Wednesday, January 19, 2011
+        </h2>
+        <div class="post">
+         <a name="8602352111533570141">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/2011/01/windows-7-multiple-desktops-dexpot.html">
+           Windows 7:  Multiple Desktops:  A Look at Dexpot and Sysinternals
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           As
+           <a href="https://web.archive.org/web/20190906053807/http://raywoodcockslatest.blogspot.com/2011/01/windows-7-choosing-multiple-desktop.html">
+            noted previously
+           </a>
+           , I wanted to try using multiple or virtual desktops in Windows 7, so as to have different workspaces for different projects.  For this purpose, I decided to try
+           <a href="https://web.archive.org/web/20190906053807/http://www.dexpot.de/index.php?lang=en">
+            Dexpot
+           </a>
+           .  This post describes my first experiences with that program.
+           <br/>
+           <br/>
+           <strong>
+            Setup and Orientation
+           </strong>
+           <br/>
+           <br/>
+           When I ran Dexpot, it started minimized.  That is, there was an icon on the taskbar, at the bottom of the screen, but nothing appearing onscreen.  Mousing over the icon showed entries for four desktops.  Right-clicking on the icon gave me a number of configuration options.  First was "Window catalogue."  This displayed large thumbnails (apparently defaulting to a maximum of nine per screen), one for each program I had running on Desktop 1.  Clicking on a directional arrow at the top of the screen would take me to the next or previous desktop.  Clicking on any program icon, within any desktop, would take me to that program within that desktop.  In short, Windows Catalogue was a quick way to navigate to any program that was then running.  There were no tooltips, so I had to click on the red button at the top right corner of the screen to learn that this just took me back to the desktop.
+           <br/>
+           <br/>
+           Right-clicking on the taskbar icon again, the second option was "Full-screen preview."  This was a different way of representing what was going on, on my computer.  It divided the screen into quadrants.  Top left was for Desktop 1.  There, it showed a 1/4-size depiction of the actual look of desktop 1 at that point.  Desktops 2, 3, and 4 were blank.  Presumably the screen would have been divided into sixths if I'd set up six desktops.  This would be the more useful tool if I wanted to find a certain desktop and would know it by sight, and didn't necessarily need to go directly to a single window within that desktop.
+           <br/>
+           <br/>
+           Back on the taskbar, the third right-click option was for Settings.  In its General section, I saw that I could create up to 20 desktops, designate which one would open first, etc.  There were some options related to profiles.  If the machine had other users and didn't require them to sign in under their own accounts, that would presumably be where the person would go to choose his/her own set of desktops.  Also, I guessed that a one-user system might use this feature if, say, the person had different sets of desktops that s/he used in professional and personal roles.  If this was correct, there was not actually a limit of 20 desktops; there was no limit, since each of an indefinitely large number of profiles could have 20 desktops.
+           <br/>
+           <br/>
+           The primary sources of guidance on such matters seemed to be Dexpot's
+           <a href="https://web.archive.org/web/20190906053807/http://dexpot.de/download/dexpot_quickstartguide.pdf">
+            Quick Start Guide
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20190906053807/http://dexpot.de/forum/viewforum.php?f=21">
+            FAQs page
+           </a>
+           , and
+           <a href="https://web.archive.org/web/20190906053807/http://dexpot.de/forum/viewforum.php?f=18&amp;sid=d087776adfce1b6f22d4a2764b2ed570">
+            support forums
+           </a>
+           .  The Quick Start Guide provided a big-picture orientation to Dexpot, starting as a tutorial for beginners in virtual desktops and then proceeding to customization.  The FAQs page featured maybe two dozen specific questions and answers.  The forums of interest (aside from the FAQs) were Support, Feature Requests, Plugins, and General Discussion.  The Quick Start Guide told me that Alt-2 would take me directly to desktop 2.
+           <a href="https://web.archive.org/web/20190906053807/http://dexpot.de/forum/viewtopic.php?f=21&amp;t=2491">
+            One of the FAQs
+           </a>
+           discussed the Settings dialog that I was now viewing, but did not confirm or deny my speculation about the possibility of having many users, each with its own 20 desktops.
+           <br/>
+           <br/>
+           Continuing in the Settings dialog, I went to the Appearance section.  Here, I could customize a few items.  A bit of confusion or overlap here:  I would have expected to configure wallpaper and other layout items here, but instead, to do that, I had to go back to the taskbar, right-click, and choose the fourth item, "Configure Desktops."  That opened a different dialog, with global options applicable to all desktops and also with individual desktop overrides for name, resolution, password, and all kinds of other settings.  It seemed to me that Dexpot should combine these two main right-click menu options.  So, to complete the thought regarding that Configure Desktops menu pick, I went to the All Desktops option and browsed.  There really was not too much I wanted to change right now.  Later, I would go to the Background tab for each desktop and give it a unique look, so that it would be easy to tell at a glance which one I wanted.  One interesting feature here:  I could specify commands that I wanted each desktop to run upon starting.  So if I opened a certain desktop each Saturday, for purposes related to one specific folder on my computer, perhaps I could specify a Windows Explorer command that would open Explorer to that folder when I started this desktop (and likewise for opening a specific document in Word, etc.).
+           <br/>
+           <br/>
+           So, OK.  This -- the Appearance tab, plus the Configure Desktops menu pick, seemed to take care of the basic look of the thing.  Back in the Settings dialog, I went to the third tab:  Components.  There were four tabs.  The first component they were going to let me configure was the Desktop Manager; the other three tabs were for Desktop Preview, DexTab, and Windows Catalogue (above).  Here, again, I browsed through the options.  I didn't yet have any particular reason to change their default settings, so I just moved on.
+           <br/>
+           <br/>
+           The fourth section in the Settings dialog was for Controls.  This seemed to be the ultimate tweaker section.  There were tabs for Hotkeys, Mouse Switch, and Title Bars.  "Controls" apparently meant "how to handle user input related to Dexpot."  So if I wanted to create a hotkey to move a window to desktop 3, this was where I would do that.  On the second tab, it looked like I could configure various mouse actions.  For instance, if I moved the mouse to the left edge of the screen and held it there, possibly that would be interpreted as an indication that I wanted to go to the previous desktop.  There seemed to be a number of configurable possibilities like that here.  That was interesting, but I didn't set it up yet.
+           <br/>
+           <br/>
+           Next, the Switching Desktops section.  Again, some confusion:  they had appearance-related items here too, such as screen resolution and screensaver customization.
+           <br/>
+           <br/>
+           Finally, the Plugins and Extras section.  They listed five plugins:  Dexcube, SevenDex, Slideshow, Taskbar Pager, and Wallpaper Clock.  SevenDex was already installed with my version of Dexpot.  It seemed that SevenDex, for Windows 7, was responsible for what this post has been describing as items listed on a right-click menu from the taskbar icon.  Finally, there was an option, here in the Plugins and Extras section, that I didn't entirely understand.  It had to do with "Behaviour of windows on other desktops."  One possibility, "When activating a window on another desktop," was, "Copy window to current desktop."  I wasn't sure how this activation concept worked; it seemed I would probably have to see it in action to grasp it fully.
+           <br/>
+           <br/>
+           Those were the Settings and Configure Desktops items that jumped out at me, on my first pass.  Continuing down the menu that popped up when I right-clicked on the Dexpot (actually, SevenDex) taskbar button, I saw four more items:  Desktop Manager, Desktop Preview, Desktop Windows, and Desktop Rules.  Choosing Desktop Manager would give me a little always-on-top toolbar that I could use to switch among desktops.  I didn't want that onscreen, so I didn't use it.  Why should I?  Just left-clicking on the taskbar button would give me the same thing.  But possibly some of the right-click options available from that little toolbar (e.g., "Move other windows to this Desktop") would be useful.  Desktop Preview opened another little always-on-top toolbar, this one showing inaccurate thumbnails representing the four desktops.  Desktop Windows gave me a dialog (not always-on-top) that would list the windows I had open in any selected desktop, with right-click options to move, copy, close, create rules, etc.  I did not yet have much concept of the purpose that rules would serve in Dexpot.  I figured the purpose would seem more obvious once I had a bit of experience with the program.
+           <br/>
+           <br/>
+           <strong>
+            Using Dexpot
+           </strong>
+           <br/>
+           <br/>
+           With that brief tour of settings, I decided to start using Dexpot.  I went to the taskbar icon and chose desktop 1.  That was my preexisting desktop, running Windows Explorer, Adobe Acrobat, Firefox, and a couple of other programs.  Nothing new there.  Now desktop 2.  No programs running there.  Same Start Menu and everything else; it was just a new workspace.
+           <br/>
+           <br/>
+           So, alright, there in desktop 2, I started another session of Acrobat.  It allowed me to do this.  The one in desktop 1 was still running.  So that was different from having just one desktop.  With just one desktop, I could run only one session of Acrobat at a time.  I went into desktop 1 and opened a file called D:\Current\x.pdf in Acrobat.  I went into desktop 2.  Here, x.pdf was already opened.  So I wasn't actually running different sessions of Acrobat.  I was running one session, but I could see it on different desktops.  I tested this by closing x.pdf and opening some other PDF file in desktop 2.  Now that was the one displayed on desktop 1 as well.  Closing Acrobat in desktop 2 closed it in desktop 1 also.
+           <br/>
+           <br/>
+           So, OK, this was definitely not the same as using a virtual machine, where each desktop would function as its own little world, oblivious to whatever might be happening anywhere else.  Programs like Acrobat, that would run only one session at a time, would be like the hedgehog that knows one great thing.  But how about programs that would allow me to run multiple sessions at once?  In desktop 1, I navigated in Windows Explorer to D:\Miscellany.  This did not affect Windows Explorer in desktop 2.  There, it was still looking at D:\Current.  So for purposes of Windows Explorer, the two desktops were more or less like separate virtual machines.  I tried the same thing in Word.  I opened y.doc in desktop 1.  That did not open it in desktop 2.  I opened the same file, y.doc, in desktop 2.  I made a change to it.  This change was also visible in desktop 1.  So Word was functioning like Acrobat in that sense.  If I opened a file in Word in one desktop, the changes would be immediately visible if I opened that file in Word in other desktops.  I closed y.doc in desktop 2.  Here, again, that closed y.doc in desktop 1 as well.
+           <br/>
+           <br/>
+           This seemed to explain why the screenshots that I had been seeing, showing various multiple desktop programs, were often empty except for the customized desktops themselves.  As long as I had different programs running in the different desktops (e.g., two different PDF readers or editors), there would be no problem.  Basically, the desktops were a way to reduce clutter.  Programs would appear only in the desktops where they were being used.  I was pretty much used to having them all visible on the taskbar, though.  It didn't seem helpful to go hunting through other desktops to find them.  It probably would have been different if I had a large number of different programs running at once.
+           <br/>
+           <br/>
+           No doubt there were other uses.  One example was if the user needed to use
+           <a href="https://web.archive.org/web/20190906053807/http://mintywhite.com/software-reviews/customization-software/dexpot-multiple-desktops-individual-settings-freeware/">
+            different screen resolutions
+           </a>
+           for different programs or projects.  With the use of hotkeys, I figured I could also use one desktop to retain a full-screen view of a video, for instance, or other layout customizations, while having a more traditional layout in another.  If I wasn't using the same video player, I could even have multiple videos running or paused in different desktops.  Maybe I could also use portable programs (copied to, and running from, distinct folders if necessary) to run multiple instances of the same program.  There were portable versions for programs that would do much of what I needed to do (e.g., OpenOffice instead of Microsoft Office).  So there were possibilities.  The overall purpose was evidently to manage appearances, not programs.  As long as Dexpot wasn't interfering with anything else, it seemed like something worth keeping around.
+           <br/>
+           <br/>
+           <strong>
+            Virtual Desktops in Another Multiple Desktop Program:  Sysinternals
+           </strong>
+           <br/>
+           <br/>
+           Dexpot seemd to be a multiple desktop administrator.  It did not actually give me distinct virtual desktops, each of which could have its own session of Word or Acrobat running in ways that were completely unrelated to what might be happening in other virtual desktops.  I wondered if other multiple desktop programs functioned the same way.
+           <a href="https://web.archive.org/web/20190906053807/http://en.wikipedia.org/wiki/Virtual_desktop#X_Window_System_.28Unix_and_Linux.29">
+            Wikipedia said
+           </a>
+           that the XWindow system used in Linux did allow the same program to be doing different things on different desktops.  It also said, however, that on Windows systems, program conflicts were common in multiple desktop setups.  This seemed unavoidable.  If Acrobat was not built, at this point, to accommodate multiple sessions, and if Windows at this point was not designed to facilitate virtual desktopping, then it seemed that a search for complete workspace independence would require a virtual machine, not just a virtual desktop.
+           <br/>
+           <br/>
+           I recalled the impression, from
+           <a href="https://web.archive.org/web/20190906053807/http://download.cnet.com/Sysinternals-Desktops/3000-2346_4-75077421.html">
+            a CNET review
+           </a>
+           , that
+           <a href="https://web.archive.org/web/20190906053807/http://technet.microsoft.com/en-us/sysinternals/cc817881">
+            Sysinternals Desktops
+           </a>
+           might provide more independence.  I killed Dexpot and then downloaded and installed Sysinternals.  They weren't kidding when they said it was lightweight:  it was a 60KB portable.  Options were almost nonexistent.  Within a minute after installing it, I had figured out that Alt-2 would take me to desktop 2.  And that was about it.  I opened a Word document in desktop 1, and another Word document in desktop 2.  The two did not seem to know that the other existed.  This was good.  Excel likewise was able to handle two distinct spreadsheets in two virtual desktops.  I tried to do the same with Acrobat, but that didn't work.  I had to kill Acrobat in desktop 1 before it would run in desktopt 2.  Apparently Acrobat was not going to be compatible with virtual desktops, no matter how independent; it would take a virtual machine to run multiple sessions of that.  But I could imagine using other PDF programs -- again, perhaps as mutiply copied portables -- to handle most Acrobat functions in those other desktops.
+           <br/>
+           <br/>
+           In Sysinternals, desktop 2 did not have all of the icons in the system tray that I had running on desktop 1, and it did not have my customized Start Menu.  Back in desktop 1, some of the system tray icons seemed not to be functioning properly.  For instance, Windows-C was no longer opening Copernic Desktop Search.  I decided to uninstall Dexpot, run Glary's registry checker on reboot, and try again.  Sysinternals was running, as I had set it to do on bootup, and Windows-C was bringing up Copernic.  I hit Alt-2 and went into desktop 2.  Here, Windows-C did not work to bring up Copernic.  I went back to desktop 1.  There, Windows-C still worked to bring up Copernic.  So, preliminarily, either Dexpot itself or some conflict between Dexpot and Sysinternals had affected the tray icons.  Back in desktop 2, Control Panel showed that Copernic was installed.  But when I went to Start and typed Copernic, it wouldn't run that way either.  So if I wanted to search for files using Copernic, apparently I would have to go to desktop 1.  The tray icon was also missing, in desktop 2, for Instant File Find (IFF); accordingly, Shift-Esc failed to bring up IFF.  Back in desktop 1, IFF was now also failing to come up from the tray icon.  It did come up from the Start Menu, but had some kind of apparently fixable problem with its index.  The general idea seemed to be that, in Sysinternals desktop 2, I could only run a program from the tray (using its hotkey) if the program's icon appeared in the tray; otherwise, I would have to start it from the Start Menu, or perhaps from a toolbar or as pinned to the taskbar.
+           <br/>
+           <br/>
+           <strong>
+            Summary
+           </strong>
+           <br/>
+           <br/>
+           Virtual desktop software seemed much lighter and faster than virtual machine software.  Some virtual desktop programs (e.g., Sysinternals) were able to provide desktops that were largely independent from one another.  Where a program (e.g., Acrobat) was uncooperative (i.e., where it insisted on being run in just one desktop), it could conceivably be supplemented by some more cooperative freeware alternative and/or by use of multiple distinct portable versions of the folder containing its program files.  The best of the available multiple desktop managers (e.g., Dexpot) seemed to provide interesting, configurable interfaces.  Sources and my own brief experience raised the prospect of program conflicts.  There did not appear to be a capability to save images of virtual desktops, as one would save virtual machines, so as to preserve everything in the desired or previous layout.  For that last reason especially, while I did decide to install Dexpot and use it on an introductory basis, I also felt that my next serious effort in this area would be to consider a return to virtual machines, although this time in Windows rather than Ubuntu.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053807/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=8602352111533570141&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/search/label/desktops" rel="tag">
+             desktops
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/search/label/Dexpot" rel="tag">
+             Dexpot
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/search/label/multiple" rel="tag">
+             multiple
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/search/label/Sysinternals" rel="tag">
+             Sysinternals
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/search/label/virtual" rel="tag">
+             virtual
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/search/label/Windows%207" rel="tag">
+             Windows 7
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/search/label/workspaces" rel="tag">
+             workspaces
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053807/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=8602352111533570141" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053807/https://raywoodcockslatest.blogspot.com/feeds/8602352111533570141/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:38:07 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:26:37 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.59
+  exclusion.robots: 0.072
+  exclusion.robots.policy: 0.063
+  esindex: 0.009
+  cdx.remote: 9.374
+  LoadShardBlock: 210.157 (3)
+  PetaboxLoader3.datanode: 81.69 (4)
+  load_resource: 10.945
+-->

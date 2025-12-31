@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906051053cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906051053im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-backup-with-rsync.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/feeds/6401755667565053039/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-backup-with-rsync.html" property="og:url"/>
+  <meta content="Ubuntu:  Backup with Rsync" property="og:title"/>
+  <meta content="In a previous post , I got as far as concluding that rsync was the tool of choice for backing up my computer in Ubuntu 9.04. I didn't pursue..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu:  Backup with Rsync
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20190906051053im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20190906051053im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20190906051053im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20190906051053im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20190906051053im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20190906051053im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20190906051053im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20190906051053im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20190906051053im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20190906051053im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20190906051053im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20190906051053im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20190906051053im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20190906051053im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20190906051053im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20190906051053im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20190906051053im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20190906051053im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906051053cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906051053cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Tuesday, December 29, 2009
+        </h2>
+        <div class="post">
+         <a name="6401755667565053039">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-backup-with-rsync.html">
+           Ubuntu:  Backup with Rsync
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           <div>
+            In
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-trying-again-on.html">
+             a previous post
+            </a>
+            , I got as far as concluding that rsync was the tool of choice for backing up my computer in Ubuntu 9.04. I didn't pursue it because I was short on time and patience for writing scripts at that point. But eventually the need for a regular backup system became acute. So this post logs the steps I took to make rsync and cron work for me.
+            <br/>
+            <br/>
+            First, here's
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-multimedia.html">
+             what I wrote previously
+            </a>
+            :
+            <br/>
+            <blockquote>
+             As an alternative to rdiff-backup, what people had actually mentioned more frequently was rsync. It did not have the incremental backup features of rdiff-backup, to my knowledge, but it seemed to be an established tool for backup purposes. So for now, at least, I thought I might try that instead. Once again, I did
+             <a href="https://web.archive.org/web/20190906051053/http://www.google.com/search?q=rsync+hardy+OR+8.04+ubuntu&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS286US286">
+              a Google search
+             </a>
+             and got a
+             <a href="https://web.archive.org/web/20190906051053/http://packages.ubuntu.com/hardy/rsync">
+              package details page
+             </a>
+             with no apparent link to any help files. Eventually I found what looked like
+             <a href="https://web.archive.org/web/20190906051053/http://samba.anu.edu.au/rsync/">
+              the official rsync webpage
+             </a>
+             and, after looking at their FAQs and some other pages, landed on
+             <a href="https://web.archive.org/web/20190906051053/http://samba.anu.edu.au/rsync/examples.html">
+              their Examples page
+             </a>
+             . It was intimidating.
+             <br/>
+            </blockquote>
+            This time, I went to
+            <a href="https://web.archive.org/web/20190906051053/http://samba.anu.edu.au/rsync/documentation.html">
+             their Documentation page
+            </a>
+            . This gave me links to, among other things,
+            <a href="https://web.archive.org/web/20190906051053/http://everythinglinux.org/rsync/">
+             Michael Holve's rsync tutorial
+            </a>
+            . The tutorial said, "You must set up one machine or another of a pair to be an "rsync server" by running rsync in a daemon mode." I was curious, so
+            <a href="https://web.archive.org/web/20190906051053/http://www.google.com/search?num=50&amp;hl=en&amp;rlz=1B3GGGL_enUS292US293&amp;q=%22what+is+daemon+mode%22+ubuntu&amp;btnG=Search">
+             I did a Google search
+            </a>
+            for "what is daemon mode" and I got back, would you believe, exactly one page. One webpage in the entire known planet answered the question, "What is daemon mode?" Except it didn't really answer it. It just said, "It makes wget put standard output into a log file and not bug you while downloading." Accepting that as the best available answer (and ten points to the answerer!), I typed "rsync --daemon" in Ubuntu's Terminal and proceeded to the next step, "Setting Up a Server." After reading it, I decided it didn't seem to apply to me. It was for people who wanted to back up files between computers. I just wanted to back up to another drive.
+            <br/>
+            <br/>
+            So I went on to the tutorial's "Using Rsync Itself" section. Since I wasn't sure what daemon mode did, or if it was necessary, I killed that Terminal session and started another. I didn't know if that would shut off daemon mode, or if doing so was what I should do. I read the section and then checked another source of documentation,
+            <a href="https://web.archive.org/web/20190906051053/http://samba.anu.edu.au/ftp/rsync/rsync.html">
+             the rsync man page
+            </a>
+            ("man" being short for "manual"). The man page would ordinarily be output in response to a Terminal command, but someone had put it here in html form, so that's what I used. It reminded me, first, to check Ubuntu's System &gt; Administration &gt; Synaptic Package Manager to make sure I had rsync already installed, here on my secondary computer. I searched Synaptic for rsync and got back a couple dozen listed programs; rsync was among them and was shown as being installed. I looked partway into the man page and got an answer to one question I had from the tutorial. So here's how I translated what the tutorial was telling me. First, the tutorial listed these lines:
+            <br/>
+            <br/>
+            rsync --verbose --progress --stats --compress --rsh=/usr/local/bin/ssh --recursive --times --perms --links --delete \
+            <br/>
+            --exclude "*bak" --exclude "*~" \
+            <br/>
+            /www/* webserver:simple_path_name
+            <br/>
+            <br/>
+            The first thing to know was that this all represented a single command line. It was too long to fit on one line, though, so apparently the trailing backslash said, "This line continues on the next line." The command would be typed into a file and saved as a script, not typed directly into Terminal. I didn't know why the first line didn't end with a backslash. I decided I would want to experiment with this in a relatively safe place -- with a junk directory on my secondary computer, perhaps -- to see what it was doing.
+            <br/>
+            <br/>
+            So as the tutorial explained it, the first line of this example told rsync how to proceed: verbosely (i.e., with lots of information about what it was doing), showing a progress report, with statistics. The rsh part was for encryption, to be used optionally if you were sending your stuff online to another computer. I wasn't, so I decided to try leaving that off. I also didn't want to compress the output, because that made the process slower and required more attention from the CPU.
+            <br/>
+            <br/>
+            The second line of the example, above, told rsync to recurse -- to work through all of my directories and subdirectories under the folder that I would be naming. It also told rsync to preserve file timestamps and file permissions -- so if, for example, a file was readable only by root on the source drive, it would be the same way on the target drive. The -- links command was an instruction to preserve symbolic links -- not sure what that meant -- and the --delete command, as I understood it, would tell rsync to delete anything on the target that wasn't on the source. So you'd have a mirror, and not just an accumulation of backups of files that you have deliberately trimmed out of your file collection.
+            <br/>
+            <br/>
+            The third line of the example told rsync not to bother copying some kinds of files. I liked the sound of that at first, but then I decided I would rather be able to do a Properties comparison of source and target and verify that both had exactly the same number of files. So I decided to leave out this line when I used rsync.
+            <br/>
+            <br/>
+            The fourth line of the example named the source and target locations. I wasn't going to be using it with a remote source or target, so mine was going to look somewhat different from this.
+            <br/>
+            <br/>
+            On that basis, here's what I assembled as a test version of the rsync example from above:
+            <br/>
+            <br/>
+            rsync --verbose --progress --stats \
+            <br/>
+            --recursive --times --perms --links --delete \
+            <br/>
+            /media/DATA/Source /media/DATA/Target
+            <br/>
+            <br/>
+            I created a Source subfolder in my DATA folder and put a TestFile.txt file into it. I also created a Target subfolder in DATA. Then I copied those three rsync lines into a file in Ubuntu's Text Editor (gedit) and saved it to Desktop as TestRun. To make it executable, I went into Terminal, typed "cd /home/ray/Desktop" and then "chmod +x TestRun" and then double-clicked on TestRun and said Run. And, you know, it worked. Just like that. Not exactly as intended -- I had not only TestFile.txt but also the whole Source folder underneath my Target folder -- but, yeah, there it was. I deleted the Target folder and ran it again and, sure enough, it created the Target folder and then inserted a copy of the Source folder into it. Excellent!
+            <br/>
+            <br/>
+            Now it was time to try something a little bolder. I wanted to see how it worked if I tried to copy the whole DATA folder to an external drive. This part was a little confusing. The external drive seemed to have two different names. If I looked in /media, its name was simply "disk." But if I hit the Computer icon in File Browser, it came up as "193.8 GB Media." I decided the latter sounded more specific, so I would try that first. So now the third line of my TestRun file read like this:
+            <br/>
+            <br/>
+            /media/DATA "/media/193.8 GB Media"
+            <br/>
+            <br/>
+            I used quotation marks because there were spaces in the name. I saved TestRun and double-clicked it again on the Desktop. It didn't seem to do anything. I realized that I had probably made a mistake in that line, and tried again like this:
+            <br/>
+            <br/>
+            /media/DATA "/193.8 GB Media"
+            <br/>
+            <br/>
+            That didn't do it either, so I tried again, without the leading slash:
+            <br/>
+            <br/>
+            /media/DATA "193.8 GB Media"
+            <br/>
+            <br/>
+            That still didn't work, so I tried the other approach:
+            <br/>
+            <br/>
+            /media/DATA /media/disk
+            <br/>
+            <br/>
+            Still nothing. I went into System &gt; Administration &gt; Partition Editor (GPartEd), wiped out the target partition, and recreated it as a FAT32 partition. Now the drive was totally invisible to Ubuntu. I went back into GPartEd and reformatted it as an ext3 partition. Then I realized: it was an IDE drive, so apparently it would not be recognized until I rebooted. I decided to reboot into Windows (I had a dual-boot system) and format it as NTFS. I named it 186GB (which seemed to be the net amount of space available in NTFS format) and rebooted into Ubuntu. I revised TestRun's last line again:
+            <br/>
+            <br/>
+            /media/DATA /media/186GB
+            <br/>
+            <br/>
+            and ran it again. This time, it seemed to be working -- the external 186GB drive was making noise -- but I wondered why I wasn't getting a verbose indication of what was going on. I guessed that, if I wanted the verbose information, I would have to execute rsync on the command line, not in an executable script. While I was rooting around for an answer to that question, I was reminded that I could also use the shorthand versions of these commands. So instead of typing --verbose into the script, I could just type -v and whatever other letters I needed. In this approach, the final contents of TestRun, which were as follows:
+            <br/>
+            <br/>
+            rsync --verbose --progress --stats \
+            <br/>
+            --recursive --times --perms --links --delete \
+            <br/>
+            /media/DATA /media/186GB
+            <br/>
+            <br/>
+            could instead be expressed like this, if I understood the man page's Options Summary section correctly:
+            <br/>
+            <br/>
+            rsync -vshlEPtrip --del --delete-excluded --force \
+            <br/>
+            --exclude RECYCLER \
+            <br/>
+            --exclude "System Volume Information" \
+            <br/>
+            /media/DATA /media/186GB
+            <br/>
+            <br/>
+            In that version, I added a couple other options that seemed appropriate, and also told rsync to exclude (i.e., don't copy) those extra folders that Windows XP seemed to put on every drive. I revised TestRun along these lines and, when the external drive settled down and it looked like the foregoing TestRun process had ended, I ran it again. But it didn't seem to make any difference. The extra folders were still there. I had understood that it would delete them. Part of the problem seemed to be that I had not used the syntax correctly. I was supposed to use an equals sign: --exclude=RECYCLER. But another part of the problem was that it was not clear whether the "exclude" command was supposed to work with directories. It didn't seem so. The man page just referred to excluding files. I tried again with equals signs, but still no change. I
+            <a href="https://web.archive.org/web/20190906051053/http://ubuntuforums.org/showthread.php?p=5954467#post5954467">
+             posted a question
+            </a>
+            on it, but the kind response was unfortunately not able to resolve the issue.
+            <br/>
+            <br/>
+            Next, I tried a modified version of TestRun on the primary computer. I went through several revisions and wound up with this version, which seemed to work:
+            <br/>
+            <br/>
+            rsync -vchlEtrip --progress --del --ignore-errors --force /media/CURRENT/ "/media/OFFSITE/P4 CURRENT"
+            <br/>
+            <br/>
+            The partition being backed up, in this case, was an ext3 partition named CURRENT, and the target to which it was being backed up was a USB external drive named OFFSITE. (Some weeks have passed since I started this post, so there may be some discontinuity in my writing at this point.)
+            <br/>
+            <br/>
+            I did not run this command as a script within a file called TestRun that I would start by double-clicking on it, because I discovered that you would only get the detailed output if you entered the rsync command on the command line. I was able to enter all of the foregoing rsync command on one line. I did not need the "exclude" commands because this was not an NTFS drive formatted by Windows. I still had ext3 "lost+found" and Trash folders that got copied over in this way, but they were small, so it was OK.
+            <br/>
+            <br/>
+            As I think I may have said before, I got the selected rsync parameters by typing "man rsync" at the command line. It did take some trial and error to get this particular set. The resulting backup, when checked by right-clicking and selecting Properties, seemed to be virtually identical.
+            <br/>
+            <br/>
+            When I ran that rsync command, it showed me lots of detail on what it was doing. It concluded with this message:
+            <br/>
+            <blockquote>
+             rsync error: some files could not be transferred (code 23) at main.c(977) [sender=2.6.9]
+             <br/>
+            </blockquote>
+            Eventually, however, I did figure out how to do it.  Here is an example of an rsync command that worked for me:
+            <br/>
+            <blockquote>
+             rsync -qhlEtrip --progress --delete-after --ignore-errors --force --exclude=/.Trash-1000/ --exclude=/lost+found/ /media/CURRENT/ /media/CURRBACKUP
+             <br/>
+            </blockquote>
+            <br/>
+            This one would back up what Windows sees as drive D (named CURRENT) to a partition that Windows sees as drive G (named CURRBACKUP).  Both partitions had to be mounted in Ubuntu before this would work.  I used a similar command to copy a folder on CURRENT to a USB jump drive named KINGSTON.  That gave me a portable copy of the current state of that folder, ready to take along.
+            <br/>
+            <br/>
+            The next thing I needed to do was to back up my blogs.  I started by just wanting to be able to back up a webpage.  I had discovered that all of the posts on a Blogger (i.e., Blogspot) blog like this one could be
+            <a href="https://web.archive.org/web/20190906051053/http://googlesystem.blogspot.com/2007/02/how-to-backup-blogger-blog.html">
+             displayed in a single webpage
+            </a>
+            , at least if you had less than 1,000 posts.  To do that, you just needed to go to this URL:  http://blogname.blogspot.com/search?max-results=1000.  I wasn't sure what would happen if you entered a larger number than 1000.  So now that I had that webpage, I wanted to know how to save a copy of it automatically.  Strangely, at this point, Google searches for any of these sets of terms
+            <br/>
+            <blockquote>
+             ubuntu "back up a webpage"
+             <br/>
+             rsync "back up a webpage"
+             <br/>
+             rsync "copy a webpage"
+             <br/>
+            </blockquote>
+            <br/>
+            <br/>
+            produced zero hits.  Eventually, it started to look like this was because I was barking up the wrong tree.  As described in
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-904-backing-up-and-copying.html">
+             a separate post
+            </a>
+            , it seemed that what I wanted for this purpose might be wget, not rsync.
+            <br/>
+           </div>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906051053/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=6401755667565053039&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/backup" rel="tag">
+             backup
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/daemon" rel="tag">
+             daemon
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/jump%20drive" rel="tag">
+             jump drive
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/man" rel="tag">
+             man
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/network" rel="tag">
+             network
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/ntfs" rel="tag">
+             ntfs
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/rdiff-backup" rel="tag">
+             rdiff-backup
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/rsync" rel="tag">
+             rsync
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/server" rel="tag">
+             server
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/terminal" rel="tag">
+             terminal
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/USB%20drive" rel="tag">
+             USB drive
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/search/label/wget" rel="tag">
+             wget
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          1 comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-2196498973467217619">
+           <a name="comment-2196498973467217619">
+           </a>
+           <a href="https://web.archive.org/web/20190906051053/https://www.blogger.com/profile/05739532554443128546" rel="nofollow">
+            shohanali ali
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            GSCopy Pro v6.0 (RoboCopy Alternative) with Open File Agent
+            <br/>
+            GSCopyPro is a single command-line tool (CLI) that can copy, replicate and move files from one folder to another. This folder can be on the same machine/ server or another server elsewhere. What makes GSCopyPro stand out from other competitors is the fact it works on 32-bit as well as 64-bit systems and has no restrictions. It can easily be scheduled to run as a scheduled task and fully automated. GSCopyPro also comes with an open file agent which can copy files that are locked/ opened by other processes. This feature is supported in all windows vSCersions from widows XP/ 2003 and later.
+            <br/>
+            Go To:&gt;&gt; http://www.gurusquad.com/GOPYPRO
+            <br/>
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2196498973467217619" title="comment permalink">
+             November 2, 2013 at 4:53 PM
+            </a>
+            <span class="item-control blog-admin pid-1770369837">
+             <a href="https://web.archive.org/web/20190906051053/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2196498973467217619" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906051053/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=6401755667565053039" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906051053/http://raywoodcockslatest.blogspot.com/feeds/6401755667565053039/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:10:53 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:16:16 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.56
+  exclusion.robots: 0.065
+  exclusion.robots.policy: 0.056
+  esindex: 0.009
+  cdx.remote: 86.297
+  LoadShardBlock: 74.982 (3)
+  PetaboxLoader3.datanode: 94.428 (4)
+  load_resource: 49.064
+-->

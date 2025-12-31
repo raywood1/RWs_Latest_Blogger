@@ -1,0 +1,1398 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20150214064810im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/2010/07/improving-performance-in-vmware.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/feeds/6587701225981750945/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150214064810im_/http://2.bp.blogspot.com/_jBbsOO7VnH8/TE94iVEXypI/AAAAAAAAAFM/oFnFZw_6zHE/s640/xImage.jpg" rel="image_src"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Improving Performance in VMware Workstation 7.1
+  </title>
+  <link href="https://web.archive.org/web/20150214064810cs_/https://www.blogger.com/static/v1/widgets/728935430-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20150214064810cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=fde3e388-6511-4bfa-84e6-f325099fd6ac" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20150214064810im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20150214064810im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20150214064810im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20150214064810im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20150214064810im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20150214064810im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20150214064810im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20150214064810im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20150214064810im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20150214064810im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20150214064810im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20150214064810im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20150214064810im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20150214064810im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20150214064810im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20150214064810im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20150214064810im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20150214064810im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Sunday, July 18, 2010
+        </h2>
+        <div class="post">
+         <a name="6587701225981750945">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/2010/07/improving-performance-in-vmware.html">
+           Improving Performance in VMware Workstation 7.1
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I reviewed the latest version of
+           <a href="https://web.archive.org/web/20150214064810/http://www.vmware.com/pdf/ws7_performance.pdf">
+            VMware's document
+           </a>
+           ,
+           <i>
+            Performance Best Practices for VMware Workstation
+           </i>
+           , to see what hardware purchases or sales it would suggest for my situation.  The document consisted of four main sections, pertaining to host system hardware, the host operating system (OS), VMware Workstation and virtual machines (VMs), and guest OSs.  I was particularly interested in information about running Windows XP on an Ubuntu host, since that was the setup I was using.  This post does not say much about Windows host systems.
+           <br/>
+           <div style="text-align: center;">
+            <b>
+             Section 1:  Hardware
+            </b>
+           </div>
+           <br/>
+           A.  CPUs
+           <br/>
+           <br/>
+           <i>
+            1.  Hyperthreading
+           </i>
+           <br/>
+           <br/>
+           VMware (p. 7) recommended using a CPU that would support hyperthreading  (also called "logical processing").  (The OS and the BIOS would have to support it, and the user would have to make sure it was enabled in the BIOS.)
+           <a href="https://web.archive.org/web/20150214064810/http://www.tomshardware.com/reviews/amd,1030-2.html">
+            Patrick Schmid
+           </a>
+           at Tom's Hardware said that the primary benefit of hyperthreading was to permit smoother responsiveness, but that it would not yield noticeable increases in performance otherwise, and certainly would not substitute for having multiple cores in the CPU.
+           <a href="https://web.archive.org/web/20150214064810/http://www.intel.com/technology/platform-technology/hyper-threading/">
+            Intel's own writeup
+           </a>
+           of hyperthreading affirmed that responsiveness was a leading benefit.
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20150214064810/http://blogs.amd.com/work/2010/03/30/intel-hyper-threading-vs-amd-true-core-scalability/">
+            AMD quoted VMware
+           </a>
+           as saying, “Virtual machines are preferentially scheduled on two different cores rather than on two logical processors on the same core.”  That is, VMware tried to assign different VMs to different CPU cores, if available.  This seemed to imply that AMD CPUs would do better when the number of CPU cores matched or exceeded the number of VMs being run.  But AMD suggested that increasingly complex software (e.g., multithreading in Microsoft Excel 2007) could keep as many as 48 CPU cores busy, even if the number of VMs being run was much lower.
+           <br/>
+           <br/>
+           AMD's point in that particular article was that its Opteron CPU, with more cores, could significantly outperform Intel's Xeon, with hyperthreading and fewer cores.
+           <a href="https://web.archive.org/web/20150214064810/http://www.anandtech.com/show/2964/the-intel-xeon-5670-six-improved-cores/9">
+            Anandtech's comparison
+           </a>
+           of state-of-the-art Intel and AMD CPUs in March 2010 found, however, that the Xeon did much better than the Opteron.
+           <a href="https://web.archive.org/web/20150214064810/http://techpulse360.com/2009/04/23/amd-hints-to-hyper-threading-in-2012/">
+            Recent observations
+           </a>
+           suggested that AMD might be moving toward implementing hyperthreading after all.
+           <br/>
+           <br/>
+           A
+           <a href="https://web.archive.org/web/20150214064810/http://www.newegg.com/Product/ProductList.aspx?Submit=Property&amp;N=100007671&amp;IsNodeId=1&amp;PropertyCodeValue=2600%3A16266&amp;bop=And&amp;Order=PRICE&amp;PageSize=20">
+            search on Newegg.com
+           </a>
+           turned up 20 Intel CPUs with hyper-threading capabilities, starting at $115 and ranging above $1,000.  (The least expensive Intel CPU listed on Newegg at that point cost $41.)  Anandtech said that
+           <a href="https://web.archive.org/web/20150214064810/http://www.anandtech.com/show/2978/amd-s-12-core-magny-cours-opteron-6174-vs-intel-s-6-core-xeon/11">
+            the AMD advantage
+           </a>
+           was in terms of price, with good performance at much lower cost.
+           <a href="https://web.archive.org/web/20150214064810/http://www.anandtech.com/show/3827/virtualization-ask-the-experts-1">
+            One Anantech commentator
+           </a>
+           said, "The twelve-core AMD Opteron 6100 and six-core Xeon 5600 perform more or less the same," but suggested that Intel had two advantages at the enterprise level:  RAS (i.e., reliability, availability, and serviceability, including the ability of systems to
+           <a href="https://web.archive.org/web/20150214064810/http://www.google.com/url?sa=t&amp;source=web&amp;cd=4&amp;ved=0CCcQFjAD&amp;url=http%3A%2F%2Fwww.intel.com%2Fassets%2Fpdf%2Fwhitepaper%2Fras.pdf&amp;ei=2uROTIqnIYyhnAf0mb38Bw&amp;usg=AFQjCNHwzbPB4Nu7LuD6U_hAGa0ie5K4dg&amp;sig2=vR0GZtzDBtxSmkggIaKL5w">
+            heal themselves
+           </a>
+           ) and licensing.
+           <br/>
+           <br/>
+           <i>
+            2.  MMU Virtualization
+           </i>
+           <br/>
+           <br/>
+           VMware (pp. 7-8) also expressed a preference for second-generation hardware-assisted MMU virtualization, called rapid virtualization indexing (RVI) or nested page tables (NPT) in AMD processors or extended page tables (EPT) in Intel processors.  (
+           <a href="https://web.archive.org/web/20150214064810/http://en.wikipedia.org/wiki/Rapid_Virtualization_Indexing">
+            Wikipedia
+           </a>
+           indicated that NPT was used during development, but that RVI was the term currently used.)
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20150214064810/http://blogs.vmware.com/performance/2009/03/performance-evaluation-of-amd-rvi-hardware-assist.html">
+            VMware found
+           </a>
+           that, in its ESX product, AMD's "RVI provides performance gains of up to 42% for MMU-intensive benchmarks and up to 500% for MMU-intensive microbenchmarks."
+           <a href="https://web.archive.org/web/20150214064810/http://blogs.vmware.com/performance/2009/03/performance-evaluation-of-intel-ept-hardware-assist-.html">
+            VMware found
+           </a>
+           similarly dramatic performance improvements for Intel's EPT, provided the virtualization product made suitable adjustments -- which, VMware said, ESX did.  It was not clear that the same could be said for VMware Workstation.  Pending further research, this information made an AMD CPU with RVI the more certain performance boost for an ordinary user of Workstation.
+           <br/>
+           <br/>
+           At this writing, neither
+           <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=site%3Anewegg.com+mmu+rvi+OR+npt+OR+ept&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+            Newegg
+           </a>
+           nor
+           <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=site%3Atigerdirect.com+mmu+rvi+OR+npt+OR+ept+OR+mmu&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+            TigerDirect
+           </a>
+           offered products featuring any of those CPU-related acronyms.  According to
+           <a href="https://web.archive.org/web/20150214064810/http://en.wikipedia.org/wiki/Rapid_Virtualization_Indexing">
+            Wikipedia
+           </a>
+           , MMU debuted in the third-generation AMD Opteron, and at Intel EPT debuted in the Nehalem architecture.  (That same Wikipedia page said that RVI was supported, at VMware, in ESX Server 3.5 and later -- and also, interestingly, in Oracle's VirtualBox 2.0 and later.)  At Newegg, at this writing, Opterons were available in the range of $190-1,300 (and would require motherboards in the $200-600 range).  The Nehalem appeared in
+           <a href="https://web.archive.org/web/20150214064810/http://www.intel.com/technology/architecture-silicon/next-gen/">
+            the Core i7 line
+           </a>
+           of CPUs, available at Newegg for $290-1,140.  (Newegg didn't list a canned search option for Nehalem or Westmere cores.)
+           <br/>
+           <br/>
+           I looked at some historical prices to get a rough idea of how processor pricing trends worked.  On the Intel side, the Core 2 Duo E6700, introduced in
+           <a href="https://web.archive.org/web/20150214064810/http://cpubase.com/htmlproducts/product_201062723119.html">
+            July 2006
+           </a>
+           for $530, was apparently available (in some form) for $316 in
+           <a href="https://web.archive.org/web/20150214064810/http://www.anandtech.com/print/2255">
+            June 2007
+           </a>
+           , around $212 in
+           <a href="https://web.archive.org/web/20150214064810/http://forums.whirlpool.net.au/forum-replies-archive.cfm/1025217.html">
+            July 2008
+           </a>
+           , $130 in
+           <a href="https://web.archive.org/web/20150214064810/http://zero201.wordpress.com/2009/09/23/core-2-duo-e6700/">
+            September 2009
+           </a>
+           , and $95 in
+           <a href="https://web.archive.org/web/20150214064810/http://www.amazon.com/gp/product/B003OAL1AG?tag=invihand-20">
+            July 2010
+           </a>
+           .  These values suggested that prices dropped dramatically (perhaps 40%) in the first year, less dramatically (perhaps 20% of the original price) in the second year, and likewise (perhaps 10% of the original price per year) over the next couple of years.  (Intel apparently discontinued the E6700 (presumably meaning that manufacturing ceased) in
+           <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?q=E6700+discontinued&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">
+            February 2008
+           </a>
+           .  At that time, the chip may have been selling for somewhat less than half the original price.)  On those data, the rate of discount from the original price was cut in half in each succeeding year, during the first several years of the product's life.
+           <br/>
+           <br/>
+           I took a particular interest in one of the Core i7 CPUs at the bottom of
+           <a href="https://web.archive.org/web/20150214064810/http://www.newegg.com/Product/ProductList.aspx?Submit=Property&amp;Subcategory=343&amp;Description=&amp;Type=&amp;N=100006519+50001157+40000343&amp;IsNodeId=1&amp;srchInDesc=&amp;MinPrice=&amp;MaxPrice=&amp;Manufactory=1157&amp;PropertyCodeValue=507%3A44915&amp;PropertyCodeValue=507%3A47875">
+            Newegg's list
+           </a>
+           , pricewise.  The
+           <a href="https://web.archive.org/web/20150214064810/http://ark.intel.com/Product.aspx?id=41315">
+            Core i7-870
+           </a>
+           that was available for $290 in July 2010 debuted at a list price of $562 in September 2009, representing a 49% drop in less than a year.  The data from the preceding paragraph suggest that the consumer might anticipate another 25% reduction from the original price (i.e., half of the previous year's price cut), for a price of around $145, by summer 2011.  On this basis, it seemed to me, personally, that I might thus save myself $150 (plus whatever price drop might apply to the corresponding motherboard) if I waited to implement these particular suggestions for VMware performance until summer 2011.
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20150214064810/http://ark.intel.com/Product.aspx?id=41315">
+            Intel described
+           </a>
+           the Core i7-870 as having both hyper-threading and VT-x virtualization technology.  But VMware (p. 8) indicates that VT-x is the first-, not the second-, generation of virtualization technology.  Its potentially outdated status is reflected in
+           <a href="https://web.archive.org/web/20150214064810/http://tombuntu.com/index.php/2007/10/01/should-you-enable-intels-vt-x-in-virtualbox/">
+            a VirtualBox recommendation
+           </a>
+           that VirtualBox has been designed to perform better without enabling this sort of hardware-assisted CPU virtualization at all.  As of late 2008, someone in
+           <a href="https://web.archive.org/web/20150214064810/http://communities.vmware.com/docs/DOC-9150">
+            a VMware Community post
+           </a>
+           considered VT-x a major step forward, but noted that hardware-assisted virtualization in Workstation 7 was supported only on 64-bit hardware.  I did have 64-bit hardware, so that was not a concern for me.
+           <br/>
+           <br/>
+           But which Intel CPU would I have to be tracking, if I wished to get into the second-generation Intel EPT (or AMD RVI) MMU virtualization technology?  Intel characterized EPT as an "extension" of VT-x and, to revert to the (
+           <a href="https://web.archive.org/web/20150214064810/http://en.wikipedia.org/wiki/Nehalem_%28microarchitecture%29">
+            Wikipedia
+           </a>
+           ) observation offered above, that extension was apparently to be found on the Nehalem (45nm) or Westmere (32nm) architectures.  Evidently not all Core i7 CPUs employed that architecture, then, else the i7-870 would have it.  (I was
+           <a href="https://web.archive.org/web/20150214064810/http://software.intel.com/en-us/forums/showthread.php?t=63086">
+            not alone
+           </a>
+           in being
+           <a href="https://web.archive.org/web/20150214064810/http://arstechnica.com/civis/viewtopic.php?p=2004247&amp;sid=b1b7bd236e7a5d2fed1632751b2c7b94#p2004247">
+            confused
+           </a>
+           about this.)  It seemed that what I was looking for might be, in Intel-speak, VT-x2.  Further searches for insight led to a simple request for a list of VT-x2 features implemented in various Core i7 CPUs -- to which Intel provided
+           <a href="https://web.archive.org/web/20150214064810/http://software.intel.com/en-us/forums/showthread.php?t=67802">
+            the bizarre response
+           </a>
+           that, no, actually, it was hard to provide any such list, and
+           <a href="https://web.archive.org/web/20150214064810/http://www.intel.com/products/processor/manuals/index.htm">
+            a pointer
+           </a>
+           to lengthy software developer's manuals.  Indeed, it seemed that VMware was somewhat behind the curve:  while it was talking about EPT (as implemented in VT-x2), Intel was meanwhile moving on to
+           <a href="https://web.archive.org/web/20150214064810/http://fsa.ia.ac.cn/files/VT-Talk-CAS.pdf">
+            VT-d and other technologies
+           </a>
+           .  Then again,
+           <a href="https://web.archive.org/web/20150214064810/http://ark.intel.com/Compare.aspx?ids=36503,35365,42915,41447,37151,47932,">
+            another Intel source
+           </a>
+           seemed to say that VT-d was an older technology.
+           <br/>
+           <br/>
+           The message seemed to be that I, as a consumer, didn't need to know about this yet.  I decided to try a different approach.  I went back to Newegg's list of Core i7 processors and tried working my way up the list until I found one that did have VT-x2.  After the i7 860 and 870, next on Newegg's list was the 930.
+           <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=site%3Aintel.com+vt-x2+930+OR+%22i7-930%22&amp;btnG=Search">
+            My search
+           </a>
+           regarding the 930 and VT-x2 led to an
+           <a href="https://web.archive.org/web/20150214064810/http://ark.intel.com/VTList.aspx#28037">
+            Intel Virtualization Technology List
+           </a>
+           indicating, that, well, yes, a number of Intel CPUs did support VT-x.  I looked at them individually to see if perchance they supported VT-x2, that information unfortunately not being included in the alleged virtualization technology list.  Bottom man on this list was, again,
+           <a href="https://web.archive.org/web/20150214064810/http://ark.intel.com/Product.aspx?id=41316">
+            the 860
+           </a>
+           , and they confirmed that it did support both VT-x and VT-d.  At the top end of the set, we had
+           <a href="https://web.archive.org/web/20150214064810/http://ark.intel.com/Product.aspx?id=47933">
+            the 970
+           </a>
+           .  The 970's spec sheet didn't say anything about VT-d, so maybe it was indeed being phased out.  No mention of VT-x2 either; just VT-x.  Following some leads, I came around to
+           <a href="https://web.archive.org/web/20150214064810/http://www.intel.com/technology/itj/2006/v10i3/1-hardware/1-abstract.htm?iid=tech_vt_tech+itj">
+            the discovery
+           </a>
+           that there was also something known as VT-i, referring to the Itanium processor.  It wasn't
+           <i>
+            helpful
+           </i>
+           information, but at least it was information.
+           <br/>
+           <br/>
+           Looking back at that page on the i7-970, I noticed that Intel said, in greyed-out letters, "No Datasheet Available."  But, hmm, did that mean there were datasheets for others on that virtualization technology list?  I tried
+           <a href="https://web.archive.org/web/20150214064810/http://ark.intel.com/Product.aspx?id=37147">
+            the 920
+           </a>
+           .  There, they had a "Download Datasheet" link that led to about a dozen
+           <a href="https://web.archive.org/web/20150214064810/http://www.intel.com/design/corei7/documentation.htm">
+            Technical Documents
+           </a>
+           .  I started with the 96-page
+           <i>
+            Intel® Core™ i7-900 Desktop Processor Extreme Edition Series and Intel® Core™ i7-900 Desktop Processor Series Datasheet,
+            <a href="https://web.archive.org/web/20150214064810/http://download.intel.com/design/processor/datashts/322164.pdf">
+             Volume 1
+            </a>
+           </i>
+           .  But no, according to Acrobat, there were no references to VT-x2 there.  How about VT-x?  Nope.  Alright, then,
+           <a href="https://web.archive.org/web/20150214064810/http://download.intel.com/design/processor/datashts/322165.pdf">
+            volume 2
+           </a>
+           ?  None!  Well, how about just plain old "virtual"?  Still nothing on what virtualization technology any particular CPU might have.  This was a contrast against another set of technical documents provided on that same page, for the i7-800 series.  Here, I found references to both VT-x and VT-d.
+           <a href="https://web.archive.org/web/20150214064810/http://download.intel.com/design/processor/datashts/322164.pdf">
+            Volume 1
+           </a>
+           of that datasheet said, on page 29, that the i7-800 series did support EPT.  So that was pretty confusing.
+           <br/>
+           <br/>
+           I decided to try the
+           <a href="https://web.archive.org/web/20150214064810/http://www.intel.com/products/processor/manuals/index.htm">
+            Developer's Manuals
+           </a>
+           .  The description mentioned virtualization only in connection with the
+           <i>
+            Intel® Virtualization Technology FlexMigration (Intel® VT FlexMigration)
+            <a href="https://web.archive.org/web/20150214064810/http://www.intel.com/Assets/PDF/manual/323850.pdf">
+             Application Note
+            </a>
+           </i>
+           and the
+           <i>
+            Intel® 64 and IA-32 Architectures Software Developer's Manual
+            <a href="https://web.archive.org/web/20150214064810/http://www.intel.com/Assets/PDF/manual/253669.pdf">
+             Volume 3B
+            </a>
+            : System Programming Guide
+           </i>
+           .  The Application Note contained several references to VT-x, but did not distinguish it from VT-x2 or VT-d.  Volume 3B of the
+           <i>
+            Software Developer's Manual
+           </i>
+           contained no references to VT- of any type.  Both documents did refer to Virtual Machine Extensions (VMX), and the
+           <i>
+            Manual
+           </i>
+           contained lots of information on how virtualization works.  But I was not able to figure out, from this information, which CPU I should buy.  This was pretty strange, given
+           <a href="https://web.archive.org/web/20150214064810/http://arstechnica.com/microsoft/news/2009/05/r2e-microsoft-intel-goof-up-windows-7s-xp-mode.ars">
+            the conclusion
+           </a>
+           that Intel's whole reason for offering virtualization in only some CPUs was driven by marketing.
+           <br/>
+           <br/>
+           It occured to me that perhaps the people at VirtualBox would provide some insight into what they would recommend, if I opted for a VirtualBox-compatible CPU.
+           <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=Zos&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=virtualbox+cpu+%22vt-x2%22+-intitle%3Aparallels+-mac&amp;btnG=Search">
+            A search
+           </a>
+           produced very meager results along these lines.  I went to the VirtualBox website and looked at their documentation.
+           <a href="https://web.archive.org/web/20150214064810/http://www.virtualbox.org/manual/ch10.html#hwvirt">
+            They said
+           </a>
+           that "the vast majority of today's 64-bit and multicore CPUs ship           with hardware virtualization."  No distinction there between VT-x and VT-x2.
+           <a href="https://web.archive.org/web/20150214064810/http://www.virtualbox.org/manual/ch10.html#id2653442">
+            They also said
+           </a>
+           , "The biggest difference between VT-x and AMD-V is that AMD-V provides     a more complete virtualization environment."  The use of what they called "nested paging" (i.e., more advanced virtualization, apparently what others meant when they referred to VT-x2) could bring a "significant" performance improvement -- of up to 5%.  Five percent!  I was thinking we were talking about the difference between success and failure, and now it appeared this might be just one more incremental improvement.  Nested paging, they said, was standard on Intel's Core i7 (Nehalem) CPUs, and also on AMD's Barcelona CPUs.
+           <br/>
+           <br/>
+           I did finally find, at Tom's Hardware,
+           <a href="https://web.archive.org/web/20150214064810/http://www.tomshardware.com/news/amd-cpu-windows-xp-mode,7739.html">
+            a list
+           </a>
+           of CPUs that would support "XP Mode" Virtualization.  XP Mode was the capability of running a near-perfect
+           <a href="https://web.archive.org/web/20150214064810/http://www.zdnet.com/blog/microsoft/microsoft-releases-xp-mode-virtualization-to-manufacturing/4133">
+            emulation of Windows XP
+           </a>
+           within Windows 7 (which would enable people to use older applications on the newer operating system).
+           <a href="https://web.archive.org/web/20150214064810/http://blogs.techrepublic.com.com/window-on-windows/?p=2229">
+            In March 2010
+           </a>
+           , Microsoft altered Windows 7 so that it would no longer require hardware virtualization in order to provide XP Mode.  But the Tom's Hardware list dated from a year earlier, so it gave an idea of what Intel CPUs I would need to consider if I wanted hardware virtualization for purposes of improved performance in VMware.  The Tom's Hardware list actually drew from
+           <a href="https://web.archive.org/web/20150214064810/http://blogs.techrepublic.com.com/window-on-windows/?p=2229">
+            a list posted by Ed Bott
+           </a>
+           on ZDNet.  Ed provided a list of Intel
+           <a href="https://web.archive.org/web/20150214064810/http://www.zdnet.com/blog/bott/how-many-intel-cpus-will-fail-the-xp-mode-test-in-windows-7/946?pg=2&amp;tag=mantle_skin;content">
+            desktop
+           </a>
+           and
+           <a href="https://web.archive.org/web/20150214064810/http://www.zdnet.com/blog/bott/how-many-intel-cpus-will-fail-the-xp-mode-test-in-windows-7/946?pg=3&amp;tag=mantle_skin;content">
+            mobile
+           </a>
+           CPUs.  His desktop list boiled down to the following, which I provide here, in ascending order according to their current prices according to
+           <a href="https://web.archive.org/web/20150214064810/http://www.pricewatch.com/cpu/">
+            Pricewatch.com
+           </a>
+           (or, failing that, on Newegg or Amazon):
+           <br/>
+           <br/>
+           <div class="separator" style="clear: both; text-align: center;">
+            <a href="https://web.archive.org/web/20150214064810/http://2.bp.blogspot.com/_jBbsOO7VnH8/TE94iVEXypI/AAAAAAAAAFM/oFnFZw_6zHE/s1600/xImage.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+             <img border="0" height="640" src="https://web.archive.org/web/20150214064810im_/http://2.bp.blogspot.com/_jBbsOO7VnH8/TE94iVEXypI/AAAAAAAAAFM/oFnFZw_6zHE/s640/xImage.jpg" width="216"/>
+            </a>
+           </div>
+           <br/>
+           So, bearing in mind that these were approximate prices, a person dead-set on obtaining a virtualization-supporting Intel CPU for less than $100 would have more than a half-dozen to choose from.
+           <br/>
+           <br/>
+           It appeared, in other words, that we were no longer dealing in the rarified world of enterprise-level Xeon processors; we humble consumers were treating virtualization as a simple commodity.  Paying more would bring, not necessarily any improvements in virtualization per se, but rather in those other characteristics that people like in their CPUs, including hyperthreading.
+           <br/>
+           <br/>
+           In that case, I thought that perhaps I should take a look at AMD, just to be sure that I wasn't blowing off an already affordable option.  If we were forced to accept the simplistic conclusion that you should just be happy knowing you could get some kind of hardware virtualization with
+           <a href="https://web.archive.org/web/20150214064810/http://ark.intel.com/Default.aspx">
+            any Core i7 CPU
+           </a>
+           , why not price any AMD CPU with AMD-V virtualization?  According to
+           <a href="https://web.archive.org/web/20150214064810/http://www.tomshardware.com/news/amd-cpu-windows-xp-mode,7739.html">
+            a simple statement
+           </a>
+           from AMD, that meant almost any CPU that I would be looking at.  Here, comparable to the situation with Intel,
+           <a href="https://web.archive.org/web/20150214064810/http://www.newegg.com/Product/ProductList.aspx?Submit=Property&amp;Subcategory=343&amp;Description=&amp;Type=&amp;N=100007671&amp;IsNodeId=1&amp;srchInDesc=&amp;MinPrice=&amp;MaxPrice=&amp;PropertyCodeValue=3203%3A22515">
+            a Newegg search
+           </a>
+           for any desktop CPU with virtualization technology support gave me AMD Semprons for as low as $37.
+           <br/>
+           <br/>
+           I reflected on my current situation.  To improve VMware's performance, I was looking to replace an AMD Athlon 64 X2 5000+ CPU.  But that dual-core CPU, which was hot stuff four years earlier,
+           <a href="https://web.archive.org/web/20150214064810/http://www.pcstats.com/articleview.cfm?articleID=1959">
+            did support virtualization
+           </a>
+           already.  The question seemed to be,
+           <i>
+            what kind
+           </i>
+           of virtualization?  What they were offering now was AMD-V.  Seeing the amount of time I had already invested in this general line of questioning, I decided I should just assume that it was better than the virtualization of yesteryear, and that having it on a faster CPU would be better still.  It seemed, in short, that I might just upgrade to a somewhat more up-to-date CPU, without worrying much about understanding VMware's hardware suggestions.  VMware (p. 17) said that, if I did have hardware-assisted virtualization in my CPU, Workstation would typically set it up automatically, but there was the option of changing the default in VM &gt; Settings &gt; Hardware tab &gt; Processors &gt; Virtualization engine &gt; Preferred mode.  They also said (p. 26) that, if the system was using MMU, performance would be best if VMI (i.e., software virtualization:  "virtual machine interface") was disabled (VM &gt; Settings &gt; Hardware tab &gt; Processors &gt; VMware kernel paravirtualization).  Mine was grayed out.  I assumed it was something I would have to set when the machine was powered down, or perhaps in root mode ("sudo vmware").  They also said, "No Microsoft operating systems support VMI," but I wasn't sure what the situation would be in the case of an Ubuntu host.
+           <br/>
+           <br/>
+           B.  Memory
+           <br/>
+           <br/>
+           VMware's recommentation on memory (p. 8) was just to make sure you had enough.
+           <br/>
+           <br/>
+           C.  Storage
+           <br/>
+           <br/>
+           VMware recommended (pp. 8-9) having enough disk storage space, but also emphasized making sure it was configured correctly.  They mentioned the potential for improved performance from RAID.  Browsing among
+           <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=pJ1&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22raid+0%22+vmware+performance&amp;btnG=Search&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+            various sources
+           </a>
+           suggested, generally, that there could be significant performance improvements (and possibly greater performance smoothness) in a RAID 0 setup, where the program files were installed on two (or more) hard drives.  By contrast, it seemed to be generally agreed that a RAID array would make less of a performance difference in the handling of data files.
+           <br/>
+           <br/>
+           D.  Other Hardware
+           <br/>
+           <br/>
+           VMware offered suggestions about networking and hardware BIOS settings.  These recommendations were worth reviewing for some purposes, but did not seem to require any purchase decisions for my purposes.
+           <br/>
+           <br/>
+           E.  Summary
+           <br/>
+           <br/>
+           The Hardware section of
+           <i>
+            Performance Best Practices for VMware Workstation
+           </i>
+           left me with the impression that, all other things being equal, VMs will perform better on multiprocessor CPUs, and that hyperthreading is a plus.  I was not entirely able to penetrate the jargon about MMU virtualization; the general conclusion there seemed to be that I should shop for a CPU that supported a relatively recent generation of virtualization technology.  Assuming no bottlenecks due to inadequate RAM or disk storage space, the other main performance recommendation for my purposes was to use a striping RAID arrangement.
+           <br/>
+           <br/>
+           <div style="text-align: center;">
+            <b>
+             Section 2:  Host Operating System
+            </b>
+            <br/>
+            <br/>
+            <div style="text-align: left;">
+             This section contained virtually no relevant suggestions for Linux-based systems.
+            </div>
+            <br/>
+            <b>
+             Section 3:  VMware Workstation and Virtual Machines
+            </b>
+            <br/>
+            <br/>
+            <div style="text-align: left;">
+             VMware said (p. 16) that most applications running in Workstation would perform nearly as well as in native Windows.  For the "small percentage of workloads" that would experience noticeable performance degradation, they had several CPU-related suggestions:
+            </div>
+            <ul style="text-align: left;">
+             <li>
+              Don't assign more of a load to the CPU than it can handle.
+             </li>
+             <li>
+              Don't assign more CPU cores to a VM than it can use.
+             </li>
+             <li>
+              Monitor CPU usage with
+              <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?sclient=psy&amp;num=10&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=6Mq&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;source=hp&amp;q=linux+top+intitle%3Acommand&amp;btnG=Search">
+               the Linux "top" program
+              </a>
+              .
+             </li>
+             <li>
+              When using a single virtual CPU (vCPU), as I was likely to do, I would get
+              <a href="https://web.archive.org/web/20150214064810/http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1077">
+               better performance
+              </a>
+              on an UP rather than SMP kernel or hardware abstraction layer (HAL).
+             </li>
+             <li>
+              The guest operating system may not switch to the appropriate HAL if the CPU settings change later (p. 27).
+             </li>
+            </ul>
+            <div style="text-align: left;">
+             They said that Windows operating systems (OSs) newer than XP would use the same HAL/kernel for both UP and SMP installations.  It sounded like that was not the case for WinXP, however.
+             <a href="https://web.archive.org/web/20150214064810/http://support.microsoft.com/kb/309283">
+              Microsoft
+             </a>
+             seemed to say that XP would detect the type of system and would install the correct HAL automatically.  They said this:
+             <br/>
+             <blockquote>
+              Microsoft does not support running a HAL other than the HAL that Windows Setup would typically install on the computer. For example, running a PIC HAL on an APIC computer is not supported. Although this configuration may appear to work, Microsoft does not test this configuration and you may have performance and interrupt issues. . . . Microsoft recommends that you switch HALs for troubleshooting purposes only or to workaround a hardware problem.
+             </blockquote>
+             So the HAL issue seemed to be something to be aware of, in some situations, but not something of practical relevance for a user of Windows XP, Vista, or Windows 7.  I was curious which HAL was installed on my system, though.  As advised by Kelly's Korner, I went to Control Panel &gt; System &gt; Hardware &gt; Device Manager &gt; Computer.  On my native WinXP installation, it said ACPI Multiprocessor PC.  In a newly installed WinXP VM in Workstation set to use just one processor and one core, it said ACPI Uniprocessor PC.
+             <br/>
+             <br/>
+             VMware (p. 17) said that, if there were other VMs or programs running in the background, performance of a VM in the foreground would be noticeably better if the settings were changed in Workstation (i.e., not in any particular VM).  The advice was to go to Edit &gt; Preferences &gt; Priority, and set "Input grabbed" to High, and "Input ungrabbed" to Normal.  But Workstation gave me no such options.
+             <br/>
+             <div>
+              <br/>
+             </div>
+             <div>
+              According to VMware (p. 18), memory-related performance could be affected in several ways.  First, there needed to be enough RAM available to the host system for its own purposes.  My system had 6GB of RAM. Normally, some of that might have gone unrecognized by a 32-bit OS, but I was running a
+              <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/2010/05/enabling-pae-on-ubuntu-1004.html">
+               PAE-enabled kernel
+              </a>
+              in 32-bit Ubuntu 10.04.  Ubuntu's Sysinfo reported that my system's total RAM was 6050
+              <a href="https://web.archive.org/web/20150214064810/http://en.wikipedia.org/wiki/Mebibyte#Definition">
+               mebibytes
+              </a>
+              (MiB) (i.e., about 6.3 billion bytes).  Running Workstation as root (i.e., "sudo vmware"), I had set RAM to 5000MB (by which Workstation presumably meant 5000 x 1 million), leaving more than 1GB of RAM for Ubuntu system operations and whatever programs I might be running in native Ubuntu.  I did not typically run many programs in Ubuntu.  So it seemed that I had allowed enough RAM for the system.  It did occur to me, though, that if I was going to run two distinct sessions of Workstation (as opposed to running two VMs within a single Workstation session), I might want to cut that 5000MB figure in half for each Workstation session.
+             </div>
+             <div>
+              <br/>
+             </div>
+             <div>
+              VMware (p. 18) also advised that the best possible performance would come from requiring Workstation to "Fit all virtual machine memory into reserved host RAM" (Edit &gt; Preferences &gt; Memory tab &gt; Additiaonal memory).  But they provided this caveat:
+             </div>
+             <blockquote>
+              NOTE:  The setting described in this section affects only whether or not a virtual machine is allowed to start, not what happens after it starts . . . . After a virtual machine starts, other factors . . . [e.g., change of applications running in the host OS] can change.  In such situations, even if you selected the Fit all virtual machine memory into reserved host RAM option, virtual machine memory swapping might still occur.
+             </blockquote>
+             <div>
+              Since I did most of my work in WinXP, the message to me seemed to be to make sure that there was enough RAM available to the Ubuntu host so that it would not need to be raiding the WinXP guests.  This was consistent with the advice of VMware (p. 19).  They warned particularly about host applications that lock memory.  While it did not apply to my configuration, it was also interesting that they recommended providing no more than 896MB to 32-bit Linux VMs.  To monitor what might be happening, they suggested checking for swap activity in the host and virtual machines.  Doing in this Linux, they said (p. 29), involved running "stat" to dispay the "swap counters," and verifying that both the si and so counters were near zero.  I wasn't sure that their remarks applied to the Ubuntu version of stat, though.
+              <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=JPJ&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=coreutils+intitle%3Astat+ubuntu&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+               A search
+              </a>
+              turned up
+              <a href="https://web.archive.org/web/20150214064810/http://manpages.ubuntu.com/manpages/jaunty/man1/stat.1.html">
+               a manual page
+              </a>
+              that didn't say anything about swap.  That page said made me think that
+              <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=coreutils+intitle%3Astat+bash+swap+si+so&amp;btnG=Search&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+               a different search
+              </a>
+              , focusing on the bash shell, might be more illuminating.  But that turned up nothing.  This really
+              <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=intitle%3Astat+bash+swap+si+so&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+               did not seem
+              </a>
+              to be something that the world was blogging about.  Eventually, it appeared that what we were really looking for was vmstat, for which
+              <a href="https://web.archive.org/web/20150214064810/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=ZEe&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=intitle%3Avmstat+ubuntu+swap+si+so&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+               a search
+              </a>
+              produced a couple hundred hits.
+              <a href="https://web.archive.org/web/20150214064810/http://www.linuxjournal.com/article/8178">
+               Brian Tanaka
+              </a>
+              recommended running "vmstat 5 10" to get an average impression of what was happening on the system.  That didn't work on my system, but
+              <a href="https://web.archive.org/web/20150214064810/http://manpages.ubuntu.com/manpages/hardy/man8/vmstat.8.html">
+               the vmstat manpage
+              </a>
+              led me to try "vmstat -a -n 5 10" and that gave me ten indications that si and so were at zero.  So I seemed to be OK there.
+             </div>
+             <div>
+              <br/>
+             </div>
+             <div>
+              VMware (p. 29) also pointed toward
+              <a href="https://web.archive.org/web/20150214064810/http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1687">
+               a knowledgebase page
+              </a>
+              about "excessive page faults generated by Windows applications."  To see if this was a problem, they suggested using Start &gt; Run &gt; perfmon. I tried that, inside a WinXP VM.  At the top center of the System Monitor graph, I clicked the + (Add Counters) button.  I got an error message:
+             </div>
+             <blockquote>
+              System Monitor Control
+              <br/>
+              At least one data sample is missing.  Data collection is taking longer than expected.  You might avoid this message by increasing the sample interval.
+              <br/>
+              This message will not be shown again during this session.
+             </blockquote>
+             <div>
+              I took that to be a statement that my VM was running very slowly, which was not surprising, because I had some very intensive processes going on elsewhere on the computer.  I okayed out of that message and, following the advice on that page fault webpage, proceeded to choose Memory as my performance object, selected Page Faults/sec as my counter, clicked Add.  To get an accurate sample, I considered the advice from their error message:  I clicked on the Properties icon along the top and thought about changing it to "Sample automatically every 2 [or 3] seconds."  But then I decided the one-second sample was ticking along OK, and left it at that.  I was seeing occasional spikes in page faults.  The webpage advised that I could trace this to a particular application by going back to the Add Counters button, making Process my performance object, and then choosing a process of particular interest.  I named one of the very intensive processes I had underway.  Sure enough, I got a line across the top of the graph, indicating that that process was accounting for 90-100 (percent?) of something related to page faults.  Very interesting.  So basically this seemed to be telling me that a process that I knew was soaking up a lot of system resources was, in fact, soaking up a lot of system resources.
+             </div>
+             <div>
+              <br/>
+             </div>
+             <div>
+              VMware (pp. 20-21) discussed ways in which page sharing and memory trimming, intended to promote efficiency, could degrade performance in some instances.  My situation did not seem to fall into those kinds of situations, so I made no adjustments there.  They said that, of course, a local disk drive would be a faster home for a VM than would a network drive.  They provided other tips that they had also indicated somewhere during the VM setup process:  for best performance, use IDE rather than SCSI virtual disks, and preallocated rather than growable, and independent and persistent rather than nonpersistent, and don't use snapshots.  They also (p. 22) offered some suggestions that I hadn't encountered previously:  with the machine powered off, turn off debug mode (VM &gt; Settings &gt; Options tab &gt; Advanced &gt; Settings &gt; Gather debugging information &gt; None).  Other performance tips (p. 23):  run a general availability (GA) version of Workstation, not a debug or beta version.  Make sure you have designated the right operating system (VM &gt; Settings &gt; Options tab &gt; General &gt; Version).  Disconnect your optical drives from your VM until you need them (VM &gt; Settings &gt; Hardware &gt; CD/DVD &gt; uncheck Connect at Power On).
+              <br/>
+              <br/>
+              To sum up, section 3 of
+              <i>
+               Performance Best Practices for VMware Workstation
+              </i>
+              did provide a number of practical tips on how to adjust Workstation to run more efficiently.  I was not able to understand and apply all of them, and some (e.g., make sure you have enough RAM) were rather commonsense if not simply redundant.  What I derived from the discussion of cores was that, if I did get a new multicore processor, I should probably experiment, as I had done with my present CPU, to see how it performed with various numbers of cores assigned in Workstation.
+             </div>
+             <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+              <br/>
+             </div>
+             <div style="text-align: center;">
+              <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+               <b>
+                Section 3:  Guest Operating System
+               </b>
+              </div>
+              <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+               <br/>
+              </div>
+              <div style="text-align: left;">
+               <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+                In this section, VMware led off (p. 25) with suggestions:  make sure you're using a guest operating system that Workstation supports; keep VMware Tools updated; disable screen savers and animations; run backup and antivirus scans in off-peak hours; use a timekeeping utility suitable for the guest rather than the VMware Tools time-synchronization option.  VMware (p. 28) also referred to impacts on efficiency wrought by guest OS "idle loops."  It appeared that tweaking this would be painstaking and would likely yield minor effects.
+               </div>
+               <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+                <br/>
+               </div>
+               <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+                VMware (p. 30) confusingly said, "It is best to use virtual SCSI hard disks in the virtual machine."  This differed from the installation process, which said (at least at one point) that IDE drives were recommended.  Bizarrely, VMware directed me to
+                <a href="https://web.archive.org/web/20150214064810/http://www.microsoft.com/whdc/device/storage/IDE-DMA.mspx">
+                 a Windows webpage
+                </a>
+                dated December 4, 2001.  More promisingly, VMware also pointed toward
+                <a href="https://web.archive.org/web/20150214064810/http://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=9645697">
+                 their KB9645697 webpage
+                </a>
+                regarding the splitting of large I/O requests into 64KB units.  The gist of their suggestion here was, "Changing the guest registry settings to issue larger block sizes can eliminate this splitting, thus enhancing performance" (p. 30).  The way to do that was sketched out on page 30 (section 2.2.6.1) of a PDF document entitled
+                <i>
+                 <a href="https://web.archive.org/web/20150214064810/http://www.lsi.com/DistributionSystem/AssetDocument/documentation/insight_center/tech_trends/fusionmpt/FusionMPT_DevMgrUG.pdf">
+                  User's Guide: Fusion-MPT Device Management
+                 </a>
+                </i>
+                .  But in any case, this called for an edit of the registry setting HKLM\SYSTEM\CurrentControlSet\Services\Symmpi\Parameters\Device\MaximumSGList, and there was no such setting in my VM.
+                <br/>
+                <br/>
+                VMware (p. 30)
+                <a href="https://web.archive.org/web/20150214064810/http://www.microsoft.com/whdc/device/storage/IDE-DMA.mspx">
+                 also recommended
+                </a>
+                that, if I did use IDE rather than SCSI virtual disks, I should make sure DMA access was enabled.  To do this, I went into Start &gt; Run &gt; devmgmt.msc &gt; IDE ATA/ATAPI controllers &gt; right-click on each channel &gt; Advanced Settings tab &gt; look at Current Transfer Mode.  If it says PIO, toggle the other box, Transfer Mode, between PIO and DMA to get Transfer Mode = DMA and Current Transfer Mode = DMA.
+                <br/>
+                <br/>
+                Another performance suggestion (pp. 30-31):  defragmentation.  Start by defragmenting the guest, then use VM &gt; Settings &gt; Hardware tab &gt; Hard Disk &gt; Utilities &gt; Defragment, then defragment the host (not applicable in Linux hosts).  Defragment before creating linked clones or snapshots; afterwards is too late.  I was only creating independent clones, so this did not seem to apply.  Nonetheless, I did have a defrag utility in the WinXP guest.  Defragmentation in VMware itself had always been almost instant, when I had done it.
+                <br/>
+                <br/>
+                For network performance, VMware (p. 31) recommended using the VMXNET driver.  They noted, however, that that driver was installed automatically with VMware Tools.  There were a few other network performance suggestions in the document.  Since I was not having networking performance issues, I did not investigate these.  VMware (p. 32) also offered some other concluding, sensible suggestions (e.g., use general-availability software, not beta versions; make sure the latest version of VMware Tools is installed.  Here, again, the advice did not seem to apply.
+                <br/>
+                <br/>
+                <div align="center">
+                 <b>
+                  Summary (for My Purposes)
+                 </b>
+                </div>
+                <br/>
+                A single problem with hardware or software could seriously impair performance.  I did not attempt to scour the
+                <i>
+                 Performance Best Practices for VMware Workstation
+                </i>
+                document for every possible thing that might be improved.  Rather, at least in this first pass through it, I was focused on big-picture items that sounded like they might have a great impact on the performance of my system.  The Hardware section led me to think especially about upgrading to a faster multiprocessor CPU, perhaps with hyperthreading, but in any event with a recent generation of virtualization technology, and also to switch to a striping RAID arrangement for my program files (presumably including both the Ubuntu host program partition and the partition on which I kept my VMs.  Other than that, improved performance in VMware Workstation appeared to be a matter of tuning a variety of settings, some of which were becoming obvious as I gained more experience, and some of which would come to mind only as I reviewed the pages of the document and/or of this post.
+               </div>
+              </div>
+             </div>
+            </div>
+           </div>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20150214064810/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=6587701225981750945&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/7.1" rel="tag">
+             7.1
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/AMD" rel="tag">
+             AMD
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/BIOS" rel="tag">
+             BIOS
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/CPU" rel="tag">
+             CPU
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/hyperthreading" rel="tag">
+             hyperthreading
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/Intel" rel="tag">
+             Intel
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/logical" rel="tag">
+             logical
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/machine" rel="tag">
+             machine
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/MMU" rel="tag">
+             MMU
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/performance" rel="tag">
+             performance
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/processor" rel="tag">
+             processor
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/RAID" rel="tag">
+             RAID
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/RAM" rel="tag">
+             RAM
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/virtual" rel="tag">
+             virtual
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/virtualization" rel="tag">
+             virtualization
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/vmware" rel="tag">
+             vmware
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/search/label/workstation" rel="tag">
+             workstation
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20150214064810/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=6587701225981750945" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20150214064810/http://raywoodcockslatest.blogspot.com/feeds/6587701225981750945/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:48:10 Feb 14, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:22:13 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.1
+  exclusion.robots: 0.145
+  exclusion.robots.policy: 0.13
+  esindex: 0.014
+  cdx.remote: 6.119
+  LoadShardBlock: 69.324 (3)
+  PetaboxLoader3.datanode: 314.553 (4)
+  load_resource: 353.359
+  PetaboxLoader3.resolve: 27.177
+-->

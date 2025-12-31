@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053750cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053750im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053750/http://raywoodcockslatest.blogspot.com/2008/07/dsl-hardware-firewall-router-and-ubuntu.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053750/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053750/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053750/https://raywoodcockslatest.blogspot.com/feeds/7185237314380107559/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <link href="https://web.archive.org/web/20190906053750im_/http://www3.nohold.net/noHoldCust56/Prod_6/Articles51159/3676-003.png" rel="image_src"/>
+  <meta content="https://web.archive.org/web/20190906053750/http://raywoodcockslatest.blogspot.com/2008/07/dsl-hardware-firewall-router-and-ubuntu.html" property="og:url"/>
+  <meta content="DSL, Hardware Firewall, Router, and Ubuntu" property="og:title"/>
+  <meta content="In a previous post , I described the effort to get online with AT&amp;T DSL.  I did not have a hardware firewall; as instructed by AT&amp;T's tech s..." property="og:description"/>
+  <meta content="https://web.archive.org/web/20190906053750im_/https://lh4.googleusercontent.com/proxy/86X7q9ycl1PtXYoP9C227GBUc9QadwbYOu8MV4tUCr25lxdzqCZ_DKgTCsFj7pgg9XArOyWOiEjZpJ62HhCCndKOgTRXZYo3H6HjpquPFIZMQu25uTV43JY=w1200-h630-p-k-no-nu" property="og:image"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: DSL, Hardware Firewall, Router, and Ubuntu
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053750im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053750im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053750im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053750im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053750im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053750im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053750im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053750im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053750im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053750im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053750im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053750im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053750im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053750im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053750im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053750im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053750im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053750im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053750cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053750cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Monday, July 14, 2008
+        </h2>
+        <div class="post">
+         <a name="7185237314380107559">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053750/https://raywoodcockslatest.blogspot.com/2008/07/dsl-hardware-firewall-router-and-ubuntu.html">
+           DSL, Hardware Firewall, Router, and Ubuntu
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           In
+           <a href="https://web.archive.org/web/20190906053750/http://raywoodcockslatest.blogspot.com/2008/07/at-dsl-installation.html">
+            a previous post
+           </a>
+           , I described the effort to get online with AT&amp;T DSL.  I did not have a hardware firewall; as instructed by AT&amp;T's tech support people, I reduced the security setting on my ZoneAlarm firewall so that the DSL connection would work; and within a couple of hours, I had a trojan virus.  My understanding was that this was a risk for any system that was always online, whether using DSL or cable or something else.  My short-term solution, in that previous post, was to use Ubuntu Linux to connect with the Internet, since Linux does not have nearly as much virus vulnerability as Windows XP at this time.  That short-term solution is still working five days later:  I am writing this post using the Firefox browser within that same Ubuntu installation.
+
+In the meantime, I ordered and received a
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?childpagename=US%2FLayout&amp;packedargs=c%3DL_Product_C2%26cid%3D1133202177241&amp;pagename=Linksys%2FCommon%2FVisitorWrapper">
+            Linksys WRT54GL Wireless-G 2.4GHz 54Mbps broadband router
+           </a>
+           .  I connected it, but at this writing it was not working.  Therefore I disconnected it and used the Ubuntu system, via direct connection with the DSL modem, to write this posting.)
+
+I did go partway through the installation process on a separate machine, running WinXP, and now I think I understand what people mean when they talk about having a Linux machine as a hardware firewall.  The basic concept appears to be that your wireless router is actually a wired router in several regards:  it is wired to the wall for its power; it is wired to the modem for its incoming Internet connection; and it is wired to one computer that uses the router to send the incoming Internet signal wirelessly to other computers.  In this case, both the modem connection and the PC connection are by ethernet cable, though I think there may be some that use USB instead.
+
+Since the router was wired directly to one computer, my impression was that you would want that computer to be a Linux machine because, as just noted, Linux is not so vulnerable to viruses.  The Linux machine serves as a hardware firewall because the incoming Windows-based viruses get nowhere on the Linux operating system.  The Linux machine just receives a nice, clean Internet connection and passes on the desired data, without the undesired stuff, wirelessly to the other computers that the router connects in a network.  So my main machine, running WinXP, would get a relatively safe signal through the router; and hopefully I could go back to running the full-bore ZoneAlarm software firewall with safe settings, without any worries about whether ZoneAlarm could cooperate with the DSL modem.
+
+Now the trick was to get that router running with the Ubuntu machine.  I had run partway through the Windows-based installation CD, as I say, on the WinXP computer; I had connected the cables in proper order and so forth; and then it occurred to me that this was silly because the router was not even connected with the WinXP machine.  It was connected to the Ubuntu machine, and of course (although I tried) the Ubuntu machine could not run Setup.exe on the router's installation CD.  If I was going to use the router with the Linux machine, I was going to have to figure out how to do that without the benefit of an installation CD.
+
+As I wrote those words, it occurred to me that perhaps Linksys did have a Linux installation download; perhaps they just hadn't bothered including it on the CD, or perhaps I hadn't known where to look for it on the CD.  But there didn't seem to be any drivers available on
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?childpagename=US%2FLayout&amp;packedargs=page%3D2%26cid%3D1115416835852%26c%3DL_Content_C1&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;SubmittedElement=Linksys%2FFormSubmit%2FProductDownloadSearch&amp;portaltype=null&amp;sp_prodsku=1133202177241">
+            the Linksys downloads page
+           </a>
+           .  What Linksys did offer was links to a User Guide (filename WRT54GL-V1.1_ug.pdf) and
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?c=L_CASupport_C2&amp;childpagename=US%2FLayout&amp;cid=1166859841350&amp;packedargs=sku%3D1133202177241&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;lid=4135035852B03&amp;displaypage=download">
+            firmware upgrades
+           </a>
+           .  They also offered
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?c=L_CASupport_C1&amp;childpagename=US%2FLayout&amp;cid=1166859678292&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;lid=7829241350L20">
+            networking tools
+           </a>
+           and a Live Chat feature.
+
+Page 14 of the User Guide seemed to say that the Windows installation process or software for the router -- had I decided to connect it to the Windows computer and continue that process -- would have offered me the option of using the router as a firewall within the Windows context. In fact, it was pretty clear:  the default settings on the router made it function as a firewall.  This, I was sure, was what most people used.  But since I wanted to pick up a bit of Ubuntu anyway, and was fond of the idea of having the more complete level of Linux protection -- which, I had heard, was part of the reason why most servers used Linux rather than Windows -- I decided to continue this process a little further.
+
+The networking tools were the EasyLink Connect installation tool, the EasyLink Firmware updating tool, and the NetCheck diagnostic tool.  EasyLink Connect was an EXE file (i.e., for Windows), so that didn't help.  The Firmware updating tool did not specifically list the WRT54GL as a supported router, and since I didn't want to turn my new device into a brick, I decided not to try it at this point.  I tried NetCheck, but it, too, required Windows and Internet Explorer.
+
+So it was LiveChat time.  But that gave me this error message:
+           <blockquote>
+            This browser does not support Java or its use is currently disabled. You can download free Java software from http://www.java.com. You may be able to enable Java by lowering your browser security level.
+           </blockquote>
+           When I clicked OK on that dialog box, I got a webpage that offered to install Java.  But was that OK, security-wise?  The only webpage I found on it, in a short search, was
+           <a href="https://web.archive.org/web/20190906053750/http://www.linuxquestions.org/questions/linux-software-2/java-and-web-browser-problems.-366888/">
+            a three-year-old posting
+           </a>
+           that made it sound OK.  I was sure they had seen this coming, when they were designing Linux, so I went ahead with the installation link.  That took me to the
+           <a href="https://web.archive.org/web/20190906053750/http://www.java.com/en/download/linux_manual.jsp?locale=en&amp;host=www.java.com:80">
+            Java Download for Linux
+           </a>
+           webpage, which offered four downloadable files.  I chose the self-extracting BIN file, the only one that was not for Red Hat RPM or 64-bit Linux.  This required me to figure out how to install BIN files -- which, according to
+           <a href="https://web.archive.org/web/20190906053750/http://www.linuxforums.org/forum/linux-tutorials-howtos-reference-material/64958-how-install-software-linux.html#post344062">
+            a forum posting
+           </a>
+           , required me to type these lines at a Terminal prompt (Applications &gt; Accessories &gt; Terminal) in Ubuntu:
+           <blockquote>
+            cd \
+cd ~/Desktop
+chmod +x jre-6u7-linux-i586.bin
+./jre-6u7-linux-i586.bin
+           </blockquote>
+           I'm not sure the first line, "cd \", was either correct or necessary, but that's what I did.  It took me a couple minutes of screwing around to realize that Desktop is case-specific -- that it wouldn't work if I typed "cd ~/desktop".  But anyway, it seemed to run after I typed the fourth line.  I went back to the Live Chat window and tried again.  It still wouldn't go.  I thought maybe I had to restart Firefox to make it work.  But that didn't work either, not even after rebooting the system.  So no Live Chat for me.
+
+I
+           <a href="//web.archive.org/web/20190906053750/https://www.google.com/search?num=50&amp;hl=en&amp;client=firefox-a&amp;rls=com.ubuntu:en-US:unofficial&amp;q=site:linksys.com+wrt54gl+driver+ubuntu+OR+linux&amp;btnG=Search">
+            ran a Google search
+           </a>
+           and saw that some people in
+           <a href="https://web.archive.org/web/20190906053750/http://forums.linksys.com/?lid=7011541350L19&amp;comm_cc=US&amp;comm_lang=en">
+            the Linksys forums
+           </a>
+           seemed to be having trouble using this particular router with Ubuntu.  But the
+           <a href="https://web.archive.org/web/20190906053750/http://www.newegg.com/Product/ProductReview.aspx?Item=33-124-190&amp;SortField=0&amp;SummaryType=0&amp;Pagesize=100&amp;SelectedRating=-1&amp;PurchaseMark=&amp;VideoOnlyMark=False&amp;Keywords=&amp;Page=">
+            customer reviews at Newegg
+           </a>
+           had made this router sound perfectly well suited for Ubuntu. Those reviews offered some tips. I couldn't read all 1,426 of them. But I did search them for references to Linux or Ubuntu.
+
+I had seen where someone had used Ndiswrapper to
+           <a href="https://web.archive.org/web/20190906053750/http://johnbokma.com/mexit/2007/12/29/my-linksys-wrt54gl-ubuntu-wireless-settings.html">
+            connect an Ubuntu PC to a Windows wireless network
+           </a>
+           with this router, but that was the opposite of what I was trying to do.  But now one of these user reviews at Newegg made it sound like Ndiswrapper would work for my purposes too.  I noticed that this reviewer also recommended open-source Tomato firmware.  As I continued browsing the user reviews, I saw other mentions of Tomato and DD-WRT, which were apparently Linux-based, so I thought maybe I would use that instead of the firmware update from Linksys.  But I wasn't ready to update firmware yet.
+
+Other Newegg user reviews (which I had reviewed, to some extent, before buying the router) said that this router definitely supports Linux; that this router could replace a Linux machine being used as a firewall (apparently if/because the router's firmware is Linux-based); that Linksys's own firmware was open-source; that loading open-source firmware would enable you to load additional firmware to extend the router's capabilities; that apparently the "L" in GL stands for Linux.  I came to my next-step decision after reading this user comment:
+           <blockquote>
+            For beginners I suggest DD-WRT, and Linux pros might choose OpenWRT. www.dd-wrt.com &amp;&amp; www.openwrt.org; Read before you attempt to flash - use Mini BEFORE Standard or you will brick it. At this time don't use DD-WRT RC6.2 - you could brick your router, I'm lucky I didn't; RC5 works well though.
+           </blockquote>
+           It seemed fairly clear that I was going to have to give up, for now, on the idea of using the Linux computer as my firewall.  It sounded complicated, dangerous, and unnecessary.  I would just go ahead with the Windows installation process on the WinXP computer.  Then, I could connect the Linux computer to the Internet wirelessly or by wire through the DSL modem.
+
+This grand plan did not go too far.  On the Windows machine, I got to step 8 in the router installation program provided on the Linksys setup CD.  Then I got an error message:
+           <blockquote>
+            Unable to connect to the Router!  Check that the Router has been connected to the computer, and that your Ethernet adapter is working.
+           </blockquote>
+           I didn't think the problem was with the adapter or cable.  At about the same time, I also got a warning balloon from Windows, telling me:
+           <blockquote>
+            Local Area Connection
+
+This connection has limited or no connectivity.  You might not be able to access the Internet or some network resources.  For more information, click this message.
+           </blockquote>
+           I decided to speed up the timetable for connecting the Linux computer, so I plugged it, too, into the router.  But whereas it was able to connect to the Internet just fine when it was plugged directly into the modem, it was not able to connect at all through the router.  So it looked like the router might be defective.
+
+The Linksys setup process did not provide a Help option.  The "Frequently Asked Questions" page that came with the router had one question, or statement, germane to my situation:  "I can't connect to the Internet."  The instructions for that problem were:
+           <blockquote>
+            Check that your router is powered on.  Make sure the Power LED is on and not blinking.  Power down everything, and power on each device in the following order:
+
+1.  Cable or DSL modem
+2.  Router
+3.  PC
+
+Check that everything is connected properly.  The PC should be connected to the ports numbered 1-4 on the router, and the modem must be connected to the Internet port on the router.
+           </blockquote>
+           I took these steps, powering down and back up.  In fact, I left the computer off for several minutes before turning the modem back on (or, more precisely, before reconnecting its power supply), and allowed at least a full clock minute before each of steps 2 and 3.  This seemed promising:  now, unlike previously, Start &gt; Settings &gt; Network Connections (on the Windows machine, in classic view) stated that my Local Area Connection was Connected.  Yet I still wasn't able to browse to a webpage.
+
+Using the Ubuntu computer, I tried
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?c=L_CASupport_C1&amp;childpagename=US%2FLayout&amp;cid=1166859677881&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;lid=7788177851L07">
+            the Ask Linksys tech support li
+           </a>
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?c=L_CASupport_C1&amp;childpagename=US%2FLayout&amp;cid=1166859677881&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;lid=7788177851L07">
+            n
+           </a>
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?c=L_CASupport_C1&amp;childpagename=US%2FLayout&amp;cid=1166859677881&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;lid=7788177851L07">
+            k
+           </a>
+           .  There, I clicked on the link entitled
+           <a href="https://web.archive.org/web/20190906053750/http://www3.nohold.net/noHoldCust56/Prod_8/Articles64888/asklinksysintro.html" onclick="doHotTopic(695);">
+            How to get online using a
+           </a>
+           <a href="https://web.archive.org/web/20190906053750/http://www3.nohold.net/noHoldCust56/Prod_8/Articles64888/asklinksysintro.html" onclick="doHotTopic(695);">
+            Lin
+           </a>
+           <a href="https://web.archive.org/web/20190906053750/http://www3.nohold.net/noHoldCust56/Prod_6/Articles51159/3676-003.png" onblur="try {parent.deselectBloggerImageGracefully();} catch(e) {}">
+            <img alt="" border="0" src="https://web.archive.org/web/20190906053750im_/https://lh4.googleusercontent.com/proxy/86X7q9ycl1PtXYoP9C227GBUc9QadwbYOu8MV4tUCr25lxdzqCZ_DKgTCsFj7pgg9XArOyWOiEjZpJ62HhCCndKOgTRXZYo3H6HjpquPFIZMQu25uTV43JY=s0-d" style="margin: 0pt 0pt 10px 10px; float: right; cursor: pointer; width: 381px; height: 155px;"/>
+           </a>
+           <a href="https://web.archive.org/web/20190906053750/http://www3.nohold.net/noHoldCust56/Prod_8/Articles64888/asklinksysintro.html" onclick="doHotTopic(695);">
+            ksy
+           </a>
+           <a href="https://web.archive.org/web/20190906053750/http://www3.nohold.net/noHoldCust56/Prod_8/Articles64888/asklinksysintro.html" onclick="doHotTopic(695);">
+            s router
+           </a>
+           .  This led me to
+           <a href="https://web.archive.org/web/20190906053750/http://www3.nohold.net/noHoldCust56/Prod_8/KnowledgePortal/KPScripts/amsviewer.asp?docid=e409d2f49e6345f595c0e1427bb6fd24_KB3988_EN_070207_v1.xml&amp;amsstatsid=3554782">
+            a webpage
+           </a>
+           where I got some new information on, specifically, how to access the router's web-based settings page by entering 192.168.1.1 into the address line of Internet Explorer.  When asked for a user name and password, the instructions were to leave the user name blank and use the default "admin" as the password.
+
+This worked.  I was able to access that webpage.  It seemed that at least my router was not totally dead.  It had shown all the appropriate power lights, as Linksys had told me to look for, but now it seemed I was reaching a webpage actually located in the router's firmware.
+
+The next instruction was to
+           <a href="https://web.archive.org/web/20190906053750/http://www3.nohold.net/noHoldCust56/Prod_8/KnowledgePortal/KPScripts/amsviewer.asp?docid=e409d2f49e6345f595c0e1427bb6fd24_KB3988_EN_070207_v1.xml&amp;amsstatsid=3554782">
+            change the router's Local IP Address
+           </a>
+           , on that webpage, to 192.168.2.1.  Apparently their idea was that my problem might be caused by a conflict in the connection address.  I clicked "Save Settings," as advised, and I got "Settings are successful."  Although it said it would be only "several seconds" before I would be returned to the previous webpage, it actually took about a half-minute, and then all I had was the failed "Internet Explorer cannot display the webpage" message that I had been looking at before I went to the router's webpage.
+
+Meanwhile, the next Linksys instruction was to
+           <a href="https://web.archive.org/web/20190906053750/http://www3.nohold.net/noHoldCust56/Prod_8/KnowledgePortal/KPScripts/amsviewer.asp?docid=e409d2f49e6345f595c0e1427bb6fd24_KB3988_EN_070207_v1.xml&amp;amsstatsid=3554782">
+            renew the computer's IP address
+           </a>
+           .  This called for opening a DOS command box (Start &gt; Run &gt; cmd) and, at the prompt, typing these lines:
+           <blockquote>
+            ipconfig /release
+ipconfig /renew
+           </blockquote>
+           The "release" step was supposed to make the IP address 0.0.0.0.  It did.  Then the "renew" step showed that the Default Gateway address was now 192.168.2.1.  (They didn't tell me to close the DOS box by typing EXIT but I did anyway.)
+
+Now, typing that new number (192.168.2.1) into Internet Explorer's address bar, with the "admin" password and so forth, as above, they told me to check the Status option (at the top right corner of the screen) and then look at my IP Address.  In my case, that address was no longer all zeroes (0.0.0.0).  Their instructions weren't clear what to do in that case, but apparently I was supposed to be able to connect to the Internet at that point.  So I tried and, you know, it worked.  I was online.
+
+Now, I needed to come back to the Ubuntu machine and finish this posting.  So I plugged its ethernet cable into the router, and that worked too.
+
+The next question was whether I needed to fool with all that stuff about updating the firmware.  The sucker was working for both computers.  If it works, don't fix it.
+
+I started with the
+           <a href="https://web.archive.org/web/20190906053750/http://forums.linksys.com/linksys/board/message?board.id=Wireless_Routers&amp;thread.id=2243">
+            wireless router FAQs post on the Linksys forums
+           </a>
+           .  One of their FAQs confirmed that
+           <a href="https://web.archive.org/web/20190906053750/http://linksys.custhelp.com/cgi-bin/linksys.cfg/php/enduser/std_adp.php?p_faqid=559&amp;p_created=1084217239&amp;p_sid=btIGUT4i&amp;p_accessibility=0&amp;p_lva=688&amp;p_sp=cF9zcmNoPTEmcF9zb3J0X2J5PSZwX2dyaWRzb3J0PSZwX3Jvd19jbnQ9MSZwX3Byb2RzPTAmcF9jYXRzPSZwX3B2PSZwX2N2PSZwX3">
+            software firewalls may or may not work
+           </a>
+           with the router.  Mine seemed to be working, which was good.  They also reminded me of the Linksys networking tools mentioned above, which I had forgotten about.  I downloaded
+           <a href="https://web.archive.org/web/20190906053750/ftp://ftp.linksys.com/downloads/NA/other/EasyLink_Connect.exe">
+            the EasyLink Connect tool
+           </a>
+           so that, if I ever needed it again to set up a Windows computer, I would have it available locally.
+
+But I wasn't sure that I needed to upgrade the router's firmware, beyond whatever Linksys itself might provide.
+           <a href="https://web.archive.org/web/20190906053750/http://www.ubuntu1501.com/2008/05/linux-on-linksys-wrt54gl.html">
+            One webpage
+           </a>
+           listed some of the advantages of installing DD-WRT:
+           <blockquote>
+            Many of DD-WRT's features are not included in typical router firmware. These features include support for the Kai network, daemon-based services, IPv6, Wireless Distribution System, RADIUS, advanced quality of service, radio output power control, overclocking capability, and software support for a Secure Digital Card hardware modification.
+           </blockquote>
+           <blockquote>
+           </blockquote>
+           I supposed I would know what all of those things were someday.  At present, I did not.  I still felt that way after reading
+           <a href="https://web.archive.org/web/20190906053750/http://www.polarcloud.com/tomato">
+            the writeup on the Tomato webpage
+           </a>
+           .
+           <a href="https://web.archive.org/web/20190906053750/http://en.wikipedia.org/wiki/Linksys_WRT54G_series#WRT54GL">
+            Wikipedia had some additional information
+           </a>
+           on the matter.
+
+I found
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?c=L_CASupport_C2&amp;childpagename=US%2FLayout&amp;cid=1166859841350&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;lid=4135041396B09&amp;displaypage=download#versiondetail">
+            the latest Linksys firmware
+           </a>
+           for my router and downloaded it.
+           <a href="https://web.archive.org/web/20190906053750/http://www.linksys.com/servlet/Satellite?blobcol=urldata&amp;blobheadername1=Content-Type&amp;blobheadername2=Content-Disposition&amp;blobheadervalue1=text%2Fplain&amp;blobheadervalue2=inline%3B+filename%3DWRT54GL_v4.30.12_FwReleaseNotes.txt&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1193787041131&amp;ssbinary=true&amp;lid=3886841350B39">
+            The version information
+           </a>
+           indicated that updates in the firmware had repeatedly addressed newly discovered security issues.  So that did seem like a good reason to have the latest Linksys firmware update.  Then again, I wasn't sure what version I had already.  So I went back to the router's webpage, as described above, and . . . the rest is lost to science.  I write these words several weeks later, when I do not remember the remaining steps I took.  I believe the reason is that things were working and I was off and running -- until a later point when
+           <a href="https://web.archive.org/web/20190906053750/http://raywoodcockslatest.blogspot.com/2008/07/ubuntu-and-router-continued.html">
+            the router stopped working again
+           </a>
+           .
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053750/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=7185237314380107559&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053750/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=7185237314380107559" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053750/https://raywoodcockslatest.blogspot.com/feeds/7185237314380107559/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:37:50 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:07:37 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.914
+  exclusion.robots: 0.121
+  exclusion.robots.policy: 0.108
+  esindex: 0.012
+  cdx.remote: 8.955
+  LoadShardBlock: 232.434 (3)
+  PetaboxLoader3.datanode: 244.682 (4)
+  load_resource: 73.584
+-->

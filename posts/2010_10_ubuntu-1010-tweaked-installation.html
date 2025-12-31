@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053710cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053710im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/10/ubuntu-1010-tweaked-installation.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/feeds/4823686210814503734/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/10/ubuntu-1010-tweaked-installation.html" property="og:url"/>
+  <meta content="Ubuntu 10.10:  Tweaked Installation" property="og:title"/>
+  <meta content="I had previously installed Ubuntu 10.04, and had arrived at a fast way of adjusting the basic installation to my needs. This post updates an..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu 10.10:  Tweaked Installation
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053710im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053710im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053710im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053710im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053710im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053710im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053710im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053710im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053710im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053710im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053710im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053710im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053710im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053710im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053710im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053710im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053710im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053710im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053710cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053710cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Saturday, October 30, 2010
+        </h2>
+        <div class="post">
+         <a name="4823686210814503734">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/2010/10/ubuntu-1010-tweaked-installation.html">
+           Ubuntu 10.10:  Tweaked Installation
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had previously installed Ubuntu 10.04, and had arrived at a fast way of adjusting the basic installation to my needs. This post updates and simplifies
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-installation-streamlined.html">
+            the separate post
+           </a>
+           in which I described that process.  Here, I was using Ubuntu 10.10, not 10.04.
+           <br/>
+           <br/>
+           This post begins with a basic Ubuntu setup already installed.  That basic installation process was very straightforward; but for those unfamiliar with Ubuntu, there were many webpages on
+           <a href="//web.archive.org/web/20190906053710/https://www.google.com/search?hl=en&amp;q=%22install+Ubuntu+10.10%22&amp;sourceid=navclient-ff&amp;rlz=1B3GGLL_enUS403US403&amp;ie=UTF-8">
+            how to install Ubuntu 10.10
+           </a>
+           .  The question addressed in this post was, what additional steps did I need to take, in order to make Ubuntu look and act the way I wanted?  Of course, people will have various preferences.  This post does not go into that kind of individual detail.  It is more a matter of how to go about choosing and preserving one's desired setup.
+           <br/>
+           <br/>
+           In this case, I had installed Ubuntu 10.10 in a two-drive RAID0 setup.  I have written
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/10/ubuntu-1010-streamlined-raid-0.html">
+            a separate post
+           </a>
+           on that as well.  It looked and acted the same as a normal single-drive Ubuntu installation.  But the following discussion contains a few references to the setup described in that other post, for those who have come to this description from there.
+           <br/>
+           <br/>
+           <b>
+            The Home Partition
+           </b>
+           <br/>
+           <br/>
+           If I had been installing Ubuntu without using RAID, I probably would have decided, in the initial installation, to install everything in a single root ("/") partition.  But the RAID process had required the creation of a separate /boot partition, so I now had those two partitions instead of one.  Either way, though, my installation did not yet include a separate /home partition.  I did want a separate /home partition to be part of the mix, because /home was where all kinds of program settings were preserved.
+           <br/>
+           <br/>
+           I had retained a copy of my previous /home partition.  It was on a third hard drive.  That is, it was not part of the RAID array, and I did not plan to copy it into the RAID array.  RAID 0 is risky, in the sense that failure of any drive in the array means the end of the entire array and everything on it.  So I was just going to leave the /home partition on that separate drive, and back it up from there.  The question was, how should I get the new installation to recognize that separate /home partition?  I had struggled with this step previously, but now I wanted to write it up in simpler form.
+           <br/>
+           <br/>
+           On that third drive, I had a folder called Saved Settings.  In that folder, I had kept a copy of my old fstab (that is, the file called "fstab," from the /etc folder, viewable by typing "sudo gedit /etc/fstab").  I added lines from that copy into my current fstab, making sure that its lines referred to UUIDs (available via "sudo blkid") rather than to drive letters (e.g., sda, sdb), so that the commands in the fstab would still function if I rearranged partitions in my computer.  I also made sure it had a line referring to the correct UUID for the /home partition.  I saved and closed fstab.
+           <br/>
+           <br/>
+           To give /home a place to be mounted, I typed "sudo mkdir /media/home."  To prevent the newly installed (and nearly empty) /home partition from interfering with the selection and use of my preferred, preexisting /home partition, I typed "sudo mv /home /old_home."  I had meanwhile allowed Update Manager to install updates, and that process was done, so at this point I rebooted.  I got an error message, "Could not update ICEauthority file /home/ray/.ICEauthority."  I clicked through that, and after a moment my old, preferred desktop layout was there and seemed to be functioning normally.  (I worked through the ICEauthority problem as described in
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/10/ubuntu-1010-error-could-not-update.html">
+            a separate post
+           </a>
+           .  Basically, the solution was to make sure the user (i.e., ray, not root) had ownership of the home folder.)  The last step was to delete the temporary old_home folder I had created by typing "sudo rm -r /old_home."
+           <br/>
+           <br/>
+           <b>
+            Repositories
+           </b>
+           <br/>
+           <br/>
+           Having the home folder in place meant that about 90% of the work of installing and configuring programs was already done and saved.  This was one huge advantage over Windows XP installations, where the only programs that did not have to be reinstalled in the event of a new operating system installation were
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/09/windows-xp-integrating-start-menu-with.html">
+            portable applications
+           </a>
+           .  This section describes the relatively few steps that I did have to take to install applications and configure my Ubuntu system, as compared to
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/07/tweaking-windows-xp-virtual-machine.html">
+            the writeup in a separate post
+           </a>
+           on Windows XP reinstallation.
+           <br/>
+           <br/>
+           I could not rely on my previously saved sources.list file to set up my repositories, since I was now dealing with a new version of Ubuntu.  Instead, I went into System &gt; Administration and discovered that, unlike Ubuntu 10.04 (as discussed in
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-repositories.html">
+            a separate post
+           </a>
+           ), Ubuntu 10.10 no longer had a Software Sources option.
+           <a href="//web.archive.org/web/20190906053710/https://www.google.com/search?hl=en&amp;q=%22software+sources%22+ubuntu+10.10&amp;sourceid=navclient-ff&amp;rlz=1B3GGLL_enUS403US403&amp;ie=UTF-8">
+            A search
+           </a>
+           revealed that this change was made to make Ubuntu
+           <a href="https://web.archive.org/web/20190906053710/http://www.webupd8.org/2010/09/software-sources-disabled-from-ubuntu.html">
+            more user-friendly
+           </a>
+           .  I could either edit the menu to add back the Software Sources option or use System &gt; Administration &gt; Synaptic Package Manager as an alternative.  Choosing the latter, I went into Synaptic's Settings &gt; Repositories &gt; Other Software and selected the non-source options.  In the Authentication tab, I saw a list of Trusted Software Providers, and the names on it were Ubuntu (archive, CD image, and extras), GetDeb, and Google.  I had no problem with any of these except maybe Ubuntu extras.  I wasn't sure if these had come from my previous installation or were pre-supplied with Ubuntu 10.10.  I could have hit "Restore Defaults" to find out, but then I would have had to figure out how to restore them.  I closed out of that and, back in Synaptic, clicked Reload.
+           <br/>
+           <br/>
+           In Terminal, I typed "sudo gedit /etc/apt/sources.list."  I saw that it contained a handful of repositories.  I wondered if there were others I should include, so I went to the
+           <a href="https://web.archive.org/web/20190906053710/http://repogen.simplylinux.ch/">
+            Ubuntu Sources List Generator
+           </a>
+           and got a list that was more concise and that also included a few third-party repos of interest (i.e., GetDeb, Google, Medibuntu, Wine, and X Updates).  I ran the commands in the "Getting the GPG Keys" list from the bottom of the page, one at a time.  In previous installations, I had saved such commands in a text file and had executed it, but that had made it easier to overlook error messages.  In this case, the Medibuntu command gave me "Unable to locate package medibuntu-keyring."
+           <a href="//web.archive.org/web/20190906053710/https://www.google.com/search?hl=en&amp;q=%22Unable+to+locate+package+medibuntu-keyring%22&amp;sourceid=navclient-ff&amp;rlz=1B3GGLL_enUS403US403&amp;ie=UTF-8">
+            A search
+           </a>
+           indicated that virtually nobody had gotten precisely that message.  Not a good sign.
+           <a href="https://web.archive.org/web/20190906053710/https://help.ubuntu.com/community/Medibuntu">
+            A community documentation page
+           </a>
+           gave me a different command to add Medibuntu:
+           <br/>
+           <blockquote>
+            sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list &amp;&amp; sudo apt-get --quiet update &amp;&amp; sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring &amp;&amp; sudo apt-get --quiet update
+           </blockquote>
+           ... all on one line!  It also said that Medibuntu's repository is deactivated whenever you upgrade to a newer Ubuntu release, so this reinstallation would have to happen each time.  I copied and pasted that command and ran it.  It gave me an error message:
+           <br/>
+           <blockquote>
+            Unable to lock the administration directory (/var/lib/dpkg/), is another process using it?
+           </blockquote>
+           to which the answer was yes, of course, Synaptic is still running.  I shut down Synaptic and tried again.  This time, it ran.  I took another look at the Authentication tab in Synaptic (see above), and now Medibuntu was on the list of trusted software providers.  So the answer to my question was, this was my customized list.
+           <br/>
+           <br/>
+           I went back to the process of running commands generated by the Ubuntu Sources List Generator.  They ran without further difficulty.  I typed "sudo gedit /etc/apt/sources.list" again, and replaced its contents with the lines generated by that Generator.  I took another look at Synaptic's Authentication tab, and this produced an error indicating that I had duplicate entries for Medibuntu and, I think, something else.  But when I tried to figure out what that was about, the error went away, and I didn't seem to be able to get it back.  Anyway, the Authentication tab did show that I now had the five third-party repos that had interested me (above), so all that remained was to go into System &gt; Administration &gt; Update Manager &gt; Check and download the additional updates that it detected.
+           <br/>
+           <br/>
+           <b>
+            Installing Programs &amp; Other Adjustments
+           </b>
+           <br/>
+           <br/>
+           In Terminal, I navigated to my Saved Settings folder (basically, cd "/folder name/" -- using quotes because "folder name" has a space in it) and verified that I had a copy of the installed-software file that I had created, in my previous installation, by typing "dpkg --get-selections &gt; installed-software."  Now that I wanted to restore the programs listed in installed-software, I entered these commands:
+           <br/>
+           <blockquote>
+            sudo dpkg --set-selections &lt; installed-software
+            <br/>
+            sudo apt-get install dselect
+            <br/>
+            sudo dselect
+           </blockquote>
+           That opened up dselect.  The dpkg command had provided the list of what I wanted to install, so all I had to do now, in dselect, was to arrow down and hit Enter at the Install option.  This gave me an option of installing a large quantity of stuff, and I said OK, do it.  That took an hour.  At the end, I declined to let it erase previously downloaded .deb files, when it asked.
+           <a href="https://web.archive.org/web/20190906053710/http://sudo%20dpkg%20--set-selections%20%3c%20installed-software/">
+            The last time
+           </a>
+           I used this installed-software approach, I got a bunch of errors after reboot, and had to work back through the process manually.  There were some errors this time, too (see below), but they did not appear to be related to the dselect process.
+           <br/>
+           <br/>
+           As before, I navigated to the folders containing other program downloads (with .deb, .gz, .bin, and .bundle extensions).  I typed "sudo sh [filename]" to install my .bin and .bundle downloads (e.g., GoogleEarthLinux.bin).  Double-clicking on the filename in Nautilus no longer installed my .deb downloads; instead, I had to right-click and choose "Open with GDebi Package Installer."  In the case of
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/search?q=Synology">
+            my Synology software
+           </a>
+           , I typed "sudo sh install.sh."  I wasn't sure where to install it, so I told it to install in /home, just in case that would spare me from having to install it again.  But I should have said /home/ray.  When I was done with all installations, I went into Update Manager, and ran and reran it until I was all caught up.
+           <br/>
+           <br/>
+           GRUB2 menu edits were
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-installation-another-go.html">
+            the same as before
+           </a>
+           :  to get rid of the Memtest+ options, I typed "sudo chmod -x /etc/grub.d/20_memtest86+." To let Ubuntu remember which operating system it had used last, I typed "sudo gedit /etc/default/grub," changed the first line to be "GRUB_DEFAULT=saved," and added a second line that said "GRUB_SAVEDEFAULT=true."  To limit the number of Ubuntu kernels shown, I typed "sudo gedit /etc/grub.d/10_linux," added "GRUB_DISABLE_LINUX_RECOVERY=true" at the top, and changed two lines at the bottom to be three that read as follows:
+           <br/>
+           <blockquote>
+            list=`echo $list | tr ' ' '\n' | grep -vx $linux | tr '\n' ' '`
+            <br/>
+            list=`version_find_latest $list`
+            <br/>
+            done
+           </blockquote>
+           I saved and closed that and typed "sudo update-grub."
+           <br/>
+           <br/>
+           I also needed to make some adjustments for VMware.  First, I typed "sudo vmware" and made some root adjustments there.
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/07/resizing-virtual-disks-in-vmware.html">
+            As before
+           </a>
+           , I typed "sudo gedit [path][filename].vmx," for the .vmx file pertaining to this VM; and at the end of that file I added a line that said this:
+           <br/>
+           <blockquote>
+            bios.bootDelay = "10000"
+           </blockquote>
+           and that bought me ten seconds instead of one or two, when that vmware logo came up.  In a variation from Ubuntu 10.04, the restricted drivers for my monitor were now at System &gt; Administration &gt; Additional Drivers.
+           <br/>
+           <br/>
+           <b>
+            Bugs and Other Problems
+           </b>
+           <br/>
+           <br/>
+           There were some problems.  First, BOINC would not suspend itself when the system was in use, so I just suspended it, period.  Also, as discussed in
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/10/ubuntu-1010-problems-with-firefox-3612.html">
+            a separate post
+           </a>
+           , there were some Firefox errors.  The solution there was to completely uninstall and reinstall Firefox, though possibly it would have been sufficient just to uninstall firefox-gnome-support and delete my profile.
+           <br/>
+           <br/>
+           Another problem was that Ubuntu was not clearly recognizing all local and network partitions.  The problem of mapping the drive in my Synology NAS required
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/10/synology-nas-mapping-network-drive.html">
+            another separate post
+           </a>
+           .  In that case, it came down to a problem with the line used to mount the drive in fstab.  It had seemed like there were other drive recognition problems, but evidently they sorted themselves out, or perhaps I was just mistaken.  At this point, the drives seemed to be recognized in good form.
+           <br/>
+           <br/>
+           There was also the problem that GParted wouldn't run.  It wasn't just in my installation; it wasn't running when I booted from the live CD either.  I guessed that this was some kind of brand-new bug in Ubuntu 10.10 that would be fixed shortly.  When I started GParted from System &gt; Administration, it would start up, but then it would disappear after just a few seconds.  When I typed "sudo gparted" or "gksu gparted," it did the same thing, but it gave me an error message:
+           <br/>
+           <blockquote>
+            glibmm-ERROR **:
+            <br/>
+            unhandled exception (type std::exception) in signal handler:
+            <br/>
+            what: basicI_string::_S_create
+            <br/>
+            aborting...
+           </blockquote>
+           <a href="//web.archive.org/web/20190906053710/https://www.google.com/search?hl=en&amp;q=glibmm-ERROR+gparted&amp;sourceid=navclient-ff&amp;rlz=1B3GGLL_enUS403US403&amp;ie=UTF-8">
+            A search
+           </a>
+           indicated that this was indeed a bug in Ubuntu.
+           <a href="https://web.archive.org/web/20190906053710/http://gparted-forum.surf4.info/viewtopic.php?id=14390">
+            It looked like
+           </a>
+           a new release would be fixing the problem imminently.  Another problem:  Google Earth would not install.  I got this error message:
+           <br/>
+           <blockquote>
+            parser error : Document is empty
+            <br/>
+            parser error: Start tag expected, '&lt;' not found
+            <br/>
+            Couldn't load 'setup.data/setup.xml'
+           </blockquote>
+           The command I used was "sudo sh GoogleEarthLinux.bin."  The first response to it was "Verifying archive integrity... All good."  Just in case, I downloaded a replacement of GoogleEarthLinux.bin, but got the same result.  It looked like
+           <a href="//web.archive.org/web/20190906053710/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;rlz=1B3GGLL_enUS403US403&amp;q=%22parser+error%22+%22document+is+empty%22+%22google+earth%22+%22Ubuntu+10.10%22&amp;aq=f&amp;aqi&amp;aql&amp;oq&amp;gs_rfai">
+            others had also had this problem
+           </a>
+           .  It seemed to be another instance of Ubuntu 10.10 not yet having all the kinks worked out.  I started with
+           <a href="https://web.archive.org/web/20190906053710/http://ubuntuforums.org/showthread.php?t=1595339&amp;page=2">
+            a lengthy thread
+           </a>
+           on the issue.
+           <a href="https://web.archive.org/web/20190906053710/http://ubuntuforums.org/showpost.php?p=9971687&amp;postcount=16">
+            One post
+           </a>
+           in that thread recommended a command-line alternative, which in full form went like this:
+           <br/>
+           <blockquote>
+            sudo apt-get install googleearth-package
+            <br/>
+            sudo make-googleearth-package --force
+            <br/>
+            sudo dpkg -i googleearth_5.2.1.1588+0.5.7-1_i386.deb
+           </blockquote>
+           I tried that.  The make-googleearth-package command generated a lot of errors that included the sentence, "Can't extract name and version from library name."  I got that long package name shown in the last line (googleearth_5.2.1 etc.) from one of the last lines produced by the make-googleearth-package command:  it said this was the name of the package it was building.  (It also seemed to say that simply "googleearth" was the name of the package, but that didn't work.)  The third command (sudo dpkg etc.) seemed to run successfully.  There was also now a Google Earth icon in Applications &gt; Internet &gt; Google Earth.  I clicked on that, and it worked.
+           <br/>
+           <br/>
+           Another problem involved VMCI Sockets.  I have addressed that one in
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2010/11/vmware-workstation-71-in-ubuntu-1010.html">
+            a separate post
+           </a>
+           .  I ran out of time to continue this project at the time.  When I returned to it two months later,
+           <a href="https://web.archive.org/web/20190906053710/http://raywoodcockslatest.blogspot.com/2011/01/farewell-ubuntu.html">
+            I had decided
+           </a>
+           to stop trying to maintain a primarily Ubuntu machine, but instead to return to Windows 7 for the foreseeable future.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053710/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=4823686210814503734&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/search/label/10.10" rel="tag">
+             10.10
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/search/label/installation" rel="tag">
+             installation
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/search/label/RAID" rel="tag">
+             RAID
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/search/label/repositories" rel="tag">
+             repositories
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/search/label/tweaked" rel="tag">
+             tweaked
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053710/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=4823686210814503734" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053710/https://raywoodcockslatest.blogspot.com/feeds/4823686210814503734/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:37:10 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:25:33 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.577
+  exclusion.robots: 0.08
+  exclusion.robots.policy: 0.072
+  esindex: 0.01
+  cdx.remote: 56.576
+  LoadShardBlock: 154.037 (3)
+  PetaboxLoader3.datanode: 160.849 (4)
+  load_resource: 24.289
+-->

@@ -1,0 +1,1108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20171124082316cs_/https://www.blogger.com/static/v1/widgets/3332739511-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20171124082316im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/2009/12/long-term-backup-verification-beyond.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/feeds/7389034875257415073/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/2009/12/long-term-backup-verification-beyond.html" property="og:url"/>
+  <meta content="Long-Term Backup Verification:  Beyond Compare, in Windows and Ubuntu" property="og:title"/>
+  <meta content="Some time back, I had looked into software  that would verify that I was not losing data without realizing it.  Data could disappear, as I h..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Long-Term Backup Verification:  Beyond Compare, in Windows and Ubuntu
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20171124082316im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20171124082316im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20171124082316im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20171124082316im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20171124082316im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20171124082316im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20171124082316im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20171124082316im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20171124082316im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20171124082316im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20171124082316im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20171124082316im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20171124082316im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20171124082316im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20171124082316im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20171124082316im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20171124082316im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20171124082316im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20171124082316cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=8996288a-7764-41c2-b97e-ad2080482fed" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20171124082316cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=8996288a-7764-41c2-b97e-ad2080482fed" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Tuesday, December 29, 2009
+        </h2>
+        <div class="post">
+         <a name="7389034875257415073">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/2009/12/long-term-backup-verification-beyond.html">
+           Long-Term Backup Verification:  Beyond Compare, in Windows and Ubuntu
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           Some time back,
+           <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/2007/08/long-term-file-backup-and-integrity.html">
+            I had looked into software
+           </a>
+           that would verify that I was not losing data without realizing it.  Data could disappear, as I have discovered, when files become corrupted but continue to look the same (until you try to open them).  Data could also disappear if files quietly vanish through unnoticed mistakes (e.g., hitting Delete when an archival folder is highlighted).  I had a backup system, in other words, but I lacked a way of checking whether anything might be falling through the cracks.  The programs I had examined in my previous investigation had not turned out to be quite what I was looking for, so I still had this need.
+           <br/>
+           <div>
+            <br/>
+           </div>
+           <div>
+            Then I became aware of
+            <a href="https://web.archive.org/web/20171124082316/http://www.scootersoftware.com/index.php">
+             Beyond Compare
+            </a>
+            from Scooter Software.  BC had gotten a lot of
+            <a href="https://web.archive.org/web/20171124082316/http://www.donationcoder.com/Reviews/Archive/CompareTools/index.html">
+             very positive
+            </a>
+            reviews from
+            <a href="https://web.archive.org/web/20171124082316/http://www.codinghorror.com/blog/archives/000454.html">
+             programmers
+            </a>
+            and
+            <a href="https://web.archive.org/web/20171124082316/http://www.freedownloadscenter.com/Reviews/r4885.html">
+             other users
+            </a>
+            <a href="https://web.archive.org/web/20171124082316/http://fileforum.betanews.com/review/1033118227/1/view">
+             here
+            </a>
+            and
+            <a href="https://web.archive.org/web/20171124082316/http://www.sofotex.com/reviews/r6020.html">
+             there
+            </a>
+            .  It came with a 30-day free trial offer, after which it would cost me $30.  Amid
+            <a href="https://web.archive.org/web/20171124082316/http://www.codinghorror.com/blog/archives/000454.html">
+             praises that sometimes seemed
+            </a>
+            to come from BC's own friends and/or employees, there were also references to
+            <a href="https://web.archive.org/web/20171124082316/http://www.araxis.com/merge/">
+             Araxis Merge
+            </a>
+            , which some considered much superior.  After expiration of the trial period, it was available for $169/259 (standard/professional), but there was supposedly an
+            <a href="https://web.archive.org/web/20171124082316/https://secure.bmtmicro.com/ECommerce-OffSite/00179/Products/online_order_form_step1.html">
+             academic discount
+            </a>
+            of about 70%.  Araxis Merge didn't offer a Linux version.  There were also a number of other file and folder
+            <a href="https://web.archive.org/web/20171124082316/http://en.wikipedia.org/wiki/Comparison_of_file_comparison_tools">
+             comparison tools
+            </a>
+            , some of which were free but few of which offered
+            <a href="https://web.archive.org/web/20171124082316/http://en.wikipedia.org/wiki/Cyclic_redundancy_check">
+             CRC checksum
+            </a>
+            calculation, which I wanted.  I decided to start with BC and see how that went.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            <b>
+             First Try:  Ubuntu Installation
+            </b>
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            There were versions of BC for Windows and for Linux. In the spirit of my gradual, long-term effort to
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/2007/07/running-winxp-pro-in-vmware-virtual.html">
+             move away from Windows
+            </a>
+            , I decided to start by trying the Linux version of the program.  I was running
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/2008/07/war-and-peace-creating-ubuntu-system.html">
+             64-bit Ubuntu
+            </a>
+            9.04 (Jaunty Jackalope).  Beyond Compare was a 32-bit program.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            The 32-bit version may have been very easy to install.  But it seemed I would have to make some adjustments in order to run this program on my 64-bit system.  I found two different sets of advice on how to make those adjustments.
+            <a href="https://web.archive.org/web/20171124082316/http://www.scootersoftware.com/vbulletin/showpost.php?p=14746&amp;postcount=9">
+             One was
+            </a>
+            for running BC on 32-bit Kubuntu 8.04.  I figured it would probably work, if I wanted to try it.  But
+            <a href="https://web.archive.org/web/20171124082316/http://www.scootersoftware.com/vbulletin/showpost.php?p=19891&amp;postcount=14">
+             the other
+            </a>
+            was for Ubuntu 9.04, so I decided to try that one.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            Following the latter set of instructions, I
+            <a href="https://web.archive.org/web/20171124082316/http://www.scootersoftware.com/download.php">
+             downloaded the .tar.gz
+            </a>
+            version of BC.  Ordinarily, it seems, it would have been necessary to download ia32-libs and libqt3-mt; but in my way of installing Ubuntu, Synaptic showed that these packages were already installed.  I unzipped (technically, I guess, I should say untarred) the file by using the "tar -zxf [filename]" format instead of the "tar -vxf [filename]" format that I had
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/2009/05/installing-ubuntu-904-jaunty-jackalope.html">
+             previously decided
+            </a>
+            I should use.  (I was definitely still in a learning mode for purposes of Ubuntu commands.)  Just out of curiosity, I deleted the resulting folder, went into a WinXP VM, right-clicked on the .tar.gz file, and told
+            <a href="https://web.archive.org/web/20171124082316/http://www.7-zip.org/">
+             7Zip
+            </a>
+            (one of my Windows XP utilities, with a right-click context menu option) to unzip it.  It did.  Once again, I had that folder containing a file called bcompare-3.1.4.10554.tar.  So if, like me, you weren't smart enough to just right-click on the tar.gz file and select Open with Archive Manager &gt; Extract, you could do it this other way.  Actually, in this case, the Windows approach may have been superior, because when I did belatedly try the Archive Manager approach, I got "An error occurred while extracting files."  So I went back and did it with Windows again after all.  This gave me a much larger .tar archive.  I used 7zip in WinXP again on this .tar file.  Now I had a regular folder called bcompare-3.1.4.10554.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            I decided to continue trying the GUI approach.  In Ubuntu's File Browser, I went into the unzipped folder and double-clicked on install.sh.  I got a dialog asking, "Do you want to run 'install.sh', or display its contents?"  I chose Run.  Nothing seemed to happen.  I went back to Terminal, navigated into that folder, and (reverting to
+            <a href="https://web.archive.org/web/20171124082316/http://www.scootersoftware.com/vbulletin/showpost.php?p=19891&amp;postcount=14">
+             the instructions
+            </a>
+            ) typed "sudo ./install sh".  Now it seemed to install.  At the end of its various messages, it said, "Please place the following in your .bashrc or .cshrc (etc.):  export PATH=/home/ray/bin:$PATH," where "ray" was my username.  It also said, "Executable is /home/ray/bin/bcompare."  It was apparently telling me that I had to add /home/ray/bin to my computer's path, so that the program would know where to look when I typed "bcompare" (or whatever) to start the program.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            I tried just typing "bcompare" right where I was in Terminal, but no joy.  So I navigated over to where it said it had installed itself:  "cd /home/ray/bin."  Sure enough, there was a file called "bcompare."  But when I typed "bcompare" there, I just got "command not found."  Double-clicking on bcompare didn't do anything either.  The installation instructions cited above said nothing about this.  Was I supposed to make it executable?  I typed "chmod +x bcompare" and then typed "bcompare" again, but this still just gave me "command not found."
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            It seemed I would have to figure out how to add something to my path, though I didn't understand what good that would be, if the damn thing wasn't executable.  I
+            <a href="https://web.archive.org/web/20171124082316/http://ubuntuforums.org/showthread.php?t=269793">
+             found instructions
+            </a>
+            that seemed to work, or at least they got me to an open .bashrc file.  I didn't find any path lines in that file to use as a model, so I gathered that I was just supposed to type exactly what they said.  I added it at the end of the .bashrc file as follows:
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            # add Beyond Compare to path [this is a non-executing comment]
+            <br/>
+           </div>
+           <div>
+            export PATH=/home/ray/bin:$PATH
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            I saved and closed .bashrc.  I opened a new Terminal session and typed "bcompare" at the $ prompt.  It said "bcompare: command not found."  I navigated to /home/ray/bin and tried again.  Same result.  I decided to back up and try the approach from
+            <a href="https://web.archive.org/web/20171124082316/http://www.scootersoftware.com/vbulletin/showpost.php?p=14746&amp;postcount=9">
+             that other webpage
+            </a>
+            , the one that was supposed to work in Kubuntu 8.04 with the .deb download.  Given ia32-libs and libqt3-mt (above), it now appeared that I had assumed that the installation of these libraries meant that the files I needed were installed in the right places -- that, in other words, Synaptic had already taken care of putting those lib files in their proper places.  But now it seemed that I should have copied over program files from one folder to another.  Putting this Kubuntu approach on hold, I reverted to
+            <a href="https://web.archive.org/web/20171124082316/http://www.scootersoftware.com/vbulletin/showpost.php?p=19891&amp;postcount=14">
+             the instructions
+            </a>
+            from the approach I had already worked through.  Specifically, the first command I apparently needed to enter was:
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            dpkg-deb --extract libqt3-mt_3.3.8-b-5ubuntu1_i386.deb libqt3-mt
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            changing the specific libqt3-mt file name as needed.  But at this point, not knowing what particular file that might be, I said to hell with it and downloaded the Windows version instead.  I then looked for a way to uninstall this version of Beyond Compare from my Ubuntu installation; but since I had not used Synaptic to install it, I did not seem to be finding
+            <a href="https://web.archive.org/web/20171124082316/http://www.ehow.com/how_4855070_uninstall-programs-ubuntu.html">
+             uninstallation instructions
+            </a>
+            that applied.  So it's still installed.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            <span style="font-weight: bold;">
+             Second Try:  Windows XP Installation
+            </span>
+            <br/>
+           </div>
+           <div>
+            <b>
+             <br/>
+            </b>
+            <br/>
+           </div>
+           <div>
+            I downloaded and ran the WinXP installer.  Interestingly, they had an option to create a "portable install," which could apparently be put on a removable USB drive or wherever, without making any changes to the registry.  Presumably it would still fail to work after the 30-day trial period unless I bought a license.  But if I was going to keep the program, this would definitely be a useful form for it.  So I went with that approach.  (One special advantage of this approach, for my purposes, was that I could put it on a drive other than drive C, within my computer, and could therefore make it available to all of my virtual machines under VMware Workstation, without having to reinstall it on each VM.)
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            The program seemed good.  I was impressed with the comparisons.  When I tried to use its help feature, I got an error message, "Navigation to the webpage was canceled."  I searched the database and didn't find anything, so I sent Scooter Software an e-mail about that.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            The folder comparison feature was very smooth.  Folders were color-coded according to whether they matched or not.  Black folders matched -- that is, they were identical.  Other colors seemed to indicate some degree of mismatch.  Lacking the help feature, I looked for a user's manual on the website.  All they had was a bunch of knowledgebase articles.  I'm sure these were very helpful for some purposes, but their titles revealed none on the subject of folder contents or colors.  Nonetheless, when I clicked on a purple folder, I saw that only one of its subfolders differed.  Eventually, I found that I could actually configure my own preferred colors for the following statuses:  same (i.e., the folders in the two comparison panes are the same), orphan, older, newer, and different.  There were also color options for file comparisons.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            Cool feature:  when you click on a folder on one side of the comparison screen, the problem automatically opens the parallel folder on the other side.  In other words, I'm looking into a subfolder on drive F, and it's opening up that folder for me; but at the same time it's also opening the comparison subfolder on drive H.  With just this much knowledge, within about a minute after starting to fool with the program for the first time, I was able to detect that there was one varying file, nested seven layers down, in a folder containing almost 30,000 files.  As far as I could tell, the difference was that the filename for the one had been truncated.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            One thing that I didn't find was the ability to reload an old comparison log and compare it against a new drive.  For example, suppose that, on December 31, 2007, I burn a CD to archive some files.  I compare that CD against the source folder on the hard drive.  Everything looks good.  Then, sometime during 2008, something happens and it appears that I may have lost some stuff from the hard drive.  What did I lose?  I don't know, because the hard drive has changed by now, and unfortunately I can't find the CD.  Ah, but if I could run a comparison of the hard drive's current state against the previously saved log comparing the hard drive and the CD on December 31, 2007, at least I could know what might be missing and take appropriate steps to replace or compensate for it.  Another scenario:  I back up my data every year, and now I want to see a single list of all the changes in my folders since 2003.
+            <br/>
+           </div>
+           <div>
+            <br/>
+           </div>
+           <div>
+            About this time, I realized that I had not actually examined the
+            <a href="https://web.archive.org/web/20171124082316/http://www.scootersoftware.com/vbulletin/">
+             support forums
+            </a>
+            at Scooter Software.  As it turned out, there were several hundred threads in those forums.  Some of them appeared to be exchanges between the proprietor of Scooter Software and his chief programmer, but whatever; it was still good to see the effort and interest in the product.
+            <br/>
+            <br/>
+            There was a lot more that I wanted to try with Beyond Compare, but I was not quite set up for some of that, so this is where the matter stopped for the time being.
+            <br/>
+           </div>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20171124082316/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=7389034875257415073&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/64-bit" rel="tag">
+             64-bit
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/Araxis%20Merge" rel="tag">
+             Araxis Merge
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/Beyond%20Compare" rel="tag">
+             Beyond Compare
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/compare%20files" rel="tag">
+             compare files
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/compare%20folders" rel="tag">
+             compare folders
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/CRC%20checksum" rel="tag">
+             CRC checksum
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/file%20comparison" rel="tag">
+             file comparison
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/folder%20comparison" rel="tag">
+             folder comparison
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/linux" rel="tag">
+             linux
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/Scooter%20Software" rel="tag">
+             Scooter Software
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/search/label/windows%20xp" rel="tag">
+             windows xp
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          2
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-2002730340551674730">
+           <a name="comment-2002730340551674730">
+           </a>
+           <a href="https://web.archive.org/web/20171124082316/https://me.yahoo.com/a/T2nukEklwsCglC9QzOGbqhEEUwDG" rel="nofollow">
+            Craig A.
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Hi Ray,
+            <br/>
+            <br/>
+            I'm the lead programmer at Scooter Software.  Your writeup was excellent, and I'm going to make sure everyone in the office sees it.  We are aware of the problems with 64-bit Linux support, and we are working on improving that.
+            <br/>
+            <br/>
+            I did want to address a few points you brought up.
+            <br/>
+            <br/>
+            1) I'm happy to say our our friends and family aren't artificially pumping up review scores.  Our customers really are that passionate.
+            <br/>
+            <br/>
+            2) The reason it didn't work when you extracted the .tar.gz with 7-zip is that, since 7-zip is a Windows program, it doesn't preserve the executable bit.  If you extract it with "tar -xfvz" on the command line the permissions will be set correctly.  If you've just extracted the archive, "install.sh", "BCompare", and "bcompare.sh" all need to be executable.  Also, if you run the installer as root instead of your regular user account it will install it in /usr/local/bin so you don't need to mess with your path.
+            <br/>
+            <br/>
+            3) To uninstall the .tar.gz you can just delete ~/bin/bcompare, ~/lib/beyondcompare, and ~/.beyondcompare.  I'll add a bug report regarding the lack of an uninstall script.
+            <br/>
+            <br/>
+            4) The "Navigation cancelled" message you received is a security change in Windows.  There's a good writeup about the issue at http://www.helpscribble.com/chmnetwork.html.  Normally it doesn't affect local drives or usb drives, but I don't know if we've tested in on a VMware mounted drive.  Based on your feedback we have put the help online at http://www.scootersoftware.com/help/index.html.  It's not linked to from the support page yet, but we'll do that soon.
+            <br/>
+            <br/>
+            5) We don't save the entire comparison log, but you can save a snapshot of a drive (timestamps/sizes/CRCs) using the Tools-&gt;Save Snapshot menu item.  You can then just load that file as one side of the comparison and BC can compare it against the live data.
+            <br/>
+            <br/>
+            6) Scooter Software's CEO is Tim, and my name is Craig.  We don't usually talk to each other in the forums.  We do have a number of customers who post much more frequently than Tim does, and if they make suggestions we will discuss it with them in public in case anyone else wants to chime in.
+            <br/>
+            <br/>
+            BTW, if you ever try it again, the portable Windows version does work well under Wine, and you shouldn't have to mess with 64-bit libraries in that case.
+            <br/>
+            <br/>
+            Thanks for helping us improve Beyond Compare.
+            <br/>
+            <br/>
+            Craig Peterson
+            <br/>
+            Scooter Software
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2002730340551674730" title="comment permalink">
+             December 31, 2009 at 12:04 PM
+            </a>
+            <span class="item-control blog-admin pid-650200291">
+             <a href="https://web.archive.org/web/20171124082316/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2002730340551674730" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-2039686428348719995">
+           <a name="comment-2039686428348719995">
+           </a>
+           <a href="https://web.archive.org/web/20171124082316/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I did ultimately wind up buying and using BC.  See the end of the post at http://raywoodcockslatest.blogspot.com/2010/06/ubuntu-1004-rsync-failed-to-set.html
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2039686428348719995" title="comment permalink">
+             June 13, 2010 at 8:24 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20171124082316/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2039686428348719995" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20171124082316/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=7389034875257415073" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20171124082316/http://raywoodcockslatest.blogspot.com/feeds/7389034875257415073/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 08:23:16 Nov 24, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:15:58 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.626
+  exclusion.robots: 0.081
+  exclusion.robots.policy: 0.074
+  esindex: 0.009
+  cdx.remote: 9.926
+  LoadShardBlock: 131.695 (3)
+  PetaboxLoader3.datanode: 174.029 (4)
+  load_resource: 98.688
+  PetaboxLoader3.resolve: 46.644
+-->

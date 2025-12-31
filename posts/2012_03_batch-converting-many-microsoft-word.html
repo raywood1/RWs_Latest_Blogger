@@ -1,0 +1,983 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151210034457im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/2012/03/batch-converting-many-microsoft-word.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/feeds/6059544534640477205/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Batch Converting Many Microsoft Word (.doc) Files to PDF - First Try
+  </title>
+  <link href="https://web.archive.org/web/20151210034457cs_/https://www.blogger.com/static/v1/widgets/1708208307-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151210034457cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151210034457im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151210034457im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151210034457im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151210034457im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151210034457im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151210034457im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151210034457im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151210034457im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151210034457im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151210034457im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151210034457im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151210034457im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151210034457im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151210034457im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151210034457im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151210034457im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151210034457im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151210034457im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Sunday, March 18, 2012
+        </h2>
+        <div class="post">
+         <a name="6059544534640477205">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/2012/03/batch-converting-many-microsoft-word.html">
+           Batch Converting Many Microsoft Word (.doc) Files to PDF - First Try
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had
+           <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/2012/03/batch-converting-many-text-files-to-pdf.html" target="_blank">
+            recently figured out
+           </a>
+           how to batch convert many text files to PDF.  Now I was on a roll.  I wanted to know how to do the same thing with word processing documents produced in Microsoft Word 2003.
+           <br/>
+           <br/>
+           The approach used for the text files didn't seem likely to produce good results for Word files.  The text approach used Notepad on the command line.  Notepad would lose all the formatting.  It might actually create a mess.  It seemed there would probably be a better way.
+           <br/>
+           <br/>
+           In that previous approach, I had configured my default PDF printer,
+           <a href="https://web.archive.org/web/20151210034457/http://www.bullzip.com/products/pdf/info.php" target="_blank">
+            Bullzip
+           </a>
+           , to shut up and stop asking questions.  So it sailed right through the printing task.  When producing complete garbage, I prefer not to be interrupted -- although, in that case, the output actually seemed OK.  In similar spirit, I wished for a Word conversion process that would just follow orders.
+           <br/>
+           <br/>
+           I thought of setting Bullzip in minimal-interruption mode, as in the text file approach, and just selecting a gaggle of Word docs in Windows Explorer, right-clicking, and choosing Print.  Sad to say, Windows 7 was not interested in giving me a print option when I selected more than 15 items.  So I would have to repeat the process with groups of 15 files at a time.  This did not fall within my definition of hassle-free.
+           <br/>
+           <br/>
+           Seeking some alternate approach, I did
+           <a href="https://web.archive.org/web/20151210034457/https://www.google.com/search?q=%22Microsoft+Word%22+%22command+line%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">
+            a search
+           </a>
+           .  I was thinking, first, that maybe Word had command line options like Notepad.
+           <a href="https://web.archive.org/web/20151210034457/http://support.microsoft.com/kb/210565" target="_blank">
+            Microsoft
+           </a>
+           did not seem to offer any such option.
+           <a href="https://web.archive.org/web/20151210034457/http://social.technet.microsoft.com/Forums/en-US/word/thread/5eb3514e-7f3a-4f56-87ab-b2e22c06192f/" target="_blank">
+            Others
+           </a>
+           concurred that I would probably need some kind of macro, script, or other third-party solution.
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20151210034457/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=V24&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=print+OR+convert+DOC+%22to+PDF%22+Word+%22command+line%22&amp;oq=print+OR+convert+DOC+%22to+PDF%22+Word+%22command+line%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=3&amp;gs_upl=25928l31501l0l32495l23l19l0l0l0l0l833l3967l7.6.3.5-2.1l19l0&amp;gs_l=serp.3...25928l31501l0l32495l23l19l0l0l0l0l833l3967l7j6j3j5-2j1l19l0.frgbld." target="_blank">
+            Another search
+           </a>
+           led to some relatively less desirable solutions, such as buying
+           <a href="https://web.archive.org/web/20151210034457/http://fineprint.com/" target="_blank">
+            Fineprint
+           </a>
+           or
+           <a href="https://web.archive.org/web/20151210034457/http://www.a-pdf.com/office-to-pdf/index.htm" target="_blank">
+            A-PDF
+           </a>
+           or
+           <a href="https://web.archive.org/web/20151210034457/http://www.pdfonline.com/easypdf/sdk/" target="_blank">
+            easyPDF SDK
+           </a>
+           (seemingly complicated) or using
+           <a href="https://web.archive.org/web/20151210034457/http://www.suodenjoki.dk/us/productions/articles/word2pdf.htm" target="_blank">
+            a combination
+           </a>
+           of VBScript and Automation or uploading Word docs to
+           <a href="https://web.archive.org/web/20151210034457/http://www.ocrconvert.com/" target="_blank">
+            OCR Convert
+           </a>
+           or using
+           <a href="https://web.archive.org/web/20151210034457/http://code.google.com/p/anytopdf/" target="_blank">
+            AnyToPDF
+           </a>
+           , which admirably developed OpenOffice but would require the system to restart OO for each document being printed.  I found
+           <a href="https://web.archive.org/web/20151210034457/http://superuser.com/questions/393118/how-to-convert-word-doc-to-pdf-from-windows-command-line" target="_blank">
+            a thread
+           </a>
+           that yielded other possibilities, including an apparent Word command-line possibility after all.  It seemed to require something called Quiet PDF Printer, which I could not locate.
+           <br/>
+           <br/>
+           As I was browsing Wikipedia's
+           <a href="https://web.archive.org/web/20151210034457/http://en.wikipedia.org/wiki/List_of_PDF_software" target="_blank">
+            list of PDF software
+           </a>
+           , not seeing much of relevance, I realized I would much prefer a solution that would use Word, as distinct from some other program, so as to have the greatest likelihood of preserving formatting.  After all, I was not planning to inspect the resulting PDFs closely.  I didn't want to find out, a year down the line, long after I had discarded the original Word docs, that the PDFs were missing the bottom two lines of text, or that important characters were being misprinted or something.  No doubt this approach of opening Word was going to be slow, though, as in the OpenOffice alternative disparaged above.
+           <br/>
+           <br/>
+           I saw that Quiet PDF Printer suggestion repeated in
+           <a href="https://web.archive.org/web/20151210034457/http://www.autohotkey.com/forum/topic10600.html" target="_blank">
+            another thread
+           </a>
+           , but without any mention of Quiet PDF Printer.  Maybe the first person who mentioned it meant that I should just have a no-hassle PDF printer, like Bullzip with the desired settings.  Anyway, the suggestion was to run this command:
+           <br/>
+           <blockquote class="tr_bq">
+            "C:\Program Files\Microsoft Office\Office\winword.exe" "C:\My Documents\doc1.doc" /mFilePrintDefault
+           </blockquote>
+           Of course, the path to winword.exe would have to be adjusted on some systems, and doc1.doc was just an example.  But the point is, it worked.  One problem:  it left Word running, and another iteration of the command opened another instance of Word.  So unless I wished to have a couple hundred unused Word sessions lounging around, consuming system resources, I would need to kill Word after printing the PDF.  Further reading in that same thread led to a refinement:
+           <br/>
+           <blockquote class="tr_bq">
+            "C:\Program Files\Microsoft Office\Office\winword.exe" test.rtf /q /n /mFilePrintDefault /mFileExit
+           </blockquote>
+           The description seemed to say that (1) those last two items were actually Word's way of calling a macro on the command line; (2) the selection of commands available for such use was visible in this menu pick in Word 2003:  Tools &gt; Macro :&gt; Macros &gt; Macros in Word Commands (in ribbon versions of Word, try this key sequence:  Alt-T, M, M); (3) FilePrintDefault and FileExit were two such commands); and (3) if I went into Tools &gt; Options &gt; Print tab &gt; uncheck Background Printing, I would not have Word exiting before the PDF was done printing.
+           <br/>
+           <br/>
+           I decided to try that last command line approach.  I made the stated settings changes in Word, and set Bullzip to stun.  Now it was a question of working up the list of commands, for all these Word documents that I wanted to PDF.  Ordinarily, I would have used
+           <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/2012/03/batch-converting-many-text-files-to-pdf.html" target="_blank">
+            a combination of DIR and Excel
+           </a>
+           for that purpose, with one command per file, producing a batch file containing many commands.  But spring had arrived and, you know, in spring a man begins to feel powerful urges.  My social life being what it was, this translated into some
+           <a href="https://web.archive.org/web/20151210034457/http://stackoverflow.com/questions/9744520/batch-combining-two-pieces-of-text-on-one-line-in-a-loop" target="_blank">
+            recent experimentation
+           </a>
+           with looping batch files.  That is, I believed I might be able to devise a batch program that would provide a simpler (or at least more direct) way to run this printing process.  So, from a command prompt in the folder containing my Word docs, I ran a batch file that I called Printit.bat.  That batch file contained just one line, though it wraps over several lines here.  The line was:
+           <br/>
+           <blockquote class="tr_bq">
+            <span style='font-family: "Trebuchet MS", sans-serif;'>
+             FOR /F %%g IN ('dir /b *.doc') DO "C:\Program Files (x86)\Microsoft Office\OFFICE11\WINWORD.EXE" test.rtf /q /n /mFilePrintDefault /mFileExit
+            </span>
+           </blockquote>
+           Word immediately gave me a message indicating that it had encountered an error.  I wondered if that was because I had a session of Word open before running the batch file.  But that didn't seem to be the answer.  Well, maybe it was because I already had a PDF printout of the first file in the folder.  I had created that PDF during the process of testing this stuff.  Apparently my batch file and/or Word were not going to dilly-dally to ask me about overwriting.  So now I deleted that preexisting PDF and tried again.  No, that wasn't it; I still got the error.  This time, instead of guessing, I clicked its Show Help button and got an explanation:
+           <br/>
+           <blockquote class="tr_bq">
+            The file you tried to open was not found. . . . [If the file exists but] does not open, it is either corrupt, locked by another application, or is protected by file permissions.
+           </blockquote>
+           So, silly me, I looked again at my batch command.  Test.rtf?  WTF was Test.rtf?  I had copied the foolish thing verbatim, without pausing to reflect.  When your professors try to tell you how important it is to master critical thinking, believe them.  They're right.  As it turned out, there were multiple problems with that first try at a batch command.  One of those problems was that, contrary to initial hopes, Word was actually not postponing the next doc until it had closed the previous doc; therefore, it was stumbling over itself.  The solution was a batch file containing this one long line:
+           <br/>
+           <blockquote class="tr_bq">
+            <span style='font-family: "Trebuchet MS", sans-serif;'>
+             FOR /F "usebackq delims=" %%g IN (`dir /b "*.doc"`) DO "C:\Program Files (x86)\Microsoft Office\OFFICE11\WINWORD.EXE" "%%g" /q /n /mFilePrintDefault /mFileExit &amp;&amp; TASKKILL /f /im winword.exe
+            </span>
+           </blockquote>
+           The changes were mainly to add USEBACKQ and to change quotation marks (and use backquotes) accordingly, and also to add the "&amp;&amp; TASKKILL" part.  The &amp;&amp; said that the next part (the taskkill) should proceed only after the previous command on the same line (i.e., printing) ran successfully.  From this point, the process ran pretty smoothly.  I found that it did not seem to matter if I already had a Word session active when this ran.  (If there was such a session, I would get a dialog; maybe I should have added another instance of TASKKILL before starting the FOR loop.)  Also, I found that Word would prompt me before overwriting.  I also had an interruption for
+           <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/2012/03/microsoft-word-attempting-to-open-file.html" target="_blank">
+            a problem
+           </a>
+           encountered when the batch file tried to convert a file created in an earlier version of Word.
+           <br/>
+           <br/>
+           There was another problem.  I got a dialog saying, "There is insufficient memory."
+           <a href="https://web.archive.org/web/20151210034457/https://www.google.com/search?q=%22there+is+insufficient+memory%22+%22Word+2003%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">
+            A search
+           </a>
+           led to
+           <a href="https://web.archive.org/web/20151210034457/http://support.microsoft.com/kb/813997#appliesto" target="_blank">
+            a Microsoft webpage
+           </a>
+           that said this could result from a cramped paging file, or from some antivirus software or from using floppy disks.  None of these seemed to apply in my case.
+           <a href="https://web.archive.org/web/20151210034457/http://answers.microsoft.com/en-us/office/forum/office_2003-word/there-is-insufficient-memory-when-opening-word/5cfa5ac6-31c4-4f5a-bf60-079dd1e3bcb9?msgId=e3e43925-161c-40f3-b775-da4417c26c77" target="_blank">
+            Another discussion
+           </a>
+           said that maybe this problem came from a corrupted Normal.dot.  That was a possibility in my case; I had occasional error messages involving Normal.dot.
+           <a href="https://web.archive.org/web/20151210034457/http://blogs.msdn.com/b/vsod/archive/2009/03/16/word-2003-sp3-throws-intermittent-error-there-is-insufficient-memory-save-the-document-now.aspx" target="_blank">
+            Another potential cause
+           </a>
+           :  abnormal termination of Word (such as I was doing myself, in this batch file, with TASKKILL), leaving junk in the %Temp% folder (located via Start &gt; Run &gt; %Temp% -- in my case, C:\Users\Ray\AppData\Local\Temp).  Cleaning out the %Temp% folder seemed to help:  there were hardly any memory error messages during the rest of the process.  The process seemed suitably restrained, whether by the "&amp;&amp;" device or otherwise, to the point that (judging from system tray icons) there were usually no more than one or two Bullzip processes underway at once.
+           <br/>
+           <br/>
+           When the process was done, most but not all of the DOCs had been converted.  I looked at the ones that had not.  (For that, I use an Excel comparison, with VLOOKUP, of filelists obtained by DIR from the input and output folders.)  All gave me an "insufficient memory" error when I tried to open them in Word.  Some seemed to be corrupted to various degrees.  I used Notepad and
+           <a href="https://web.archive.org/web/20151210034457/http://wwidgets.com/us_wReplace.html" target="_blank">
+            wReplace
+           </a>
+           to slightly clean up the ones whose corruption prevented them from printing to PDF in a more or less normal fashion.  (In wReplace, the option I used was Replace Many &gt; Open (arrow) &gt; Diacritic to ASCII.)  Several others were printable, but I hadn't printed them.  That is, when the batch file was running, Word kept asking me if I wanted to save changes to (or to print; can't remember for sure) a document with a weird name.  The same name, over and over again.  I thought it was some kind of error, since that name wasn't in my file list.  Possibly this problem had something to do with the fact that these documents were originally created on a Mac and then converted.  So I had to PDF those manually.
+           <br/>
+           <br/>
+           Next, I wanted to take a quick look, to see whether any of the resulting PDFs were actually junk -- whether, for any reason, some of them made it through the process in garbled form.  For that, I took
+           <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/2012/03/using-screenshots-to-examine-many-files.html" target="_blank">
+            the approach
+           </a>
+           of converting just the first page of each PDF to JPG, and then flipping through them in a photo viewer (e.g., IrfanView).  This process did turn up a few corrupted documents.  I was able to verify that they had been corrupted before I started this process; it did not appear that the steps described here had any effect.
+           <br/>
+           <br/>
+           I wasn't extremely concerned about these documents.  If I had been, I think a modified strategy would have been advisable:  take a quick look through all of the documents, as just mentioned, and then take a closer look at any that seemed important.  It would have been handy, for that purpose (and others), to have image- (and audio-) viewing (or listening) software that would not only display the item in question, but would also let me shove it into various categories with the touch of a key.  In this case, the categories would have been OK and Not OK and Examine More Closely.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151210034457/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=6059544534640477205&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/search/label/batch" rel="tag">
+             batch
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/search/label/command%20line" rel="tag">
+             command line
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/search/label/convert" rel="tag">
+             convert
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/search/label/doc" rel="tag">
+             doc
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/search/label/pdf" rel="tag">
+             pdf
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/search/label/word" rel="tag">
+             word
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          3
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-7196542043067830190">
+           <a name="comment-7196542043067830190">
+           </a>
+           <a href="https://web.archive.org/web/20151210034457/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            The TASKKILL part of the command turned out to be redundant of the /mFileExit option, in most if not all cases.  I left it in there, first, because I overlooked it and, second, when I did return to it, because I thought it couldn't hurt and there might be some situations where it would provide a helpful return to the starting point.  Note also that, on one or two occasions when the process hung up because of some glitch in Word or in the file being converted, killing Word manually would allow the process to resume with the next file, and I could then catch at least an obvious failure during the ensuing output check phase.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7196542043067830190" title="comment permalink">
+             March 19, 2012 at 2:03 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151210034457/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7196542043067830190" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-8206426460848659461">
+           <a name="comment-8206426460848659461">
+           </a>
+           <a href="https://web.archive.org/web/20151210034457/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            <a href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/2012/03/batch-converting-many-microsoft-word_19.html" rel="nofollow">
+             A later post
+            </a>
+            provides a more refined solution to the problem addressed here.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-8206426460848659461" title="comment permalink">
+             April 2, 2012 at 5:13 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151210034457/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=8206426460848659461" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-7729590155471128047">
+           <a name="comment-7729590155471128047">
+           </a>
+           <a href="https://web.archive.org/web/20151210034457/https://www.blogger.com/profile/15290203926012898800" rel="nofollow">
+            M. Faramawy
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Many thanks to your solution for converting word files to pdf files by this easy way.
+            <br/>
+            But the command you does not work well.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7729590155471128047" title="comment permalink">
+             November 13, 2012 at 2:06 AM
+            </a>
+            <span class="item-control blog-admin pid-987200711">
+             <a href="https://web.archive.org/web/20151210034457/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7729590155471128047" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151210034457/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=6059544534640477205" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151210034457/http://raywoodcockslatest.blogspot.com/feeds/6059544534640477205/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 03:44:57 Dec 10, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:33:02 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.653
+  exclusion.robots: 0.086
+  exclusion.robots.policy: 0.075
+  esindex: 0.009
+  cdx.remote: 50.613
+  LoadShardBlock: 181.977 (3)
+  PetaboxLoader3.datanode: 128.752 (4)
+  PetaboxLoader3.resolve: 159.126 (2)
+  load_resource: 209.229
+-->

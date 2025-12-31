@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053804cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053804im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053804/http://raywoodcockslatest.blogspot.com/2009/03/ubuntu-and-vmware-cannot-install-this.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/feeds/1383166220174093195/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053804/http://raywoodcockslatest.blogspot.com/2009/03/ubuntu-and-vmware-cannot-install-this.html" property="og:url"/>
+  <meta content="Ubuntu and VMware:  Cannot Install This Hardware" property="og:title"/>
+  <meta content="This situation arose while I was in a previously described process  of installing Windows XP SP2 and SP3 in VMware Workstation 6.5 on Ubuntu..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu and VMware:  Cannot Install This Hardware
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053804im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053804im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053804im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053804im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053804im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053804im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053804im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053804im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053804im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053804im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053804im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053804im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053804im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053804im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053804im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053804im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053804im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053804im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053804cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053804cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Sunday, March 15, 2009
+        </h2>
+        <div class="post">
+         <a name="1383166220174093195">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/2009/03/ubuntu-and-vmware-cannot-install-this.html">
+           Ubuntu and VMware:  Cannot Install This Hardware
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           This situation arose while I was in
+           <a href="https://web.archive.org/web/20190906053804/http://raywoodcockslatest.blogspot.com/2009/02/ubuntu-and-vmware-new-installation.html">
+            a previously described process
+           </a>
+           of installing Windows XP SP2 and SP3 in VMware Workstation 6.5 on Ubuntu Linux 8.10 (Intrepid Ibex).  See that previous post for more background information.
+
+At this point, matters had developed as follows:  VMware had been unable to run the WinXP virtual machine (VM) that I had created, using VMware Converter, from a preexisting Windows installation.  In other words, I had installed Windows on my computer as usual; I had used Converter to convert a copy of that Windows installation into a VM; I had rebooted into Ubuntu and had tried to run that VM within VMware; and it didn't work.  The system really never got past loading Windows, giving me a BSOD (blue screen of death), and rebooting, in an eternal recurrence.
+
+So I went back to the Windows installation and tried again.  That previous attempt had involved a Windows XP SP2 (service pack 2) installation, and that had made it difficult to run the System File Checker (sfc /scannow) program in Windows.  I thought that might be helpful, and I came across a deal, so I got a WinXP SP3 CD and tried again.  (Could also have slipstreamed SP2 with SP3 to create an SP3 CD.)  Then I started over with a new WinXP installation, using this new SP3 CD.  This time, unlike last time, I installed only a partial (but large) selection of my Windows programs and utilities.  These were programs that I wanted every one of my VMs to have, so it made sense to install them once and then make clones of the resulting VM.  For purposes of conserving disk space, backup space, and system load time, I wanted all this to fit within a 20GB rather than 30GB VM.  So I left out some big, space-consuming programs.  I figured I would add those later to one larger, 30GB VM.
+
+Installing numerous programs before running VMware Converter was a different approach from
+           <a href="https://web.archive.org/web/20190906053804/http://raywoodcockslatest.blogspot.com/2008/07/war-and-peace-creating-ubuntu-system.html">
+            the one I had taken previously
+           </a>
+           , when I had installed VMware Workstation on Ubuntu 8.04 (Hardy Heron).  That approach had worked pretty well:  the VM had run successfully in VMware on Ubuntu, and I had then added most of my Windows programs to it after doing the conversion.  This time around, as noted above, an alternate approach had failed.  This time, I had tried to add all of my programs to my WinXP installation before creating the VM, and that 30GB VM had failed to boot, as just described.  So in this second try, I had (1) upgraded to WinXP SP3 and (2) installed only a selection of Windows programs, to a 20GB partition, before running VMware Converter to create a 20GB VM.  So that's the situation we begin with.
+
+This 20GB VM did succeed in running in VMware Workstation, but it was very slow.  It seemed that part of the problem was that it was not succeeding in installing the virtual "hardware" that Workstation pretends to be using.  That is, my real, partial installation had been on a system with a Foxconn motherboard and an AMD CPU; but now VMware Workstation was trying to run that installation on a virtual system with a generic, virtual motherboard and CPU supplied by VMware.  But at least it did run, so apparently the crucial difference between running and not running was due to (1) the use of SP3 rather than SP2 and/or (2) the elimination of one or more installed programs that had made it impossible for the 30GB VM to load and run.
+
+What was happening, at this point, was that the WinXP VM would give me the "Found New Hardware" wizard; I would tell it to go ahead and install itself; and it would then give me a "Cannot install this hardware" error message.  It seemed that VMware Workstation, itself, was not supplying the drivers that its own generic virtual hardware needed.  The more successful approach would have been to do as I did before:  set up just a basic WinXP installation in my Windows dual-boot, create a VM from that, and then install additional programs on the VM.  I didn't want to do it that way because I wanted to have a Windows native boot that was more or less the same as my Windows VMs, and I didn't want to have to invest twice the time in installing and configuring all those various programs, add-ins, etc.
+
+So, to go through it more carefully, here's what would happen in this VM.  The VM booted.  It loaded the programs I had installed in my Startup folder.  It gave me various messages (e.g., "30 days left for activation.  To activate Windows now, click here.").  I ran Windows Explorer and verified that the Internet connection was active.
+
+I went into Control Panel &gt; System &gt; Hardware &gt; Device Manager.  There, I saw a yellow circle with a black exclamation mark in it, next to "Other devices - Video Controller (VGA Compatible)."  I right-clicked on that and chose "Update driver."  This gave me, "Welcome to the Hardware Update Wizard."  As before, I chose "Install the software automatically (Recommended)," and after a short pause, that gave me "Cannot Install this Hardware."
+
+I did
+           <a href="//web.archive.org/web/20190906053804/https://www.google.com/search?q=vmware+%22cannot+install+this+hardware%22+video+OR+graphics&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS291US291">
+            a Google search
+           </a>
+           and found that there didn't seem to be many people having this problem.  Actually, I was one of the few.  In
+           <a href="https://web.archive.org/web/20190906053804/http://raywoodcockslatest.blogspot.com/2008/07/vmware-in-ubuntu-putting-it-all.html">
+            a previous post
+           </a>
+           , I had apparently found that I was supposed to be looking for a driver for a "VMware SVGA II" video adapter, which was more than Device Manager had been willing to tell me.  In Device Manager, I right-clicked on the yellow-exclamation-marked "Video Controller" item and chose Properties &gt; General &gt; Reinstall Driver &gt; Install from a list or specific location &gt; Next &gt; Don't search.  That gave me a list of hardware items, but none of them had names beginning with "VMware."  I chose Display Adapters &gt; Next, but this gave me, "Unable to find any drivers for this device."
+           <a href="https://web.archive.org/web/20190906053804/http://qemu-forum.ipi.fi/viewtopic.php?f=4&amp;t=4873">
+            One poster said
+           </a>
+           s/he had gotten relief from this problem after, among other things, proceeding to install the mouse drivers.  I thought maybe just skipping the problem on this boot would give VMware a chance to install other hardware drivers to adjust to this new setup, so I canceled out of Device Manager and waited for the system to identify and install some more hardware.  But nothing happened.  Everything else was installed already, as I now recalled from what I had just seen in Device Manager.
+
+Lacking other ideas, I decided to reboot.  Things were unchanged.  I did
+           <a href="//web.archive.org/web/20190906053804/https://www.blogger.com/%22VMware%20SVGA%20II%22%20%22workstation%206.5%22%20-leopard%20-intitle:download%20-intitle:downloads">
+            another Google search
+           </a>
+           .  One post said something about needing a minimum of 128MB RAM for the VM.  That wasn't a problem, but maybe the opposite was:  I saw that VMware was allocating over 3GB to this VM.  I wanted it to get a maximum of 1GB.  I had to start VMware as root in order to change it.  I went to Ubuntu's Terminal and typed "sudo vmware."  Then, in VMware, I went to Edit &gt; Preferences.  I didn't change anything there, but I did notice the option of setting hardware compatibility to previous versions of VMware.  That seemed like one possible solution; I had seen
+           <a href="https://web.archive.org/web/20190906053804/http://qemu-forum.ipi.fi/viewtopic.php?f=4&amp;t=4873">
+            one post
+           </a>
+           where somebody had found a working video driver in an older version of Workstation (5.5.3).
+
+Still in Workstation as root, I next went to VM &gt; Settings &gt; Hardware and changed the Memory setting to 1024MB.  Also, although I was running a triple-core processor, I thought I might as well try changing the Processors setting to One instead of Two; maybe VMware would let other VMs use the other cores.  For the Display setting, I changed from "Use host settings for monitors" to "Specify settings for monitors," and I specified a maximum resolution of 1280 x 1024.  I also checked the "Accelerate 3D graphics" box.  In the Options tab, I set Shared Folders to "Always enabled" and I changed Guest Isolation to be "Enable VM communication interface (VMCI)."
+
+I saved those changes, quit Workstation, and restarted it the normal way (i.e., Ubuntu's Applications &gt; System Tools &gt; VMware Workstation option), and then started this VM.  It started slowly, like before.  But this time, when the Found New Hardware wizard came up, it was concerned with a different piece of hardware:  not the virtual VGA graphics, but rather the Base System Device, whatever that was.  I guessed that it went on to this problem because the wizard dialog box added a checkmark by default to the "Don't prompt me again to install this software" option, so apparently the system just went on to the next thing in that case.  I went into Device Manager as above, and now saw I had not one, but two "Other devices" with the yellow exclamations:  the Video Controller, and now this.  I told the Found New Hardware Wizard to install automatically, but once again, it was not able to do so.  In Device Manager, I right-clicked on these two items and chose Uninstall.  I then chose VM &gt; Install VMware Tools.  I restarted the VM.  The video and Base System hardware wizard installations failed again.  I unchecked the "Don't prompt" option in each case and continued.
+
+Nothing else seemed to be happening, so I fired up Internet Explorer and went to
+           <a href="https://web.archive.org/web/20190906053804/http://update.microsoft.com/">
+            Windows Update
+           </a>
+           .  It needed to validate my copy of Windows, and to do that it needed to activate it.  It seemed like I had already activated it on the native WinXP installation; if so, apparently the VMware hardware was sufficiently different as to trigger Microsoft's anti-piracy sensors.  So I activated.  Now Microsoft Update told me there was just one update, an optional hardware update for my sound hardware, so I installed that.  I re-ran it and there were no further updates.  Device Manager still had the same two yellow exclamation items.  I was stuck.
+
+I rebooted the VM and did
+           <a href="//web.archive.org/web/20190906053804/https://www.google.com/search?q=%22VMware+SVGA+II%22+driver&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS291US291">
+            another Google search
+           </a>
+           .  This time, when the Found New Hardware Wizard came up for the VGA, I chose "Install from a list or specific location" &gt; "Don't search.  I will choose the driver to install" &gt; "Sound, video and game controllers."  Unfortunately, that gave me only three game port options, so that wasn't the solution.  I backed up and, instead of sound and video, I said "Show All Devices."  The list of manufacturers that eventually came up didn't have any entries for VMware, SVGA, video, or graphics.  It seemed I was in the wrong place, so I backed up one step.  Ah!  In the list of "Common hardware types," I had overlooked "Display adapters."  I went with that, but it didn't make any difference.  I got a message, "Unable to find any drivers for this device."
+
+I
+           <a href="https://web.archive.org/web/20190906053804/http://www.downloadatoz.com/driver/item_239212.html">
+            found a webpage
+           </a>
+           where I could download a driver for SVGA II.  It claimed to be version 11.11.0.0.  It was actually an EXE file, and when I ran it, it said something about unplugging my USB Ethernet adapter.  Apparently it was a driver for some kind of device I didn't have.  It ended by saying the system would install it automatically.  Whatever.  I clicked Cancel on this and also on the Base System wizard.  In the latter case, at least, I did it without unchecking the "Don't prompt me" option.  This gave me a balloon:  "Found New Hardware.  A problem occurred . . . ."
+
+I restarted the VM.  The VGA thing still didn't install; same Found New Hardware and Cannot Install This Hardware dialogs as before.  I found another download page,
+           <a href="https://web.archive.org/web/20190906053804/http://download.cnet.com/VMware-SVGA-II/3000-2108_4-84000.html">
+            a more official CNET one
+           </a>
+           , for a driver for SVGA II version 10.7.2.0 that was dated September 30, 2001.  But that just redirected me to the VMware download page, and they didn't have drivers, only complete Workstation packages.
+
+I went into Device Manager and decided to try updating the driver for the Base System Device.  The update option led me to the "Common hardware types" dialog box again.  This time, I selected "System devices."  It showed only a "Compaq Deskpro Thermal Sensor."  What?  Well, OK; I clicked on Next.  But the system gave me a warning, "Installing this device driver is not recommended because Windows cannot verify that it is compatible with your hardware."  So forget that.
+
+I
+           <a href="https://web.archive.org/web/20190906053804/http://communities.vmware.com/message/1200214#1200214">
+            posted a question
+           </a>
+           in a VMware forum.  In a day or two, I had what looked like an answer.  The explanation seemed to be that I was getting those yellow exclamation circles because VMware Tools were not actually installed.  After clicking VM &gt; Install VMware Tools, I was supposed to see VMware Tools listed in Windows Explorer as my new drive D -- as, in other words, a virtual CD drive.  Sure enough, there it was.  (It sounded like this could vary somewhat if I had received VMware Workstation on a CD.  I didn't.  I got it as a download.  So this was just a virtual CD drive.)
+
+The advice was to run Setup.exe there.  I did.  It thought it was just taking an unbelievably long time to run, but then I decided to scroll around the screen and see what was going on.  In other words, I couldn't see my whole Windows desktop at once, because VMware Tools was not yet installed.  The resolution was too big.  So now, when I scrolled to the top of the screen, I saw a dialog that said, "Please insert the Compact Disc labeled 'Windows XP CD-ROM' into your CD-ROM drive (D:) and then click OK."  I did that.  It started installing stuff -- including, I noticed, the SVGA driver.  Along the way, it asked for the locations of various files.  I had copied the I386 folder from the WinXP CD to my hard drive C before running Converter to create the VM, so for the most part I just had to point these dialogs to C:\I386 and they found what they were looking for there.  Installation completed, and I got a dialog telling me I needed to reboot, which I did.  Device Manager now showed no yellow exclamation circles.  Everything was working normally.  So that was the answer.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053804/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=1383166220174093195&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/search/label/cannot%20install%20this%20hardware" rel="tag">
+             cannot install this hardware
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/search/label/vmware" rel="tag">
+             vmware
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/search/label/windows%20xp" rel="tag">
+             windows xp
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053804/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=1383166220174093195" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053804/https://raywoodcockslatest.blogspot.com/feeds/1383166220174093195/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:38:04 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:11:48 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.803
+  exclusion.robots: 0.103
+  exclusion.robots.policy: 0.091
+  esindex: 0.011
+  cdx.remote: 28.638
+  LoadShardBlock: 156.051 (3)
+  PetaboxLoader3.resolve: 138.572 (3)
+  PetaboxLoader3.datanode: 186.318 (4)
+  load_resource: 174.974
+-->

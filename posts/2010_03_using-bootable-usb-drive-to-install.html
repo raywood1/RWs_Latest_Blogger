@@ -1,0 +1,951 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20150301091415im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/2010/03/using-bootable-usb-drive-to-install.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/feeds/3113680179305739970/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Using a Bootable USB Drive to Install Windows XP on an Uncooperative Laptop
+  </title>
+  <link href="https://web.archive.org/web/20150301091415cs_/https://www.blogger.com/static/v1/widgets/728935430-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20150301091415cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=fde3e388-6511-4bfa-84e6-f325099fd6ac" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20150301091415im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20150301091415im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20150301091415im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20150301091415im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20150301091415im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20150301091415im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20150301091415im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20150301091415im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20150301091415im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20150301091415im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20150301091415im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20150301091415im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20150301091415im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20150301091415im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20150301091415im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20150301091415im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20150301091415im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20150301091415im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Saturday, March 13, 2010
+        </h2>
+        <div class="post">
+         <a name="3113680179305739970">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/2010/03/using-bootable-usb-drive-to-install.html">
+           Using a Bootable USB Drive to Install Windows XP on an Uncooperative Laptop
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            As described in
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/2010/03/windows-xp-sp3-cd-wont-boot.html">
+             another post
+            </a>
+            , I was trying to install WinXP on a
+            <a href="https://web.archive.org/web/20150301091415/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;safe=off&amp;client=firefox-a&amp;hs=pk9&amp;rlz=1R1GGGL_en___US333&amp;q=compaq+presario+cq60-420us&amp;btnG=Search">
+             Compaq Presario CQ60-420US
+            </a>
+            laptop that would not boot from a Windows XP installation CD.  This post describes the steps I took to try to install from a USB flash drive instead.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            I looked for
+            <a href="https://web.archive.org/web/20150301091415/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;safe=off&amp;client=firefox-a&amp;hs=PhV&amp;rlz=1R1GGGL_en___US333&amp;q=slipstream+xp+sp3+bootable+usb&amp;btnG=Search">
+             guides
+            </a>
+            on how to create a bootable USB drive using WinXP SP3.  One webpage suggested that I could use
+            <a href="https://web.archive.org/web/20150301091415/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;safe=off&amp;client=firefox-a&amp;hs=PhV&amp;rlz=1R1GGGL_en___US333&amp;q=slipstream+xp+sp3+bootable+usb&amp;btnG=Search">
+             UBCD for Windows
+            </a>
+            (UBCD4Win).  I had already installed UBCD4Win on the computer I was using for this investigation, so I thought this approach might make the process faster.  Following the steps on
+            <a href="https://web.archive.org/web/20150301091415/http://wiki.eeeuser.com/create_ubcd4win">
+             that webpage
+            </a>
+            , I created a supposedly bootable USB drive, using a cheap 2GB USB thumb drive I had gotten from somewhere.  (It sounded like I had better use at least a 1GB drive.)  The webpage said it could take as long as a half-hour on a really cheap (i.e., slow) USB drive.  I plugged this USB drive into the laptop and pressed Esc during the initial boot screen to open the Startup Menu, and then F9 to bring up Boot Device Options.  It gave me only two options:  the DVD drive and the hard drive.  I exited out of that, and the system tried to Start Windows Normally and then crashed and rebooted.  I powered down, powered up, and tried again.  Same thing.  No joy.  It wasn't working.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            I started over, this time creating the bootable USB drive using an OCZ Diesel 4GB USB flash drive (using FAT32 rather than FAT16 as instructed).  It still wasn't a terribly fast process.  When I stuck this one in the laptop and rebooted it and hit Esc and then F9, like before, I got a very different Boot Option Menu.  This time, we had two new entries:  DIESEL and LEGACY PCI DEVICE.  I tried DIESEL.  The screen was completely black except for a white cursor that just sat there and blinked.  (Later, I realized that it would always take a while, and that I should just be patient.  I'm not sure whether that would have solved the problem here.)
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            I let it go for a few minutes and then restarted the machine and tried the Legacy PCI Device option.  This seemed to be designed for booting via a network connection, from a source at the other end of an ethernet cable.  I didn't have any idea of how to do that.  It appeared that the bootable USB drive process had gone correctly, but that whatever was preventing the system from booting from the WinXP CD was also preventing it from booting from the USB.  To test that, I put the Diesel drive in another computer, which I'll call the "test" computer, and set its BIOS to boot first from the USB-FDD option, second from the USB-ZIP option, and third from the USB-CDROM option.  This gave me "Remove disks or other media.  Press any key to restart."  I did that.  On reboot, it went into GRUB.  (I had this machine set for dual-booting into Ubuntu Linux.)  I went back into the BIOS and changed the first entry to be USB-HDD.  This was my last remaining USB option.  I plugged the Diesel back in.  Once again, "Remove disks or other media."  The Diesel USB drive had given me somewhat more clarity, but it was still not working.  I had tried creating a bootable USB drive once before.  I think that one was for Ubuntu, but it had used the same BartPE components that went into this one.  It hadn't worked either -- not only for me, as I recall, but for a number of other people.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            I decided to try another way of making a bootable USB drive, not involving USBCD4Win.  This time,
+            <a href="https://web.archive.org/web/20150301091415/http://www.ezbsystems.com/cgi-bin/ikonboard.cgi?act=ST;f=2;t=2440">
+             the webpage
+            </a>
+            I followed began with installing BartPE to a folder with a name like C:\pebuilder.  I had already done that, in the process of setting up UBCD4Win.  Next, they had me download and install
+            <a href="https://web.archive.org/web/20150301091415/http://www.ezbsystems.com/ultraiso/download.htm">
+             UltraISO Premium
+            </a>
+            (free to try).  It didn't look like my other CD burning programs gave me the USB-HDD burning option that they recommended, so I went ahead with the installation.  I didn't bother closing my other programs before installing.  Then I ran it as they suggested.  The result was not encouraging.  When I clicked on the drive in Windows Explorer, I got an indication that the drive was not formatted.  I took it out and put it into the test computer anyway.  When I rebooted, to my surprise I got, "Start booting from USB device."  I hadn't yet copied the I386 folder to the USB drive -- couldn't, because the source computer wasn't recognizing it -- but now I yanked it out of the target (I had hit the Pause key at that point in the target machine, so it was just sitting there, politely waiting its turn) and shoved it back into the source machine, which now recognized the jump drive as drive I: (BartPE).  I copied the I386 folder.  While that was underway, I did a
+            <span id="goog_1268332591015">
+            </span>
+            <a href="https://web.archive.org/web/20150301091415/http://www.google.com/search?q=%22install+from+i386%22+OR+%22install+from+the+i386%22+xp&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+             quick search
+            </a>
+            <span id="goog_1268332591016">
+            </span>
+            for the option of installing XP from the I386 folder on drive C, which I had kind of forgotten about.  It looked like
+            <a href="https://web.archive.org/web/20150301091415/http://easydesksoftware.com/I386.htm">
+             a hassle
+            </a>
+            , so I didn't bother with it at this point.  The I386 copy process got interrupted by an irritating Windows message that one of the files in the I386 folder was being used, so I tried again, copying this time from the I386 folder on the slipstreamed WinXP SP3 CD.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            When the I386 folder was all copied to the USB drive, I jerked it out of the source machine and rammed it back into the same USB port in the test machine.  I hit a key to un-pause that machine's boot process, but got "Disk Error -- Press any key to restart."  I did that.  Now BartPE loaded.  It flashed a Windows XP opening screen, so I knew WinXP was there somewhere.  Next, BartPE gave me a screen for DiskInternals.  I killed that.  It wanted to know if I wanted to start network support.  I said no.  I didn't see the DiskPart program described in the webpage, and actually I would have rather used GParted for that anyway.  I tried DiskInternals Partition Recovery, which seemed to be the closest thing to a partitioner, but it didn't look right.  I inserted the GParted CD and went to BartPE's Go &gt; Shut down &gt; Restart option.  On reboot, I went back into the BIOS setup and set the CD-ROM drive to boot before the USB-HDD.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            Then I decided I didn't need to be fooling with the test machine anymore.  This USB drive appeared to be working.  So I put the GParted CD into the laptop instead, and also changed its BIOS boot order as just described.  I used GParted to set up a 25GB NTFS partition and then rebooted with the USB drive.  It booted!  This time around, I skipped the partitioning and formatting step described on that webpage, and instead went to BartPE's Go &gt; Command Prompt.  This put me at an X:\minint\System32 prompt.  I guessed this meant that X was the drive letter assigned to the USB drive.  So I did a "CD \I386" and, sure enough, there it was.  So I ran the command they indicated:
+           </div>
+           <blockquote>
+            <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+             X:\i386\winnt32.exe /syspart:C: /tempdrive:C: /makelocalsource /noreboot
+            </div>
+           </blockquote>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            Woo hoo -- a WinXP installation screen!  But then, dammit, an error:
+           </div>
+           <blockquote>
+            <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+             Setup cannot continue because upgrade functionality is disabled and your copy of Windows XP only allows upgrades.
+            </div>
+           </blockquote>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            Now what?  I had never gotten this before.  There was, as far as I knew, no problem with the CD itself.
+            <a href="https://web.archive.org/web/20150301091415/http://www.google.com/search?q=usb+boot+%22your+copy+of+Windows+XP+only+allows+upgrades%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+             A search
+            </a>
+            suggested no obvious solutions.  I suspected this might be a problem caused by the use of a slipstreamed CD with the BartPE process.  I decided to try again with
+            <a href="https://web.archive.org/web/20150301091415/http://www.ezbsystems.com/cgi-bin/ikonboard.cgi?act=ST;f=2;t=2440">
+             the second approach
+            </a>
+            , to see if that cheap 2GB USB drive could also be made bootable, but using an original Windows XP SP2 CD in that process.  While that was doing its thing, I took another look at that option of installing WinXP from the I386 folder.  I found
+            <a href="https://web.archive.org/web/20150301091415/http://easydesksoftware.com/I386.htm">
+             a webpage
+            </a>
+            that suggested using winnt.exe instead of winnt32.exe.  Unfortunately, I was not sure how to replace the other options in the foregoing winnt32 command.  (Later, I saw somewhere that the command to use would have been X:\i386\winnt /s:X:\i386, where the /S switch defines the location of the startup files).
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            By this time, BartPE had finished being reinstalled on the cheap 2GB USB drive.  I checked and noticed that the installed files (including /I386) filled 934MB.  The I386 files filled about 2/3 of that by themselves.  I rebooted the laptop with the cheap 2GB drive plugged in, and it worked.  Conclusion:  the UBCD4Win process did not work, at least not unless I wanted to reinstall UBCD4Win, in case it had become screwed up during my previous use of it.  But then, spoke too soon:  the cheap 2GB drive produced the same BSOD I had gotten when trying to install WinXP from the CD.  Why would the same BartPE process work with SP3 and not SP2?  I replaced the SP2 files on the cheap USB with SP3 files (using
+            <a href="https://web.archive.org/web/20150301091415/http://www.scootersoftware.com/">
+             Beyond Compare
+            </a>
+            to avoid having to recopy everything) and tried again with the cheap USB.  While this was underway, I also tried booting from the SP3 CD again, as I had done at the start of this post.  Nope:  still a BSOD.  When the cheap USB had the SP3 files, I tried booting it.  Nope:  still a BSOD.  So apparently there was some difference between the Diesel USB and the cheap USB.  I tried the Diesel USB once again, just to be sure.  Sure enough; once again it loaded BartPE.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            Next, I downloaded
+            <a href="https://web.archive.org/web/20150301091415/http://www.msfn.org/board/topic/120444-how-to-install-from-usb-winsetupfromusb-with-gui/page__hl__i386%20install%20xp%20usb">
+             WinSetupFromUSB
+            </a>
+            .  It didn’t seem to have a homepage of its own; that link was the first in a long thread about it, and there was a download link there.  It came in a .7z form, and for some reason right-clicking didn’t open up the usual Windows XP “Extract” option, so I used
+            <a href="https://web.archive.org/web/20150301091415/http://www.7-zip.org/">
+             7-zip
+            </a>
+            to extract it.  It was a standalone; no installation process needed.  It didn’t detect anything on the cheap USB drive, but it gave me options to reformat it with either Bootice or RMPrepUSB.  But then it didn’t seem to be working, so I killed it (Ctrl-Alt-Del) and started it again.  This time it identified it as 2020MB Total (FAT) and gave me an error indicating that I should not be using FAT16 on a drive &gt; 2GB.  So apparently those other instructions were mistaken, and maybe this was why the cheap USB hadn't worked as well as the 4GB Diesel.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            I clicked on Bootice and left the Destination Disk setting at the default USB.  The Bootice tooltip had recommended using Grub for DOS, so I clicked Process MBR and chose Grub for DOS &gt; Install / Config.  I left the default settings as they were and went with Save to Disk.  This said, “GRUB4DOS is successfully installed onto this disk!  Please copy GRLDR (and optional menu.lst) to the root of any partition of this disk.”  I clicked OK &gt; Return &gt; Return.  This put me back to the main Bootice dialog.  Following the tooltip, I clicked Perform Format &gt; USB-HAD HAD (Single Partition) and chose NTFS.  I got, “The partition has been formatted successfully.  You can install some kind of MBR and PBR onto it now.”  I had already done the MBR, though, and when I clicked on that it seemed to be indicating that I would be changing the MBR, so I went on to the PBR option.  I left it at NTLDR and hit Install / Config.  This, too, seemed to have been done already.  But then, when I exited all dialogs back to the WinSetFromUSB introductory dialog, I got an error message:
+           </div>
+           <blockquote>
+            <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+             Could not find primary partition on the selected disk!
+            </div>
+           </blockquote>
+           <blockquote>
+            <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+             Please insert USB disk with a primary partition on it and click Refresh button.
+            </div>
+           </blockquote>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            I wasn’t sure what I was doing wrong, so I clicked Refresh.  Same error again.  It went away after a few seconds, so I tried RMPrepUSB instead of Bootice.  Here, the steps were numbered.  In step 3, I changed Boot Options to XP.  I went looking for the manual and, in WinSetupFromUSB\files\tools, I found RMPrepUSB.pdf.  (There didn’t seem to be a manual there for Bootice.)  This PDF said that I would have to indicate files to be copied to the USB drive here, in step 5, if I wanted the drive to be bootable.  But what files?  I wasn’t sure, so I just went with this part.  (I noticed RMPrepUSB offered an image “File to USB” button.  From the readme PDF, it seemed this would be useful only if you already had an ISO or other image containing everything that would be needed to boot a USB drive as distinct from a CD.  I didn’t have that, so I didn’t use this.)  Then I clicked on 6, Prepare Drive.  Something went wrong at this point, probably in my choices or in another program I was running.  The system nearly froze, and I had to use Ctrl-Alt-Delete to shut down this program and another one.  I tried WinSetupFromUSB &gt; Bootice again.  It registered the drive as formatted in FAT32, so I went to the PBR button and clicked Install / Config &gt; OK &gt; Return.  Next, Process MBR &gt; Grub for DOS &gt; Install/Configure &gt; Save to Disk.  It said something about installing GRLDR and menu.lst to the root of any partition.  After
+            <a href="https://web.archive.org/web/20150301091415/http://www.google.com/search?q=grldr&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+             a search
+            </a>
+            and a look at several websites, I still didn’t know what or where GRLDR was, or which menu.lst to install.  Finally I found
+            <a href="https://web.archive.org/web/20150301091415/http://myeeeguides.wordpress.com/2008/11/15/winsetupfromusb-install-windows-xp-from-usb-flash-drive/">
+             a guide
+            </a>
+            on how to use WinSetupFromUSB.  This guide was unfortunately somewhat outdated.  I followed its advice in a modified sense:  I copied the entire WinXP installation CD to a new folder on drive C, and indicated that in step 5 in RMPrepUSB.  Then I clicked step 6, the Prepare Drive button, along with the other OK buttons etc. needed to get it underway.  It spent maybe a half-hour copying the contents of the WinXP installation CD to the USB drive.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            When it was done, I clicked Exit and ejected the USB drive.  Before ejecting, I noticed that the contents of the drive appeared identical to those of a WinXP CD; but during the process, I had noticed a brief reference to the possibility that two partitions were being created on the jump drive, and that maybe one of them was hidden.  Maybe this would be the boot partition, and it would make it so that the jump drive really would function like a boot CD.  Maybe.  About this time, I also realized that this might have been a partly wasted effort, insofar as the cheap USB drive had not been a star performer so far; I just hadn't wanted to wipe out that hard-won Diesel drive until I thought I might have a better alternative.
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            <br/>
+           </div>
+           <div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">
+            At this point, I used one of the foregoing processes to make a SanDisk Cruzer 4GB flash drive bootable.  I did not record which process; it was late and I went to bed while it was underway.  A day or two passed before I got back to this project.  I booted the laptop with the SanDisk, hit Esc and then F9, and saw that I did have the SanDisk as a boot option.  It did start booting.  It went through "Starting BartPE" and showed the WinXP startup screen, but then collapsed into a BSOD.
+            <br/>
+            <br/>
+            I went back to the approach that had worked with the Diesel USB.  This time, it occurred to me, I might not need to go through the long process of copying I386 to the jump drive.  That would be necessary for a situation where a CD drive was not available; but in this situation I did have a drive that would (I hoped) read the I386 file from the WinXP installation CD.  It took only a minute or so for UltraISO to make the Diesel bootable.  When that was done, I closed UltraISO, ejected the Diesel, inserted it into the laptop, put the WinXP CD in the laptop's CD drive, booted the laptop, and did the Esc-F9 sequence on startup.  This time, unfortunately, the Diesel didn't work either; another BSOD.  I thought maybe the problem was that the machine didn't even want to see the WinXP CD, so I tried again, booting the Diesel, without the WinXP CD in the drive, but no:  BSOD again.
+            <br/>
+            <br/>
+            At this point, I abandoned this bootable USB approach.  The Diesel USB had worked the first time, to the point of giving me a command prompt.  It might work again, if I kept playing with it.  But by now I had come up with some other possible approaches, so I returned to the effort described in
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/2010/03/windows-xp-sp3-cd-wont-boot.html">
+             a separate post
+            </a>
+            .
+           </div>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20150301091415/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=3113680179305739970&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/search/label/bootable%20USB" rel="tag">
+             bootable USB
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/search/label/Compaq%20Presario%20CQ60-420US" rel="tag">
+             Compaq Presario CQ60-420US
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/search/label/install" rel="tag">
+             install
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/search/label/windows%20xp" rel="tag">
+             windows xp
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/search/label/WinSetupFromUSB" rel="tag">
+             WinSetupFromUSB
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/search/label/winxp" rel="tag">
+             winxp
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          1 comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-1266914420180677266">
+           <a name="comment-1266914420180677266">
+           </a>
+           <a href="https://web.archive.org/web/20150301091415/http://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            <a href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/2012/06/multiboot-usb-drive-with-windows-7.html" rel="nofollow">
+             Another post
+            </a>
+            has a related update.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-1266914420180677266" title="comment permalink">
+             October 29, 2012 at 12:09 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20150301091415/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=1266914420180677266" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20150301091415/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=3113680179305739970" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20150301091415/http://raywoodcockslatest.blogspot.com/feeds/3113680179305739970/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 09:14:15 Mar 01, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:18:47 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.658
+  exclusion.robots: 0.082
+  exclusion.robots.policy: 0.073
+  esindex: 0.009
+  cdx.remote: 14.806
+  LoadShardBlock: 211.633 (3)
+  PetaboxLoader3.resolve: 208.831 (4)
+  PetaboxLoader3.datanode: 167.352 (4)
+  load_resource: 194.118
+-->

@@ -1,0 +1,917 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20150111063423im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/2009/02/ubuntu-grub-error-22-error-15.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/feeds/8961771490001968705/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu: GRUB Error 22, Error 15
+  </title>
+  <link href="https://web.archive.org/web/20150111063423cs_/https://www.blogger.com/static/v1/widgets/2435745617-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20150111063423cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=94193116-fee6-4aa4-ad18-8989acacd763" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20150111063423im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20150111063423im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20150111063423im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20150111063423im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20150111063423im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20150111063423im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20150111063423im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20150111063423im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20150111063423im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20150111063423im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20150111063423im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20150111063423im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20150111063423im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20150111063423im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20150111063423im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20150111063423im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20150111063423im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20150111063423im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Friday, February 20, 2009
+        </h2>
+        <div class="post">
+         <a name="8961771490001968705">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/2009/02/ubuntu-grub-error-22-error-15.html">
+           Ubuntu: GRUB Error 22, Error 15
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           This is an update on
+           <a href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-grub-and-acronis-true-image.html">
+            a previous post
+           </a>
+           discussing issues with GRUB Error 22 and Error 15.  It started with Error 22.  In this case, though, I got a short version of the error message:  I got simply "Error 22" instead of "Error 22: No such partition."  I was not sure whether this was because I was now working with Ubuntu Intrepid Ibex 8.10 rather than Hardy Heron 8.04, or whether there was instead some other reason.
+
+It had been a while, but it appeared that I might not have understood, last time around, that the Error 22 problem was, in a sense, a Windows problem, not an Ubuntu problem.  Or maybe it wasn't, that time.  But this time, it was.  I solved the problem by simply running the Recovery Console (i.e., boot with the Windows XP CD and choose R; just hit Enter for the Administrator Password) and doing a three-step sequence:  FIXMBR, FIXBOOT, and then FIXMBR again.  Then Exit.
+
+Once I did that and rebooted, I got a screen that said, "Please select the operating system to start" and gave me a choice between Microsoft Windows XP Professional and UNetbootin.  This calls for another explanation.  UNetbootin is installed by
+           <a href="https://web.archive.org/web/20150111063423/http://www.supergrubdisk.org/index.php?pid=12">
+            Auto Super Grub Disk
+           </a>
+           (ASGD).  ASGD is a freeware Windows program that, basically, makes it easy to get your GRUB going again at least in some cases, so you don't have to spend a lot of time screwing around with the regular Super GRUB Disk (SGD) (available from that same website or
+           <a href="https://web.archive.org/web/20150111063423/http://users.bigpond.net.au/hermanzone/SuperGrubDiskPage.html">
+            elsewhere
+           </a>
+           ).  I had installed ASGD because I was already at this problem for a while before I decided to take these notes.
+
+So I chose the UNetbootin option.  It ran, and then said, "FIX OF BOOT FAILED."  So ASGD was not going to solve this particular problem for me.  It said "Hit return to continue," which I did, and then it said,
+           <blockquote>
+            USE:
+   NORMAL SUPER GRUB DISK
+   RESCATUX (COMMING SOON OR LATER)
+   LINUX LIVE CD
+   THE FORCE, LUKE.
+           </blockquote>
+           Very funny, that last line.  At this time,
+           <a href="https://web.archive.org/web/20150111063423/http://www.supergrubdisk.org/wiki/Main_Page#Rescatux">
+            Rescatux was vaporware
+           </a>
+           .  So I tried rebooting with Super GRUB Disk (burned to a CD).  In the English Super Grub Disk option, I chose the Gnu/Linux (GRUB) option.  It gave me "Error 15: File not found" and "SGD has NOT succeeded."
+
+I rebooted from the Ubuntu 8.10 live CD (i.e., the program CD that I had used to install Ubuntu).  I clicked on Places &gt; Computer &gt; UBUNTU to mount the hard drive, where the installed file system was (as distinct from the file system contained on the live CD).  UBUNTU was the name I had given to the partition where I had installed Ubuntu.  Now I had a symbol next to UBUNTU, there in File Browser, indicating it was mounted.  I went back to the main menu and chose Applications &gt; Accessories &gt; Terminal.  At the prompt in Terminal, I typed "sudo -i" (always without the quotation marks, unless otherwise indicated) and hit Enter.  This logged me in as "root," i.e., as administrator.  Then I typed "nautilus."  This gave me another File Browser session, but this one had the advantage of having root powers.  In this browser, I went to UBUNTU &gt; boot &gt; grub &gt; menu.lst.
+           <a href="https://web.archive.org/web/20150111063423/http://ubuntuforums.org/showthread.php?t=884872">
+            Someone said
+           </a>
+           that said an easier way would have been to just type "sudo gedit /boot/grub/menu.lst," but this seemed to open the wrong copy of menu.lst.  I killed File Browser, so as to set Terminal free to do other stuff.  (Probably could have opened another session of Terminal instead.)  Following advice from the thread just cited, I typed "ls /boot" but was not sure what this was telling me.  (In
+           <a href="https://web.archive.org/web/20150111063423/http://ubuntuforums.org/archive/index.php/t-941281.html">
+            another thread
+           </a>
+           , incidentally, someone said they fixed their Error 22 by rearranging SATA drive cables.)
+
+I found
+           <a href="https://web.archive.org/web/20150111063423/http://users.bigpond.net.au/hermanzone/p15.htm">
+            the GRUB Page
+           </a>
+           within the Illustrated Dual Boot Website.  I went to their
+           <a href="https://web.archive.org/web/20150111063423/http://users.bigpond.net.au/hermanzone/p15.htm#Common_Booting_Errors_and_Some_Possibl">
+            Troubleshooting Section
+           </a>
+           &gt;
+           <a href="https://web.archive.org/web/20150111063423/http://users.bigpond.net.au/hermanzone/p15.htm#Grub_Errors">
+            Error Messages from GRUB
+           </a>
+           &gt;
+           <a href="https://web.archive.org/web/20150111063423/http://users.bigpond.net.au/hermanzone/p15.htm#15">
+            Error 15
+           </a>
+           instructions.  They cited three different possible problems.  First, maybe my menu.lst was specifying the kernel or initrd.img file incorrectly.  I had restored this Ubuntu installation from an Acronis True Image backup.  I liked TrueImage, but it had caused me some difficulty when restoring Ubuntu on
+           <a href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-grub-and-acronis-true-image.html">
+            another occasion
+           </a>
+           .  This time, I was seeing a discrepancy between menu.lst and the contents of the /UBUNTU/boot folder, viewed in File Browser.  The /boot folder seemed to contain two different Ubuntu kernels -- not only kernel 2.6.27-7-generic but also 2.6.27-11-generic.  But it did seem like at least the 2.6.27-7-generic one should boot, so I doubted that was the problem.  To double-check that, I followed the advice to type "ls /boot" and see what that gave me.  Almost everything it listed seemed to relate only to the config-2.6.27-7-generic option.  So I guessed that the appearance of only the 2.6.27-7-generic option in menu.lst was not a problem.
+
+The second problem they considered was that maybe the
+           <a href="https://web.archive.org/web/20150111063423/http://en.wikipedia.org/wiki/UUID">
+            Universally Unique Identifier
+           </a>
+           (UUID) line in menu.lst was wrong.  The idea of the UUID was apparently to identify a kernel by a unique code, so it didn't matter which order you plugged your hard drives in (so you wouldn't have to change menu.lst, every time you rearranged drives or partitions, to indicate that the Ubuntu installation was now located at (hd2,0) or whatever.  Well, but of course, in my case it wasn't working.  But this second option seemed to apply in situations where someone was using an older version of GRUB, and that wasn't the case here -- everything was newly installed from an 8.10 CD.
+
+The third scenario was that maybe some of the files in /boot/grub were missing or corrupt, such that I would have to completely delete those files and restore clean copies.
+           <a href="https://web.archive.org/web/20150111063423/http://users.bigpond.net.au/hermanzone/p15.htm#Grub_loading_stage1.5">
+            The instructions for this
+           </a>
+           seemed to say I would first need to boot the system using SGD.  This wasn't good, because I wasn't able to do that.  I also needed to know where my Ubuntu files were, and normally that would have been no problem, but in this case I was confused; they did not seem to be where I thought they were supposed to be.
+
+I decided to start again from the beginning, or at least from one beginning.  I rebooted without anything in the CD drive.  This gave me, again, the choice between booting WinXP or UNetbootin.  I chose WinXP.  It booted.  Fine and dandy.  I rebooted, and this time I chose UNetbootin.  It gave me the FIX OF BOOT FAILED message again.  So we had confirmed that ASGD was not the solution.  Booting again with SGD, I went back into the Gnu/Linux option and chose Boot Gnu/Linux Directly.  This just got me Error 15 again.  After hitting Enter, I found myself at a menu and chose the Miscellanea &gt; Boot Gnu/Linux &gt; different Root and Boot Partition (Manual).  But I couldn't get that to work either.
+
+Still in SGD, I tried Advanced &gt; Gnu/Linux (Advanced) &gt; GRUB &gt; UnInstall GRUB (MBR).  I wasn't sure which drive to uninstall it from, so I chose the first one.  It said, "SGD has succeeded!"  I tried again with the second drive.  Same thing.  Ditto on drives 3 and 4.  I rebooted into WinXP and ran ASGD again.  Incidentally, I had told WinXP's Disk Management to run disk tests on all partitions on reboot, which seemed especially advisable because, in response to one of the Ubuntu commands I had entered, I had seen a message that said, "Partition table entries are not in disk order."  But the Windows disk check did not seem to make any difference.
+
+After wandering around in SGD's wonderful tools and confusingly redundant menus for quite a while, I stumbled upon Boot &amp; Tools &gt;  Boot Master Boot Record (MBR).  I tried it with drive 1 (hd0), and it gave me the GRUB menu with just WinXP and UNetbootin.  I did a Ctrl-Alt-Del and tried it with the second drive; it froze after showing me a half-dozen lines of code, ending with "chainloader +1" and "boot."  Third and fourth drives:  same thing.  This appeared to indicate that it was supplying its own code to get the ball rolling, but that there was no MBR on those drives to continue.  So drive 1 was the only game in town.  Now it was just a question of how to fix the MBR on drive 1 to include Ubuntu.  Focusing on drive 1, then, I went into SGD's Gnu/Linux &gt; Fix Boot of Gnu/Linux (GRUB) again.  This time, I looked at all of the lines it was showing me.  Its Error 15 seemed to be indicating that it was not finding the stage1 files for GRUB.
+
+The suggestions I was seeing, at this point, were heavy on the "delete Ubuntu and start over" approach.  But I wanted to learn how to address this problem on the fly, without having to devote hours to rearranging data, reinstalling, etc.  So one suggestion was to boot with the alternate Ubuntu CD and install GRUB that way.  I had an alternate CD for 8.04, but not 8.10.  I gathered there had been some changes to GRUB or menu.lst etc., so I downloaded and burned
+           <a href="https://web.archive.org/web/20150111063423/http://releases.ubuntu.com/8.10/">
+            the 8.10 alternate
+           </a>
+           .
+
+While that was downloading, I tried something else.  I booted with the regular Ubuntu CD, and used the procedure described above to make sure the UBUNTU partition on the hard drive was mounted.  (That may have been unnecessary.)  Then, as advised by
+           <a href="https://web.archive.org/web/20150111063423/https://help.ubuntu.com/community/GrubHowto#GUI">
+            some community documentation
+           </a>
+           , I typed the following in Terminal:
+           <blockquote>
+            sudo -s
+grub
+find /boot/grub/stage1
+           </blockquote>
+           That gave me a response of "(hd2,4)."  That's where my Ubuntu partition was.  So then I typed this:
+           <blockquote>
+            root (hd2,4)
+setup (hd2,4)
+quit
+           </blockquote>
+           Then I rebooted. UNetbootin still didn't fix the boot.  I tried again with SGD.  When I used it to try to boot the Ubuntu partition, it again gave me "Error 22: No such partition."  I gave up and reinstalled Ubuntu using my TrueImage backup.  SGD still didn't do it.  I tried the
+           <a href="https://web.archive.org/web/20150111063423/https://help.ubuntu.com/community/GrubHowto#GUIr">
+            Manual Boot
+           </a>
+           option.  That called for some of the same step as before:
+           <blockquote>
+            sudo -s
+grub
+root (hd2,4)
+chainloader +1
+boot
+           </blockquote>
+           Unfortunately, the "chainloader +1" step gave me an error:  "Invalid or unsupported executable format."  Another possibility was to type this, also at the grub&gt; prompt:
+           <blockquote>
+            configfile (hd2,4) /boot/grub/menu.lst
+           </blockquote>
+           This got the error message, "Filename must be either an absolute pathname or blocklist."  Then I realized I had neglected to mount the UBUNTU drive as described above.  So I did that.  But I still got the same error messages for these chainloader and configfile commands.  Now I thought that perhaps I had the pathname wrong.  I navigated around the drive using CD commands, starting with "CD /" and then naming folders (e.g., "CD media") until I got down to the one that contained stage1 (above).  So now I tried again with what I thought might be the correct absolute pathname:
+           <blockquote>
+            configfile (hd2,4) /media/disk/boot/grub/menu.lst
+           </blockquote>
+           This gave me "syntax error near unexpected token 'hd2,4'."  The website mentioned above gave me the option of entering commands from the menu.lst file manually, but I wasn't sure how they worked or what I was doing, so I decided instead to try booting with the alternate CD, which I had finished downloading and burning by this time.   I chose the "Rescue a broken system" option.  After answering a number of questions, mostly with default answers, I chose "Reinstall GRUB boot loader" as my first rescue operation.  Next, I named /dev/sdc5 as the bootable device where I wanted the GRUB boot loader installed.  But I got "Unable to install GRUB in /dev/sdc5."  So I went back and tried "(hd0)" instead.  That failed too.  Next, I tried /dev/hda2.  Another failure!
+
+So this was why things had not been working:  it could not install GRUB anywhere.  I
+           <a href="https://web.archive.org/web/20150111063423/http://wiki.debian.org/GrubRecover">
+            found some instructions
+           </a>
+           for recovering GRUB within an older version of Debian Linux.  Those instructions were essentially:  (1) within the "Rescue a broken system" option on the Ubuntu Alternate CD, choose the option that says, "Execute a shell in
+           <your>
+            ."  (2) In the shell, I typed "fdisk -l" (that's an L, not a 1) to make sure my Ubuntu installation was at hd2,4.  Then I typed
+           </your>
+           <blockquote>
+            grub
+root (hd2,4)
+setup (hd2)
+quit
+exit
+           </blockquote>
+           Now, this seemed to be more or less what I had done before.  But this time, I guess the Alternate CD made the difference, because when I rebooted, I had a regular GRUB menu, with Ubuntu and Windows on it.  I tried the Ubuntu option, and it ran!
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20150111063423/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=8961771490001968705&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/search/label/alternate%20cd" rel="tag">
+             alternate cd
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/search/label/auto%20super%20grub%20disk" rel="tag">
+             auto super grub disk
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/search/label/error%2015" rel="tag">
+             error 15
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/search/label/grub%20error%2022" rel="tag">
+             grub error 22
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          1 comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-1707049160289439177">
+           <a name="comment-1707049160289439177">
+           </a>
+           <a href="https://web.archive.org/web/20150111063423/http://adrian15.raulete.net/" rel="nofollow">
+            adrian15
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            SGD 0.9774 version has 256-byte inode support and works well fixing Ubuntu 8.10 (I have some doubts now about booting Linux but I have not checked it).
+            <br/>
+            You were just using an outdated version.
+            <br/>
+            <br/>
+            I think that Auto Super Grub Disk has not 256-byte inode support and I have to update it. :(
+            <br/>
+            <br/>
+            It was a nice grub adventure. ;)
+            <br/>
+            <br/>
+            adrian15
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-1707049160289439177" title="comment permalink">
+             March 16, 2009 at 4:45 PM
+            </a>
+            <span class="item-control blog-admin pid-1640096078">
+             <a href="https://web.archive.org/web/20150111063423/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=1707049160289439177" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20150111063423/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=8961771490001968705" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20150111063423/http://raywoodcockslatest.blogspot.com/feeds/8961771490001968705/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:34:23 Jan 11, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:11:33 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.677
+  exclusion.robots: 0.087
+  exclusion.robots.policy: 0.076
+  esindex: 0.011
+  cdx.remote: 26.675
+  LoadShardBlock: 205.022 (3)
+  PetaboxLoader3.datanode: 221.402 (4)
+  load_resource: 171.004
+  PetaboxLoader3.resolve: 122.679
+-->

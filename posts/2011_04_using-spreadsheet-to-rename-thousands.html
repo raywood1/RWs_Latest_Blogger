@@ -1,0 +1,929 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151205115027im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/2011/04/using-spreadsheet-to-rename-thousands.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/feeds/3565448660310540711/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Using a Spreadsheet to Rename Thousands of Files - First Try
+  </title>
+  <link href="https://web.archive.org/web/20151205115027cs_/https://www.blogger.com/static/v1/widgets/537653047-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151205115027cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151205115027im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151205115027im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151205115027im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151205115027im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151205115027im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151205115027im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151205115027im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151205115027im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151205115027im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151205115027im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151205115027im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151205115027im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151205115027im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151205115027im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151205115027im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151205115027im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151205115027im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151205115027im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Saturday, April 23, 2011
+        </h2>
+        <div class="post">
+         <a name="3565448660310540711">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/2011/04/using-spreadsheet-to-rename-thousands.html">
+           Using a Spreadsheet to Rename Thousands of Files - First Try
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had a list of a couple thousand files.  I got the list as an export from a program, but I could also have gotten it from a directory listing at a command prompt (e.g., DIR /a-d /b /s).  This post describes how I used that list to rename those files.  Needless to say, since I was working with the possibility of screwing up years' worth of information, I did make a backup of these files before proceeding.
+           <br/>
+           <br/>
+           This particular list was a list of emails that I had just exported from Thunderbird, as described in another message that I expect to post to this blog on the same day as this one.  I had exported, not only the list, but also the actual emails, in EML format.  I planned to use the list to rename those EMLs so that they would be in the format I wanted, which was like this:
+           <br/>
+           <blockquote>
+            2011-03-20 14.23 Email to John Doe re Tomorrow.pdf
+           </blockquote>
+           It would require some massaging to get there.
+           <br/>
+           <br/>
+           <strong>
+            The Date and Time Segment
+           </strong>
+           <br/>
+           <br/>
+           Starting with the date and time, here's what Thunderbird had given me in the list of files:
+           <br/>
+           <blockquote>
+            3/20/11 14.23
+           </blockquote>
+           These were all in one field, in the .csv (i.e., Excel-readable) output from T-bird.  They might have been in two or more fields, in a text file produced by a directory listing (e.g., DIR /a-d /b /s &gt; dirlist.txt), but to some extent the same techniques might prove useful.  These numbers were not in a format that would work as a Windows filename, and in fact the exported EMLs did not contain the date and time data in this format.
+           <br/>
+           <br/>
+           I was going to use the list to rename the emails the way I wanted, with data that existed in the list but not in the current EML filenames.  To do that, I would need to try to get the list so that it accurately represented the actual EML filenames.  Otherwise, if the list produced a command that said, Rename File 234A.eml to be "Message from Ray 234A," that command would not work if the file being renamed was actually called File_234A.eml (with an underscore).  My command would just get a "File not found" error.  So my first step was to find a way, in my Excel spreadsheet, to reproduce what the files were actually called, as I viewed them Windows Explorer.
+           <br/>
+           First, I would have to extract each element into a separate column, there in the spreadsheet, so that I could format and rearrange them as desired.  For this, I started with FIND commands.  (Excel's internal help had good information on using these and other related commands.  I was doing this in Excel 2003.  There might have been other functions that would automate this process in newer versions.)  For instance, =FIND("/",A1) would locate the first occurrence of the forward slash in cell A1, if that's where I put the "3/20/11 14.23" item shown above.  So then I could search for the next slash (=FIND("/",A1,B1+1), starting one place after the results of the first FIND statement (which, in this example, I had put in cell B1).  I could do the same for spaces, colons, or whatever else might delimit various components of the date and time entry.  I'd then use RIGHT, LEFT, or MID statements to find those components.  For instance, a MID statement like =MID(A1,B1+1,C1-B1-1) might start one space after the first slash, continue to one space before the second slash, and thus give me the day of the month.
+           <br/>
+           <br/>
+           In the 3/20/11 14.23 example, the value of "3" for the month wouldn't give me the desired "03" so I would use IF and LEN statements to pad that out:
+           <br/>
+           <blockquote>
+            =IF(LEN(G1)=1,"0","")&amp;G1
+           </blockquote>
+           thereby inserting a zero in front of single-digit month values found in cell G1, but adding nothing to those month values if they were not single-digit.
+           <br/>
+           <br/>
+           I had gotten two different things from Thunderbird.  On one hand, as noted above, I had gotten a list of data about emails that I was going to export, with dates in the 3/20/11 format.  On the other hand, I had also gotten the actual emails, exported as individual EML files.  These were not named quite the same way.  The particular Thunderbird extension that I had used to produce this list of files, ImportExportTools, had produced files whose names were in this format:  Date-Time-Sender-Subject.  But in those filenames, the dates could not be rendered as 3/20/11, since slashes were not allowed in Windows 7 filenames.  Instead, the date and time came in the format of 20110320-1423.  So as hinted above, I would ultimately be producing a batch file that would automate the renaming of thousands of files.  That example, 20110320-1423, would instead begin with the more readable 2011-03-20 14.23.
+           <br/>
+           <br/>
+           <strong>
+            Next:  Massaging the Sender Data
+           </strong>
+           <br/>
+           <br/>
+           Before I could get to that point, I had to change some of the Sender data that T-bird had produced.  Again, the list of actual email data from T-bird contained characters (e.g., the &gt; symbol) that could appear in email Subject lines but that were not allowed in Windows 7 filenames.  (The full set of forbidden characters:  \ / : * ? " &lt; &gt; | ).  For example, the spreadsheet might show a sender to be this:
+           <br/>
+           <blockquote>
+            John Doe &lt;jdoe@xcom.com&gt;
+           </blockquote>
+           but the actual exported EML file's name would just have John Doe.  So I could get rid of some of these problems of
+           <em>
+            verboten
+           </em>
+           characters by just doing a FIND for &lt; and then a MID or a LEFT statement for everything before that.  That wouldn't necessarily get rid of all the bad-character problems, but I wanted to clean those up just once, so I deferred that problem for the moment.  For right now, in a bid to match the format of the exported EMLs, I now had this much of the filename:
+           <br/>
+           <blockquote>
+            20110320-1423-John Doe
+           </blockquote>
+           To get there, the actual command I used, for the Sender portion, was this:
+           <br/>
+           <blockquote>
+            =LEFT(B2,V2-1)
+           </blockquote>
+           Cell B2 had the Sender's name as exported from Thunderbird, and cell V2 had the FIND location for the &lt; symbol, which marked the end of the part of the Sender data that I planned to use.
+           <br/>
+           <br/>
+           <br/>
+           At this point, there was a problem.  For some reason, ImportExportTools put underscores before and after some Senders' names, but not all.  So I might instead have this:
+           <br/>
+           <blockquote>
+            20110320-1423-_John Doe_
+           </blockquote>
+           The filenames already used a hyphen ( - ) to delimit fields, so the combination hyphen-underscore seemed superfluous.  It needed to be fixed before I could continue with the main project here, so that I could be confident that Sender names were delimited consistently by a hyphen, and not by unpredictable choices involving underscores.
+           <br/>
+           <br/>
+           <strong>
+            Detour:  Renaming Thousands of Files, So That I Could Proceed to Rename Thousands of Files
+           </strong>
+           <br/>
+           <br/>
+           To fix this problem, I went to the Windows 7 command prompt (Start &gt; Run &gt; cmd) and did a directory listing to save the filenames to a file:  DIR /b &gt; dirlist.txt.  I copied the contents of that file into column A of a new Excel spreadsheet.  I also copied those contents into Notepad.  In Notepad, I did two global replaces (changing both -_ and _- to just plain - ).  I copied those changed contents into column B of that Excel spreadsheet.  Next, I needed to combine these two columns, A and B, into a single DOS command that would rename the files.  To do that, I put this formula in column C:
+           <br/>
+           <blockquote>
+            ="ren "&amp;char(34)&amp;A1&amp;char(34)&amp;" "&amp;char(34)&amp;B1&amp;char(34)
+           </blockquote>
+           The char(34) entries would introduce quotation marks:  34 was the ASCII code for double quotes.  I could have introduced any character that way -- Z, a semicolon, whatever -- but it was essential to use the char(34) approach for quotation marks specifically because otherwise Excel would have misunderstood them.  Quotation marks would be necessary for any DOS command involving filenames that contained spaces; DOS would otherwise think that the space marked the end of a part of the command.  Anyway, I copied the contents of column C back into Notepad and saved the file as a batch file (renamer.bat).  I saved renamer.bat in the folder where I had all those EML files I was going to rename.  At a DOS prompt in that folder, I typed "renamer.bat," without the quotes.  I could have just double-clicked on renamer.bat in Windows Explorer.  Either way, the files were renamed.
+           <br/>
+           <br/>
+           Later, I discovered that ImportExportTools would truncate the Subject field in the spreadsheet to 50 characters even if I had not asked it to do so.  Many emails in my set had Subject fields longer than that.  I initially tried to fix this by setting up a separate spreadsheet, using the process just outlined, but with
+           <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/2011/04/finding-last-occurrence-of-character-in.html">
+            a search for the last hyphen
+           </a>
+           in the filename, which would hopefully identify the start of the Subject field in most cases.  Unfortunately, the calculation of 50 characters proved difficult, after taking into account the character substitutions described here.  Ultimately, I started over with a fresh export of EML files from Thunderbird, after setting the option at Tools &gt; ImportExportTools &gt; Options &gt; Filenames tab &gt; Cut subject at 50 characters (and also Cut complete file path length at 256 characters).
+           <br/>
+           <br/>
+           <strong>
+            Returning to the Sender and Subject Segments
+           </strong>
+           <br/>
+           <br/>
+           So now I could go back to work on the main spreadsheet.  I could assume, that is, that the first part of the EML filenames were going to look like this:
+           <br/>
+           <blockquote>
+            20110320-1423-John Doe
+           </blockquote>
+           without underscores.  I could see that there were still a few underscores around names in the EMLs, and that was problematic.  Possibly ImportExportTools had introduced two underscores rather than one in a row, in some cases.  There were few enough that I figured I could fix those exceptions manually.
+           <br/>
+           <br/>
+           Now it was time to add the Subject part of the filename.  This was simple enough:  just use another ampersand (&amp;) to combine it with the rest.  Sketching it out, the EMLs now just used hyphens to delimit the date, time, sender, and subject portions, so I just needed to use an Excel command of this format:
+           <br/>
+           <blockquote>
+            =[Date]&amp;"-"&amp;[Time]&amp;"-"&amp;[Sender]&amp;"-"&amp;[Subject]&amp;".eml"
+           </blockquote>
+           and that would give me a complete representation of how ImportExportTools seemed to have constructed the filenames for most of the exported EMLs.
+           <br/>
+           <br/>
+           <strong>
+            Cleaning Up Unwanted Characters
+           </strong>
+           <br/>
+           <br/>
+           As noted above, some characters (e.g., the colon, ":") were not acceptable as Windows 7 filenames, but were quite common in email subject lines.  It looked like ImportExportTools had replaced those characters with an underscore, and had removed spaces before and after the underscore.  So, for instance, a subject line of "Re: Tomorrow" was represented, in the EML filenames, as "Re_Tomorrow," without a space.
+           <br/>
+           <br/>
+           At this point, preparing to remove those unwanted characters, my spreadsheet had something like this:
+           <br/>
+           <blockquote>
+            20110320-1423-John Doe-Re: Tomorrow
+           </blockquote>
+           Some of these fledgling combinations contained other unwanted characters (e.g., question marks), listed above.  I was almost ready to remove them.  But first, it was time to proofread my spreadsheet.  Having copied all of my various formulas down from the first line of the spreadsheet, where I was developing them, so that they were present in all rows, I now prepared to sort the spreadsheet.  First, I inserted an Index column as column A, and in that column I inserted numbers in ascending order, starting with 1.  The purpose of this column was to remember my original sort order, in case the date field or anything else did not accurately reproduce the order in which emails appeared in Thunderbird.  There were times when a person would want to check back and see if things were matching the source.  To insert these numbers, using Excel 2003, there were two options.  One was to enter a formula in each cell, adding 1 to the number above it, and then replace the formulas with fixed values.  The sequence for this was Edit &gt; Copy, Edit &gt; Paste Special &gt; Values.  An alternative was Edit &gt; Fill &gt; Series.  Either way, I now had index numbers that wouldn't change if I sorted rows.
+           <br/>
+           <br/>
+           So now I did sort rows, sorting first on the column that concatenated (i.e., combined) the date, sender, and subject.  I sorted to highlight those rows in which the process had not worked as intended.  One problem, I saw, was that some Sender names did not include the &lt;jdoe@xcom.com&gt; part.  The sender of these emails was just listed as John Doe (or whoever), without the actual email address.  For these, I just copied the Sender straight over, skipping the unnecessary part of the spreadsheet calculation.  That cleared up the error messages in the spreadsheet.  So now I saved a version of the spreadsheet and moved the output column -- the one combining all of my work with these various fields -- and pasted it into Notepad.  I could have edited it right there in Excel, but there was a risk that I would accidentally have changed other columns in ways that I did not intend, or that I could not achieve what I needed to achieve.  For example, the ? symbol was a wildcard in Excel, so attempting to replace it with an underscore would either not work or create a mess.  I noticed that ImportExportTools had also converted commas into underscores, even though they were not forbidden characters.  Note:  now that I had parts of the spreadsheet in Notepad, and expected to paste those parts back into Excel in the same order, this would have been an especially bad time to sort the spreadsheet.
+           <br/>
+           <br/>
+           Over in Notepad, I did global find-and-replace operations for each of the special characters listed above, guided by the objective of matching as closely as possible the actual filenames of the EMLs I had exported from Thunderbird.  It was premature to do line-by-line editing of individual entries, though; those would be more obvious and perhaps more easily fixed later.  At this point, if I saw something that needed to be changed, I executed it as a global command, so that it would be changed wherever it occurred.  Obviously, a person can make serious mistakes with global changes so, again, this was not the time for fine-detail fixes of individual entries.  On the other hand, each of these global changes was a potential time-saver:  a single change here could save the need to make manual changes to 20 or 300 individual files later.
+           <br/>
+           <br/>
+           After making these changes, I again had to replace the -_ and _- combinations with a simple hyphen ( - ), since some forbidden characters that I had just replaced with underscores had been adjacent to the delimiting hyphens that ImportExportTools seemed to convert into simple hyphens.  With these changes made, I copied the contents of that Notepad file back into the appropriate place in the spreadsheet.
+           <br/>
+           <br/>
+           <strong>
+            Testing the Filename Match
+           </strong>
+           <br/>
+           <br/>
+           How well did my spreadsheet now reflect the actual names of those EML files?  I decided to test it.  To do this, I first made a backup copy of the folder containing the EMLs.  I then created a subfolder in the EMLs folder, called Test.  In the spreadsheet, I worked up a MOVE command for each file, commanding it to move to the Test folder.  The command was like this:
+           <br/>
+           <blockquote>
+            ="move "&amp;CHAR(34)&amp;Z2&amp;".eml"&amp;CHAR(34)&amp;" Test"
+           </blockquote>
+           I copied all those MOVE commands from the spreadsheet to Notepad and saved the Notepad file as MOVER.BAT in the EML folder.  Then I ran it.  It succeeded in moving less than half of the files, which meant that the spreadsheet had not yet captured hundreds of EML file names correctly.  I dir a DIR /b &gt; dirlist.txt in the EMLs folder to capture the names of the ones that had failed.  I brought that list into the Excel spreadsheet and matched them up with my attempts.  This matching process was sufficiently time-consuming that I found myself grateful for the ones that I had managed to identify in a more automated fashion.  The time investment was acceptable.  As had been the case for me with spreadsheets going back almost 30 years, I figured that, once I identified the rules and became more familiar with this particular process, I would be able to use it again in similar tasks.
+           <br/>
+           <br/>
+           To match up the real filenames with the versions in the spreadsheet, I pasted the contents of dirlist.txt into a separate worksheet in Excel.  From both, I compared the date and time data, using VLOOKUP on shortened versions of the relevant colums (=LEFT(Z1,13)).  This revealed several things.  First, there was an error in how I had converted the date and time data, so I would have to fix that and re-run it to move more of the items from the EML folder into the Test folder.  Since I planned on doing this task again, I also decided to automate some of the find-and-replace operations described above.  This required using FIND and MID to divide the text string into parts appearing before and after the character I wanted to replace (e.g., colons) and then joining them together without the middle part.  I didn't do this for all possible combinations; I was basically interested in eliminating the first and/or most frequent occurrences of the forbidden characters that did seem to appear.
+           <br/>
+           <br/>
+           <strong>
+            Starting Over:  Revise the Filenames, Not the List
+           </strong>
+           <br/>
+           <br/>
+           After hours of effort and a couple of retries, the approach described above was still identifying (i.e., successfully moving) only about 80% of the EMLs I had exported from Thunderbird.  Depending on the total number of emails involved, that could mean hundreds or even thousands of emails that would have to be manually renamed in order to insure that their filenames contained all of the desired data.
+           <br/>
+           <br/>
+           I decided that the better approach mgiht be to try to rename the files, and keep renaming them if necessary, until they conformed to certain basic rules in the file list exported into Index.csv.  There had already been some of that in the steps described above; the change now was to make that the primary effort.
+           <br/>
+           <br/>
+           The first step was to take a listing of the EMLs.  This was easy enough:  DIR /b &gt; dirlist.txt.  Then I copied the contents of that text file into Excel and changed components of the filename to be the way I wanted.  The names of EMLs exported from Thunderbird did not have "To" fields, but I was able to match up most of the names automatically with what I had already prepared, thus borrowing To fields from the work described above.  (This is a cursory description.  At this writing, I had run out of time for this project, and was focused on getting it done.  But the basic techniques were as described above.)
+           <br/>
+           <br/>
+           Some filenames did not match up easily to support an automated renaming of the EMLs..  I renamed the rest, using a MOVE command to put them into a separate folder.  I copied those that did not rename into a separate folder too.  These I renamed using the Bulk Renamer (above), so as to have .txt extensions.  I did that so that I could view them in IrfanView, which enabled me to flip back and forth among them quickly, so as to identify the proper "To" information.
+           <br/>
+           <br/>
+           At this point, I started
+           <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/2011/04/windows-7-archiving-thunderbird-emails.html">
+            a new post
+           </a>
+           to summarize more clearly the steps taken here.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151205115027/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=3565448660310540711&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/search/label/EMLs" rel="tag">
+             EMLs
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/search/label/excel" rel="tag">
+             excel
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/search/label/filenames" rel="tag">
+             filenames
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/search/label/files" rel="tag">
+             files
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/search/label/move" rel="tag">
+             move
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/search/label/rename" rel="tag">
+             rename
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/search/label/spreadsheet" rel="tag">
+             spreadsheet
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/search/label/thousands" rel="tag">
+             thousands
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151205115027/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=3565448660310540711" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151205115027/http://raywoodcockslatest.blogspot.com/feeds/3565448660310540711/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 11:50:27 Dec 05, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:28:23 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.622
+  exclusion.robots: 0.085
+  exclusion.robots.policy: 0.076
+  esindex: 0.01
+  cdx.remote: 6.705
+  LoadShardBlock: 137.602 (3)
+  PetaboxLoader3.datanode: 157.727 (4)
+  load_resource: 30.282
+-->

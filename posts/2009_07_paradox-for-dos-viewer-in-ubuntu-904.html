@@ -1,0 +1,1147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20140913014009im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/2009/07/paradox-for-dos-viewer-in-ubuntu-904.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/feeds/163490998248354676/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Paradox for DOS Viewer in Ubuntu 9.04 and VMware Workstation
+  </title>
+  <link href="https://web.archive.org/web/20140913014009cs_/https://www.blogger.com/static/v1/widgets/3841957138-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20140913014009cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=4b2a1b32-1ff1-4df4-b022-2c7981c25244" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20140913014009im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20140913014009im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20140913014009im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20140913014009im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20140913014009im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20140913014009im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20140913014009im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20140913014009im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20140913014009im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20140913014009im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20140913014009im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20140913014009im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20140913014009im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20140913014009im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20140913014009im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20140913014009im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20140913014009im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20140913014009im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Thursday, July 2, 2009
+        </h2>
+        <div class="post">
+         <a name="163490998248354676">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/2009/07/paradox-for-dos-viewer-in-ubuntu-904.html">
+           Paradox for DOS Viewer in Ubuntu 9.04 and VMware Workstation
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           At the start of this project, I wanted to run Paradox for DOS 4.0 in Windows XP.  I had WinXP running in VMware Workstation 6.5.  For a while, my old Paradox was running, but then, I don't know, something changed, and it no longer worked.  Instead, I got an "Access denied" error inside the WinXP DOS (i.e., CMD, command) window whenever I tried to run Paradox.  It was probably something I could have fixed easily in the old days, but I had not devoted much time to Paradox and DOS in recent years, and the solution looked like it would take more re-learning than I cared to do.
+
+My reason for wanting to use Paradox was to convert some old files to a current format, so I could view them as needed.  Getting them into a current database format (e.g., Microsoft Access) would have been good, but most of them could just be archived as PDF reports, as far as I was concerned.
+           <div>
+           </div>
+           <div>
+            I couldn't find a freeware Paradox for DOS converter, so I posted a question on the
+            <a href="https://web.archive.org/web/20140913014009/http://pnews.thedbcommunity.com/cgi-bin/dnewsweb.exe?utag=&amp;group=pnews.paradox-dos&amp;xrelated=3126&amp;cmd_related=Related+Items">
+             pnews.paradox-dos webpage
+            </a>
+            .  Rodney Wise advised me to try DOSemu.  The idea here was that, instead of running Paradox in a DOS window in WinXP on Ubuntu, I would drop down to Ubuntu and run Paradox in a DOS emulator there.
+
+Before going with DOSemu, I noticed that
+            <a href="https://web.archive.org/web/20140913014009/http://www.dosbox.com/">
+             DOSBox
+            </a>
+            was the SourceForge
+            <a href="https://web.archive.org/web/20140913014009/http://sourceforge.net/community/potm-200905/">
+             Project of the Month
+            </a>
+            for May 2009.  It appeared, though, that this might mean DOSBox was a work in progress.  I followed several links, but didn't get much detail, and finally I got a 404 error.  So I decided to stay with Rodney's suggestion of using DOSemu.
+
+To install my DOS emulator (
+            <a href="https://web.archive.org/web/20140913014009/http://www.dosemu.org/">
+             DOSemu
+            </a>
+            ) on Ubuntu 9.04 (Jaunty Jackalope), then, I proceeded as follows:
+
+1.  In Ubuntu, go to System &gt; Administration &gt; Synaptic Package Manager.
+
+2.  Search for dosemu.  Click, mark for installation, and apply.  That installs a menu pick for Applications &gt; System Tools &gt; DOS emulator.
+
+3.  That menu pick won't work until you enter some additional commands.
+            <a href="https://web.archive.org/web/20140913014009/http://allmyapps.com/app/dosemu-dos-emulator">
+             The advice I got
+            </a>
+            was to enter it all on one line, like this:
+
+echo 0 | sudo tee /proc/sys/vm/mmap_min_addr
+
+In case it's not clear in your font, that line begins with "echo zero," not "echo oh."
+
+But that gave me a password error.  So instead, I did it in two steps:
+
+sudo -i
+echo 0 | tee /proc/sys/vm/mmap_min_addr
+
+4.  Now you can click on that menu pick.  This gives you a window in Ubuntu entitled "DOS in a BOX."
+
+DOSemu defaulted to the following disk assignments:
+
+A:  Floppy drive, if any
+C:  A 2GB virtual drive with DOS config.sys and autoexec.bat files
+D:  Uses /home/ray (my username) as a read-write drive
+E:  CD/ROM drive
+
+The documentation provided some
+            <a href="https://web.archive.org/web/20140913014009/http://dosemu.sourceforge.net/docs/HOWTO/">
+             instructions
+            </a>
+            to change these assignments, but I didn't need to.  I could just move the old Pdx DB files I wanted to convert to that /home/ray drive in Ubuntu and tinker with them there using DOSemu.  (I noticed, incidentally, that the DOSemu documentation dated from 2003 and earlier, so I did wonder if I should have been more patient in researching the DOSBox option.
+
+Basic DOS commands seemed to work normally.  I created and deleted a couple of directories and then used Ubuntu's File Browser (Nautilus) to move some Paradox data files into a new folder called D:\PDXDB.  I also copied over my Paradox program files to a folder called D:\PARADOX.  But while DOSemu seemed to run fine, I was not able to get Paradox to run inside it.
+
+At best, my attempts to run Paradox within DOSemu resulted in an
+            <a href="https://web.archive.org/web/20140913014009/http://www.google.com/search?hl=en&amp;safe=off&amp;rlz=1B3GGGL_enUS318US318&amp;num=50&amp;newwindow=1&amp;q=directory+%22PDOXUSRS.NET%22&amp;aq=f&amp;oq=&amp;aqi=">
+             error message about PDOXUSRS.NET
+            </a>
+            .  This seemed to be a problem of Paradox rather than DOSemu.  When I tried running Paradox from a batch file with additional commands I had used previously, I got an "Unexpected Condition" error.  I had seen the latter error many times before, but it had been quite a while, and I could not remember how to get around it.
+
+Ultimately, instead of troubleshooting that, I hunted around for freeware alternatives.  Unfortunately, I didn't find many. First, I downloaded and used a 30-day trial shareware utility,
+            <a href="https://web.archive.org/web/20140913014009/http://www.scalabium.com/pdx/index.htm">
+             Paradox Viewer
+            </a>
+            from
+            <a href="https://web.archive.org/web/20140913014009/http://www.brothersoft.com/publisher/scalabium-software.html">
+             BrotherSoft - Scalabium
+            </a>
+            (about $15 if you buy it).  I had large memo fields in the old Paradox tables, so I saved them in Microsoft Access format.  (Other options:  comma-delimited, plain text, HTML, XML, Excel, SPSS, SQL, ADO, and Lotus 1-2-3.)  For the old data that definitely needed to be archived as PDFs rather than kept in a database, I exported from Access to .rtf format, cleaned them up, and printed them as PDFs.  Note:  100 records maximum export per table in the free trial -- and unlike some of the other products mentioned here, there's no pop-up dialog to say so.  You just lose that extra data in records 101+.
+
+For the most part, Paradox Viewer was a professional, easy-to-use program.  One problem I had was that it would not export fields to Access if the fieldname had a period or other punctuation in it; but it would export them to Excel.  (In other words, it's a viewer, not an editor; it wouldn't let me change field names.)  Another problem was that it would not read BLOB (Binary Large OBject) fields.  Maybe if they had been all text, it would have been fine, but they were from WordPerfect for DOS 6.0 -- that is, they were WYSIWYG.  So a
+            <a href="https://web.archive.org/web/20140913014009/http://www.freetrialsoft.com/ParadoxtoTextconverter-review-77793.html">
+             Paradox-to-text converter
+            </a>
+            wasn't the answer either:  the graphics would be lost in the conversion to plain text.  BrotherSoft also offered a direct
+            <a href="https://web.archive.org/web/20140913014009/http://www.scalabium.com/pdx/pdx2mdb.htm">
+             Paradox-to-Access converter
+            </a>
+            , but it seemed safe to assume that it would be using their same technology to read BLOB fields.
+
+I tried another one:
+            <a href="https://web.archive.org/web/20140913014009/http://wareseeker.com/Network-Internet/abc-amber-paradox-converter-4.06.zip/7cbdcbac5">
+             ABC Amber Paradox Converter
+            </a>
+            .  The trial version on this one would only let me export 10 records at a time.  Also, batch mode was not available in the trial.  Worse, when uninstalling it, I ran into a problem that is apparently with the Wise Uninstall program, not with Amber:  I got a "Could not open INSTALL.LOG file."
+            <a href="https://web.archive.org/web/20140913014009/http://www.thinkdigit.com/forum/showthread.php?t=11563">
+             The solution
+            </a>
+            was, I hoped, to reinstall the program, just like before, and then try again to uninstall it, but that didn't do it.  So I wouldn't advise trying this product at this point.
+
+I tried
+            <a href="https://web.archive.org/web/20140913014009/http://wareseeker.com/Network-Internet/Data-Import--Export-2.0.zip/8022884">
+             Data Import &amp; Export 2.0
+            </a>
+            , but it wasn't able to do anything with Paradox.  I don't know why it came up in my Google search.
+            <a href="https://web.archive.org/web/20140913014009/http://www.sqledit.com/de/index.html">
+             DTM Data Editor
+            </a>
+            , too, was shareware.  I decided not to try installing to see what its demo version would let me do.  Next, I tried
+            <a href="https://web.archive.org/web/20140913014009/http://www.bestfreewaredownload.com/freeware/k-export-t-free-paradox-dbase-viewer-freeware-zstxtvgi.html">
+             Paradox dBase Viewer
+            </a>
+            , but it said "Unsupported database file."  It did recognize that my files were Paradox 4.0 tables, but it could not read some of them.  (For the ones that it could read, it worked well.  See below.)
+            <a href="https://web.archive.org/web/20140913014009/http://www.dbf2002.com/paradox-converter/">
+             Paradox Converter
+            </a>
+            would only let me export 50 records without spending $60 for the full version; it also wouldn't export to Access, so I would have had to convert DB to DBF and then import from there into Access.
+
+I did have WordPerfect Office X4, standard version, but that didn't include Paradox, and trying to open DB files in WordPerfect X4 gave me an "invalid file name" error.  Upgrading to the professional version of WordPerfect Office X4 would have
+            <a href="https://web.archive.org/web/20140913014009/http://www.corel.com/servlet/Satellite/us/en/Product/1207939618939#tabview=tab0">
+             cost me $260
+            </a>
+            .  I wondered whether an old copy of Paradox 7, which I could get for $14 (including shipping) at
+            <a href="https://web.archive.org/web/20140913014009/http://www.amazon.com/gp/offer-listing/B001R9605C/ref=sr_1_olp_3?ie=UTF8&amp;s=software&amp;qid=1246589836&amp;sr=1-3">
+             Amazon.com
+            </a>
+            , would be able to read those old BLOB fields.  I dug around for a while but found no answers on that, so I
+            <a href="https://web.archive.org/web/20140913014009/http://www.wpuniverse.com/vb/showthread.php?s=&amp;threadid=29275">
+             posted a question
+            </a>
+            on it.  After three or four days, my post still had no reply (though the website said lots of people had viewed it), so I suspected there might not be too many people who knew the answer for sure.  So I went ahead and bought a copy of Corel Wordperfect Office 7 Professional, which apparently
+            <a href="https://web.archive.org/web/20140913014009/http://www.corel.com/content/pdf/wpx4/edition-comparison-chart.pdf">
+             did include Paradox 7
+            </a>
+            .  While Office 7 Professional was installing, it showed me a series of promotional blurbs, including one that
+            <a href="https://web.archive.org/web/20140913014009/http://www.emsps.com/oldtools/wpv.htm">
+             did confirm
+            </a>
+            that Paradox 7 was part of the package.  But Paradox 7 didn't install.  Everything else did -- WordPerfect 7, Quattro Pro 7, etc. -- but not Paradox 7.  I did a
+            <a href="https://web.archive.org/web/20140913014009/http://www.google.com/search?hl=en&amp;q=%22install+paradox+7+on+windows+xp%22&amp;sourceid=navclient-ff&amp;rlz=1B3GGGL_enUS318US318&amp;ie=UTF-8">
+             Google search
+            </a>
+            and saw that a number of others had had some kind of problem along these lines.
+            <a href="https://web.archive.org/web/20140913014009/http://www.dbforums.com/corel-paradox/659879-xp-paradox-7-a.html">
+             One suggestion
+            </a>
+            was to right-click on the SETUP.EXE file and choose Win95 compatibility mode, but this seems to have been for
+            <a href="https://web.archive.org/web/20140913014009/http://www.prestwood.com/ASPSuite/eBoard/Thread.asp?MBID=6824#MBID9550&amp;UserID=&amp;GroupID=">
+             Windows NT
+            </a>
+            or
+            <a href="https://web.archive.org/web/20140913014009/http://www.pihelper.com/FAQ.htm">
+             Windows 2000
+            </a>
+            machines.
+            <a href="https://web.archive.org/web/20140913014009/http://www.microsoft.com/windowsxp/using/helpandsupport/learnmore/russel_02february18.mspx">
+             Another possibility
+            </a>
+            was to try to run Paradox 7 in compatibility mode, which involved right-clicking on the program icon under the WinXP Start menu and choosing Properties and then the Compatibility tab.  Paradox 7 apparently needed Windows 95 compatibility.  This was perhaps a step to take later, but Paradox 7 was not even installed yet, and I didn't know how to make the setup (installation) program run in Win95 mode.
+            <div>
+            </div>
+            <div>
+             About this time, I received another copy of Corel WordPerfect Office 7 Professional, which seemed to suggest that I had ordered two copies instead of one.  Indeed I had, but I thought I had asked Amazon.com to cancel the first order.  Anyway, this one was different from the first one in several ways:  the seller had kindly included the serial number, which was requested but not required during the installation process; s/he had included the actual printed manuals; and the CDs were labeled differently.  In the first copy I received, the CDs were labeled "Applications disc," "Corel A to Z," and "Library disc."  In the second copy, the CDs were labeled simply Disc 1, Disc 2, and Disc 3.   More about this in a minute.
+            </div>
+            <div>
+            </div>
+            <div>
+             <a href="https://web.archive.org/web/20140913014009/http://www.dbmonster.com/Uwe/Forum.aspx/paradox/1061/Installing-Paradox-7-in-XP">
+              Someone suggested
+             </a>
+             installing the Paradox 7 Runtime first, and then install Paradox 7.  Apparently
+             <a href="https://web.archive.org/web/20140913014009/http://www.emsps.com/oldtools/borpdxv.htm#win70">
+              the Runtime version
+             </a>
+             was originally part of Borland (not Corel) Paradox 7 Client/Server and could also be bought separately.  It seems to have come in 16- and 32-bit versions.  At this point, though, it seemed to be
+             <a href="https://web.archive.org/web/20140913014009/http://www.dbforums.com/3585324-post37.html">
+              hard to find
+             </a>
+             .  After digging around, I found something called the
+             <a href="https://web.archive.org/web/20140913014009/http://www.trolldata.no/renough/">
+              Rough Enough
+             </a>
+             software system, which claimed to include the Paradox 7 runtime.  I downloaded and unzipped it, renamed the resulting folder, and discovered that the installer would only run if I left that folder with its original name.  But even then, I couldn't get the program to install.
+            </div>
+            <div>
+            </div>
+            <div>
+             Using a different approach, I tried the freeware Paradox dBase Access Reader 2.1.0.  Or at least that's the name that appears when you hit Help &gt; About in the program itself; but a search turns up
+             <a href='https://web.archive.org/web/20140913014009/http://www.google.com/search?hl=en&amp;rlz=1C1GGLS_enUS336US337&amp;num=50&amp;q="Paradox+dBase+Access+Reader"&amp;aq=f&amp;oq=&amp;aqi='>
+              no such beast
+             </a>
+             , nor does there appear to be anything out there known as
+             <a href='https://web.archive.org/web/20140913014009/http://www.google.com/search?rlz=1C1GGLS_enUS336US337&amp;sourceid=chrome&amp;ie=UTF-8&amp;q="sportamok+software"'>
+              Sportamok Software
+             </a>
+             , and a visit to sportamok.com (which is also named in Help &gt; About) yields a webpage belonging to some kind of sports statistics organization that seems to
+             <a href="https://web.archive.org/web/20140913014009/http://www.sportamok.com/component/search/dbase/?ordering=&amp;searchphrase=all">
+              have no information
+             </a>
+             on any such program..  Yet here it is nonetheless.  And you can have a copy if you search for
+             <a href='https://web.archive.org/web/20140913014009/http://www.google.com/search?rlz=1C1GGLS_enUS336US337&amp;sourceid=chrome&amp;ie=UTF-8&amp;q="paradox+dbase+viewer+2.1.0"'>
+              Paradox dBase Viewer 2.1.0
+             </a>
+             (not exactly what the program calls itself, but what everyone seems to call it).
+            </div>
+            <div>
+            </div>
+            <div>
+             As Derek Duke
+             <a href="https://web.archive.org/web/20140913014009/http://www.wpuniverse.com/vb/showthread.php?s=&amp;threadid=29275&amp;highlight=recovering+blobs">
+              kindly pointed out
+             </a>
+             to me, this Paradox dBase Viewer (PDV) program will cough up the contents of a Paradox 4.0 for DOS database if you take the following steps:
+            </div>
+            <div>
+             <ol>
+              <li>
+               Start PDV.  In its General tab, it will show a list of DB files in the indicated folder.
+              </li>
+              <li>
+               Select one of those files and switch to the Data tab.
+              </li>
+              <li>
+               Right-click on the column titles to sort, exclude a column from viewing, etc.
+              </li>
+              <li>
+               Highlight the records you want.  If you want to highlight them all, Ctrl-A is an easy way.
+              </li>
+              <li>
+               There are two ways to get the data into another program.  You can copy (Ctrl-C) and paste (Ctrl-V) what you have highlighted, or you can click on the program's HTML File button and export to HTML, Text, Excel, or XML files or to the Clipboard.  Copy and paste works with BLOB files (at least with text BLOBs), even though the contents of the BLOB field are not themselves visible onscreen from inside Paradox dBase Viewer.
+              </li>
+             </ol>
+            </div>
+            <div>
+             Consistent with Derek's tip, I exported to HTML and then opened the HTML file in Microsoft Word 2003.  Word recognized the data as a table, so I did a Convert to Text (telling it to insert paragraph breaks between data fields).  I cleaned it up some more, inserted page breaks, printed it to PDF, and broke up the PDF into individual files.  And there, I had PDF files resembling my original data.
+            </div>
+           </div>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=163490998248354676&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/search/label/corel%20wordperfect%20office" rel="tag">
+             corel wordperfect office
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/search/label/dosemu" rel="tag">
+             dosemu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/search/label/export%20data" rel="tag">
+             export data
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/search/label/paradox%207" rel="tag">
+             paradox 7
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/search/label/paradox%20for%20DOS" rel="tag">
+             paradox for DOS
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/search/label/paradox%20viewer" rel="tag">
+             paradox viewer
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/search/label/ubuntu%209.04" rel="tag">
+             ubuntu 9.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/search/label/vmware%20workstation%206.5.2" rel="tag">
+             vmware workstation 6.5.2
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          5
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-3423120166176315753">
+           <a name="comment-3423120166176315753">
+           </a>
+           <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/profile/03048078938935734554" rel="nofollow">
+            mshkolnik
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I'm Mike Shkolnik, an author for Paradox Viewer from Scalabium Software.
+            <br/>
+            <br/>
+            I only wanted to add a few words about your comments:
+            <br/>
+            1. in registered version our viewer allow to extract the text from BLOB with WordPerfect content
+            <br/>
+            <br/>
+            2. export to MS Access work if field name contain the period char. Maybe your field(s) have some other "system" character?
+            <br/>
+            <br/>
+            Anyway thanks to you for a kind words.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-3423120166176315753" title="comment permalink">
+             July 28, 2009 at 3:09 AM
+            </a>
+            <span class="item-control blog-admin pid-405974731">
+             <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=3423120166176315753" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-7678008553404793067">
+           <a name="comment-7678008553404793067">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I work with paradox DBs at work. The vendor wrote in pascal and I haven't devoted the time to grasp pascal yet. I'm stuck in the realm of c-like languages.
+            <br/>
+            luckily I largely only need read-only access - I typically export the data to csv or sqlite, sometimes to html or flat sql.
+            <br/>
+            <br/>
+            There's a c library and application available for this today which is critical to my work. Usually for scripted or one-off conversions I use pxview.
+            <br/>
+            <br/>
+            Pxview and pxlib are very easy to compile on linux. With some blood and sweat I was able to get them workibg on windows, which is also very helpful in a nasty office environment.
+            <br/>
+            <br/>
+            For those readers inclined to casual hacking, go search for pxlib and you will have another tool to do the sorts of tricks described in the post -- natively and everything.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7678008553404793067" title="comment permalink">
+             August 15, 2012 at 8:37 PM
+            </a>
+            <span class="item-control blog-admin pid-1059643105">
+             <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7678008553404793067" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-4549930356022303353">
+           <a name="comment-4549930356022303353">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Another gotcha was that one of the px dbs I work with contains a field called "LIMIT". This has caused me grief.
+            <br/>
+            I renamed the field with a hex editor (just changed to "lymit", although amusingly the field names looked null-terminated, like c-strings, so I could probably have given the name an arbitrary length)
+            <br/>
+            <br/>
+            sed would possibly serve also, in a batchy environment.
+            <br/>
+            <br/>
+            Just something to look out for.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-4549930356022303353" title="comment permalink">
+             August 15, 2012 at 8:42 PM
+            </a>
+            <span class="item-control blog-admin pid-1059643105">
+             <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=4549930356022303353" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-2302028124020217881">
+           <a name="comment-2302028124020217881">
+           </a>
+           <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Here are some links to
+            <a href="https://web.archive.org/web/20140913014009/https://www.google.com/search?q=pxlib&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" rel="nofollow">
+             pxlib
+            </a>
+            .
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2302028124020217881" title="comment permalink">
+             August 15, 2012 at 8:55 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2302028124020217881" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-8794846095971154980">
+           <a name="comment-8794846095971154980">
+           </a>
+           <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            <a href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.wordpress.com/2014/08/10/old-paradox-tables/" rel="nofollow">
+             A more recent post
+            </a>
+            provides some other ways of getting data out of old Paradox tables.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-8794846095971154980" title="comment permalink">
+             August 10, 2014 at 9:25 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=8794846095971154980" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20140913014009/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=163490998248354676" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20140913014009/http://raywoodcockslatest.blogspot.com/feeds/163490998248354676/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 01:40:09 Sep 13, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:12:26 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.952
+  exclusion.robots: 0.147
+  exclusion.robots.policy: 0.134
+  esindex: 0.013
+  cdx.remote: 35.667
+  LoadShardBlock: 69.306 (3)
+  PetaboxLoader3.datanode: 108.223 (4)
+  load_resource: 99.132
+  PetaboxLoader3.resolve: 39.724
+-->

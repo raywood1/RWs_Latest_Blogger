@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20181106113357cs_/https://www.blogger.com/static/v1/widgets/254310735-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20181106113357im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20181106113357/http://raywoodcockslatest.blogspot.com/2012/03/windows-7-assigning-process-priorities.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/feeds/1473823289839810649/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20181106113357/http://raywoodcockslatest.blogspot.com/2012/03/windows-7-assigning-process-priorities.html" property="og:url"/>
+  <meta content="Windows 7:  Assigning Process Priorities to Prevent Slowdowns" property="og:title"/>
+  <meta content="I had some programs that slowed down my system to the point that I could barely get any work done.  Examples included Beyond Compare (someti..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Windows 7:  Assigning Process Priorities to Prevent Slowdowns
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20181106113357im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20181106113357im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20181106113357im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20181106113357im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20181106113357im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20181106113357im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20181106113357im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20181106113357im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20181106113357im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20181106113357im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20181106113357im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20181106113357im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20181106113357im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20181106113357im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20181106113357im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20181106113357im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20181106113357im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20181106113357im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20181106113357cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=5d3d58ed-eec2-40a5-87f9-0ea1191a055e" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20181106113357cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=5d3d58ed-eec2-40a5-87f9-0ea1191a055e" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Thursday, March 1, 2012
+        </h2>
+        <div class="post">
+         <a name="1473823289839810649">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/2012/03/windows-7-assigning-process-priorities.html">
+           Windows 7:  Assigning Process Priorities to Prevent Slowdowns
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had some programs that slowed down my system to the point that I could barely get any work done.  Examples included Beyond Compare (sometimes) and GoodSync (often).  These programs were not usually urgent; I would have been happy with letting them run at a slower pace, so that I could continue to use the machine in a more or less normal way.  This post describes my search for tools that would give me some control over the demands that those programs would place on my system.
+           <br/>
+           <br/>
+           The existing tool for this purpose, Windows Task Manager (available via Ctrl-Alt-Del &gt; Start Task Manager, or via Start &gt; Run &gt; taskmgr.exe), would give me information about various processes.  Many other programs -- including various
+           <a href="https://web.archive.org/web/20181106113357/http://pcsupport.about.com/od/windowsvista/tp/vistagadgetssu.htm" target="_blank">
+            gadgets
+           </a>
+           and other sorts of monitoring tools -- offered that.
+           <a href="https://web.archive.org/web/20181106113357/https://encrypted.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=Seh&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=processes+priority+%22Windows+7%22&amp;oq=processes+priority+%22Windows+7%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=12&amp;gs_upl=186951l200206l0l201845l16l16l0l0l0l1l487l3115l4.5.6.0.1l16l0" target="_blank">
+            A search
+           </a>
+           led to
+           <a href="https://web.archive.org/web/20181106113357/http://technet.microsoft.com/en-us/sysinternals/bb896653" target="_blank">
+            Process Explorer
+           </a>
+           and
+           <a href="https://web.archive.org/web/20181106113357/http://www.softpedia.com/get/PORTABLE-SOFTWARE/System/File-management/Windows-Portable-Applications-System-Explorer-Portable.shtml" target="_blank">
+            System Explorer Portable
+           </a>
+           , which
+           <a href="https://web.archive.org/web/20181106113357/http://download.cnet.com/Process-Explorer/3000-2094_4-10223605.html?tag=contentMain;contentBody;1d" target="_blank">
+            CNET
+           </a>
+           and
+           <a href="https://web.archive.org/web/20181106113357/http://www.softpedia.com/get/System/System-Info/Process-Explorer.shtml" target="_blank">
+            Softpedia
+           </a>
+           portrayed as popular, highly rated replacements for Task Manager.  For basic system resource information, I was presently using (and liked)
+           <a href="https://web.archive.org/web/20181106113357/http://www.moo0.com/?top=http://www.moo0.com/software/SystemMonitor/" target="_blank">
+            Moo0 SystemMonitor
+           </a>
+           , and wasn't too interested in adding more of that right now.
+           <br/>
+           <br/>
+           What I was more interested in was actual control of processes.  Evidently it was possible to
+           <a href="https://web.archive.org/web/20181106113357/http://searchsystemschannel.techtarget.com/feature/Optimizing-Windows-7-application-performance" target="_blank">
+            adjust
+           </a>
+           process priorities
+           <a href="https://web.archive.org/web/20181106113357/http://www.addictivetips.com/windows-tips/tune-up-your-windows-7-by-changing-the-process-priorities/" target="_blank">
+            manually
+           </a>
+           in Task Manager, and perhaps in Process Explorer and/or System Explorer Portable; but
+           <a href="https://web.archive.org/web/20181106113357/http://www.addictivetips.com/windows-tips/prio-save-app-process-priority-check-network-connections-integrity/" target="_blank">
+            it seemed
+           </a>
+           that this would work only as long as processes were running.  In other words, it seemed that the Task Manager manual setting would have to be recreated every time a program was shut down and restarted.
+           <br/>
+           <br/>
+           Further investigation led to utilities that would apparently allow me not only to adjust priorities, but to have my adjustments be remembered.  Programs I encountered at this point included
+           <a href="https://web.archive.org/web/20181106113357/http://www.prnwatch.com/prio.html" target="_blank">
+            Prio
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20181106113357/http://www.bitsum.com/prolasso.php" target="_blank">
+            Process Lasso
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20181106113357/http://sourceforge.net/projects/iopriority/" target="_blank">
+            IO Priority
+           </a>
+           , and
+           <a href="https://web.archive.org/web/20181106113357/http://processhacker.sourceforge.net/" target="_blank">
+            Process Hacker
+           </a>
+           .  Softpedia searches indicated that Project Lasso was commercial, and had nothing for IO Priority.  I had seen a few very positive comments about Prio, so perhaps it was up and coming; but it was not a major player at either
+           <a href="https://web.archive.org/web/20181106113357/http://www.softpedia.com/get/System/OS-Enhancements/Prio.shtml" target="_blank">
+            Softpedia
+           </a>
+           or
+           <a href="https://web.archive.org/web/20181106113357/http://download.cnet.com/Prio/3000-2094_4-10455293.html" target="_blank">
+            CNET
+           </a>
+           .  Those two sources also disagreed as to whether I was getting a free or trial version.  On both
+           <a href="https://web.archive.org/web/20181106113357/http://download.cnet.com/Process-Hacker/3000-2094_4-10971791.html" target="_blank">
+            CNET
+           </a>
+           and
+           <a href="https://web.archive.org/web/20181106113357/http://www.softpedia.com/get/System/System-Miscellaneous/Process-Hacker.shtml" target="_blank">
+            Softpedia
+           </a>
+           , Process Hacker seemed to be the leading tool for process adjustment.
+           <br/>
+           <br/>
+           The CNET download gave me both .bin and .exe versions of Process Hacker.  I was more interested in a portable version, so I unzipped the .bin and drilled down to the appropriate .exe and ran that.  It gave me a colorful, hierarchical indication of running processes.
+           <br/>
+           <br/>
+           I decided to put it to a test.  I ran GoodSync and did a Ctrl-F in Process Hacker.  That gave me a separate list of files, processes, and threads that apparently involved GoodSync.  But where was GoodSync within the pretty list of colored processes, there in the main Process Hacker window?  I clicked on the Description heading, and that gave me an alphabetical list.  Ah, there it was.  GoodSync was currently using up to 3%, no, 5%, no, make that 10% of CPU resources.  The number kept rising.  In the amount of time it took me to write these words, it was up to 25%.  I had a quad core processor; maybe 25% was going to be the limit.  I clicked to sort on the CPU heading.  At first, GoodSync was solidly in second place as the greatest consumer of CPU resources, behind System Idle Processes.  It seemed that the latter just meant that I had a lot of idle capacity.  That seemed to be the message from Moo0 too:  the CPU was not very busy.
+           <br/>
+           <br/>
+           Process Hacker also said that GoodSync was using a steady 468MB in Private Bytes.
+           <a href="https://web.archive.org/web/20181106113357/http://stackoverflow.com/questions/1984186/what-is-private-bytes-virtual-bytes-working-set" target="_blank">
+            A StackOverflow post
+           </a>
+           said that private bytes was "the current size, in bytes, of memory that this process has allocated that cannot be shared with other processes."  Another post in that thread clarified:  this value included pagefile (i.e., virtual) memory.  So it didn't necessarily mean that GoodSync was using almost a half-gig of what the RAM chips in my computer could offer.  The thread seemed to say that the most important value of that number was in whether it was growing, which would indicate a memory leak -- which
+           <a href="https://web.archive.org/web/20181106113357/http://forum.sysinternals.com/what-are-private-bytes_topic15333.html" target="_blank">
+            apparently meant
+           </a>
+           that the program in question kept asking for more and more memory, without reusing or returning what it had already requested and was no longer using.  This didn't seem to be a problem:  the Private Bytes number for GoodSync had not yet risen beyond about 480MB.
+           <br/>
+           <br/>
+           I clicked on the I/O Total Rate heading in Process Hacker.  It put GoodSync by far at the top of the list, using 22 mB/s (with variations), when the next most disk-intensive programs were generally asking for less than 20 kB/s.  This concurred with Moo0 -- it was tending to show GoodSync as the chief loader of the hard drive -- but this was giving me much more information about how GoodSync compared to the other programs running.  (I was working in the Processes tab in Process Hacker.  There were also Services and Network tabs.)  I also noticed, by this point, that the Private Bytes number did seem to be creeping upwards, now reaching 520MB.  I wondered where it would be in an hour or two.
+           <br/>
+           <br/>
+           So now, could I put the brakes on GoodSync?  I right-clicked on it, there in Process Hacker, and saw at least three relevant options:  Terminate, Suspend, and Priority.  Of these, the only one that would put on the brakes without completely ending progress was Priority.  That one was familiar; I had seen the same options elsewhere, probably in Task Manager.  The options were Real Time, High, Above Normal, Normal, Below Normal, and Idle.  Normal was the default.  I had seen somewhere that Normal was the default for everything in Windows.
+           <br/>
+           <br/>
+           So, sad to say, this thing wasn't going to give me fine-tuned tweaking options, like "40% of Normal" or "Run only when computer is idle" or "Try to finish this process by tomorrow morning."  I realized that not all of these possibilities might be feasible in Windows 7.  And, wow, what about RAM?  GoodSync was up to 905MB of Private Bytes now.  For that matter, Internet Explorer (where I was writing this) was at 870MB (with eight tabs open, and after 50 hours of uptime, according to Moo0).  I was using RizoneSoft MemoryBooster to keep RAM available, but it didn't have options to put restrictions on individual programs, and hitting its Optimize Memory button at this point didn't have any effect upon the Private Bytes reported by Process Hacker for GoodSync and IE.  I guessed that the situation was that memory leaks couldn't be squeezed much -- that you might basically have a choice between letting the program run or shutting it down so that memory could clear.
+           <br/>
+           <br/>
+           I dimly recalled that GoodSync might have its own internal option to throttle itself.  A look at this point reminded me:  its Auto &gt; General tab would allow a specific sync job to slow down file copying if the average download speed exceeded a certain value.  I wasn't quite sure how that would work, but I didn't think the problem was with the speed of downloads (i.e., how quickly they would travel across the ethernet cable between computers).  What seemed most demanding about GoodSync was its use of system resources to do its calculations of what needed to be copied.  In other words, I didn't care whether it was slowing me down because of calculations, or downloads, or for some other reason; I just cared that, overall, it was slowing me down.  And at this point I was not seeing anything specifically geared toward that.  And even if I had, I'd still have a similar concern for some other programs.
+           <br/>
+           <br/>
+           Further exploration in Process Hacker indicated that I had overlooked another possible location of options.  I right-clicked on the Process Hacker line for GoodSync and chose Miscellanous.  There, I saw at least three intriguing options:  I/O Priority, Page Priority, and Reduce Working Set.  I decided to see what would happen if I changed a bunch of settings to their minimum values.  So I changed GoodSync right-click Priority from Normal to Below Normal.  I didn't see any difference, there, between Below Normal and Real Time (the highest setting).  On, then, to Miscellaneous &gt; I/O Priority.  It was set to Normal; I set it to Very Low.  Still no obvious difference in the demands on CPU, I/O, or Private Bytes shown in Process Hacker.  Next, Miscellaneous &gt; Page Priority.  It was at 5 (the highest possible value); I set it to 1.  Finally, Miscellaneous &gt; Reduce Working Set.  It was just an on-or-off option.  I turned it on.  No visible difference in the numbers.  I decided to turn off Reduce Working Set, putting it back to its default setting, since I didn't know what it was.  Seems I was wrong:  it wasn't a checked, toggling option; evidently I was just reducing the working set further (whatever that meant) every time I hit it.
+           <br/>
+           <br/>
+           Well, by this point, as a correction to my impression from a moment earlier, it seemed that something had changed after all.  (It helped to see this when I changed Process Handler &gt; View &gt; Update Interval to a slower setting.)  Maybe this change was due to my adjustments to the settings, or maybe GoodSync had finished something it was working on, but for whatever reason it had dropped from an I/O Total Rate of 20+ mB/s to more like 3 mB/s.  I suspected that I had now given myself the equivalent of an option to "Run only when computer is idle."  With all these priorities set so low, hopefully the computer would suppress GoodSync when I had other things to do.  The risk now was, no doubt, that GoodSync would never finish its tasks.  I would have to just let it run a while and see how that went.
+           <br/>
+           <br/>
+           After closing Process Hacker and letting a few days pass (along with a reboot or two), I returned to see what was happening with GoodSync.  The system had now been up for a little over two days, and at this moment the spinning system tray icon showed that GoodSync was actively at work.  PH showed GoodSync as having 1.14GB in Private Bytes allocated to it.  Its I/O Total Rate was not exceeding about 1.5 mB/s.  It looked like my settings had persisted.  I was not actively using that machine at that point, so I couldn't say whether there would still be noticeable slowdowns.  But it seemed unlikely.  Moo0 was reporting that the CPU, RAM, and hard drives were almost never fully burdened.  And yet GoodSync did seem to be getting its tasks done.
+           <br/>
+           <br/>
+           I was not quite sure whether Process Hacker right-click settings all applied only to the specific process that I had clicked on.  Some appeared to apply to all, or at least multiple, processes.  There was more to learn.  But at least it did appear that Process Hacker had enabled me to slow down a program that was grabbing too much of system resources, without noticeably impairing that program's functioning.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20181106113357/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=1473823289839810649&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/computer" rel="tag">
+             computer
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/disk" rel="tag">
+             disk
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/drive" rel="tag">
+             drive
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/GoodSync" rel="tag">
+             GoodSync
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/I%2FO" rel="tag">
+             I/O
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/priorities" rel="tag">
+             priorities
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/processes" rel="tag">
+             processes
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/RAM" rel="tag">
+             RAM
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/resources" rel="tag">
+             resources
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/slowdown" rel="tag">
+             slowdown
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/threads" rel="tag">
+             threads
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/search/label/Windows%207" rel="tag">
+             Windows 7
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          3
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-229761888115921224">
+           <a name="comment-229761888115921224">
+           </a>
+           <a href="https://web.archive.org/web/20181106113357/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Experience with Process Hacker over the next several weeks did not persuade me that it was achieving much control over the resource demands of GoodSync and BeyondCompare.  I also disliked that it did not retain settings from one boot to the next.  I switched to Process Explorer, but was not yet sure it was any better.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-229761888115921224" title="comment permalink">
+             March 21, 2012 at 9:06 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20181106113357/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=229761888115921224" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-2376328843738662988">
+           <a name="comment-2376328843738662988">
+           </a>
+           <a href="https://web.archive.org/web/20181106113357/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Using an old version of Process Explorer caused system crashes for me.  I was
+            <a href="https://web.archive.org/web/20181106113357/http://raywoodcockslatest.blogspot.com/2012/03/windows-7-bsod-procexp111sys.html" rel="nofollow">
+             still working
+            </a>
+            on the question of whether a new version would be better.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2376328843738662988" title="comment permalink">
+             March 21, 2012 at 10:26 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20181106113357/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2376328843738662988" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-3968980281023726045">
+           <a name="comment-3968980281023726045">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Reduce working set - pushes virtual memory pages from real memory; right-click Properties, select "Threads" and then right click on a selected ThreadID to find more priority options.  Process Hacker is very powerful resource control tool.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-3968980281023726045" title="comment permalink">
+             September 20, 2014 at 2:28 PM
+            </a>
+            <span class="item-control blog-admin pid-135827692">
+             <a href="https://web.archive.org/web/20181106113357/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=3968980281023726045" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20181106113357/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=1473823289839810649" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20181106113357/https://raywoodcockslatest.blogspot.com/feeds/1473823289839810649/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 11:33:57 Nov 06, 2018 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:33:22 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.565
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.06
+  esindex: 0.008
+  cdx.remote: 10.551
+  LoadShardBlock: 91.999 (3)
+  PetaboxLoader3.datanode: 107.742 (4)
+  load_resource: 2049.147
+  PetaboxLoader3.resolve: 1992.256
+-->

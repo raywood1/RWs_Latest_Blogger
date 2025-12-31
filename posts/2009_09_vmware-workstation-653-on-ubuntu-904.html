@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053744cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053744im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/09/vmware-workstation-653-on-ubuntu-904.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/feeds/5563962601964415842/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/09/vmware-workstation-653-on-ubuntu-904.html" property="og:url"/>
+  <meta content="Configuring 64-bit Ubuntu 9.04 with Vista Dual-Boot" property="og:title"/>
+  <meta content="I had a Compaq CQ60-420US laptop.  It had come with Vista pre-installed.  I didn't like that, so I wiped it off.  This led to a whole ordeal..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Configuring 64-bit Ubuntu 9.04 with Vista Dual-Boot
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053744im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053744im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053744im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053744im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053744im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053744im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053744im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053744im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053744im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053744im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053744im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053744im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053744im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053744im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053744im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053744im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053744im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053744im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053744cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053744cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Tuesday, September 1, 2009
+        </h2>
+        <div class="post">
+         <a name="5563962601964415842">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/2009/09/vmware-workstation-653-on-ubuntu-904.html">
+           Configuring 64-bit Ubuntu 9.04 with Vista Dual-Boot
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had a Compaq CQ60-420US laptop.  It had come with Vista pre-installed.  I didn't like that, so I wiped it off.  This led to a whole ordeal in trying to get the hard drive to work with WinXP, for which I had developed lots of tricks and tweaks.  That effort ultimately failed, and I wound up with Vista back on the thing after all.  I had wanted to get away from dual booting, but I still needed some flavor of Windows for the occasional hardware interaction, e.g., updating the BIOS and other firmware.  So for now, I was going to leave Vista in place and set up a 64-bit Ubuntu 9.04 (Jaunty Jackalope) dual-boot with it.  This post describes the process of setting up that dual boot.
+
+A review of
+           <a href="//web.archive.org/web/20190906053744/https://www.google.com/search?hl=en&amp;safe=off&amp;rlz=1B3GGGL_enUS318US318&amp;num=50&amp;newwindow=1&amp;q=intitle:%22dual+boot%22+vista+ubuntu+9.04+64-bit+OR+jaunty+2009+-2008+-2007+-2006+-2005&amp;aq=f&amp;oq&amp;aqi">
+            some guides
+           </a>
+           gave me the general impression that installing a Vista-Ubuntu dual boot was much like installing a WinXP-Ubuntu dual boot, unless you used the
+           <a href="//web.archive.org/web/20190906053744/https://www.google.com/search?hl=en&amp;safe=off&amp;rlz=1B3GGGL_enUS318US318&amp;num=50&amp;newwindow=1&amp;q=vista+ubuntu+wubi&amp;aq=f&amp;oq&amp;aqi">
+            wubi
+           </a>
+           alternative.  The approach I took was as follows:
+           <ol>
+            <li>
+             With Vista already installed, insert the Ubuntu program CD, reboot, and go through the ordinary installation sequence.  If you do nothing, the CD will pretty much take you right to the Install icon.  If
+             <a href="//web.archive.org/web/20190906053744/https://www.google.com/search?hl=en&amp;q=bios+setup+boot+sequence&amp;sourceid=navclient-ff&amp;rlz=1B3GGGL_enUS318US318&amp;ie=UTF-8">
+              your BIOS isn't set
+             </a>
+             to boot from CD before hard drive, hit F2 or Esc or Del or F8 or whatever key it is that gets you into your BIOS setup, promptly after the computer first starts up, and adjust the boot priority there.
+            </li>
+            <li>
+             You may find that
+             <a href="//web.archive.org/web/20190906053744/https://www.google.com/search?hl=en&amp;q=gparted+cd&amp;sourceid=navclient-ff&amp;rlz=1B3GGGL_enUS318US318&amp;ie=UTF-8">
+              the bootable Gparted CD
+             </a>
+             provides a clearer view of hard drive partitions than does the partitioner in the Ubuntu installer.  If the partitioning step leaves you dazed and confused, you may want to back up, download Gparted, burn yourself a CD, boot with that first, set up your partitions as you like, and then come back into the Ubuntu installation process.  Note:  if you're going to run Windows in a virtual machine, you may want to give it an NTFS partition somewhere, so you have a place to store data.  Windows can't read Linux (e.g., ext3) partitions.
+            </li>
+            <li>
+             After the initial installation, make sure that Vista starts up OK.  No point spending hours refining a system that isn't ready for prime time.  Then restart and go into Ubuntu, and make various adjustments, including these:  (a) Nautilus &gt; View &gt; Show Hidden Files.  (b) Nautilus &gt; Edit &gt; Preferences &gt; Behavior &gt; Always open in browser windows.
+            </li>
+            <li>
+             Go through the steps described in my previous post on
+             <a href="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/08/installing-ubuntu-904-jaunty-jackalope_25.html">
+              configuring Ubuntu 9.04
+             </a>
+             (including comments).  That post updates the first part of
+             <a href="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/05/installing-ubuntu-904-jaunty-jackalope.html">
+              an earlier post
+             </a>
+             on how to configure 9.04.  After running updates, type "sudo gedit /boot/grub/menu.lst" and put # symbols in front of each line (i.e., older Ubuntu kernels) that you don't want to appear in the GRUB menu.
+            </li>
+            <li>
+             Before continuing with items in that earlier post (as explained in more detail there), I initially thought that the next step would be to
+             <a href="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/08/transitioning-from-windows-based-palm.html">
+              install and configure
+             </a>
+             Thunderbird (just plain old thunderbird, not mozilla-thunderbird) and Lightning-extension via Synaptic.  But then I decided I would just use web-based e-mail and calendaring (probably via Gmail) on the laptop, and would download and archive my e-mails solely on my desktop, thereby sparing the need to synchronize the two computers.
+            </li>
+            <li>
+             Now refer back to
+             <a href="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/05/installing-ubuntu-904-jaunty-jackalope.html">
+              the earlier post
+             </a>
+             , to install programs that came via individual downloads rather than through Synaptic.  For me, these included Google Desktop for Linux, Adobe Reader, and VMware Workstation 6.5.3.
+            </li>
+            <li>
+             I installed .deb files by double-clicking on them in Nautilus, and .bin and .bundle files by running "chmod +x [filename]" and then "sudo ./[filename]."  I didn't have any .tar.gz and .tar.bz2 files to install this time, but if I had, I would have moved them to my /home/[username] folder, navigated there in Terminal, and then used a
+             <a href="https://web.archive.org/web/20190906053744/http://www.linfo.org/tar.html">
+              tar unpack
+             </a>
+             command (e.g., tar -vxf [or tar xvfz] filename.tar.gz, or tar xvf filename.tar, or tar yxf filename.tar.bz2).
+            </li>
+            <li>
+             To install Google Earth, continuing to follow my
+             <a href="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/05/installing-ubuntu-904-jaunty-jackalope.html">
+              previous notes
+             </a>
+             , I typed two lines:  "wget http://dl.google.com/earth/client/current/GoogleEarthLinux.bin" and then "sh GoogleEarthLinux.bin."  This gave me a Google Earth installation, but with flickering and basically nonfunctioning display.  I tried System &gt; Administration &gt; Update Manager, and at first that program assured me that my system was up-to-date; but when I made it check again, it reported errors related to Wine and Opera.  I ignored these for now, since they did not seem relevant.  People seemed to be
+             <a href="https://web.archive.org/web/20190906053744/http://ubuntuforums.org/archive/index.php/t-1135385.html">
+              experimenting
+             </a>
+             with the flickering video problem in Google Earth.  There was a relatively complex
+             <a href="https://web.archive.org/web/20190906053744/http://ubuntuforums.org/showthread.php?t=1130582">
+              tutorial
+             </a>
+             that apparently fixed it in some cases, at the risk of messing up the system.  Choosing instead an easy fix that seemed to work for some, I went to System &gt; Preferences &gt; Appearance &gt; Visual Effects and downgraded from Extra to Normal.  That didn't help.  Following
+             <a href="https://web.archive.org/web/20190906053744/http://ubuntuforums.org/showpost.php?p=7710757&amp;postcount=3">
+              another tip
+             </a>
+             , I downgraded further, from Normal to None (i.e., no visual effects), and also turned off the Atmosphere feature in Google Earth (View &gt; Atmosphere).  That fixed it.
+            </li>
+            <li>
+             To configure Firefox, I went to another computer and used the
+             <a href="https://web.archive.org/web/20190906053744/https://addons.mozilla.org/en-US/firefox/addon/2109">
+              FEBE
+             </a>
+             extension to make a full backup of that machine's Firefox installation.  I copied the folder containing the FEBE backup to the target computer (i.e., the one where I've been doing all this installation stuff).  I installed FEBE in Firefox on the target machine, restarted Firefox, started to watch
+             <a href="//web.archive.org/web/20190906053744/https://www.youtube.com/watch?v=g1BtvUS0yUI">
+              the tutorial
+             </a>
+             on restoring with FEBE, turned to
+             <a href="https://web.archive.org/web/20190906053744/http://www.customsoftwareconsult.com/phpBB2/viewtopic.php?t=593">
+              the instructions
+             </a>
+             on manually restoring with FEBE, and then took these steps on the target machine:  Close Firefox.  Go to the FEBE backup directory (i.e., the one where I put the FEBE backup folder that I copied over from the other computer).  Copy its .fbu file (in my case, profileFx3{default}.fbu) and rename the copy as a .zip file.  I called it FEBErestore.zip.  Extract the contents of the .zip file (creating, in my case, a folder called FEBErestore).  Move the contents of the FEBE restore folder to the Firefox profile folder, which I found in Nautilus at File System/home/ray/.mozilla/firefox/[random name].default.  In my case, for example, I moved the contents of the FEBErestore folder to this .default folder.  When it told me that a folder already exists, I said Merge All, and Replace All for the "file already exists" message.  During this process, I got an "Error while copying 'febe.jar'" message.  The details of the error said "Permission denied."  I canceled and tried again as root (type "sudo nautilus" and then do the move in the Nautilus session that opens that way).  That worked.  Then I closed everything else and started Firefox and, yeah, it looked like all the extensions were there, configured and everything.
+            </li>
+           </ol>
+           <div>
+            This was the extent of my Ubuntu configuration for now.  During these processes, I came across some miscellaneous issues:
+           </div>
+           <div>
+            <ul>
+             <li>
+              I wanted to change login passwords.  This, I thought, would be under System &gt; Administration but no, eventually I found it instead under Applications &gt; Accessories.  Double-clicking on that did not work; I had to right-click and choose Change Password; but then the password that I changed it to did not work for login.  I thought the problem might be that I hit Enter instead of clicking on the button after doing the change; that is, possibly the default was Cancel rather than Change.  I could not tell; neither button seemed to be highlighted by default.  So then it turned out that I had changed the password to unlock the keyring, rather than the password to log in.  It looked like I had changed that properly, second time around; but still no.
+             </li>
+             <li>
+              As in other Ubuntu installations, panels did not readily allow me to move icons to the locations I would designate.  Sometimes they would not move; sometimes they would not go exactly where I indicated.  On the bottom panel, for example, I could not rearrange them in the far right corner.  It turned out to be easier to move things *out of* the corner (where the Windows system tray would be) than to move them *into* the corner.  It turned out that I had to unlock every item that I wanted to drag another icon past.  Tooltips came up, irritatingly enough, when I was trying to move icons, making it difficult to see what I was doing.
+             </li>
+             <li>
+              The bottom panel failed to show icons or buttons for my currently running programs.  The solution was to right-click on the bottom panel, choose Add to Panel, and choose Window List.  But then, on reboot, it did not work again.  I fixed it by right-clicking on the end of the Window List item on the bottom panel and checking Lock to Panel.
+             </li>
+             <li>
+              When trying to view the contents of some hard drive partitions, such as a partition I called DATA, I got "Cannot mount volume.  You are not privileged to mount the volume 'DATA'.  Following my previous notes, in Terminal I typed "sudo mkdir /media/DATA," thinking that perhaps I had not yet created the mount point, but this gave me "cannot create directory `/media/DATA': File exists."  I typed "sudo nautilus," went to File System &gt; /media/DATA &gt; right-click &gt; Properties, and verified that I (i.e., user "ray", not just root) had full permissions.  I typed "sudo fdisk -l" (that's an L, not a one) to get a list of devices.  That showed that the DATA partition was being recognized as an NTFS device at /dev/sda4.  I typed "sudo gedit /etc/fstab" and saw that there was no line in the fstab file for /dev/sda4.  Following
+              <a href="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/07/recognizing-partitions-automatically-in.html">
+               some notes
+              </a>
+              from a few months earlier, I typed "sudo ntfs-config."  (Note that this was one of the programs I had installed from Synaptic, above.)  This detected the VISTA programs partition (i.e., drive C in Windows), but not the DATA partition.  I ran ntfs-config again.  This time, it didn't mention the VISTA drive, but as before it did give me the option to enable an internal drive.  I accepted that.  Now I saw that there was indeed a line for the DATA partition as well.  While I was here, I used
+              <a href="https://web.archive.org/web/20190906053744/http://www.cyberciti.biz/faq/linux-finding-using-uuids-to-update-fstab/">
+               blkid
+              </a>
+              to find the UUIDs for each partition (e.g., "sudo blkid") and replaced that portion of the relevant line in fstab.  For example, the line that previously read "/dev/sda1 /media/VISTA ntfs-3g defaults,locale=en_US.UTF-8 0 0" now began with "UUID=19142FAA142F8D35" instead of "dev/sda1."  Following the format of other lines in fstab, I preceded this one with a line that said, "# Entry for /dev/sda1 : " and followed a similar procedure for the DATA partition.  I rebooted and was now able to view the NTFS-formatted VISTA and DATA partitions.  On second thought, I went back into fstab and removed the line for the VISTA partition, since I didn't expect to need it normally in Ubuntu and didn't want to expose it to accidental deletions and such.
+             </li>
+            </ul>
+            <div>
+             This seemed to give me a basic working dual-boot 64-bit system.  The next step, for me, was to
+             <a href="https://web.archive.org/web/20190906053744/http://raywoodcockslatest.blogspot.com/2009/09/configuring-64-bit-vmware-workstation.html">
+              configure VMware
+             </a>
+             , so that I could run any Windows program within Ubuntu.
+            </div>
+           </div>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053744/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=5563962601964415842&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/64-bit" rel="tag">
+             64-bit
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/BIOS" rel="tag">
+             BIOS
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/compaq%20CQ60-420US" rel="tag">
+             compaq CQ60-420US
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/configuration" rel="tag">
+             configuration
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/configure" rel="tag">
+             configure
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/dual%20boot" rel="tag">
+             dual boot
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/ext3" rel="tag">
+             ext3
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/febe" rel="tag">
+             febe
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/firefox" rel="tag">
+             firefox
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/google%20earth" rel="tag">
+             google earth
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/gparted" rel="tag">
+             gparted
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/jaunty%20jackalope" rel="tag">
+             jaunty jackalope
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/laptop" rel="tag">
+             laptop
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/nautilus" rel="tag">
+             nautilus
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/ntfs" rel="tag">
+             ntfs
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/ubuntu%209.04" rel="tag">
+             ubuntu 9.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/search/label/vista" rel="tag">
+             vista
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053744/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=5563962601964415842" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053744/https://raywoodcockslatest.blogspot.com/feeds/5563962601964415842/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:37:44 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:13:04 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.631
+  exclusion.robots: 0.085
+  exclusion.robots.policy: 0.075
+  esindex: 0.009
+  cdx.remote: 61.346
+  LoadShardBlock: 426.577 (3)
+  PetaboxLoader3.datanode: 411.255 (4)
+  PetaboxLoader3.resolve: 28.702
+  load_resource: 30.927
+-->

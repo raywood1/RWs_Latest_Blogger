@@ -1,0 +1,958 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20150408214132im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-installation-another-go.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/feeds/9069119432232645260/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu 10.04 Reinstallation:  Another Go
+  </title>
+  <link href="https://web.archive.org/web/20150408214132cs_/https://www.blogger.com/static/v1/widgets/728935430-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20150408214132cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=fde3e388-6511-4bfa-84e6-f325099fd6ac" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20150408214132im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20150408214132im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20150408214132im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20150408214132im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20150408214132im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20150408214132im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20150408214132im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20150408214132im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20150408214132im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20150408214132im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20150408214132im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20150408214132im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20150408214132im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20150408214132im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20150408214132im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20150408214132im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20150408214132im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20150408214132im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Friday, September 3, 2010
+        </h2>
+        <div class="post">
+         <a name="9069119432232645260">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-installation-another-go.html">
+           Ubuntu 10.04 Reinstallation:  Another Go
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/03/ubuntu-910-downgrading-from-64-bit-to.html">
+            previously installed
+           </a>
+           Ubuntu 10.04 once or twice.  This post provides a synthesis of the process, done on a Windows XP dual-boot machine.
+           <br/>
+           <br/>
+           <b>
+            Things to Save
+           </b>
+           <br/>
+           <br/>
+           The first thing to think about was, What did I want to save from my previous installation?  I was already keeping my data in an NTFS partition that WinXP recognized as D:.  I had named that partition DATA in both operating systems (OSs).  So I did not have most of my data on the root (commonly referred to with a simple slash, "/") partition containing my Ubuntu program installation.  The main exception was what Ubuntu knows as the /home partition.  (This and other Ubuntu folders, being included on a partition formatted in ext3 or ext4, were invisible to Windows.)  The /home partition was the default location for user data files.  My own files -- documents, PDFs, etc. -- were no longer there, but Ubuntu would still save various settings and other things there.  So I decided to try create a new /home partition, and copy the old /home
+           <i>
+            folder's
+           </i>
+           contents to the new /home
+           <i>
+            partition
+           </i>
+           ,  before reinstalling Ubuntu.  That little effort became the subject of
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-creating-separate-home.html">
+            a separate post
+           </a>
+           .
+           <br/>
+           <br/>
+           Just in case, I saved my open tabs in Firefox (Ubuntu) using an extension whose name was not visible to me at this writing -- called (I believe) CopyAllURLs.  I also used the FEBE addon to save my complete Firefox setup; and since FEBE had failed in the past, I used the InfoLister addon to save at least the list of addons that I had currently installed.  I had previously saved their settings separately, for those addons (e.g., Tab Mix Plus, Forecastfox) that allowed me to do so.  I saved all of these things to my data drive, not to the Ubuntu programs drive that I was about to wipe out.  All of these steps proved to be unnecessary:  the separate /home partition (below) saved my entire Firefox setup just as I had left it.
+           <br/>
+           <br/>
+           I started up Chrome and Opera, both of which I had installed on this machine, and saved a list of their open URLs.  This, too, was unnecessary, thanks to the separate /home partition.  I had already migrated my email and contacts from Thunderbird (Ubuntu) to the Windows portable version of Thunderbird.
+           <br/>
+           <br/>
+           There was another thing to save, but I forgot until too late.  I should have run
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/03/ubuntu-910-downgrading-from-64-bit-to.html">
+            the installed-software command
+           </a>
+           to make a current list of the programs I had installed on Ubuntu.  Instead, I was going to have to use the older list that I had saved some months earlier, and any programs installed since then would have to be rediscovered and reinstalled one at a time.
+           <br/>
+           <br/>
+           I should also have saved /etc/fstab.  My set of hard drive partitions had mostly not changed.  I could have just edited that instead of starting over from scratch (below).
+           <br/>
+           <br/>
+           That was pretty much all that I needed to save from the old Ubuntu programs partition that I was about to wipe out.  Most of my work was done in Windows virtual machines running on VMware Workstation, and those were on a separate partition already.  So now it was time to begin the installation.
+           <br/>
+           <br/>
+           <b>
+            Installation from CD
+           </b>
+           <br/>
+           <br/>
+           This time, I installed Ubuntu 10.04 from scratch, using the CD.
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/05/enabling-pae-on-ubuntu-1004.html">
+            Previous inquiries
+           </a>
+           had suggested that the PAE-enabled kernel would be installed automatically when installing from the CD.  (PAE allowed 32-bit Ubuntu to access RAM well beyond the
+           <a href="https://web.archive.org/web/20150408214132/http://www.google.com/search?q=limit+gigabytes+32-bit&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a#num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=zLx&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=limit+4GB+RAM+32-bit+Ubuntu+-Windows+-Vista+-XP&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=&amp;pbx=1&amp;fp=d331bd8e2d0de10c">
+            4GB theoretical limit
+           </a>
+           -- apparently
+           <a href="https://web.archive.org/web/20150408214132/http://www.google.com/search?q=pae+ram+limit+ubuntu&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a#num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=oPx&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=intitle%3Apae+ram+limit+ubuntu+64GB&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=&amp;pbx=1&amp;fp=d331bd8e2d0de10c">
+            up to 64GB
+           </a>
+           .)  By right-clicking on individual items in the partition install screen during installation, I manually designated a 30GB root ("/") partition for programs.  The installer automatically detected my previously formatted 5GB swap partition.  It seemed that people were
+           <a href="https://web.archive.org/web/20150408214132/http://ubuntuforums.org/showthread.php?t=1133719&amp;page=33">
+            still having problems
+           </a>
+           with ext4, so I formatted the root partition as ext3.  At reboot, GRUB did say that I was installing a PAE kernel, so that was good.
+           <br/>
+           <br/>
+           <b>
+            Installing Software
+           </b>
+           <br/>
+           <br/>
+           Now I ran the second half of
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/03/ubuntu-910-downgrading-from-64-bit-to.html">
+            the installed-software command
+           </a>
+           (above) to restore the set of programs that I had installed on Ubuntu at various points.  This involved using Nautilus to put a copy of my installed-software list someplace accessible (I chose my Desktop), using "cd ~/Desktop" as the short way of getting to the desktop, and then typing the necessary commands:
+           <br/>
+           <blockquote>
+            sudo dpkg --set-selections &lt; installed-software
+            <br/>
+            sudo apt-get install dselect
+            <br/>
+            sudo dselect
+           </blockquote>
+           This gave me a menu, from which I chose option 3, "Install and upgrade wanted packages."  It did so.  It took about an hour.  During the process, it asked "Do you want to erase any previously downloaded .deb files?"
+           <a href="https://web.archive.org/web/20150408214132/http://www.google.com/search?q=%22do+you+want+to+erase+any+previously+downloaded+.deb+files%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a#num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=71g&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22do+you+want+to+erase+any+previously+downloaded+.deb+files%22+ubuntu+dselect&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=&amp;pbx=1&amp;fp=d331bd8e2d0de10c">
+            My search
+           </a>
+           yielded no clear answer to this question.  I guessed, from a couple of things I saw in that search, that this was like the question that came up in some Windows installations (in Microsoft Office, perhaps), where you would have the option of keeping downloads on the hard drive to make future fixes or upgrades faster, at the expense of consuming additional disk space.  I tried the Yes option.  It paused for a minute and then put me back at the menu.  So I guess it deleted some .deb files.  Anyway, the installed packages included ntfs-config, so now I could run that ("sudo ntfs-config"), so that Ubuntu would recognize my NTFS (Windows) partitions and put appropriate entries in /etc/fstab.  So then /home would be recognized on reboot.
+           <br/>
+           <br/>
+           Unfortunately, something in the install-software process screwed up my system, leading to a "udevadm" error message and a
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-udevadm-trigger-is-not.html">
+            whole separate post
+           </a>
+           .  But then, when I rebooted, I had another problem.  I was looking at a nearly blank screen.  It just showed the name of Ubuntu across the top ("Ubuntu 10.04.1 LTS P4 tty1," where P4 was the name of my computer) and then gave me a simple login prompt:  "P4 login."  I wasn't sure what to search for, to solve this problem, so I booted with the
+           <a href="https://web.archive.org/web/20150408214132/http://www.ubuntu.com/getubuntu/downloadmirrors">
+            alternative installation CD
+           </a>
+           and chose the "Rescue a broken system" option.  Ultimately, it gave me two basic options:  either reinstall GRUB or execute a shell in my Ubuntu program partition (in my case, /dev/sdb8).  I had no idea what to type at the prompt, and I didn't seem to be having a GRUB problem, so I tried
+           <a href="https://web.archive.org/web/20150408214132/http://www.google.com/search?q=ubuntu+10.04+%22blank+login+screen%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a#num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=mBf&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=ubuntu+10.04+%22blank+login+screen%22&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=ubuntu+10.04+%22blank+login+screen%22&amp;gs_rfai=&amp;pbx=1&amp;fp=70bfc538efc94ade">
+            a search
+           </a>
+           ; but it turned up stuff dealing with monitor problems.  I tried
+           <a href="https://web.archive.org/web/20150408214132/http://www.google.com/search?q=ubuntu+tty1+prompt+login&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">
+            another search
+           </a>
+           and came across the idea that I could just type "startx" to open the graphical user interface (GUI), so I rebooted, entered my username and password at that prompt, and then typed startx.  But this gave me some error messages:  "Failed to open device," "No valid modes," and "Screen(s) found, but none have a usable configuration."
+           <br/>
+           <br/>
+           Basically, it seemed that the installed-software process had messed up my system.  So I started over, installing Ubuntu from scratch, and this time I didn't use the installed-software option.  I had to go back through the process of setting up my separate /home partition, and then
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-manual-approach-to.html">
+            I worked manually
+           </a>
+           through the installed-software process.  That entailed
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/09/ubuntu-1004-repositories.html">
+            setting up my repositories
+           </a>
+           .  After that process, some programs were still not installed.  Drawing upon my previous installation and its
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/03/ubuntu-910-downgrading-from-64-bit-to.html">
+            follow-on comments
+           </a>
+           (as well as notes in a few other posts), I used System &gt; Administration &gt; Synaptic Package Manager to install acroread, adobe-flashplugin, boinc, dvgrab, fdutils, gparted, mplayer, nautilus-open-terminal, ntfsprogs, p7zip-full, sysinfo, ubuntu-tweak, unetbootin, and webhttrack.  Then I installed several programs that I had downloaded separately, on the assumption they were not available via Synaptic.  These included VMware Workstation 7, which I installed,
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/06/vmware-workstation-7-installation.html">
+            as I had learned
+           </a>
+           to do, by typing "sh VMware-Workstation-Full-7.1.0-261024.i386.bundle" in the folder containing that downloaded bundle file.  The simple "sudo sh" prefix was also adequate for installing my separate .bin downloads (i.e., GoogleEarthLinux.bin).  I installed Beyond Compare, Opera, and Google Chrome by just double-clicking on the .deb downloads.
+           <br/>
+           <br/>
+           <b>
+            Settings and Adjustments
+           </b>
+           <br/>
+           <br/>
+           Creating the separate /home partition had preserved most of my Nautilus settings, but I still had to tweak a few of those manually.  It had not saved my monitor driver settings, so now I went into System &gt; Administration &gt; Hardware Drivers, searched for available drivers and, for my machine, found NVIDIA accelerated graphics driver (current version) &gt; Activate.  This, like other installation and activation steps, would work only when there was no other Synaptic or software installer running.  I rebooted to activate the hardware driver.  Unfortunately, I was still getting some bad ghosting.  Tightening my video cable connectors solved the problem.
+           <br/>
+           <br/>
+           Most of my newly installed programs did not require immediate configuration.  To configure BOINC, I went to Applications &gt; System Tools &gt; BOINC Manager &gt; Next &gt; Choose a Project &gt; World Community Grid &gt; Next, and then went into Advanced &gt; Settings to adjust my preferences.
+           <br/>
+           <br/>
+           GRUB2 had lost the setting by which it would remember which operating system I had booted last, and would reboot that one instead of defaulting to Ubuntu, so I typed "sudo gedit /etc/default/grub"; I changed one line to say GRUB_DEFAULT=saved instead of GRUB_DEFAULT=0; I added another line, right after it, that said "GRUB_SAVEDEFAULT=true"; I saved and closed that file; and then I typed "sudo update-grub."
+           <br/>
+           <br/>
+           Following
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/06/ubuntu-1004-windows-dual-boot-customize.html">
+            a previous post
+           </a>
+           , I pruned the list of entries shown in the GRUB2 menu at bootup.  First, I typed "sudo gedit /etc/grub.d/10_linux" and added a line, immediately after the comments section at the top, that said "GRUB_DISABLE_LINUX_RECOVERY=true" (without quotes, as always).  That would prevent me from seeing the "recovery" versions of Linux kernels in that menu.  At the end of that same file, I searched for the place that had these two lines:
+           <br/>
+           <blockquote>
+            list=`echo $list | tr ' ' '\n' | grep -vx $linux | tr '\n' ' '`
+            <br/>
+            done
+           </blockquote>
+           and changed it by inserting another list line between those two:
+           <br/>
+           <blockquote>
+            list=`echo $list | tr ' ' '\n' | grep -vx $linux | tr '\n' ' '`
+            <br/>
+            list=`version_find_latest $list`
+            <br/>
+            done
+           </blockquote>
+           (Note that backticks ( ` ) are not the same as single quotes ( ' ) in such files.)  This, I hoped, would show me just the one or two most recent Linux kernels.  Finally, I saved and closed 10_linux and modified its companion file with this command:  "sudo chmod -x /etc/grub.d/20_memtest86+."  This command would hopefully prevent me from seeing the memtest options in the GRUB2 menu.  I rebooted and confirmed that it worked.
+           <br/>
+           <br/>
+           Other settings did remain intact via the preserved /home partition.  Unlike the steps described in the previous installation and in
+           <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/2010/05/tweaking-ubuntu-1004.html">
+            another tweak post
+           </a>
+           , I did not have to make manual adjustments to prevent icons for mounted drives from appearing on the desktop.  My previous list of programs that should run at startup remained intact.  Gedit was still my default crontab editor.  The permissions giving me access to various partitions as ordinary user, not root, were still in place.  My VMware settings seemed to have been preserved, except for what may have been a few new root-level settings in the new version of VMware Workstation that I had just installed.
+           <br/>
+           <br/>
+           When these steps were complete, I ran Update Manager one last time, rebooted, and confirmed that everything looked good.  Then I rebooted with a CD and made an Acronis disk image on a separate partition.  Done!
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20150408214132/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=9069119432232645260&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/%2Fhome" rel="tag">
+             /home
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/adjustments" rel="tag">
+             adjustments
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/dpkg" rel="tag">
+             dpkg
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/dual-boot" rel="tag">
+             dual-boot
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/febe" rel="tag">
+             febe
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/fstab" rel="tag">
+             fstab
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/home%20partition" rel="tag">
+             home partition
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/install" rel="tag">
+             install
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/installed-software" rel="tag">
+             installed-software
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/kernel" rel="tag">
+             kernel
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/PAE" rel="tag">
+             PAE
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/reinstall" rel="tag">
+             reinstall
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/settings" rel="tag">
+             settings
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/tweaks" rel="tag">
+             tweaks
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/search/label/Ubuntu%2010.04" rel="tag">
+             Ubuntu 10.04
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20150408214132/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=9069119432232645260" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20150408214132/http://raywoodcockslatest.blogspot.com/feeds/9069119432232645260/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 21:41:32 Apr 08, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:24:53 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.618
+  exclusion.robots: 0.083
+  exclusion.robots.policy: 0.074
+  esindex: 0.009
+  cdx.remote: 29.051
+  LoadShardBlock: 126.221 (3)
+  PetaboxLoader3.datanode: 158.862 (4)
+  load_resource: 211.28
+  PetaboxLoader3.resolve: 159.796
+-->

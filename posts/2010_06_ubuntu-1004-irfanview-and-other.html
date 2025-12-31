@@ -1,0 +1,1118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20141120065534im_/http://raywoodcockslatest.blogspot.fr/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.com/2010/06/ubuntu-1004-irfanview-and-other.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.com/feeds/2894531977641640712/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu 10.04:  IrfanView and Other Portable Apps via Wine
+  </title>
+  <link href="https://web.archive.org/web/20141120065534cs_/https://www.blogger.com/static/v1/widgets/3841957138-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20141120065534cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=0a1b8d71-88ad-400d-bb05-002a27b27ee7" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20141120065534im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20141120065534im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20141120065534im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20141120065534im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20141120065534im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20141120065534im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20141120065534im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20141120065534im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20141120065534im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20141120065534im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20141120065534im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20141120065534im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20141120065534im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20141120065534im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20141120065534im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20141120065534im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20141120065534im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20141120065534im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Saturday, June 12, 2010
+        </h2>
+        <div class="post">
+         <a name="2894531977641640712">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/2010/06/ubuntu-1004-irfanview-and-other.html">
+           Ubuntu 10.04:  IrfanView and Other Portable Apps via Wine
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           According to
+           <a href="https://web.archive.org/web/20141120065534/http://www.wine-reviews.net/wine-reviews/applications/irfanview-423-on-linux-with-wine.html">
+            Tom Wickline
+           </a>
+           , the process for installing IrfanView 4.23 on Ubuntu 8.04 was just a matter of installing winetricks and MFC42.dll and then installing IrfanView.  I wasn't sure how to do each of those steps, and I wasn't using quite the same setup as he was.  This post traces through my own installation process.
+           <br/>
+           <br/>
+           I was using Ubuntu 10.04 (Lucid Lynx).  I had just downloaded IrfanView 4.27, and thought I would try to install that latest &amp; greatest version.  Also, unlike Tom's system, mine was not "a clean configuration directory, with no other applications or games installed."  According to Ubuntu's System &gt; Administration &gt; Synaptic Package Manager, I was using Wine 1.2.
+           <br/>
+           <br/>
+           My first hurdle was to figure out how to install MFC42.dll.
+           <a href="https://web.archive.org/web/20141120065534/http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7834">
+            A WineHQ webpage
+           </a>
+           said that I could get MFC42.dll
+           <a href="https://web.archive.org/web/20141120065534/http://download.microsoft.com/download/vc60pro/update/1/w9xnt4/en-us/vc6redistsetup_enu.exe">
+            from Microsoft
+           </a>
+           or
+           <a href="https://web.archive.org/web/20141120065534/http://wiki.winehq.org/winetricks">
+            via winetricks
+           </a>
+           .  They said I might already have gotten winetricks installed during my Wine installation, but they also said that I could run it even if it wasn't installed; I would just have had to type "sh winetricks" instead of just "winetricks" to run it.  I checked Synaptic.  Sure enough, there it was.  The purpose of winetricks seemed to be to add Windows-friendly support files so that Wine would run Windows programs.  That sounded about right.  The
+           <a href="https://web.archive.org/web/20141120065534/http://wiki.winehq.org/winetricks">
+            winetricks webpage
+           </a>
+           listed MFC42.dll among the files that it was prepared to help me with.  I went ahead and typed "winetricks mfc42.dll."  That ran and appeared to change some settings.  I went into the wine subdirectory under my Ubuntu user folder:  File System/home/ray/.wine/drive_c/windows/system32.
+           <a href="https://web.archive.org/web/20141120065534/http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7834">
+            Tyler Style
+           </a>
+           had said that it needed to be there, but it wasn't.  Amusingly, he had posted that a few months earlier in response to my previous attempt, a year earlier, to get IrfanView running in Ubuntu.  Well, I thought, maybe MFC42.dll had known what it was doing when it installed itself; maybe Tyler was wrong as to the location where it would be found.  The other thing he said that I needed to do was to go into Applications &gt; Wine &gt; Configure Wine &gt; Libraries tab and register MFC42.dll there.  I typed mfc42.dll into the "New override for library" box, at that location, and clicked Add.  It seemed to accept it:  it listed "mfc42 (native, builtin) as an Existing override.  I clicked Apply &gt; OK.
+           <br/>
+           <br/>
+           This was fine, for whatever it was worth, but it didn't add IrfanView to my program menu.  To install IrfanView, I had gathered somewhere that I needed to type "wine iview427_setup.exe" to install IrfanView.  I tried that.  It replied with this:
+           <br/>
+           <blockquote>
+            wine: cannot find L"C:\\windows\system32\\iview427_setup.exe"
+           </blockquote>
+           That raised two questions, which may be summarized as "why not?" and "so what?"  I didn't know why the error message had put that L in front of the C, but whatever; I had since discovered that, in Windows, IrfanView would
+           <a href="https://web.archive.org/web/20141120065534/http://irfanview.com/faq.htm#Q9">
+            install as a standalone
+           </a>
+           program, and had therefore moved it to a different partition where I kept all of my Windows standalones (so that I wouldn't have to reinstall them whenever I had to reinstall Windows, but could instead just copy the whole folder to drive D (or whatever) on the new computer.  In other words, I wondered whether I could skip the installation; I wondered whether Wine could run portable or standalone programs.  According to
+           <a href="https://web.archive.org/web/20141120065534/http://ubuntuforums.org/showthread.php?t=335477">
+            MoebusNet
+           </a>
+           , it could, and one way to make it do that was to download and install
+           <a href="https://web.archive.org/web/20141120065534/http://portableapps.com/">
+            PortableApps
+           </a>
+           to the USB drive where you were going to keep your portable programs.  In my case, I wasn't going to keep them on a USB drive; I was going to keep them in a folder on my hard drive.  I wasn't sure how that would work, but I gave it a try.  I
+           <a href="https://web.archive.org/web/20141120065534/http://downloads.sourceforge.net/portableapps/PortableApps.com_Platform_Setup_1.6.1.exe">
+            downloaded
+           </a>
+           and ran the little 2MB PortableApps Platform.  They said it was self-contained -- PortableApps was, itself, portable -- so I wondered if I could install it on the folder on my hard drive where I kept my other portable programs.  After a brief search, I decided the best way to find out was just to try it.  So when it came time, in the installation process, to choose the install location for PortableApps, I named that folder as the destination.  When the installation finished, in Windows Explorer I copied my IrfanView portable folder to the PortableApps folder.  (I kept a copy in the original location so that it would be available outside of Portable Apps as well.  I thought I would probably prefer to run it that way from my WinXP boot.)  I deleted iv_uninstall.exe from this copy, since I didn't want the uninstaller to show up in PortableApps.  I created a shortcut to PortableAppsPlatform.exe and put that in my Start Menu.  I started up PortableAppsPlatform and, following
+           <a href="https://web.archive.org/web/20141120065534/http://portableapps.com/support/portable_apps_suite#addingotherapps">
+            instructions
+           </a>
+           , clicked on its Options &gt; Refresh App Icons.  I clicked on the IrfanView icon and, sure enough, IrfanView started up.
+           <br/>
+           <br/>
+           So now that I had acquired this lovely knowledge about PortableApps, it was time to get back to what MoebusNet had started telling me, about running portable apps in Ubuntu via Wine.  I typed this:
+           <br/>
+           <blockquote>
+            wine "/media/DATA/Standalones/PortableApps/PortableApps.com/PortableAppsPlatform.exe"
+           </blockquote>
+           and that worked:  IrfanView started up.  So the concept seemed to be that any portable app that I would put into a folder on the same level as the PortableApps.com folder would show up when I ran that command.  So I could make a single PortableApps menu pick for Ubuntu, and it would lead, via PortableApps, to any portable application program that I would set up that way.  I set up a launcher for that wine command by highlighting, right-clicking, and copying it into the Ubuntu Applications menu:  right-click on Applications and choose Edit Menus &gt; Applications &gt; Accessories &gt; New Item.  Name it PortableApps, paste the copied command into the Command box, and Comment it as "Launch portable Windows applications."
+           <br/>
+           <br/>
+           This was all wonderful.  But when I tried to play a .wav file in IrfanView, I was still getting the same error message from the previous year, the one that
+           <a href="https://web.archive.org/web/20141120065534/http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7834">
+            Tyler Style
+           </a>
+           had tried to help me with.  The message read as follows:
+           <br/>
+           <blockquote>
+            IrfanView
+            <br/>
+            Error:  Windows can't play this file!
+            <br/>
+            Windows error text:  Invalid MCI device ID.  Use the ID returned when opening the MCI device..
+            <br/>
+            You can try to install additional video/audio codecs from this site:
+            <br/>
+            http://www.fourcc.org/indexcod.htm
+            <br/>
+            or try the DirectShow option in 'Properties-&gt;Video'
+           </blockquote>
+           The fourcc.org/indexcod.htm webpage seemed to offer video but not audio codecs.  Some
+           <a href="https://web.archive.org/web/20141120065534/http://ubuntuguide.org/wiki/Ubuntu:Lucid#Proprietary_Extras">
+            Ubuntu documentation
+           </a>
+           pointed me toward the Ubuntu restricted extras repository.  I thought I had already
+           <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.com/2010/05/ubuntu-1004-adjustments-software-source.html">
+            set myself up
+           </a>
+           for everything I could get from there, but the documentation was saying, "Installation only works completely and properly when done from the command-line Terminal. The entire package will not usually install completely from within a Package Manager."  So possibly Synaptic had not brought me all of the codecs I needed.  I killed IngrfanView and then, obeying the documentation, I typed this:
+           <br/>
+           <blockquote>
+            sudo apt-get install ubuntu-restricted-extras
+           </blockquote>
+           but it said I already had the newest version.  I could have tried completely removing and reinstalling ubuntu-restricted-extras, but that sounded like it could lead to
+           <a href="https://web.archive.org/web/20141120065534/http://ubuntuforums.org/showthread.php?t=840994">
+            other difficulties
+           </a>
+           .  Besides,
+           <a href="https://web.archive.org/web/20141120065534/http://linuxowns.wordpress.com/2008/06/23/install-audio-and-video-codecs-in-ubuntu/">
+            another post
+           </a>
+           made it sound like the codecs might actually be in Medibuntu, which I had also installed.
+           <br/>
+           <br/>
+           There were two other things to think about.  One was that I might just try a different audio player.  I
+           <a href="https://web.archive.org/web/20141120065534/http://ubuntuforums.org/showthread.php?p=9423264#post9423264">
+            posted a question
+           </a>
+           on that.  The other was that I maybe I should take a shot at that actual error message.  What did "Invalid MCI device ID" mean?  Turns out I had posted a
+           <a href="https://web.archive.org/web/20141120065534/http://osdir.com/ml/wine-bugs/2009-07/msg04464.html">
+            bug report
+           </a>
+           on it the previous year.  I posted
+           <a href="https://web.archive.org/web/20141120065534/http://bugs.winehq.org/show_bug.cgi?id=19496">
+            an update
+           </a>
+           to that bug report.
+           <br/>
+           <br/>
+           Meanwhile, in response to the question about an alternative audio player, I got a suggestion to try an older version of IrfanView (namely, 3.98), or to try
+           <a href="https://web.archive.org/web/20141120065534/http://www.mpg123.de/features.shtml">
+            mpg123
+           </a>
+           if my reason for wanting IrfanView was to enable skipping to the next file in a folder with just one keystroke.  IrfanView 3.98
+           <a href="https://web.archive.org/web/20141120065534/http://irfanview.com/history_old.htm">
+            dated from 2005
+           </a>
+           , so I would be missing out on some newer functionality.  It didn't seem to be available on the official IrfanView site, but I found
+           <a href="https://web.archive.org/web/20141120065534/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;safe=off&amp;client=firefox-a&amp;hs=Lqt&amp;rlz=1R1GGGL_en___US333&amp;q=download+%22irfanview+3.98%22&amp;btnG=Search">
+            numerous other locations
+           </a>
+           for it.  It was a bit harder to find
+           <a href="https://web.archive.org/web/20141120065534/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;safe=off&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333&amp;q=download+irfanview+%223.98+plugins%22+OR+%22plugins+3.98%22+OR+%223.98+plug-ins%22+OR+%22plug-ins+3.98%22&amp;btnG=Search">
+            the plugins
+           </a>
+           for version 3.98, but eventually
+           <a href="https://web.archive.org/web/20141120065534/http://www.oldapps.com/irfanview_plugins.php?old_irfanview_plugins=13">
+            I did
+           </a>
+           .  I installed 3.98 and its plugins on a Windows XP machine and then moved the installed folder over to the Ubuntu machine.  I deleted the previous IrfanView folder from the PortableApps folder, and put this new IrfanView 3.98 folder into PortableApps in its place.  (This time, I didn't keep a copy outside of PortableApps, since I didn't plan to run 3.98 in WinXP.)  Once again, I deleted the Uninstall.exe file from this IrfanView 3.98 folder.  I went to Ubuntu's Applications &gt; Accessories &gt; PortableApps &gt; Options &gt; Refresh and then clicked on IrfanView.  It opened up.  I went to Help &gt; About.  Sure enough, I was now running version 3.98.  To test it, I hit Print Screen.  This opened Ubuntu's Save Screenshot dialog.  I clicked Copy to Clipboard, moused to IrfanView, and hit Ctrl-V.  Sure enough, I had the screenshot in IrfanView.  I tried cropping it (left mouse click / drag / release, Ctrl-Y), set View &gt; Display Options &gt; Fit Images to Window, and, sure enough, IrfanView was functioning normally.  Cool!
+           <br/>
+           <br/>
+           To try IrfanView's audio functioning, I navigated to a folder containing several .wav files, double-clicked on the first one, and it played -- in Ubuntu's Totem Movie Player.  Oops.  I right-clicked on the .wav, but Ubuntu wasn't listed as a possibility for the program to play it in.  I went back to PortableApps and started IrfanView again.  I went into its Options &gt; Properties -- but, of course, I had already set those.  So, a problem:  could I get Ubuntu to treat IrfanView as the default viewer or player for a filetype?  My
+           <a href="https://web.archive.org/web/20141120065534/http://www.google.com/search?q=portableapps+ubuntu+%22default+viewer%22+OR+%22default+player%22+irfanview&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+            first search
+           </a>
+           didn't turn up much.  PortableApps had a
+           <a href="https://web.archive.org/web/20141120065534/http://portableapps.com/support/chat/live">
+            live support chat
+           </a>
+           , but no joy for me there, so I
+           <a href="https://web.archive.org/web/20141120065534/http://portableapps.com/node/23822">
+            posted a question
+           </a>
+           on it in a PortableApps forum.  Then, resuming my tinkering, I right-clicked on the .wav again and chose Open With &gt; Other Application &gt; Wine Windows Program Loader, but that gave me "Error:  There is no Windows program configured to open this type of file."  Well, I had definitely configured IrfanView to do so, but maybe Wine didn't agree.  I tried
+           <a href="https://web.archive.org/web/20141120065534/http://www.google.com/search?q=wine+%22there+is+no+windows+program+configured+to+open+this+type+of+file%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+            a search
+           </a>
+           for that error message, and followed one particularly
+           <a href="https://web.archive.org/web/20141120065534/http://ubuntuforums.org/showthread.php?t=1331074&amp;page=5">
+            painful thread
+           </a>
+           from that search.  Somewhere along the way, I got the idea to try Ubuntu's Applications &gt; Wine &gt; Configure Wine &gt; Applications.  With Windows XP as the version of Windows specified at the bottom of the dialog, I clicked on Add Application and navigated to the folder where I had put PortableApps; and in there, I navigated to the IrfanView folder, selected i_view32.exe, and clicked Open &gt; OK.  Now I went back to the original Ubuntu right-click on the .wav, selected Open With &gt; Wine Windows Program Loader . . . and still got the same "no Windows program configured" error.
+           <br/>
+           <br/>
+           I had forgotten the option of installing IrfanView as an Ubuntu application via Wine.  Following
+           <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.com/2009/07/installing-and-using-irfanview-for.html">
+            my steps
+           </a>
+           from a year earlier, I navigated to the IrfanView 3.98 folder and typed "wine i_view32.exe."  But no, that wasn't right; that just ran the portable version.  That command-line approach wasn't necessary anyway; I discovered that I must already somehow have set up Wine to run .exe files automatically, apparently following advice like that provided by a relevant
+           <a href="https://web.archive.org/web/20141120065534/https://help.ubuntu.com/community/Wine#Installing Windows Applications With Wine">
+            Community Documentation
+           </a>
+           page.  All a bit puzzling.  I continued playing and posting on it, trying to dig my way out.
+           <br/>
+           <br/>
+           Meanwhile, I experimented with mpg123.  Some time had passed, and I couldn't remember if I had already installed it, so I just typed "mpg123" at the Ubuntu command line.  This gave me an odd error message:
+           <br/>
+           <blockquote>
+            The program 'mpg123' is currently not installed.  You can install it by typing:  sudo apt-get install mpg321.
+           </blockquote>
+           What was odd was that the installation line said mpg321, not mpg123.  I checked Synaptic.  It confirmed that I didn't have mpg123 installed yet, and it also showed me a program called mpg321 on the next line.  The description of the latter characterized it as an "mpg123 clone that doesn't use floating point."  Apparently someone at mpg123 decided that mpg321 was a superior alternative, and thus gave me that command line suggestion to use mpg321 instead.  Just to be sure, I did
+           <a href="https://web.archive.org/web/20141120065534/http://www.google.com/search?q=mpg123+mpg321&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+            a search
+           </a>
+           and got
+           <a href="https://web.archive.org/web/20141120065534/http://commandline.org.uk/command-line/command-line-audio-players-mpg321-and-mpg123/">
+            the impression
+           </a>
+           that mpg123 began as nonfree software, so mpg321 was prepared as a free alternative and it just became more popular.  I installed both of them in Synaptic, but after playing around with them for a half-hour or more, I was still not getting
+           <a href="https://web.archive.org/web/20141120065534/http://commandline.org.uk/command-line/command-line-audio-players-mpg321-and-mpg123/">
+            playlists
+           </a>
+           to work properly.
+           <br/>
+           <br/>
+           I found
+           <a href="https://web.archive.org/web/20141120065534/http://lindesk.com/2008/03/top-10-linux-mp3-players/">
+            a page
+           </a>
+           listing top Linux music players.  I looked at the webpages for several on that list, but none of the six or eight pages I looked at provided a simple explanation of how the players actually worked -- of whether, to cite an example, you could hit the 6 key on the numeric console at the right end of a standard keyboard to move on to the next file, as you could do in Winamp.  From that list, in the name of trying something rather than nothing, I installed
+           <a href="https://web.archive.org/web/20141120065534/http://audacious-media-player.org/">
+            Audacious
+           </a>
+           .  It was a nice enough player, but it did not have the ability to delete a file that I was listening to, as IrfanView did.  It was also not as responsive:  IrfanView would stop immediately when I told it to, so that I could mark a file for resorting or other handling; Audacious would continue on for maybe a second or so, which is not much except when it results in the program's moving on to the next file, which was not the one that I wanted to delete, re-listen to, or otherwise handle.  I decided, once again, that what I wanted was undeniably IrfanView, until further notice.
+           <br/>
+           <br/>
+           By this time,
+           <a href="https://web.archive.org/web/20141120065534/http://ubuntuforums.org/showpost.php?p=9454159&amp;postcount=5">
+            Ringi had replied
+           </a>
+           to my latest post in that thread.  It seemed that s/he was doing just fine with the latest version of IrfanView in Ubuntu.  Since there seemed to be no need for 3.98 after all, I deleted the IrfanView 3.98 folder from PortableApps and replaced it (again, without the uninstall.exe) with a copy of 4.27.  Ringi asked whether I had installed IrfanView's plugins, and that was a good question; I was not sure.  Actually, by now I wasn't even sure I had actually installed IrfanView via Wine; it wasn't appearing in Applications &gt; Wine &gt; Programs.  Returning to my notes at the start of this post, I decided that the PortableApps thing was a dead end, at least for purposes of getting IrfanView to run the way I wanted.
+           <br/>
+           <br/>
+           I went back, specifically, to the advice (above) that I needed to type "wine iview427_setup.exe" to install IrfanView.  In Terminal, I navigated to the original setup folder (i.e., not the unpacked, ready-to-run standalone folder) where I had stored iview427_setup.exe and irfanview_plugins_427_setup.exe.  I typed that  Wine command:  "wine iview427_setup.exe."  It said, "err:module:import_dll Library MFC42.DLL (which is needed by L"D:[path]\iview427_setup.exe") not found."  So, OK.  I had not correctly installed MFC42.DLL after all.  Following the
+           <a href="https://web.archive.org/web/20141120065534/http://wiki.winehq.org/winetricks">
+            Winetricks instructions
+           </a>
+           , I typed "sh winetricks mfc42.dll."  I got an error:  "Can't open winetricks."  I verified, in Synaptic, that I did have cabextract installed.  Synaptic also confirmed that I had winetricks installed.  Nonetheless, following those instructions, I typed "wget http://www.kegel.com/wine/winetricks."  It ran.  I tried "sh winetricks mfc42.dll" again.  This time, it said, "Unknown arg mfc42.dll," followed by a list of the packages that it did have.  Oops:  just plain mfc42, not mfc42.dll.  I retried:  "sh winetricks mfc42."  It ran without error.  So, interesting:  it seemed that Synaptic (or whatever approach I had used previously) had not done the job of installing winetricks properly.  Now I got a dialog for "VCRedist Installation."  I okayed through that; something ran in Terminal; and it concluded with this statement:  "Install of mfc42 done.  Winetricks done."  Cool.  I had finished the mfc42 part.  Now back, once more, to "wine iview427_setup.exe."  This gave me the IrfanView Setup dialog.  I set it to install for all users in C:\Program Files\IrfanView\.  It completed, and IrfanView was up and running.  I killed it and typed "wine irfanview_plugins_427_setup.exe."  That ran OK, and now I had an IrfanView entry in Applications &gt; Wine &gt; Programs.  I started IrfanView and set its options, including naming it as the default handler for all audio files.
+           <br/>
+           <br/>
+           So IrfanView now seemed properly set up for sure.  In IrfanView, I did a File &gt; Open.  It was listing only image files, but I changed it to show all files, and then tried to play one of the .wav files in that folder.  It gave me the "Error:  Windows can't play this file!" message again, same as before.  I killed IrfanView, double-clicked on a .wav file in Nautilus, and the file played -- in Totem!  It certainly appeared that I had installed IrfanView correctly -- at least once, if not multiple times -- and yet it was still not functioning properly for me in Ubuntu.  I returned to
+           <a href="https://web.archive.org/web/20141120065534/http://bugs.winehq.org/show_bug.cgi?id=19496">
+            a Wine bug report
+           </a>
+           that I had started to file a year earlier.  I didn't know how to file bug reports, but I gave it a whirl.  The concept seemed to be that you get
+           <a href="https://web.archive.org/web/20141120065534/http://wiki.winehq.org/FAQ#head-16da35b6327024d6ea576e3678488b16862d0f5e">
+            a debug trace
+           </a>
+           on the uncooperative program.  In this case, that seemed to call for going to the folder where I had installed portable IrfanView and running the following command:
+           <br/>
+           <br/>
+           WINEDEBUG=+relay,+seh,+tid wine i_view32.exe &amp;&gt; /tmp/output.txt
+           <br/>
+           <br/>
+           That opened IrfanView and waited while I repeated the steps I had taken:  open a .wav file, get a repeated error message, etc.  When I closed IrfanView, the output file was there.  But when I looked in it, it only contained repeated instances of this message:  "fixme:mciwave:MCIWAVE_DriverProc Unsupported yet command [2115]."  That last number changed, in each of the six repetitions of that message:  2115, 2114, 2132, 2114, 2132, 2132.  Maybe that was all it was supposed to say.  Whatever.  I
+           <a href="https://web.archive.org/web/20141120065534/http://bugs.winehq.org/show_bug.cgi?id=19496">
+            attached
+           </a>
+           the output.txt file to the bug report and sent it off.  Meanwhile, I posted a link to this note in the discussion thread, in case Ringi or someone else felt like reviewing it and possibly detecting what I had done wrong.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20141120065534/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=2894531977641640712&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/10.04" rel="tag">
+             10.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/applications" rel="tag">
+             applications
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/IrfanView" rel="tag">
+             IrfanView
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/lucid%20lynx" rel="tag">
+             lucid lynx
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/portable" rel="tag">
+             portable
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/PortableApps" rel="tag">
+             PortableApps
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/standalone" rel="tag">
+             standalone
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/windows" rel="tag">
+             windows
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/wine" rel="tag">
+             wine
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/winetricks" rel="tag">
+             winetricks
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.fr/search/label/XP" rel="tag">
+             XP
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          4
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-240385735546284868">
+           <a name="comment-240385735546284868">
+           </a>
+           <a href="https://web.archive.org/web/20141120065534/http://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I posted a bug report in the IrfanView forum at http://en.irfanview-forum.de/vb/showthread.php?6598-Invalid-MCI-device-ID-IrfanView-under-Wine-in-Ubuntu&amp;p=30625#post30625
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-240385735546284868" title="comment permalink">
+             June 13, 2010 at 8:47 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20141120065534/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=240385735546284868" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-431307691606437961">
+           <a name="comment-431307691606437961">
+           </a>
+           <a href="https://web.archive.org/web/20141120065534/http://www.blogger.com/profile/08999351403559982314" rel="nofollow">
+            Simon
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I bet "fixme:mciwave:MCIWAVE_DriverProc Unsupported yet command" means that the WINE developers haven't yet implemented the needed mciwave functionality.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-431307691606437961" title="comment permalink">
+             June 22, 2010 at 3:53 AM
+            </a>
+            <span class="item-control blog-admin pid-359615923">
+             <a href="https://web.archive.org/web/20141120065534/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=431307691606437961" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-6208410646076251667">
+           <a name="comment-6208410646076251667">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            According to the hint by Haukew on_http://www.ubuntu-forum.de/artikel/3781/IrfanView-mit-wine-benutzen.html_ I just placed the mfc42.dll file in the same folder as the iview_410.exe file, then executed the install procedure with wine. Works perfect. Notice: I used IrfanView version 410 to avoid trouble with the new IrfanView toolbar that comes with version 427.
+            <br/>
+            Greetz, Jan.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-6208410646076251667" title="comment permalink">
+             August 14, 2010 at 12:52 PM
+            </a>
+            <span class="item-control blog-admin pid-2017223399">
+             <a href="https://web.archive.org/web/20141120065534/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=6208410646076251667" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-8032726347558357027">
+           <a name="comment-8032726347558357027">
+           </a>
+           emarkay
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Have you gotten 4.27 or 4.28 to work; with the "Paint" portion able to save its edits on the image?
+            <br/>
+            See WINEHQ page on Irfanview for details:
+            <br/>
+            http://appdb.winehq.org/objectManager.php?sClass=version&amp;iId=7834
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-8032726347558357027" title="comment permalink">
+             January 15, 2011 at 1:05 PM
+            </a>
+            <span class="item-control blog-admin pid-1554347627">
+             <a href="https://web.archive.org/web/20141120065534/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=8032726347558357027" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20141120065534/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=2894531977641640712" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20141120065534/http://raywoodcockslatest.blogspot.com/feeds/2894531977641640712/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:55:34 Nov 20, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:21:58 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.646
+  exclusion.robots: 0.073
+  exclusion.robots.policy: 0.063
+  esindex: 0.01
+  cdx.remote: 57.331
+  LoadShardBlock: 87.821 (3)
+  PetaboxLoader3.datanode: 246.423 (4)
+  PetaboxLoader3.resolve: 41.482 (2)
+  load_resource: 202.561
+-->

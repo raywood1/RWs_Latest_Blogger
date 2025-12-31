@@ -1,0 +1,823 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151121004954im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/2012/05/batch-converting-multiple-word-doc.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/feeds/6408371076577451611/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Batch Converting Multiple Word DOC Files to PDF in Scattered Folders
+  </title>
+  <link href="https://web.archive.org/web/20151121004954cs_/https://www.blogger.com/static/v1/widgets/4235989350-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151121004954cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151121004954im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151121004954im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151121004954im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151121004954im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151121004954im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151121004954im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151121004954im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151121004954im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151121004954im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151121004954im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151121004954im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151121004954im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151121004954im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151121004954im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151121004954im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151121004954im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151121004954im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151121004954im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Sunday, May 27, 2012
+        </h2>
+        <div class="post">
+         <a name="6408371076577451611">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/2012/05/batch-converting-multiple-word-doc.html">
+           Batch Converting Multiple Word DOC Files to PDF in Scattered Folders
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had a large number of .doc files produced by Microsoft Word.  These files were in assorted folders.  I wanted to convert some or all of these files to PDF format.  This post describes the steps I took.
+           <br/>
+           <br/>
+           I had already tackled similar problems in several other posts, including these:
+           <br/>
+           <ul>
+            <li>
+             <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/2012/02/batch-merging-many-scattered-jpgs-into_14.html" target="_blank">
+              Batch Merging Many Scattered JPGs into Many Multipage PDFs - Clarified
+             </a>
+            </li>
+            <li>
+             <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/2012/03/batch-converting-many-microsoft-word_19.html" target="_blank">
+              Batch Converting Many Microsoft Word (.doc) or WordPerfect (.wpd) Files to PDF - Streamlined
+             </a>
+            </li>
+            <li>
+             <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/2012/03/batch-converting-many-microsoft-word_19.html" target="_blank">
+              Batch Converting Many Text Files to PDF
+             </a>
+            </li>
+           </ul>
+           This post does not detail all of the steps described in those other posts.  If a step described here is not clear, perhaps one of those posts expresses it more lucidly.
+           <br/>
+           <br/>
+           I started by getting a list of the DOC files to be converted.  For this, I opened a command window and typed "DIR /s /b /a-d &gt; doclist.txt."  It was OK if this DOC list included files that I did not want to convert:  I could go through the list manually at this point, deleting those that I did not want to convert, or I could do that in the next step.  The next step was to copy and paste the list of files from doclist.txt into Microsoft Excel or some other spreadsheet.  This gave me a list of file and path names that looked like this:
+           <br/>
+           <blockquote class="tr_bq">
+            D:\Folder3\Subfolder 8\Filename Z.doc
+           </blockquote>
+           Since some paths and/or filenames contained spaces, I would tend to use quotation marks in commands relating to them, in both Excel and the command window.  In Excel, I used
+           <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/2012/02/batch-merging-many-scattered-jpgs-into_14.html" target="_blank">
+            the REVERSE function
+           </a>
+           and other spreadsheet commands to extract the path (e.g., "D:\Folder3\Subfolder 8\") from the filename (e.g., "Filename Z.doc").  So now I had separate columns showing the paths and the filenames for each entry in doclist.txt.  This would be a good point for using formulas to identify groups of DOC files that I did not presently wish to convert to PDF.
+           <br/>
+           <br/>
+           The next step in the spreadsheet was to identify the filename without the extension, and to add PDF instead of DOC to that rump filename.  In other words, in this step I went from having Filename Z.doc to having Filename Z.pdf.  This gave me the essential ingredients for the batch commands that I would assemble on each line of the spreadsheet and would then paste into Notepad and save as a .bat file, so as to automate the conversion.
+           <br/>
+           <br/>
+           There were two ways to proceed at this point.  One was to leave the DOCs in place, in their home folders, and do the conversion and replacement right there.  I didn't like that approach.  It was too hard to be sure of what had happened in all those scattered folders.  The approach I preferred was to bring all those .DOC files together in one central folder, do the conversion, and then use the spreadsheet to construct batch files that would put those PDFs back where they belonged and, optionally, delete the DOCs from which they had come.
+           <br/>
+           <br/>
+           Bringing the DOC files to a central folder could be done very easily with a search program like Everything, searching for *.doc.  It could also be done with batch commands constructed in the spreadsheet.  An Excel formula producing a command of the latter nature would be something like ="move /-y "&amp;char(34)&amp;[cell containing filename including .doc extension]&amp;char(34)&amp;" D:\CentralFolder").  It would be important not to take this step -- that is, not to move the files away from their home folders to the central folder -- until I already had a list of where the files came from originally.  Without that, I'd have a big collection of DOC files and no idea of where they belonged.  Note that files bearing identical names, coming from different folders into one, could require some advance manual renaming to avoid overwriting.  In that case, after renaming but before moving, it would probably be advisable to re-run DIR, so as to get the current filenames.
+           <br/>
+           <br/>
+           Once the files were all in a central location (in this case, D:\Conversion), it was time to work up the batch conversion process.  For this, first, I set the General and Options tabs in Bullzip (my free PDF printer) so that it would operate without asking questions or opening PDFs, and would save the PDFs to a designated folder (D:\Conversion\PDFs).  Then I saved this command into a batch file that I called Converter.bat:
+           <br/>
+           <blockquote class="tr_bq">
+            FOR /F "usebackq delims=" %%g IN (`dir /b "*.doc"`) DO "C:\Program Files  (x86)\Microsoft Office\Office11\winword.exe" "%%g" /q /n  /mFilePrintDefault /mFileExit &amp;&amp; TASKKILL /f /im winword.exe
+           </blockquote>
+           I saved Converter.bat in the folder containing the DOC files (in this case, D:\Conversion) and ran it.  It worked away for a while, at the speed of one document every few seconds, until it had produced one PDF for each of my DOC files.  Several times during the process, Word or Bullzip stalled with error messages (e.g., "Word cannot start the converter Rftdca32.cnv").  This seemed to result primarily from corrupted Word docs.  There seemed to be little alternative but to delete those files except where I could find a backup.
+           <br/>
+           <br/>
+           Now I had a set of DOCs and a set of PDFs.  One easy way to make sure that I had a copy of PDF for each DOC was to view the folders using a Windows Explorer alternative like
+           <a href="https://web.archive.org/web/20151121004954/https://www.google.com/search?q=FreeCommander&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">
+            FreeCommander
+           </a>
+           .  In FreeCommander, I could combine the DOCs and PDFs together, sort by file type, select all DOCs, re-sort by file name, and look for instances in which alternating lines were not regularly highlighted.  (In Windows 7, Windows Explorer had lost the ability to retain highlighting after files were re-sorted.)  At this point or later, one could then just delete all DOCs that did have a corresponding PDF.  DoubleKiller Pro would provide a similar approach.  Another method, more suitable for large numbers of files, was to use the DIR and spreadsheet approach outlined above, writing formulas to check for identical filenames (not counting extensions).  Of course, there was no need to actually delete the DOCs if I wanted to keep both the PDF and the DOC.
+           <br/>
+           <br/>
+           I postponed that step to verify, first, that I would not be needing any of the DOCs anymore.  I had
+           <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/2012/02/windows-7-testingverifyingvalidating.html" target="_blank">
+            previously
+           </a>
+           worked on ways to check PDFs by converting them to JPGs and seeing which ones converted successfully.  In that previous effort, IrfanView (my preferred tool) had not behaved as expected, so I had grappled with other approaches.  This time, however, the quick IrfanView batch conversion went smoothly.  This gave me a JPG displaying the first page of each PDF.  My decision there was that, in the interests of speed (and to avoid having to go through every page of every PDF),  I was content to look just at the first page.  There could still be errors on later pages of a PDF, but that would be rare.  If the first page came through OK, I could be fairly confident that most docs converted successfully.  So now, using IrfanView, I flipped through those JPGs quickly.
+           <br/>
+           <br/>
+           With these steps out of the way -- PDFs checked, superannuated DOCs deleted -- I went back to my Excel spreadsheet and worked up batch commands to move the new PDFs back to where the DOCs had been.  I had changed a couple of names along the way, so I had to move those manually, but the rest went automatically.  Project done!
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151121004954/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=6408371076577451611&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/batch" rel="tag">
+             batch
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/conversion" rel="tag">
+             conversion
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/convert" rel="tag">
+             convert
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/doc" rel="tag">
+             doc
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/files" rel="tag">
+             files
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/folders" rel="tag">
+             folders
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/multiple" rel="tag">
+             multiple
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/pdf" rel="tag">
+             pdf
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/search/label/word" rel="tag">
+             word
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151121004954/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=6408371076577451611" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151121004954/http://raywoodcockslatest.blogspot.com/feeds/6408371076577451611/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 00:49:54 Nov 21, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:34:50 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.558
+  exclusion.robots: 0.067
+  exclusion.robots.policy: 0.06
+  esindex: 0.009
+  cdx.remote: 7.268
+  LoadShardBlock: 614.357 (3)
+  PetaboxLoader3.datanode: 558.851 (4)
+  PetaboxLoader3.resolve: 159.907 (2)
+  load_resource: 132.205
+-->

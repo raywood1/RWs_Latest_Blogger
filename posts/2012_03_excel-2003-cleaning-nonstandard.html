@@ -1,0 +1,1252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151125205034im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/03/excel-2003-cleaning-nonstandard.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/feeds/7371436603326043843/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151125205034im_/http://4.bp.blogspot.com/-Q2-4JyrjfeU/T1IsKRjMtaI/AAAAAAAAAJk/eXVW4_YahWo/s200/Clipboard01.jpg" rel="image_src"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Using Excel to Clean Unwanted Characters from Filenames or Other Text
+  </title>
+  <link href="https://web.archive.org/web/20151125205034cs_/https://www.blogger.com/static/v1/widgets/3053256790-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151125205034cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151125205034im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151125205034im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151125205034im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151125205034im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151125205034im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151125205034im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151125205034im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151125205034im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151125205034im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151125205034im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151125205034im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151125205034im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151125205034im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151125205034im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151125205034im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151125205034im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151125205034im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151125205034im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Thursday, March 1, 2012
+        </h2>
+        <div class="post">
+         <a name="7371436603326043843">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/03/excel-2003-cleaning-nonstandard.html">
+           Using Excel to Clean Unwanted Characters from Filenames or Other Text
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I was trying to organize some files.  This post contains some notes I made on ways of using Microsoft Excel to change a list of filenames.  The renaming project drew on file renaming techniques described
+           <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/02/batch-merging-many-scattered-jpgs-into_14.html" target="_blank">
+            elsewhere
+           </a>
+           .
+           <br/>
+           <br/>
+           In various
+           <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/03/excel-2003-attempt-to-sort-sentences-or.html">
+            attempts
+           </a>
+           in this process, I came up against situations where inconsistent punctuation and other filename characteristics made the process unnecessarily complicated.  For instance, file names might refer to "Barack Obama," "Barack H. Obama," "President Obama," and so forth.  These would all be alphabetized differently.  Duplicates might be concealed, and files that belonged together topically might be overlooked.
+           <br/>
+           <br/>
+           In part, that was an issue of choosing and using consistent
+           <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/03/file-naming-conventions.html" target="_blank">
+            file naming conventions
+           </a>
+           .  But at this point, given that the files were already named, there was an issue of how to deal with punctuation and other non-alphanumeric characters.  I wondered if there was a relatively straightforward way to get my arms around the varieties of character usage within a particular corpus.
+           <br/>
+           <br/>
+           The first task seemed to be identifying what unwanted characters were in use.  Taking Microsoft Excel as my weapon
+           <em>
+            du jour
+           </em>
+           , I made a list of the filenames that I might want to change, using DIR on the Windows command line (see the comments following
+           <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/02/windows-7-finding-dir-alternative.html" target="_blank">
+            another recent post
+           </a>
+           ).  I pasted that list of filenames into Excel.
+           <br/>
+           <br/>
+           Next, I ran
+           <a href="https://web.archive.org/web/20151125205034/https://www.google.com/search?q=identify+%22unique+characters%22+string+Excel&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">
+            a search
+           </a>
+           and found several ingenious approaches to related problems.
+           <a href="https://web.archive.org/web/20151125205034/http://www.chinese-forums.com/index.php?/topic/36680-how-to-have-a-list-of-unique-characters-in-a-document/">
+            One
+           </a>
+           would use a wildcard search-and-replace in Microsoft Word:   search for ? (making sure to indicate that this would be a "Use wildcards" search) and replace with ^&amp;^p to put the same character (that is, any character) on a line by itself; then paste the whole text into Excel and do a unique filter to get all of the unique characters found in the text.  This did not seem likely to work for my purposes, unfortunately.  For one thing, Excel 2003 was limited to 65,536 rows, and there could easily be more characters than that in a text being analyzed.  I had also found that spreadsheets capable of handling more rows could be slow at it.
+           <br/>
+           <br/>
+           There were other approaches that used
+           <a href="https://web.archive.org/web/20151125205034/http://www.excelbanter.com/showpost.php?p=508736&amp;postcount=2">
+            an array formula
+           </a>
+           or
+           <a href="https://web.archive.org/web/20151125205034/http://www.mrexcel.com/forum/showpost.php?p=2193244&amp;postcount=8">
+            a script
+           </a>
+           .  I was not as comfortable with those that I did not understand, because it would be difficult for me to work through their logic and make sure they were really doing what I wanted them to do.  An unnoticed mistake could have unfortunate effects when altering a large or important text, or when renaming thousands of files.
+           <br/>
+           <br/>
+           Another possibility came to mind as I looked at
+           <a href="https://web.archive.org/web/20151125205034/http://www.mrexcel.com/forum/showpost.php?p=2193162&amp;postcount=5">
+            the suggestion
+           </a>
+           to use MoreFunc's
+           <a href="https://web.archive.org/web/20151125205034/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=gf1&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=Morefunc+Excel+%22regex.count%22&amp;oq=Morefunc+Excel+%22regex.count%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=3&amp;gs_upl=7137l12041l0l12294l16l5l0l0l0l0l248l778l2.1.2l5l0&amp;gs_l=serp.3...7137l12041l0l12294l16l5l0l0l0l0l248l778l2j1j2l5l0">
+            REGEX.COUNT
+           </a>
+           function (alternately, Excel's
+           <a href="https://web.archive.org/web/20151125205034/http://www.mrexcel.com/forum/showpost.php?p=2193287&amp;postcount=9">
+            SUBSTITUTE
+           </a>
+           or possibly
+           <a href="https://web.archive.org/web/20151125205034/http://www.techonthenet.com/excel/formulas/match.php">
+            MATCH
+           </a>
+           ) to produce character-by-character counts.  I ran
+           <a href="https://web.archive.org/web/20151125205034/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=hqM&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22Excel+2003%22+SUBSTITUTE+function&amp;oq=%22Excel+2003%22+SUBSTITUTE+function&amp;aq=f&amp;aqi=g1&amp;aql=&amp;gs_sm=3&amp;gs_upl=10110l10654l0l10998l9l6l0l0l0l0l319l1158l0.2.2.1l5l0&amp;gs_l=serp.3..0.10110l10654l0l10998l9l6l0l0l0l0l319l1158l0j2j2j1l5l0">
+            a search
+           </a>
+           and found some interesting variations in SUBSTITUTE, including
+           <a href="https://web.archive.org/web/20151125205034/http://www.ozgrid.com/forum/showthread.php?t=39728&amp;p=199166#post199166">
+            nested
+           </a>
+           and
+           <a href="https://web.archive.org/web/20151125205034/http://www.ozgrid.com/forum/showthread.php?t=59547&amp;p=307598#post307598">
+            case-insensitive
+           </a>
+           substitutions, along with the
+           <a href="https://web.archive.org/web/20151125205034/http://exceluser.com/blog/797/excels-clean-function-is-more-powerful-than-you-think.html">
+            CLEAN
+           </a>
+           function.
+           <a href="https://web.archive.org/web/20151125205034/http://www.ozgrid.com/forum/showthread.php?t=59547">
+            One solution
+           </a>
+           , it seemed, would be to use 26 columns containing something like =SUBSTITUTE(UPPER(A1),"","") to replace all upper- and lower-case letters with nothing, another 10 columns to do the same for numbers, and then see what's left.
+           <br/>
+           <br/>
+           With SUBSTITUTE, one possibility was to set up a map.  Put the rows of text being analyzed in one worksheet ("Sheet1").  Create a second worksheet ("Sheet2") within the same Excel file.  In Sheet2, make each row relate to the row of the same number in Sheet1.  So, for example, if there was a text string in cell A5 in Sheet1, there would be a row of characters across row 5 in Sheet2.  Each cell in that row would count the occurrences of a specific character.  For example, the 65th column would detect occurrences of the character whose Excel code happened to be 65 (that is, the letter "A," producible by =CHAR(65)).  The chief problem with this approach was that its calculations would take a year.  It would also max out Excel 2003's limit of 256 columns.  It would have the advantage of transparency:  I would be able to see much of what was happening in the data.
+           <br/>
+           <br/>
+           I found
+           <a href="https://web.archive.org/web/20151125205034/http://office.microsoft.com/en-us/excel-help/create-your-own-worksheet-functions-HA001054846.aspx">
+            a user-defined function
+           </a>
+           (UDF) -- what I had been referring to as a script -- called
+           <a href="https://web.archive.org/web/20151125205034/http://www.excelforum.com/excel-general/681475-formula-to-remove-unwanted-characters.html">
+            SUBSTITUTELIST
+           </a>
+           .  This UDF would let me indicate a list of characters to simply remove.  In naming files, I would definitely not want to include many of the odd characters that were readily visible if, say, I opened a non-text file in Notepad.
+           <br/>
+           <br/>
+           <img border="0" src="https://web.archive.org/web/20151125205034im_/http://4.bp.blogspot.com/-Q2-4JyrjfeU/T1IsKRjMtaI/AAAAAAAAAJk/eXVW4_YahWo/s200/Clipboard01.jpg"/>
+           <br/>
+           <br/>
+           The first step, with SUBSTITUTELIST, was to define it as a function that I could use in spreadsheet formulas.  To do that, using the steps described atop
+           <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/02/excel-2003-print-or-export-formulas.html">
+            another post
+           </a>
+           , I copied and pasted this text into an Excel module:
+           <br/>
+           <blockquote>
+            Function SubstituteList(rString As String, rList As Range) As String
+            <br/>
+            Dim rCell As Range
+            <br/>
+            For Each rCell In rList
+            <br/>
+            rString = Replace(rString, rCell.Text, "")
+            <br/>
+            Next rCell
+            <br/>
+            SubstituteList = rString
+            <br/>
+            End Function
+           </blockquote>
+           I didn't write that code, and was only partly clear on what it said.  It appeared, though, that its middle line was going to replace rString with nothing ("").  In other words, rString was being removed.  Now I had to tell it what characters to treat as rString.  In the spreadsheet listing the filenames I wanted to work on, I opened a new worksheet, called Sheet2, and put the numbers 1 through 255 in cells A2 to A256.  (Two easy ways to insert a series of numbers:  use =A1+1 in cell A2, and so forth; or enter the first two numbers (i.e., 1 and 2) manually, highlight the cells to be filled, and then use Edit &gt; Insert &gt; Series.  The Alt command option would probably still work in post-2003 versions of Excel:  Alt-E, I, S, Enter.)
+           <br/>
+           <div class="separator" style="clear: both; text-align: center;">
+            <a href="https://web.archive.org/web/20151125205034/http://2.bp.blogspot.com/-ADKSxogwAKQ/T29hT5dQjtI/AAAAAAAAAJw/ULYTp1c5P84/s1600/Clipboard01.jpg" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
+             <img border="0" height="151" src="https://web.archive.org/web/20151125205034im_/http://2.bp.blogspot.com/-ADKSxogwAKQ/T29hT5dQjtI/AAAAAAAAAJw/ULYTp1c5P84/s320/Clipboard01.jpg" width="320"/>
+            </a>
+           </div>
+           Then, in Sheet2 cell B1, I typed =CHAR(A1), and copied it down to B255.  So now column B contained the actual characters I wanted to look at, whose CHAR equivalents were shown in column A.  Finally, column C contained the characters to be removed from consideration.  For example, in cell C128, I typed =B128.  That put a copy of CHAR(127) into column C.  SUBSTITUTELIST was going to remove anything in column C.  So that particular character would be removed from the cell in Sheet1 where I was going to be using SUBSTITUTELIST.  Depending on the situation, I might or might not want to remove all non-alphanumeric characters.  For instance, I thought that what I would really want to do with something like the euro character (
+           <span style='font-family: "Times New Roman"; font-size: 12pt; mso-ansi-language: EN-US; mso-bidi-language: AR-SA; mso-fareast-font-family: "Times New Roman"; mso-fareast-language: EN-US;'>
+            €), in a filename, would not be to eliminate it, but rather to replace it (e.g.,
+            <span style='font-family: "Times New Roman"; font-size: 12pt; mso-ansi-language: EN-US; mso-bidi-language: AR-SA; mso-fareast-font-family: "Times New Roman"; mso-fareast-language: EN-US;'>
+             €35 becomes EUR 35).
+            </span>
+           </span>
+           <br/>
+           <br/>
+           To use SUBSTITUTELIST, I put my text to be analyzed in column A of Sheet1.  In B1, I entered this:  =SUBSTITUTELIST(A1,Sheet2!$C$1:$C$255).  I copied that formula all the way down, next to each text string to be examined.  That gave me a collection of funky characters in Sheet1 column B.  Originally, I added TRIM to the SUBSTITUTELIST formula just cited, but then I realized that I actually wanted to see the pattern of spaces and other non-alphanumeric characters.
+           <br/>
+           <br/>
+           SUBSTITUTELIST seemed to have potential for single-character eliminations, but it didn't seem capable of substitutions involving multiple-character strings (e.g., EUR in place of €).  It looked like a relatively simple change to SUBSTITUTELIST might do the job, but I had little ability for that sort of work at this point, so I
+           <a href="https://web.archive.org/web/20151125205034/http://superuser.com/questions/404575/excel-or-batch-trying-to-automate-text-correction-many-changes-one-or-more-c" target="_blank">
+            posted a question
+           </a>
+           on it.  One reply to that question suggested a UDF called CLEANUPTEXT.  The contents of that UDF (created in the same manner as SUBSTITUTELIST, above) were as follows:
+           <br/>
+           <br/>
+           <code>
+            <span style="font-size: x-small;">
+             Option Explicit
+             <br/>
+             Sub cleanupText()
+             <br/>
+             <br/>
+             Dim allTxt() As Variant, sublist() As Variant
+             <br/>
+             Dim i As Long, j As Long, k As Long, tdots As Integer
+             <br/>
+             <br/>
+             'Store data from sheets in arrays.
+             <br/>
+             allTxt = Sheets(1).UsedRange.Value
+             <br/>
+             sublist = Sheets(2).UsedRange.Offset(1, 0).Resize(Sheets(2).UsedRange.Rows.Count - 1, Sheets(2).UsedRange.Columns.Count).Value
+             <br/>
+             <br/>
+             For i = 1 To UBound(allTxt, 1)
+             <br/>
+             For j = 1 To UBound(allTxt, 2)
+             <br/>
+             'Loop through replacement terms and make replacements to data in array.
+             <br/>
+             For k = 1 To UBound(sublist, 1)
+             <br/>
+             allTxt(i, j) = Replace(allTxt(i, j), sublist(k, 1), sublist(k, 2))
+             <br/>
+             Next k
+             <br/>
+             allTxt(i, j) = Trim(allTxt(i, j))
+             <br/>
+            </span>
+            <span style="color: #cc0000;">
+             <span style="color: cyan; font-size: x-small;">
+              'Remove series of trailing periods.
+              <br/>
+              If Right(allTxt(i, j), 1) = "." Then
+              <br/>
+              tdots = 1
+              <br/>
+              Else
+              <br/>
+              tdots = 0
+              <br/>
+              End If
+              <br/>
+              Do While tdots = 1
+              <br/>
+              allTxt(i, j) = Left(allTxt(i, j), Len(allTxt(i, j)) - 1)
+              <br/>
+              If Right(allTxt(i, j), 1) = "." Then
+              <br/>
+              tdots = 1
+              <br/>
+              Else
+              <br/>
+              tdots = 0
+              <br/>
+              End If
+              <br/>
+              Loop
+              <br/>
+             </span>
+            </span>
+           </code>
+           <code>
+            <span style="font-size: x-small;">
+             allTxt(i, j) = Trim(allTxt(i, j))
+             <br/>
+             Next j
+             <br/>
+             Next i
+             <br/>
+             'Print cleaned up results in array onto sheet.
+             <br/>
+             ActiveSheet.UsedRange.Value = allTxt
+             <br/>
+             End Sub
+            </span>
+           </code>
+           <br/>
+           <br/>
+           The instructions accompanying that UDF seemed to indicate that it required a separate worksheet, called Sheet2, containing the "before" terms in column A of Sheet2, and the "after" terms in column B of that sheet; and Sheet1 had to be the name of the tab containg the text being operated on.  In response to my question, the text shown in blue (above) was designed to remove trailing dots from the text being modified.  I did not actually try this UDF, but I hoped that I would not have to write similar lines of text for other kinds of unwanted text strings -- that, in other words, the column A / column B replacement approach would suffice.  If so, I might try to simplify this UDF by removing the lines in blue.
+           <br/>
+           <br/>
+           On a separate note, I had noticed that some of the files in my list looked like their names were identical except for punctuation, so I added a column, in my spreadsheet that listed filenames, for this formula:  =LOWER(substitutelist(M2,Sheet2!$C$1:$C$255)).  M2 contained the existing filename, or part thereof, and Sheet2 column C was set to eliminate all non-alphanumeric characters, as shown above.  This step did succeed in highlighting some duplicate filenames and other issues.
+           <br/>
+           <br/>
+           Another problem was that, in some cases, I would have to rename files before proceeding with something like SUBSTITUTELIST.  The specific problem was that some characters in filenames would defeat batch commands.  That is, I could have a command to change a filename, perhaps in response to an insight emerging from SUBSTITUTELIST; but the command might not run.  So I would have to change or delete those troublesome characters first.  (I often used Excel formulas to generate commands that I could run in a batch file to rename numerous files.  The basic idea here was that I would put the existing filename in cell A1 of an empty worksheet, and the desired filename in cell B1, and then I would enter this formula in cell C1:  ="ren "&amp;CHAR(34)&amp;A2&amp;CHAR(34)&amp;" "&amp;B2.  (If the new filename in B2 had spaces in it, then it too would have to be surrounded by CHAR(34) instances, as done in that formula for cell A1.)  The particular chacters at issue here were percent symbols and possibly exclamation marks.  The commands were right.  They would run if I typed them into the command line, or copied and pasted them there.  But they wouldn't work from within a batch file.  To address this concern, I just deleted the exclamation marks, and I replaced the percent symbols with "pct" (e.g., 45% became 45pct).
+           <br/>
+           <br/>
+           In some cases, I would want a tool that could replace one or more undesirable characters, in a single bulk process, with one or more preferred characters.  In part, this was a simple interest in transliteration or Romanization (i.e., converting foreign-language characters to the standard English alphabet).  There would be at least two reasons to do that.  One was that I had run into some file handling issues with some such characters.  I recalled one recent case where something that looked like a C (maybe ḉ or ć or ĉ or ċ or č) was not working correctly with some backup program or something.  The other reason was that I might not remember which character to use when doing filename searches.  So, for instance, if I was looking for all of the files containing a copy of someone's resume, I might or might not want to have to search for both "resume" and "résumé."  There were many
+           <a href="https://web.archive.org/web/20151125205034/http://www.loc.gov/catdir/cpso/roman.html" target="_blank">
+            Romanization tables
+           </a>
+           for various languages, possibly best approached by finding conversion tables for the thousands of possible
+           <a href="https://web.archive.org/web/20151125205034/http://ascii-table.com/unicode.php" target="_blank">
+            Unicode characters
+           </a>
+           .  This could take further attention, as there were
+           <a href="https://web.archive.org/web/20151125205034/https://www.google.com/search?q=%22kinds+of+unicode%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">
+            multiple kinds
+           </a>
+           of Unicode, not all of which might be consistent with
+           <a href="https://web.archive.org/web/20151125205034/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=J8B&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22Excel+uses+Unicode%22&amp;oq=%22Excel+uses+Unicode%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=12&amp;gs_upl=851573l851573l0l854350l1l1l0l0l0l0l450l450l4-1l1l0&amp;gs_l=serp.12...851573l851573l0l854350l1l1l0l0l0l0l450l450l4-1l1l0" target="_blank">
+            Excel's coding
+           </a>
+           .  In filenames, especially, examples involving several characters could include "pct" (above) and the replacement of $ with USD and of © with (C).  One readability example, arising where HTML has become involved, would be to replace the HTML code of
+           <a href="https://web.archive.org/web/20151125205034/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=yHS&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=HTML+apostrophe&amp;oq=HTML+apostrophe&amp;aq=f&amp;aqi=g10&amp;aql=&amp;gs_l=serp.3..0l10.8110l11374l0l13140l15l9l0l4l4l2l302l851l2j1j1j1l5l0.frgbld." target="_blank">
+            &amp;#39;
+           </a>
+           with the apostrophe.
+           <br/>
+           <br/>
+           As I thought further about the problem, I realized that characters might be unwanted in context, not in isolation.  For instance, the hyphen ("-") could be fine in some settings, not fine in others.  At the risk of opening the door to complexity, it seemed the ideal approach (perhaps the less messy approach, in the long run) would give me the possibility of listing multi-character combinations and indicating their desired replacement.  I found a UDF called
+           <a href="https://web.archive.org/web/20151125205034/http://www.ozgrid.com/forum/showthread.php?t=29700&amp;p=153516#post153516" target="_blank">
+            SUPERSUB
+           </a>
+           that seemed to be just what the doctor ordered:
+           <br/>
+           <br/>
+           <span style='font-family: "Courier New", Courier, monospace; font-size: x-small;'>
+            Function SuperSub(OriginalText As String, rngOldText As Range)
+            <br/>
+            Dim cel As Range
+            <br/>
+            Dim strOldText As String, strNewText As String
+            <br/>
+            'loop through list of old_text used in substitute
+            <br/>
+            For Each cel In rngOldText.Cells
+            <br/>
+            strOldText = cel.Value
+            <br/>
+            strNewText = cel.Offset(0, 1).Value
+            <br/>
+            OriginalText = Application.WorksheetFunction.Substitute(OriginalText, strOldText, strNewText)
+            <br/>
+            Next cel
+            <br/>
+            SuperSub = OriginalText
+            <br/>
+            End Function
+           </span>
+           <br/>
+           <br/>
+           But, again, I did not try this script at the time, but was merely preserving its information here for possible future application.
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20151125205034/http://www.mrexcel.com/forum/showpost.php?p=1471922&amp;postcount=9" target="_blank">
+            Another post
+           </a>
+           offered a UDF called REMOVEPUNCTUATION where I could create a list of items to replace, and their replacements, within the macro.  The text of that one (with a few illustrative examples) was as follows:
+           <br/>
+           <br/>
+           <span style='font-family: "Courier New", Courier, monospace; font-size: x-small;'>
+            Sub test()
+            <br/>
+            Dim c As Range, t As String
+            <br/>
+            For Each c In Range("A1:A" &amp; Range("A" &amp; Rows.Count).End(xlUp).Row)
+            <br/>
+            t = UCase(" " &amp; RemovePunctuation(c.Text) &amp; " ")
+            <br/>
+            t = Replace(t, " AVE ", " AVENUE ")
+            <br/>
+            t = Replace(t, " BLVD ", " BOULEVARD ")
+            <br/>
+            t = Replace(t, " BVD ", " BOULEVARD ")
+            <br/>
+            t = Replace(t, " CYN ", " CANYON ")
+            <br/>
+            t = Replace(t, " CTR ", " CENTER ")
+            <br/>
+            t = Replace(t, " CIR ", " CIRCLE ")
+            <br/>
+            t = Replace(t, " CT ", " COURT ")
+            <br/>
+            t = Replace(t, " DR ", " DRIVE ")
+            <br/>
+            t = Replace(t, " FWY ", " FREEWAY ")
+            <br/>
+            t = Replace(t, " HBR ", " HARBOR ")
+            <br/>
+            t = Replace(t, " HTS ", " HEIGHTS ")
+            <br/>
+            t = Replace(t, " HWY ", " HIGHWAY ")
+            <br/>
+            t = Replace(t, " JCT ", " JUNCTION ")
+            <br/>
+            t = Replace(t, " LN ", " LANE ")
+            <br/>
+            t = Replace(t, " MTN ", " MOUNTAIN ")
+            <br/>
+            t = Replace(t, " PKWY ", " PARKWAY ")
+            <br/>
+            t = Replace(t, " PL ", " PLACE ")
+            <br/>
+            t = Replace(t, " PLZ ", " PLAZA ")
+            <br/>
+            t = Replace(t, " RDG ", " RIDGE ")
+            <br/>
+            t = Replace(t, " RD ", " ROAD ")
+            <br/>
+            t = Replace(t, " RTE ", " ROUTE ")
+            <br/>
+            t = Replace(t, " ST ", " STREET ")
+            <br/>
+            t = Replace(t, " TRWY ", " THROUGHWAY ")
+            <br/>
+            t = Replace(t, " TL ", " TRAIL ")
+            <br/>
+            t = Replace(t, " TPKE ", " TURNPIKE ")
+            <br/>
+            t = Replace(t, " VLY ", " VALLEY ")
+            <br/>
+            t = Replace(t, " VLG ", " VILLAGE ")
+            <br/>
+            t = Replace(t, " APT ", " APARTMENT ")
+            <br/>
+            t = Replace(t, " APTS ", " APARTMENTS ")
+            <br/>
+            t = Replace(t, " BLDG ", " BUILDING ")
+            <br/>
+            t = Replace(t, " FLR ", " FLOOR ")
+            <br/>
+            t = Replace(t, " OFC ", " OFFICE ")
+            <br/>
+            t = Replace(t, " OF ", " OFFICE ")
+            <br/>
+            t = Replace(t, " APT ", " APARTMENT ")
+            <br/>
+            t = Replace(t, " STE ", " SUITE ")
+            <br/>
+            t = Replace(t, " N ", " NORTH ")
+            <br/>
+            t = Replace(t, " E ", " EAST ")
+            <br/>
+            t = Replace(t, " S ", " SOUTH ")
+            <br/>
+            t = Replace(t, " W ", " WEST ")
+            <br/>
+            t = Replace(t, " NE ", " NORTHEAST ")
+            <br/>
+            t = Replace(t, " SE ", " SOUTHEAST ")
+            <br/>
+            t = Replace(t, " SW ", " SOUTHWEST ")
+            <br/>
+            t = Replace(t, " NW ", " NORTHWEST ")
+            <br/>
+            c = Trim(t)
+            <br/>
+            Next
+            <br/>
+            End Sub
+           </span>
+           <br/>
+           <br/>
+           <span style='font-family: "Courier New", Courier, monospace; font-size: x-small;'>
+            Function RemovePunctuation(r As String) As String
+            <br/>
+            With CreateObject("vbscript.regexp")
+            <br/>
+            .Pattern = "[^A-Z0-9 ]"
+            <br/>
+            .IgnoreCase = True
+            <br/>
+            .Global = True
+            <br/>
+            RemovePunctuation = .Replace(r, "")
+            <br/>
+            End With
+            <br/>
+            End Function
+           </span>
+           <br/>
+           <br/>
+           It seemed that, if I used REMOVEPUNCTUATION to make a large number of changes (more than just the few dozen shown here), I might use Excel to generate the text of the additional lines to be inserted into the REMOVEPUNCTUATION script.
+           <br/>
+           <br/>
+           That was the extent of these notes.  I would have to await another situation requiring mass file renaming in order to test these techniques.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151125205034/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=7371436603326043843&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/characters" rel="tag">
+             characters
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/excel" rel="tag">
+             excel
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/files" rel="tag">
+             files
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/list" rel="tag">
+             list
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/names" rel="tag">
+             names
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/replace" rel="tag">
+             replace
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/script" rel="tag">
+             script
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/substitute" rel="tag">
+             substitute
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/search/label/UDF" rel="tag">
+             UDF
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          2
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-4305757660500805989">
+           <a name="comment-4305757660500805989">
+           </a>
+           <a href="https://web.archive.org/web/20151125205034/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I used some aspects of this post in
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/06/exporting-thunderbird-emails-to-pdf.html" rel="nofollow">
+             another post
+            </a>
+            for renaming exported emails.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-4305757660500805989" title="comment permalink">
+             June 19, 2012 at 3:03 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151125205034/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=4305757660500805989" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-5060951197211202691">
+           <a name="comment-5060951197211202691">
+           </a>
+           <a href="https://web.archive.org/web/20151125205034/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            <a href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/2012/06/finding-and-cleaning-up-emls-that.html" rel="nofollow">
+             Another post
+            </a>
+            identifies some freeware that may be useful for similar character-cleaning purposes.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-5060951197211202691" title="comment permalink">
+             June 22, 2012 at 1:29 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151125205034/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=5060951197211202691" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151125205034/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=7371436603326043843" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151125205034/http://raywoodcockslatest.blogspot.com/feeds/7371436603326043843/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:50:34 Nov 25, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:35:19 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.501
+  exclusion.robots: 0.061
+  exclusion.robots.policy: 0.055
+  esindex: 0.008
+  cdx.remote: 6.665
+  LoadShardBlock: 70.831 (3)
+  PetaboxLoader3.datanode: 89.79 (4)
+  load_resource: 89.537
+  PetaboxLoader3.resolve: 59.009
+-->

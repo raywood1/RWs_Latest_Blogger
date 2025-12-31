@@ -1,0 +1,1255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20140815064800im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/2007/07/running-winxp-pro-in-vmware-virtual.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/feeds/5727509586471332002/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Running WinXP Pro in a VMWare Virtual Machine on Ubuntu
+  </title>
+  <link href="https://web.archive.org/web/20140815064800cs_/https://www.blogger.com/static/v1/widgets/3841957138-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20140815064800cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=c1bcd731-5f7c-418a-b557-3ff197b06ed3" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20140815064800im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20140815064800im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20140815064800im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20140815064800im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20140815064800im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20140815064800im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20140815064800im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20140815064800im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20140815064800im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20140815064800im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20140815064800im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20140815064800im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20140815064800im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20140815064800im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20140815064800im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20140815064800im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20140815064800im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20140815064800im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Thursday, July 12, 2007
+        </h2>
+        <div class="post">
+         <a name="5727509586471332002">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/2007/07/running-winxp-pro-in-vmware-virtual.html">
+           Running WinXP Pro in a VMWare Virtual Machine on Ubuntu
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had been interested in having a virtual system since the early days of Windows 95, when my system was crashing far more often than it had done under DOS or OS/2.  I had hoped to reduce the severity of those crashes by running Windows inside a virtual machine on OS/2.
+
+To that end, I bought a copy of VMware in the late 1990s.  I never got around to trying it out, though.  As I recall, there were performance and complexity issues.  Moreover, I wasn't prepared to take the plunge into Linux, which seemed likely to involve a relatively steep learning curve.
+
+Now, much later, Windows had become much more stable.  I was running Windows XP Professional.  But crashes could still happen.  Frankly, I still found that I had to reboot the machine daily, and completely shut it down for a minute or so every couple of days, to insure that the system would not begin to behave in some squirrely fashion right in the middle of a project.  Ubuntu Linux had emerged; it seemed to be something I could become functional in without too much of a time investment; I had acquired hardware that could run virtual machine software more easily; and I also had a brief window in which to explore the matter.  I was ready to try running a Windows virtual machine on a Linux (Ubuntu) platform.
+
+Stability was one reason, then, for my interest in using virtual machines.  A more important reason was that I wanted to gain access to more than 2.7GB of RAM.  As I have described in more detail in
+           <a href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/2007/06/ram-drives-pagefiles-i-ram-and-virtual.html">
+            another post
+           </a>
+           , I was experiencing a lot of system slowdowns in running various processes, and was therefore interested in making greater use of RAM, possibly in the form of a RAM drive, instead of waiting for the Windows system to swap things in and out of a pagefile located on a physical hard drive.
+
+To use more RAM, I would need a 64-bit operating system.  In
+           <a href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/2007/06/ubuntu-vs-vista-progress-report.html">
+            another post
+           </a>
+           , I have presented the concerns that led me to choose Ubuntu instead of Microsoft's x64 flavor of Windows XP Professional, and also instead of the new Windows Vista operating system.  (It developed, in the course of the research presented in this post, that Vista would also have been an inferior choice for purposes of implementing VMware.)
+
+I had been looking at several different virtual machine products, including
+           <a href="https://web.archive.org/web/20140815064800/http://www.virtualbox.org/">
+            VirtualBox
+           </a>
+           ,  XenSource, Microsoft's
+           <a href="https://web.archive.org/web/20140815064800/http://www.microsoft.com/windows/products/winfamily/virtualpc/default.mspx">
+            Virtual PC 2007
+           </a>
+           , and
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/">
+            VMware
+           </a>
+           .  I don't remember all of my reasons for deciding to start with VMware.  (
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/server/faqs.html">
+            VMware's FAQs
+           </a>
+           provide some.)  Generally, it seemed that people were quite positive on it, and that it was the most industrial-strength virtual machine product available.  Virtual PC 2007 ran on Windows only, which was not what I wanted; besides, I really wanted to get away from a scenario in which I would continue to be dependent on Microsoft.
+
+VMware offered several
+           <a href="https://web.archive.org/web/20140815064800/http://vmware.com/products/free_virtualization.html">
+            free products
+           </a>
+           .  It seemed that I should begin with the
+           <a href="https://web.archive.org/web/20140815064800/http://vmware.com/products/converter/overview.html">
+            VMware Converter
+           </a>
+           -- the Starter version, that is, as distinct from the Enterprise version.  The purpose of this product was to "convert your physical machines to virtual machines in minutes."  That is, I would turn my desktop computer's sprawling Microsoft Windows XP Professional installation into a nice package that I could open up and run from inside Ubuntu.  I would thus have simultaneous access to both operating systems.  While continuing to do things in Windows, I could also begin to learn how to do them in Linux, toward the goal of transitioning away from Windows over the long haul without losing my ability to get things done in the meantime.
+
+It appeared that I would still be able to add new programs to Windows XP.  If I added them to my
+           <a href="https://web.archive.org/web/20140815064800/http://http//raywoodcockslatest.blogspot.com/2007/07/ubuntuwinxp-pro-dual-boot-partitioning.html">
+            physical dual boot system
+           </a>
+           , they would not be part of a virtual machine until I created another virtual machine that contained them.  If, instead, I added them to my virtual Windows setup, they would exist only in there, and not on the virtual machine.  This was OK, for two reasons:  (1) I didn't want to have to keep rebooting my Ubuntu system every time I wanted to do something in Windows, and (2) I wanted to begin doing more things in Ubuntu and fewer in Windows, so hopefully I would be adding some of my new capabilities in Ubuntu rather than adding them to a Windows installation.
+
+One long-term advantage of the Ubuntu and VMware combination, as I saw it, was that I might be able to avoid devoting the large amounts of time that it could take to reinstall and reconfigure Windows, Office, and all my other software, every time I made a substantial change to the hardware in my machine, or wanted to upgrade my operating system, or needed to eliminate the creeping slowdowns that seemed to accumulate in every Windows installation.  Instead, from
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/virtualization/">
+            VMware's introduction to virtualization
+           </a>
+           , it appeared that I would be able to install Windows and all that other stuff once, import it into a VMware virtual machine, and then run it on my laptop and on any other computer I might be using.
+
+I intended to use VMware to convert my physical machine -- my desktop computer's Windows installation -- to a virtual machine.  I noticed that VMware would also convert some nonphysical assets to virtual machines.  The list of convertible items, presented in
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/converter/faqs.html">
+            VMware's FAQs
+           </a>
+           , included virtual machines created by other programs.  Specifically, for Microsoft's Virtual Server and Virtual PC, and for Symantec's
+           <a href="https://web.archive.org/web/20140815064800/http://www.symantec.com/press/2004/n041005.html">
+            LiveState Recovery
+           </a>
+           program (now known as
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/player/features.html">
+            Backup Exec
+           </a>
+           ) you would use VMware's
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/pdf/v2v15_manual.pdf">
+            Virtual Machine Importer
+           </a>
+           .
+
+VMware would also convert drive images created in
+           <a href="https://web.archive.org/web/20140815064800/http://www.symantec.com/home_homeoffice/products/overview.jsp?pcid=br&amp;pvid=ghost12">
+            Norton Ghost
+           </a>
+           , version 9 or higher.  That was interesting because Ghost 9.0 was
+           <a href="https://web.archive.org/web/20140815064800/http://www.symantec.com/press/cgi/printfriendlypress.cgi?release=2004/n040802.html">
+            backward-compatible
+           </a>
+           with PowerQuest's Drive Image 7.0.   (According to a post I read somewhere, Ghost 9 essentially gave up on Norton's old approach and adopted PowerQuest's superior technology instead, now that Symantec had acquired PowerQuest.)
+
+DI 7.0 was the next step newer than
+           <a href="https://web.archive.org/web/20140815064800/http://www.smartcomputing.com/editorial/article.asp?article=articles/archive/r0703/59r03/59r03.asp">
+            Drive Image 2002
+           </a>
+           , which I used.  It seemed very likely that DI 7.0 would work with images saved in DI 2002.  In that case, it seemed that I could image any machine, using my Drive Image CD, and could then create a virtual machine out of it, using VMware.  Moreover, my old Drive Image backups might thus be convertible into virtual machines that I could load without rebooting or reformatting any hard drives, if I wanted to go back in time.  Looking ahead, likewise, I could save and, on the fly, could reload working snapshots of my system as it was at a given point in time.   (On that basis, I began to wonder if I would also want a Windows-host version of VMware, so that I could take my own Windows setup, with all my assorted utilities, Microsoft Office settings, etc. to use on I wasn't yet sure whether I would want to use Norton Ghost to back up my VMware installation.  I doubted it but, if I did, then I could see that the two might form a nice symbiotic relationship, and that it might be worth my while to upgrade from Drive Image.
+
+This would all have to happen within Windows.  The FAQs page said that Converter would only run on certain versions of Windows (including XP).  So now I understood what was, for me, the main functional difference between the
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/converter/get.html">
+            Starter and Enterprise versions
+           </a>
+           of VMware Converter.  I didn't plan to run a large-scale operation, so I didn't need Enterprise.  But you could use Enterprise to cold-clone a machine -- that is, you could use a boot disk to start a machine and make a virtual machine from it, without having to run its operating system.  VMware, running on Windows, could not hot-clone a system running on, say, DOS, or Mac, or Linux.  To make a virtual machine on a system like that, it seemed, you would have to download the appropriate version of some VMware product (e.g., the Linux version), install and run it on that machine, and then create your virtual version from inside that operating system.
+
+VMware's
+           <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/www.vmware.com/pdf/virtualization.pdf">
+            Virtualization Overview
+           </a>
+           explained that there was a distinction between a "hosted" approach and a "hypervisor" approach to virtualization.  I had thought VMware was a hosted approach, but now it seemed that was mistaken.  The difference was that, in a hosted approach, you would install a host operating system, and would then run the virtualization software on that, whereas there would be no host operating system in a hypervisor approach:  the virtualization software would be installed directly on the computer hardware, just as you would install an operating system like Windows or Linux.  I wasn't too sure how this would work, so I continued my research.
+
+I wasn't too clear, at this point, what the relationship was, among VMware Converter, VMware Server, and VMware Player.   (Somewhere along the line, I noticed that 64-bit (as distinguished from 32-bit) Ubuntu was supported only in an "Experimental" capacity, which was not entirely what I had hoped to see.)
+
+I noticed, from the FAQs, that Converter could import virtual machines created in Server and Player, but also that it could export virtual machines that would be compatible with Player and Server.  The general idea seemed to be that Server would host the machines created by Converter, and then maybe you could use Player to run those machines on other computers.  They provided more detail, but not necessarily more clarification on this point, in their
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/support/converter/doc/releasenotes_conv301.html#interop">
+            Interoperability
+           </a>
+           notes.  (Later, I decided that one difference was that, in Server, you would create a virtual machine from scratch, by inserting the program drive and installing an operating system and other program software, whereas Converter, as just described, would create a virtual machine from a preexisting installation or image file.)
+
+I now had a 64-bit CPU, and anyway I didn't plan to have any 64-bit virtual machines operating as guests on my VMware setup.  So I didn't worry about
+           <a href="https://web.archive.org/web/20140815064800/http://kb.vmware.com/selfservice/dynamickc.do?externalId=1901&amp;sliceId=1&amp;command=show&amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;amp;forward=nonthreadedKC&amp;kcId=1901">
+            64-bit guests
+           </a>
+           .  The only virtual machine I planned to have was 32-bit Windows XP Professional (which, according to
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/support/converter/doc/releasenotes_conv301.html#guestos">
+            their list
+           </a>
+           , was fully supported by Converter, unlike DOS and Linux, which were experimental); and I planned to install that by using a virtual machine that would encapsulate everything contained in my existing WinXP setup -- so it didn't look like I would need VMware's instructions on how to
+           <a href="https://web.archive.org/web/20140815064800/http://pubs.vmware.com/guestnotes/wwhelp/wwhimpl/common/html/wwhelp.htm?context=GOS_Install&amp;file=choose_install_guest_os.html#1453596">
+            create a virtual machine
+           </a>
+           setup from scratch.  The main exception seemed to be if I tried to create a virtual machine from an ISO (or maybe some other kind of) drive image.  In that case, apparently I would want to have the virtual hardware setup already configured, within the empty virtual machine.  For example, if my drive image was supposed to work with a networking connection, I would want to have that configured in advance.  I began to sense that the drive image approach could involve some trial and error.
+
+VMware Converter, it seemed, would proceed in
+           <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/www.vmware.com/pdf/converter_datasheet.pdf">
+            three steps
+           </a>
+           :  (1) Specify the source physical server, virtual machine or third-party format to convert.  (2) Specify the destination format, virtual machine name, and location for the new virtual machine to be created.  (3) Create/Convert to the destination virtual machine, and configure it.  I was sure I would be looking at the
+           <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/www.vmware.com/pdf/VMware_Converter_manual301.pdf">
+            VMware Converter User’s Manual
+           </a>
+           in more detail later.
+
+Among the
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/support/converter/doc/releasenotes_conv301.html#issues">
+            known issues
+           </a>
+           that VMware attributed to Converter, one was that it would treat the first drive in a virtual machine as the boot drive.  So in my case, where I booted from a SATA drive that came third in typical lists of my drives (such as that which appeared in XP's Disk Management, or in GParted), I would have to use a workaround that involved adjusting the BIOS within the virtual machine.  Also, Converter would work only on the operating system that boot.ini points toward -- which, I assumed, would mean my Windows installation rather than Linux, since I understood boot.ini to be a Windows file.  There were other items on the list of known issues, and I was sure the
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/vmtn/">
+            VMware Technology Network
+           </a>
+           (containing links to discussion forums, communities, blogs, etc.) were just full of issues, but at this point there didn't seem to be anything standing in the way of my starting to use Converter.
+
+So now that I had an introductory sense of what Converter was, how did VMware Server relate to it?  I needed, first, to sort out which version of Server we were talking about.  According to the
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/product_index_alpha.html">
+            VMware products list
+           </a>
+           , there was an ESX Server and just a plain old Server, and only the latter was free; and then, unmentioned in the products list, there was also a
+           <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/www.vmware.com/pdf/gsx32vm_manual.pdf">
+            GSX Server
+           </a>
+           providing "virtual infrastructure for enterprise IT administrators."
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/vi/esx/esx_features.html">
+            ESX Server
+           </a>
+           , likewise, appeared to be a heavy-duty setup for administrators.  Unlike ESX Server, free Server was apparently not a bare-metal hypervisor program, but was instead a hosted virtualization product (see above) that,
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/server/features.html">
+            they said
+           </a>
+           , would run "like an application" on "a wider variety of Linux and Windows host and guest operating systems than any server virtualization product on the market."  I was content to focus, for now, on the free version, VMware Server.
+
+It looked like the primary distinction, between Server and Converter, was that you would use Converter to bring an existing drive image or physical machine into the virtual machine world, but then you would use Server to run and back up that virtual machine.  So, according to the
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/server/faqs.html">
+            Server FAQs
+           </a>
+           , the whole virtual machine would be saved as a single file, and you could use Server to "[e]valuate software in ready-to-run virtual machines without installation and configuration."  There was actually a long list of
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/vmtn/appliances/directory/cat/48%2B51%2B52/rating+desc">
+            Virtual Appliances
+           </a>
+           that evidently you could fire up and run within Server.  I checked that list and identified a few of potential interest, among the many that bore four- or five-star ratings.  In the Content Management and Collaboration category, for instance, the most popular appliance, rating four stars, was the
+           <a href="https://web.archive.org/web/20140815064800/http://janusvm.peertech.org/">
+            JanusVM
+           </a>
+           freeware, described on its webpage as "software that allows you to surf the Internet without oppression or censorship, while protecting your  privacy, security, and identity.  It has advanced filtering capabilities for modifying web page content, managing cookies,  controlling access, and removing ads, banners, pop-ups and other obnoxious Internet junk," compatible with Windows (2000/XP/2003) and Linux.  As an example from the Operating Systems category, there was the
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/vmtn/appliances/directory/909">
+            Linux XP 2006 SR2 Virtual Appliance
+           </a>
+           ,
+described as "a Fedora-based, beginner-friendly desktop distribution that mimics the look and feel of Windows XP and provides extensive compatibility features with the Microsoft operating system."  There were other Linux implementations as well (and a lot of overlap among the various categories).
+
+The Server FAQs explained that Server differed from VMware Workstation, which was geared toward software developers.  The FAQs also confirmed that Server could create virtual machines.  The "
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/support/server/doc/releasenotes_server.html#start">
+            Getting Started
+           </a>
+           " page for Server said that you could not have Server running on the same host machine as VMware Workstation or Player, but that you could install VMware Tools.
+
+According to
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/player/faqs.html">
+            the FAQs
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/products/player/">
+            VMware Player
+           </a>
+           was a free download that behaved like an ordinary application and allowed the user to run multiple 32- and 64-bit operating systems, including virtual appliances (above), simultaneously.  As an example, VMware suggested the
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/vmtn/appliances/directory/browserapp.html">
+            Browser Appliance
+           </a>
+           , which was apparently a virus-safe version of Firefox -- safe, because it ran in a virtual machine.  (That appliance got only three stars from a total of 10 raters, however.)  Player apparently supported Symantec's Backup Exec.  Player would not create virtual machines and would not coexist on the same machine with other VMware products.
+
+VMware also offered other software and information that also looked like it might be useful.
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/support/ws55/doc/new_guest_tools_ws.html">
+            VMware Tools
+           </a>
+           (available in
+           <a href="https://web.archive.org/web/20140815064800/http://kb.vmware.com/selfservice/dynamickc.do?externalId=340&amp;sliceId=2&amp;command=show&amp;forward=nonthreadedKC&amp;kcId=340">
+            several different versions
+           </a>
+           ) were said to be very important for the guest machine.  There was a
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/pdf/mobility_guide.pdf">
+            Virtual Machine Mobility Planning Guide
+           </a>
+           , a
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/pdf/server_vm_manual.pdf">
+            VMware Server Virtual Machine Guide
+           </a>
+           , a
+           <a href="https://web.archive.org/web/20140815064800/http://www.vmware.com/pdf/server_admin_manual.pdf">
+            VMware Server Administration Guide
+           </a>
+           , and a
+           <a href="https://web.archive.org/web/20140815064800/http://pubs.vmware.com/guestnotes/wwhelp/wwhimpl/js/html/wwhelp.htm">
+            Guest Operating System Installation Guide
+           </a>
+           with
+           <a href="https://web.archive.org/web/20140815064800/http://pubs.vmware.com/guestnotes/wwhelp/wwhimpl/common/html/wwhelp.htm?context=GOS_Install&amp;file=choose_install_guest_os.html#1453596">
+            updates
+           </a>
+           .
+
+So I decided to start with Converter.  I downloaded and installed it on the machine whose Windows XP installation I wanted to capture in a virtual machine.  It asked me to designate which hard drives I wanted to include.  This made me realize that the resulting virtual machine file would be just as huge as necessary to accommodate TMP files and other stuff that really didn't need to be in there.  So I did some cleaning and pruning on my Windows drive.
+
+While this was going on, I was also browsing in other webpages, to see what other people had to say.  I felt a little foolish for not doing this earlier when I saw a post by
+           <a href="https://web.archive.org/web/20140815064800/http://http//bobondevelopment.com/2007/02/12/getting-your-feet-wet-with-vmware/">
+            Bob on Development
+           </a>
+           .  He seemed to have just cruised right through the VMware process.  I was probably being too cautious and thorough.   But that was OK.  I preferred to err in that direction.
+
+At this point in the process, I discovered that it was not necessary to download and install VMWare separately from Ubuntu.  In other words, I didn't need to worry about downloading, unzipping, and installing separate .TAR files for Server or Player.  Instead, Ubuntu comes with software that is pre-approved for use, and there are also other sources of software in several categories of diminishing stability.  The way to gain access to a lot of this software, I found, was through
+           <a href="https://web.archive.org/web/20140815064800/http://www.getautomatix.com/wiki/index.php?title=Main_Page">
+            Automatix
+           </a>
+           .  I installed Automatix.  It put an icon under a subheading on Ubuntu's Applications menu.  Through Automatix, I downloaded and installed a bunch of software.  It was very easy -- just click on the box next to the package you want to download.  I forgot that VMWare Server and VMWare Player cannot exist on the same machine, so I tried downloading them both.  Automatix installed Player first, and then I had to go through a whole hassle to uninstall it and install Server.
+
+Because of some other distractions, I forgot about VMWare Converter.  I ran VMWare Server.  It instructed me to insert my book disc.  I did.  It began to construct a Windows installation from the WinXP install CD.  I bailed out of that process.
+
+Along about this time, I began to get discouraged.  For one thing, I was having basic hardware problems.  I figured out that some of my struggles, in this post and in
+           <a href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/2007/07/ubuntuwinxp-pro-dual-boot-partitioning.html">
+            the previous one
+           </a>
+           , were due to a faulty new motherboard, so I replaced it.  With that out of the way, I was next able to identify that part of my problem, in booting Windows XP, was due to a problem with the LVPrcMon.sys driver, which was apparently the driver for my Logitech QuickCam.  In lieu of hacking the registry at
+           <a href="https://web.archive.org/web/20140815064800/http://www.runscanner.net/getmd5.aspx?MD5=D8CF31431AA398C1D79931203A75332F&amp;process=lvprcmon.sys">
+            the recommended spot
+           </a>
+           , I just uninstalled QuickCam in Add/Remove Programs and added an unflattering remark
+           <a href="https://web.archive.org/web/20140815064800/http://www.file.net/process/lvprcmon.sys.html">
+            at a website
+           </a>
+           that, I hoped, would help to inform others.
+
+That, and some other unrelated distractions, frustrated me.  I was not making rapid progress.  I was also concerned that maybe Ubuntu was not ready for prime time, at least not for me.  For one thing, I knew that I would have to continue to run Microsoft Word for the indefinite future.  The reason was that I had a lot of word abbreviations that I used frequently, when typing, to cut down on the number of keystrokes.  There did not appear to be a way to import these keystrokes into OpenOffice Writer.  I
+           <a href="https://web.archive.org/web/20140815064800/http://www.oooforum.org/forum/viewtopic.phtml?t=40170">
+            posted a question
+           </a>
+           along those lines in one discussion thread where someone had developed a macro for this purpose.  My problem was that I was not sophisticated enough in programming to adapt his macro to my needs.  My question drew no response, presumably because (as I had tentatively verified in other searching) nobody yet had an answer.  So it seemed that Word would continue to be essential, for me, until further notice.
+
+This was not to denigrate OpenOffice Writer in general, however.  I had used it a fair amount, during these days, writing a paper on my laptop while doing all this tinkering on the desktop computer, and it had functioned pretty well.  I noticed that sometimes the cursor was relocating itself to a place I had not requested, but that did not happen often enough to be frustrating or distracting.  I had also tried using the OpenOffice database program.  I imported a Microsoft Access database and went through the wizard to create a form, so that I could look at the table's contents. The wizard wouldn't let me get beyond its last step. It wasn't frozen – I could go back one step – but it wouldn't finish and display the form.  I don't know what the problem was there.
+
+Another concern was that apparently Ubuntu's
+           <a href="https://web.archive.org/web/20140815064800/http://useopensource.blogspot.com/2007/06/gui-to-configure-dual-monitors-nvidia.html">
+            support of dual monitors
+           </a>
+           was limited at this point.  My browsing suggested that people were still very much at the level of writing code to obtain dual-monitor capability.  I was feeling some time pressure and was not inclined to explore that sort of issue.  Late on one very tired evening, I decided to run FIXMBR so that I could reboot Windows and go back to life as I had known it.
+
+The next morning, after a good night's sleep, I revisited my draft of this post and decided that I really should forge on, in hopes of gaining access to the full 4GB of installed RAM that had so preoccupied me from
+           <a href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/2007/06/ram-drives-pagefiles-i-ram-and-virtual.html">
+            the beginning
+           </a>
+           of this computer update project.  As a test run, while doing other things on the Windows XP installation, I ran VMWare Converter on a DriveImage 2000 backup of the XP system.  The DI image I selected, for this purpose, was a relatively small one, totaling about 4GB, containing an early snapshot of the WinXP Pro system, after some of the initial software and hardware installation was completed.
+
+To do this, I started VMWare Converter in the WinXP installation on the desktop computer.  I selected File &gt; New &gt; Import and chose the third of the three available Source options.  That is, I designated, as the source, a "Standalone virtual machine, backup or disk image."   I browsed to the DI PQI image file on my hard drive but, alas, the only file types that were supported were VMWare Workstation Files (*.vmx, *.vmtn),
+           <a href="https://web.archive.org/web/20140815064800/http://en.wikipedia.org/wiki/Microsoft_Virtual_Server">
+            Microsoft Virtual Server
+           </a>
+           files (*.vmc), Symantec Backup Exec System Recovery Files, and StorageCraft ShadowStor files (*.spf).  Virtual Server was a
+           <a href="https://web.archive.org/web/20140815064800/http://www.microsoft.com/windowsserversystem/virtualserver/default.aspx">
+            free download
+           </a>
+           , so there was the possibility that it would work with DriveImage PQI files, and I could do a multistep conversion that way.  I wasn't able to determine whether Ghost 9.0 or later, or Backup Exec, would import PQI files.  So for present purposes, the only way I could create a virtual machine in VMWare Converter was to select the first of the three options, "Physical computer."  (The second option allowed importing from "ESX server or VirtualCenter virtual machine.")
+
+When I selected the Physical Computer option, I had a choice between a network or local computer.  I chose local.  It allowed me to select the partitions that I wanted to include.  I chose only the two partitions that contained Windows XP software and supporting files.  (I kept some things, such as my custom icons and the sets of shortcuts populating my toolbars, in a separate drive D, so that they would not be affected by crashes and restores on drive C.  Other things on drive D:  the big files, not needing frequent backup, from which I had installed Office 2003 on drive C, and a Saved Settings folder where I kept a backup of my Office settings, Firefox Tab Mix Plus settings, Foxmarks bookmark backup.)  Converter labeled my Linux Ext3 partitions as Unknown.
+
+Converter gave me several options, for purposes of including drives C and D in my new virtual machine.  I could maintain their current size, or I could select Minimum Size (which appeared to be about 10% above the amount of disk space actually being used on those partitions at that time), or I could specify a size, either in GB or in MB.  I decided to specify a size in GB, allowing some room to grow from the current size.  I appreciated the option to "Ignore page file and hibernation file," each of which could be substantial.  When I tried to proceed, I got an error message that didn't seem right:  "The selected target size for some volumes is less than the space used on the volumes.  The cloning operation may fail if there is not enough space to copy all the files."  To my knowledge, the amount of space I had dedicated was more than I was now using, so I decided to go ahead anyway.  Next, I got a choice to create either a ESX server or VirtualCenter virtual machine, or a VMware standalone virtual machine.  I chose the latter.  I designated the new folder where I wanted to put this virtual machine.  Next, there was an option to "Allow virtual disk files to grow" or else "Allocate all disk space now for better performance."  I chose the former.  There was also a suboption, "Split disk into 2GB files," which was checked but greyed out.  I guessed that it could be useful when writing to FAT32 drives, which have a limit of somewhere around 4GB, but in this case that didn't apply:  the disk was NTFS.  Maybe they wanted to make it easier to transfer virtual machines using flash drives.  Anyway, I declined the option to customize the identity of the virtual machine.
+
+The process of creating the virtual machine commenced.  Almost immediately, I got an error message:  "Unknown error returned by VMware Converter Agent."  I tried again, this time choosing the default amount of disk space for the virtual machine.  I was able to do this by right-clicking on the project shown there in the Converter window and making the needed adjustments.  I now saw why I had gotten that error message.  In response to the instruction to specify the disk size in GB, I had typed 27GB, when instead I should have typed just 27.  So now, knowing that I would be letting the disk expand as needed, I typed a size just slightly larger than the minimum.
+
+This time, Converter ran.  I decided to see whether it would function while I was doing other things on the same machine.  It seemed to; however, one of the things I was doing was installing new drivers for an Olympus VN-960PC digital voice recorder.  The software for that particular device was not very good.   In the past, it had caused other systems to crash.  That's what happened this time too.  Somewhere in the process, while I was away from the machine, the system crashed and rebooted.  My sense was that it probably happened when the system was finished installing the VN-960PC driver, because when I started the VN-960PC software after reboot, it ran successfully, whereas it had not been working before the crash.  What I did not know was whether the crash had occurred after Converter finished making a virtual machine.  But it appeared that, most likely, Converter had been still in the process, judging by the relatively small sizes of the files in the folder that I had created to hold the virtual machine.  So I started and ran Converter again, as before.  Sure enough, its list of jobs said that it had finished only 1% of the process.  It wouldn't let me overwrite the previous try, so I went to that output folder in Windows Explorer and manually deleted the first try.  I did like the job list; its existence suggested that I could run preconfigured jobs repeatedly -- if, for example, I kept wanting to go back and add something else to the physical WinXP installation before making a virtual machine from it.
+
+At first, Converter looked like it was really cruising.  Based on the amount of time elapsed and the amount it said was remaining, it looked like it would be finished creating a 30GB virtual machine in about an hour.  But then the system crashed again.  Although I couldn't tell for sure, again the problem appeared to be the Olympus DVR.  I made a mental note to see if MSI had upgraded their motherboard drivers, and I rebooted and tried again.  This time, I avoided the Olympus software too.  The system didn't crash this time.  In a total of one hour and 45 minutes (1:45), it produced a set of files occupying a total of 18GB of disk space.  So I wasn't sure exactly what was the purpose of asking me to specify some other size.  These files included 14 files with a .vmdk extension and one with a .vmx extension.  The files all bore the name I had given ("2007-07-17 WinXP Pro").  So the .vmx file was 2007-07-17 WinXP Pro.vmx, and the first of the .vmdk files was 2007-07-17 WinXP Pro.vmdk.  All the other .vmdk files had additional verbiage after what I had stated, on this pattern:
+2007-07-17 WinXP Pro-s001.vmdk.  The *-s001 through *-s013 files were all different sizes.  Most were about 2GB.  One was about 1.2GB.  The smallest, *-s012, was only 320K.  I did not have an explanation for this variation.
+
+To test the virtual machine, I needed to boot back into Ubuntu.  Since I was sure FIXMBR (making it possible to boot WinXP) had once again messed up my Ubuntu Grub bootloader, I booted from the Super Grub Disk and,
+           <a href="https://web.archive.org/web/20140815064800/http://users.bigpond.net.au/hermanzone/SuperGrubDiskPage.html#Super_Grub_Disk_Quick_Help">
+            following instructions
+           </a>
+           , I did the following:
+           <ol>
+            <li>
+             boot your SGD floppy disk, USB disk or CD-ROM
+            </li>
+            <li>
+             English Super
+             <span style="color: rgb(0, 0, 0);">
+              GRUB
+              <span style="font-weight: bold;">
+              </span>
+             </span>
+             Disk
+            </li>
+            <li>
+             Gnu/Linux
+            </li>
+            <li>
+             Fix Boot of Gnu/Linux (
+             <span style="color: rgb(0, 0, 0);">
+              GRUB
+              <span style="font-weight: bold;">
+              </span>
+             </span>
+             )
+            </li>
+            <li>
+             select your Linux partition
+            </li>
+            <li>
+             see message, 'SGD has succeeded'
+            </li>
+            <li>
+             you're done! reboot
+            </li>
+           </ol>
+           Alas, it wasn't that easy.  When I rebooted, I still saw no Grub boot option; the machine went right back into WinXP.  But then it wouldn't fully boot Windows either; it crashed and rebooted before completing the startup process, like it had always been doing when Grub was in the way.  So I went back to the instructions and explored the next contingency, which the instructions webpage described as follows:
+           <blockquote>
+            You have more than one hard disk in your computer. You have Windows on one hard disk and you just installed Linux on another. You asked Linux to write
+            <span style="color: rgb(0, 0, 0);">
+             GRUB
+             <span style="font-weight: bold;">
+             </span>
+            </span>
+            to MBR. When the computer reboots for the first time though, it still only boots into Windows like before. ???  Maybe
+            <span style="color: rgb(0, 0, 0);">
+             GRUB
+             <span style="font-weight: bold;">
+             </span>
+            </span>
+            has been written to MBR on a non-first hard disk by mistake, where the BIOS won't see it. The BIOS only looks for the MBR on the first hard disk for the bootloader's code. You can check this and verify whether or not this is the problem by booting from the MBR on the non-first hard disk with S.G.D.  See the 'Classic Boot' menu, available from the Super
+            <span style="color: rgb(0, 0, 0);">
+             GRUB
+             <span style="font-weight: bold;">
+             </span>
+            </span>
+            Disk English Super Grub Disk menu.
+           </blockquote>
+           This meant using the Boot &amp; Tools menu in the Super Grub Disk, and then selecting the Boot Master Boot Record (MBR) option.  This gave me a choice of "Hard Disk to Boot."  The options were hda, hdb, etc.  I really had no idea, other than that it seemed the Super Grub Disk had installed Grub on the same drive as WinXP, and since that was first on the list I logically selected that drive and hit Enter.  This booted Windows again, which promptly began its startup process and almost as promptly crashed.  I went through the same process again, with Super Grub Disk, but this time I chose the second drive, hdb.
+That worked.  I was now booting in Ubuntu.
+
+In Ubuntu, I started VMware Server and selected Open a Virtual Machine.  I attempted to browse to the one I had created, but couldn't find it.  Then I remembered that I had neglected to move my newly created virtual machine from the NTFS drive on which I had created it, to the FAT32 drive where VMware Server would be able to see it.  So I took the opportunity, while I was rebooting back into Windows, to change my bootup so that I could boot into Windows.  This would mean using the Super Grub Disk every time I wanted to boot into Ubuntu.  That seemed OK, for now, for two reasons.  First, I was still working in Windows, upgrading my newly assembled system and so forth, and would probably want to be creating another virtual machine to capture the state of the art (or of *my* art) in WinXP.  Second, of course, Windows was a lot more likely to prefer frequent reboots (on my previous machine, I had found it necessary to reboot daily to prevent squirrely behavior).  So I rebooted with the WinXP installation CD and ran FIXMBR again, so that I could then go back into Windows and move the virtual machine files to the FAT32 drive (and, having made MSI's recommended change to the BIOS, could update my BIOS as well, using their website instead of the old-fashioned floppy disk approach.
+
+Unfortunately, WinXP was still not entirely satisfied.  On its first reboot, it crashed again.  On the second round, Windows did boot, and I made the changes just mentioned, and then booted into Ubuntu using Super Grub Disk.
+I went into VMware Server, and this time I was able to open the virtual machine I had made using VMware Converter in WinXP.  Server reported that the state of this machine was "Powered Off."  I had the options to Start up this guest  operating system, Edit virtual machine settings, and enter Notes about this virtual machine.  There was also a list of devices, showing Memory of 2304MB, a hard drive, a CD-ROM drive, a floppy drive, two Ethernet devices, a USB controller, a sound adapter, a mouse, and two processors (because I was now using the Core 2 Duo CPU).  Under the Edit option, I was able to click these various items  (e.g., the hard drive) and change some of its features.  In the case of Memory, I  had the option to "Specify the amount of memory allocated to this virtual machine" from 4MB (although the program indicated that the recommended minimum for this virtual machine, and the amount recommended, were more in the neighborhood of 125-270MB) all the way up to 3,600MB.  (The program did not provide a readout giving exact values; I was interpreting what a slider seemed to be saying.)  So it did appear, indeed, that the 64-bit hardware and operating system were going to make most of my RAM available to my programs -- though Server also indicated making no more than about 3,450MB available to the virtual machine, because above that level there was the possibility that "Memory swapping may occur beyond this size."  Having
+           <a href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/2007/06/ram-drives-pagefiles-i-ram-and-virtual.html">
+            previously heard
+           </a>
+           that WinXP (32-bit) could access less than about 2.8GB of RAM, I found a
+           <a href="https://web.archive.org/web/20140815064800/http://www.t1shopper.com/tools/calculate/">
+            conversion calculator webpage
+           </a>
+           and learned that this was equal to 2,867MB.  So I told VMware Server to allocate 2,900MB to this virtual machine, leaving about 700MB for the underlying Ubuntu layer (not counting the overhead that had apparently eaten up the rest of the memory between that 3,600MB ceiling and my total of 4,096MB (i.e., 4GB) of installed RAM).
+
+Then I clicked on the Start option.  Server showed me a black screen with a tabbed interface.  This black screen pertained to the 2007-07-17 WinXP Pro tab, which was what I had called my virtual machine.  There was also a tab for the opening screen in Server, which had given me options to Create a new virtual machine, Open a virtual machine, Edit host settings, or Switch to a different host.  So I could use that tab to open another machine if I wanted; and I verified that I could also continue to open programs (e.g., Text Editor) from the Ubuntu menu at the top of the display.
+
+The black screen for the 2007-07-17 WinXP Pro virtual machine gave me a dialog asking if I wanted to change the floppy drive's path from Floppy Drive 0 (which I think is what WinXP called it) to /dev/fd0.  Next, I got a warning that "the bridged Ethernet interface is down."  When creating the virtual machine, Converter had shown me several options for my Ethernet connections, and had said that I had two such connections.  I chose Bridging for one and another option (which I couldn't presently recall) for the other.  It now seemed that Bridging was the inferior option.
+
+Meanwhile, Windows did begin to load, inside that formerly black screen in VMware Server.  I also noticed an indication, on the status bar at the bottom of the screen, that "You do not have VMware Tools installed."  WinXP gave me a notification that my hardware seemed to have changed significantly, and that I had three days within which to activate Windows.  As I recalled, Microsoft would give you a couple of automatic reactivations for changed hardware, but would then require you to call in and obtain reactivation from a live person.  So perhaps there would be some Microsoft-imposed limits on how frequently I would be creating and running new Windows virtual machines.
+
+I opted not to reactivate WinXP right now.  The virtual bootup continued.  Next, Windows told me to insert the CD, or browse to the location, containing WinXP Server Pack 2.  It was looking for a folder named i386.  I knew that, among the various i386 folders on my machine, this would be the one associated with the WinXP installation files, which resided on my drive D.
+
+While I was making notes of these things, the installation continued.  I got notices, from the
+           <a href="https://web.archive.org/web/20140815064800/http://www.zonealarm.com/store/content/catalog/products/trial_zaFamily/trial_zaFamily.jsp?dc=12bms&amp;ctry=US&amp;lang=en">
+            free version of the ZoneAlarm firewall
+           </a>
+           that I had installed in WinXP, indicating that various programs that I had installed in Windows (e.g., Google Desktop, MSN Messenger) were trying to contact the internet.  I also received notification that "Your system has no multiple-monitor support."  So apparently I would have to enable that in Ubuntu before I could expect WinXP to use it, and presumably the dual monitor limitations of Ubuntu would also become WinXP's limitations.
+
+Returning to the location of the My Documents folder, I continued the process of pointing Server toward the E:\Current folder that I had designated, in TweakUI, as the location for My Documents.  But Server did not see E: because, of course, E: was an NTFS partition.  If I wanted the virtual machine to point to a partition used in WinXP, it seemed I would have to make sure it was a FAT32 partition.  Alternately, in this case, I could relocate E:\Current to the one FAT32 partition that I did have on my system, or I could just tell Server to use some other folder, somewhere, for My Documents.  But now I realized that this was not a correct analysis because the dialog box (right-click &gt; Properties on the My Documents folder) was *not* showing the FAT32 drive.  The drives it was showing were those that I had designated as part of the virtual machine when
+I created it in Converter.  If I wanted to use E: for My Documents, or if I wanted to use F:\Cache for Internet Explorer's Temporary Internet Files folder, I would have to include those E: and F: partitions in the virtual machine.  Apparently the fact that C and D were NTFS was irrelevant; Converter had already taken care of that.  But now ... if I saved files in a folder on the virtual C or D, where would they be when I shut down Server?  That question remained to be answered.   For now, I designated a new TEMP folder on D as My Documents.
+
+WinXP continued giving me installation-style dialog boxes.  Now I had the Found New Hardware Wizard, telling me that it was ready to help me install software for my Video Controller (VGA Compatible).  I had not been getting that dialog in WinXP, where my video controller was already installed.  Apparently what was happening, at this stage in the process, was that a complete Windows installation was adapting itself to what it considered new hardware,  just as if I had taken a drive image from e.g., Norton Ghost or Drive Image 2002 and had installed it onto a new computer.  I wondered if I would have to go through these same steps for each new computer where I installed the virtual machine, or if one pass would acquaint the virtual machine with itself so that it could then be transferred to other machines without difficulty.
+
+I tried the automatic installation option in the Found New Hardware wizard.  After trying, it said, "Cannot Install This Hardware."  So I clicked Back and tried again, this time using the EVGA driver CD that had come with my video card.  I had not correctly attached the hard drive LED cable to my new motherboard, so I appreciated that Server was flashing red on a hard drive icon on its status bar, indicating that hard drive reads or writes were occurring.  But the outcome was the same:  "Cannot Install This Hardware."  I recalled that I might have a more recent version of the driver on E, but since E was not part of the virtual machine and was NTFS, I couldn't move things around to make that update available right now.
+
+Now the system wanted to install the PCI Bus Master IDE Controller.  This was mildly discouraging.  If we were having to install the IDE controller, then I realized I had better settle in for what could be a long introductory setup process for this new virtual machine, with lots of the requisite, retarded WinXP requests to be reminded of where the i386 folder was, and with multiple reboots to complete the installation of the various pieces of hardware.  At the first such reboot, I hustled to get the EVGA CD out of my CD drive, and reinsert the Super Grub Disk, before realizing that this would be only a virtual reboot.
+
+Rebooting the virtual machine took longer than in WinXP.  Certainly the cursor was moving a lot more slowly.  The cursor was trapped inside the virtual machine tab, but Server's status bar told me I could release it with Ctrl-Alt.  I tried that and was now able to click on the options on Server's menu bar (File, Edit, View, Host, VM, Tabs,  Help) and also on the buttons on its toolbar (Shut Down, Suspend, Start Up (greyed out), Restart Guest, Snapshot, Revert (greyed out), Full Screen, Quick Switch, Summary, Console).  The View menu pick gave me a Full Screen option too, and I chose that.  Now I had an unimpeded, full-screen view of what looked like a Windows bootup, complete with yet another reactivation dialog.  And yes, inside this virtual machine, the cursor definitely was clunky.
+
+What I got, on reboot, was my Windows XP desktop, but at a resolution more like that which you would get in Safe Mode.  I got a Low Disk Space warning for Drive D.  To fix that, I tried to switch out of Full Screen mode, using the recommended Ctrl-Alt-Return key combination.  That didn't work.  Help!  I was trapped in XP, and while I was screwing around with Ctrl-Alt-Return (or maybe because of that) it had rebooted its virtual self and was trying again to complete the virtual boot process.  So I went through the various dialogs again.  There were some problems:  a WinXP notice indicating that some unspecified hardware (probably the display) had not installed properly, and a note that I had limited or no connectivity on my local network connection.
+
+The nVidia software seemed to be installed -- I could use it to try to adjust screen resolution -- but, as noted above, the driver was not.  So I was limited in what I could do with the display.  I was able to adjust the resolution to 1024x768, but not to 1280x1024.  Trying the latter (which I was able to do in Control Panel, but which was not even an option in the nVidia software) gave me an Ubuntu error message and (finally) popped me out of full-screen mode back to the default Server mode.  The error message said, "Unable to find an appropriate host video mode.  Adding the guest mode to the 'display' subsection  of the 'screen' section of your /etc/X11/XF86Config and restarting X is likely to help."
+
+For a minute there, I thought I might be locked in the same reboot cycle that I had experienced in WinXP, after I had installed Ubuntu and before I had used FIXMBR to make Windows happy with the bootloading process.  I feared I might have to run FIXMBR inside this virtual machine somehow -- though I didn't see how, because this virtual machine did not give me the BIOS options that appeared when I would first power up the machine.  It didn't seem that I could boot the WinXP installation CD and run FIXMBR from the Windows Recovery Console, all inside this virtual machine.  Fortunately, it now appeared that this concern was unnecessary, because after a reboot or two, the system did settle down, and I could proceed to play within the virtual machine, starting with the display adjustments just mentioned.
+
+I didn't actually drop out of Server and try to figure out how to follow the X-related instructions just quoted, though. Instead, I focused on basic functionality.  Could I use Server to run Word and other programs I would use frequently?  I started with the mouse:  could I make it run better?  In Control Panel, I wasn't allowed to increase its speed from the lowest possible setting, and I got "Pointing device on Unknown Port" when I went into the mouse Devices tab.  It seemed we had the wrong driver.  But I'd had the right driver in WinXP; evidently Server was unable to make it work correctly inside Ubuntu.  I wasn't sure if this was a problem with Server or just a matter of upgrading my mouse driver in Ubuntu, though I hadn't noticed any mouse problems in Ubuntu outside of this Server situation.
+
+I suspected that I might be getting the Low Disk Space error for D because, in the absence of my other hard drives, virtual WinXP had relocated my page file to D.  But no:  System Properties in Control Panel reported no page file on either C or D.  But then, when I navigated to the root of D in Windows Explorer, I saw that there was indeed a pagefile.  For performance purposes, it seemed that my next virtual machine should contain an additional partition, located on a physically distinct hard drive, so I could park the page file there -- though I wasn't quite sure if that would work as planned.  Anyway, to make more space on D, I used the kludge approach of getting out of Server's full-screen mode by trying to set my resolution higher than 1024x768 in Control Panel; and now that I had access to Server's controls again, I went looking for a way to increase the space allowed to drive D.  Interestingly, in the Host Settings option, I found an option to "Fit all virtual machine memory into reserved host RAM."  I wondered if this would improve performance, so I tried it.  But I got an error indicating that I didn't have permission to do that.  So I was stuck with the default, "Allow some virtual machine memory to be swapped."  I didn't see any way to increase the space available for D right now, so I went back into fullscreen mode to experiment with programs.
+
+Word started up just fine.  It wasn't able to see any of my documents on E, so I tried creating a new one.  Copying the same chunks of text over and over, I created a document that filled 1,429 pages, and then I ran a find-and-replace.  Word did not die, though it did prove unable to number more than 32,768 footnotes (which I assumed was a limitation of Word, not of VMware).  I also opened an Excel spreadsheet of 1,000 rows by 50 columns, each cell but one containing a formula.  Word was a bit sluggish in this setup, but Excel seemed to do its calculations almost instantly.  I was also able to open Access, Acrobat 8, IrfanView, AvaFind, and Cool Edit 2000.  Opening times were slow.  Acrobat, like WinXP, would give me only a few days of use before I had to reactivate.  Internet Explorer would not open; instead, when I tried, I got Firefox.  I was able to see my Hotmail account in Firefox; but when I tried reading a message, I got "The proxy server is refusing connections"; likewise, I was able to see the Google search page (my default), but I got that same message trying to do a search.  So there was going to be some additional work to get my online connection functioning.
+
+I loaded Adobe Photoshop Elements, Adobe Premiere Elements, and Windows Movie Maker while still having the foregoing programs loaded.  These last three were slow-loaders anyway, and they sure weren't setting any speed records now.  I wanted to use MovieMaker to download some video from my camcorder, but I got an indication that "the required audio hardware cannot be found on your computer."  Premiere Elements gave me a similar error message.  I hadn't yet tried to access the video camera from within WinXP either, so I thought that might be a Windows issue rather than a VMware or Ubuntu issue.  But I definitely had used the audio in Windows, so now I tried playing a WAV file.  But IrfanView, which was my default WAV player, said "All wave devices that can play files in the current format are in use."  I tried another WAV; same thing.  No luck with an MP3 either, though no error message.  I tried loading the Olympus Digital Wave Player program that had caused my real Windows XP installation to crash.  I got an audio output device error there too.  So I had to conclude that, even though virtual WinXP had not asked for an audio driver (as it had asked for a video driver) when it was familiarizing itself with its little world there inside VMware Server, it did in fact need one.
+
+I wasn't sure which of the foregoing problems were Server-specific and which were attributable more generally to Ubuntu. Possibly using
+           <a href="https://web.archive.org/web/20140815064800/http://www.google.com/search?q=wine+emulator+ubuntu&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS229US231">
+            Wine or some (other)  emulator
+           </a>
+           in conjunction with a determined effort to find drivers, tweak RAM, and so forth, would yield a significant performance improvement and would enable me to run most, if not all, of these programs. I had realized, for example, that there was a recent development by which Ubuntu could
+           <a href="https://web.archive.org/web/20140815064800/http://ubuntuforums.org/showthread.php?t=217009">
+            access NTFS drives
+           </a>
+           .
+
+Having done enough of a preliminary test, I clicked Start &gt; Shut Down; and after some delay, the machine rebooted into Windows.  It was time to reach some conclusions.
+
+Conclusions
+
+In 1999, I tried my hand at Debian Linux, and
+           <a href="https://web.archive.org/web/20140815064800/http://www.linuxtoday.com/search.php3?query=ray+woodcock&amp;Go.x=18&amp;Go.y=7&amp;Go=Go">
+            reported the results
+           </a>
+           on Freshmeat.net (which sent me two T-shirts for my trouble).  The articles I wrote were entitled "Installation Tale of a Debian Newbie," "The Linux Newbie Installs Corel," and "The Linux Newbie Replies: WFM?"  Rounding out the series, in January 2000, I wrote a piece entitled, "
+           <a href="https://web.archive.org/web/20140815064800/http://freshmeat.net/articles/view/144/">
+            Is Linux for Crazies?
+           </a>
+           "  That last one,
+           <a href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/2007/07/is-linux-for-crazies.html">
+            republished on this blog
+           </a>
+           , offered this prediction for the progress of Linux:
+           <blockquote>
+            Mainstreamers, I guarantee, will run like hell if you make them listen to Mao-versus-Trotsky debates between the devotees of Debian and the comrades of Caldera. In the first stage of operating system socialism, I know, there must be competition among corporate bodies, with each subscribing to the same overall philosophy and yet each seeking to twist the nascent state to its advantage. In the second stage, however, the Stalins will take over from the Lenins -- that is, the theoreticians will give way to thoroughgoing non-purists who will compromise with the Devil if that's what it takes to succeed.
+           </blockquote>
+           Was that correct?  To my knowledge, the answer, as for most predictions, is Partly.  It seems to me that Ubuntu is succeeding partly because
+           <a href="https://web.archive.org/web/20140815064800/http://www.canonical.com/projects">
+            Canonical
+           </a>
+           is motivated along the lines just suggested (with no negative implications intended regarding the Stalin illustration), in terms that do (and perhaps inevitably must) provoke
+           <a href="https://web.archive.org/web/20140815064800/http://www.google.com/search?q=ubuntu+canonical+debian+debate&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS229US231">
+            objections from purists
+           </a>
+           .
+
+I am more optimistic about Linux than I was in 2000, and I was pretty optimistic then.  I felt it would take some time.  I wouldn't have thought it would take seven years to reach the present point.  Seven years seems like a long time -- although, in retrospect, I would have to do a little bit of recalling and digging to explain what significant changes occurred in another seven-year period, such as the one from 1987 to 1994.  Some years from now, it will probably just seem like Linux went through a transitional period, here in the 2007 timeframe -- that it was transitioning from being a tool of hobbyists to being mainstream, but that of course it did make that transition and now (circa 2012, perhaps) the dominance of Linux may seem entirely natural.  In the meantime, it seems to me that each version of Ubuntu is incorporating significant improvements over the preceding ones, for end-user purposes.
+
+My take on the experience described in this post is that Ubuntu still has, for me, some important limitations.  Not tons of them, not like in 2000.  I don't feel, now, that I have to learn programming in order to use Linux; we are much closer to the point at which the command line becomes a useful tool, as in DOS under Windows, without being an absolute necessity.
+
+At this writing, it seemed, I still needed to run Windows on an essentially standalone basis.  I would retain the Ubuntu partitions I had installed, and could get to them with the Super Grub Disk; but ordinarily my machine would boot straight into Windows, and I would do my work there.  In view of Ubuntu's rapid recent progress, and Canonical's rollout of new versions
+           <a href="https://web.archive.org/web/20140815064800/http://www.ubuntu.com/products/WhatIsUbuntu">
+            every six months
+           </a>
+           , and considering how much other work I had to do, it seemed prudent, for me, to let the operating system issue rest for now, and to wait and see what further developments might come along in the next one or two releases of Ubuntu.
+
+At a certain point, too, I might find that I could afford a processor upgrade, or might have learned more about hardware limitations that had caused VMware to perform sluggishly.  I did have the impression that VMware was determined to succeed, and I hoped that adjustments -- on their end, or on mine -- might make all the difference in the not-too-distant future.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=5727509586471332002&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/search/label/VMware%20Windows%20XP%20WinXP%20Ubuntu%20Linux%20virtual%20machine%20Converter%20Server%20Player%20dual%20boot%20virtualization%20drive%20image%20driveimage%20Automatix%20dual%20monitor%20fixmbr%20Super%20Grub%20Disk%20fat%2032%20ntfs%2064-bit%20host%20guest" rel="tag">
+             VMware Windows XP WinXP Ubuntu Linux virtual machine Converter Server Player dual boot virtualization drive image driveimage Automatix dual monitor fixmbr Super Grub Disk fat 32 ntfs 64-bit host guest
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          2
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-1597028353591429162">
+           <a name="comment-1597028353591429162">
+           </a>
+           <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/profile/06827671322238669566" rel="nofollow">
+            SarahC
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Hi!
+            <br/>
+            <br/>
+            You write great articles.
+            <br/>
+            <br/>
+            I wonder - have you ever had experience expanding a Win 2K disk using the "Expand" feature of VMWare 7.1?
+            <br/>
+            <br/>
+            The info I found online only shows Win 7 being used as the guest OS.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-1597028353591429162" title="comment permalink">
+             October 27, 2010 at 5:32 PM
+            </a>
+            <span class="item-control blog-admin pid-1721087951">
+             <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=1597028353591429162" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-4816246687128510368">
+           <a name="comment-4816246687128510368">
+           </a>
+           <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Sarah -- thanks for the compliment.  Sorry to say, I have never used Win2000, so I can't help you there.  Good luck ...
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-4816246687128510368" title="comment permalink">
+             October 27, 2010 at 11:22 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=4816246687128510368" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20140815064800/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=5727509586471332002" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20140815064800/http://raywoodcockslatest.blogspot.com/feeds/5727509586471332002/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 06:48:00 Aug 15, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:00:50 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.732
+  exclusion.robots: 0.096
+  exclusion.robots.policy: 0.084
+  esindex: 0.01
+  cdx.remote: 11.292
+  LoadShardBlock: 98.2 (3)
+  PetaboxLoader3.datanode: 113.333 (4)
+  load_resource: 265.556
+  PetaboxLoader3.resolve: 214.879
+-->

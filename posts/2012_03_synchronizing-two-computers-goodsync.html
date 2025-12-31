@@ -1,0 +1,1462 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151118235816im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2012/03/synchronizing-two-computers-goodsync.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/feeds/5911383739091399768/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Synchronizing Two Computers:  GoodSync and Alternatives
+  </title>
+  <link href="https://web.archive.org/web/20151118235816cs_/https://www.blogger.com/static/v1/widgets/198243223-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151118235816cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151118235816im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151118235816im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151118235816im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151118235816im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151118235816im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151118235816im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151118235816im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151118235816im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151118235816im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151118235816im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151118235816im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151118235816im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151118235816im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151118235816im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151118235816im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151118235816im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151118235816im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151118235816im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Friday, March 23, 2012
+        </h2>
+        <div class="post">
+         <a name="5911383739091399768">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2012/03/synchronizing-two-computers-goodsync.html">
+           Synchronizing Two Computers:  GoodSync and Alternatives
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had a home network with two computers, consistent with my evolving concept of
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2010/07/how-many-computers-should-person-own.html" target="_blank">
+            how many computers
+           </a>
+           a person should have.  (The third was a notebook.  The fourth was now distributed, in pieces,
+           <a href="https://web.archive.org/web/20151118235816/https://www.google.com/search?q=%22Fiona+Apple%22+%22Across+the+Universe%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">
+            across the universe
+           </a>
+           .)  I found it was convenient to have the second of those two computers take care of backup, construct reliable file indexes for searching, hold certain programs open, run certain batch files
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2011/07/windows-7-batch-files-that-run-things.html" target="_blank">
+            at regular intervals
+           </a>
+           , and remain available for moments when the primary computer was doing maintenance or for some other reason was unavailable.
+           <br/>
+           <br/>
+           I was writing these words at one such moment.  The primary computer had just become dysfunctional.  And this was OK.  I was able to turn to the secondary computer and keep on working, pretty much where I had left off, because I was using a synchronization program that kept the two computers in sync via ethernet cable.
+           <br/>
+           <br/>
+           <strong>
+            Critique of GoodSync
+           </strong>
+           <br/>
+           <br/>
+           Except that, unfortunately, now was the moment when my synchronization program became flaky.  That program was GoodSync.  More than a year earlier, I had
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2011/01/windows-7-raid-or-mirror-across.html" target="_blank">
+            examined reviews
+           </a>
+           of synchronization programs and had chosen GoodSync over the others.  I had purchased the pro version and
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2011/01/synchronizing-two-computers-detailed.html" target="_blank">
+            worked through
+           </a>
+           the details of setting it up.
+           <br/>
+           <br/>
+           During this year, I had found GoodSync largely suited to the task.  There were two principal problems, one of which prompted my search for a replacement.  That was the problem of licensing.  GoodSync's representative told me that the license allowed me only two installations per year.  The problem was that GoodSync could not be deactivated.  So, in my setup, I installed it on the secondary computer, and used it to synchronize my laptop and my primary computer with the secondary computer.  But if Windows became dysfunctional, or if my hard drive crashed, or for any other reason I had to reinstall GoodSync, that would count as one of my two permitted installations.
+           <br/>
+           <br/>
+           So I had already had one go-round with the GoodSync people about that.  Now there was another licensing issue.  They promised me that, since I had bought my copy within a certain timeframe, I would qualify for a free upgrade from version 8 to version 9.  But when the time came, the licensing did not work.  So at the moment when I was writing these words, I was looking at a notice that said this:
+           <br/>
+           <blockquote>
+            You have exceeded the Free version lmitations.  To continue using GoodSync you should upgrade to GoodSync Pro version or reduce your jobs to 3 or files in a job to 100.
+           </blockquote>
+           But when I tried to activate, I got this:
+           <br/>
+           <blockquote>
+            FAILED:  Our records indicate that you have only GoodSync 8 licenses in the order you specified, but you are trying to activate GoodSync 9, which requires a separate license.
+           </blockquote>
+           My options in this regard were to get on the phone and complain about the broken promise, go through the steps to uninstall version 9 and reinstall version 8, or buy an upgrade to version 9.  I did contact them and get it sorted out.  Possibly it was even my mistake in the first place.  I was not fresh on the details when writing these notes.  Point is, the matter might have been settled there, if it hadn't been for the second problem.
+           <br/>
+           <br/>
+           The second problem, which had been more persistently troublesome, was that GoodSync was a tremendous resource hog.  It would interrupt or slow down my work very noticeably, to the point that the computer would become unusable and even unresponsive.  I emailed them about this too.  Their reply was that I should upgrade to version 9.  I did that.  But that didn't fix the problem.  Version 9 did have an option, which may or may not have been present in version 8, to impose a "speed limit" on file copying.  This was obviously not an ideal solution:  it would slow things down when the computer was free, and it might not slow things down enough when the computer was busy.  This would be one more thing I would have to tinker with, in hopes of finding the right value.  Why not just have the kind of "smart" arrangement found in other programs, where it drops back to a slow jog or a standstill, depending on computer resource usage?
+           <br/>
+           <br/>
+           The slowdown problem was exacerbated by uncertainty as to how to get the damned thing to just stop when I was finally tired of waiting on it.  Right-clicking the system tray icon would give me options to Stop All or Disable Auto Run.  Disable Auto Run seemed to be only temporary.  A while later, I would be sitting at the computer in a stupor, waiting for it to do something, and would then find that it had sneakily started doing auto synchronizations again.  On the other hand, if I clicked Stop All, a long time could go by before I would think to check up on my supposedly automatic software.  And Stop All did not work reliably anyway.  More than once, I had to go into Task Manager (Ctrl-Alt-Del) and just kill GoodSync immediately.
+           <br/>
+           <br/>
+           Those were the big issues.  There were some others.  I didn't like that I couldn't get a clear indication of how long a job would be running.  When a program does the same thing 20 times a day, eventually it would seemingly be able to give a pretty good estimate of how long it would take to complete a synchronization.  I didn't like that GoodSync needed to distribute _gsdata_ folders all over my computer.  I had looked on that as the price of progress, but for some reason those folders sometimes contained copies of files, which could lead to confusing and potentially disastrous results when doing a sweep for unnecessary duplicates or searching for the latest copy of a file.  I didn't like that GoodSync was not able to keep computers synced on an up-to-the-moment basis.  I would have thought that, with the aid of those _gsdata_ folders, the program would have been able to know, pretty quickly, when a file had been changed, and it would ordinarily seem pretty straightforward to get a copy of that file to the other machine.  What I actually got, unfortunately, was a nearly constant hard drive workout on the secondary machine.
+           <br/>
+           <br/>
+           <strong>
+            A Search for Alternatives
+           </strong>
+           <br/>
+           <br/>
+           Since I was at this point of having to deal with license issues again, for the third or fourth time in the past 12 months, it occurred to me that it might make sense to see if I could find a better alternative.  I had pretty good impressions of recommendations from Gizmo's Freeware, so I started with their list of
+           <a href="https://web.archive.org/web/20151118235816/http://www.techsupportalert.com/content/top-freeware-picks-category-editors.htm" target="_blank">
+            Best PC Freeware
+           </a>
+           .  Their choice for best folder synchronization utility was
+           <a href="https://web.archive.org/web/20151118235816/http://www.techsupportalert.com/content/top-freeware-picks-category-editors.htm#best-free-folder-synchronization-utility" target="_blank">
+            PureSync
+           </a>
+           .  Oddly, Gizmo's link to a review of PureSync actually led to
+           <a href="https://web.archive.org/web/20151118235816/http://www.techsupportalert.com/best-free-folder-synchronization-utility.htm" target="_blank">
+            a November 2011 Gizmo article
+           </a>
+           that named a different program, FreeFileSync, as the best free synchronizer.  FreeFileSync didn't sound too good -- no autosync, among other things -- but the article did mention Allway Sync as a commercial alternative.
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20151118235816/https://www.google.com/search?q=PureSync+GoodSync+Allway&amp;num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=ZIM&amp;tbo=1&amp;rls=org.mozilla:en-US:official&amp;tbs=qdr:y&amp;prmd=imvns&amp;tbas=0&amp;source=lnt&amp;sa=X&amp;ei=2NBBT82SB4HxggeM-Z2FCA&amp;ved=0CBQQpwUoAA&amp;biw=980&amp;bih=847" target="_blank">
+            A search
+           </a>
+           for these three (i.e., GoodSync, PureSync, and Allway Sync) led to
+           <a href="https://web.archive.org/web/20151118235816/http://alternativeto.net/software/puresync/" target="_blank">
+            an alternativeTo webpage
+           </a>
+           listing a number of possibilities.  Among those possibilities, I decided that a programmatic solution like rsync would not work for me, partly because I had not tended to devote the time needed to maintain command-line file management solutions, and partly because I wanted to be able to see what was being overwritten.  I decided against using Beyond Compare, which
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2009/12/long-term-backup-verification-beyond.html" target="_blank">
+            I used
+           </a>
+           and liked for backup verification purposes, because it did not seem to provide a suitably automated solution.  The only other item that stood out, for me, among the alternativeTo entries was
+           <a href="https://web.archive.org/web/20151118235816/http://www.microsoft.com/download/en/details.aspx?id=15155" target="_blank">
+            Microsoft SyncToy
+           </a>
+           .  I decided to reserve judgment on it for now.  (For reasons of speed and reliability, I was looking solely at ethernet-capable tools.)
+           <br/>
+           <br/>
+           Seeking guidance, I looked back at
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2011/01/windows-7-raid-or-mirror-across.html" target="_blank">
+            the previous year's post
+           </a>
+           , to see what comparison sources I had consulted then.  This led to the "sync software" category at
+           <a href="https://web.archive.org/web/20151118235816/http://sync-software-review.toptenreviews.com/" target="_blank">
+            TopTenReviews
+           </a>
+           and the "data transfer &amp; sync software" category at
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/windows/data-transfer-and-sync-software/?tag=bc" target="_blank">
+            CNET
+           </a>
+           .  MajorGeeks didn't have a sync category, and at Softpedia and elsewhere, sync software was mixed into a general category.  The top six at TopTenReviews were Syncables 360, GoodSync, SugarSync, Laplink PCsync, ViceVersa, and Allway Sync.  At CNET, filtering for Windows 7 programs, there were essentially two lists.  First were the "sponsored" (i.e., bought) reviews.  These were iffy:  ViceVersa Pro got four stars from editors and users alike, but the sponsored BeyondSync got five stars from editors but only three stars from users.  Otherwise, among programs most downloaded during the preceding week (so as to avoid some that may have been popular in the olden tymes), the only one of note seemed to be Allway Sync.
+           <br/>
+           <br/>
+           From those sources and from general browsing, certain names appeared to be emerging, including GoodSync, Allway, and ViceVersa.
+           <a href="https://web.archive.org/web/20151118235816/https://www.google.com/search?q=GoodSync+Allway+ViceVersa+compare+OR+comparison&amp;num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=cpM&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;biw=1012&amp;bih=878&amp;prmd=imvns&amp;sa=X&amp;ei=2dhBT5H-CIzpggfbramLCA&amp;ved=0CBEQpwUoBg&amp;source=lnt&amp;tbs=cdr%3A1%2Ccd_min%3A9%2F1%2F2011%2Ccd_max%3A2%2F20%2F2012&amp;tbm=" target="_blank">
+            A search
+           </a>
+           for comparisons of those three didn't yield obvious recent sources of insight.  (Later, I would find
+           <a href="https://web.archive.org/web/20151118235816/https://en.wikipedia.org/wiki/Comparison_of_file_synchronization_software" target="_blank">
+            a Wikipedia page
+           </a>
+           that compared many programs on a number of features.  It seemed to indicate that GoodSync was one of the most capable programs.  I wasn't sure, at that point, whether a closer look at the other programs reviewed there would have yielded a different outcome for my purposes.  My tentative conclusion from that webpage was that, along with the programs reviewed below, I probably would have looked at
+           <a href="https://web.archive.org/web/20151118235816/https://www.techsupportalert.com/best-free-folder-synchronization-utility.htm" target="_blank">
+            FreeFileSync
+           </a>
+           .)  The TopTenReviews comparison suggested that, in terms of features, the top six just listed were mostly competitive for my purposes, except for SugarSync.  According to TopTenReviews, the top three (Syncables 360, GoodSync, and Laplink) pulled away from ViceVersa and Allway Sync in terms of ease of use, support, and documentation.
+           <br/>
+           <br/>
+           I looked at individual product reviews at Softpedia.  There were some contrasts.
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/Back-Up-and-Recovery/GoodSync.shtml" target="_blank">
+            GoodSync
+           </a>
+           got 2.9 stars from 118 users.
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/Back-Up-and-Recovery/ViceVersa-Free.shtml" target="_blank">
+            ViceVersa Free
+           </a>
+           got 2.5 stars from 23 users.
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/File-Management/ViceVersa-Plus.shtml" target="_blank">
+            ViceVersa Plus
+           </a>
+           got 3.0 stars from 25 users.
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/Back-Up-and-Recovery/ViceVersa-PRO.shtml" target="_blank">
+            ViceVersa Pro
+           </a>
+           got 3.6 stars from 28 users.
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/Back-Up-and-Recovery/SugarSync.shtml" target="_blank">
+            SugarSync
+           </a>
+           got 3.1 stars from 25 users.
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/File-Management/Syncables-Desktop.shtml" target="_blank">
+            Syncables Desktop
+           </a>
+           got 1.6 stars from 3 users.
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/File-Management/Allway-Sync.shtml" target="_blank">
+            Allway Sync
+           </a>
+           got 3.3 stars from 112 users.
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/File-Management/BeyondSync.shtml" target="_blank">
+            BeyondSync
+           </a>
+           got 3.2 stars from 11 users.  There was no Softpedia entry for Laplink.  In short, according to voters at Softpedia, the two leading programs were ViceVersa Pro and Allway Sync.  The lackluster score given to GoodSync seemed to be relatively well based.  That is, there seemed to be a fair number of confirming votes.  I should mention that, in a presumably different class, Microsoft
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/File-Management/SyncToy.shtml" target="_blank">
+            SyncToy
+           </a>
+           averaged 3.9 stars from 54 voters.  Of these programs, it appeared that Softpedia's editors rated only SyncToy.  They gave it four stars.
+           <br/>
+           <br/>
+           I also checked program reviews at CNET.
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/GoodSync/3000-2248_4-10508799.html" target="_blank">
+            GoodSync
+           </a>
+           got four stars from 654 user reviews, and four stars from editors.
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/ViceVersa-Plus/3000-18511_4-10065618.html?tag=mncol;4" target="_blank">
+            ViceVersa Plus
+           </a>
+           got no votes;
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/ViceVersa-Free/3000-2242_4-10058725.html" target="_blank">
+            ViceVersa Free
+           </a>
+           got 3.5 stars from 20 users;
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/ViceVersa-Pro/3000-18511_4-10202221.html" target="_blank">
+            ViceVersa Pro
+           </a>
+           got four stars from 30 users, and four stars from editors.
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/SugarSync-Manager/3000-2242_4-10798179.html" target="_blank">
+            SugarSync
+           </a>
+           got five stars from editors, and 2.5 stars from 82 users.
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/Syncables-360-Premium-for-Windows/3000-18511_4-75300353.html?tag=mncol;1" target="_blank">
+            Syncables 360
+           </a>
+           got two stars from four users.
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/Allway-Sync/3000-18511_4-10541119.html?tag=mncol;1" target="_blank">
+            Allway Sync
+           </a>
+           got 3.5 stars from 53 users, and 4.5 stars from editors.
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/Beyond-Sync/3000-18511_4-10865600.html" target="_blank">
+            BeyondSync
+           </a>
+           got three stars from 14 users, and five stars from editors.
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/1770-20_4-0.html?query=Laplink&amp;platformSelect=Windows&amp;platformSelect=Mobile&amp;platformSelect=Webware&amp;tag=srch&amp;searchtype=downloads&amp;filterName=platform%3DWindows%2CMobile%2CWebware&amp;filter=platform%3DWindows%2CMobile%2CWebware" target="_blank">
+            Laplink
+           </a>
+           had one star from one user.
+           <a href="https://web.archive.org/web/20151118235816/http://download.cnet.com/SyncToy/3000-2248_4-10629009.html" target="_blank">
+            SyncToy
+           </a>
+           got four stars from editors and 3.5 stars from 61 users.  These results suggested that, for CNET users, the worst programs were Laplink, Syncables, and SugarSync, and the best programs were GoodSync and ViceVersa Pro, followed by ViceVersa Free, Allway Sync, and SyncToy.  There was something odd about the fact that GoodSync got at least eight to ten times as many votes as the others.  Again, there were suspicious discrepancies between the votes of editors and of users.
+           <br/>
+           <br/>
+           Overall, the reviews provided by these three sources -- TopTenReviews, Softpedia, and CNET -- were only somewhat consistent.  Their sometime inconsistency may have been at least partly due to somewhat different target markets.  At TopTenReviews, the good score for GoodSync was fairly compatible with the results at the other two sources, though the mediocre score at Softpedia was interesting.  TopTenReviews' high ratings for Syncables and Laplink seemed incongruous.  ViceVersa Pro and Allway Sync were in the top or second tier at all three sources.  SyncToy was fairly highly rated by the two sites that reviewed it.  Among the others, ViceVersa Free also seemed to be potentially worth a look.
+           <br/>
+           <br/>
+           Although Allway Sync had a free version, its
+           <a href="https://web.archive.org/web/20151118235816/http://allwaysync.com/license.html" target="_blank">
+            license page
+           </a>
+           indicated that that version had a limit of 40,000 files per month.  Although I was not sure how that would be counted, it seemed likely that a couple of full backups per month would exceed that limit for many people.  The pro version was available for $20, in comparison with $30 for GoodSync and $60 for ViceVersa Pro.  I noticed that the CNET editors described Allway Sync as "one of the best tools we've tried."  I decided to try it myself.  Also, while I now saw that
+           <a href="https://web.archive.org/web/20151118235816/http://www.microsoft.com/download/en/details.aspx?id=15155" target="_blank">
+            SyncToy
+           </a>
+           had no scheduler, it appeared likely to be useful for some purposes, so I downloaded it too.
+           <br/>
+           <br/>
+           <strong>
+            Microsoft SyncToy 2.1
+           </strong>
+           <br/>
+           <br/>
+           I decided to start with SyncToy for two reasons:  I believed it would be simple to install and run, and I figured it would probably be pretty severely limited, and could therefore be disposed of quickly.  In other words, it seemed likely to be a handy tool to know about, for some purposes, but not my primary machine for keeping computers reliably synchronized.
+           <br/>
+           <br/>
+           The program's interface seemed pretty straightforward.  Nonetheless, I ran
+           <a href="https://web.archive.org/web/20151118235816/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=jOx&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=intitle%3ASyncToy+intitle%3Areview+OR+intitle%3Acomparison+%22folder+pairs%22&amp;oq=intitle%3ASyncToy+intitle%3Areview+OR+intitle%3Acomparison+%22folder+pairs%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=3&amp;gs_upl=17909l23314l0l23564l37l21l0l0l0l2l818l3219l12.3.3.1.0.1.1l21l0" target="_blank">
+            a search
+           </a>
+           for sources of guidance and insight.
+           <a href="https://web.archive.org/web/20151118235816/http://www.howtogeek.com/howto/7604/synchronize-folders-between-computers-and-drives-with-synctoy-2.1/" target="_blank">
+            A How-to-Geek webpage
+           </a>
+           said SyncToy would require me to set up a pair of folders that I wanted to synchronize, and would then ask me which kind of synchronization I desired.  There were three options:  Synchronize (copy and delete in both directions, between the two folders, so that the latest additions, changes, and deletions appeared on both), Echo (update the right folder so it matched the left), or Contribute (add to the right so that it contained everything on the left, but don't delete anything from the right).  The How-to-Geek webpage went on to explain how SyncToy tasks could be automated through Windows Task Scheduler.
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20151118235816/http://sourceforge.net/projects/freefilesync/forums/forum/847542/topic/3421064" target="_blank">
+            A discussion thread
+           </a>
+           pointed out some limitations with SyncToy:  no volume shadow copy, so locked files
+           <a href="https://web.archive.org/web/20151118235816/http://www.pcadvisor.co.uk/reviews/software/3333540/microsoft-synctoy-21-review/" target="_blank">
+            would not be copied
+           </a>
+           (which also seemed to be the case with GoodSync); no way to back up your folder pairs, for reinstallation or for use on another computer, so they would all have to be recreated by hand;
+           <a href="https://web.archive.org/web/20151118235816/http://social.microsoft.com/Forums/en-US/synctoy/thread/f00b8777-d70c-4ba9-a6e6-52f1be3e55a3" target="_blank">
+            a nasty bug
+           </a>
+           regarding timestamps when synchronizing NTFS to FAT drives.  Hints to a potential solution for the folder pair backup issue appeared in
+           <a href="https://web.archive.org/web/20151118235816/http://social.microsoft.com/Forums/en-US/synctoy/thread/b562c0d9-9c6e-445c-b2ad-bcdc806af1b0" target="_blank">
+            another thread
+           </a>
+           , discussing the possibility of creating folder pairs via command line.
+           <br/>
+           <br/>
+           The "What's New" section in SyncToy's internal help file suggested that SyncToy 2.1 might have resolved some or all of these issues.  I ran
+           <a href="https://web.archive.org/web/20151118235816/https://www.google.com/search?q=intitle:%22SyncToy+2.1%22&amp;num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=h2c&amp;rls=org.mozilla:en-US:official&amp;prmd=imvnsa&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ei=M29GT76dO5PZiQLu9ZzcDQ&amp;ved=0CA4QpwUoBg&amp;biw=1140&amp;bih=906" target="_blank">
+            another search
+           </a>
+           and saw references to memory leaks and other bugs.
+           <a href="https://web.archive.org/web/20151118235816/http://www.techrepublic.com/forum/discussions/102-339081" target="_blank">
+            A discussion thread
+           </a>
+           contained indications of some dissatisfaction.  I decided SyncToy was probably pretty good, but it was not the sort of limited but airtight and portable tool I had imagined.  It was more like a contender for the role of primary synchronization tool.  For that purpose, I had a sense that I would like Allway Sync more, so I turned in that direction.
+           <br/>
+           <br/>
+           <strong>
+            Allway Sync
+           </strong>
+           <br/>
+           <br/>
+           For some reason, after that brief look at SyncToy, I started getting cold feet.  A couple of days had passed since I had started the thread, and now, as I looked at alternatives to GoodSync, it seemed like I was getting myself into a lot of unnecessary hassle.  This was probably due to two things.  First, I was busy with other stuff and didn't want to deal with this at the time; and second, I was having an unrelated system issue that kept the secondary/server computer from seeing the primary/workstation computer.
+           <br/>
+           <br/>
+           I rebooted as an expression of my faith that this would make it all better.  It didn't.  I gave it a couple of hours and the let spiritual power of saying "to hell with it" do its magic.  When I came back to my existential mess, computer B was seeing computer A.  All was well with the world.
+           <br/>
+           <br/>
+           So I installed and ran Allway Sync -- an awkward name, by the way, referred to hereinafter as AS.  AS had distinct Analyze and Synchronize passes, like GoodSync.  I set it up to compare a folder on each machine.  The interface was OK.  I didn't like the huge chunk of real estate, at the top of the screen, devoted to nothing in particular, but found I could get rid of that with View &gt; deselect Show Logo.  As it was running its analyze pass, it suddenly gave me this:
+           <br/>
+           <blockquote>
+            script error, Unspecified error., URL:
+            <br/>
+            file:///C:/Program%20Files/Allway%20Sync/Skins/default/profileex.js, line: 5138.
+           </blockquote>
+           It offered to send an error report.  I let it do that.  I wasn't sure what effect the error might have on that comparison across two machines.  There were 89 Important Messages.  The brief messages provided -- "Questionable file (manual review recommended)" -- were not as informative as GoodSync's left/right comparison messages.  I didn't like its interface.  While I was poking around with it, I got another script error.
+           <br/>
+           <br/>
+           I wasn't excited about Allway Sync.  Blame it on them, blame it on me, but for whatever reason, I decided to keep looking.
+           <br/>
+           <br/>
+           <strong>
+            WinMerge
+           </strong>
+           <br/>
+           <br/>
+           Around this time, I came across the freeware WinMerge program.  I hadn't seen much mention of it in TopTenReviews or other commercial sites.
+           <a href="https://web.archive.org/web/20151118235816/http://en.wikipedia.org/wiki/WinMerge" target="_blank">
+            Wikipedia
+           </a>
+           said the WinMerge project was currently dormant.  The program's
+           <a href="https://web.archive.org/web/20151118235816/http://winmerge.org/" target="_blank">
+            homepage
+           </a>
+           indicated that the last stable version (2.12.4) had been released nearly three years earlier, in mid-2009.  But
+           <a href="https://web.archive.org/web/20151118235816/http://www.softpedia.com/get/System/File-Management/WinMerge.shtml" target="_blank">
+            Softpedia
+           </a>
+           contained an "experimental" v. 2.13.20, uploaded in October 2010, rated 4.5 by 139 users, and
+           <a href="https://web.archive.org/web/20151118235816/http://www.cnet.com/1770-5_1-0.html?query=winmerge&amp;tag=srch" target="_blank">
+            CNET
+           </a>
+           boasted installed and portable versions of a version 2.12.4 (4.5 stars, 29 votes).
+           <br/>
+           <br/>
+           Wikipedia's
+           <a href="https://web.archive.org/web/20151118235816/http://en.wikipedia.org/wiki/Comparison_of_file_comparison_tools" target="_blank">
+            comparison
+           </a>
+           of file comparison tools listed Beyond Compare but not GoodSync.  I had purchased BC Pro.  It had worked well for backup purposes, where I manually eyeballed what was going on.  I hadn't wanted to use it for automated syncing of computers, which seemed to be a less critical operation in my system.  (If GoodSync had been randomly losing stuff, I would have noticed it when I did my Beyond Compare backups.  In other words, after some early watching and tinkering, I was comfortable with letting GoodSync keep the two computers aligned, taking only an occasional look at what it was doing.)  I might have been more inclined to use Beyond Compare for that purpose if I had learned its scripting language, which might not have been that hard; but I had gotten started with GoodSync through a free trial, and just went ahead with that.
+           <br/>
+           <br/>
+           Based on the Wikipedia comparison, it now appeared that what I got for my money, in buying Beyond Compare rather than using the free WinMerge, was the ability to do three-way comparisons (which I never did) and possibly the ability to do scripting (Wikipedia drew a blank on that).  WinMerge could not do "horizontal" something (that was all Wikipedia said:  horizontal or vertical, and BC could do both).  WinMerge would have given me a "moved lines" capability that Beyond Compare did not have.  WinMerge did not have FTP support.  These things did not seem crucial to me, though further research to verify what they meant would obviously have been advisable.  But there was one real problem:  WinMerge would not do CRC checks.  Granted, I had not actually been doing those checks in GoodSync either.  My reason was that GoodSync was already taking over my secondary computer; I could hardly bear the thought of making it even more demanding.  But I did want that capability.  It had been a while since memory or other system errors had noticeably corrupted numerous files, but I'd had that experience in the past, and preferred to have some warning if, perchance, one computer quietly began to wander off course.
+           <br/>
+           <br/>
+           Other programs mentioned above (e.g., Allway, SyncToy, Vice Versa) did not appear on the Wikipedia comparison list.  It seemed I was getting into an application for which a program like Beyond Compare or WinMerge was designed, and at which it might not excel.  For instance, the comparison did not include features, like scheduling and networking, that seemed essential for synchronizing computers.
+           <br/>
+           Nonetheless, I decided to try the portable version of WinMerge.  It was small, as befit a portable.  I could see right away that we weren't going to be coddling anybody.  Specifically, I couldn't figure out how to use it.  It didn't have Beyond Compare's user-friendly buttons and menus.  There were no tooltips, so I'd have to just learn what the various buttons meant.
+           <br/>
+           <br/>
+           There didn't seem to be a way to tell WinMerge to actually do anything.  I went to its
+           <a href="https://web.archive.org/web/20151118235816/http://manual.winmerge.org/" target="_blank">
+            online help manual
+           </a>
+           .  The answer I was looking for was to go to File &gt; Open.  This would seem obvious in another kind of program, but here I wasn't looking to do anything with any particular file.  I was looking for a way to compare folders.  But now that I did take that route, I saw a dialog allowing me to compare folders.  It was able to navigate to the other networked computer, so I compared the D:\Workspace folder on two different computers.  WinMerge seemed to be doing this comparison very slowly.  After a while, I saw that it had stalled on comparison of a particular item.  It didn't name the item; it just said it was item no. 7115.  That may have been a bug; when I killed it, I got a display showing 7142 items, which I think was the total number of items it had said it was comparing.
+           <br/>
+           <br/>
+           The WinMerge display was informative.  I could set it to show only the items that were different.  It was a plain-text display, without colors or graphics; but because it used the same tight font as Windows Explorer, with more narrowly spaced lines, it provided a lot more information per screenful than GoodSync did.  It had a collapsible tree mode, like GoodSync.  It was willing to generate a patch.  I didn't know what that was, but
+           <a href="https://web.archive.org/web/20151118235816/http://wiki.winmerge.org/wiki/Submit_Patch" target="_blank">
+            apparently
+           </a>
+           it meant a code patch.  It seemed to be a way to help programmers offer suggestions that would improve WinMerge.  There weren't any scheduling features, so it appeared that, for my purposes, I'd be learning how to write
+           <a href="https://web.archive.org/web/20151118235816/http://manual.winmerge.org/Command_line.html" target="_blank">
+            command-line scripts
+           </a>
+           and running them through Windows Task Scheduler.  But if I was going to do that, I thought it might make more sense to use Robocopy, which was already built into Windows.
+           <br/>
+           <br/>
+           <strong>
+            Robocopy
+           </strong>
+           <br/>
+           <br/>
+           In one of those uncanny cyclical events,
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2011/02/windows-7-additional-tweaks.html" target="_blank">
+            exactly a year
+           </a>
+           had passed since I had last worked with
+           <a href="https://web.archive.org/web/20151118235816/https://en.wikipedia.org/wiki/Robocopy" target="_blank">
+            Robocopy
+           </a>
+           .  Robocopy was a command-line tool in Vista and Windows 7 (and possibly elsewhere).
+           <br/>
+           <br/>
+           Back then, I had set up batch files to run relatively simple Robocopy commands to make backups.
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2011/03/windows-7-more-tweaks.html" target="_blank">
+            A month later
+           </a>
+           , I had tried to use Backup Maker instead, but that hadn't lasted long.  By this point, both of these tools had fallen into disuse, because I didn't like the backup configuration they were giving me, and I was too busy with other stuff to revisit the question.  I decided to revisit it now.
+           <br/>
+           <br/>
+           One thing I hadn't liked about Robocopy was that, every hour (or whenever), Windows Task Scheduler would pop up one of my old-style batch files to run my Robocopy script.  It was inelegant; it was distracting.  So I was interested in Robocopy front ends that might conceal the script execution.  There seemed to be several such front ends:
+           <a href="https://web.archive.org/web/20151118235816/http://www.upway2late.com/projects/winrobocopy" target="_blank">
+            WinRoboCopy
+           </a>
+           and
+           <a href="https://web.archive.org/web/20151118235816/http://tribblesoft.com/easyrobocopy.aspx" target="_blank">
+            Easy RoboCopy
+           </a>
+           and
+           <a href="https://web.archive.org/web/20151118235816/http://technet.microsoft.com/en-us/magazine/2006.11.utilityspotlight.aspx" target="_blank">
+            Robocopy GUI
+           </a>
+           and
+           <a href="https://web.archive.org/web/20151118235816/http://www.sh-soft.com/front_content.php?idcatart=156" target="_blank">
+            SH-Soft RoboCopy GUI
+           </a>
+           and
+           <a href="https://web.archive.org/web/20151118235816/http://technet.microsoft.com/en-us/magazine/2009.04.utilityspotlight.aspx" target="_blank">
+            RichCopy
+           </a>
+           , apparently a hybrid using some Robocopy and some other tools.  RichCopy offered ways of fine-tuning a copying process, but they didn't seem relevant to me.  When I ran across
+           <a href="https://web.archive.org/web/20151118235816/http://aricsblog.blogspot.com/2009/08/robocopy-trumps-richcopy.html" target="_blank">
+            a critical report
+           </a>
+           on RichCopy, I decided not to start with it.  Among the others, Robocopy GUI seemed to have the best pedigree, being a Microsoft product like Robocopy.
+           <br/>
+           <br/>
+           The link for the Robocopy GUI download was confusingly described as a link to the code for
+           <a href="https://web.archive.org/web/20151118235816/http://technet.microsoft.com/en-us/magazine/2006.11.utilityspotlight.aspx" target="_blank">
+            the Technet article
+           </a>
+           discussing it.  I wasn't sure whether it was a link to the code for the article itself or was, rather, a link to the code (or, less nerdily and more accurately, the utility, including its accompaniments, e.g., User's Guide) discussed in the article.  Anyway, somehow I managed to get the utility itself.  I installed and ran the GUI.  It was a concise little thing that you could not possibly use safely without the aid of a Robocopy guide or manual, or a preexisting knowledge of Robocopy.  I say that because, for example, its Copy Options tab (one among seven available) included such options as /E and /ZB.  What did these mean?  The program did not say.  It did have a Help &gt; Robocopy User's Guide menu option that led to a 35-page Word document which I promptely PDFd.  It seemed the principal value of the GUI would be to remind and organize, not really to reduce the need to understand Robocopy's options.
+           <br/>
+           <br/>
+           At this point, I started
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2012/02/robocopy-commands-for-file-and-folder.html" target="_blank">
+            a separate post
+           </a>
+           to discuss Robocopy options in detail.  I also considered using something like
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2009/12/long-term-backup-verification-beyond.html" target="_blank">
+            Beyond Compare,
+           </a>
+           which would allow checksum comparisons rather than Robocopy's relatively simpleminded and potentially incorrect comparison of dates and times.  As noted in that other post, the main problem I was encountering, with both Robocopy and Beyond Compare (aside from the latter's sometime ability to bog down system processes), was that they weren't true automated synchronization solutions.
+           <br/>
+           <br/>
+           What I probably needed, for the checksum issue, was a distinct program that would do continual, low-priority background comparisons between the two computers, so as to distinguish files whose checksum inconsistency was accompanied by a change in file date and time (probably indicating a legitimate update of the file) from those whose checksums differed while timestamps remained the same (suggesting the possibility that one had become corrupt).  Having this as a low-priority background function would allow this potentially resource-intensive file comparison function to run when the computer was not busy -- which, itself, would not necessarily be a good trait for a synchronizer.  This background checksum comparison wouldn't ordinarily be an urgent function, though it could be an important one.  I would be happy with a report, presented to me each morning, as to the results of checks during the last 24 hours, with links that would take me to individual files displaying expected and unexpected checksum inconsistencies.  Ideally, such a stealth checker would (also, or perhaps instead) compare checksums against a database, which would be updated upon file creation or acquisition.  In other words, as soon as I would PDF a Word document, this background tool would calculate and store that PDF's checksum, so as to facilitate future estimations of what had been happening to it (e.g., it had been subsequently edited in Acrobat, which would tend to indicate manual user verification and therefore an expected change in checksum).
+           <br/>
+           <br/>
+           Regarding the bogging-down of system resources, it seemed that, if I did find a way to use something like Robocopy, there was the question of how I could prevent the program from hogging system resources.  There seemed to be two parts to this question:  how do I detect that the computer is busy, and how do I slow Robocopy in that case?  Or was there maybe one tool that would let me slow down designated processes when computer resource usage reached a certain level?  This led to
+           <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/2012/03/windows-7-assigning-process-priorities.html" target="_blank">
+            a separate inquiry
+           </a>
+           .  At this point, that inquiry had yielded the impressions that something like Process Hacker or Process Explorer might put the brakes on how heavily a program would draw upon system resources during busy times.  Those tools hadn't been especially successful against GoodSync, but possibly GoodSync had been programmed to demand priority, in a way that would not be a problem with something like Robocopy.
+           <br/>
+           <br/>
+           There was also the question of how I could run a command-line tool like Robocopy unobtrusively.  So far, I had used Robocopy in batch files that would pop up and require a manual click to get them out of the way.  Not a huge problem, but when it occurs multiple times per hour for each of several partitions, it could get to be an irritant.
+           <br/>
+           <br/>
+           <strong>
+            Conclusion
+           </strong>
+           <br/>
+           <br/>
+           At this point, I was not finding good alternatives to GoodSync.  The slowness problem seemed to become less pronounced, over the several days during which I was doing these investigations and writing up these notes.  I wasn't sure if that was just because we had not again encountered a heavy load, or if GoodSync 9 had perhaps made a huge improvement over version 8.
+           <br/>
+           <br/>
+           My investigation had turned up numerous possible replacements.  Among these, I had identified several programs with potential.  The leading one would be WinMerge; and if that didn't work, I would try Microsoft SyncToy.  I decided to give GoodSync 9 a while longer, to see if it continued to take over the secondary computer.  In that event, I thought I might first make a renewed search for tools that would reliably slow down GoodSync during times when the machine was not idle.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=5911383739091399768&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/search/label/Allway" rel="tag">
+             Allway
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/search/label/GoodSync" rel="tag">
+             GoodSync
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/search/label/microsoft" rel="tag">
+             microsoft
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/search/label/Robocopy" rel="tag">
+             Robocopy
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/search/label/sync" rel="tag">
+             sync
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/search/label/synchronization" rel="tag">
+             synchronization
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/search/label/SyncToy" rel="tag">
+             SyncToy
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/search/label/WinMerge" rel="tag">
+             WinMerge
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          10
+comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-1853319418905050434">
+           <a name="comment-1853319418905050434">
+           </a>
+           <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Regarding GoodSync as resource hog, there were some indications that an investment in hardware would alleviate the problem.  At this point, I had not yet added a RAID array, but just the addition of a faster video card and CPU seemed to help considerably.  Between those two, the video card seemed more important:  at least I could see the windows containing other programs, and could click on links or otherwise do things, even if they took time to execute.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-1853319418905050434" title="comment permalink">
+             April 9, 2012 at 11:28 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=1853319418905050434" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-3148139064179753801">
+           <a name="comment-3148139064179753801">
+           </a>
+           <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/profile/03446187053094157343" rel="nofollow">
+            Woodworker
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            I use Z-Cron v4.9 to run my tasks. It can run a batch file that's hidden, minimized, etc. It also solves the problem of task manager not running tasks if they are recurring (on Sundays tasks say they run but don't and won't until restarted).
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-3148139064179753801" title="comment permalink">
+             August 14, 2012 at 9:21 PM
+            </a>
+            <span class="item-control blog-admin pid-232855414">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=3148139064179753801" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-5799775533861356132">
+           <a name="comment-5799775533861356132">
+           </a>
+           <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/profile/14198710343426339935" rel="nofollow">
+            garciac
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Hello Ray,
+            <br/>
+            <br/>
+            Thanks fot share this experience, has been very ilustrative.
+            <br/>
+            <br/>
+            I suggest try Memeo Autosync and share your comments. I have used to sync on a usb hard disk on the last 3 years and work fine. I'll be curios to see how works sync 2 computers.
+            <br/>
+            <br/>
+            Regards,
+            <br/>
+            Carlos
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-5799775533861356132" title="comment permalink">
+             October 9, 2012 at 8:20 PM
+            </a>
+            <span class="item-control blog-admin pid-1504727521">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=5799775533861356132" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-7945389253726901726">
+           <a name="comment-7945389253726901726">
+           </a>
+           <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/profile/09953679196185650753" rel="nofollow">
+            Jim Harris
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Thanks for doing all this hard work and research.  I've been using SecondCopy for years, but I'm looking for a simple free tool to tell my users about.  I'm thinking the Microsoft tool might be best for them.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7945389253726901726" title="comment permalink">
+             November 5, 2012 at 12:04 PM
+            </a>
+            <span class="item-control blog-admin pid-902011627">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7945389253726901726" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-97738842474626642">
+           <a name="comment-97738842474626642">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Really appreciate your research, and providing the results in so much detail.  I've been using the free version of Puresync for a while for home use and it does everything I want well, except one thing (hence me finding your page).  I want a program that syncs a single file when's its changed, and only that file.  This is what Foldershare used to do very well.
+            <br/>
+            <br/>
+            Just trying out Goodsync and when a file is changed, it triggers the entire folder to be synced.  It does so quite fast but not what I'm looking for.  Also testing out Beyond Sync, which seems to be working well so far (individual file appears to only be synced).  It seems a little slow but otherwise stable.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-97738842474626642" title="comment permalink">
+             March 30, 2013 at 4:41 PM
+            </a>
+            <span class="item-control blog-admin pid-314925157">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=97738842474626642" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-3739492812161998656">
+           <a name="comment-3739492812161998656">
+           </a>
+           Christian Francis
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Hi Ray, as it's some time ago since your impressive article, I wondered if you have concluded your search for the ultimate sync tool?  I too have tried GoodSync and SyncToy, but I was miffed by GoodSync's GSDATA file becoming 50GB in size and using up ALL my remaining disc space!
+            <br/>
+            <br/>
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-3739492812161998656" title="comment permalink">
+             July 15, 2013 at 7:54 AM
+            </a>
+            <span class="item-control blog-admin pid-1948421872">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=3739492812161998656" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-5005724531278348925">
+           <a name="comment-5005724531278348925">
+           </a>
+           <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Christia -- I've stuck with GoodSync.  I have a GSDATA folder on each synced partition.  The largest one is only 40MB.  If you haven't asked their tech support, you might try that -- there may be something messed up in the installation.  Cheers!
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-5005724531278348925" title="comment permalink">
+             July 15, 2013 at 8:55 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=5005724531278348925" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-790900625957152773">
+           <a name="comment-790900625957152773">
+           </a>
+           Helio
+          </dt>
+          <dd class="comment-body">
+           <p>
+            What about FileGee?
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-790900625957152773" title="comment permalink">
+             August 30, 2013 at 2:32 PM
+            </a>
+            <span class="item-control blog-admin pid-1177093643">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=790900625957152773" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-2260389893126644894">
+           <a name="comment-2260389893126644894">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            The _gsdata folder contains (if you're using the default options) a backup copy of the last version of all your files that have been changed by the sync.
+            <br/>
+            <br/>
+            As standard I think it keeps them for 30 days. This is very useful if you manage to accidentally delete a file you later decide you want to retrieve, and completely configurable. If you don't want this you can turn it off and lose the _gsdata folders (and save your 50GB storage space!)
+            <br/>
+            <br/>
+            Personally I prefer the safety net!
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2260389893126644894" title="comment permalink">
+             February 19, 2014 at 6:36 PM
+            </a>
+            <span class="item-control blog-admin pid-1772278278">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2260389893126644894" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+          <dt class="comment-author" id="comment-2063593543969853675">
+           <a name="comment-2063593543969853675">
+           </a>
+           <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/profile/17404099463785367148" rel="nofollow">
+            Paul Springer
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Its been a long time since posting comments. Thanks for the article. I also use GoodSync. I want to point out a couple of things. Back in the day, Richcopy was absolutely awesome. It was written by Microsoft developers and they actually said it was faster than Robocopy. This leads me to my second point. As we move further and further away from the last version of Richcopy's release, it's important to point out that Microsoft keeps Robocopy up to date. This is really important if you use their file and folder permissions which changed with Windows 8, 8.1, and now 10. If you plan to use ACL's, you really need to look at the Windows operating system you are using and what feature set of security permissions Microsoft has implemented.
+            <br/>
+            <br/>
+            I wish I could find a great article on synching files and folders across, Windows, OSX, Linux, and whatever NAS you now own. Apple has finally agreed to use Microsoft's SMB protocol and retire AFP. NFS also has its strengths. However, none are perfect. They all have issues. You need to take this into consideration too or you will end up like me, files and folders with zero byte sizes.
+            <br/>
+            <br/>
+            At the end of the day, My suggestion is to use two completely different tools. Use one, such as Goodsync. But use something that works completely different for validation. Finally make sure you sync across operating systems, always have one "master" that your write "from" and not "too." Try to keep one master in the cloud, two if you can afford it.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-2063593543969853675" title="comment permalink">
+             June 12, 2015 at 11:57 PM
+            </a>
+            <span class="item-control blog-admin pid-739238153">
+             <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=2063593543969853675" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151118235816/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=5911383739091399768" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151118235816/http://raywoodcockslatest.blogspot.com/feeds/5911383739091399768/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 23:58:16 Nov 18, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:32:50 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.703
+  exclusion.robots: 0.111
+  exclusion.robots.policy: 0.101
+  esindex: 0.01
+  cdx.remote: 9.008
+  LoadShardBlock: 121.728 (3)
+  PetaboxLoader3.datanode: 200.185 (4)
+  load_resource: 362.955
+  PetaboxLoader3.resolve: 261.409
+-->

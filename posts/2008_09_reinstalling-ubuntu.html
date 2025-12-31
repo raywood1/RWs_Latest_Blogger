@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053803cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053803im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/09/reinstalling-ubuntu.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053803/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053803/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053803/https://raywoodcockslatest.blogspot.com/feeds/3923792912409320727/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/09/reinstalling-ubuntu.html" property="og:url"/>
+  <meta content="Reinstalling Ubuntu and VMware" property="og:title"/>
+  <meta content="I had been working, for much of the past two months, on the process of switching from Windows XP to Ubuntu.  When it appeared that I would s..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Reinstalling Ubuntu and VMware
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053803im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053803im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053803im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053803im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053803im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053803im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053803im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053803im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053803im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053803im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053803im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053803im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053803im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053803im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053803im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053803im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053803im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053803im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053803cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053803cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Tuesday, September 2, 2008
+        </h2>
+        <div class="post">
+         <a name="3923792912409320727">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053803/https://raywoodcockslatest.blogspot.com/2008/09/reinstalling-ubuntu.html">
+           Reinstalling Ubuntu and VMware
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had been working, for much of the past two months, on the process of switching from Windows XP to Ubuntu.  When it appeared that I would still be relying on a number of Windows programs for the foreseeable future, I decided to use VMware Workstation 6 to enable me to run Windows within Ubuntu.  On that basis, I had installed Ubuntu 8.04 (Hardy Heron) on each of my two computers, and on the primary computer I had then installed Workstation and had set up some virtual machines.  Now, however, as described in
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/09/vmware-in-ubuntu-additional-fixes-and.html">
+            the immediately preceding post
+           </a>
+           in this series, I was finding that my NVIDIA drivers were not operating correctly and did not seem capable of being repaired.  After investing quite a bit of time and effort in that, and seeing that my secondary computer was meanwhile having no such problems, I decided that the most effective thing I could do would probably be to reinstall Ubuntu on the primary computer.  I had tried using a previous backup that I had made with Acronis True Image; but while that restore process had succeeded, it appeared that the NVIDIA problems must have predated the backup, because they were still there.  I had gotten
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-backing-up-and.html">
+            some tips
+           </a>
+           on what I could back up, on the present installation, to help make reinstallation of Ubuntu a little easier, and I had followed that advice.  But now it was time to bite the bullet and do the reinstallation.
+
+My first question was whether it was necessary to wipe the Linux ext3 partition, or any particular folders within it, or whether Ubuntu 8.04 (I was using the 64-bit version) would take care of all that for me.  Based on
+           <a href="https://web.archive.org/web/20190906053803/https://answers.launchpad.net/ubuntu/+question/35710">
+            a couple
+           </a>
+           of discussion threads I reviewed, it seemed I would be completely
+           <a href="https://web.archive.org/web/20190906053803/http://ubuntutip.googlepages.com/reinstall">
+            wiping out
+           </a>
+           the existing installation.  Well, I rebooted with the Ubuntu 64-bit CD and clicked on Install.  When we got to the choice of guided or manual installation, I chose manual and directed the installer to use the 115.3GB ext3 partition.  I clicked Forward.  It said, "No root system is defined.  Please correct this from the partitioning menu."  I clicked Edit Partition, told it to make it ext3, and chose / as the mount point.  I clicked Forward again.  I got another question:
+           <blockquote>
+            Do you want to return to the partitioner?
+
+The file system on /dev/sdb6 assigned to / has not been marked for formatting.  Directories containing system files (/boot, /etc, /usr, /var, ...) that already exist under any defined mountpoint will be deleted during the install.
+           </blockquote>
+           I felt that was OK, so I clicked Continue.  I filled in my name and the other requested information and hit Forward again.  Next was a "Migrate Documents and Settings" dialog.  Apparently it was going to allow me to import documents and settings from the "ray" account that it found preexisting on that partition.  This sounded very good.  I checked the "ray" box and clicked Forward and Install.  This was at 3:33 PM.  At 3:44 PM, I was logging in, very pleased with how quickly that had gone.  As soon as I entered my password, however, I got this:
+           <blockquote>
+            User's $HOME/.dmrc file is being ignored.  This prevents the default session and language from being saved.  File should be owned by user and have 644 permissions.  User's $HOME directory must be owned by user and not writable by other users.
+           </blockquote>
+           A bit baffling.  I clicked OK.  Interestingly, I had the same customized desktop layout as before, with my top panel at the left side of the screen and both panels set as expandable.  Had the installation not done anything?  System &gt; Administration &gt; Hardware Drivers said I did now have "NVIDIA accelerated graphics driver (latest cards)" installed but not yet enabled.  I enabled it.  It needed a restart.  I rebooted.  Or at least I gave the instruction to reboot.  It was not completely able to do so.  After five minutes with a black screen and a blinking cursor, I punched the reset button.  Same result.  I tried again, this time using recovery mode and running dpkg but not xfix.  Nope:  No Signal, and then a black screen.  OK, recovery mode again and xfix.  I got that same message (above) about "User's $HOME/.dmrc file" being ignored.  OK.  Hardware Drivers showed the NVIDIA driver being "In use."  It really looked like I had the same system as before, with even the same things on the Desktop as before; but on closer inspection the menu picks for Applications &gt; Internet &gt; Google Earth and Applications &gt; System Tools &gt; VMware Workstation were gone.  So I did have, in some sense, a new installation, and was relieved that I might not have to do so much reinstalling of stuff as would have been necessary with a totally new system.
+
+First, the system was telling me that I had some updates to install.  I clicked on that and looked at it.  One thing they wanted to install was Firefox 3.0.  I had found that to be inferior to Firefox 2.0.0.16 for my purposes.  I ran Applications &gt; Internet &gt; Firefox and saw that it was checking my standard list of Add-Ons, which was another pleasant surprise:  those, too, had not been wiped out in the reinstallation.  But now it said that a half-dozen of them were disabled because they were not compatible with this version of Firefox.  On second check, three of them could be updated to this version after all.  But two of the most useful ones, Snap Links and Tab Mix Plus, were still disabled.  Help &gt; About said that this was version 3.0.  I let Ubuntu go ahead and install its updates, but this was one program and update that I would be uninstalling.  The full package of Ubuntu updates consisted of 111 updates (118.6MB), so this was going to take a while.  It was done, and I rebooted as requested, at 4:50 PM.  Now I had to take care of that $HOME message that kept popping up after every boot.  I
+           <a href="https://web.archive.org/web/20190906053803/http://ubuntuforums.org/showthread.php?t=423976">
+            found
+           </a>
+           <a href="https://web.archive.org/web/20190906053803/http://fingersnaps.wordpress.com/2008/07/18/homedmrc-file-is-being-ignored-ubuntu-permission-got-messed-up/">
+            several
+           </a>
+           <a href="https://web.archive.org/web/20190906053803/http://ubuntuforums.org/showthread.php?p=4667155">
+            posts
+           </a>
+           recommending two different versions of the same steps:
+           <blockquote>
+            sudo chown -R [username] /home/[username]
+sudo chmod -R 755 /home/[username]
+sudo chown [username] $HOME/.dmrc
+sudo chmod 644 $HOME/.dmrc
+
+or
+
+sudo chmod 644 /home/[username]/.dmrc
+sudo chown [username] /home/[username]/.dmrc
+sudo chmod -R 700 /home/[username]
+sudo chown -R [username] /home/[username]
+           </blockquote>
+           The second version was repeated on two separate webpages, so I tried that first.  Its third line gave me an error message, "Cannot access `/home/ray/.gvfs': Permission denied."  So I switched to the first version, above, and tried that.  But its first line gave me the same error message.  I tried it without the sudo and got "Function not implemented."  I tried the third line of version 2 again without the sudo, and that seemed to work.  I tried the fourth line of version 2 with and without sudo.  With, I got "Permission denied."  Without, I got "Function not implemented."  This solution did not seem to be working for me.  I rebooted anyway, just in case some of the other lines had done the trick.  And, what do you know, that message was gone.  Can't say which of the above lines did it, but apparently version 2 (with some tinkering as to when to use sudo and when not to) was the solution.
+
+Once that was out of the way, I consulted
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/07/vmware-in-ubuntu-putting-it-all.html">
+            my previous notes
+           </a>
+           on replacing Firefox 3 with Firefox 2.  What seemed to have done the job, that time, had been to close down Firefox, search System &gt; Administration &gt; Synaptic Package Manager for every installed program that was Firefox-related and mark it for complete removal (but not totem-mozilla or xulrunner), Apply that.  Then it was File Browser (i.e., Nautilus) &gt; View &gt; Show Hidden Files and then File System &gt; home &gt; ray and there, in /home/ray, delete the .mozilla folder.  Firefox was no longer visible in Applications &gt; Internet.  Back in Synaptic, I searched for firefox-2 and installed firefox-2 and firefox-2-gnome-support.  I started Firefox and, using the list of add-ons previously saved with
+           <a href="https://web.archive.org/web/20190906053803/https://addons.mozilla.org/en-US/firefox/addon/447">
+            Infolister
+           </a>
+           , installed them and, where applicable, their saved profiles.
+
+I rebooted to make sure we were still on the same page, Ubuntu and I.  All was golden.  I realized I might have screwed up by forging ahead with Firefox when maybe I should instead have started with that dpkg thing that I had noted in
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-backing-up-and.html">
+            a previous post
+           </a>
+           .  But as I reviewed
+           <a href="https://web.archive.org/web/20190906053803/http://ubuntuforums.org/showthread.php?t=169062">
+            the thread
+           </a>
+           containing the advice, it looked like it would just mark packages for installation, and no harm done if I had already installed them.  On second thought, did I want to reinstall the whole boatload of my previous programs?  Most of them, I thought, had been installed by Ubuntu automatically.  The ones I wanted to install would come to me, and most likely I would have to fight my way through them again, just as I had had to do the first time.  So no thanks, I'll do it my way, is what I concluded on that.
+
+But now why was the NVIDIA driver once again marked as "Not in use" in Hardware Drivers?  Maybe Firefox or one of its add-ons had disagreed with it?  I enabled it and restarted again, as it requested.  No Signal!  Dead computer!  Had I just spent several hours (it was now 6:26 PM) reinstalling Ubuntu, Firefox, and all that, for nothing?  I ran recovery mode and xfix.  (I had checked the last Ubuntu forum questions that I had posted, an hour or so earlier, and there had been no further comments.)  Now Hardware Drivers said that the NVIDIA driver was in use.  Confusing!  I rebooted again, just to see if this was a fake-out.  Maybe I had been misunderstanding this Hardware Drivers dialog.  It said the driver was "In use," but the Enabled box was not checked, and when I checked it, I got a confirmation dialog; and when I said OK to that, I got a check-mark in the Enabled box.  So, OK, now we were really in business.  The system wanted to reboot again, and I did that.  Dead computer again.  WTF.  After recovery mode and xfix, I decided to count my blessings and make an Acronis True Image backup.  I had very nearly a bare-bones Ubuntu installation, with nothing added to it except ol' Firefox 2.  If this installation couldn't work with my video card, then apparently I was going to need a new video card.
+
+Another possibility, which had just occurred to me, was that when I kept the previous "ray" profile during the Ubuntu reinstallation, maybe Ubuntu had kept the dpkg list of previously installed programs.  Maybe that's why I had had 111 updates, whereas previously I thought there had been about 85 of them; maybe it was installing and updating those other packages too.  And maybe in that process it was incidentally installing whatever package happened to be screwing up my NVIDIA driver.  Maybe I needed to do a complete bare-bones reinstallation, with no reference to my previous account.  If that wasn't correct, I now had the Acronis backup and could get back to this point pretty easily.
+
+First, though, after the Acronis backup, I tried installing Google Earth, since
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/09/vmware-in-ubuntu-additional-fixes-and.html">
+            my previous attempt
+           </a>
+           was the last thing that had prompted me to reinstall Ubuntu.  If it worked, maybe I would think the world was OK, or at least OK enough to last me until October and the next version of Ubuntu, or whatever other reason I might eventually have to do another reinstallation.  Following my previous experience, I first typed "sudo apt-get install googleearth-4.3," expecting that not to work; and when it didn't, I typed these two commands to enable the Medibuntu repository:
+           <blockquote>
+            sudo wget http://www.medibuntu.org/sources.list.d/hardy.list -O /etc/apt/sources.list.d/medibuntu.list
+
+sudo apt-get update &amp;&amp; sudo apt-get install medibuntu-keyring &amp;&amp; sudo apt-get update
+           </blockquote>
+           just like before; and then I tried that "sudo apt-get install googleearth-4.3" line again.  It ran, it installed, and when I selected it, it first gave me the same Unknown Graphics Card error.  I killed that and the program died.  End of story.
+
+Time to shop for a new graphics card!  Then I wondered if other people were having this problem with NVIDIA 7900GS graphics cards.  Certainly
+           <a href="https://web.archive.org/web/20190906053803/http://ubuntuforums.org/showthread.php?t=762048">
+            one poster
+           </a>
+           was:  there, too, it looked like everything had been tried and nothing had worked.  Several commentators said they had no problem using Envy to install NVIDIA drivers (via Synaptic) in Feisty (Ubuntu 7.10), but this user was using 64-bit Hardy 8.04, as I was.  The more I looked around, the more I suspected it was a driver problem indeed, and that there was nothing else to be done.  I decided to try once more with EnvyNG.  I installed and ran it in Automatic Hardware Detection mode.  I noticed that it was uninstalling nvidia-glx-new.  It completed and it wanted to reboot, so I said sure.  But, sadly, No Signal.  Dead computer.  Reboot &amp; use xfix in recovery mode.  Uninstall EnvyNG (and also nvidia-glx-new-dev-envy and nvidia-glx-new-envy; leave nvidia-glx-new and nvidia-settings installed.  In Hardware Drivers, I still had the NVIDIA driver listed but not in use.  I went into System &gt; Administration &gt; NVIDIA X Server Settings, but I got this error:
+           <blockquote>
+            You do not appear to be using the NVIDIA X driver.  Please edit your X configuration file (just run `nvidia-xconfig` as root), and restart the X server.
+           </blockquote>
+           I did that, and got a message that "nvidia-xconfig can be found in the following packages," and one listed was nvidia-glx-new.  I took another look at Synaptic and, oops, nvidia-glx-new seemed to have become uninstalled somehow.  The system still wasn't ready to run nvidia-xconfig for me, though, and I had been to this territory before.
+
+I went to
+           <a href="https://web.archive.org/web/20190906053803/http://www.nvidia.com/HelpMeChoose/fx/HelpMeChoose.asp">
+            NVIDIA's "Help Me Choose" graphics card page
+           </a>
+           .  It said its GeForce 7, 8, and 9 series cards were all compatible with Linux AMD64.  Baffling.  I went back to the primary computer and prepared to reinstall VMware Workstation 6,
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/07/war-and-peace-creating-ubuntu-system.html">
+            following my previous steps
+           </a>
+           .  I figured if that would work, maybe I could postpone the NVIDIA graphics issue for a while.  Then it occurred to me to check Synaptic in case it was possible to download the trial version of Workstation there.  But no, it wasn't.  Then I went to
+           <a href="https://web.archive.org/web/20190906053803/http://vmware.com/products/ws/">
+            VMware's Workstation webpage
+           </a>
+           , to see if I could get a slightly newer version, but there didn't seem to be any updates available. 
+
+I noticed that Firefox's Session Manager add-on had not restored the last session I had been using before reinstallation, and then realized that was probably because my edited fstab file was no longer on the Ubuntu partition.  I extracted that, using
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/09/vmware-in-ubuntu-additional-fixes-and.html">
+            the same method
+           </a>
+           as before, rebooted, and nothing had changed, apparently because I hadn't done it as root.  I amended that error and tried again.  Now the proper fstab file was back in /etc.  But when I came back to the computer, a few minutes later, I was still not seeing all of my partitions mounted and listed in the left pane of File Browser &gt; Computer.  Had I not rebooted?  I did it again.  No, it definitely wasn't mounting them.  I tried mounting one of them manually and got the message that I was not privileged to mount the volume.  I logged in as root and tried again, and now I got, "Cannot mount volume.  Unable to mount the volume 'VMS'."  When I clicked Details, it said, "mount: mount point /media/VMS does not exist."  Following
+           <a href="https://web.archive.org/web/20190906053803/http://www.psychocats.net/ubuntu/mountlinux">
+            a Psychocats article
+           </a>
+           , it occurred to me to double-check the status of the partitions using GPartEd.  I didn't find Partition Editor under System &gt; Administration anymore, which suggested that my earlier hunch had been wrong -- that the Ubuntu reinstallation had actually not reinstalled my previously installed packages.  I used Synaptic to install it now, and I checked the partitions on it.  They were all there, though some partition names were not shown.  Maybe they had been missing before.  The partition names were visible to File Browser; it just couldn't load them.  The only partitions it could see were on one of my three hard drives.  I decided to try booting into Windows XP, there on the primary computer's dual-boot setup, and see what happened then.  Windows was able to see the NTFS partitions though not, of course, the ext3 partitions.  I rebooted back into Ubuntu and scratched my head.  I
+           <a href="https://web.archive.org/web/20190906053803/http://ubuntuforums.org/showthread.php?p=5716245#post5716245">
+            posted a question
+           </a>
+           on it.  Then, proceeding backwards, something in the Psychocats article caught my attention.  I reviewed
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-settling-in.html">
+            my ancient notes
+           </a>
+           -- a month old, by now -- and thought I might try sudo mkdir /media/CURRENT and so forth, for each of my partitions' names:  sudo mkdir /media/VMS, and so forth.  Then I rebooted.  Now I had desktop icons for each partition, Firefox's Session Manager add-on was functioning properly, and I could return to the task of reinstalling VMware.
+
+The
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/07/war-and-peace-creating-ubuntu-system.html">
+            steps for installing VMware Workstation
+           </a>
+           were:  (1) Copy VMware-workstation-6.0.4-93057.x86_64.tar.gz (which I had already downloaded from VMware) to /tmp.  (2) Go to /tmp in Terminal as root.  (3) Type "tar zxpf VMware-workstation-6.0.4-93057.x86_64.tar.gz".  (4) Type "cd vmware-distrib".  (5) Type "./vmware-install.pl".  (6) Accept the default (bracketed) options.  And that's all there was to it.  I ran Ubuntu's Applications &gt; System Tools &gt; VMware Workstation.  Amazing!  Despite reinstalling Ubuntu, all of my VMware configurations were in place, including VMware Tools, and the tabs were open for each of the virtual machines (VMs) that I had suspended when I had last finished using Workstation.  This approach of reinstalling Ubuntu and opting to import your previous profile -- I liked it.  This whole process seemed like the kind of thing that, so far, you could do in a couple of hours and be completely operational again -- which was far better than just installing native Windows XP and then having to install all of those programs and their updates from scratch.  Here, my Windows programs were already encapsulated in the VMs, and were immediately ready to go.  Very nice.
+
+At this point, I had not completed reinstalling or reviving all of the tweaks and programs that I had installed previously.  I verified, in Hardware Drivers, that the NVIDIA driver was still not enabled.  I thought, however, that possibly an earlier version of Google Earth would work, just as VMware seemed to work fine -- showing JPGs with very good quality inside a VM -- despite the lack of any NVIDIA driver.  In Synaptic, I uninstalled googleearth-4.3, which was somehow still installed, and instead I installed googleearth-4.2.  I ran Applications &gt; Internet &gt; Google Earth.  It gave me a Suggested Update dialog mentioning 4.3.  I clicked OK instead of downloading the update.  Once again, I had "Google Earth is unable to identify your graphics card."  Unlike 4.3, it did start and run, but it didn't show the Earth, so it was more or less useless.  It was weird that the cheap little graphics card I had bought for the secondary computer was doing better than the expensive and more powerful one used in the primary computer.  I decided to try again.  A card that
+           <a href="https://web.archive.org/web/20190906053803/http://www.newegg.com/Product/ProductReview.aspx?Item=N82E16814130085">
+            Newegg customers
+           </a>
+           said was good with Ubuntu was the
+           <a href="https://web.archive.org/web/20190906053803/http://www.evga.com/products/moreinfo.asp?pn=256-P2-N751-AR&amp;family=23">
+            EVGA 256-P2-N751-TR GeForce 8600 GT
+           </a>
+           .  So I ordered one of those and hoped I could get a good price for my existing used card from some nice Windows user.  I uninstalled Google Earth 4.2 and reinstalled 4.3 and left it at that for now.
+
+So at this point I believed I would get back to work and slowly continue to refine my Ubuntu and VMware system.  The next steps on that are contained in
+           <a href="https://web.archive.org/web/20190906053803/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-multimedia.html">
+            a separate post
+           </a>
+           .
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053803/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=3923792912409320727&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053803/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=3923792912409320727" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053803/https://raywoodcockslatest.blogspot.com/feeds/3923792912409320727/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:38:03 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:08:52 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.56
+  exclusion.robots: 0.068
+  exclusion.robots.policy: 0.059
+  esindex: 0.008
+  cdx.remote: 6.132
+  LoadShardBlock: 318.591 (3)
+  PetaboxLoader3.resolve: 121.251 (3)
+  PetaboxLoader3.datanode: 209.136 (4)
+  load_resource: 16.358
+-->

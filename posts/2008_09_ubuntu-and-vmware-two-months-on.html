@@ -1,0 +1,1205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="true" name="MSSmartTagsPreventParsing"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20120228084126im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-two-months-on.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="http://www.blogger.com/rsd.g?blogID=3377753575825500498" rel="EditURI" title="RSD" type="application/rsd+xml"/>
+  <link href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/feeds/3021316561150617625/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu and VMware:  Two Months On
+  </title>
+  <meta content="" name="description"/>
+  <link href="https://web.archive.org/web/20120228084126cs_/http://www.blogger.com/static/v1/widgets/2002994779-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20120228084126cs_/http://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=e1aba326-345d-4018-8492-50ac04f11570" rel="stylesheet" type="text/css"/>
+  <style type="text/css">
+   #navbar-iframe { display:block }
+  </style>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20120228084126im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20120228084126im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20120228084126im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20120228084126im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20120228084126im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20120228084126im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20120228084126im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20120228084126im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20120228084126im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20120228084126im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20120228084126im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20120228084126im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20120228084126im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20120228084126im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20120228084126im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20120228084126im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20120228084126im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20120228084126im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <iframe allowtransparency="true" frameborder="0" height="30px" id="navbar-iframe" marginheight="0" marginwidth="0" scrolling="no" src="https://web.archive.org/web/20120228084126if_/http://www.blogger.com/navbar.g?targetBlogID=3377753575825500498&amp;blogName=Ray+Woodcock's+Latest&amp;publishMode=PUBLISH_MODE_BLOGSPOT&amp;navbarType=BLUE&amp;layoutType=LAYOUTS&amp;searchRoot=http://raywoodcockslatest.blogspot.com/search&amp;blogLocale=en_US&amp;homepageUrl=http://raywoodcockslatest.blogspot.com/&amp;targetPostID=3021316561150617625&amp;vt=-7540769531538873147" title="Blogger Navigation and Search" width="100%">
+    </iframe>
+    <div>
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Tuesday, September 9, 2008
+        </h2>
+        <div class="post">
+         <a name="3021316561150617625">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-two-months-on.html">
+           Ubuntu and VMware:  Two Months On
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           <p>
+            In early July 2008, after Windows XP died on me and I reinstalled it -- only to find that my reinstallation wasn't working right either -- I decided the time had come to make the switch to Ubuntu.  Since I still needed some WinXP programs, I installed Ubuntu alongside WinXP in a dual-boot arrangement; and since I didn't want to have to reboot every time I needed some little thing from Windows, I decided to see if I could perform those WinXP functions within virtual machines.  After comparing the options, I decided on VMware Workstation 6 as my virtualization tool.  I used the free VMware Converter to make a WinXP virtual machine from my WinXP native boot, and then I used Workstation to make clones of that machine.  I had two computers, each equipped with similar WinXP and 64-bit Ubuntu dual-boot setups, and I typically used Firefox in Ubuntu, on one machine, to blog what I was experimenting with on the other machine.  By the time I began writing the present post, it was early September,and I had been at this for two months.  I had sorted out many technical issues in
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search?q=ubuntu">
+             my growing series of long posts
+            </a>
+            discussing VMware, Ubuntu, WinXP, and Firefox, but there still remained a number of things to fix or install before it would all be set up the way I wanted it.
+           </p>
+           <p>
+            I had noticed that a lot of the things I was fixing, at this point, were not a matter of first-time installation.  There still were a few programs and functions that I had not tried to install, use, or perform; but for the most part, what I was doing, these days, was fixing something that was newly broken, or trying again to fix something that I had tried to fix previously.  Thus, by the end of
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-multimedia.html">
+             the previous post
+            </a>
+            in this series, I still had not resolved some issues that I had attempted already near the beginning of that post.
+           </p>
+           <p>
+            One of those issues had to do with accessing my external USB SATA drive from within VMware Workstation.  I had a Rosewill external hard drive enclosure, connected by USB cable to the computer.  I could open that enclosure, take out the drive that was in it, and put in another.  But when I did that, Windows would no longer see it as drive O, which was how I had previously assigned it.  It would now give it the last drive letter in the series.  So if I had drives C, D, and E installed on my computer, Windows would believe that the external drive should be drive F.  (More details below, and also near the start of the previous post.)  I needed to sort out that issue, because my hard drive was presently hard to access.  I had already had a couple of instances where I had had to screw around for 10-20 minutes just to get a file transferred from one computer to the other, because neither my external drive nor my USB jump drives were being recognized.  I wanted to rectify that situation.  I normally used the external drive for backup, so I also wanted to get it back into regular contact with my primary computer for that purpose.  I began this effort by returning to
+            <a href="https://web.archive.org/web/20120228084126/http://communities.vmware.com/message/1043771">
+             a thread that I had started
+            </a>
+            in the VMware forum some days earlier.  There had been a couple of responses to my question in that thread, and now it was time to try to apply what those respondents had advised.  The problem at present was most visible within a WinXP virtual machine.  There, I started Windows Explorer.  The external drive, which I had named OFFSITE and had set to be drive O (using Windows' Disk Management program), was shown in the folders (left-hand) pane as "Offsite on '.host\Shared Folders' (O:)."  If I clicked once on it, it showed one of the subfolders that existed on that external OFFSITE drive.  But when I opened that subfolder and opened or otherwise played around with various files in it, the drive access light on the external drive stayed dark.  Windows Explorer seemed to be looking somewhere other than that actual external drive.  So I right-clicked on that O drive in WinEx and selected Disconnect.  I then selected WinEx's Tools &gt; Map Network Drive option and navigated to VMware Shared Folders/.host/Shared Folders/OFFSITE.  But that drive contained only that same single folder, from among the half-dozen that should have appeared on that drive.  I canceled out of that and went to VMware's VM &gt; Settings &gt; Options &gt; Shared Folders.  I highlighted /media/OFFSITE and clicked Properties.  There were no error messages.  I decided to Remove and Add it again.  In Windows Explorer, I selected Tools &gt; Map Network Drive, browsed to VMware Shared Folders/.host/Shared Folders, and OFFSITE was listed there, so I added it.  It reappeared in the folders (left-side) pane of WinEx.  I clicked on it.  It still listed just the one folder, and again my browsing in that folder did not trigger action on the drive's activity light.  So now, what were they advising in that thread?  I reviewed their replies and updated the thread, but by now, as I tinkered with WinEx a little more, I realized that my situation had changed to a new problem or a more mucked-up version of the previous one.  I decided to reboot Ubuntu.  Ubuntu did not reboot.  It stopped at a flashing white cursor on a black screen.  I turned the computer off and left it off for a minute or so.  I booted it back up into native WinXP.  It recognized the external drive as OFFSITE, drive O, and the external drive's activity light flashed when I opened up a couple of JPGs on it in WinEx.  I rebooted into Ubuntu.  File Browser recognized OFFSITE immediately with no problem.  I started VMware Workstation and resumed a previously suspended VM.  It had been showing just one folder in the mapped OFFSITE drive, oddly enough.  I hit F5 to refresh the view.  It didn't change: "Offsite on '.host\Shared Folders' (O:)" was still shown as having only one of the folders that actually existed on the OFFSITE drive (as I had just verified in Ubuntu), and probing files in that folder didn't cause hard-drive light action on the external drive.  I hit Start &gt; Turn Off Computer &gt; Turn Off to turn off the virtual machine.  But it didn't turn off.  I tried several times.  Nope.  Finally, I used VMware's Power Off button.  I gave it a minute or two and then powered it back on.  WinEx was still showing the same scenario:  OFFSITE drive O had only one folder.  Weird!  I resumed a different VM that I had suspended.  It was one of my 1GB machines (i.e., I had allocated 1GB of RAM to it, along with 15GB of disk space), and it took quite a while to get fully loaded to the point that the primary computer's hard drive light stopped running constantly.  Once it was up, I checked WinEx and, as in the other machine, only the one folder was showing.  Following some advice in that discussion thread, I went to Start &gt; Run and typed CMD and then OK.  In the DOS box that opened up, I typed DIR O: to see what I would get, and sure enough, only that one folder was listed for drive O.  I typed NET USE O: /D in the belief that this would get rid of that O drive.  Sure enough, Windows popped up a message:
+           </p>
+           <blockquote>
+            O:\ refers to a location that is unavailable.  It could be on a hard drive on this computer, or on a network.
+           </blockquote>
+           <p>
+            But it was still listed in WinEx, and I couldn't get rid of it.  I hit Start &gt; Turn Off Computer &gt; Restart.  When the VM powered back up, and the hard drive light settled down, WinEx no longer showed any drive O.  Just out of curiosity, I went back into Tools &gt; Map Network Drive and looked at the OFFSITE drive.  No change; it was still showing just that one folder.  Instead of going that route, I followed the thread's advice.  Here's what I posted in reply:
+           </p>
+           <blockquote>
+            net use o: "\\.host\Shared Folders"
+
+I had to use quotes because of the space between "Shared" and "Folders."
+
+That command gave me this in Windows Explorer: "Shared Folders on '.host' (O:)"
+
+That did not quite match how the other partitions appear in WinEx. They were like this: "Vms on '.host\Shared Folders' (H:)". I was able to rename it manually in WinEx, though. I couldn't tell for sure whether the site you pointed me to had info on that -- I didn't fully understand its options, but I will figure them out if I need them.
+
+Incidentally, my situation had mutated somewhat since the start of this post. For some reason, the drive O entry in WinEx was showing only one folder on the external drive. It was weird. It had files in it, but when I opened them, I got no hard disk light action on the external drive. It was like it had mapped to that folder on another partition. (I do keep a backup of that same partition on an internal drive as well, on a different schedule.) I used "net use o: /d" as you advised to get rid of it. I had to reboot the VM to make it go away, but then it was indeed gone.
+           </blockquote>
+           But then I saw, on closer inspection, that this didn't solve the problem at all.  Jeez.  What I had, now, was a reproduction of my set of partitions under the OFFSITE drive heading in WinEx.  I had apparently used NET USE to map one level too high.  Back in the DOS box, I used NET USE O: /D again, to get rid of my ungodly creation, and then I tried this:
+           <blockquote>
+            net use o: "\\.host\Shared Folders\OFFSITE".
+           </blockquote>
+           Ah, but now I was back to having just that one folder showing.  But I couldn't fool with this anymore right now because I had to get Firefox working here on the secondary computer.  I had been writing this post in Opera, but for some reason Opera was not able to assign hyperlinks to webpages.  I could have added them manually in Blogger's "Edit Html" tab, but what the heck, I needed Firefox to be functional anyway.  So I bit the bullet:  I shut down Firefox and renamed the .mozilla folder to be .mozillaOld, and then I started Firefox and went to Blogger, to see if it was going to be able to get it right on this webpage.  I hadn't actually checked that out, when I was fooling with .mozilla previously, but now ... well, now, actually, it looked like Firefox wasn't going to start at all.   I rebooted the computer (continuing to use Ubuntu, not going into WinXP), and that did it:  I now had a fresh new Firefox, and it ran this Blogger page just fine.  I spent a while restoring Firefox add-ons and configuring things, and I was back in business.  This time, I made a copy of .mozilla called .mozillaBackup, and deleted the .mozillaOld folder I had just created.  If I had another problem with Firefox, I would try replacing .mozilla with .mozillaBackup (which now held the current, working state of Firefox), and see if that did the job without all this reinstallation.
+
+Unfortunately, I was not *completely* back in business.  The Session Manager add-on for Firefox was not able to see the previous session, the last one I had saved before reinstalling Firefox.  The session was there, in my saved sessions folder, but Session Manager wasn't giving me the option of restoring it.  I had a boatload of tabs that I needed from that session, and of course my browsing history was gone too, due to the reinstallation, so I couldn't even do it the hard way and manually browse through all of the webpages I had opened recently.  So I
+           <a href="https://web.archive.org/web/20120228084126/http://support.mozilla.com/tiki-view_forum_thread.php?comments_parentId=154280&amp;forumId=1">
+            posted a question
+           </a>
+           on this and called it a day.  Next morning, I saw that someone had posted a reply, there in the Firefox forums, within 40 minutes.  The reply asked, "Are you still using that profile?"  I wasn't sure what that meant, so I went to the Mozilla Knowledgebase webpage s/he pointed me to, on
+           <a href="https://web.archive.org/web/20120228084126/http://kb.mozillazine.org/Recovering_a_missing_profile">
+            recovering a missing profile
+           </a>
+           .  That page linked to another that told me the
+           <a href="https://web.archive.org/web/20120228084126/http://kb.mozillazine.org/Profile_folder_-_Firefox#Linux_and_Unix">
+            location of my Firefox profile folder
+           </a>
+           .  It was, alas, a subfolder within ~/.mozilla, which I had deleted.
+
+While I was waiting and hoping for an insight on that issue, I went to the primary machine and tried to work in one of the VMs that I had left open when I had suspended that machine for the night.  At first, it opened Windows Explorer and Microsoft Word as requested; but it would not scroll the Word document I opened.  For a while, it seemed to be hung, and then the VM crashed, and I was back at the basic Workstation screen with an option to "Power on this virtual machine."  When I tried that, I got this:
+           <blockquote>
+            Failed to get exclusive lock on the configuration file.  Another vmware process could be running using this configuration file.
+           </blockquote>
+           I clicked OK and got another error message:
+           <blockquote>
+            Unable to change virtual machine power state: Cannot find a valid peer process to connect to.
+           </blockquote>
+           I went back to the one other VM I had open at that point, there in VMware Workstation, and saw that it, too, now had an error message:
+           <blockquote>
+            Failed to acquire lock to grab keyboard and mouse input.  This may be because another virtual machine crashed or is hung.  You can override the lock, but this may corrupt some of the X server state, such as keyboard autorepeat settings and the modifier mapping.
+           </blockquote>
+           I said No, let's not do that.  But that message kept coming back.  I clicked on Workstation's Suspend button.  It wouldn't suspend until I clicked No once more on that message, and then it suspended.  When all VMs were either powered down or suspended, I closed and restarted Workstation.  I had just started to resume that most recently opened VM when Workstation crashed.  I think it may have been because of the funky problem that I had previously learned to correct with
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-more-fixes.html">
+            a SetXKBMap icon
+           </a>
+           on the desktop.  That is, I think the crash was due to a problem where switching into (or perhaps out of) Workstation's Full Screen mode would cause any keypress to close the current window in Ubuntu. I didn't recall having gone into or out of Full Screen mode recently, though, so that was a bit puzzling.  Anyway, I double-clicked on my SetXKBMap icon and restarted Workstation.  Now that VM was showing an error message:
+           <blockquote>
+            VMware Workstation unrecoverable error: (mks) NOT_REACHED /build/mts/release/bora-93057/bora/mks/main/mksX.c:242
+A log file is available in "/media/VMS/VMware VMs/WXS-AlwOn/vmware/log".
+           </blockquote>
+           Etc.  I okayed that one and got another error:  "Failed to initialize mouse-keyboard-screen control."  I okayed that one and tried to power on this VM again.  When I tried to get the mouse going inside that machine, I got the same "Failed to acquire lock" message as before.  So apparently I was going to have to resolve things with that other VM first.  I went to the one that had said, "Failed to get exclusive lock," above, but when I tried to power it on, it said the same thing again.  So I went back to -- oh, let's use their real names -- I went back to the
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-more-fixes.html">
+            WXS-AlwOn
+           </a>
+           VM and pressed VMware's Power Off button.  Then back to the other one, WXMUProjectC, and tried to power it on again.  But I was still getting that error message.  I restarted Workstation again and still got that error.  Apparently one of the other VMs, all of which were suspended, was causing the problem?  I had suspended each of them in just the right place, with the files open that I needed to work on.  I didn't really want to spend an hour resuming them all, waiting for the computer to catch up, powering them all off, restarting them, waiting for the computer to catch up again, and reopening and repositioning all of those files and windows.  I thought maybe I would instead try rebooting Ubuntu and see what happened.  So I did that.  I then restarted the WXS-AlwOn VM.  This time it seemed to be functioning properly.  I went to the WXMUProjectC VM and powered it on.  It, too, ran OK now.  So the solution to this problem was to reboot the computer.
+
+Meanwhile, I got no further insights from the question I had posted about my missing Firefox profile and that list of webpages I had opened before I deleted the .mozilla folder.  What I should have done, I belatedly realized, was to use the Firefox add-on called
+           <a href="https://web.archive.org/web/20120228084126/https://addons.mozilla.org/en-US/firefox/addon/2069">
+            Tab URL Copier
+           </a>
+           to just make a list of the URLs of all open tabs before I shut down Firefox and deleted the .mozilla folder.  Then I could easily just restore those tabs.  But now I remembered that I had a backup of the old .mozilla folder on my OFFSITE external SATA drive.  I connected the drive to the secondary computer, using my nifty little
+           <a href="https://web.archive.org/web/20120228084126/http://www.newegg.com/Product/Product.aspx?Item=N82E16817112201">
+            AMC PW-141A USB Switch
+           </a>
+           , and then I saw that, of course, the backup was in an Acronis True Image .tib file, and of course Acronis True Image Home 11 (my version) was a Windows program.  So I unmounted and switched the external drive back to the primary computer.  But for some reason True Image would not install in a virtual machine.  I didn't want to suspend all the virtual machines I now had open for the sake of rebooting into native WinXP, so I switched back to the secondary computer (which was running Ubuntu but not VMware), rebooted into Windows, and installed True Image there.  Installation froze before completing.  I tried a couple of times.  I also tried running True Image from the CD.  That crashed the machine outright.  Finally I just looked at the .tib file using Windows Explorer.  Apparently Acronis had installed enough of itself to add some (right-click) context menu extensions in WinEx, so that with a combination of right clicks and left clicks I was finally able to get True Image to the point where it was analyzing all of my partitions.  It froze while trying to analyze the external USB drive.  I let it go for a while and then rebooted, shut off the external drive (having copied the .tib file to an internal hard drive partition).  This time, I right-clicked and chose Mount.  It started to do it, but then gave me an error message:  "Cannot assign a drive letter to a partition from the backup archive."  OK, I tried again.  This time I chose Recover from the context menu.  I told it to restore to a FAT32 drive.  It looked like it was going to, but then it crashed.  I tried the same thing again.  The previous time, I had chosen to "Set the options manually" for the restore; this time I said "Use default options."  Once again, a crash.  So, basically, my attempts to restore files from my True Image backup were failing.  Not that it was letting me select or browse individual files or folders (e.g., .mozilla) anyway:  Acronis wasn't letting me explore the .tib file, and the restoration options I was seeing seemed to be oriented toward restoring the entire backup.  That's why I had chosen the FAT32 partition -- it was essentially empty and I had nothing to lose if it did restore the entire backup there.  I decided to bite the bullet and reboot the primary computer using the Acronis CD.  I started to run the restore process that way, but it crashed that computer too.  I rebooted the primary computer into Windows and installed True Image there.  Or at least I tried.  Again, it seemed to hang during installation.  This time it didn't seem as far along in the installation process as it had been on the secondary computer, judging by the progress bar on the installation window.  I went to bed.  When I got up, I had an error:  "Install server not responding."  I clicked Retry.  Still nothing.  I canceled the installation.  It wouldn't even cancel.  I had to use Task Manager (Ctrl-Alt-Del) to shut it off.  I ran the installer once more.  As on the secondary computer, I got the error message, "Another installation is in progress."  It occurred to me that possibly the problem in installation was due to my using a backup of the original Acronis CD.  I tried again with the original.  When I inserted it into the CD drive, the installer started automatically; previously I had been clicking on Setup in the duplicate CD's root folder.  It also showed me a different installation window.  This one was offering to install Acronis Disk Director Suite 10.0, and that was the only option.  This, too, had happened on the secondary computer, though I hadn't recorded exactly how.  I clicked to install Disk Director Suite.  This brought up a Disk Director Suite dialog, with options to install the suite, to open the user's guide, or for technical support.  I clicked Install.  This one complained that it could not register me because my firewall was blocking it.  I shut down Zone Alarm.  That didn't do it.  But then it seemed to go ahead anyway; but then it said another installation was running.  I rebooted Windows and tried again, this time inserting the CD and letting it autostart again after rebooting.  It didn't autostart.  I took it out and reinserted it.  Still no autostart.  I tried running it by clicking on Setup.exe in Windows Explorer.  It gave me the True Image 11.0 Home installation dialog.  I went ahead with that.  This brought up the other Acronis True Image Home installation dialog.  Confusing.  I clicked on Install Acronis True Image Home.  This time, I tried the Complete installation option.  It got to the same point as before, on the progress bar, and then stopped.  I tried canceling.  It didn't cancel.  The concept of installing into native WinXP was not working.  I was going to research it, here on the secondary computer, but for some reason Firefox was not accessing the Internet very well:  both Blogger and Google gave me "Server Not Found" error messages, even after restarting Firefox.  I was going to run Advanced WindowsCare to clean up the native WinXP installation on the primary computer, but it wouldn't run.  I rebooted into WinXP again and ran it.  It detected 326MB of junk files.  I told it to clean up those.  That took quite a while.  I thought, "OK, one more for the road -- maybe that was the problem"; I ran AWC again; it found no more problems; and then I inserted the copy of the True Image CD again.  It didn't autostart, so I tried from Setup.exe.  Same process as before.  Same outcome as before:  hung.  I killed it and ran AWC again and then rebooted into Ubuntu.  I went to the
+           <a href="https://web.archive.org/web/20120228084126/http://acronis.com/support/index.asp?PersistProductCategoryID=3">
+            Acronis tech support page
+           </a>
+           .  It was early in the morning, so I sent them an e-mail.
+
+Meanwhile, I also rebooted the secondary computer, hoping that would solve the Firefox problem. It did, except that Hotmail was still not displaying properly.  I was curious whether my favorite add-ons had been updated to run on Firefox 3, so I went to check out the current status of
+           <a href="https://web.archive.org/web/20120228084126/https://addons.mozilla.org/en-US/firefox/addon/1122">
+            Tab Mix Plus
+           </a>
+           and
+           <a href="https://web.archive.org/web/20120228084126/https://addons.mozilla.org/en-US/firefox/addon/2324">
+            Session Manager
+           </a>
+           .  The answers appeared to be No and Maybe, respectively.  Since I was in no rush to be screwing around with more beta software, and had
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/07/vmware-in-ubuntu-putting-it-all.html">
+            already given Firefox 3 a try
+           </a>
+           , I decided to hold off on the Firefox 3 upgrade for a while longer.  So I wasn't sure what to do about Hotmail.  Ultimately, I could reinstall Firefox from scratch or replace the .mozilla folder again, but I thought maybe I'd just let it go a while and see if it would fix itself or if, instead, it got worse.
+
+In other breaking news, I had another response to my thread on the Session Manager backup that contained an earlier browsing session.  I had had a bunch of tabs open when I deleted the .mozilla folder (above), and I wanted to get those tabs back.  The respondent told me that the old session was gone unless it was still in the Trash.  This prompted me to tell him/her that I had actually been saving a backup of the Session Manager .session file, but when I opened it as a text file, I wasn't able to get useful information from it.  His response also prompted me to click on the Trash can on Ubuntu's bottom pane, opened it, and what do you know, there was a .mozilla folder.  So I renamed the current .mozilla folder to be .mozillaNew, and I copied this one from the trash to /home/ray.  I tried to restart Firefox, but no go.  I rebooted Ubuntu and tried again to restart Firefox.  It started, but only as a brand-new installation.  That one had the right date -- 9/9/2008, same as the .session file I was trying to restore, and it was earlier in that day -- but maybe that meant that was the day it was created, not last modified (even though File Browser said the latter).  There was another .mozilla folder in trash, dated more than a month earlier.  I renamed the .mozilla folder that was giving me a new installation to be .mozillaDud, and copied this one and tried Firefox again.  It looked promising -- more than 3,700 files to be copied -- but for some reason it didn't copy as .mozilla.  It copied as .2.mozilla.  I thought that's what it had done, but it didn't make sense, so I tried again, and I got, "A folder named '.2.mozilla' already exists."  I rebooted Ubuntu, renamed .2.mozilla to be .mozilla, and started Firefox.  Same thing:  new-looking installation.  I killed Firefox and renamed these last two (.mozilla and .mozillaDud) to be .mozillaTrash1 and 2, just in case I would need them again; renamed .mozillaNew to be .mozilla; and restarted Firefox.  I was back to where I had started the day:  a working installation, with my recent tabs, but no progress on the old .session file and those 50 tabs I needed.  Oh, and now Hotmail looked fine.  I couldn't tell; maybe messing around with .mozilla folders had fixed it.  I wasn't getting any more action from my post on the Firefox forum, so I sent an e-mail to the
+           <a href="https://web.archive.org/web/20120228084126/https://addons.mozilla.org/en-US/firefox/addon/2324">
+            developer of Session Manager
+           </a>
+           .  He responded immediately, but the upshot was that there was no apparent solution.  My 50 tabs were lost.
+
+Not to let things settle down too much, about this time I came to need to do some video editing.  I had not actually tried doing that in VMware Workstation.  Indeed, I had not even installed the programs that I would need for it.  I had created a virtual machine, called WXMUMedia -- short for Windows XP Medium-sized, Updated (with Windows updates) virtual machine for working with audio and video.  Now, it seemed, I should try to install Adobe Premiere Elements, my video editing program, and see whether the results were acceptable.  I certainly did not expect them to be.  Workstation was solid but slow, compared to native Windows.  I was pretty sure that I would ultimately have to reboot into native WinXP and install Elements and other stuff there, if I wanted to do any video editing at all.
+
+Before doing that, I realized I had better install my new video card.  I had previously tried installing Google Earth and multiple monitors in Workstation, but
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/vmware-in-ubuntu-additional-fixes-and.html">
+            had run into problems
+           </a>
+           that seemed to be due to the hardware and/or drivers for that card.  So I had
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/reinstalling-ubuntu.html">
+            ordered another card
+           </a>
+           .  It had arrived, and now, before having more graphics-related problems in this video editing enterprise, I thought it would make great sense to have the better card installed.  So I installed it and booted the machine.  The Ubuntu login page came in distorted.  Or maybe it wasn't even the login page.  It was black instead of Hardy Heron's (version 8.04's, that is) customary orange background.  I didn't see any login box.  I typed my login anyway and hit Enter.  Nothing happened.  No mouse either.  Now what?  I punched the reset button on the primary computer and vowed to watch more carefully this time, to see what happened.  When GRUB came up, I chose Recovery Mode.  I didn't run dpkg or anything else there; I just hit Enter at the resume option.  This time Ubuntu booted up normally.  Nothing looked any different.  I checked System &gt; Administration &gt; Hardware Drivers.  As before, it listed an NVIDIA driver but said it was not in use.  I decided to leave that as-is for the moment.
+
+In my VMware Workstation, I resumed the WXMUMedia virtual machine.  The first thing I needed to install there was Microsoft Movie Maker 2.0, which I used to copy my video from my camera over to my computer.  But the Firewire (IEEE 1394) interface was not recognized; VMware did not see my video camera.  Ah, but maybe Ubuntu itself would.
+           <a href="https://web.archive.org/web/20120228084126/http://www.linuxquestions.org/questions/ubuntu-63/will-ubuntu-recognize-my-external-firewire-hard-drive-515404/">
+            I found a thread
+           </a>
+           where people said it would recognize their Firewire hard drives.  But File Browser was not seeing the camera.  Some people said that the program to use for video capture in Ubuntu was
+           <a href="https://web.archive.org/web/20120228084126/http://www.kinodv.org/article/static/2">
+            Kino
+           </a>
+           .  Their hardware requirements page advised this:
+           <blockquote>
+            Kino and dvgrab work only with Digital Video (DV) camcorders and compatible equipment. A digital camera will not work, even if the camera has a ieee1394 interface. Likewise, Kino will not capture the video from a camcorders through a USB interface. However, you ought to be able to acquire still images over USB and use those in Kino.
+           </blockquote>
+           So far, so good.  It was listed in System &gt; Administration &gt; Synaptic Package Manager.  The search there for kino also brought up
+           <a href="https://web.archive.org/web/20120228084126/http://www.kinodv.org/article/view/46/1/14/">
+            dvgrab
+           </a>
+           , which looked like it could be a very simple way to get stuff from the camcorder, so I installed both of them.  DVgrab needed to install a bunch of other stuff too, but I felt that was OK.  I saw an entry in Applications &gt; Sound &amp; Video for Kino, but nothing for dvgrab; but then I realized dvgrab was apparently a command-line tool.  To try it, I went into Terminal and typed "dvgrab July" in hopes of capturing an AVI file named July.  This gave me an error:  "raw1394 - failed to get handle: Permission denied."  It looked like
+           <a href="https://web.archive.org/web/20120228084126/http://www.google.com/search?q=%22failed+to+get+handle%3A+Permission+denied%22&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS292US292">
+            quite a few people
+           </a>
+           were getting this error.  I found
+           <a href="https://web.archive.org/web/20120228084126/https://bugs.launchpad.net/ubuntu/+source/linux/+bug/205583">
+            an Ubuntu bug report
+           </a>
+           that seemed to indicate that they would be tackling this issue in the next version of Ubuntu, 8.10, due out the next month.  Before calling it quits, I tried the advice to enter "sudo chmod 666 /dev/raw1394" and -- woo hoo -- that worked!  It started capturing from the camera right where it was.  I needed to rewind the video camera's tape first, and there were no controls in Terminal, so I killed it and did that manually, using the controls on the camera.  (There was a webpage that gave instructions on
+           <a href="https://web.archive.org/web/20120228084126/http://www.bxlug.be/en/articles/220">
+            how to make this chmod command permanent
+           </a>
+           , but I decided to pursue that later.)  While that was rewinding, I looked for the July.avi file that maybe it had created with the few seconds of video I had seen playing on my camera's screen.  It landed in /home/ray.  I played it.  It looked OK.  I decided to give it a whirl for the whole 42 minutes of video on my tape.  I didn't have to retype the chmod command on the second go -- it had already recognized the Firewire connection.  So when I typed "dvgrab July" it said this, which is more or less what I recalled it saying previously:
+           <blockquote>
+            Found AV/C device with GUID 0x0800460104b51119
+Warning: Cannot set RR-scheduler
+Warning: Cannot disable swapping
+Capture Started
+           </blockquote>
+           It didn't look like the hard drive light on the primary computer was struggling, so I hoped the capture quality would be good.  It finished the first file, July001.avi, in about five minutes, so evidently it would be requiring about nine files to capture my 42 minutes of video.  Upon finishing July001.avi, Terminal said this:
+           <blockquote>
+            "July001.avi":  999.91 MB   8436 frames timecode 00:04:41.15
+           </blockquote>
+           So I guess it captured exactly 4:41.15 (281.5 seconds) worth of video in 8436 frames, or 29.97 frames per second.  To my knowledge, the camera captured at 30 fps.  So dvgrab had apparently dropped virtually no frames.  Excellent!  I let dvgrab run until it had created files named July001 through 010.avi, each exactly 1000.2MB.  Now I needed to see if there was an Ubuntu video editor, so I wouldn't even have to worry about running Adobe Premiere Elements in VMware Workstation.  My
+           <a href="https://web.archive.org/web/20120228084126/http://www.google.com/search?q=ubuntu+8.04+OR+hardy+%22video+editor%22&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS292US292">
+            Google search
+           </a>
+           suggested that
+           <a href="https://web.archive.org/web/20120228084126/http://cinelerra.org/getting_cinelerra.php">
+            Cinelerra
+           </a>
+           might be among the more popular options.  But I didn't see that one in Synaptic.  Apparently that was because I had not installed or enabled the Akirad repository.  I followed
+           <a href="https://web.archive.org/web/20120228084126/http://cinelerra.org/getting_cinelerra.php#ubuntu">
+            the instructions to do that
+           </a>
+           , which meant entering this line in Terminal (it's supposed to all go on one line):
+           <blockquote>
+            wget -c http://akirad.cinelerra.org/pool/addakirad.deb &amp;&amp; sudo dpkg -i addakirad.deb
+           </blockquote>
+           That gave me an error message:
+           <blockquote>
+            dpkg: status database area is locked by another process
+           </blockquote>
+           I guessed that was because I still had Synaptic open.  I killed it and then pressed the up arrow to repeat the command, and this time it worked.  The next steps were to go back into Synaptic, click on reload, and then search for Cinelerra again.  Still nothing!  What the hell . . . So I tried the alternative approach, which was to go to
+           <a href="https://web.archive.org/web/20120228084126/http://akirad.cinelerra.org/pool/addakirad.deb">
+            the download site
+           </a>
+           and choose to open with GDebi Package Installer.  Oh, but maybe I had misunderstood what was supposed to happen.  This brought up a Package Installer dialog that gave me a Reinstall Package option.  It was already installed?  If so, why hadn't it shown up in Synaptic?  I looked at my menu options.  I didn't seem to have any new programs installed.  Maybe this meant I had installed akiradnews, which was the name of the package that showed up in the Package Installer, and now had to do something additional to get to Cinelerra.  I went back to the instruction webpage.  No additional insights there.  I did another reload and search in Synaptic.  No Cinelerra there.  I clicked on Synaptic's Mark All Upgrades option, and then clicked Apply.  I wasn't sure what that would accomplish, but it made me feel better.  I found
+           <a href="https://web.archive.org/web/20120228084126/http://www.heroinewarrior.com/cinelerra.php3">
+            another Cinelerra page
+           </a>
+           that seemed like maybe it was more current.  They emphasized that this was not officially approved Ubuntu software.  So maybe it wasn't going to be in Synaptic, period.  I got cold feet and went back to the Google search, but it seemed like everybody was talking about Cinelerra, so I decided to give it a try.  I
+           <a href="https://web.archive.org/web/20120228084126/http://www.heroinewarrior.com/cinelerra.php3#download">
+            downloaded
+           </a>
+           the 64-bit binary and said go ahead, open it with Archive Manager.  I had no idea what to do with it in there, once it opened, but I noticed it was a .tar.bz2 file, so I searched my blog for instructions on those.  Seems my blog didn't have any instructions on those.  I was thinking of .tar.gz2, maybe.  For .tar.bz2, I
+           <a href="https://web.archive.org/web/20120228084126/http://ubuntuforums.org/showpost.php?p=5394352&amp;postcount=2">
+            found a post
+           </a>
+           that said, first, you type "cd" plus the location of the downloaded file.  In my case, that was the Home Folder/Desktop, so the shorthand for that was "cd ~/Desktop".  At this point, it appeared that I could use
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-multimedia.html">
+            the same instructions
+           </a>
+           as I had used previously for .tar.gz.  So I typed this:  "tar -zxf cinelerra-4-ubuntu-amd64.tar-bz2".  But no, that was the gzip command, so I got an error message:  "gzip: stdin: not in gzip format."  What they had actually advised in that post was "tar -xvfj" plus the filename, so I tried that instead of "tar -zxf".  But this gave me another error:  "tar: j: Cannot open: No such file or directory."  So I tried again:  "tar -vxf":  v instead of z, and drop the j.  It worked.  Or at least it did something.  It listed a lot of files.  The list was apparently the files that had gone into a new folder on my desktop named cinelerra-4-ubuntu-amd64.  So my tar command had unpacked the archive.  Very good.  Now the advice was to read the README that should be in that folder somewhere.  And there was, and I did.  It was kind of funny.  Here were its contents, in their entirety:
+           <blockquote>
+            Run ./cinelerra from this directory.  That's it.
+           </blockquote>
+           So I did.  And, whoa, I had a screen full of Cinelerra, along with an error message:
+           <blockquote>
+            The following errors occurred:
+
+MWindow::init_shm: /proc/sys/kernel/shmmax is 0x2000000.  It should be at least 0x7fffffff for Cinelerra.
+           </blockquote>
+           But still no icon in Ubuntu's Applications menu.  Apparently I was supposed to type cinelerra on the command line whenever I wanted to use the program.  I didn't understand the error message just quoted, but
+           <a href="https://web.archive.org/web/20120228084126/http://readlist.com/lists/lists.debian.org/debian-user/23/119760.html">
+            Sven Arvidsson
+           </a>
+           recommended typing this command to fix it:  "echo "0x7fffffff" &gt; /proc/sys/kernel/shmmax".  I killed Cinelerra and did that.  I had to log in as root with "sudo -i" first to make it work.  I then tried typing cinelerra at the prompt to start it up, but I got "command not found."  I figured that the folder in which I had unzipped the program was sort of like a Windows program that runs wherever you put it, without needing to be installed into the registry.  So I moved the Cinelerra folder from my Desktop to my /home/bin folder.  As root, I renamed that folder to be just Cinelerra.  Inside it, I double-clicked on the plain old "cinelerra" file, and that started the program.  I right-clicked on it and chose Make Link.  I renamed the link Cinelerra Video Editor.  I right-clicked on the menu panel (i.e., where Applications and Places and System options appeared) and chose Edit Menus.  I selected the Applications &gt; Sound &amp; Video menu.  I dragged the Cinelerra Video Editor icon over to that box.  It was godawful ugly.  The spaces between words became "%20."  I renamed the link to be just Cinelerra and tried again.  That was better.  I went into Applications &gt; Sound &amp; Video and there it was, albeit with an ugly icon.  I clicked on it and Cinelerra started up, without the error message about 0x7fffffff.
+
+In Cinelerra, I highlighted /home/ray/July001.avi through July010.avi and, for an Insertion Strategy, I selected the second one, "Replace current project and concatenate tracks."  Then I clicked on the check mark and let it go.  But it crashed.  I tried again.  This time, I added just the first file, July001.avi, and then I selected the other nine files and chose the Concatenate to Existing Tracks strategy.  That didn't work either.  After I fiddled around long enough, it seemed to freeze.  I said to hell with it and went to bed.  When I started the computer and Cinelerra the next morning, I got that 0x7fffffff error and decided to look into a permanent fix.
+           <a href="https://web.archive.org/web/20120228084126/http://ubuntuforums.org/showpost.php?p=3031675&amp;postcount=3">
+            One advisor
+           </a>
+           recommended, first, typing this in Terminal:  "sudo gedit /etc/sysctl.conf".  That opened up the sysctl.conf configuration file for system variables.  At the end of that file, according to the advice, I added these lines:
+           <blockquote>
+            #Fix Cinelerra error
+kernel/shmmax=0x7fffffff
+           </blockquote>
+           I saved the file and, back in Terminal, I typed "sudo sysctl -p".  I wasn't sure of the purpose of this line.  It seemed to show me the value that kernel.shmmax had been set to.  So, fine.  I started Cinelerra and didn't get the error message.  So hopefully that was taken care of.
+
+I realized, now, that maybe I didn't want to concatenate all 10 of those 1GB .avi files, making a monster file that would take longer to edit and save.  I decided, instead, to start by editing just July001.avi and see what happened.  I started with the
+           <a href="https://web.archive.org/web/20120228084126/http://cinelerra.org/docs.php">
+            Cinelerra documentation
+           </a>
+           , and particularly the
+           <a href="https://web.archive.org/web/20120228084126/http://heroinewarrior.com/cinelerra/cinelerra.html">
+            Secrets of Cinelerra
+           </a>
+           chapter on editing.  But no, that document didn't seem to be telling me how to cut my July001.avi file into separate clips.  I thought maybe
+           <a href="https://web.archive.org/web/20120228084126/http://video.google.com/videoplay?docid=6054058685297801991">
+            the first tutorial
+           </a>
+           would do it, but it wouldn't play in Firefox.  It did play in
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-multimedia.html">
+            Opera
+           </a>
+           , though.  Tutorial episode no. 1 was said to appear at minute 45 through minute 60 of that video, so I let it load and I played with the program a bit.  I watched July001.avi and decided that, actually, its action continued over onto July002.avi, and that I wanted to combine the two.  I selected File &gt; Load Files &gt; July002.avi and chose, for my insertion strategy, "Concatenate to existing tracks."  This either worked or didn't work, depending on your point of view.  In the main program window, i.e., the bottom left-hand corner of the screen, where Adobe Premiere Elements had taught me to expect to see the second .avi appear next to the first one, there was no change.  In the Compositor, however (i.e., the top right corner of the screen), the red line was now at about the middle of the timeline, so apparently July002.avi had been added up there.  Playback in the Compositor was jerky, compared to in Adobe, but I assumed it would be OK in the final product.  The tutorial was only about halfway loaded at this point, but I realized it was probably also available in YouTube.  I did a search there and found a
+           <a href="https://web.archive.org/web/20120228084126/http://www.google.com/search?q=%22cinelerra+tutorial%22+site%3Ayoutube.com&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS292US292">
+            bunch of Cinelerra tutorials
+           </a>
+           .  This led to another problem, one that I
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-more-fixes.html">
+            had previously tried
+           </a>
+           but failed to fix:  no video in Firefox on Ubuntu.  The weird thing was, I hadn't been able to get the video working on the primary computer, but meanwhile somehow YouTube had been playing fine in Firefox on the secondary computer.  But now, since I had
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-multimedia.html">
+            started over
+           </a>
+           with a new .mozilla folder, Firefox wasn't even showing YouTube videos on the secondary computer.  Opera, as just noted, was showing them fine.  I decided not to tackle this issue again now.  Instead, I just used Opera to watch the video mentioned above, starting at minute 45.  They started showing actual usage at about minute 50.  It looked like I might want to minimize the Resources and Viewer windows and enlarge the Compositor window slightly, so that I could see its complete box frame.  They had a few other items of minor interest, but that first tutorial basically did not explain much to me.  I tried again with
+           <a href="https://web.archive.org/web/20120228084126/http://video.google.com/videoplay?docid=-7732299128742714264">
+            Episode 2
+           </a>
+           .  I eventually found that tutorial no. 3 began at minute 45 of that video.  But where was tutorial no. 2?  I went back and realized I had read it wrong -- it was in
+           <a href="https://web.archive.org/web/20120228084126/http://video.google.com/videoplay?docid=4452255589324403732&amp;hl=en">
+            Episode 1
+           </a>
+           , starting at 32:45.   A bit confusing, that.  But this tutorial was much more relevant to me.  I watched it to its end, at 53:45.  The gist of it was that you select File &gt; Load Files and then, after "arming" the first set of video and audio tracks (see the orange button at the left end of the main program window) and disarming the second set (i.e., those pertaining to July002.avi), you choose Tracks &gt; Concatenate Tracks.  So, having done that, I had July001.avi and July002.avi as a single track.  But now there seemed to be something wrong with Cinelerra.  I couldn't get any response to any clicks or menu picks in the main program window.  For example, I wanted to save this combined July001 and 002.avi arrangement, now that I had managed to combine them; but nothing happened when I clicked File on the menu:  no drop-down, etc.  I couldn't even close the main program window.  It was dead.  It stayed that way while I did something else for several hours.  When I came back, I ran xkill in Terminal and killed Cinelerra.  When I started it back up, it had no memory of what had previously been happening, and it was still half-dead.  It allowed me to load the .avi files I had been working on, but then it became unresponsive again.  This was, for me, the end of Cinelerra for the time being.
+
+That left the question of whether to use Adobe Premiere Elements in a virtual machine.  I started VMware Workstation and resumed the WXMUMedia VM.  It was the only VM I had powered up at that point.  Having been pleasantly surprised by dvgrab, I was not feeling any immediate need for Windows Movie Maker 2.0.  When the VM was finally loaded and the computer was ready to go to work, I went to Windows Start &gt; Settings &gt; Control Panel &gt; Add or Remove Programs and looked for MM 2.0.  It wasn't there.
+           <a href="https://web.archive.org/web/20120228084126/http://www.wikihow.com/Uninstall-Windows-Movie-Maker">
+            One source
+           </a>
+           recommended writing a batch file to do the job, so as to remove various .dll files and so forth.
+           <a href="https://web.archive.org/web/20120228084126/http://techrepublic.com.com/5208-11184-0.html?forumID=49&amp;threadID=191881&amp;messageID=1980245">
+            Another source
+           </a>
+           said no, all the files were contained in the single program directory, so you could just delete that and maybe remove some registry references (or, I supposed, run Advanced WindowsCare or some other registry cleaner) and it would be gone.  Rather than hash out that issue, I decided to just leave it.  Next, I inserted the CD and installed Adobe Premiere Elements (APE) into the WXMUMedia VM.  After rebooting the VM (to complete the installation) and letting the hard drive light settle down, I moved those July001 through 010.avi files to an NTFS partition, where APE could see them, and then I imported them into the program.  Or at least I tried.  I got this:
+           <blockquote>
+            Audio Conforming Error
+
+Disk Write Error. Verify drive connections, available disk space and disk access privileges. Then save, close and re-launch the project.
+           </blockquote>
+           I went into APE's Edit &gt; Preferences &gt; Scratch Disks and changed all of those scratch disk assignments to other hard drives, which I suspected would make APE faster, even if it didn't solve this problem.  Then I did what the error message advised.  APE started up OK this time, but video editing was out of the question.  The hard drive just couldn't keep up.  It had been sitting quietly, because I had been working on something else for the past hour; but when I came back to this, replaying five seconds' worth of video was enough to put the hard disk at work for half a minute, and the playback was extremely jerky.  After the first try, the hard drive light wasn't on so steadily, but the playback was still lousy.  Also, for some reason, there was no audio.  Really, by this time it seemed that the only game in town was to install APE on one of the two computers, in Windows native boot, and do my video editing there.  I closed down APE and suspended the WXMUMedia VM, unsure of whether there would be any real reason to use it anymore.
+
+I had
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/07/vmware-in-ubuntu-putting-it-all.html">
+            previously installed Compiz
+           </a>
+           on the secondary computer.  I had thought it would be just for decoration and fun, and mostly it was.  But there was one feature I used quite often, and that was the ability to rotate desktops by positioning the mouse cursor on one desktop and spinning it to the other.  Typically, I would have Firefox running on one desktop and several minor things (e.g., Terminal, gedit) in the other.  I wanted this spin feature on the other computer, because I found myself looking for it frequently, and I felt things were slower without it.  I went to
+           <a href="https://web.archive.org/web/20120228084126/http://seogadget.co.uk/how-to-install-compiz/">
+            the webpage
+           </a>
+           that I had consulted the first time and followed it again.  The instructions were, first, to use Synaptic to install Compiz.  But Synaptic said it was already installed -- and I had thought so, because it had seemed like that ability to rotate had been there and then had vanished at one point.  So I went on to the next step on that webpage, which was to use System &gt; Preferences &gt; Advanced Desktop Effects Settings.  But, aha!  That was not there.  So Compiz was screwed up, it seemed.  I went back to Synaptic and marked for complete removal everything that was installed that began with "compiz."  Then I searched Synaptic again for "compiz" and selected just that.  It included a bunch of other things that I had just uninstalled, so that was fine.  I closed Synaptic and looked again for that Advanced Desktop Effects Settings option.  Still not there!  Oh, but if all else fails, read the instructions.  It seems I was supposed to make sure I had installed compizconfig-settings-manager.  Another search in Synaptic:  yeah, there it was.  Duh.  I installed it and looked again for the Advanced Settings thing.  Yes!  In that CompizConfig Settings Manager box, the webpage advised selecting Desktop &gt; Desktop Cube and Rotate Cube.  This entailed some other things being turned on and off.  I also chose Wobbly Windows, because sometimes they made me laugh.  Otherwise, I stayed on the conservative side, because last time I had overdone it.  This had sort of messed things up, so I'd had to spend additional time getting my desktop back to functional.  There wasn't a Save button on the settings box, so I just clicked Close.  But, alas, no rotation of desktops.  I added Cube Gears, Crash Handler, Desktop Cube, and Water Effect in the Compiz settings box.  Still no joy.  Oh, well.  Another item to postpone until some bit of wisdom reached me.  Later, I noticed that the secondary computer had an Applications &gt; System Tools &gt; Compiz Fusion Icon icon, whereas the primary computer did not; but I was not sure what that might mean.
+
+Somehow, the problems I was having in communicating with my external USB hard drive (above) had changed or faded at this point.  I could see the drive and view its contents without a problem in at least some of my virtual machines.  (I didn't bother testing them all at this immediate moment.)  Sadly, however, Second Copy 2000 -- the Windows program I had used to keep a current backup of my data on that offsite drive -- was just not up to the job.  It was great in native-booted WinXP, but inside a VM it just didn't seem to be working.  This pretty much scuttled the idea that I needed a VM that would always be on (as in my WXS-AlwOn VM) so as to run Second Copy for backup purposes.  I probably could have figured out some command-line solution within WinXP, but to me it made more sense to figure out that sort of solution in Ubuntu instead, and thereby continue to reduce my Windows dependency.
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-multimedia.html">
+            My previous explorations
+           </a>
+           had suggested that rdiff-backup was still in development and rsync was scary for complexity.  (It had also occurred to me that rdiff had the drawback of not enabling me to do a simple verification of the backup by comparing the Properties of each drive, so as to insure that each was of the same size and had the same number of files.)  But now it was time to bite the bullet:  I needed to have regular, automated backup.  First, I scoped out
+           <a href="https://web.archive.org/web/20120228084126/http://en.wikipedia.org/wiki/Rsync">
+            the Wikipedia page
+           </a>
+           on rsync.  The most important things to worry about, I decided, were (1) make sure rsync doesn't wipe out some other partition or folder by accident and (2) make sure it doesn't synchronize the external backup hard drive with the primary data drive.  I wanted mirroring, not synchronization.  I remembered that rsync had previously spooked me partly because it seemed to be designed especially for network backup, and I just wanted it for my little old standalone computer.  I revised
+           <a href="https://web.archive.org/web/20120228084126/http://www.google.com/search?hl=en&amp;rlz=1B3GGGL_enUS292&amp;q=rsync+standalone+ubuntu+-server&amp;btnG=Search">
+            my Google search
+           </a>
+           and found
+           <a href="https://web.archive.org/web/20120228084126/http://ubuntuforums.org/archive/index.php/t-492484.html">
+            a discussion thread
+           </a>
+           where people compared notes on their preferred backup solutions.  Lots of ideas there, including two I hadn't heard of before:
+           <a href="https://web.archive.org/web/20120228084126/http://www.google.com/search?q=%22Ghost+for+Linux%22&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS292">
+            Ghost for Linux
+           </a>
+           and
+           <a href="https://web.archive.org/web/20120228084126/http://rsnapshot.org/">
+            rsnapshot
+           </a>
+           .  Since the latter was built on rsync but was supposedly simpler, I went to
+           <a href="https://web.archive.org/web/20120228084126/http://www.rsnapshot.org/howto/1.2/rsnapshot-HOWTO.en.html">
+            their how-to page
+           </a>
+           , which actually contained a more or less complete introduction to the program.  I was just about to start in when I remembered the easy way.  Always remember the easy way.  I went to Synaptic and searched for rsnapshot.  It was there.  I installed it.  But I had no new icons in my menus.  How to run it?  Well, OK, it was still a command-line program, so of course there was no icon for it.  I wasn't finding the how-to page quite right, so I typed "man rsnapshot" in Terminal.  That gave me about 700 lines of text.  Was this really better than just using rsync?  I typed "man rsync" and got about 3,000 lines of text.  So, yes, you could say this was better.  But it made me think again about
+           <a href="https://web.archive.org/web/20120228084126/http://www.google.com/search?q=sbackup+ubuntu&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS292">
+            Sbackup
+           </a>
+           .  As I saw from my notes, however, I had
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-backing-up-and.html">
+            previously disliked it
+           </a>
+           because I couldn't tell whether it had backed up all my files.  It put them into a zip file that didn't seem to be the right size.  I really wanted a backup that would be file-for-file.  So apparently it was going to be rsnapshot.  I found
+           <a href="https://web.archive.org/web/20120228084126/http://www.backupcentral.com/components/com_mambowiki/index.php/Rsnapshot#Setting_Up_rsnapshot">
+            a wiki page
+           </a>
+           that said, after installing rsnapshot, "You then edit the file /etc/rsnapshot.conf to tell it where to put your backups, what to back up, and so on. There are copious instructions in the example config."  I knew, from the man page, that the default configuration file was /etc/rsnapshot.conf.  The man page recommended that you start by copying /etc/rsnapshot.conf.default to be /etc/rsnapshot.conf, and then modify it as needed.  But I didn't see any rsnapshot.conf.default in the /etc folder.  I just saw rsnapshot.conf.  In File Browser, as root (i.e., type "sudo -i" and then "nautilus"), I copied rsnapshot.conf to rsnapshot.conf.backup and then opened rsnapshot.conf.  It looked like whoever set it up for Ubuntu had already commented or uncommented a bunch of lines.  (A line of the program could be "commented," i.e., made inoperable, by putting a # sign in front of it.)  I left it as it was except for the following:
+           <ul>
+            <li>
+             Uncomment no_create_root 1, because I was going to back up to a USB drive
+            </li>
+            <li>
+             Comment cmd_cp.  Its instructions said to do so if your Linux coreutils version was 5.3 or newer.  Mine, as I verified in Synaptic, was 6.10.
+            </li>
+            <li>
+             Uncomment interval hourly and daily, and change it to hourly 12 (because I wanted to run it every two hours) and daily 14 (because I would swap OFFSITE hard drives every 15 days or so) and monthly 6 (although I wasn't sure the external drive could hold all this).
+            </li>
+            <li>
+             Uncomment exclude.  That is, allow the program to execute a line that would exclude a particular folder.  The folder I wanted to exclude was /media/CURRENT/lost+found.  The comment in rsnapshot.conf told me to see the rsync man page for more details, and I did.  I paged down a billion lines and saw lots of more details.  But I wasn't sure what they meant to me, so I just punted and went back to rsnapshot.conf.  There, I uncommented one "exclude" line and, after a tab, in place of the question marks, I typed /media/CURRENT/lost+found/
+            </li>
+           </ul>
+           I wasn't sure what to do with the "backup lines" at the bottom of rsnapshot.conf, so I checked
+           <a href="https://web.archive.org/web/20120228084126/http://www.rsnapshot.org/rsnapshot.html">
+            the rsnapshot page
+           </a>
+           .  Apparently these were the actual command lines that said what would happen.  So here I said "backup    /media/CURRENT    /media/OFFSITE/P4 CURRENT/" where the latter was the folder where I stored my backup.  (They warned to be sure to end target path names with a slash, and to use tabs between elements.)  Then I commented out all of the other backup lines that were supplied there at the bottom of the rsnapshot.conf file.  But now this raised a new question.  I wanted a mirror -- that is, I wanted the P4 CURRENT folder to match exactly what was in /media/CURRENT.  So . . . if I deleted a file from CURRENT, would that file be deleted from the backup P4 CURRENT folder as well?  It sounded like I would be saving incremental backups, so I would just be restoring as things were as of a certain time, which was even better -- except it might not give me a filecount I could rely on.  I figured I'd just have to try it and see.  I found
+           <a href="https://web.archive.org/web/20120228084126/http://www.linux.com/feature/113998">
+            an article by Joe Barr
+           </a>
+           that seemed to confirm this way of seeing the situation.  Joe then recommended running "rsnapshot -t daily" (and likewise for weekly etc.) to verify that things would go as intended.  I saved rsnapshot.conf and did exactly that.  I got errors on lines 27 and 213.  The error on line 27 was, "snapshoot_root exists but is not writable."  I figured that was because I wasn't running rsnapshot as root.  The instructions weren't clear, but apparently this root directory was not going to hold the actual backups, but just some kind of index to them.  So I tried again:  "sudo rsnapshot -t daily".  Now the only error remaining was line 213.  It said this:
+           <blockquote>
+            Backup destination /media/OFFSITE/P4 CURRENT/ must be a local, relative path.
+           </blockquote>
+           So, OK, as I feared, it was going to see the USB drive as a remote drive.  Now I had to figure out what to do about that.  Incidentally, this was kind of a hassle; but at the same time I was thinking it was pretty cool that the program had remained substantially the same for years.  This was an advantage I had noticed with my old DOS scripts too:  once you learned how to do it, you could pretty much use it for decades with few if any major adjustments.  But first, getting there.  I moved on to
+           <a href="https://web.archive.org/web/20120228084126/http://www.debian-administration.org/articles/217">
+            a Debian article
+           </a>
+           that spoke of rsnapshot's "extreme simplicity" (cough, cough).  OK, it wasn't rocket science.  Anyway, my next step, according to that article, was apparently to rewrite my rsnapshot.conf backup lines so that they would refer to a host.  They gave this example:
+           <blockquote>
+            backup    root@hostname:/home/    hostname/
+           </blockquote>
+           But could my external drive have a hostname?  I tried this permutation:
+           <blockquote>
+            backup    root@P4-VM:/media/CURRENT    /media/OFFSITE/P4 CURRENT/
+           </blockquote>
+           (P4-VM being the name of my primary computer) and saved rsnapshot.conf with that alteration.  But I still got the same error message.  I would have loved to continue screwing with this all day, but I was meanwhile getting a funky new problem with Firefox, so I thought I'd better just
+           <a href="https://web.archive.org/web/20120228084126/http://ubuntuforums.org/showthread.php?p=5782355#post5782355">
+            post a question
+           </a>
+           on this and move along to the next issue.
+
+The funky Firefox problem was that, when I hit Ctrl-K to type something into the Google search bar, instead Firefox wanted to move me away from my current page.  I looked up and, whoa, the Google search bar was gone.  I saved this message as a draft and restarted Firefox.  Problem solved! (at least temporarily).  Next issue, please.
+
+The next issue had actually arisen the previous day, but I was only now able to get back to it and log it.  Basically, I wanted to run
+           <a href="https://web.archive.org/web/20120228084126/http://secondlife.com/whatis/">
+            Second Life
+           </a>
+           .  I had taken a look at it before, but it had sounded like it wouldn't run in the 64-bit version of Ubuntu unless you jumped through hoops.  Now, however, they had
+           <a href="https://web.archive.org/web/20120228084126/http://secondlife.com/support/downloads.php">
+            a 64-bit version
+           </a>
+           that I just had to download, unzip, and install.  I used "tar -vxf" to unzip it, and then I renamed the newly created folder "SecondLife" and moved it to /home/bin.  Second Life didn't install an icon in my Applications, so I right-clicked on my top panel, at the very top of the screen, where the Applications and System menus were, and chose Edit Menus.  There, under Applications &gt; Internet, I chose New Item, and I pointed it toward the "secondlife" file within /home/bin/SecondLife (which was where I had installed/renamed the program file after downloading and unzipping). When I clicked on the Applications &gt; Internet &gt; Second Life icon, I got "Window creation error."  I went back to Terminal and typed "cd /home/bin/SecondLife".  There, I typed ./secondlife.  Same result.  (Confession:  this was my second installation.  This one was on the primary computer.  The previous night, without taking notes, I installed it on the secondary computer, and it worked well, except that it had now crashed -- completely shut down the computer -- just like the Windows version did.  There was plainly a hardware as well as software problem there.  But in any case, I was still on the hunt for a stable installation.)  The README-linux.txt file said:
+           <blockquote>
+            Usually this indicates that your graphics card does not meet the minimum requirements, or that your system's OpenGL 3D graphics driver is not updated and configured correctly.
+           </blockquote>
+           Ubuntu had given me
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/reinstalling-ubuntu.html">
+            massive problems with the graphics card
+           </a>
+           on the primary computer previously.  In fact, I had bought a new one, as indicated earlier in this post, because I could not find any way of making the old one work.  Now I had the new one installed and was poised to try again, in
+           <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-trying-again-on.html">
+            a new post
+           </a>
+           .
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-166958485">
+             <a href="https://web.archive.org/web/20120228084126/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=3021316561150617625&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/64-bit" rel="tag">
+             64-bit
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/8.04" rel="tag">
+             8.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/amd64" rel="tag">
+             amd64
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/hardy%20heron" rel="tag">
+             hardy heron
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/virtualization" rel="tag">
+             virtualization
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/vmware%20workstation%206" rel="tag">
+             vmware workstation 6
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/windows%20xp" rel="tag">
+             windows xp
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/winxp" rel="tag">
+             winxp
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/search/label/x64" rel="tag">
+             x64
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          1 comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-7480542297988417803">
+           <a name="comment-7480542297988417803">
+           </a>
+           Anonymous
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Hello,
+            <br/>
+            <br/>
+            try to add acpi=off to the kernel boot options to fix the vmware key repeat rate:
+            <br/>
+            <br/>
+            http://ubuntuforums.org/showthread.php?t=692842
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-7480542297988417803" title="comment permalink">
+             August 24, 2009 8:31 AM
+            </a>
+            <span class="item-control blog-admin pid-430674417">
+             <a href="https://web.archive.org/web/20120228084126/http://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=7480542297988417803" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20120228084126/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=3021316561150617625" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20120228084126/http://raywoodcockslatest.blogspot.com/feeds/3021316561150617625/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 08:41:26 Feb 28, 2012 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:09:11 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.581
+  exclusion.robots: 0.071
+  exclusion.robots.policy: 0.062
+  esindex: 0.008
+  cdx.remote: 12.05
+  LoadShardBlock: 106.415 (3)
+  PetaboxLoader3.datanode: 114.761 (4)
+  load_resource: 183.576
+  PetaboxLoader3.resolve: 106.633
+-->

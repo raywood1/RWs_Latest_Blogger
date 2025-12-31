@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053834cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053834im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053834/http://raywoodcockslatest.blogspot.com/2007/07/ubuntuwinxp-pro-dual-boot-partitioning.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053834/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053834/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053834/https://raywoodcockslatest.blogspot.com/feeds/8493189705502768814/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053834/http://raywoodcockslatest.blogspot.com/2007/07/ubuntuwinxp-pro-dual-boot-partitioning.html" property="og:url"/>
+  <meta content="Ubuntu/WinXP Pro Dual Boot Partitioning" property="og:title"/>
+  <meta content="I was trying to set up a dual-boot system, with both Windows XP Professional (32-bit, not x64) and Ubuntu Linux on the first hard drive.  Th..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu/WinXP Pro Dual Boot Partitioning
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053834im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053834im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053834im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053834im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053834im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053834im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053834im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053834im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053834im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053834im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053834im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053834im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053834im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053834im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053834im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053834im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053834im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053834im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053834cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053834cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Monday, July 9, 2007
+        </h2>
+        <div class="post">
+         <a name="8493189705502768814">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053834/https://raywoodcockslatest.blogspot.com/2007/07/ubuntuwinxp-pro-dual-boot-partitioning.html">
+           Ubuntu/WinXP Pro Dual Boot Partitioning
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I was trying to set up a dual-boot system, with both Windows XP Professional (32-bit, not x64) and Ubuntu Linux on the first hard drive.  The partitioning process was not working out smoothly.  Ultimately, it became a dual-boot system on two separate drives, for reasons described below.
+
+*********************************************
+
+I started with a 76GB hard drive.  Using PartitionMagic, I divided it as follows:
+
+PROGRAMS -- the 28GB WinXP program installation partition
+LINUX -- the 10GB partition where I intended to install Ubuntu (Ext3 format)
+SWAPSPACE -- a 2GB swap partition for Linux
+
+Those three were all primary partitions.  Then I had an extended partition, containing this logical partition:
+
+STATIC -- a 36GB space where I stored files that I did not want to back up or restore each time I reinstalled Windows.  Example:  the WinXP installation files.  On this drive, I also stored copies of the programs I installed, in separate folders corresponding to the dates of my various Drive Image backups of the PROGRAMS drive.  That way, if I if I restored an earlier Drive Image PQI file to replace a corrupted installation on the PROGRAMS drive, I would know which additional programs I had installed since then, so I could quickly bring the PROGRAMS partition back up to current status.
+
+I started with an introductory Ubuntu installation.  Then I focused on installing WinXP into PROGRAMS and STATIC.  Unfortunately, when this was done, I found (as apparently others have found) that Microsoft's Windows installation had mysteriously corrupted the Ubuntu installation.  I needed to start over.  This is where the current, more complex partitioning problems began to emerge.
+
+I booted the
+           <a href="https://web.archive.org/web/20190906053834/http://www.ubuntu.com/getubuntu/download">
+            Ubuntu live CD
+           </a>
+           and tried to proceed with the installation.  It went partway, but it balked when we reached the point of partitioning the drive.  I believe the error message indicated that the "/" partition (i.e., the root) was not formatted.
+
+I bailed out and used Ubuntu's GParted program to try to partition and format as needed.  I kept getting an error message (when I went down into the details of the failure to format) indicating that the program "will not make a filesystem here."
+
+Back in PartitionMagic, I wiped out the Linux partitions and tried to create new ones.  Research had now indicated that I would probably want more than just the two Linux partitions mentioned above.  But PartitionMagic wouldn't let me raid the STATIC drive (which really needed only a fraction of its size) for disk space that I could use for additional Linux partitions.  Upon checking for errors, I discovered that PartitionMagic reported that both the PROGRAMS and STATIC (i.e., the Windows) drives had been improperly dismounted.
+
+I didn't believe that problem had been there at the start of this effort.  I wondered if WinXP was designed in such a way as to leave Windows partitions improperly dismounted whenever GParted tried to work on that drive.  Or possibly I was mistaken:  maybe an improper dismount had happened in some other way, sometime since my last check on the previous day.
+
+To get rid of the improper dismount problem, I could have moved everything off of drives C and D (i.e., the PROGRAMS and STATIC partitions) and used PM to wipe out those partitions and start over.  Seeking an easier route, I tried booting with the WinXP CD and using the Recovery Console's FIXMBR command (followed by CHKDSK /R on drive C but not on D, repeated until there were no more reports of errors being corrected).  Back in PM, it appeared that CHKDSK /R was not necessary:  there were now no errors on either C or D.  (In any case, it would also have been possible to run CHKDSK via Computer Management from within WinXP, though it would not actually have run until after rebooting.)
+
+I rebooted the Ubuntu live CD and started the Install process again.  This time, it froze at 12% of the way through the Scanning Disks dialog.  I hit the Reset button on the computer and booted PM.  It showed improper dismount errors again.  I ran FIXMBR from the WinXP CD and then rebooted from the Ubuntu live CD.
+
+I got back to the Prepare Partitions dialog.  This time around,
+           <a href="https://web.archive.org/web/20190906053834/http://www.psychocats.net/ubuntu/partitioning">
+            the advice
+           </a>
+           seemed to be that I should actually have
+           <a href="https://web.archive.org/web/20190906053834/http://ubuntuforums.org/archive/index.php/t-75208.html">
+            these partitions
+           </a>
+           with
+           <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/7.04/installation-guide/i386/partitioning.html">
+            these sizes
+           </a>
+           :
+
+/ -- Root, for booting -- 500MB
+/usr -- holds Linux program files -- 6GB
+           <a href="https://web.archive.org/web/20190906053834/http://ubuntu.wordpress.com/2006/01/29/move-home-to-its-own-partition/">
+            /home
+           </a>
+           -- holds settings that you want to preserve when you update the program files -- 500MB
+/var -- so that if e-mail fills up, the functioning of the system won't be affected -- 3GB
+/tmp -- temporary space, potentially including DVD images -- 5GB
+/swap -- holds material in active use that won't fit in RAM -- 2GB
+FAT32 -- both WinXP and Linux can read and write to FAT32 drives, so keep currently worked-on data here -- remainder of drive
+
+(all being Ext3 except the FAT32 drive and /swap).
+
+They kept saying that /swap should be 1.5 to 2 times the size of RAM, but I had just moved up to 4 GB of RAM, and while researching a
+           <a href="https://web.archive.org/web/20190906053834/http://raywoodcockslatest.blogspot.com/2007/06/ram-drives-pagefiles-i-ram-and-virtual.html">
+            RAM drive
+           </a>
+           I had heard that people
+           <a href="https://web.archive.org/web/20190906053834/https://answers.launchpad.net/ubuntu/+question/3374">
+            rarely maxed out
+           </a>
+           /swap partitions of even 1GB, and I found one source that said 1GB is enough if you have 1GB or more of RAM.  Just to be safe, I decided to make /swap  a 2GB partition.
+
+I couldn't tell what to enter (in the Edit Partition dialog within Ubuntu's Prepare Partitions dialog) for the mount point for the FAT32 drive.  It
+           <a href="https://web.archive.org/web/20190906053834/http://www.geocities.com/epark/linux/partition-share-HOWTO.html">
+            looked like
+           </a>
+           I was supposed to just enter a slash followed by whatever name I wanted.  I thought there might be an eight-character limit.  So I designated a mount point called /2way.  (Apparently they were still working on the tools to make NTFS drives as accessible as FAT32 drives within Linux.)
+
+The rest of installation went on while I took a nap.  When I got back, I shut down the system, plugged in my other hard drives (which I had unplugged, so they wouldn't get screwed up by all this rebooting and shutting down), and rebooted.   The Grub boot loader came on, as expected, and I chose Windows.
+
+Windows did not complete loading.  It got partway through and rebooted.  This had happened previously.  At first, I had been thinking that this indicated a problem with my new motherboard, new RAM, or new CPU in the system.  But then I observed that, when everything was cleaned up, Windows booted just fine.  So now I suspected a problem in one of the hard drives.
+
+On reboot, Windows loaded to a point of showing me a dialog with an option to reboot to complete installation of my "new" hard drive.  I accepted, and booted into PM.  I ran PM's "Check for Errors" on each partition.  It reported  Error 1513, "Bad attribute position in file record" for one drive.  Worse, it reported "Partition table error #114 found" on the primary boot drive that I had just configured.
+
+I rebooted with the Windows XP installation CD, selected Recovery Console, and ran CHKDSK /R on the Error 1513 drive.  CHKDSK actually froze:  I ran it overnight, and came back in the morning to see that it was still stuck at 66%.  I rebooted and ran it a couple more times.  Having satisfactorily corrupted or lost whatever irreplaceable files it was gagging on previously, it was now satisfied, and proceeded to run relatively quickly.  (Note to self:  next time, disconnect the uninvolved drives BEFORE doing lots of partitioning and crashing and system resetting.)
+
+It then developed that, while CHKDSK /R may have fixed some problems on that drive, it had nothing to do with Error 1513.  Running PM again showed that the error was still there.  I belatedly consulted the relevant
+           <a href="https://web.archive.org/web/20190906053834/http://service1.symantec.com/SUPPORT/powerquest.nsf/docid/2004038302586462?OpenDocument">
+            Symantec webpage
+           </a>
+           and found that Error 1513 arises from a bug in PM, remediable by a patch.  So I downloaded the patch on this other computer and made a note to myself to fiddle with that later.
+
+Meanwhile, I rebooted and let the machine default into an Ubuntu boot.  It seemed to freeze.  I rebooted again and this time chose the alternate Ubuntu boot, which I construed as being something like Windows' Safe Mode boot (F8, after booting).  It ran through a bunch of command line messages and then gave me a prompt.  Since I didn't remember anything about shell commands anymore, I hit Ctrl-Alt-Del and rebooted again.  This time I went back to the default Ubuntu boot, though by hitting Enter rather than waiting 10 seconds (or whatever) for it to boot on its own.  This time, the system booted.  It showed me a popup telling me that there were downloadable updates.  So I downloaded those.  Incidentally, this was a lot easier than Microsoft's separate update pages for Windows and for Office, each of which required multiple clicks and long delays while Microsoft figured out if I had the right software to do the downloads.
+
+Unfortunately, the system froze before it completed the downloads.  I suspected this stemmed from a hard drive problem.  I rebooted -- this time, into Windows -- with the intention of doing the PartitionMagic update.  Windows did install OK.  But then it froze.  Hard drive problem, I was sure.  I booted back into Ubuntu.  It froze too!  I tried again.  This time it worked.  I tried doing the last of the Ubuntu downloads, but I got this:
+
+An error occurred
+The following details are provided:
+
+E: dpkg was interrupted, you must manually run 'dpkg --configure -a' to correct the problem.
+E: _cache-&gt;open{} failed, please report.
+
+I wasn't sure to whom I should report it, or how to manually run dpkg, so I just bailed out of that dialog.  I decided to see if I could find an Ubuntu counterpart to PM.  I looked around on the menus for GParted or TestDisk or anything that looked like a partition manager, but I couldn't find them.  I did a search for GParted, and found a file called gparted.desktop in a folder called /usr/share/app-install/desktop, but when I double-clicked on it, it just opened what appeared to be the source code for that program (in a dialog box whose X box was in the top center rather than in the expected upper-right corner).  A search for TestDisk turned up nothing.
+
+I rebooted with my GParted CD.  Meanwhile, on the laptop computer on which I was typing this post, I found that the Ubuntu documentation pages (with which I was only at that point starting to become familiar) carried
+           <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/community/PartitionMagic_Error_%23114">
+            a page about PM error 114
+           </a>
+           .  That page suggested that GParted would not deal with the problem.  I couldn't tell, because once again GParted put me at a prompt preceded by no instructions but a screenful of executed commands; I typed Exit and hit Enter (something funny about that); now I found myself at what appeared to be GParted instructions; they said things that just made me feel bad (e.g., "VESA driver should always work" and "The graphical environment configuration should have been done automatically.  Unfortunately it did not, since you are back to the bash!"); so I hit Ctrl-Alt-Del and rebooted with the Windows XP installation CD.
+
+That Ubuntu documentation page also said that the problem arose from having your partitions out of order.  They didn't seem too sure of it; it was phrased as more like an idea or a possibility.  Apparently I needed to have my primary partitions come in order, 1 through 4, followed by my logical partitions.  I wasn't sure how to determine whether they were in order or not.  They said the WinXP CD or an "ancient FDISK" could delete the misnumbered partition.  I wasn't too keen to use FDISK, which as I recalled would be eager to delete everything in sight, and I couldn't see that the WinXP CD had any commands up to the task, at least not in Recovery Console.
+
+I rebooted to WinXP and prepared to run the PM update to version 8.1.  I would have done it on the laptop instead, where I had downloaded it, but for some reason now, of all times, was when my laptop decided to change my WinXP password.  So I couldn't get in, and was compelled to do my Windows work on the desktop instead.  There, when I double-clicked on the PM upgrade on my flash drive, a failed reboot persuaded me to use Safe Mode instead.  But in Safe Mode, I got InstallShield Error 1152: Error extracting
+           <filename>
+            to the temporary location.  So I tried that on (would you believe) a friend's computer, but I got the same error message there, even after running it from the hard drive rather than the jump drive.  My speculation was that the update might only work on an installed version, whereas I always ran PM from the bootable CD.
+
+While I was there in Safe Mode, I recalled thinking that maybe the person who wrote the Ubuntu page meant using the Disk Management portion of Computer Management, inside of XP, and not the WinXP installation CD.  But I couldn't figure out how to make sense of that.  If they were talking about drives, then, yes, my disks were all out of order.  I booted from a SATA drive, which was listed after the IDE drives, so it was and would remain in a position other than number 1.  If they were talking about partitions on the drive, as I assumed, I didn't see how Computer Management could help.  It's not like you can drag and drop partitions there.  Nor were they numbered.  Indeed, the Ubuntu partitions weren't even lettered.  So Computer Management looked useless for this.
+
+Some posters said PartitionMagic is bad for Linux partitions, so I decided to postpone the PM update project.  Instead, I looked around for another Ubuntu-friendly partition manager, one with a graphical user interface (GUI).  Somebody recommended "QTpart" on the
+            <a href="https://web.archive.org/web/20190906053834/http://knoppix.net/get.php">
+             Knoppix CD
+            </a>
+            .  I had one of those for a year or more, but never got around to using it much, and had evidently tossed it.  Now I downloaded and burned it again, on the laptop in Ubuntu.  (Later, it developed that, according to
+            <a href="https://web.archive.org/web/20190906053834/http://www.linuxdevcenter.com/pub/a/linux/2006/05/08/dual-boot-laptop.html">
+             Kevin Farnham
+            </a>
+            , it might have been more to my advantage to get QTParted on the
+            <a href="https://web.archive.org/web/20190906053834/http://www.sysresccd.org/Main_Page">
+             System Rescue CD
+            </a>
+            -- although, at latest word, it appeared that QTParted might no longer be on that CD.)
+
+I booted and ran the Knoppix CD.  I found what I was looking for right away:  K Menu &gt; System &gt; QTParted.  Nice user interface.  Drives numbered, like that Ubuntu person had been describing.  But the numbers didn't seem to be out of order.  I couldn't see a solution here.
+
+Kevin Farnham was advising to create just a few Linux partitions, not all of the ones I created.  Reducing the number of partitions would reduce the number of problems that partitions could cause, right?  So that was one possibility.  Another possibility was to use one drive for Windows and one for Ubuntu.  I liked this possibility.  Among other things, it would mean that I could continue to use PartitionMagic, if I wanted, for the Windows drives.  I really had found it to be a very useful and reliable tool over the years, and was not too eager to entrust my data to something unknown.
+
+Either way, it seemed I would have to wipe out my Linux partitions and start over with the Ubuntu installation.  That was OK; I didn't have much invested in them yet.  So I shut down the system, unplugged all the other drives, rebooted with the Knoppix CD, and used QTParted to wipe out one of the Linux partitions on that drive.
+
+I could only wipe out one of those Linux partitions.  That's all QTParted would do.  After that, the Delete menu pick was greyed out.  I tried killing QTParted and starting it again; no joy.  I rebooted the Knoppix CD and started QTParted again.  This time, it let me delete all the remaining Linux partitions.
+
+Now I had to move my Windows installation to another drive, so as to free up this drive for Ubuntu (and the accompanying FAT32 workspace) entirely.  This involved some drive imaging (so as to move the WinXP partition without having to reinstall Windows), moving quantities of files to make space on another drive, etc.
+
+Before doing that, though, I needed to start PartitionMagic and verify that it was now happy with this newly eviscerated boot drive (and with all the others that I had been shutting down improperly through various freezes and forced reboots).  So I plugged in all the drives and booted from the PM CD.
+
+It developed that I still had PM Error 114 on the boot drive, so I rebooted with the WinXP CD and ran FIXMBR again.  Unfortunately, that made no difference; Error 114 was still there.  So I intended to go back to the WinXP Recovery Console again, but fumbled and wound up booting XP from the hard drive.  This was amusing:  PartitionMagic was truly unhappy with my drive, but XP would boot from it.  I figured it would freeze up again soon enough, though.  So while I was here, I went ahead and moved files and so forth, for purposes of freeing up the formerly dual-booting drive to be entirely devoted to Ubuntu.
+
+While I was killing time, waiting for CHKDSK /R to run yet again on one drive that got screwed up, I was looking at websites.  I noticed that the Ubuntu documentation includes
+            <a href="https://web.archive.org/web/20190906053834/http://ubuntuforums.org/showthread.php?t=179902">
+             a thing by Confused57
+            </a>
+            from last year; but for me it seemed only somewhat helpful because it looks like Ubuntu has come a long way since then.
+
+By the time I had finished moving files and rearranging folders with PartitionMagic and Drive Image and CHKDSK and FIXMBR and so forth, I had made a new discovery, browsing away here on the laptop.  It seemed that I should have done an
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/community/HowToMD5SUM">
+             MD5SUM comparison
+            </a>
+            , to insure that my Ubuntu CD contained a perfect copy of the files that I was supposed to have received.  To do this, I put the CD into the drive on this laptop ... but that wasn't right.  I was supposed to check  the ISO, not the CD that resulted from it.  Well, by this time I had deleted the ISO, so this would mean downloading and checking a new ISO and burning a new CD.  It seemed to me that errors could also creep in during the CD-burning process or the installation process.  I appreciated that it made sense to eliminate errors wherever possible.  But I had already installed this CD and it had seemed to work.  I hadn't gone to this trouble for other software I had downloaded in the past.  So I decided to skip it, at least for now.
+
+But then I decided to do it anyway.
+
+The
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/community/HowToMD5SUM">
+             Ubuntu documentation
+            </a>
+            on the matter wasn't clear, so it seemed that I should edit it.  Nice thing about having your documentation in a wiki -- you can actually do that.
+
+The general idea, as I understood it, was that you download the ISO, using Windows or Linux or whatever; you save it in a folder; you fire up Ubuntu from a bootable Ubuntu CD (such as the one that I had burned before I knew about this ISO checking process); you go to the folder where your downloaded ISO is; you run the MD5SUM program; it spits out a long string of numbers and letters; and you compare that string (which results from your ISO) against a pre-supplied string.  If the two don't match, your ISO is flawed.  If they match, you proceed to burn the CD using the ISO (and, in my case, you toss the unchecked, first-round CD).
+
+Or at least that's what I thought was supposed to happen.  But my Ubuntu CD didn't seem to have the MD5SUM utility that the Ubuntu documentation said could be found in most distributions.  I used the Search for Files tool, but it didn't find anything with MD5SUM in its name.
+
+Taking a different approach, I tried to figure out how to get to an Ubuntu command line -- for the first time -- since the Ubuntu directions said to enter a command on the command line.  From the menu at the top of the Ubuntu desktop, the path I took was Applications &gt; Accessories &gt; Terminal.  That gave me a prompt in the shell -- resembling DOS or a Windows command-line box, except it was white instead of black.  I didn't know how to change from the Ubuntu drive, which the prompt was now showing me, to the DATA partition on my hard drive, which is where I had stashed the ISO file.  I went into help and typed Terminal.  That led me to the GNOME Terminal Manual.  But that seemed to be oriented toward how to change the appearance of the Terminal.  I guessed that I needed a shell manual.  But I didn't know which kind of shell I had.  Several years earlier, I had worked briefly in BASH, but I knew there were others.  I searched in the Ubuntu community documentation
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/community/HowToMD5SUM?action=fullsearch&amp;context=180&amp;value=shell&amp;titlesearch=Titles">
+             for "shell,"
+            </a>
+            and found three entries.  The first, regarding CShell, began with instructions on how to install it, so I guessed this was not what was already installed on the Ubuntu CD.  The second,
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/community/CommandlineHowto?action=show&amp;redirect=Shell#head-735ee9ed388e7443efea1269a732e12ab59a0ad5">
+             Shell
+            </a>
+            , seemed much closer to the action.  (If you go at it the other way, starting with the main documentation page, you find Command Line listed as an
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/7.04/advanced-topics/C/index.html">
+             Advanced Topic
+            </a>
+            , which seemed correct and yet odd, for something that I was trying to do before even installing the system.)   The
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/community/CommandlineHowto?action=show&amp;redirect=Shell">
+             community documentation
+            </a>
+            page gave me a basic introduction to using the command line and then led on to
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/community/UsingTheTerminal">
+             Using the Terminal
+            </a>
+            .  But by now I had noticed that these community pages weren't specific to version 7.04, so I opted to go instead with the command line advanced topics page, specific to 7.04, that I had just uncovered in the course of researching this paragraph.  That advanced topics page led to a list of
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/7.04/basic-commands/C/">
+             Basic Commands
+            </a>
+            , which also seemed odd, though again I felt that I understood the concept:  you are now doing basic work within the advanced task of using the command line, which is a basic part of the advanced task of installing Ubuntu.  (It seemed like I should revise the list of links at the bottom of the community wiki page, to point to this list of basic commands; but then I thought maybe there was a reason why nobody had done so already.  Being a newcomer, I thought I better hadn't.
+
+The list of basic commands took me to a list of
+            <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/7.04/basic-commands/C/ar01s03.html#id2497610">
+             file and directory commands
+            </a>
+            .
+From these, I learned that I could use CD ~/ to take me to another drive on the machine.  So I typed CD ~/DATA (where, in DOS, I would have typed E:, to take me to E: (DATA).  It said "No such file or directory."  Then I realized I had it wrong:  that would take me to a DATA folder within my "/" (i.e., root) directory.  I still wasn't sure how to get to root or, in this case, DATA.  I typed HELP at the shell prompt, and it gave me a list of commands.  I realized I didn't exactly know how to use them, so I wondered if I could type the command and then /? (e.g., CD /?) to show me some instructions.  That didn't work.  The Linux version, it turns out, is COMMAND -h or COMMAND --help, and if you want more info, it's MAN COMMAND (short for "show me the manual for this command").  Since I didn't know which command I wanted, I typed MAN MAN.  But as you'd expect, that was the manual about manuals, which was too much in the other direction.  I tried CD -h, but Terminal said "invalid option."  MAN CD didn't work either.  I tried doing some Google searches, and this led to the concept that, in Linux, a drive or partition might sometimes be called a "filesystem."  Someone also reminded me that Linux refers to drives as HDA, HDB, etc., not DATA.  But when I tried CD /DEV/HDA, it said, "Not a directory."  I hadn't seen anyone offering the example of CD ~/HDA, so I didn't think that was quite the answer I was seeking.  It seemed just bizarre that all these lists of basic commands didn't say anything about how to move yourself to another drive.  From my DOS days, I thought maybe I could tinker with the prompt, so that it would show me where I was (if not where I was going); but MAN PROMPT turned up nothing.
+
+I found a cool
+            <a href="https://web.archive.org/web/20190906053834/http://doc.mandrivalinux.com/MandrakeLinux/101/en/Command-Line.pdf">
+             Mandriva user's manual
+            </a>
+            .  It brought me to understand that the purpose of the tilde (~) was to put me in someone else's home directory (e.g., CD ~JOE).  But even this cool manual didn't tell me how to run a program on some drive other than the one I was already on.  So I gave up (again) on trying to figure out how to do the MD5SUM thing on the downloaded Ubuntu ISO.
+
+So I was free to go ahead and install Ubuntu again.  Now that I had gotten rid of those pesky Windows partitions, I really had room to roam on this disk.  I bumped up the numbers from the list, above, and I also changed my order to match the Mount Point options provided in the installer's Edit Partition dialog, as follows:
+           </filename>
+           / -- Root -- 500MB
+/boot -- 2GB
+/home -- 10GB
+/tmp -- 8GB
+/usr -- 10GB
+/var -- 5GB
+swap -- 4GB
+FAT32 -- remainder of drive (36GB)
+
+This list reflects some corrections made subsuquently -- notably the addition of a /boot partition.
+
+Unfortunately, I got only as far as /var, and then the Ubuntu Prepare Partitions screen said "unusable."  It seems I was setting up primary partitions, and only four were allowed.  I had thought that was just a Windows limitation.  So now I figured I had to find out how to set up extended partitions.  A search for "extended" or "logical partition" turned up nothing in the Ubuntu 7.04 or community documentation pages.  Plan B:  I used PartitionMagic to set up a 21GB unformatted primary partition and a 55GB logical (extended) partition, also unformatted.  Then I rebooted and restarted the Ubuntu installation.  Once I was back in Ubuntuland, however, the Scanning Drives dialog (after I selected "manual") froze at 50%.  Apparently this thing between it and PM was mutual.  I powered off the machine and belatedly unplugged my other drives, which by now were probably corrupted from the unorthodox shutdown.  I rebooted into the installer and tried again.  It was willing to convert the primary partition into a 21GB root ("/"), but it wouldn't subdivide it.  I realized I probably should have been using QTParted instead of PM, so I rebooted with the Knoppix CD and tried setting up my seven partitions that way, putting the first three in primary partitions and the rest in the extended partition.  The labels I specified in QTParted did not survive into the Ubuntu installer.  I had to type /var, /home, etc. again.  Otherwise, though, this seemed to work:  the installer recognized all of my partitions' sizes; I just had to add the labels in a manual (not guided) install, specify the mount points (e.g., /var, not /media/sda8), and make sure it was specifying the right size (the size I had already created) for each partition, instead of repeating the size of the preceding one.
+
+About this time, I noticed that the installer specified that I needed to specify a root system of at least 2GB.  Since I didn't feel like undoing all my hard work with QTParted and so forth, and since other people had talked about needing root partitions of only 500MB or less, I thought I would just go with the setup described above, for now, and see what happened.  The installer didn't edit my setup, telling me that e.g., my smaller root was inadequate, so I figured they just meant that you need a root of at least 2GB if you're not going to have all these other partitions.
+
+Going on to the next step was a disappointment, however, in another sense:  now that I had disconnected my other drives to keep them from being damaged by all this screwing around, there were no other (i.e., WinXP) accounts for Ubuntu to import.  This would not do.  I surely wanted it to import as much as possible, saving me the work of entering lots of trivial settings.  So I bailed out of the installer, shut down the machine, connected the WinXP programs drive, and re-entered the partition data, above.  Needless to say, I wished they'd had a way to save my installation data thus far on a floppy or jump drive, or perhaps load my WinXP settings onto a floppy or jump drive from inside Windows, before starting the Ubuntu install.  On the rebound, I took care to do surgery only on the partitions on the Linux drive.  I also clicked the Format? box, which I construed as a question of whether I wanted to format these new drives.  I wasn't sure, but I thought I probably did.  (It wouldn't let me check Format? for the /swap and FAT32 drives.)
+
+While waiting for the thing to install, I was having some second thoughts about the size of my root.
+           <a href="https://web.archive.org/web/20190906053834/http://ubuntuforums.org/showthread.php?t=498337">
+            One guy
+           </a>
+           said it should be at least 3GB, because it held the entire operating system -- but, you know, I eventually did get the "Installation is complete" dialog.  At that point, I clicked on the button to restart.  The system restarted and gave me the menu.  I chose Windows, just to see if it would still load OK.  It did.  (It crashed before completely loading, probably because of one or more imperfect system shutdowns recently.)  I rebooted and this time chose Ubuntu.  It loaded too.
+
+I wondered whether PartitionMagic would still report error 114 for the Linux drive.  So after I was finished downloading a boatload of updates into Ubuntu, I rebooted with the PM CD.  Or at least I tried.  It seemed that the Ubuntu installation had removed my ability to boot from the CD.  I had always done so by specifying, in my BIOS, that the CD should be the first in the series of boot devices.  But now the system froze shortly after starting to load the PartitionMagic CD.  I tried again with the F11 option, pressed shortly after rebooting (my previous motherboard had not offered this option), but that made no difference.  I tried booting with the WinXP installation CD, and it loaded and ran Recovery Console without a problem.  (While I was there, I ran FIXMBR to apply, once again, the requisite fix to the problem that arose each time WinXP would shut down on this new motherboard.)  I tried using a backup of the PartitionMagic CD, but it too, froze.  I tried booting my CD for PM's sister program, Drive Image.  It booted using the same Caldera DR-DOS as PM; it froze too.  I could see that this new Ubuntu installation was going to force some changes in my customary way of doing things on the computer, since I was in the habit of using these DriveImage and PM CDs pretty often.  I tried booting the Knoppix CD; no problem.
+
+I rebooted and let the system load itself as it would.  Apparently FIXMBR had screwed up my Ubuntu installation, because the Grub loader did not come up; instead, we went immediately into WinXP.  It rebooted itself once.  Second time, it said it had found new disks and needed to reboot.  Third time, it seemed stable.  I fired up Drive Image from within XP.  It said it "has detected an error 116 on the partition starting at sector 44034165 on disk 4."  It further said, "The starting LBA value is 44034165 and the CHS value is 16450559.  The CHS values must be equal."  It offered to correct the problem.  Disk 4, I believed, was WinXP's term for the Ubuntu drive.  I couldn't tell for sure:  at this point XP's Disk Management showed no drives other than the CD drive.  Since Ubuntu wasn't booting anyway, I said sure, why not.  But DriveImage wasn't done.  It found a total of five such errors, and fixed each upon my approval.  Then it ran, and I confirmed that Drive Image did count the Ubuntu drive as Disk 4.  PartitionMagic, running within XP, would not provide data on the Linux partitions; unlike the version booted from CD, this version gave me an Error 510, "The version of the file system is not supported."  It wouldn't check the Windows drives for errors because they had open files, so I rebooted into Safe Mode and ran the checks there.  The patch (mentioned above) worked:  there were no 1513 errors.  But even in Safe Mode, PM wouldn't check the program drive or the drives containing pagefiles for errors.
+
+I thought FIXMBR was probably the reason why the Ubuntu (Grub) boot screen was no longer showing up on reboot.  But I wondered if maybe Drive Image's little cleanup job might have fixed whatever the problem was.  On reboot, I had the answer:   nope.  Still no Grub.  When I looked into it, I found that, sure enough, according to
+           <a href="https://web.archive.org/web/20190906053834/http://www.ntcompatible.com/How_to_remove_GRUB_loader_t28242.html">
+            AndyFair
+           </a>
+           , FIXMBR removes Grub.
+           <a href="https://web.archive.org/web/20190906053834/http://www.linuxforums.org/forum/installation/43430-rh7-3-winxp-grub-cant-load-winxp.html#post235273">
+            Budman7
+           </a>
+           said, more specifically, that FIXMBR replaces the Grub loader with a Windows bootloader.  Acting on advice from
+           <a href="https://web.archive.org/web/20190906053834/http://www.linuxforums.org/forum/installation/60115-restore-fix-mbr-grub-both-confused.html#post323474">
+            rcgreen
+           </a>
+           , I rebooted with the Ubuntu CD, to see if it would recognize the Ubuntu partitions on the hard drive.  (I noticed, this time, that on bootup the CD offers an option of checking the CD for errors, so I did that instead of going any further now with the MD5SUM process.  The disc passed the test with no problems.)  It did recognize them.
+
+Now I found a page in the Ubuntu community docs on
+           <a href="https://web.archive.org/web/20190906053834/https://help.ubuntu.com/community/RecoveringUbuntuAfterInstallingWindows">
+            recovering Ubuntu after installing Windows
+           </a>
+           .  This approach claimed to put Grub into the root partition, not the MBR.  In that case, I hoped that future uses or abuses of FIXMBR would cause no further problems to Ubuntu.  I followed the instructions there (basically, boot the Ubuntu CD; open a Terminal window; type "sudo -i" (without the quotes)
+           <enter>
+            ; type "grub"
+            <enter>
+             ; type "find /boot/grub/stage1"
+             <enter>
+              ; note the resulting numbers in the form (hdX,Y); type "root (hdX,Y)" (replacing X and Y with whatever numbers you got from your "find /boot/grub/stage1" command) and hit
+              <enter>
+               ; type "setup (hdX,Y)" (replacing X and Y again)
+               <enter>
+                ; type "quit"
+                <enter>
+                 ; and reboot without the CD.
+
+Of course, I was so pleased at finally being able to work successfully in the shell, with these clear instructions, that I didn't realize I was doing exactly the wrong thing.  The community docs page wasn't written too well, so this time I really did edit it to put the foregoing advice later.  After all, I wanted Grub in the MBR, not in the root partition of the Linux drive -- as I realized when I rebooted and found that we just sailed right on back into Windows.  If it's in the Linux drive, Windows will just take over.  Grub needs to intercept it, and therefore it seemed unavoidable that Grub must be in the MBR.
+
+I did think about installing Boot Magic.  If I recalled correctly, there was a copy of it on my PartitionMagic CD.  But simpler, I thought, would be better.  Now that I had put Grub onto the Linux drive, would I have to answer Grub questions twice?  The webpage just mentioned also had the instructions I needed, to restore Grub to the MBR, but I was no longer sure what effect that would have.  So I bit the bullet and reinstalled Ubuntu from the CD, after unplugging the other hard drives temporarily.
+
+I tried reinstalling without first deleting or reformatting the partitions into which I had already installed Ubuntu.  I was curious as to how this might affect the installation process.  It didn't seem to make any difference.  I still opted to check the "Format?" box in the Prepare Partitions dialog, and I still had to retype my preferred names for the partitions and make sure that the sizes were right.  Before I was done, I made the discovery, mentioned above, that I should maybe have included a /boot partition.  So the list of eight partitions, above, reflects this realization.  And with this realization, it seemed like I had better use a full-blown partition manager; the one in the installer didn't seem up to it.  I tried GParted again, this time from within Ubuntu rather than from its own live CD, and this time it ran just fine; but I couldn't get it to delete the swap partition, and without that I couldn't rejigger the other partitions as needed.  I tried QTParted from the Knoppix CD, but it seemed to function about the same as GParted.  I rebooted the PM CD, which worked now, and used it to set up the same structure as before:  one Unallocated partition big enough to accommodate the first three Ubuntu partitions as primaries, and the rest in an extended partition.  Multiple comments, by now, had made clear that there was no need for a 4GB swap; but having seen how hard it was to work with, I figured I'd just leave it at that.
+
+I resumed the Ubuntu installation effort, having just discovered the
+                 <a href="https://web.archive.org/web/20190906053834/http://supergrub.forjamari.linex.org/">
+                  Super Grub Disc
+                 </a>
+                 , which apparently would have let me restore my MBR without any of the foregoing.  (Sigh.)  This time around, I discovered that you get significantly different functionality, in the Prepare Partitions dialog, if you accept Ubuntu's treatment of an Unformatted partition (from PM) as if it were a formatted partition -- if, that is, you use the Edit Partition button instead of deleting that partition and using the New Partition button.  I also rediscovered that Ubuntu would not import WinXP settings if I didn't have that disk plugged in.  (Sigh!)
+
+But, you know, when the dust settled, it was done, and I seemed to have a successful dual-boot, dual-drive machine.
+                </enter>
+               </enter>
+              </enter>
+             </enter>
+            </enter>
+           </enter>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053834/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=8493189705502768814&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053834/https://raywoodcockslatest.blogspot.com/search/label/WinXP%20XP%20Pro%20Ubuntu%20Linux%20Knoppix%20DriveImage%20Image%20PartitionMagic%20Magic%20Console%20FIXMBR%20CHKDSK%20x64%20Ext3%20swap%20extended%20root%20Gparted%20%2Fvar%20fat32%20ram%20Grub%20error%20114%201513%201152%20testdisk%20QTPart%20MD5SUM%20ISO" rel="tag">
+             WinXP XP Pro Ubuntu Linux Knoppix DriveImage Image PartitionMagic Magic Console FIXMBR CHKDSK x64 Ext3 swap extended root Gparted /var fat32 ram Grub error 114 1513 1152 testdisk QTPart MD5SUM ISO
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053834/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=8493189705502768814" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053834/https://raywoodcockslatest.blogspot.com/feeds/8493189705502768814/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:38:34 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:00:58 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.934
+  exclusion.robots: 0.129
+  exclusion.robots.policy: 0.115
+  esindex: 0.013
+  cdx.remote: 216.945
+  LoadShardBlock: 355.362 (3)
+  PetaboxLoader3.datanode: 363.783 (4)
+  load_resource: 13.734
+-->

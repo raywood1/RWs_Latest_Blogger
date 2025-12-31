@@ -1,0 +1,1095 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151121004408im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-ongoing-developments.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/feeds/2971946036219587179/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: VMware in Ubuntu:  Opening, Backing Up, and Moving VMs
+  </title>
+  <link href="https://web.archive.org/web/20151121004408cs_/https://www.blogger.com/static/v1/widgets/4235989350-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151121004408cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151121004408im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151121004408im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151121004408im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151121004408im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151121004408im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151121004408im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151121004408im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151121004408im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151121004408im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151121004408im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151121004408im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151121004408im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151121004408im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151121004408im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151121004408im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151121004408im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151121004408im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151121004408im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Sunday, August 10, 2008
+        </h2>
+        <div class="post">
+         <a name="2971946036219587179">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-ongoing-developments.html">
+           VMware in Ubuntu:  Opening, Backing Up, and Moving VMs
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           In
+           <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-settling-in.html">
+            a previous post
+           </a>
+           , I continued
+           <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search?q=ubuntu">
+            an extended effort
+           </a>
+           to move away from Windows XP toward Ubuntu Linux.  I had decided that the most reliable and efficient way to do this was to build a WinXP virtual machine and run it within VMware Workstation 6.0 on Ubuntu.  In other words, I would be running a Linux computer, but it would look like I was running Windows.  Primary advantages of this setup would include security for my online connection (since Linux was relatively secure from viruses and the like) and stability (since Linux seemed relatively unlikely to crash or to fail to run).
+
+I found that the basic concept did work pretty much as advertised.  There were many things to learn, though, and many small (and sometimes not-so-small) details and problems to work through.  At this point, I did not expect to have much time to explore these issues at length and in detail; I thought my progress would probably come in smaller steps over a longer time period.  The present post contains notes on what I tried and learned over that longer period.
+
+The first issue had to do with PDF.  In Windows, I made a point of scanning or converting all kinds of things to PDF.  This area called for attention in Ubuntu.  (I had previously decided to try to find Ubuntu rather than Windows programs wherever possible.  Over the long term, I hoped this would reduce my need for the cumbersome Windows/VMware setup.)
+
+I had a Canon imageCLASS MF5770 multifunction printer/scanner/copier/fax machine.  The hardware compatibility list (HCL) at the
+           <a href="https://web.archive.org/web/20151121004408/http://www.openprinting.org/printer_list.cgi?make=Canon">
+            Open Printing Database
+           </a>
+           maintained by the Linux Foundation indicated that this printer was completely incompatible with Linux.  I was not sure that was quite right -- I had found that Ubuntu was at least able to detect its existence -- but for purposes of scanning documents into PDF using this multifunction device, it seemed clear for the moment that I needed to keep my WinXP dual-boot setup, at least on my secondary computer, and that I needed to have Adobe Acrobat installed there.
+
+My understanding of the license agreement was that I was entitled to have Acrobat installed on two computers.  On the primary computer, I had waited to install it until I could do so inside a virtual machine.  This, I now felt, was a mistake.  What I should have done was install and activate Acrobat on the basic Windows XP dual boot installation, before using VMware Converter to make my basic virtual machine (VM) out of it.  Then I could have uninstalled Acrobat from any virtual machines in which I didn't want it.  Doing it the other way meant no end of calls to Adobe to activate and/or deactivate Acrobat.  It was not possible to deactivate online from a virtual machine.  Apparently their software could detect that it was a virtual machine, thereby preventing you from uninstalling it from a hundred clone VMs and installing it on a hundred physical computers.
+
+I had had to reinstall Acrobat a thousand times.  Every time Windows crashed and had to be reinstalled, ever since I had purchased Acrobat 8, I had had to contact Adobe for permission to reinstall.  Before going through the activation/deactivation phone call hassle once more, I decided to look for alternatives.  An alternative would be essential if I wanted to do PDF editing in Ubuntu, since Adobe did not offer a Linux-compatible version of Acrobat.  An alternative of sufficient quality could also be useful in Windows, in two ways.  Besides saving me the reactivation hassle, it might also have features that Acrobat did not have.
+
+In
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?t=742934&amp;page=2">
+            a discussion of best PDF editors
+           </a>
+           for Linux,
+           <a href="https://web.archive.org/web/20151121004408/http://pdfedit.petricek.net/index_e.html">
+            PDFedit
+           </a>
+           got a couple of votes.  I found a webpage with
+           <a href="https://web.archive.org/web/20151121004408/http://www.howtoforge.com/editing_pdf_files_pdfedit_ubuntu_feisty">
+            installation and usage instructions
+           </a>
+           for Ubuntu.   I felt the first need, however, was for something I could use in Windows, because that was where I would have to be doing my scanning until I could figure out how to get this multifunction machine, or some replacement for it, working in Ubuntu.  I wanted to be able to rearrange and edit pages right as I was scanning them.  In
+           <a href="https://web.archive.org/web/20151121004408/http://pdf-editor1.software.informer.com/sort/pop/">
+            a list of PDF editors
+           </a>
+           at Software Informer,
+           <a href="https://web.archive.org/web/20151121004408/http://www.foxitsoftware.com/pdf/editor/interface.htm">
+            Foxit PDF Editor
+           </a>
+           appeared to be the most popular non-Adobe tool available.  Foxit was offering this editor for a
+           <a href="https://web.archive.org/web/20151121004408/http://www.foxitsoftware.com/pdf/pe_intro.php">
+            free six-month trial
+           </a>
+           .   I read some
+           <a href="https://web.archive.org/web/20151121004408/http://www.download.com/Foxit-PDF-Editor/3640-6675_4-10283868.html">
+            user reviews
+           </a>
+           .  While doing so, I became more aware of all the things I had been able to do in Acrobat.  The main advantages were said to be that Foxit was much smaller and loaded faster.  I had not had problems with those characteristics in Acrobat.  Thus, when one reviewer said that Acrobat was far superior to Foxit PDF Editor, I decided to stick with Acrobat to the extent possible.  I went ahead with the activation process and left it at that for now.
+
+There was still the matter of printing to PDF.  With or without editing capabilities, I wanted a PDF printer to be my default in Ubuntu, so that I could save webpages and other documents to PDF easily.  I started by looking for PDFedit in System &gt; Administration &gt; Synaptic Package Manager.  There it was, so I installed it.  (I am not clearly distinguishing, here, between actions taken on the primary and secondary computers.  In fact, I was doing a bit of tinkering with both at the same time, but this particular action was on the secondary machine.)  Its startup icon was installed under Applications &gt; Graphics &gt; PDF Editor.  I viewed those
+           <a href="https://web.archive.org/web/20151121004408/http://www.howtoforge.com/editing_pdf_files_pdfedit_ubuntu_feisty_p2">
+            tips on editing PDFs
+           </a>
+           with PDFedit, but what I wanted was just to know how to identify it as my default printer.  There wasn't an option of that nature within PDFedit, as far as I could see, so I concluded it was not a PDF printer per se.
+
+Thanks to
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntu-tutorials.com/2008/07/03/printi-directly-to-pdf-in-ubuntu-804/">
+            a tip
+           </a>
+           , I found some of what I was looking for at System &gt; Administration &gt; Printing.  It looked like I could specify my default printer, and could also specify a PDF printer, at that location.  It was presently set up to use CUPS as its PDF printer.  I didn't like CUPS because it didn't let me name the file before saving; or maybe that wasn't a problem with the printer itself, but with Ubuntu.  I found instructions on
+           <a href="https://web.archive.org/web/20151121004408/http://tombuntu.com/index.php/2008/03/26/change-the-pdf-printer-output-directory/">
+            changing the location
+           </a>
+           to which PDFs were automatically saved, but that wasn't a problem for me; I had somehow already taken care of that.  It was suggested that you could
+           <a href="https://web.archive.org/web/20151121004408/http://forums.majorgeeks.com/archive/index.php?t-115845.html">
+            use an OpenOffice program
+           </a>
+           for this purpose, so I opened OO Writer; but apparently they were just talking about OO's built-in PDF printer for files developed in that application.  It didn't look like the OO applications would help me print webpages.  After a half-hour of searching, I
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?p=5566156#post5566156">
+            posted a question
+           </a>
+           on it.
+
+Speaking of posting questions, I was beginning to notice that there were
+           <a href="https://web.archive.org/web/20151121004408/http://communities.vmware.com/community/vmtn/desktop/workstation?view=discussions&amp;start=75">
+            a lot of unanswered questions
+           </a>
+           on the VMware Communities forum.  It was bad enough when companies stopped making free technical support available to all customers.  The last of that type may have been WordPerfect, back in the early 1990s, nearly put out of business by Microsoft.  But when the forums also failed to help people use the product -- in that case, you'd think, the company would be hurting itself by not at least assigning one employee to make sure that all questions got some sort of answer.  If VMware wanted people to keep spending $200 or more each on its software, it would seem logical that VMware would help people use that software effectively.
+
+I, myself, had two unanswered questions on the VMware forums at this point.  One had to do with using my printer.  That one had been out there for several days without a response, so I
+           <a href="https://web.archive.org/web/20151121004408/http://communities.vmware.com/thread/162014">
+            reposted it in simpler terms
+           </a>
+           ; but the simpler one was likewise going on two days, at this point, with no response.  The other had to do with getting VMware to recognize partitions automatically.  That one, too, had been
+           <a href="https://web.archive.org/web/20151121004408/http://communities.vmware.com/message/1017167#1017167">
+            sitting fallow
+           </a>
+           for a couple of days at this point.  I decided to try reposting them both on the Ubuntu forums.  Even though they had to do with VMware, I thought maybe someone out there in the wider Ubuntu world would have ideas on them.
+Then there was the question of relocating the virtual machines onto a different drive, in order to achieve higher performance from VMware. The Workstation User's Manual (p. 192) said, in essence, that you close and power off the virtual machine and copy its files to the new location.
+
+I got back an answer, of sorts, on the question of naming a PDF file at the time of printing it.  Basically, it sounded like
+           <a href="https://web.archive.org/web/20151121004408/https://bugs.launchpad.net/ubuntu/+source/cups-pdf/+bug/158406">
+            it couldn't or wouldn't be done
+           </a>
+           in CUPS-PDF.  Further Q&amp;A in
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?p=5567745#post5567745">
+            that discussion thread
+           </a>
+           suggested a workable alternative, which I summarized thus:
+           <blockquote>
+            To name the PDF you are printing in Firefox 2.x within Ubuntu, use File &gt; Print &gt; Printer Name &gt; PostScript/default and set its Properties &gt; Print Command as "ps2pdf - &gt; /folder/filename.pdf" where "folder" is the path to the folder in which you want to save the file. Example: ps2pdf - &gt; /media/DATA/Current/NewPDF.pdf. Then click Print. If you use this twice in a row without changing the name of NewPDF.pdf, the latest one will overwrite the previous one. The resulting PDF file contains searchable text, just like the PDFs produced by CUPS-PDF.
+           </blockquote>
+           I asked whether there was a way to set PostScript/default as the default, but there was no answer to that.  I asked whether there was a way to generate the PDF filename automatically, so as to save a step or two.  The suggestion was to use filename-%d.pdf as the variable file name, but that just produced a file named filename-%d.pdf.
+
+The question on using my printer, when reposted in the Ubuntu forum, got
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?p=5566736#post5566736">
+            an immediate response
+           </a>
+           .  The respondent didn't have any advice on my particular printer; but s/he did seem to have had similar problems with another printer, and also said that USB ports can be problematic in VMware Workstation.  This addressed a new problem that had emerged, namely, that the USB devices I had configured in
+           <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-settling-in.html">
+            a virtual machine called WXSOccnl
+           </a>
+           (short for WinXP, Small (i.e., 512K) memory allocation, Occasional use) were not getting a connection when I plugged them into the mini-USB cable.  I was having this problem with two devices:  my Palm PDA and my digital voice recorder.  I had already rebooted the secondary computer so that I could back up the Palm somewhere.  So now it appeared that I would have to reboot one computer or the other into WinXP to update or download from those USB devices.  (Both computers were 64-bit Ubuntu and Windows XP dual-boot systems.)  Given the need to scan and print, it looked like I would be running the secondary computer in WinXP most of the time for these purposes.  Then I was either going to have to run a sneakernet between the computers (i.e., use flash drives to move files back and forth) or figure out how to set up a network between an Ubuntu system and a WinXP system.
+
+But it occurred to me that there might be another way.  I closed down all but one of the virtual machines I had running at the moment in VMware.  I thought I would try plugging in the devices again when there was only one machine running.  I recalled that one of the machines had recognized the Palm when I had plugged it in earlier, but I had closed down that hardware recognition process because the machine recognizing the Palm wasn't the WXSOccnl machine I intended to use with these devices.  So now I thought I'd try individual machines, with just one running, and see how that worked.  Unfortunately, Windows XP inside the WXSOccnl machine did not want to turn off; and when I finally just clicked VMware's Power Off button for that machine, the whole VMware operation shut down, closing all of my open virtual machines at once.  I restarted VMware, running just the WXMUpdated machine.  I plugged in the digital voice recorder, and that worked.  I tried the same thing with the WXSOccnl machine and the Palm PDA, but that didn't work.  But the digital voice recorder connected OK with that machine.  So there was a way to get one of them to work with VMware, at least.
+
+On
+           <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-settling-in.html">
+            the question of getting VMware Workstation to recognize the drives automatically
+           </a>
+           (instead of making me go through the VMware process of adding them and then the WinXP process of mapping them), the need seemed to disappear.  After a while, it seemed like VMware's memory was improving on this point.  I never did get a response to the question in
+           <a href="https://web.archive.org/web/20151121004408/http://communities.vmware.com/message/1017167#1017167">
+            the VMware forum
+           </a>
+           where I first posted the question.  In
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?t=886573">
+            the Ubuntu forum
+           </a>
+           , however, I got this:
+           <blockquote>
+            Your /etc/fstab line is going to want to look more like:
+
+/dev/sdd5 /media/OFFSITE ntfs-3g defaults 0 0
+
+Here's some more information about the /etc/fstab file for you:
+            <a href="https://web.archive.org/web/20151121004408/http://www.tuxfiles.org/linuxhelp/fstab.html">
+             http://www.tuxfiles.org/linuxhelp/fstab.html
+            </a>
+           </blockquote>
+           I gathered, from that suggested link, that the contents of fstab would vary according to the number of partitions I would have on each hard drive.  That question was not entirely settled yet.  Since VMware seemed to be improving in this matter of remembering my partitions, I decided to leave that matter alone for the moment.
+
+At this point, I decided to test VMware Workstation 6 for its ability to handle an actual working scenario in which I might find myself.  In
+           <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-settling-in.html">
+            the WXMUpdated virtual machine
+           </a>
+           , I opened 37 PDFs in Adobe Acrobat and also opened a Microsoft Word document in which I hoped to cite, draw upon, or summarize those 37 PDFs.  When I tried to save the Word doc under a different name, I got an error dialog that said, "The disk is full or too many files are open."  When I retried, the error message was this:
+           <blockquote>
+            The save failed due to out of memory or disk space.
+           </blockquote>
+           It wasn't referring to the hard drive partition where the Word doc was saved; that partition still had many GB free.  I tried saving the Word doc on a different hard drive partition, and still got the error message, so that seemed to rule out that possibility.  It also didn't seem to be a RAM issue; FreeRAM XP Pro reported more than 500MB available.  And yet, neither did it seem to be a matter of running out of space on the virtual drive C where these programs were running, there inside the VM:  drive C had nearly 3GB free.  It looked like
+           <a href="https://web.archive.org/web/20151121004408/http://www.google.com/search?q=%22save+failed+due+to+out+of+memory%22+vmware+workstation&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS286US286">
+            several other people
+           </a>
+           had had this same problem, and my quick skim of their discussions suggested that (a) this was a problem related to Microsoft Office (or perhaps just Word) 2003 and (b) they didn't seem to have hit upon any clear solutions.  I closed the 37 PDFs and tried to save the Word doc under a different name again.  This time I was back to the "disk is full or too many files are open" error.  I killed Word and, with no other open applications in that VM, I opened Word and that document again and tried once again to save it to another filename in the same folder.  Once again, I got the "save failed" error.  I powered down that virtual machine, powered it back on, and again opened and tried saving the Word doc under a different name.  "Save failed" again.  I ran an
+           <a href="https://web.archive.org/web/20151121004408/http://www.google.com/search?q=%22advanced+windowscare%22&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS286US286">
+            Advanced WindowsCare
+           </a>
+           scan of the registry, told it to fix registry errors, reopened Word, and tried again.  Same error.  I made a trivial change to the Word doc and tried saving it under its original name instead of to a different name.  "Save failed" again.  I created a new document in Word, but that wouldn't save either.  I exited Word, opened Excel, and was able to create and save a new spreadsheet.  So it wasn't a pan-Office problem; it just seemed to be a Word issue within VMware.  I ran Control Panel &gt; Add or Remove Programs &gt; Microsoft Office Professional Edition 2003 &gt; Change &gt; Reinstall or Repair &gt; Detect and Repair errors.  After a while, it reported it was repaired successfully.  But that didn't solve the problem.  There in Add or Remove Programs, I made sure that "Show updates" was checked, and then I proceeded to remove the updates to Microsoft Office Professional Edition 2003, one at a time, reopening that file in Word and trying to save to a different filename after each removal.  (Some updates, notably Office 2003 Service Pack 3, could not be removed, and I did not try removing updates that were specifically for non-Word individual programs in Office, such as Outlook or Excel.)  That failed to solve the problem.  Next, I went back into Office Pro, there in Add or Remove Programs, and clicked Change &gt; Add or Remove Features and uninstalled InfoPath (which I hadn't meant to install in the first place) and also Word.  I rebooted Windows in the virtual machine, ran Advanced WindowsCare repeatedly until there were no more problems to repair, went back into Add or Remove Programs &gt; Microsoft Office Professional, reinstalled Word, and then tried again on the save operation.  It still failed.  I made a clone of my relatively basic WinXP WX1GB virtual machine.  For this basic Windows installation, FreeRAM reported about 780MB free, out of the 1GB allocated.  On that basic 1GB machine, I installed only Word (i.e., no other Office 2003 programs).  I did a custom installation with a bare minimum of features, and then repeated the open-and-save procedure.   The error message returned.
+
+I took another look at the webpages where people discussed this problem.  There was
+           <a href="https://web.archive.org/web/20151121004408/http://communities.vmware.com/message/647773#647773">
+            a fix involving MTU 1500
+           </a>
+           , but it didn't apply to me; mine was already set to 1500, and anyway, NAT connections were
+           <a href="https://web.archive.org/web/20151121004408/http://kb.vmware.com/selfservice/microsites/search.do?cmd=displayKC&amp;docType=kc&amp;externalId=1359&amp;sliceId=1&amp;docTypeID=DT_KB_1_1&amp;dialogID=5693365&amp;stateId=0%200%205689673">
+            not affected
+           </a>
+           .  Some of the posts referred to other posts that found a problem in the Ethernet card or onboard Ethernet circuitry, in which case the solution was to install a
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?p=2618121">
+            different Ethernet card
+           </a>
+           ; but this sounded a bit remote from my case, so I shelved it for the time being.  Others referred to
+           <a href="https://web.archive.org/web/20151121004408/http://en.wikipedia.org/wiki/Samba_software">
+            SAMBA
+           </a>
+           , which was apparently a program that ran on Linux and was able to interface with Windows.
+           <a href="https://web.archive.org/web/20151121004408/http://fixunix.com/samba/489288-samba-xp-sp3-posix-locking.html">
+            Dirk Kastens said
+           </a>
+           that the problem arose with Windows XP Service Pack 3 (as distinct from Office SP3, which I had tried running without), and that the problem in his case could be resolved either by removing WinXP SP3 or by setting the SAMBA option "posix locking = No."  The
+           <a href="https://web.archive.org/web/20151121004408/http://www.faqs.org/docs/samba/ch08.html">
+            Using SAMBA book
+           </a>
+           said it should never be necessary to set posix locking to No, but I had seen that others had noted that and had done it anyway. But where was that option?  After an arduous search, I gathered that the "posix locking" option was in the smb.conf file.  A search of my filesystem yielded four smb.conf files, and none contained a posix entry.  I was stumped.  I
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?p=5584007#post5584007">
+            posted a question
+           </a>
+           about that.  Then I turned to the alternative of removing WinXP's SP3 from my test clone VM.  It did not appear in my Add or Remove Programs.  There were some indications that it might not be possible to remove it without doing a rescue from the WinXP CD.  Then I realized it didn't appear because I had not installed it, not on the minimal 1GB machine from which I had made this test clone.  So this was not a solution for me.
+
+Another possibility was to view this as the moment when I would really bail out of Microsoft Word, except for rare needs, and rely instead on OpenOffice Writer.  A stumbling-block for me, in
+           <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search?q=openoffice+writer">
+            my previous looks
+           </a>
+           at OO Writer, had been that I relied on Word's AutoCorrect feature to speed up my typing and cut down on the keystrokes.  I could type some shorthand value (e.g., "tt") and it would expand to a longer form (i.e., "that").  I had accumulated several thousand of these shorthand entries over the years -- too many to add to OOWriter by hand.
+           <a href="https://web.archive.org/web/20151121004408/http://user.services.openoffice.org/en/forum/viewtopic.php?f=21&amp;t=7368&amp;sid=21907d2e06345ea2d39d77d52c50629a&amp;p=39587#p39587">
+            RMDemi prepared a macro
+           </a>
+           (called
+           <a href="https://web.archive.org/web/20151121004408/http://user.services.openoffice.org/en/forum/download/file.php?id=1799&amp;sid=0b3205b93905086beb2b23f3dddc6954">
+            autocorr v1.odt
+           </a>
+           ) to automate the procedure, but at this point that wasn't working.  So until some further development along those lines, it seemed like I needed to stay with Word, although it wasn't yet clear how I would do that.  A kludge solution would be to run each computer in a separate dual-boot:  Ubuntu with VMware running Acrobat and other programs on the primary computer, and WinXP with Word on the secondary computer, each with its own monitor.  This would largely prevent copying and pasting quotations, however, unless I wished to label them in a text file and copy them over by thumb drive or, someday perhaps, by network.  It would also complicate backup and would have other problems.  This was not my ideal solution.  Or was it?  If I couldn't print or scan from within Ubuntu (at least not until I bought a new computer), and if I was also going to need WinXP for connecting some of my USB devices, then keeping one machine booted up in native WinXP (i.e., not in a virtual machine) might be the best solution.  I didn't really need both of them to be in Ubuntu, after all.
+
+The evolving scenario, then, was this:  on the primary computer, set up a WinXP basic installation and use VMware Converter to convert it to a starter virtual machine.  Then go into the Ubuntu dual boot, fire up VMware Workstation, make clones of that starter VM, and add or subtract programs from each clone according to its specialized purpose.  Keep the primary computer running in Ubuntu except when there was some particular need to boot back into Windows.  (The reasons for doing this would include the security and stability of Ubuntu, the possibilities for doing multiple Windows tasks simultaneously in separate VMs, and the felt need to become more familiar with Ubuntu as a long-term replacement for Windows.)  Meanwhile, on the second computer, set up a dual-boot so that going into Ubuntu would be an option, but postpone the idea of running copies of those cloned VMs on the secondary computer using VMware Player.  Instead, mostly boot the secondary computer into WinXP, running Word and whatever other Windows programs weren't yet ready for prime time in Ubuntu.  Figure out how to set up a shared drive or other network arrangement to simplify moving files between the two machines.
+
+In a sense, this scenario would multiply the complexity of maintaining a home office computer.  Instead of one Windows machine that might occasionally crash and require a day or two of screwing around before I could get back to work, I would now have two computers, each running two operating systems, for a total of four discrete installations to install, adjust, maintain, and back up.  This complexity would also offer the reassuring redundancy of having fewer times when I was genuinely unable to go online, type a document, or otherwise work with my data.  Indeed, as I had repeatedly appreciated, I could do a complete operating system reinstallation or hardware transplant without affecting ongoing business on the other computer, and of course troubleshooting was often much simpler to the extent that the two machines used the same or similar hardware and software:  just try the same thing on the other machine and see what happened.  I had not been taking that last step in my VMware Workstation testing, in these recent posts, because I had only a trial version of Workstation running only on the primary machine, using the secondary one to type these notes and search for solutions to problems; but I had swapped off other items between the two computers often enough.  In net terms, as I became more familiar with the operating systems and software, the burden of setting up and running two dual-boot computers had not been nearly as much of a time-drain as this present effort of trying to figure out something new (e.g., VMware and, at the same time, Ubuntu) on either one of them.
+
+In that scenario, the next step was to network the two computers.  This seemed like an especially good idea after spending too much time trying to move files between them by thumb drive.  What I confirmed, in that process, was that (1) Ubuntu would not recognize my Lexar thumb drive, and apparently would not allow WinXP in the virtual machine to do so either, and (2) my Kingston thumb drive would work when plugged directly into both machines, but not when plugged into a USB hub connected to a computer.  I was also having problems using my external USB hard drive:  the primary computer would recognize it in Ubuntu, but the secondary computer would not recognize it when booted into WinXP.  So I could not use it very easily, either, to move files back and forth between machines.
+
+Before being sucked into into the quagmire of networking, though, there were other things that I wanted to take care of, some of which seemed likely to affect the networking struggle.  For one thing, if I was going to move my virtual machines to a different partition to improve performance (i.e., not having them on the same partition as the VMware and Ubuntu program files), that might be something I should take care of first, before trying to figure out which drives or partitions should be shared between the machines.
+
+I was just about to sink my teeth into the accursed stew of networking when I was interrupted by something else.  It goes by the general name of "reality."  Specifically, I started getting reminders from VMware Workstation.  I forget the exact wording, but it was something like, You have six -- no, five ... no, now it's four -- days left to register the product.  In other words, they actually expected me to pay for this at some point.
+
+Well, that heralded a lengthy spell of deep contemplation.  $189 for Workstation.  I didn't know if it would be licensed to run on both of my computers or just one, but that was OK; I could use Player on the other if I did indeed need it over there.  But in any case, it was getting to be time to decide what to do with this whole thing.
+
+I suspected that, if I didn't have VMware Workstation, I wouldn't have Ubuntu.  I didn't have patience to experiment with any other virtualizing software at this point, having spent a lot of time doing that
+           <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/2008/07/virtualization-in-ubuntu-contd.html">
+            previously
+           </a>
+           .  Workstation 6.0 was the best there was, for my purposes, at this time.  It ran successfully but not ideally on Ubuntu.  Its successes enabled me to avoid booting into native Windows.  This meant that I believed I enjoyed superior data security.  I also appreciated being able to compartmentalize different Windows operations into different virtual machines, which meant that the crash of one rarely affected the others and that no one VM was required to remain stable while I loaded all of my needed Windows programs onto it.  The ability to make and revise clones was much faster and more adaptable than my previous method of making drive images (using Drive Image 2002) and restoring an old one when the current installation turned flaky.  I also liked being able to switch back and forth between VMware, with its multiple Windows installations running simultaneously, and Ubuntu, where I was able to do a few basic things and was learning how to do more.  This way, even if I couldn't get Windows or VMware to run at all, I could still use Ubuntu and OpenOffice software to manipulate files, edit Microsoft Word documents, run Excel spreadsheets, etc.  But I still definitely did need to run Windows programs on the primary computer, and so if it was just a dual-boot system without VMware, it was a pretty sure bet that I would mostly be booted into Windows, just like I had done during the year that had passed since my first experimentation with Ubuntu.  I didn't want that to happen again.  I did want to move further away from a sole reliance on Windows.  I could have tried to set up my virtual machines as best as I could and just use Player to run them, postponing the day when I would actually have to buy Workstation.  But my experience thus far suggested that I would be doing a lot of tinkering before I had it all together, and I did want to be able to do that tinkering.  So a Workstation purchase seemed essential.
+
+At the same time, there was another reality that I had to deal with.  I didn't want to spend the next year screwing around with virtual machines.  I needed something that would work.  I was concerned that VMware didn't seem to be moving very quickly to perfect its product.  And now there were these freeware alternatives.  I had seen opinions running both ways.  My vague sense was that people who were doing enterprise-level work were more inclined toward VMware, while those who were using virtualization more casually were willing to accept what they could get from the freeware alternatives.  For the VMware Corporation, $189 seems to have been considered entry-level.  I wasn't super-impressed by their product, and I wasn't impressed at all by their tech support or their forums, but the fact remained that at least it was working for me and it was enabling me to make more forward progress, in the direction I wanted to go, than any other product had been able to do so far.
+
+So I was going to buy VMware Workstation and use it for the next year or two.  At some point, my knowledge of Ubuntu and virtualization would catch up with my better knowledge of Windows, and maybe at that point I'd use the VMs developed in VMware to transition over to some other virtualization software, or maybe it would then be possible to base myself almost entirely in Ubuntu (such that a simple dual-boot system would be adequate).
+
+While these days were going by, my replacement processor had arrived, and I had discovered that this processor, which I had so fervently sought, was not supported by my motherboard.  So I had to sell it on eBay.  It was a simple error, and it cost me a bit, but it was done.  I put a different processor on my wish list at Newegg and turned back to the process of completing my VMware setup.  It had begun to seem likely that I would start over again at some point, partly because things were not always working right and partly to take advantage of my current level of knowledge while I still remembered all these details.  But before doing that, I thought I might as well work through the remaining to-do items for a complete system.
+
+At this time, I found myself waiting for the primary machine before I could proceed.  What it was doing, at the moment, was a complete backup from my data drive to my external drive.  I had already done this a couple of times, but each time there had been problems.  One problem was that Second Copy 2000, the Windows backup software I was using, did not seem to be functioning as cleanly in VMware as it had done in native WinXP.  I think part of the problem was that VMware seemed to accelerate GIF files, or otherwise mess them up, so that the Second Copy icon in my system tray forever told me that it was still doing a backup.  VMware also seemed to accelerate the system clock, so that I could never tell when a periodic backup was supposed to be running, or was actually running.  At the same time, I made the mildly interesting discovery that WinXP was able to read the contents of a Linux ext3 drive, when that version of Windows was running in a VMware virtual machine on Ubuntu; but WinXP continued to be unable to read that same drive when I dual-booted into native mode.  I did want my native Windows installations to be able to read the external drive, so I ultimately wiped off the ext3 partition and recreated the NTFS partition I had originally had on that external drive.  So now I was once again backing up stuff from the primary computer to the external drive.
+
+About this time, my copy of Acronis True Image 11 Home arrived in the mail.  I realized I couldn't yet use it to try backing up my Linux program partition, because I had all those virtual machines on there.  It was up to about 80GB.  But I went ahead and tried it with Windows, backing up my WinXP programs partition to another partition on the same machine.  I set it to ignore pagefile.sys.  It wouldn't back up anything onto a Linux ext3 partition, so I told it to back up to a spare NTFS partition.  It finished pretty quickly and validated quickly too.  Then I booted into Ubuntu.
+
+I wanted to back up my Linux installation too, so I finally, belatedly, pursued the question of how to move the VMware virtual machines to another partition.  The Workstation User's Manual (p. 190) basically said that you just move the folders containing the VM files.  The specific instructions (p. 192) had me power down the virtual machines; close down Workstation; copy the relevant files to the new location; fire up Workstation; try browsing to the new location; and if the VM worked, delete the files from the old location.  Now I just had to remember or figure out where VMware installed the virtual machine files.  Pages 110-112 of the manual said that the files comprising a virtual machine included those with these extensions:  .log, .nvram, .vmdk, .vmem, .vmsd, .vmsn, .vmss, .vmtm, .vmx, and .vmxf.  Some of these were optional; for example, .vmxf had to do with virtual machines in a team.  I wasn't using teams and hadn't tried to understand what teams were, so I didn't expect to see one of those.  I searched my Ubuntu filesystem for .vmdk and found maybe 15 files with that extension.  Their Properties said they were all in different folders under /home/ray/vmware.  That's where I had put all of the virtual machines, so it made sense.  I was going to copy all of those virtual machine folders to the separate VMS ext3 partition I had made for the virtual machines, but for some reason I couldn't create a folder on that partition.  I right-clicked it in File Browser and saw that the "Create Folder" option was grayed out.  The volume was mounted, or at least the option presented for that was "Unmount [not Mount] volume."  I tried System &gt; Administration &gt; Partition Editor.  GParted found the VMS partition, but the "Check" option was grayed out, as for other partitions.  Evidently that would have to be done by rebooting from the GParted CD.  Before trying that, I went into Terminal and typed "sudo -i" and then "mkdir /media/VMS/VMware VMs".  That created it.  So evidently the problem was that I had been trying to create the folder without root permission.  The created folder was actually just named VMware, though, not VMware VMs.  I tried again with quotation marks around the two words, and it worked:  I had a folder called "VMware VMs."  Now I tried copying those virtual machine folders (there were, I think, 14 .vmdk files in seven virtual machine folders), but "Paste Into Folder" was grayed out.  Was I going to have to do this on the command line?  I tried copying just one folder; same thing.
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?t=792109&amp;page=3">
+            BMCase advised
+           </a>
+           typing "ls -l" within that folder to see who had permissions to it, so I went to the /home/ray/vmware folder in Terminal and did that.  But that seemed to say I had full permission:  it said "drwxr-xr-x" for each VMware subfolder.  I tried dragging and dropping between two File Browser sessions, instead of right-click copying and pasting, and that gave me this error message:
+           <blockquote>
+            Error while copying.
+
+The folder "WX1GB" cannot be copied because you do not have permissions to create it in the destination.
+           </blockquote>
+           So there it was.  I had been looking at source rather than destination permissions.  I went back to Terminal, typed "cd /media/VMS" and then "ls -l," and saw that root did indeed own VMware VMs.  Now, how to change ownership?  Looking at a few webpages said that chown was the command I wanted.  I typed "info chown" in Terminal, but that gave me an explanation I wasn't really very confident I understood.  A search of webpages led to
+           <a href="https://web.archive.org/web/20151121004408/http://www.linuxquestions.org/questions/linux-newbie-8/how-to-chown-entire-folders-and-files-and-subs-628058/">
+            a post by BigRigDriver
+           </a>
+           , who said to use "chown -R owner:group /dirname" -- but what was "group"?  I found
+           <a href="https://web.archive.org/web/20151121004408/https://lists.ubuntu.com/archives/ubuntu-users/2005-August/045237.html">
+            an example
+           </a>
+           that someone else considered quite helpful, but it still was a bit shaky for me.  So instead I used root to delete the "VMware VMs" folder, then typed "exit" to get out of root.  This gave me the message, "There are stopped jobs."  It seems that happened because I used Ctrl-Z to try to close a man(ual) page, when I think I should have used Ctrl-C or maybe just q instead.
+           <a href="https://web.archive.org/web/20151121004408/http://www.linuxquestions.org/questions/debian-26/stopped-jobs-294850/">
+            MYates indicated
+           </a>
+           that I could just type logout "again" (which evidently I should have been using instead of "exit") and that would do it, and it did.  So now I recreated the VMware VMs folder as just myself.  Unfortunately, I did this in the wrong folder; I had forgotten that Terminal would remember which folder you were in when you typed sudo and became root.  So now I had to rmdir the unwanted VMware VMs folder from wherever I had been; navigate myself over to /media/VMS; and create it again there.  But this was where I had started from; I got "Permission denied."  Why was I having such a hard time creating a folder on this VMs partition?  Up to now, I'd been creating folders here and there, wherever.  I was spending a half-hour to do something I could do in seconds otherwise, in Windows and also, I thought, in Ubuntu.  I tried again with "info chown" and paged down to the examples section.  They gave the example of "chown -hR root /u" to "Change the owner of /u and subfiles to 'root'"; I modified that to "chown -hR ray /media/VMS" and tried that.  It didn't work; I had to log in as root (with "sudo -i") first, and then do it.  Evidently I was again in the wrong place, because now the prompt was showing me as having two folders, Desktop and VMs, both owned by root, and I had no idea what Desktop we were talking about.  It sure wasn't the one in my /home/ray folder, because there was no VMs folder accompanying it.  There didn't seem to be anything in the VMs folder, so I deleted it.  I logged out as root, navigated as ray to /media/VMS, typed mkdir "VMware VMs," and now it was there in File Browser.  I tried again to copy those VMware virtual machine folders to /media/VMS/VMware VMs, and this time I had the paste option and it worked.
+
+Incidentally, while I was doing these things, I noticed that the hard drive light on the external drive was nearly constantly on.  At this point, I was backing up the secondary computer by doing a simple file copy in Ubuntu.  The drive had not been keeping itself nearly so busy when I had been backing up the data on the primary computer using Windows Explorer.  I wasn't sure why that would be, but without actually having timed anything, it did seem that Ubuntu was doing a faster copy than Windows had done, or at least was keeping the target drive much busier.
+
+While those folders were copying, I took a look in one of them.  I didn't do a precise itemization of the files that the manual had said should be in there, but it looked about right -- a couple of log files, an .nvram file, .vmx, vmxf, and so forth.  Once the virtual machine folders were copied, I went back into Workstation and did what the manual said:  File &gt; Open and browse to the .vmx file in the new location.  There was one in each virtual machine folder.  I opened the first one, for the machine I had called WX1GB.  I got a dialog that said this:
+           <blockquote>
+            Question
+
+This virtual machine may have been moved or copied.
+
+In order to configure certain management and networking features VMware Workstation needs to know which.
+
+Did you move this virtual machine, or did you copy it?
+
+If you don't know, answer "I copied it".
+           </blockquote>
+           Well, I wanted it to be treated as a move, not a copy.  So I said "I moved it."  It proceeded to open Windows with no apparent problems.  I went to /home/ray/vmware and deleted the original folder, closed down the virtual machine, and opened another one.  I tried reopening WX1GB and got an error message:
+           <blockquote>
+            Error opening virtual machine "/home/ray/vmware/WX1GB/WX1GB.vmx": The configuration file for this virtual machine cannot be found.  It might be missing from the virtual machine directory, or the path specified to access this virtual machine might be incorrect.
+           </blockquote>
+           I right-clicked on each virtual machine listed in Workstation's list of favorites, there in the Sidebar, and selected "Remove from Favorites."  For each moved VM, I selected Workstation's File &gt; Open option, navigated to the new location, and opened the .vmx file.  I then powered up each virtual machine, went through the same "moved or copied" dialog (above), verified that Windows booted OK within it, and powered it down.  So now it seemed that I had successfully moved the virtual machines to a larger folder on another drive, which would give me more room to work and might also improve performance.  I deleted the VM files from the old location, powered up a couple of them once more just to make sure that they were happily relocated, and considered this job done.
+
+So how about backing up my Ubuntu installation and these VMware files?  The files seemed easy enough, now that I had copied them once and had seen that they would still work; I could just copy them to the backup drive.  But what about the Ubuntu system files?  I
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?p=5604686#post5604686">
+            posted a question
+           </a>
+           on whether it would be possible to just copy them over to another partition.  One person recommended using rsync to back up the home directory; another pointed me toward the thread that begins with
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?t=35087">
+            the Heliode guide
+           </a>
+           ,  That thread was 65 pages long.  I did not read the whole thing.  The Heliode guide itself sounded somewhat tentative; there were
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showpost.php?p=178280&amp;postcount=30">
+            some posts
+           </a>
+           that made it sound like the author was still working it out.  I asked the rsync poster why not use rsync to back up everything, not just /home.  I had to deal with something else for a couple of days while this was developing, and somewhere in the process I used Acronis True Image 11 Home to back up the Ubuntu drive.  It seemed to work, though I didn't try restoring the system from the backup to make sure.
+
+Although VMware Workstation had started up OK when I tried using it with the moved virtual machines, for some reason it didn't when I tried again a couple of days later.  I got an error message -- I did not record its exact wording, but the basic idea was that Workstation could not find my virtual machines.  I went into Edit &gt; Preferences &gt; Workspace and changed the default location, which I had forgotten to do.  While I was there, I also noticed the "Enable all shared folders by default" option, which apparently I had not previously selected.  I selected that too.  Now when I tried File &gt; Open, it saw my virtual machines.  I opened one of them and tried setting up all of the shared drives in VMware, and then mapping all those drives in Windows Explorer, and then shutting down everything and rebooting.  Now, when I tried opening that virtual machine by clicking on its Favorites entry in Workstation, I got an error message:  "Error opening virtual machine
+           <filename>
+            :  The configuration file for this virtual machine cannot be found."  I used File &gt; Open and got this:
+           </filename>
+           <blockquote>
+            The folder contents could not be displayed
+
+Error stating file '/media/VMS/VMware VMs': No such file or directory.
+           </blockquote>
+           I assumed they meant, "Error STARTING file," but that's not what the error message said.  Anyway, then there was a dialog box that allowed me to navigate to the folder after all.  I powered up the virtual machine and no, once again it did not remember my hard drives when I tried to navigate to them in Windows Explorer.  Exceptions:  It did remember the ones that I had already mounted in Ubuntu (by navigating to them in File Browser) since rebooting the system.  So that seemed to be the answer:  I needed to set up Ubuntu so that it would mount each drive before I started Workstation.  This took me back to the fstab line that I had mentioned earlier in this post:
+           <blockquote>
+            /dev/sdd5 /media/OFFSITE ntfs-3g defaults 0 0
+           </blockquote>
+           I hadn't been ready to do anything with it for other partitions at that point, but now it seemed like my set of partitions was becoming more finalized.  I looked at
+           <a href="https://web.archive.org/web/20151121004408/http://www.tuxfiles.org/linuxhelp/fstab.html">
+            the article on fstab
+           </a>
+           that had been pointed out to me.  Then I went into Terminal, typed "sudo -i" to log in as root, and then typed "gedit /etc/fstab."  I wasn't sure what to type next, so I opened another Terminal session and typed "df -h" to see what my partitions looked like.  The problem here was that I had not yet visited all of my partitions since rebooting, so I opened a session of File Browser, clicked on Computer, and then, one by one, opened each of the hard drive partitions shown there.  Then back to Terminal and another whack at "df -h."  This time the list was more complete.  Using the fstab article, and copying from my previous entry that had enabled my external drive ("mount /dev/sdd5 /media/OFFSITE ntfs-3g force 0 0"), I made entries for each partition that looked something like this:
+
+mount /dev/sdc5  /media/CURRENT  ntfs-3g  auto,user,exec,rw,async  0  0
+
+I chose ntfs-3g rather than just ntfs because that's what they had told me to use for the external drive, and it had been working well.  I gathered that ntfs-3g might be
+           <a href="https://web.archive.org/web/20151121004408/http://www.ntfs-3g.org/">
+            a superior driver
+           </a>
+           for purposes of working with Windows NTFS partitions.  I saved fstab and rebooted.  My effort failed:  none of the new partitions were mounted.  I once again got the "no such file or directory" error for VMS because, as I now understood, it was not yet mounted.  Since the mount command failed for all partitions, I figured the problem (or at least one problem) must be common to all of them.  I started by changing the "ntfs-3g" entries on each line of fstab to be just plain old ntfs.  I rebooted, or at least tried to.  Ubuntu stalled at a command line that said "Running local boot scripts (/etc/rc.local)   [OK]."  I let it sit for a while.  Nothing more happened.  I guessed that my change must be preventing the system from booting.  Now, how to fix this?  I hit Ctrl-C and Ctrl-Break, but that didn't seem to do anything.  Then I hit Ctrl-Home or just plain Home or something -- not sure -- and the screen cleared.  But it was still dead.  I put in the Ubuntu CD and punched the reset button on the computer.  The CD booted.  I selected the first option, offering to let me try Ubuntu without any change to my computer.  It booted into Ubuntu.  File Browser seemed to be giving me the CD's filesystem under its File System entry; to get my own hard drive's filesystem I selected the only drive that didn't have a name.  Bingo!  I found /etc/fstab.  But I didn't have permissions to change it, and I couldn't figure out how to navigate to it using Terminal.  I went through File Browser's File System &gt; Media &gt; disk &gt; etc, and that got me there, so in Terminal I tried "cd /media/disk/etc" and then "gedit fstab."  That enabled me to change the "ntfs" entries back to "ntfs-3g."  I rebooted the hard drive and it booted OK.  I looked through
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showthread.php?t=776679">
+            a discussion thread
+           </a>
+           whose
+           <a href="https://web.archive.org/web/20151121004408/http://ubuntuforums.org/showpost.php?p=4885718&amp;postcount=19">
+            best advice
+           </a>
+           seemed to be to use Ubuntu's System &gt; Administration &gt; Synaptic Package Manager to install ntfs-config, then go into File Browser and right-click to unmount all NTFS drives, and then use Ubuntu's Applications &gt; System Tools &gt; NTFS Configuration Tool and reboot.  But I didn't get quite all the way through that advice:  I got this error message:  "Mounting /media/COLDSTORAGE failed.  [mntent]: line 7 in /etc/fstab is bad" and likewise for lines 8 and onwards.  So, oops, I had to remove my bad lines from fstab first.  I did that and then restartd NTFS Configuration Tool.  But now it gave me a different dialog:
+           <blockquote>
+            NTFS write support configuration tool
+
+__ Enable write support for internal device
+__ Enable write support for external device
+           </blockquote>
+           I wasn't having any problem with the external drive at this point, so I checked only the internal device option.  Then I rebooted.  Now File Browser was seeing most, if not all, partitions in its left pane.  But I still got the "The folder contents could not be displayed" error when I tried opening a virtual machine in VMware Workstation.  I wondered if the problem was that I had used a two-word folder name.  Then I realized that, no, the problem was probably that the VMS drive was not an NTFS drive and was therefore not being automatically mounted by ntfs-config.  Following
+           <a href="https://web.archive.org/web/20151121004408/http://ge.ubuntuforums.com/showpost.php?s=4aa0e12973c892e348c453f1514452f5&amp;p=5034002&amp;postcount=4">
+            hyperair's advice
+           </a>
+           , I ran "df -h" to review where VMS was (it was at /dev/sda3); then I typed "mount | grep /dev/sda3"; that gave me some kind of mounting information about my VMS partition (it said "/dev/sda3 on /media/MVS type ext3 (rw,nosuid,nodev,uhelper=hal"); and I used that information to type the supposedly correct line in my fstab:  "/dev/sda3 /media/VMS ext3 rw,nosuid,nodev,uhelper=hal 0 0."  In the process, I saw that ntfs-config had added lines to fstab for each of my NTFS partitions.  For instance, instead of what I had written above for the CURRENT partition, ntfs-config had added this:
+
+/dev/sdc5 /media/CURRENT ntfs-3g defaults,locale=en_US.UTF-8 0 0
+
+I really had no idea what that was all about, and was glad to have discovered ntfs-config.  Anyway, when I rebooted this time, the system stopped with a black screen.  I seemed to be at the command line, without a prompt.  I typed "logout" and hit Enter.  Nothing happened.  I punched the computer's reset button and rebooted with the Ubuntu CD.  I went through the same repair routine as before.  This time, I commented out the line I had just entered for VMS, and replaced it with "/dev/sda3 /media/VMS ext3 defaults 0 0," saved, and rebooted successfully from the hard drive.  It looked like all partitions were visible in File Browser's left pane.  I started VMware Workstation and got no error message.  I started the virtual machine whose drives I had mapped, and got no error messages when attempting to access any of them.  This problem appeared to be solved.
+
+This post represented maybe two weeks' worth of tinkering with VMware Workstation 6.  I felt I was now getting closer to the end of the process.  But there were still some additional fixes and experiments needing to be done.  I began to log my efforts in those regards in
+           <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-more-fixes.html">
+            a separate post
+           </a>
+           .
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151121004408/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=2971946036219587179&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search/label/linux" rel="tag">
+             linux
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search/label/pdf" rel="tag">
+             pdf
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search/label/virtual%20machines" rel="tag">
+             virtual machines
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search/label/vmware%20workstation%206" rel="tag">
+             vmware workstation 6
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search/label/windows%20xp" rel="tag">
+             windows xp
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/search/label/winxp" rel="tag">
+             winxp
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151121004408/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=2971946036219587179" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151121004408/http://raywoodcockslatest.blogspot.com/feeds/2971946036219587179/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 00:44:08 Nov 21, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:08:33 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.002
+  exclusion.robots: 0.129
+  exclusion.robots.policy: 0.115
+  esindex: 0.013
+  cdx.remote: 8.538
+  LoadShardBlock: 305.257 (3)
+  PetaboxLoader3.datanode: 102.772 (4)
+  PetaboxLoader3.resolve: 343.405 (3)
+  load_resource: 224.251
+-->

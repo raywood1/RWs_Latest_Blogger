@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190812230327cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190812230327im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-trying-again-on.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/feeds/8866560382044687873/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-trying-again-on.html" property="og:url"/>
+  <meta content="Ubuntu and VMware:  Miscellaneous Fixes" property="og:title"/>
+  <meta content="This is the latest installment in a series of long posts  that log my successes and failures in the effort to replace Windows XP with Ubuntu..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu and VMware:  Miscellaneous Fixes
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20190812230327im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20190812230327im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20190812230327im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20190812230327im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20190812230327im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20190812230327im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20190812230327im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20190812230327im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20190812230327im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20190812230327im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20190812230327im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20190812230327im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20190812230327im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20190812230327im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20190812230327im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20190812230327im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20190812230327im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20190812230327im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190812230327cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=58de56b2-f359-4b1f-8488-48c3b6efa18c" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190812230327cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=58de56b2-f359-4b1f-8488-48c3b6efa18c" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Saturday, September 13, 2008
+        </h2>
+        <div class="post">
+         <a name="8866560382044687873">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-trying-again-on.html">
+           Ubuntu and VMware:  Miscellaneous Fixes
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           This is the latest installment in
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search?q=ubuntu">
+            a series of long posts
+           </a>
+           that log my successes and failures in the effort to replace Windows XP with Ubuntu.  Starting with several
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008_07_01_archive.html">
+            posts in July 2008
+           </a>
+           , and continuing for the better part of two months thereafter, I had developed what seemed to be, for me, the best solution.  Introductions to those various posts provide more details of the two computers on which I was making this effort, as well as other aspects of the situation.  Briefly, I had a primary computer and a secondary computer.  Both were dual-booting Windows XP and 64-bit Ubuntu Hardy Heron 8.04.  I was using VMware Workstation 6 to run Windows programs, when I could not find an acceptable Ubuntu alternative; and my further fallback was to run Windows programs in native WinXP by dual-booting the computers (preferably, whenever possible, the secondary computer).
+
+I had now received and installed an EVGA 256-P2-N751-TR GeForce 8600 GT 256MB video card to replace my previous EVGA 256-P2-N624-AR GeForce 7900 GS card.  Both, no doubt, were fine cards, but I had invested
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/reinstalling-ubuntu.html">
+            a huge amount of time
+           </a>
+           trying and failing to get it to work properly with my Ubuntu installation.  I had even considered dialing back to the 32-bit version of Ubuntu but, for better or worse, had already spent $170 on the 64-bit version of VMware Workstation.  So there was some motivation to try to make it work this way, if possible -- hoping, of course, that 64-bit was the future anyway.
+
+This saga within a saga had begun with
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/07/war-and-peace-creating-ubuntu-system.html">
+            my attempt
+           </a>
+           to get multiple monitors working properly.  I was not sure where to begin, at this point, but the first thing I looked at was Ubuntu's System &gt; Administration &gt; Hardware Drivers, there on the primary computer.  I saw, "No proprietary drivers are in use on this system," followed by a list consisting of just one item:  "NVIDIA accelerated graphics driver (latest cards)" and an indication that that driver was "Not in use."  So, OK, what should I do about that?  The truly wise thing, I decided, would be, first of all, to reboot the computer and make a backup of Ubuntu installation as it now stood.  The backup tool I had chosen for this purpose was Acronis True Image 11 Home, so I stuck in that CD and did the deed.  Acronis had
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/vmware-in-ubuntu-additional-fixes-and.html">
+            succeeded
+           </a>
+           for me in one recent use and
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-two-months-on.html">
+            failed
+           </a>
+           in another, so I was not sure I wanted to rely solely on it.  But then I thought maybe I hadn't chosen the disk image option for the second one, so I let it slide and moved on with the NVIDIA project.
+
+I decided that the driver listed in Hardware Drivers might not be the right one for the new video card.  But as I was reading the endless gyrations that I had gone through in
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/07/war-and-peace-creating-ubuntu-system.html">
+            one of my first stabs
+           </a>
+           at this problem, I realized that I wasn't exactly sure when I had reinstalled Ubuntu or what screwed-up situation might be left over from that.  I decided the best policy might just be the most straightforward one, so I went into Hardware Drivers and clicked to enable the latest NVIDIA driver.  It needed a computer restart, so we did that.  On reboot, I went back into Hardware Drivers and now it said the drivers were in use.  Encouraged, I tried running Second Life again.  And, you know, it worked.  So changing video cards may have been the answer to the whole graphics hassle.  Rebooting also seemed to install the Compiz feature described in the previous post; I was now able to rotate between Ubuntu desktops by rolling the mouse wheel on both computers.
+
+The graphics card issue had also been a problem in my previous attempts to install
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/reinstalling-ubuntu.html">
+            Google Earth
+           </a>
+           and to use
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-dual-monitor-nightmare.html">
+            multiple monitors
+           </a>
+           in VMware Workstation.  But before I could see whether the new card would resolve those issues, I needed to fix something else.  I was doing some of my actual work on the primary computer, and I needed to gain access to a university computer via Virtual Private Network (VPN) on the secondary computer.  That is, I wanted to be viewing some PDF articles on the right-hand monitor, which I'll call monitor no. 2, which was connected to the secondary computer, while writing about those articles on the left-hand monitor, no. 1, which was connected to the primary computer.  This was not the only arrangement I could have used for this task.  I could have expanded the Windows desktop, in the virtual machine on monitor 1, to extend to monitor 2 as well.  I was running the second monitor through a KVM switch (separate from the KVM switch used for mouse and keyboard), and could thus have just punched the button to bring both monitors within the primary computer's desktop; and then I could have used a web browser within the VM to access the university website via VPN.  I had already configured VPN in the VM, so that part would have been easy.  The problem with this approach was that it would perpetuate my dependence on Windows.  I was not sure whether it would be better from a security perspective, since I did not know the exact security status of Windows within VMware Workstation.  It would also have its own complexities, insofar as I had not actually set up the multiple monitor arrangement yet.  And in any case, I wanted both of my computers to have as much capability as possible, so that I could sail right on with productive work if one of them was down, going through some maintenance process, or otherwise preoccupied.
+
+Another thing I had to take care of was to update the firmware on my router.  I had been meaning to get around to it since I had first installed it, because I had the general impression that updated firmware was important in making sure the router functioned effectively as a hardware firewall.  I went to the
+           <a href="https://web.archive.org/web/20190812230327/http://www.linksys.com/servlet/Satellite?c=L_CASupport_C2&amp;childpagename=US%2FLayout&amp;cid=1166859841350&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;lid=4135041396B10&amp;displaypage=download#versiondetail">
+            firmware download page
+           </a>
+           for the
+           <a href="https://web.archive.org/web/20190812230327/http://www.linksys.com/servlet/Satellite?c=L_CASupport_C2&amp;childpagename=US%2FLayout&amp;cid=1166859841350&amp;pagename=Linksys%2FCommon%2FVisitorWrapper&amp;lid=4135041396B10">
+            Linksys WRT54GL router
+           </a>
+           and downloaded the latest firmware.  It landed on my desktop.  I unzipped it.  This gave me a .bin file.  Then I looked at the
+           <a href="https://web.archive.org/web/20190812230327/http://linksys.custhelp.com/cgi-bin/linksys.cfg/php/enduser/std_adp.php?p_faqid=4030&amp;lid=3893661879B05">
+            installation instructions
+           </a>
+           .  They led me to the page on how to access
+           <a href="https://web.archive.org/web/20190812230327/http://linksys.custhelp.com/cgi-bin/linksys.cfg/php/enduser/std_adp.php?p_faqid=3676">
+            the router's web-based setup page
+           </a>
+           .  For that, I needed the router's IP address, so I went to
+           <a href="https://web.archive.org/web/20190812230327/http://linksys.custhelp.com/cgi-bin/linksys.cfg/php/enduser/std_adp.php?p_faqid=3997">
+            the instructions for finding that
+           </a>
+           , but they were for Windows.  I found
+           <a href="https://web.archive.org/web/20190812230327/http://ubuntuforums.org/archive/index.php/t-333652.html">
+            some advice
+           </a>
+           that said to just type ifconfig in Terminal.  That gave me several numbers, but it sounded like I was supposed to go with the value under eth0.  That one said "inet addr:192.168.2.101."  I entered that into the address bar in Firefox and got "Unable to connect:  Firefox can't establish a connection to the server."  I went back and looked at the advice again.  They said the router would end in either 0 or 1.  So I tried 192.168.2.0.  Unable to connect.  But 192.168.2.1 got me a login dialog.  Now I had to remember my router ID and password.  But I couldn't.  I found
+           <a href="https://web.archive.org/web/20190812230327/http://answers.yahoo.com/question/index?qid=20060721135539AAP9DWa">
+            some advice
+           </a>
+           that said the default was to enter no username at all, and enter "admin" as the password; and if that failed, use the reset button.  But that worked, and I was in.  Before anything else, I went to Administration, there in the router's internal website, and changed the password.  I went to the Wireless and Security settings and made sure they were saved the way I wanted.  Then, under Status, I saw that the firmware version was 4.30.11.  The one I had downloaded was 4.30.12, and it had a newer date.  I looked at the
+           <a href="https://web.archive.org/web/20190812230327/http://www.linksys.com/servlet/Satellite?blobcol=urldata&amp;blobheadername1=Content-Type&amp;blobheadername2=Content-Disposition&amp;blobheadervalue1=text%2Fplain&amp;blobheadervalue2=inline%3B+filename%3DWRT54GL_v4.30.12_FwReleaseNotes.txt&amp;blobkey=id&amp;blobtable=MungoBlobs&amp;blobwhere=1193787041131&amp;ssbinary=true&amp;lid=3886841350B39">
+            release notes
+           </a>
+           for my version and saw that they had apparently updated some security stuff, so I decided I had better go ahead with the firmware update.  The next thing
+           <a href="https://web.archive.org/web/20190812230327/http://linksys.custhelp.com/cgi-bin/linksys.cfg/php/enduser/std_adp.php?p_faqid=4030&amp;lid=3893661879B05">
+            Linksys advised
+           </a>
+           was to back up the router's settings.  To do this, in the router's webpage, I went to Administration &gt; Config Management &gt; Backup Configuration &gt; Backup &gt; Save File.  That went to my desktop.  The next step was Administration &gt; Firmware Upgrade &gt; Browse.  I browsed to the desktop and indicated the .bin file that I had unzipped from the firmware download.  Then I clicked Upgrade.  This gave me Upgrade Is Successful.  To complete the upgrade, the instructions said, I had to close my browser and reset the router by pressing its Reset button (on back) for 30 seconds.  But another way to reset, they said, was to go into the router's webpage and choose Administration &gt; Factory Defaults &gt; Restore Factory Defaults &gt; Yes &gt; Save Settings.  That sounded easier, so I tried that.  It said I would be returned to the previous webpage after several seconds, but instead I got "Unable to connect."  It seemed to be trying to reach the router at 192.168.1.1.  I typed 192.168.2.1 in the browser's address bar.  That didn't work either, nor did 192.168.2.0 or 192.168.2.101.  The inet addr value was still the same in ifconfig in Terminal.  I was now unable to save these notes on Blogger or to reach Hotmail.  I tried pressing the router's reset button for 30 seconds.  Still unable to connect to any of those 192.168 numbers.  Of course, I was now also unable to reach any Linksys or other webpages for instructions.  As I recalled, there was another option for resetting, which involved (if I wasn't mistaken) holding in the router's reset button for 30 seconds while unplugging and replugging the router's power.  Before doing that, it occurred to me to try to connect using the other computer.  But no, it wasn't just the computer; neither of them could connect now.  I tried that alternate reset approach.  No joy.  The router lights were flashing; I just didn't have any use of the thing.  I unplugged its power and its Internet connection and plugged this secondary computer directly into the DSL modem.  Now I could connect.  I went back to
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/07/dsl-hardware-firewall-router-and-ubuntu.html">
+            the notes
+           </a>
+           I had kept two months earlier, when I had previously wrestled with this same problem.  But it looked like I had done everything I had written there.  I wondered if maybe I had to restart Firefox or the computer to make it work.  Before restarting the computer, I tried accessing the router using
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-multimedia.html">
+            Opera
+           </a>
+           .  To do this, as I quickly discovered, I would have to plug the router back in and reconnect it.  But Opera got nowhere on this.  Next, I tried leaving the secondary computer connected to the router, disconnecting the router from the modem, and plugging the primary computer directly into the modem.  Now the primary computer was online.  In Firefox on the secondary computer, I typed http://192.168.1.1.  Now it worked!  I got the password screen, entered "admin" as the default password, and I was in.  The Linksys instructions now told me to restore the router's settings by going, on the router's internal webpage, to Administration &gt; Config Management &gt; Restore Configuration &gt; Browse.  I browsed to the configuration file I had saved on my desktop.  They called it a Config.bin file, but Ubuntu had saved it as WRT54GLV1_v4.30.11.cfg.  I selected that and clicked Restore and got Upgrade Is Successful.  I connected the computers back to the router and the router back to the modem.  Now I got "Unable to connect" when I tried 192.168.1.0 or 1.1 or 2.0 or 2.1 on the secondary computer.  It also could not access Hotmail.  But the primary computer was now able to go online with no problem.  I restarted Firefox on the secondary computer.  Firefox didn't seem to want to restart right away, so I rebooted the computer while I was at it.  That solved it.  I got back into the router at 192.168.2.1.  Apparently the restored configuration had restored that as its address; not sure why Firefox wasn't able to go to it without restarting/rebooting.  I checked the settings I had recently changed, there in the router's internal webpage, and everything looked good.  I clicked Save Settings just to be sure, re-entered my new password once more for the road, got back in, and killed that webpage.  I was able to browse the Internet once again on both computers.  Firmware upgrade completed.
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-two-months-on.html">
+            I had used dvgrab
+           </a>
+           to capture video from my video camera in Ubuntu.  It had converted a 40-minute (or so) tape into ten .avi files, each 1GB in size.  After fooling with Ubuntu alternatives, I had decided that I would just continue to do my video editing in Adobe Premiere Elements (APE) in WinXP for the time being.  I had found that APE did not run smoothly in VMware, so I decided I would do this video editing in a native WinXP dual boot.  I decided to do this on the secondary computer, so as not to interrupt my work in VMware on the primary computer.  (I had set up five different virtual machines, each for a different project, and I generally kept four of them suspended at any one time, with Windows Explorer and other programs and documents all set up, ready to go back to work on that project whenever I had the time or other materials or information I needed to advance that project a bit further.)  So now it came time to edit some video on the secondary computer, dual-booted into WinXP.  But -- what's this?  All I could get, from those ten .avi files, was static.  The audio was pretty much OK, except for a light, rapid clicking sound, but the video was totally screwed up.  It was just static, like you would get if you tuned into a TV station that was off the air.  My first guess was that dvgrab had produced the wrong kind of .avi file.  I used VirtualDub to patch together those 1GB AVIs into two larger files, and then tried importing the resulting .avi files into APE.  But the audio was missing on the first one.  So I tried again, converting each .avi separately, without combining.  Audio was good for each of these individually.  I noticed that the new AVIs were now about 8GB each, replacing the 1GB .avi files that dvgrab had produced.  Now the audio was OK and I was able to work with them.  This doesn't mean that native Windows was any better-behaved than before.  I could run Ubuntu endlessly on the secondary computer without a problem, whereas Windows kept shutting down the system at random.  Ah, the bad old days of Windows ...
+
+Had a new problem.  I was trying to watch videos, from YouTube and elsewhere, on the primary computer.  Firefox wasn't playing them because I didn't have the Flash player installed and, at
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-more-fixes.html">
+            last time I had tried
+           </a>
+           , I could not get it to work.  So I had resorted to watching them in Internet Explorer, within a VMware virtual machine.  But now I would sometimes get an error message from VMware:
+           <blockquote>
+            Failed to open sound device /dev/
+dsp: Device or resource busy
+Sound will not be available
+           </blockquote>
+           According to
+           <a href="https://web.archive.org/web/20190812230327/http://www.pinoytux.com/linux/vmware-failed-to-open-sound-device">
+            PinoyTux Weblog
+           </a>
+           , "this means the sound device in your host machine is currently in use and the VMware client is not able to access the device."  The solution recommended there was to type "killall esd" in Terminal and then maybe restart VMware.  I didn't want to go through the time and hassle of shutting down and restarting my several open virtual machines if I didn't have to.  I was running a couple of programs in my host Ubuntu operating system, so I tried closing them down, one at a time, and then checking current status in VMware Workstation.  The first program I shut down was
+           <a href="https://web.archive.org/web/20190812230327/http://secondlife.com/">
+            Second Life
+           </a>
+           , and that did it.  As soon as Second Life was off, I could watch and hear videos in Internet Explorer with no problem.  I restarted Second Life while a video was playing and still no problem.  The problem seemed to be solved.
+
+Next.  I had a bunch of MP3s on the secondary computer.  I wanted something like
+           <a href="https://web.archive.org/web/20190812230327/http://www.winamp.com/">
+            Winamp
+           </a>
+           to play songs at random (i.e., "shuffle play") from a songlist or playlist.  I
+           <a href="https://web.archive.org/web/20190812230327/http://www.linux.com/forums/topic/2047">
+            found a thread
+           </a>
+           that said Audacious was the closest thing to it for Ubuntu Hardy 8.04.  The
+           <a href="https://web.archive.org/web/20190812230327/http://audacious-media-player.org/index.php?title=Downloads">
+            Audacious downloads webpage
+           </a>
+           said version 1.5.1 was the current stable release.  I went to System &gt; Administration &gt; Synaptic Package Manager, there on the secondary computer, and searched for Audacious.  It was there.  I installed it.  It appeared under Ubuntu's Applications &gt; Sound &amp; Video.  I ran it.  It was like other audio players I had seen:  nice, streamlined interface with no explanation of controls or options, to be learned on your own time.  It didn't appear to be able to recurse subdirectories (i.e., to look for MP3s, not only in the immediately indicated folder, but also in subfolders under that one).  So I would have to manually load my 15 or 20 different music folders if I wanted all those songs to be available, which I did.  Oh, well.  At least I now had a music player.  I belatedly remembered that I had already had one, in the form of RhythmBox Music Player.  But I couldn't get it to work like I wanted either.  This was another one of those things I would have to try to look into later.
+
+Next, I had a problem on the secondary computer.  For some reason, Second Life kept causing it to
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-two-months-on.html">
+            completely shut down
+           </a>
+           .  I suspected this was a hardware rather than software issue, because it happened when I ran Second Life in Ubuntu too.  I moved Second Life to the primary computer and ran it in Ubuntu without a problem.  But then the secondary computer also started crashing when I was trying to create MPG files in Adobe Premiere Elements in Windows XP.  It didn't crash when I tried to save video as AVI; it just happened when I tried to save video as MPG.  Odd, but it happened enough to be predictable.  It also happened when I reinstalled an older image of my programs drive and installed and ran Premiere Elements on that.  I didn't want to have to reinstall Windows if it wasn't necessary.  But then I recalled that WinXP had been kind of flaky on that machine anyway, and I thought I might as well take the opportunity to do a new installation, installing only the essential programs, to see if I couldn't make that system more stable.  For starters, I used Acronis True Image to make a backup of my Ubuntu installation.  I did that because I had installed Ubuntu on the same drive as Windows, and now, when I tried to reinstall Windows using the Windows XP CD, the installer basically indicated that it couldn't create a WinXP partition on that drive.  So I wanted to move everything off that drive, if I could, and start over.  I then remembered that it was an older drive, and wondered whether that might possibly be part of the problem.  I connected another drive to that machine, but when I tried to boot it, I got "Error 17" from GRUB.  From what I gathered, this error would happen when GRUB would perceive your drives in the wrong order, and the best solution (other than just unplugging that additional drive) was to edit the GRUB configuration to make it right.  I found what looked like
+           <a href="https://web.archive.org/web/20190812230327/http://ubuntuforums.org/showpost.php?p=3518911&amp;postcount=9">
+            a really good explanation
+           </a>
+           along those lines.  But rather than spend the time to work through it, I booted with the Ubuntu CD and took a look at what was on that third (newly added) drive.  There were several partitions, but it looked like I had emptied them out (as I would have expected) before setting that drive aside.  So I ran the Ubuntu CD's System &gt; Administration &gt; Partition Editor and deleted those empty partitions.  Then I rebooted.  This time, I got GRUB Error 22.  This evidently resulted from GRUB looking for a partition that had been there and wasn't anymore.  I
+           <a href="https://web.archive.org/web/20190812230327/http://www.neowin.net/forum/lofiversion/index.php/t405091.html">
+            found a thread
+           </a>
+           that recommended either (a) running Recovery Console (i.e., boot with the WinXP CD and choose repair) and selecting FIXBOOT and FIXMBR, or (b) using Super Grub Disk to edit GRUB.  I was thinking I still had another step to go anyway before worrying about that, and that was to restore the Ubuntu backup to a now-empty partition on the second hard drive, so that I'd have my Windows program files on one drive and my Ubuntu files on another, and I could then reinstall Windows from scratch on that first drive.  After wiping out the Ubuntu partitions on that Windows drive, though, I was still getting the same error message from the WinXP installation CD:
+           <blockquote>
+            Windows XP Professional Setup
+
+To install Windows XP on the partition you selected, Setup must write some startup files to the following disk:
+
+305243 MB Disk 0 at Id 1 on bus 0 on atapi [MBR]
+
+However, this disk does not contain a Windows XP-compatible partition.
+           </blockquote>
+           It occurred to me that maybe this was a problem that could be fixed by FIXBOOT or FIXMBR.  I rebooted the WinXP CD again and ran Recovery Console.  There, I ran FIXBOOT, but it said, "FIXBOOT cannot find the system drive, or the drive specified is not valid."  That made sense, since I had deleted the Windows program partition in preparation for reinstallation.  I ran FIXMBR, though, and then rebooted with the WinXP CD and tried again to do a new WinXP installation.  But I still got the same message:  "does not contain a Windows XP-compatible partition."  It was described as "New (Raw)" in the setup program, but for some reason WinXP could not install into it.  So, OK, I rebooted with the Ubuntu CD and moved all of the data from the other partitions to the other drive, so I could wipe the drive clean and start over.  But even then, I still got the no-compatible-partition error.  I finally unplugged the other drives and rebooted with the WinXP CD.  I was then able to install Windows XP, and when that was done, I shut down, plugged in the other drives, and rebooted to continue configuring the system.  The remaining question was whether Adobe Premiere Elements (APE) or Second Life would cause this new Windows installation to crash.  I installed APE and tried again to make an MPG from an AVI.  Previously, its problem, which occurred every time I tried, was that it would crash during the second pass while creating a two-pass VBR MPEG.  This time, it sailed right through, successfully creating several different MPGs with exactly the same settings.  But then it crashed on the second pass of the fourth MPG.  Shut the computer completely off, just like before.  Surely, this was a hardware problem.  But which hardware?  Nothing seemed to be overheating, and there did not seem to be anything else unusual going on on the computer.  My guess was the power supply, but I didn't have time or inclination at this moment to shut down both computers, swap out, and fool around until maybe I could make it crash again.  APE tried again to make that same MPG, and on its second pass it ran just fine.  Hmm.  This made me think that the problem may have been a program conflict between APE and something else.  I'd had a number of programs open previously, but could not remember specifically which ones.  It wasn't the screen saver -- I had set that to "None."  Power settings?  Maybe.  It was set to shut down the monitor after 20 minutes; but when that kicked on, the computer now kept running.  Anyway, now that I was on the lookout for the possibility of a program conflict, maybe I would be able to home in on it in the future.  Meanwhile, with nothing else running, it completed the MPGs just fine.  I ran the same five two-pass MPGs to test it, and there were no further problems.  So that part of my dual-boot scheme still seemed to be working.
+
+Once I had WinXP reinstalled on the secondary computer, I went into Computer Management.  I think Computer Management may not show up as an option in Windows.  I forget how I discovered it.  It was available by double-clicking on compmgmt.msc in C:\WINDOWS\system32.  For this and other enduring items, I kept a copy of my Start menu (right-click Start and select Explore All Users) on a separate drive, so that I would not lose the links if I reinstalled Windows.  Anyway, in Computer Management, I selected Disk Management and selected the first drive on the list.  I right-clicked on it and chose Properties &gt; Tools &gt; Error-checking &gt; Check Now &gt; Automatically fix file system errors &gt; Start.  I did not check "Scan for and attempt recovery of bad sectors," because doing that would make it run immediately.  After checking Start, I okayed through the rest of the messages.  The basic idea was that it would run its check when I rebooted.  I did this for each drive and then rebooted.  This version of CHKDSK ran on each drive.  When it got to the external USB hard drive, however, it started giving me this message:  "Deleting an index entry from index $0 of file 25."  It kept giving me those messages.  I went to bed and, when I got up the next morning, it was still doing it.  It went on for hours.  I Googled this and
+           <a href="https://web.archive.org/web/20190812230327/http://www.hardwareforums.com/hdd-spoilt-software-xp-corrupt-19808/">
+            saw a thread
+           </a>
+           in which someone concluded that Acronis Disk Director or Acronis True Image had caused the problem.  In their case, the series of "Deleting an index entry" messages concluded with some messages that prompted them to think the drive was corrupt.  In my case, for some bizarre reason my battery backup suddenly shut off -- no reason in the world, out of the blue, just up and died -- so the experiment was terminated.  I switched the external backup hard drive to be connected to the primary computer.  When I turned the computers back on, though, Ubuntu was not able to mount that drive.  I rebooted the primary computer into WinXP and set up each drive there to be checked via Computer Management.  On reboot, it started giving me that same "Deleting an index entry from index $0 of file 25" message, but this time it seemed to be doing it during the testing of an internal drive, not the external drive (though maybe it would have done it there too, later; maybe it had only gotten as far as one of the internal drives).  I couldn't tell for sure because I wasn't paying attention when it indicated which drive it would be checking next.  It kept giving me that message for an hour, at which point I put in the Windows XP CD, hit the computer's Reset button, went into Recovery Console, and ran chkdsk /r on each partition that Windows could see.  I wasn't sure what happens to a Linux partition when your computer is rudely shut down by a failure in your battery backup.  After I finished running chkdsk /r (repeatedly, in each case where errors were reported), I ran a manufacturer's diagnostic CD to check all the drives that way too.  Or at least I tried to.  The Seagate drive passed the SeaTools diagnostic, but the Samsung drives weren't even recognized by the Samsung diagnostic CD that I had from the previous year, and SeaTools crashed when I tried to use it to test the Samsung drives.  I downloaded and burned a CD with what appeared to be
+           <a href="https://web.archive.org/web/20190812230327/http://www.samsung.com/global/business/hdd/support/utilities/Support_HUTIL.html">
+            the latest Samsung diagnostic program
+           </a>
+           , but the program did not run.  It gave me an "Abort from unhandled exception" error message.  So anyway, I booted back into Windows and set Computer Management to check all the drives again, and rebooted.  This time, everything went fine.  Whew!  End of encounter no. 32335 with Windows XP.  I rebooted the primary machine back into Ubuntu and tried to pretend that nothing had happened.
+
+By this time, I had turned my attention to the secondary computer.  I had reinstalled Windows XP, and that had wiped out my GRUB boot manager.  So now I didn't get a choice of whether to boot into Windows or Ubuntu; it just went straight to Windows.  This launched me onto
+           <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-grub-and-acronis-true-image.html">
+            a whole extended problemsolving adventure
+           </a>
+           of its own.  When it was done, though, I had GRUB and Ubuntu working again on the secondary computer.
+           <lugduweb>
+           </lugduweb>
+           <lugduweb>
+            In case I had not previously said so, it seemed appropriate at this point to take a moment and acknowledge how much I appreciated Ubuntu and VMware for letting me freeze a project, or a state of the computer, and return to it later.  In Ubuntu, I mean, the Hibernate option actually worked.  I had had multiple problems with it in Windows, over the years, and had finally given up on it.  And VMware, with its option of suspending a virtual machine, meant that I could get a VM set up to work on a project, and then suspend and resume it whenever I wanted to stop or start working on it again.
+
+Next project:  Skype.  I had used it in Windows, but never in Ubuntu.  Now I looked around for a way to install it on the secondary computer.  They said it wasn't available in any repository and, sure enough, I couldn't find it in System &gt; Administration &gt; Synaptic Package Manager.  I went to
+            <a href="https://web.archive.org/web/20190812230327/http://www.skype.com/download/skype/linux/choose/">
+             the Skype download page
+            </a>
+            .  The Ubuntu download for Skype 2.0 for Linux was actually a Debian .deb file, so I retrieved my notes on how to install a Debian package.  It seemed that all I had to do was to right-click on the .deb file and select "Open with GDebi Package Installer."  But I couldn't figure out where the download had gone.  It wasn't on my desktop or anywhere.  Finally found it in the /tmp folder.  When I opened it with GDebi, though, I got "Error: Wrong architecture 'i386'."  Apparently Skype 2.0 for Linux was not going to run on my 64-bit Ubuntu.  So, OK, forget that.  I didn't want to have to reboot into Windows just to make calls, so I tried installing Skype for Windows in a VMware virtual machine.  It seemed to install fine, but then it turned out my headset was not getting a response from the microphone port.  I had had problems like that before.  I put a USB headset on my
+            <a href="https://web.archive.org/web/20190812230327/http://www.newegg.com/">
+             Newegg
+            </a>
+            wishlist and put this issue on hold.
+
+Next:  backup.  I had wrestled with this repeatedly during the Ubuntu transition process, and had decided to try to get rsnapshot to work.
+           </lugduweb>
+           It was a hassle to configure rsnapshot, but I could also see that the person who had created it had potentially saved users from a lot of work in trying to configure rsync itself. Rsync just had too many options. Rsnapshot took care of most of the options that would be irrelevant for a user like me, and the comments were generally clear enough. Anyway, following the advice in rsnapshot.conf, I also edited /etc/cron.d/rsnapshot so that rsnapshot would run at regular intervals. I had seen a lot of references to cron as the program that would let you schedule things, but this was my first involvement with it.
+           <lugduweb>
+            But now, by the time I resumed writing at this point in this post, my working situation had changed, and I had no time or patience to learn how to write scripts or edit .conf files to make rsnapshot work.  So I looked at the several webpages I had opened for rsnapshot advice -- a
+            <a href="https://web.archive.org/web/20190812230327/http://www.debian-administration.org/articles/217">
+             Debian page
+            </a>
+            , a
+            <a href="https://web.archive.org/web/20190812230327/http://www.backupcentral.com/components/com_mambowiki/index.php/Rsnapshot#Setting_Up_rsnapshot">
+             BackupCentral Wiki
+            </a>
+            page, an
+            <a href="https://web.archive.org/web/20190812230327/http://www.rsnapshot.org/howto/1.2/rsnapshot-HOWTO.en.html#automation">
+             rsnapshot page
+            </a>
+            , and a
+            <a href="https://web.archive.org/web/20190812230327/http://www.google.com/search?q=rsnapshot&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS292">
+             Google search
+            </a>
+            for good measure -- and I shut 'em down.  I looked at an
+            <a href="https://web.archive.org/web/20190812230327/http://maketecheasier.com/backing-up-data-in-ubuntu-using-sbackup/2007/12/08">
+             sBackup instruction page
+            </a>
+            and decided to give sBackup another try.  I searched for it in Synaptic and noticed there was also a program called backuppc, and that one (unlike sbackup) had an Ubuntu logo next to it.  I did a
+            <a href="https://web.archive.org/web/20190812230327/http://www.google.com/search?q=ubuntu+hardy+OR+8.04+backuppc&amp;sourceid=navclient-ff&amp;ie=UTF-8&amp;rlz=1B3GGGL_enUS292US293">
+             Google search
+            </a>
+            for backuppc and found the
+            <a href="https://web.archive.org/web/20190812230327/https://help.ubuntu.com/community/BackupPC">
+             Ubuntu documentation
+            </a>
+            , but that didn't have quite what I was looking for.  I did
+            <a href="https://web.archive.org/web/20190812230327/http://www.google.com/search?num=50&amp;hl=en&amp;rlz=1B3GGGL_enUS292US293&amp;q=ubuntu+hardy+OR+8.04+backuppc+sbackup&amp;btnG=Search">
+             another search
+            </a>
+            and still didn't quickly see a comparison of the two.  Having already fiddled with sbackup a couple of times, I installed backuppc.  Someone had said it was better for backing up multiple drives.  When I marked backuppc for installation, Synaptic said I also had to install apache2 and a boatload of other programs.  I said OK.  As it was installing, it gave me some apache options, but the Help said that only plain old apache (not apache2 etc.) supported automatic something-or-other.  So I went with that.  Next, it said I could manage backuppc through its web-based interface at http://P4-VM/backuppc, where P4-VM was the name of my computer.  It gave me a web user account named backuppc and a password to access that interface.  Then the installation was done.  But where was backuppc?  I was searching through the Ubuntu menu, doing "whereis backuppc," rooting around in folders, and then I said, Duh.  So I went to the web-based interface page just mentioned and there it was.  Not.  I got "Not Found."  Screw it.  Back to Synaptic to install sbackup.  I installed it, set it up to Include or Exclude nothing except the one data drive I wanted to back up, and ran it.  It said a backup was being initiated in the background.  A minute or two later, the light on the external (target) drive started to flicker, and we were off and running (I hoped).  Later, I checked out the results.  Sbackup had created a folder called 2008-09-29_19.40.12.438074.P4-VM.ful.  That appeared to be the date, the time, and the name of the computer, with a .ful extension.  In that folder, there were five files.  The main one was files.tgz, which (at 31.5GB) apparently contained old copies of the files that had changed.  I was not able to tell quickly what files were in that backup; the flist file was empty.  Otherwise, sbackup appeared to have preserved the copies of my data folders that I had previously copied to the external backup drive.  But not entirely:  a comparison of properties for the data drive and these backup folders indicated that the backup was missing almost 600 files that were on the original data drive.  Were these files somehow represented in that .ful backup folder, or were they just missing?  I did not know of any way to tell for sure.  I realized, at this point, that I did not wish to go back to a black-box kind of backup system, where I would just assume that the backup program was doing it right.  I had been burned by those in the past.  What I wanted was exactly what I had gotten with Second Copy 2000 in Windows:  a simple mirroring system that would back up my data drive periodically.  I didn't want a RAID arrangement where I would have instant mirroring; I wanted to have the luxury to retrieve a file as it had existed a half-hour or an hour before.  I had set up Second Copy to do the backup every several hours, so chances were that it would not yet have replaced the previous version with a newer one.  The backup had been a lifesaver on a number of occasions that way.  With Second Copy 2000, I could do a simple comparison of properties to verify that what was on the backup matched what was on the original data drive.  I
+            <a href="https://web.archive.org/web/20190812230327/http://ubuntuforums.org/showthread.php?p=5880846#post5880846">
+             posted a question
+            </a>
+            about this in an Ubuntu community forum.  What I got back was just some advice to use rsync and cron.
+
+By this point, I was running out of energy and time for fixing Ubuntu and VMware.  I had a working system with a number of things to tackle at some point in the future.  I decided it was time to wrap up this 10-week effort.  The summary appears in
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/2008/09/ubuntu-and-vmware-summary-for-now.html">
+             a follow-up post
+            </a>
+            .
+           </lugduweb>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190812230327/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=8866560382044687873&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/dvgrab" rel="tag">
+             dvgrab
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/hardy%20heron" rel="tag">
+             hardy heron
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/linux" rel="tag">
+             linux
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/rsnapshot" rel="tag">
+             rsnapshot
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/rsync" rel="tag">
+             rsync
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/second%20copy%202000" rel="tag">
+             second copy 2000
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/video" rel="tag">
+             video
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/vmware" rel="tag">
+             vmware
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/windows%20xp" rel="tag">
+             windows xp
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/search/label/winxp" rel="tag">
+             winxp
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          1 comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-6055992973030603613">
+           <a name="comment-6055992973030603613">
+           </a>
+           <a href="https://web.archive.org/web/20190812230327/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Follow-up re: "Failed to open sound device /dev/dsp" error:  see http://raywoodcockslatest.blogspot.com/2009/07/ubuntu-904-vmware-workstation-652.html
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-6055992973030603613" title="comment permalink">
+             July 23, 2009 at 8:36 PM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190812230327/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=6055992973030603613" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190812230327/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=8866560382044687873" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190812230327/http://raywoodcockslatest.blogspot.com/feeds/8866560382044687873/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 23:03:27 Aug 12, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:09:07 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.551
+  exclusion.robots: 0.069
+  exclusion.robots.policy: 0.061
+  esindex: 0.009
+  cdx.remote: 33.23
+  LoadShardBlock: 128.436 (3)
+  PetaboxLoader3.datanode: 128.413 (4)
+  load_resource: 1225.694
+  PetaboxLoader3.resolve: 1159.027
+-->

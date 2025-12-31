@@ -1,0 +1,873 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151224203922im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/2012/01/adding-bad-clusters-to-bad-clusters.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/feeds/1119404847502654072/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Adding Bad Clusters to the Bad Clusters File - Second NTFS Boot Sector Is Unwriteable
+  </title>
+  <link href="https://web.archive.org/web/20151224203922cs_/https://www.blogger.com/static/v1/widgets/1708208307-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151224203922cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=c452eadd-a077-4824-a958-40d3b30b22e1" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151224203922im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151224203922im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151224203922im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151224203922im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151224203922im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151224203922im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151224203922im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151224203922im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151224203922im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151224203922im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151224203922im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151224203922im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151224203922im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151224203922im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151224203922im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151224203922im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151224203922im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151224203922im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Friday, January 20, 2012
+        </h2>
+        <div class="post">
+         <a name="1119404847502654072">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/2012/01/adding-bad-clusters-to-bad-clusters.html">
+           Adding Bad Clusters to the Bad Clusters File - Second NTFS Boot Sector Is Unwriteable
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I was using Windows 7 and, as such, was using hard drives formatted in
+           <a href="https://web.archive.org/web/20151224203922/http://en.wikipedia.org/wiki/NTFS" target="_blank">
+            NTFS
+           </a>
+           and divided into several partitions.  I booted the system with an
+           <a href="https://web.archive.org/web/20151224203922/https://www.google.com/search?q=%22Acronis+True+Image%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a" target="_blank">
+            Acronis True Image Home 11
+           </a>
+           boot CD, made an image of one partition, and saved it on another.  When I rebooted Windows, the folder that I had told Acronis to create (named "2012-01-20 Backup") did not exist.  Windows Explorer showed it as being just a file, without an extension.
+           <br/>
+           <br/>
+           In Windows Explorer, I right-clicked on the drive and selected Properties &gt; Tools &gt; Check now.  I clicked both boxes (i.e., "Automatically fix file system errors" and "Scan for and attempt recovery of bad sectors") and then Start.  But the tool did not run.  It just disappeared.  That was probably because I had a paging file on that drive (Start &gt; Run &gt; SystemPropertiesAdvanced.exe &gt; Advanced tab &gt; Settings &gt; Advanced tab &gt; Virtual memory &gt; Change).  I could have changed that, and then rebooted to make the change effective, and then gone back into Windows and tried again.
+           <br/>
+           <br/>
+           Instead, I rebooted with a Windows 7 installation DVD and went into Repair your computer &gt; Use recovery tools &gt; Next &gt; Command Prompt.  At the prompt, I typed C: and then DIR, and then D: and then DIR, and so forth until I found the troubled partition.  I typed CHKDSK /R and let it run.  In stage 2 of 5, it deleted the index entry for the 2012-01-20 Backup folder (which it was calling "file 1045").  So it looked like I was going to have to redo my Acronis backup.  After finishing stage 5 of 5, it said this:
+           <br/>
+           <blockquote>
+            Free space verification is complete.
+            <br/>
+            Adding 602 bad clusters to the Bad Clusters File.
+            <br/>
+            CHKDSK discovered free space marked as allocated in the volume bitmap.
+            <br/>
+            The second NTFS boot sector is unwriteable.
+            <br/>
+            Failed to transfer logged messages to the event log with status 50.
+           </blockquote>
+           That last message didn't bother me -- I was always getting that when I ran CHKDSK this way.  But I wanted to know more about the others.  This was the second time I'd had this kind of problem after running Acronis.  I wondered whether the problem was with the drive -- that
+           <a href="https://web.archive.org/web/20151224203922/http://technet.microsoft.com/en-us/library/cc975363.aspx" target="_blank">
+            perhaps
+           </a>
+           I should get rid of it -- or whether it was instead something that Acronis was doing to the drive.
+           <br/>
+           <br/>
+           What I had done previously was to try to
+           <a href="https://web.archive.org/web/20151224203922/http://forum.acronis.com/forum/6228" target="_blank">
+            resize
+           </a>
+           the partition using a
+           <a href="https://web.archive.org/web/20151224203922/http://gparted.sourceforge.net/livecd.php" target="_blank">
+            GParted
+           </a>
+           Live (i.e., bootable) CD -- or, actually, I had booted an Ubuntu Live CD (version 10.10 -- apparently not all versions had GParted built in) and had gone into its System &gt; Administration &gt; GParted option.  If I recalled correctly, GParted had been unable to resize the partition, apparently because of the partition's problems, so my next approach was to remove everything from the partition and then use GParted (or possibly Windows Start &gt; Run &gt; diskmgmt.msc) to delete and recreate it.  That had worked last time, so I decided to do it again.  This was the last partition on the drive, and the consensus seemed to be that the second NTFS boot sector was at the end of the partition.  I had used this Acronis CD for a long time, and had not otherwise been getting this problem.  So I thought this time I would create another small partition, after this one, and just let it sit.  If Acronis was getting confused when it wrote to the last partition on the drive, that little 1.5GB partition might provide a buffer and solve the problem.
+           <br/>
+           <br/>
+           So now I was going to try to find out whether it was indeed a hard drive issue.  (One other note:  as I continued in the process, it appeared that the Acronis backup may have come very close to filling the troubled partition.  I wondered whether that could somehow have corrupted it.)
+           <br/>
+           <br/>
+           I went into GParted again.  It showed an exclamation mark next to this partition.  When I right-clicked on it and looked at Information, it said several things, including these:
+           <br/>
+           <blockquote>
+            ERROR:  This software has detected that the disk has at least 602 bad sectors. . . . This means physical damage on the disk surface caused by deterioration, manufacturing faults or other reason.  The reliability of the disk may stay stable or degrade fast. . . . Unable to read the contents of this file system!  Because of this some operations may be unavailable.
+           </blockquote>
+           This number of bad "sectors" matched the number of bad "clusters" reported by CHKDSK (above).  That is, it appeared that there might be no bad sectors other than those that were reported after the Acronis process.  I rebooted into Windows and continued to use the system as usual while moving my data off the troubled partition via Windows Explorer.  Then I rebooted into Ubuntu &gt; GParted and, as just indicated, I created two partitions where there was formerly one.  As before, the first of the two was an NTFS partition.  The new addition was that 1.5GB partition, which I formatted as ext3 (invisible to Windows, thus causing no confusion).  Then I did another Acronis image of my programs drive (C:), as before, saving the image to the new NTFS partition.  When Acronis was done, I went back into Windows and saw that Acronis had created what appeared to be a valid image.
+           <br/>
+           <br/>
+           I ran System Information for Windows (
+           <a href="https://web.archive.org/web/20151224203922/http://www.gtopala.com/" target="_blank">
+            SIW
+           </a>
+           ) to find out which drive this new partition was on, and who made that drive.  After consulting with Disk Management (Start &gt; Run &gt; diskmgmt.msc) to figure out whether I should be looking at disc 0 or disc 1, I saw that it was a Seagate ST31000520AS.  I went to
+           <a href="https://web.archive.org/web/20151224203922/http://www.seagate.com/ww/v/index.jsp?locale=en-US&amp;name=3.4.0.1.1&amp;vgnextoid=3b17fbbad0f89210VgnVCM1000001a48090aRCRD" target="_blank">
+            Seagate's webpage
+           </a>
+           and downloaded SeaTools for Windows.  (I already had a copy, but hadn't used it for a long time, and wasn't sure it was the latest version.)  I installed it and ran its Short Drive Self-Test (Short DST).  It passed.  I ran a S.M.A.R.T. test.  It passed that too.
+           <br/>
+           <br/>
+           It did not appear that this drive was failing.  I hibernated and then booted up with Ubuntu &gt; GParted.  Its Information option saw no problems.  Neither did its Check option.  I rebooted with the Windows 7 DVD and ran CHKDSK /r on both of the new partitions (i.e., including the little 1.5GB trailer).  There were no statements of the kind I had gotten on the previous try -- nothing about deleting index entries, bad clusters, or an unwriteable NTFS boot sector.  What I got was, "Windows has checked the file system and found no problems" and "0 KB in bad sectors."  Of course, all of my data (except for the newly re-created Acronis backup) was still on the other drive, so I didn't expect file errors (and CHKDSK ran somewhat more quickly on the nearly empty drive).
+           <br/>
+           <br/>
+           It appeared that the previous warnings had been false alarms, triggered by the use of Acronis True Image Home 11 to save an image that nearly filled the last partition on the drive.
+           <br/>
+           <br/>
+           To round out my investigation, I went back through the random webpages that I had opened up while searching for insight.
+           <a href="https://web.archive.org/web/20151224203922/http://ubuntuforums.org/showthread.php?t=1244058" target="_blank">
+            One post
+           </a>
+           raised the possibility that I might have been able to use ntfsresize to resize the partition instead of removing its data, deleting it, and creating a new one in its place.  Ntfsresize (and
+           <a href="https://web.archive.org/web/20151224203922/http://www.linuxquestions.org/questions/linux-hardware-18/resetting-ntfs-bad-sectors-list-with-ntfstruncate-492114/" target="_blank">
+            ntfstruncate
+           </a>
+           ) were apparently Linux utilities, and it looked like using them could be risky.  There was
+           <a href="https://web.archive.org/web/20151224203922/http://www.unfinishedteleporter.com/?p=3238" target="_blank">
+            a report
+           </a>
+           that seemed to confirm that GParted would have reported an error again if it had found a bad sector, so getting no error messages in GParted's Information option apparently implied that the bad sectors were gone.  Evidently the repartitioning had reset them.
+           <a href="https://web.archive.org/web/20151224203922/http://dushyant09.hubpages.com/hub/Tips-to-Solve-The-second-NTFS-boot-sector-is-unwriteable-Error" target="_blank">
+            One webpage
+           </a>
+           raised the question of whether the partition had been marked as a boot partition.  As I recalled from my glance in GParted, it hadn't.
+           <br/>
+           <br/>
+           <a href="https://web.archive.org/web/20151224203922/http://www.technologyquestions.com/technology/windows-xp/242128-how-reset-bad-sector-ntfs-volume.html" target="_blank">
+            Another thread
+           </a>
+           alerted me to the thought that I should have run CHKDSK /B instead of /R.  To verify that, I went into a command window and typed CHKDSK /?.  It said, "NTFS only:  Re-evaluates bad clusters on the volume (implies /R)."  I wondered whether CHKDSK /B might have been a shorter response to the whole problem.  It also said, "The /I or /C switch reduces the amount of time required to run Chkdsk by skipping certain checks of the volume."  As
+           <a href="https://web.archive.org/web/20151224203922/http://support.microsoft.com/kb/187941" target="_blank">
+            Microsoft
+           </a>
+           advised, I wouldn't have relied on those switches by themselves; but since I had already run /R, at this point I could have tried CHKDSK /I /C /B.  (Too bad there wasn't an /M option -- I'd have had a missile.)  Apparently some of these options were not available in earlier (pre-Vista) versions of Windows.
+           <br/>
+           <br/>
+           I had run
+           <a href="https://web.archive.org/web/20151224203922/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=kgz&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22second+NTFS+boot+sector%22+%22at+the+end+of%22&amp;oq=%22second+NTFS+boot+sector%22+%22at+the+end+of%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=24069l25251l0l26232l3l3l0l0l0l1l932l932l6-1l1l0" target="_blank">
+            a couple
+           </a>
+           of
+           <a href="https://web.archive.org/web/20151224203922/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=LXe&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22bad+clusters%22+OR+%22boot+sector+is+unwriteable%22&amp;oq=%22bad+clusters%22+OR+%22boot+sector+is+unwriteable%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=15961l15961l0l16688l1l1l0l0l0l0l0l0ll0l0" target="_blank">
+            searches
+           </a>
+           and probably could have gone on indefinitely, but by this point it began to seem that I had already encountered most of the main recent lines of tinkering on the question.  One exception:  I had
+           <a href="https://web.archive.org/web/20151224203922/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22Bad+clusters%22+ntfs+%22graphical+tool%22&amp;oq=%22Bad+clusters%22+ntfs+%22graphical+tool%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=10941l13898l0l14789l8l8l0l6l0l0l233l373l0.1.1l2l0" target="_blank">
+            searched
+           </a>
+           for, but never did find, a tool that would give me a visual representation or map of bad clusters on the drive.  I vaguely recalled that Norton had provided something along those lines, back in the DOS ages.  Defragmenters like Smart Defrag would show a nice, colorful map of disk clusters, but at this point I wasn't aware of a Windows 7 defragger (or other tool) that provided a depiction of bad clusters specifically, so I sent IOBit
+           <a href="https://web.archive.org/web/20151224203922/http://forums.iobit.com/showthread.php?p=73352#post73352" target="_blank">
+            a suggestion
+           </a>
+           to that effect.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151224203922/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=1119404847502654072&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/Acronis%20True%20Image%20Home%2011" rel="tag">
+             Acronis True Image Home 11
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/bad" rel="tag">
+             bad
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/boot" rel="tag">
+             boot
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/chkdsk" rel="tag">
+             chkdsk
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/clusters" rel="tag">
+             clusters
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/gparted" rel="tag">
+             gparted
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/ntfs" rel="tag">
+             ntfs
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/sector" rel="tag">
+             sector
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/search/label/unwriteable" rel="tag">
+             unwriteable
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151224203922/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=1119404847502654072" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151224203922/http://raywoodcockslatest.blogspot.com/feeds/1119404847502654072/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:39:22 Dec 24, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:31:44 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 1.037
+  exclusion.robots: 0.086
+  exclusion.robots.policy: 0.077
+  esindex: 0.01
+  cdx.remote: 44.572
+  LoadShardBlock: 107.652 (3)
+  PetaboxLoader3.datanode: 147.779 (4)
+  load_resource: 217.24
+  PetaboxLoader3.resolve: 130.483
+-->

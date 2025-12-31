@@ -1,0 +1,939 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151125203543im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/2012/01/combining-pdfs-with-pdfsam-introductory.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/feeds/3930104688618621310/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Combining PDFs with PDFsam:  Introductory Syntax
+  </title>
+  <link href="https://web.archive.org/web/20151125203543cs_/https://www.blogger.com/static/v1/widgets/3053256790-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151125203543cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151125203543im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151125203543im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151125203543im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151125203543im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151125203543im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151125203543im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151125203543im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151125203543im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151125203543im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151125203543im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151125203543im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151125203543im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151125203543im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151125203543im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151125203543im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151125203543im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151125203543im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151125203543im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Saturday, January 14, 2012
+        </h2>
+        <div class="post">
+         <a name="3930104688618621310">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/2012/01/combining-pdfs-with-pdfsam-introductory.html">
+           Combining PDFs with PDFsam:  Introductory Syntax
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I was using Windows 7.  I had
+           <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/2012/01/batch-merging-many-scattered-jpgs-into.html" target="_blank">
+            a project
+           </a>
+           that would benefit from automated merging of multiple PDFs into a single PDF.  It looked like
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/mediawiki/index.php?title=HowTo" target="_blank">
+            PDFsam
+           </a>
+           would be useful for this purpose.
+           <br/>
+           <br/>
+           PDFsam had GUI and Console options.  In other words, it could be accessed through a user-friendly interface, like most Windows programs, and it could also be used on the command line.  My project had certain complexities, such that the GUI approach would not be ideal.  This post describes the steps I took to learn how to use the Console.
+           <br/>
+           <br/>
+           I began with the Console section of
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/mediawiki/index.php?title=HowTo#Console" target="_blank">
+            the PDFsam wiki.
+           </a>
+           It led to a page providing information on
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/mediawiki/index.php?title=HowTo:FindConsoleParameters" target="_blank">
+            console parameters and commands
+           </a>
+           .  The explanation was too thin, so I did
+           <a href="https://web.archive.org/web/20151125203543/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=concatenate+PDFsam+syntax&amp;oq=concatenate+PDFsam+syntax&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=8291l8291l0l8899l1l1l0l0l0l0l254l254l2-1l1l0" target="_blank">
+            a search
+           </a>
+           for more guidance.  This led to
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/uploads/pdfsam-1.1.0-tutorial.pdf" target="_blank">
+            a 33-page Tutorial
+           </a>
+           (installed with the program files).  It also led to a thread that reminded me not to forget
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/bbforum/" target="_blank">
+            the PDFsam Forums
+           </a>
+           .
+           <br/>
+           <br/>
+           The Tutorial (p. 18) seemed to say that, in PDFsam-speak, what I wanted to do was to Merge files, and for this I would use the Concat option.  Other options, not of interest here, included Split and Encrypt.  It appeared that PDFsam syntax would call for very long commands.  Looking for examples, I went to
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/bbforum/viewtopic.php?f=2&amp;t=1455" target="_blank">
+            a forum thread
+           </a>
+           , but that pointed me back toward the wiki page (above).
+           <br/>
+           <br/>
+           The Tutorial said that, to make PDFsam run from the command line (i.e., Console), I could either type a certain command or just use one of the scripts in the bin folder where the program was installed (e.g., C:\Program Files\pdfsam\bin).  In that bin folder, it appeared I had my pick from two scripts, provided in Linux (.sh) and Windows batch (.bat) versions.  Since I wanted the Console, not the GUI, I focused on run-console.bat.  Its contents seemed to address various details that I didn't clearly understand, and didn't necessarily want to study; it just looked like the thing I would need to use.  So I created a shortcut to it and put that in my Start Menu.  I also edited the Tutorial, adding bookmarks to the various sections, and moved it to the Start Menu too.  (My
+           <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/2011/01/windows-7-setting-up-customized-start.html" target="_blank">
+            customized Start Menu
+           </a>
+           would survive any subsequent Windows reinstallation, so I probably wouldn't need to do this housekeeping again, if I had to install PDFsam in a new Windows installation sometime down the line.)
+           <br/>
+           <br/>
+           Unfortunately, the run-console.bat batch file didn't work for me.  It gave me an endlessly scrolling set of messages.  They were ripping past too quickly to read.  I hit PrintScreen, opened IrfanView (any image editor would do, as would Microsoft Word or Wordpad), and pasted the screenshot (Ctrl-V).  (I could have just hit Ctrl-C, or possibly the Pause key.)  Now I could see that it was just the same error message, repeating over and over:
+           <br/>
+           <blockquote class="tr_bq">
+            java is not recognized as an internal or external command, operable program or batch file
+           </blockquote>
+           Why wasn't my system recognizing java?  I right-clicked on run-console.bat, chose Edit, and looked for the line that referred to java.  I couldn't quite figure out where the problem was, so I stuck in a "pause" command somewhere, saved the batch file, and, this time, ran it from the command line instead of from the shortcut.  That way, the error statements would stay onscreen instead of scrolling past too quickly or disappearing when the batch file finished running.  (This was
+           <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/2012/01/windows-7-cannot-create-new-folder-in.html" target="_blank">
+            another instance
+           </a>
+           where it was handy to have the right-click option, "Open command window here," provided by Ultimate Windows Tweaker.)
+           <br/>
+           <br/>
+           Running the batch command meant just typing its name and hitting Enter.  It paused where I had put the pause command, without any obvious errors, so I moved the pause command further down, saved, and repeated the cycle.  (Running run-console.bat again required just hitting the Up key to repeat the command.)  That's where the problem was:  now I had the endless scrolling again.  I hit Ctrl-C a couple of times to abort the batch file.
+           <br/>
+           <br/>
+           I played around with the batch file for a while, and eventually realized that maybe the problem was that the JAVA_HOME variable had not yet been assigned a value on my system.  It appeared that the batch file was supposed to tell me this; if so, it wasn't working right.  I went into Start &gt; Run &gt; SystemPropertiesAdvanced.exe &gt; Environment Variables and, sure enough, no JAVA_HOME variable.  I had already installed the Java Runtime Environment, and I almost always used the default installation paths when installing programs, so
+           <a href="https://web.archive.org/web/20151125203543/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=u6C&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22java_home%22+variable+%22Windows+7%22&amp;oq=%22java_home%22+variable+%22Windows+7%22&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=253919l257145l0l257786l23l17l1l0l0l1l356l3830l0.6.6.4l16l0" target="_blank">
+            the advice
+           </a>
+           seemed to be that the JAVA_HOME variable should point to
+           <a href="https://web.archive.org/web/20151125203543/http://developer.appcelerator.com/question/21091/error-error-locating-jdk-set-javahome-or-put-javac-and-jarsigner-on-your-path" target="_blank">
+            C:\Program Files\Java\jre6
+           </a>
+           .  Since this folder name ("Program Files") had a space in it,
+           <a href="https://web.archive.org/web/20151125203543/http://confluence.atlassian.com/display/DOC/Setting+the+JAVA_HOME+Variable+in+Windows" target="_blank">
+            apparently
+           </a>
+           I would need to use the shortened, DOS-style  name for it --
+           <a href="https://web.archive.org/web/20151125203543/http://msdn.microsoft.com/en-us/library/windows/desktop/aa365247%28v=vs.85%29.aspx#file_and_directory_names" target="_blank">
+            known as
+           </a>
+           an "8.3" filename because it would have eight characters before the dot and three afterwards (e.g., yourfile.txt).
+           <br/>
+           <br/>
+           I knew the shortened name of that folder would probably contain Progra~1 (instead of "Program Files"), and I could have just experimented with that, but I had seen instances where it would be Progra~2 or something else, and anyway I wanted to know how to get the 8.3 name.
+           <a href="https://web.archive.org/web/20151125203543/http://msdn.microsoft.com/en-us/library/windows/desktop/aa365247%28v=vs.85%29.aspx#short_vs._long_names" target="_blank">
+            Microsoft advised
+           </a>
+           using the GetShortPathName function to figure it out, but that seemed to involve programming, and programming is a lot of work.  Instead, I ran
+           <a href="https://web.archive.org/web/20151125203543/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=7XD&amp;rls=org.mozilla%3Aen-US%3Aofficial&amp;q=%22Windows+7%22+%22short+path+name%22+utility+OR+freeware+OR+script+OR+batch+-code+-scripting&amp;oq=%22Windows+7%22+%22short+path+name%22+utility+OR+freeware+OR+script+OR+batch+-code+-scripting&amp;aq=f&amp;aqi=&amp;aql=&amp;gs_sm=e&amp;gs_upl=18868l23143l0l23711l17l17l0l16l0l0l250l250l2-1l1l0" target="_blank">
+            a search
+           </a>
+           that took me to
+           <a href="https://web.archive.org/web/20151125203543/http://www.softpedia.com/progDownload/ShortPath-Download-129292.html" target="_blank">
+            ShortPath
+           </a>
+           by
+           <a href="https://web.archive.org/web/20151125203543/http://www.marcellozaniboni.net/tinytools/index.html" target="_blank">
+            Marcello Zaniboni
+           </a>
+           .  To get ShortPath to work from the command line, I tried
+           <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/2012/01/converting-scattered-wma-files-to-mp3.html" target="_blank">
+            the C:\Windows shortcut trick
+           </a>
+           , but it didn't work.  I didn't want to
+           <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/2012/01/converting-scattered-wma-files-to-mp3.html" target="_blank">
+            add ShortPath to my PATH
+           </a>
+           yet, so I just opened a command window in the folder where ShortPath.exe was located, typed "ShortPath " (with an ending space) but didn't hit Enter, and then dragged the C:\Program Files\Java\jre6 folder into that command window from Windows Explorer.  (I think this worked because I had installed
+           <a href="https://web.archive.org/web/20151125203543/https://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;client=firefox-a&amp;hs=4uE&amp;rls=org.mozilla:en-US:official&amp;sa=X&amp;ei=63gOT_iZDsqugwfGnvTWAw&amp;ved=0CB0QvgUoAA&amp;q=DropCommand+%22Windows+7%22&amp;nfpr=1&amp;biw=1152&amp;bih=878" target="_blank">
+            DropCommand
+           </a>
+           .  Otherwise I might have had to type it out, with quotation marks.)
+           <br/>
+           <br/>
+           ShortPath told me that, actually, the short path to that folder was C:\PROGRA~2\JAVA\JRE6.  So I went back into SystemPropertiesAdvanced.exe &gt; Environment Variables &gt; System Variables &gt; New &gt; Variable Name = JAVA_HOME, Variable Value = C:\PROGRA~2\JAVA\JRE6.  I OKed out of there and rebooted.
+           <br/>
+           <br/>
+           After doing that, I still had to play with the batch file for a long time, in a quest to learn, remember, get lucky, or otherwise do what I needed to make it work.  By the time I was done, I almost thought that I would have been further ahead just using the command given in
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/mediawiki/index.php?title=HowTo:FindConsoleParameters" target="_blank">
+            the wiki
+           </a>
+           :
+           <br/>
+           <blockquote>
+            java -Dlog4j.configuration=console-log4j.xml -jar pdfsam-console-2.1.1e.jar
+           </blockquote>
+           except that that didn't work either because, as I soon realized, it was a Linux command.  I also did not fare too well with
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/bbforum/viewtopic.php?f=2&amp;t=1455" target="_blank">
+            the advice
+           </a>
+           to type "run-console.bat -h concat" for information on the syntax for the Concat option, because the run-console.bat file itself was not yet working.
+           <br/>
+           <br/>
+           The Tutorial (pp. 19-20) said that I had three ways to indicate which files I wanted to merge.  Instead of entering one parameter to indicate a directory and then entering another parameter to indicate one or more files in that directory, it seemed I would want the option that would allow me to specify a file (including its path) on a single line.  Evidently I could list a number of PDF files in a separate XML file, and invoke that file (with its list of PDFs) by using the -l (that's an L, not a one) option.  But it wasn't working right.  Ultimately, I
+           <a href="https://web.archive.org/web/20151125203543/http://www.pdfsam.org/bbforum/viewtopic.php?f=2&amp;t=1638" target="_blank">
+            posted a question
+           </a>
+           on it.  Andrea (a guy from the Netherlands), creator of PDFsam, posted a reply within 36 hours.  And that got me where I needed to go.  I was able to get a test run to work, with a run-console.bat file whose contents (viewed in something like Notepad, of course, not in a word processor like Word that would add all kinds of invisible junk) were as follows:
+           <br/>
+           <blockquote>
+            @echo off
+            <br/>
+            <br/>
+            set JAVA=%JAVA_HOME%\BIN\JAVA
+            <br/>
+            <br/>
+            set JAVA_OPTS=-Xmx256m -Dlog4j.configuration=console-log4j.xml
+            <br/>
+            <br/>
+            set CONSOLE_JAR="C:\Program Files (x86)\pdfsam\lib\pdfsam-console-
+            <br/>
+            2.3.1e.jar"
+            <br/>
+            <br/>
+            @echo on
+            <br/>
+            <br/>
+            %JAVA% %JAVA_OPTS% -jar %CONSOLE_JAR% -l D:\Current\ConcatList.xml -o
+            <br/>
+            D:\Current\PDFsamOut\Merged.pdf concat
+           </blockquote>
+           While I wasn't entirely clear on what all those lines did, the basic idea seemed to be that the first lines would define JAVA, JAVA_OPTS, and CONSOLE_JAR, and then the last line would combine them all into one big command.  That command seemed to say, "Run Java with these options, using this jar file for specific instructions; take your input from the PDF files listed in ConcatList.xml; and output a single PDF file, Merged.pdf, containing all of those PDF files."  To make that work, I needed to know the format of the ConcatList.xml file.  Here's the one that worked for me in this test run:
+           <br/>
+           <blockquote>
+            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+            <br/>
+            &lt;filelist&gt;
+            <br/>
+            &lt;file value="D:\Current\TestDir1\x1.pdf"/&gt;
+            <br/>
+            &lt;file value="D:\Current\TestDir2\x2.pdf"/&gt;
+            <br/>
+            &lt;/filelist&gt;
+           </blockquote>
+           I just needed a File Value line for each PDF to be merged, using the syntax shown.  To summarize, then, I used Notepad to create two files.  One, called run-console.bat, contained the first half-dozen lines of code shown above, beginning with @echo off.  The other, ConcatList.xml, contained these last five lines of code, beginning with the "xml version" line.  ConcatList.xml would contain File Value lines, each designating a PDF to be merged into the larger output PDF (and there were other options for ConcatList.xml; I just didn't need them for my project), and run-concat.bat would read those lines and do the actual concatenation into a single output PDF.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151125203543/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=3930104688618621310&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/batch" rel="tag">
+             batch
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/combine" rel="tag">
+             combine
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/command%20line" rel="tag">
+             command line
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/concatenate" rel="tag">
+             concatenate
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/files" rel="tag">
+             files
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/merge" rel="tag">
+             merge
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/multiple" rel="tag">
+             multiple
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/pdf" rel="tag">
+             pdf
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/PDFsam" rel="tag">
+             PDFsam
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/script" rel="tag">
+             script
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/search/label/syntax" rel="tag">
+             syntax
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151125203543/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=3930104688618621310" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151125203543/http://raywoodcockslatest.blogspot.com/feeds/3930104688618621310/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:35:43 Nov 25, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:31:51 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.556
+  exclusion.robots: 0.071
+  exclusion.robots.policy: 0.061
+  esindex: 0.009
+  cdx.remote: 12.133
+  LoadShardBlock: 111.498 (3)
+  PetaboxLoader3.datanode: 139.684 (4)
+  load_resource: 106.684
+  PetaboxLoader3.resolve: 68.445
+-->

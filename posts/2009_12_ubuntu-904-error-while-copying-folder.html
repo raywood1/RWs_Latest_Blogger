@@ -1,0 +1,943 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151123204921im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-904-error-while-copying-folder.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/feeds/8289806529974344536/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu 9.04:  Error While Copying; Folder Contents Not Displayed; Input/Output Error
+  </title>
+  <link href="https://web.archive.org/web/20151123204921cs_/https://www.blogger.com/static/v1/widgets/4235989350-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151123204921cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151123204921im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151123204921im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151123204921im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151123204921im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151123204921im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151123204921im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151123204921im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151123204921im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151123204921im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151123204921im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151123204921im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151123204921im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151123204921im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151123204921im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151123204921im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151123204921im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151123204921im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151123204921im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Tuesday, December 29, 2009
+        </h2>
+        <div class="post">
+         <a name="8289806529974344536">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-904-error-while-copying-folder.html">
+           Ubuntu 9.04:  Error While Copying; Folder Contents Not Displayed; Input/Output Error
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           <div>
+            I was using Ubuntu 9.04 (Jaunty Jackalope) with an internal drive and an external USB hard drive. The latter was a Seagate SATA in a Rosewill RX-358-S SLV enclosure. I copied and pasted a 16GB folder from the internal drive to the USB drive. Those 16GB consisted of 13 files, among which was one large (15GB) VMware virtual disk. The folder I was copying was named VMs. When I copied that folder from the internal drive to the external drive, I got this message:
+            <br/>
+            <blockquote>
+             <div>
+              Error while copying to 'VMs'.
+              <br/>
+             </div>
+             <div>
+              <br/>
+             </div>
+             <br/>
+             <div>
+              There was an error getting information about the destination.
+              <br/>
+             </div>
+            </blockquote>
+            <br/>
+            <div>
+             When I showed more details, it said this:
+             <br/>
+            </div>
+            <div>
+             <blockquote>
+              Error stating file '/media/OFFSITE/VMs': Input/output error
+              <br/>
+             </blockquote>
+            </div>
+            <br/>
+            <div>
+             I didn't know what it meant when it referred to "stating" file. Regardless, when I clicked on the target (external) folder, I got this message:
+             <br/>
+            </div>
+            <blockquote>
+             <br/>
+             <div>
+              The folder contents could not be displayed.
+              <br/>
+             </div>
+             <br/>
+             <br/>
+             <div>
+              Sorry, could not display all the contents of [folder name]: Input/output error.
+              <br/>
+             </div>
+            </blockquote>
+            <br/>
+            <div>
+             I got the same error message when trying to view the contents of other folders on the external drive. Its contents were visible to Windows XP running on a different computer. The computer on which I was having this problem was able to detect the existence of the external drive and could show its folder tree in Nautilus; it just couldn't show the contents of any particular folder on the external drive. Meanwhile, the internal drive seemed to be working normally.
+             <br/>
+            </div>
+            <div>
+             <br/>
+            </div>
+            <br/>
+            <div>
+             The Rosewill enclosure had eSATA as well as USB connectors. The same error messages came up with both.
+             <a href="https://web.archive.org/web/20151123204921/http://ubuntuforums.org/showpost.php?p=5855236&amp;postcount=2">
+              One source
+             </a>
+             suggested that the external enclosure's power supply could be malfunctioning. Since Windows could read the drive, I doubted that was the explanation. I had had this problem previously, and had used ntfs-config to solve it, which is why I had
+             <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/2009/09/vmware-workstation-653-on-ubuntu-904.html">
+              installed ntfs-config
+             </a>
+             when setting up the system this time. But the procedure I had
+             <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/2009/09/vmware-workstation-653-on-ubuntu-904.html">
+              most recently
+             </a>
+             used didn't solve the problem this time. Reviewing
+             <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-ongoing-developments.html">
+              earlier efforts
+             </a>
+             , I typed "df -h" and confirmed that the external drive (/media/OFFSITE) was indeed at /dev/sdd5, as I had indicated in /etc/fstab. In that case,
+             <a href="https://web.archive.org/web/20151123204921/http://ubuntuforums.org/showpost.php?p=5841442&amp;postcount=2">
+              the advice of pablopancho
+             </a>
+             would be to type "sudo ntfsfix /dev/sdd5" (which should run, at least, because ntfsfix was part of ntfsprogs, which was another program that I was now learning to install when setting up the system, anticipating that I would have NTFS drive problems at some point). This gave me error messages stating a number of failures (e.g., "Failed to determine whether /dev/sdd5 is mounted: No such file or directory" and "Failed to startup volume: No such file or directory") and concluding with this advice: "Volume is corrupt. You should run chkdsk."
+             <br/>
+            </div>
+            <div>
+             <br/>
+            </div>
+            <br/>
+            <div>
+             So, OK, I connected the external drive to the WinXP machine again and rebooted it from the Windows installation CD. I went into Recovery Mode and ran "chkdsk /r." Chkdsk got only 54% of the way through the job and then stopped and said, "The volume appears to contain one or more unrecoverable problems." I rebooted with the
+             <a href="https://web.archive.org/web/20151123204921/http://gparted.sourceforge.net/livecd.php">
+              Gparted live CD
+             </a>
+             and told it to check the external drive. It did not complete that operation; instead, it said, "An error occurred while applying the operations." Fortunately, this occurred on a backup drive, so I was able to skip the attempt to
+             <a href="https://web.archive.org/web/20151123204921/http://www.google.com/search?hl=en&amp;client=opera&amp;rls=en&amp;num=50&amp;newwindow=1&amp;q=%22volume+appears+to+contain+one%22+%22unrecoverable+problems%22+ntfs+chkdsk+recover&amp;btnG=Search">
+              recover its data
+             </a>
+             ; I figured I would just repartition it and start over.
+             <br/>
+            </div>
+            <br/>
+            <div>
+             Before repartitioning, though, just out of curiosity, I booted my laptop into Vista, connected the external drive to that, and was able to copy data from the external drive to the laptop. I assume I would have been able to do the same from a Windows XP machine, but I didn't try. As had happened to me previously, I was finding that Ubuntu seemed to be more concerned about drive imperfections than Windows was. I wanted the drive to be fixed, of course, so I
+             <a href="https://web.archive.org/web/20151123204921/http://www.google.com/search?client=opera&amp;rls=en&amp;q=vista+drive+checking&amp;sourceid=opera&amp;ie=utf-8&amp;oe=utf-8">
+              went looking
+             </a>
+             for the way to repair hard drives in Vista.
+             <a href="https://web.archive.org/web/20151123204921/http://windowshelp.microsoft.com/Windows/en-US/help/bc1393cf-9f9c-79c7-0f91-9337c2c41f811033.mspx">
+              It seemed
+             </a>
+             that Vista was similar to XP in this regard: in Windows Explorer, I clicked on the external drive, right-clicked and selected Properties &gt; Tools &gt; Error-checking. I ran both the "Automatically fix" and the "Scan for" options. It began processing files, one at a time, very slowly. It took hours. In fact, after six hours, judging by its progress bar, it had only processed about one-tenth of the total contents of the drive. Granted, it was a 1TB drive with about 800GB of data. Vista might have finished with a 300GB drive, at this rate, in 24 hours or less. I wasn't inclined to let it churn away for a week, so I canceled. If this process was actually succeeding in recovering data, then I had to say that Vista seemed, at this point, to include an impressive file-recovery capability. But whatever.
+             <br/>
+            </div>
+            <div>
+            </div>
+            <br/>
+            <div>
+             I bailed out and took a look at the drive, or tried to. Now Vista said, "Location is not available. F:\ is not accessible. Access is denied." So I tried reformatting the drive. But formatting itself looked like it was going to take hours, so I tried to cancel. Unfortunately, Vista said, "The format could not be interrupted. To attempt to quit formatting again, click Retry. To quit immediately, click Cancel." Retry didn't work, so I used Cancel. I rebooted from the Vista installation CD and went into the Repair Your Computer &gt; Command Prompt option. Chkdsk /? gave me the idea of trying "chkdsk f: /f," but that said "Cannot open volume for direct access." Rebooting back to regular Vista, I clicked on drive F in Windows Explorer. It was now showing as just "Local Disk (F:)," not as the OFFSITE drive. When I clicked on it, Vista said, "You need to format the disk in drive F: before you can use it." So I went with that. But after running all night, and showing what looked like progress to completion on its progress bar, it said, "Windows was unable to complete the format." I rebooted into Ubuntu and tried Partition Manager (Gparted) again. It still showed the drive as being partitioned, but in an unknown format. Since I was no longer trying to save the data, I deleted the partition on that drive and then created a new extended partition and a logical partition, within the extended partition, filling the whole drive, in NTFS format. But the second step didn't complete; instead, Gparted told me that I had to run Windows chkdsk /f twice on this drive. I did that. Then I booted into WinXP and tried copying some data to the drive. I got this:
+             <br/>
+            </div>
+            <blockquote>
+             <br/>
+             <div>
+              Windows - Delayed Write Failed.
+              <br/>
+             </div>
+             <div>
+             </div>
+             <br/>
+             <div>
+              <br/>
+              Windows was unable to save all the data for the file H:\$Mft. The data has been lost. This error may be caused by a failure of your computer hardware or network connection. Please try to save this file elsewhere.
+              <br/>
+             </div>
+            </blockquote>
+            <div>
+             As it turned out, I had two separate problems here. First, my hard drive was full. I doubt I had ever emptied out the root trash, and it turned out that was the bulk of the problem. I've explored that, and other aspects of making drive space in Ubuntu, in
+             <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/2009/12/full-disk-in-ubuntu-904.html">
+              a separate post
+             </a>
+             .
+             <br/>
+             <br/>
+             <br/>
+             Second, I had to play around by trial and error with some technical steps involved in getting the external drive mounted. I worked through that in
+             <a href="https://web.archive.org/web/20151123204921/http://ubuntuforums.org/showthread.php?p=7961387#post7961387">
+              a forum post
+             </a>
+             . But now I had a new problem. When I tried now to run an rsync backup process, I got this:
+             <br/>
+             <blockquote>
+              rsync: writefd_unbuffered failed to write 4 bytes [sender]: Broken pipe (32)
+              <br/>
+              rsync: connection unexpectedly closed (490 bytes received so far) [sender]
+              <br/>
+              rsync error: error in rsync protocol data stream (code 12) at io.c(600) [sender=3.0.5]
+              <br/>
+             </blockquote>
+             I had to interrupt this troubleshooting for a couple of days. When I came back to it and tried to run the same rsync backup process, I now got a number of error messages along these lines:
+             <br/>
+             <blockquote>
+              rsync: failed to set times on "/media/OFFSITE/[subfolder]": Input/output error (5)
+              <br/>
+              rsync: recv_generator: failed to stat "media/OFFSITE/[subfolder]/[filename]": Input/output error (5)
+              <br/>
+              *** Skipping any contents from this failed directory ***
+              <br/>
+              rsync: recv_generator: mkdir "/media/OFFSITE/[subfolder]" failed: Input/output error (5)
+              <br/>
+             </blockquote>
+             <a href="https://web.archive.org/web/20151123204921/http://forums.buffalotech.com/buffalo/board/message?message.uid=1113">
+              Taillessmonkey
+             </a>
+             found that the problem disappeared for him/her when s/he replaced the external hard drive enclosure. I happened to find another external drive enclosure on sale at about this time, and bought that. While waiting for it to arrive, I tried connecting the hard drive internally within the computer I was attempting to back up. When the computer started up, it recognized it immediately as the OFFSITE drive, but I still got some instances of that same "recv_generator" error. Actually, just one. Instead, this time I got dozens of "Input/output error" messages arising from an "rsync: rename" attempt to rename nonexistent files. For instance, one of those input/output errors arose from an attempt to rename a file called "DW_B9154.wav.Mw21w0" to be DW_B9154.wav. But there was no Mw21w0 file, or at least there should not have been. I could only guess that rsync was creating temporary copies of files, during its backup process, and was then losing track of those files before it could delete them. I wasn't sure if that was the case, or what to do about it if it was.
+             <br/>
+             <br/>
+             I did wonder, though, whether this might be a problem with the source partition rather than the target. With the backup OFFSITE drive still inside the computer, I ran an rsync to back up another partition to OFFSITE. This one worked just fine. I tried another. That one went with only one error. These same drives had produced numerous error messages when I had tried to back up to them in the external drive enclosure. It seemed that maybe I had two problems: one source partition was messed up, and also the external drive enclosure was no longer cooperating with Ubuntu.
+             <br/>
+             <br/>
+             Although that other partition had shown only one error in Terminal when I was running rsync with OFFSITE as the target drive, I was in for another surprise. When I checked the folder on OFFSITE to which that partition's contents had supposedly been copied, Nautilus reported that there were no files in that folder. Yet when I tried to manually copy files over from that partition to that folder on OFFSITE, I got a message indicating that the first of the files being copied already existed on the target. (I had set Nautilus to show hidden files, and anyway these were not hidden.) I went ahead and told it to overwrite the files already existing on the target (OFFSITE); and when it was done, what I saw on the target was
+             <br/>
+            </div>
+            <br/>
+            <div>
+            </div>
+            [This is as far as I got on this item.  I am only now getting around to replacing the external hard drive enclosure.  Other external drive bays seem to be doing fine with that same hard drive, so I assume the enclosure was much of the problem.]
+            <br/>
+            <div>
+            </div>
+           </div>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151123204921/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=8289806529974344536&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/error%20stating%20file" rel="tag">
+             error stating file
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/error%20while%20copying" rel="tag">
+             error while copying
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/esata" rel="tag">
+             esata
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/external%20hard%20drive%20enclosure" rel="tag">
+             external hard drive enclosure
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/Rosewill" rel="tag">
+             Rosewill
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/RX-358-S%20SLV" rel="tag">
+             RX-358-S SLV
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/SATA" rel="tag">
+             SATA
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/serial%20ata" rel="tag">
+             serial ata
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/ubuntu%209.04" rel="tag">
+             ubuntu 9.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/search/label/usb" rel="tag">
+             usb
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151123204921/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=8289806529974344536" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151123204921/http://raywoodcockslatest.blogspot.com/feeds/8289806529974344536/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:49:21 Nov 23, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:16:13 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.691
+  exclusion.robots: 0.083
+  exclusion.robots.policy: 0.075
+  esindex: 0.011
+  cdx.remote: 11.056
+  LoadShardBlock: 76.7 (3)
+  PetaboxLoader3.datanode: 130.486 (4)
+  load_resource: 224.124
+  PetaboxLoader3.resolve: 145.599
+-->

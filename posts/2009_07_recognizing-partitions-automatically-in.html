@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053752cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053752im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053752/http://raywoodcockslatest.blogspot.com/2009/07/recognizing-partitions-automatically-in.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/feeds/3000455407214023420/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053752/http://raywoodcockslatest.blogspot.com/2009/07/recognizing-partitions-automatically-in.html" property="og:url"/>
+  <meta content="Recognizing Partitions Automatically in Ubuntu 9.04" property="og:title"/>
+  <meta content="In Ubuntu 9.04 (Jaunty Jackalope), disk partitions normally remain unmounted until you mount them manually.  One way to do this is to start ..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Recognizing Partitions Automatically in Ubuntu 9.04
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053752im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053752im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053752im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053752im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053752im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053752im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053752im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053752im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053752im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053752im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053752im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053752im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053752im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053752im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053752im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053752im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053752im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053752im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053752cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053752cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Sunday, July 19, 2009
+        </h2>
+        <div class="post">
+         <a name="3000455407214023420">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/2009/07/recognizing-partitions-automatically-in.html">
+           Recognizing Partitions Automatically in Ubuntu 9.04
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           <span class="Apple-style-span" style=" ;font-family:georgia;">
+            <div>
+             In Ubuntu 9.04 (Jaunty Jackalope), disk partitions normally remain unmounted until you mount them manually.  One way to do this is to start Ubuntu's File Browser (also known as Nautilus).  You can do this by choosing the Places &gt; Computer menu option.  In File Browser, just double-click on the drive you want to mount, and its name will appear under the File System &gt; Media folder there in File Browser.  You can also mount drives by typing commands into Ubuntu's command-line window (Applications &gt; Accessories &gt; Terminal).  First, type "sudo mkdir /media/[drivename]" to create a mount point. After doing this for all unrecognized drives, type "sudo mount -a".
+            </div>
+            <div>
+            </div>
+            <div>
+             But instead of doing this sort of thing, I wanted the system to recognize my drives on bootup, so that I would not have to mount them manually each time I rebooted.  In my first approach to this problem, I typed "sudo ntfs-config."  This approach worked OK on one computer, where I was doing a clean installation -- where, that is, I had formatted the partition before installing 9.04 on it.  But on another computer, I installed 9.04 on top of 8.04 without formatting the partition.  This was advantageous in that it preserved lots of files and settings from before.  The drawback was that I was running into funky problems with ntfs-config.
+            </div>
+            <div>
+            </div>
+            <div>
+             On this system, I got an error message when I ran ntfs-config.  The message was, literally, "Error : An error occured when trying to configure [partition name], please retry. Thanks."  (For those who are searching with the correct spelling, let me retype that error message:  "Error: An error occurred when trying to configure . . . ."  When I tried to examine the partition in GParted
+             <span class="Apple-style-span" style=" ;font-family:Georgia;">
+              (i.e., System &gt; Administration &gt; Partition Editor (see above))
+              <span class="Apple-style-span" style=" ;font-family:georgia;">
+               , I got this:  "Warning: Unable to read the contents of this file system!"  The partition had been available a minute earlier, when I had booted into Windows XP, and I had shut down WinXP normally before rebooting into Ubuntu. So I didn't think the partition was truly hosed.
+              </span>
+             </span>
+            </div>
+            <div>
+            </div>
+            <div>
+             <span class="Apple-style-span" style=" ;font-family:Georgia;">
+              <span class="Apple-style-span" style=" ;font-family:georgia;">
+               I found
+               <a href="https://web.archive.org/web/20190906053752/http://ubuntuforums.org/showthread.php?t=217009">
+                a very, very long thread
+               </a>
+               on the subject, but
+               <a href="https://web.archive.org/web/20190906053752/http://ubuntuforums.org/showpost.php?p=6389187&amp;postcount=2015">
+                post no. 2015
+               </a>
+               in that thread said the thread's advice was outdated for purposes of newer versions of Ubuntu.  In
+               <a href="https://web.archive.org/web/20190906053752/https://bugs.launchpad.net/ubuntu/+source/ntfs-config/+bug/111103?comments=all">
+                another thread
+               </a>
+               ,
+               <a href="https://web.archive.org/web/20190906053752/https://bugs.launchpad.net/ubuntu/+source/ntfs-config/+bug/111103/comments/4">
+                someone said
+               </a>
+               they got this error message after installing a newer version without formatting the partition, and solved it by deleting the mount points.  I had a fresh backup of the partition in question, so I tried taking that approach. First, I opened File Browser and went to File System &gt; Media &gt; CURRENT.  File Browser said that partition was empty.  When I right-clicked on it, however, File Browser didn't give me an option of deleting it.  Its Properties said it was owned by root, so I logged in as root (see above), typed "cd /media", typed "dir" to make sure CURRENT was there, typed "dir CURRENT" to make sure it was empty, and then typed "rm -r CURRENT" to delete it.  I restarted the system, started File Browser, went to Computer (in the Tools bar), double-clicked on CURRENT, and it was there, with all its contents.  CURRENT was formatted in ext3 (i.e., Linux).  I had another partition that was having the same problem.  It was formatted in NTFS (i.e., Windows).  But now that I had rebooted, it too was available and looking fine.
+              </span>
+             </span>
+            </div>
+            <div>
+            </div>
+            <div>
+             I dropped this issue for the time being.  Next day, when I rebooted, I found that, predictably, the various partitions were not mounted.  In Terminal, I typed "sudo gedit /etc/fstab."  My fstab file did not show the partitions I wanted to be mounted automatically.  I reviewed
+             <a href="https://web.archive.org/web/20190906053752/http://raywoodcockslatest.blogspot.com/2008/08/vmware-in-ubuntu-ongoing-developments.html">
+              one of my old posts
+             </a>
+             on ntfs-3g.  It seemed to say that ntfs-config was the solution.  I tried running ntfs-config again.  This time, it ran.  It recognized two NTFS partitions.  Now I just had two ext3 partitions to set up for automatic mounting.  I went back into fstab and saw the lines that ntfs-config had added.  I hadn't thought to save the fstab file from my previous installation; it would have been handy to copy over the relevant lines.  From the previous post, I gathered that the trick was to write something like this in fstab:
+            </div>
+            <div>
+            </div>
+            <div>
+             <span class="Apple-style-span" style="font-family:'courier new';">
+              /dev/sda3 /media/VMS ext3 defaults 0 0
+             </span>
+            </div>
+            <div>
+            </div>
+            <div>
+             for the VMS partition, and likewise for the other ext3 partition.  I double-checked that I had the right device addresses by checking them in System &gt; Administration &gt; Partition Editor (i.e., GParted).  I rebooted, but the ext3 partitions were still not automounted, though the NTFS partitions continued to be automounted nicely.  I didn't know why the line just shown, for the VMS ext3 partition, did not work in fstab now; according to the old post, it had worked in Ubuntu 8.04.
+             <a href="https://web.archive.org/web/20190906053752/https://help.ubuntu.com/community/AutomaticallyMountPartitions#Using pysdm">
+              Ubuntu documentation
+             </a>
+             said something about pysdm, so I looked into that.  They suggested typing this into Terminal:
+            </div>
+            <div>
+            </div>
+            <div>
+             <span class="Apple-style-span" style="font-family:'courier new';">
+              sudo apt-get install pysdm
+             </span>
+            </div>
+            <div>
+            </div>
+            <div>
+             but I saw it was available in Synaptic (i.e., Ubuntu's System &gt; Administration &gt; Synaptic Package Manager menu pick), so I used that instead to install pysdm.  I typed "pysdm" at the Terminal prompt, but got an error message indicating that I had to have root privileges, so I tried again with "sudo pysdm."  (Also available via System &gt; Administration &gt; Storage Device Manager.) That gave me a Storage Device Manager (SDM) window that listed some, but not all, of my partitions.  I noticed that, if I started pysdm while I still had the foregoing /dev/sda3 line for my VMS partition in my fstab file, SDM would not give me an option of configuring the VMS partition; but if I deleted that line from fstab and then started pysdm and clicked on sda3, SDM would give me a "Configure now?" dialog with the message, "/dev/sda3 hasn't been configured.  Do you want to configure it now?"  I said OK.  I told it to set the mount point to File System &gt; Media &gt; VMS.  Then I clicked on the Assistant button and saw that the option was checked that said "The file system is mounted at boot time."  I also checked the option that said, "Check file system at mount time" on the options dialog's Mounting tab.  I didn't change any other options.  When I checked OK to leave Assistant, I saw an error message in Terminal:  "wrong fs type, bad option, bad superblock on /dev/sda3, missing codepage or helper program, or other error."  I went back into Assistant and removed the "Check file system" option I had just checked.  This time, when I left Assistant, I got Warning messages that said, "Unknown option: rw" and "nouser is not suitable for user" and "Unknown option: async."  I clicked on the "Set defaults" button in SDM and then clicked Apply.  This produced no additional Warning messages in Terminal.  Trying once more, I just went into Assistant and immediately executed, and this did produce the same Warning messages, plus an additional one that said, "Unknown option: defaults."  I tried just emptying out the Options box altogether in SDM.  Then I clicked Apply.  I did the same with the other ext3 partition that was not yet mounting automatically.  I restarted the system.
+            </div>
+            <div>
+            </div>
+            <div>
+             It occurred to me that I may not have restarted the system previously, but may merely have logged out and logged back in.  Ubuntu 9.04 seemed to require two steps to reboot, and it seemed that I had forgotten to take that second step last time around.  This occurred to me right around the time when I tried to restart the system and found that it froze with a black screen.  Evidently my fstab file was not presently in an acceptable form.  I punched the computer's reset button and rebooted with the Ubuntu installation CD, chose the "Try Ubuntu" option, and edited fstab as above.  (Note that there's an fstab on the CD too; make sure you're editing the one on the hard drive.)  I saw that I had failed to add the preferred mountpoint for one of my ext3 partitions:  it said "/media/sdc5" instead of "/media/CURRENT."  I fixed that and rebooted without the CD.  This time, the system booted OK.  But those two ext3 partitions were still not automounted.
+            </div>
+            <div>
+            </div>
+            <div>
+             In File System &gt; media (i.e., /media), I noticed that there was a mount point for the VMS partition, but it had nothing in it.  I typed "dir" to make sure there was nothing there, and then typed "sudo rm -r VMS" to delete it.  I also deleted the "sc5" mountpoint mentioned above.  In File Browser, I clicked on the Computer button at the top and then double-clicked on each of these two partitions (i.e., VMS and CURRENT) to create mountpoints (i.e., /media folders) for them.  I tried rebooting again.  They still weren't automounting, and the mount points I had created for them were gone, as I should have expected.  Incidentally, at this point
+             <a href="https://web.archive.org/web/20190906053752/http://www.scribd.com/doc/15124069/Understandingfstab">
+              I discovered
+             </a>
+             that the custom was apparently to mount fixed hard drives at /mnt, and use /media for removable hard drives.
+            </div>
+            <div>
+            </div>
+            <div>
+             About this time, I discovered that I had commented out the lines added by SDM (i.e., I put # signs (also called hash marks) in front of each of those lines).  I forgot.  I had done that to troubleshoot fstab, and then didn't go that route after all, and forgot to remove them.  So I removed the hash marks now and rebooted.  But that wasn't the solution.  I re-ran SDM, went through more or less the steps described above, and rebooted.  This time, it worked:  the partitions were automounted, and their contents were visible.  Not sure exactly what was different this time, but something was.  So I guess the conclusion is, if it doesn't work in SDM the first time, tinker around for a while, reboot a couple of times, try SDM again, and reboot.
+            </div>
+           </span>
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053752/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=3000455407214023420&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/9.04" rel="tag">
+             9.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/automount" rel="tag">
+             automount
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/automounting" rel="tag">
+             automounting
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/ext3" rel="tag">
+             ext3
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/hash%20marks" rel="tag">
+             hash marks
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/jaunty%20jackalope" rel="tag">
+             jaunty jackalope
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/linux" rel="tag">
+             linux
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/mount" rel="tag">
+             mount
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/mountpoint" rel="tag">
+             mountpoint
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/nautilus" rel="tag">
+             nautilus
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/ntfs" rel="tag">
+             ntfs
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/partitions" rel="tag">
+             partitions
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/pysdm" rel="tag">
+             pysdm
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/sdm" rel="tag">
+             sdm
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/synaptic" rel="tag">
+             synaptic
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/terminal" rel="tag">
+             terminal
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053752/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=3000455407214023420" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053752/https://raywoodcockslatest.blogspot.com/feeds/3000455407214023420/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:37:52 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:12:07 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.612
+  exclusion.robots: 0.074
+  exclusion.robots.policy: 0.064
+  esindex: 0.009
+  cdx.remote: 17.609
+  LoadShardBlock: 300.622 (3)
+  PetaboxLoader3.datanode: 311.044 (4)
+  load_resource: 61.401
+  PetaboxLoader3.resolve: 43.195
+-->

@@ -1,0 +1,954 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20150419072427im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/tweaking-ubuntu-1004.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="http://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/feeds/823484270109452593/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Tweaking Ubuntu 10.04
+  </title>
+  <link href="https://web.archive.org/web/20150419072427cs_/https://www.blogger.com/static/v1/widgets/728935430-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20150419072427cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=fde3e388-6511-4bfa-84e6-f325099fd6ac" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20150419072427im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20150419072427im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20150419072427im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20150419072427im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20150419072427im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20150419072427im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20150419072427im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20150419072427im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20150419072427im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20150419072427im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20150419072427im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20150419072427im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20150419072427im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20150419072427im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20150419072427im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20150419072427im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20150419072427im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20150419072427im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <!-- google_ad_section_start -->
+        <h2 class="date-header">
+         Monday, May 10, 2010
+        </h2>
+        <div class="post">
+         <a name="823484270109452593">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/tweaking-ubuntu-1004.html">
+           Tweaking Ubuntu 10.04
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/upgrading-to-ubuntu-1004-lts.html">
+            I had upgraded
+           </a>
+           from Ubuntu 9.10 to Ubuntu 10.04 (Lucid Lynx).  Now I wanted to make some adjustments.  For this purpose, I would be drawing upon the
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/03/ubuntu-910-downgrading-from-64-bit-to.html">
+            first
+           </a>
+           and
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/installing-32-bit-ubuntu-910-additional.html">
+            second
+           </a>
+           lists of adjustments I had made when I had installed 9.10.
+           <br/>
+           <br/>
+           The first of those other things was to install a
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/enabling-pae-on-ubuntu-1004.html">
+            PAE-enabled 10.04 kernel
+           </a>
+           , so that I would have access to all of my system's RAM.  I also found that VMware Workstation 7.0 was requiring me to enter my serial number.  I had not entered it after installing it on 9.10; I had just been using the trial serial number.  Now, unfortunately, Workstation was not cooperating:  it was saying "Unknown error entering serial number."  The solution to this problem was to run Workstation as root (i.e., type "sudo vmware" at the Terminal prompt) and enter the serial number there.
+           <br/>
+           <br/>
+           Since I was doing an upgrade of a previous installation, I did not have to reinstall packages, but I did have a problem with Software Sources.  I have described that one in
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/ubuntu-1004-adjustments-software-source.html">
+            a separate post
+           </a>
+           .  (Even if I had needed to reinstall packages, the "installed-software" trick described in the lists of adjustments (above) would have made short work of it.)  On my laptop, I was doing the same upgrade, and there I
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/07/interrupted-upgrade-from-ubuntu-910-to.html">
+            made some problems for myself
+           </a>
+           when I had to interrupt the upgrade.  Here on the desktop, the next task was (as described in separate posts) to try to get the
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/installing-brother-mfc-7340-printer-in.html">
+            printing
+           </a>
+           and
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/scanning-functionality-for-brother-mfc.html">
+            scanning
+           </a>
+           features of my Brother MFC-7340 printer working from within Ubuntu.  After doing that, I tackled a problem that I had wanted to solve for years:  how to import the
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/importing-microsoft-word-autocorrect.html">
+            list of AutoCorrect entries
+           </a>
+           that I had created in Microsoft Word into OpenOffice.org Writer, running on Ubuntu.  That took some time, but then I was able to get back to the project of working through those notes from previous installations.
+           <br/>
+           <br/>
+           The upgrade from Ubuntu 9.10 to 10.04 had preserved much of the configuration I had already set up.  So as I worked through the Ubuntu tweaking steps described in
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/03/ubuntu-910-downgrading-from-64-bit-to.html">
+            one of my previous posts
+           </a>
+           , I had to deal with only a fraction of the issues addressed there.  One was to prevent icons for mounted drives from appearing on the desktop.  That called for Terminal:  “gconf-editor” &gt; /apps/nautilus/desktop &gt; unclick volumes_visible.  But it was already unclicked, and yet I did have icons for mounted drives visible on the desktop.  I went into Applications &gt; System Tools &gt; Ubuntu Tweak &gt; Desktop Icon Settings and clicked Show desktop icons and left everything else unchecked, but this made no difference.  I tried again, this time using “sudo gconf-editor.”  Ah, yes.  The volumes_visible box was checked for root.  Unchecking it removed the icons from the desktop.
+           <br/>
+           <br/>
+           I had not noticed, but somewhere along the line, I had evidently installed
+           <a href="https://web.archive.org/web/20150419072427/http://packages.ubuntu.com/dapper/gnome/nautilus-open-terminal">
+            nautilus-open-terminal
+           </a>
+           via Synaptic, or possibly it came installed by default.  As its name suggested, this tool added a right-click (context menu) option in Nautilus, "Open in Terminal."  Unlike Windows Explorer, this option was only available for folders in the file listing in Nautilus -- in the right pane, that is, not in the left pane that would typically show the folder tree.  In that left pane, this and other options were absent.
+           <br/>
+           <br/>
+           Had another little problem.  During the upgrade to 10.04, the Firefox icon changed, on the left-side (formerly top) panel, to a red
+           <a href="https://web.archive.org/web/20150419072427/http://ubuntuforums.org/showthread.php?t=1310093">
+            do-not-enter
+           </a>
+           or
+           <a href="https://web.archive.org/web/20150419072427/http://ubuntuforums.org/showthread.php?p=9260801">
+            not-allowed
+           </a>
+           kind of icon; and in Applications &gt; Internet, it changed to a grey question-mark box.  I fixed this by going to the panel, right-clicking on Applications &gt; Edit Menus &gt; Internet &gt; Firefox &gt; Properties, clicking on the icon, and selecting /usr/share/pixmaps/firefox.png.  Speaking of Firefox, I wanted Ubuntu to open Firefox and Google Chrome on startup.  I wanted to add these to a script that would
+           <a href="https://web.archive.org/web/20150419072427/http://www.google.com/search?num=50&amp;hl=en&amp;newwindow=1&amp;safe=off&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333&amp;q=%22startup+script%22+folder+OR+directory+ubuntu+10.04+OR+lucid+-%22windows+7%22+-mac+-compiz+-facebook&amp;btnG=Search">
+            run at startup
+           </a>
+           , since I suspected that I would be coming up with other things that I wanted to have happen at startup too.  It
+           <a href="https://web.archive.org/web/20150419072427/http://embraceubuntu.com/2005/09/07/adding-a-startup-script-to-be-run-at-bootup/">
+            seemed pretty technical
+           </a>
+           – beyond my current ability, anyway – but it looked like I might be able to just write a script and put it into /etc./init.d.  I typed “sudo gedit” and then created a file called /etc./init.d/a_startup_script.sh.  I put, into it, the line that I got from e.g., right-clicking on Applications and choosing Edit Menus &gt; Applications &gt; Internet &gt; Firefox &gt; Properties:  “firefox %u.”  I saved it and typed “chmod +x /etc./init.d/a_startup_script.sh.”  Then I rebooted.  This achieved nothing.  So creating a general-purpose startup script remained a goal for the future.
+           <br/>
+           <br/>
+           I also went down
+           <a href="https://web.archive.org/web/20150419072427/http://www.techsupportalert.com/content/ubuntu-tips-and-tricks.htm">
+            Gizmo’s Freeware list of tweaks
+           </a>
+           .  I had already done most of the ones I wanted, but there were a few others.  One was to install Windows TrueType fonts in Ubuntu.  I decided to extend their advice somewhat.  I took a look at System &gt; Preferences &gt; Appearance &gt; Fonts.  I could see that a lot of Windows fonts were not present on the list there.  So in Windows XP, I went to C:\Windows\Fonts.  I selected and copied everything to another, temporary folder called UbuFonts.  In UbuFonts, I sorted by file type and deleted the ones that were not TTF files.  Back in Ubuntu, I typed “sudo nautilus” and went to /usr/share/fonts/truetype.  It already had a folder called msttcorefonts, but with only a fraction of the fonts that I had just copied from C:\Windows\Fonts to UbuFonts, and the font files there seemed older and smaller.  I made a backup copy of the msttcorefonts folder and then copied everything from UbuFonts into /usr/share/fonts/truetype/msttcorefonts.  Now System &gt; Preferences &gt; Appearance &gt; Fonts had a much wider selection.  I changed the fonts to Tahoma 10 and the monospace to Courier 10.  Tahoma allowed me to see more information on each line onscreen.
+           <br/>
+           <br/>
+           Another tweak from Gizmo called for some playing around with Compiz.  This was a bad idea, as described in
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/compiz-in-ubuntu-1004-same-as-it-ever.html">
+            a separate post
+           </a>
+           .  Another tweak of interest was to clean up the GRUB boot menu.  I typed “uname -r” and saw that I was using the 2.6.32-22-generic-pae kernel.  In Synaptic, I searched for linux-image, clicked at the top of the left-hand column to sort by those that were installed, and marked for removal all numbered items other than that kernel.  In this case, that included just two items:  linux-image-2.6.31-21-generic-pae and linux-image-2.6.32-22.generic (i.e., not pae).  I did another search for linux-headers and marked all non-2.6.32-22-generic-pae items there too.  In this case, trying to remove linux-headers-2.6.32-22 threatened to remove linux-headers-2.6.32-22-generic-pae as well; but I wanted to keep that, so I didn’t remove linux-headers-2.6.32-22.  On restart, I saw that GRUB now listed just the 2.6.32-22-generic-pae kernel and its recovery mode, along with memtest and Windows XP (it was a dual-boot machine).  I went back into Ubuntu without a problem.  I did later have
+           <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/2010/05/resuming-vmware-virtual-machine-could.html">
+            a VMware problem
+           </a>
+           that might have been related to this, though.
+           <br/>
+           <br/>
+           Gizmo also pointed me toward a number of
+           <a href="https://web.archive.org/web/20150419072427/http://www.techsupportalert.com/content/best-free-software-linux.htm">
+            recommended freeware apps
+           </a>
+           .  These were for the
+           <a href="https://web.archive.org/web/20150419072427/http://www.google.com/search?q=kde+gnome&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+            KDE (not GNOME) desktop
+           </a>
+           .  I thought it might be time to try KDE, if only to check out these programs.  One was the
+           <a href="https://web.archive.org/web/20150419072427/http://www.kabatology.com/09/09/wally-rotates-desktop-backgrounds-in-linux-windows-and-macosx/">
+            Wally
+           </a>
+           wallpaper changer, which I installed through Synaptic.  Getting Wally (and the whole KDE desktop) involved a total of 91 files.  Other interesting pieces of Gizmo-recommended software I got through Synaptic:
+           <a href="https://web.archive.org/web/20150419072427/http://recordmydesktop.sourceforge.net/rug/toc.php">
+            gtk-recordMyDesktop
+           </a>
+           and
+           <a href="https://web.archive.org/web/20150419072427/http://dolphin.kde.org/">
+            Dolphin
+           </a>
+           file manager.  Downloaded directly from creators’ websites, I got
+           <a href="https://web.archive.org/web/20150419072427/http://www.debugmode.com/wink/">
+            Wink
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20150419072427/http://sourceforge.net/projects/freefilesync/files/">
+            FreeFile Sync
+           </a>
+           , and
+           <a href="https://web.archive.org/web/20150419072427/http://partedmagic.com/">
+            Parted Magic
+           </a>
+           .  I did consider using
+           <a href="https://web.archive.org/web/20150419072427/https://www.dropbox.com/">
+            Dropbox
+           </a>
+           as well, because of its good reviews (by e.g.,
+           <a href="https://web.archive.org/web/20150419072427/http://www.pcmag.com/article2/0,2817,2343861,00.asp">
+            PC Magazine
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20150419072427/http://www.onlinebackuptools.com/dropbox-review/32">
+            Online Backup Tools
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20150419072427/http://www.laptopmag.com/review/software/dropbox.aspx">
+            Laptop
+           </a>
+           , and
+           <a href="https://web.archive.org/web/20150419072427/http://alternativeto.net/desktop/dropbox/">
+            alternativeTo
+           </a>
+           ; but I decided that
+           <a href="https://web.archive.org/web/20150419072427/https://sync.live.com/clientdownload.aspx?ibm=10">
+            Windows Live Sync
+           </a>
+           had
+           <a href="https://web.archive.org/web/20150419072427/http://radiologygeek.wordpress.com/2010/02/13/windows-live-syncmicrosofts-answer-to-drop-box/">
+            important advantages
+           </a>
+           even though I would have to run it in a virtual machine when I was booted into Ubuntu.
+           <br/>
+           <br/>
+           (Note:  a few days later -- possibly the first time I tried it after installing KDE -- Google Desktop search was no longer responding to its default Ctrl-Ctrl hotkey.  That is, its Quick Search Box was not coming up.  Something I saw on some webpage, as I was trying to fix that problem, made me wonder whether the KDE installation was to blame.
+           <a href="https://web.archive.org/web/20150419072427/http://superuser.com/questions/137528/ubuntu-10-04-has-broken-google-desktop-ctrl-ctrl-search-bar-feature">
+            A tip
+           </a>
+           that fixed it was to open the Google Desktop Search preferences and change the hotkey to Ctrl-F1.)
+           <br/>
+           <br/>
+           The last thing to do, in this round of tweaking, was to clean out unnecessary stuff from the drive on which I had installed Ubuntu, so that I could make a backup image in case I needed to reinstall – so that I could just restore the image, that is, instead of having to go back through all these steps.  This, I thought, called for something like the TreeSize utility that I had used in Windows to see where I might have files or folders taking up huge amounts of space.  Among what seemed to be
+           <a href="https://web.archive.org/web/20150419072427/http://www.google.com/search?q=treesize+linux&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGGL_en___US333">
+            several possibilities
+           </a>
+           , I found
+           <a href="https://web.archive.org/web/20150419072427/http://sourceforge.net/projects/treesize/">
+            an actual Linux version
+           </a>
+           of TreeSize, so I downloaded that – but I also discovered Ubuntu’s Applications &gt; Accessories &gt; Disk Usage Analyzer, whose Treemap Chart was especially interesting.  These revealed that my Ubuntu installation was not presently very large, so I didn’t have to worry too much about shrinking it for this particular image.  It also revealed that by far the largest space hog, within that installation, was the Google Desktop index of stuff on my hard drive, at 5.2GB.  I did see that the Google Chrome cache was also taking 400MB.  I went into Chrome’s Settings (the wrench icon at the upper-right corner) &gt; Options but didn’t see any way to control that, other than to just clear the cache.  I decided to leave it for now, and changed some other settings while I was there.  And that was it.  Ubuntu 10.04 was tweaked, at least for now.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20150419072427/http://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=823484270109452593&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/autocorrect" rel="tag">
+             autocorrect
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/brother%20MFC-7340" rel="tag">
+             brother MFC-7340
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/Compiz" rel="tag">
+             Compiz
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/desktop%20icons" rel="tag">
+             desktop icons
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/fonts" rel="tag">
+             fonts
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/freeware" rel="tag">
+             freeware
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/Grub" rel="tag">
+             Grub
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/lucid%20lynx" rel="tag">
+             lucid lynx
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/PAE-enabled%20kernel" rel="tag">
+             PAE-enabled kernel
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/Software%20Sources" rel="tag">
+             Software Sources
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/synaptic" rel="tag">
+             synaptic
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/Ubuntu%2010.04" rel="tag">
+             Ubuntu 10.04
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/update" rel="tag">
+             update
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/upgrade" rel="tag">
+             upgrade
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/search/label/VMware%20Workstation%207" rel="tag">
+             VMware Workstation 7
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20150419072427/http://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=823484270109452593" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!-- google_ad_section_end -->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20150419072427/http://raywoodcockslatest.blogspot.com/feeds/823484270109452593/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 07:24:27 Apr 19, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:19:41 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.765
+  exclusion.robots: 0.095
+  exclusion.robots.policy: 0.083
+  esindex: 0.01
+  cdx.remote: 8.859
+  LoadShardBlock: 189.084 (3)
+  PetaboxLoader3.resolve: 191.464 (3)
+  PetaboxLoader3.datanode: 212.652 (4)
+  load_resource: 265.135
+-->

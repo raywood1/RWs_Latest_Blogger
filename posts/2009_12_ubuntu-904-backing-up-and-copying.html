@@ -1,0 +1,982 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151130171514im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-904-backing-up-and-copying.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/feeds/377979435437311573/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Ubuntu 9.04:  Backing Up and Copying Webpages and Websites
+  </title>
+  <link href="https://web.archive.org/web/20151130171514cs_/https://www.blogger.com/static/v1/widgets/3053256790-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151130171514cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151130171514im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151130171514im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151130171514im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151130171514im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151130171514im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151130171514im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151130171514im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151130171514im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151130171514im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151130171514im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151130171514im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151130171514im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151130171514im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151130171514im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151130171514im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151130171514im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151130171514im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151130171514im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Thursday, December 31, 2009
+        </h2>
+        <div class="post">
+         <a name="377979435437311573">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-904-backing-up-and-copying.html">
+           Ubuntu 9.04:  Backing Up and Copying Webpages and Websites
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           As described in
+           <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-backup-with-rsync.html">
+            a previous post
+           </a>
+           , I had been using rsync to make backups of various files.  This strategy was not working so well in the case of webpages and websites, or at least I wasn't finding much guidance that I could understand.  (Incidentally, I had also tried the Windows program
+           <a href="https://web.archive.org/web/20151130171514/http://www.google.com/search?hl=en&amp;q=httrack&amp;sourceid=navclient-ff&amp;rlz=1B3GGGL_enUS318US318&amp;ie=UTF-8">
+            HTTrack Website Copier
+           </a>
+           , but had found it to be complicated and frustrating.  It seemed to want either to download the entire Internet or nothing at all.)
+           <br/>
+           <br/>
+           The immediate need driving this investigation was that I wanted to know how to back up a blog.  I used the blog on which I am posting this note as my test bed.
+           <br/>
+           <br/>
+           Eventually, I discovered that maybe what I needed to use was
+           <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/wget/">
+            wget
+           </a>
+           , not rsync.
+           <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/wget/manual/wget.html">
+            The wget manual
+           </a>
+           seemed thorough if a bit longwinded and complex, so I tried
+           <a href="https://web.archive.org/web/20151130171514/http://en.wikipedia.org/wiki/Wget">
+            the Wikipedia entry
+           </a>
+           .  That,
+           <a href="https://web.archive.org/web/20151130171514/http://www.veen.com/jeff/archives/000573.html">
+            and another source
+           </a>
+           , gave me the parts of the command I used first:
+           <br/>
+           <br/>
+           <blockquote>
+            wget -r -l1 -np -A.html -N -w5 http://raywoodcockslatest.blogspot.com/search?max-results=1000 --directory-prefix=/media/Partition1/BlogBackup1
+            <br/>
+           </blockquote>
+           <br/>
+           The parts of this wget command have the following meanings:
+           <br/>
+           <br/>
+           <ul>
+            <li>
+             -r means that wget should
+             <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/wget/manual/wget.html#Recursive-Download">
+              recurse
+             </a>
+             , i.e., it should go through the starting folder and all folders beneath it (e.g., www.website.com/topfolder and also www.website.com/topfolder/sub1 and sub2 and sub3 . . .)
+             <br/>
+            </li>
+            <li>
+             -l1 (that's an L-one) means stay at level number one.  That is, don't download linked pages.
+            </li>
+            <li>
+             -np means "no parent" (i.e., stay at this level or below; don't go up to the parent directory)
+            </li>
+            <li>
+             -A.html means
+             <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/wget/manual/wget.html#Recursive-Accept_002fReject-Options">
+              Accept only
+             </a>
+             files with this extension (i.e., only .html files)
+            </li>
+            <li>
+             -N is short for Newer (i.e., only download files that are newer than what's already been downloaded).  In other words, it turns on
+             <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/wget/manual/wget.html#Time_002dStamping">
+              timestamping
+             </a>
+            </li>
+            <li>
+             -w5 means wait five seconds between files.  This is because large downloads can overload the servers you are downloading from, in which case
+             <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/wget/manual/wget.html#Recursive-Download">
+              an irritated administrator
+             </a>
+             may penalize you
+             <br/>
+            </li>
+            <li>
+             The URL shown in this command is the URL of this very blog, plus the additional information needed to download all of my posts in one html file.  But it didn't work that way.  What I got, with this command, was each of the posts as a separate html file, which is what I preferred anyway
+            </li>
+            <li>
+             --directory-prefix indicates where I want to put the download.  If you don't use this option, everything will go into the folder where wget is running from.  I came across
+             <a href="https://web.archive.org/web/20151130171514/http://www.linuxforums.org/forum/linux-applications/99494-wget-default-download-directory.html#post491723">
+              a couple
+             </a>
+             of
+             <a href="https://web.archive.org/web/20151130171514/http://www.mail-archive.com/wget@sunsite.dk/msg08468.html">
+              suggestions
+             </a>
+             on what to do if your path has spaces in it, but I hadn't gotten that far yet
+             <br/>
+            </li>
+           </ul>
+           <br/>
+           Incidentally, I also ran across another possibility that I didn't intend to use now, but that seemed potentially useful for the future.  Someone asked if there was a way to save each file with a unique name, so that every time  you run the wget script, you get the current state of the webpage.
+           <a href="https://web.archive.org/web/20151130171514/http://www.mail-archive.com/wget@sunsite.dk/msg09186.html">
+            One answer
+           </a>
+           involved using
+           <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/coreutils/manual/coreutils.html#mktemp-invocation">
+            mktemp
+           </a>
+           .  Also, it seemed potentially useful to know that I could download all of the .jpg files from a webpage by using something like this:  wget -e robots=off -r -l1 --no-parent -A.jpg http://www.server.com/dir/
+           <br/>
+           <br/>
+           The first download was pretty good, but I had learned some more things in the meantime, and had some questions, so I decided to try again.  Here's the script I used for my second try:
+           <br/>
+           <blockquote>
+            wget -A.html --level=1 -N -np -p -r -w5 http://raywoodcockslatest.blogspot.com --directory-prefix=/media/Partition1/BlogBackup2
+            <br/>
+           </blockquote>
+           <br/>
+           This time, I arranged the options (or at least the short ones) in alphabetical order.  The -p option indicated that images and style sheets would be downloaded too.  I wasn't sure I needed this -- the basic html pages looked pretty good in my download as they were -- but I thought it might be interesting to see how much larger that kind of download would be.  I used a shorter version of the source URL and I designated a different output directory.
+           <br/>
+           <br/>
+           I could have added -k (long form:  --
+           <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/wget/manual/wget.html#Recursive-Retrieval-Options">
+            convert-links
+           </a>
+           ) so that the links among the downloaded html pages would be modified to refer to the other downloaded pages, not to the webpage where I had downloaded them from; but then I decided that the purpose of the download was to give me a backup, not a local copy with full functionality; that is, I wanted the links to work properly when posted as webpages online, not necessarily when backed up on my hard drive.  I used the long form for the "level" option, just to make things clearer.  Likewise, with
+           <a href="https://web.archive.org/web/20151130171514/http://www.gnu.org/software/wget/manual/wget.html#Robot-Exclusion">
+            a bit of learning
+           </a>
+           , I decided against using the -erobots=off option.  There were probably a million other options I could have considered, in the long description of wget in the official manual, but these were the ones that others seemed to mention most.
+           <br/>
+           <br/>
+           The results of this second try were mixed.  For one thing, I was getting a lot of messages of this form:
+           <br/>
+           <br/>
+           <blockquote>
+            2010-01-01 01:43:03 (137 KB/s) - `/[target directory]/index.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1196485200000&amp;toggleopen=MONTHLY-1259643600000' saved [70188]
+            <br/>
+            <br/>
+            Removing /[target directory]/index.html?widgetType=BlogArchive&amp;widgetId=BlogArchive1&amp;action=toggle&amp;dir=open&amp;toggle=MONTHLY-1196485200000&amp;toggleopen=MONTHLY-1259643600000 since it should be rejected.
+            <br/>
+           </blockquote>
+           <br/>
+           I didn't know what this meant, or why I hadn't gotten these kinds of messages when I ran the first version of the command (above).  It didn't seem likely that the mere rearrangement of options on the wget command line would be responsible.  To find out, I put it out of its misery (i.e., I ran "pkill wget" in a separate Terminal session) and took a closer look.
+           <br/>
+           <br/>
+           Things got a little confused at this point.  Blame it on the late hour.  I thought, for a moment, that I had found the answer.  A quick glance at
+           <a href="https://web.archive.org/web/20151130171514/http://www.linuxforums.org/forum/linux-applications/129038-wget-since-should-rejected.html">
+            the first forum
+           </a>
+           that came up in response to
+           <a href="https://web.archive.org/web/20151130171514/http://www.google.com/search?hl=en&amp;q=wget+removing+%22should+be+rejected%22&amp;sourceid=navclient-ff&amp;rlz=1B3GGGL_enUS318US318&amp;ie=UTF-8">
+            my search
+           </a>
+           led me to recognize that, of course, my command was contradictory:  it told wget to download style sheets (-p), but it also said that only html files would be accepted (-A.html).  But then, unless I muddled it somehow, it appeared that, in fact, I had not included the -p option after all.  I tried re-running version 2 of the command (above), this time definitely excluding the -p option.  And no, that wasn't it; I still got those same funky messages (above) about removing index.html.  So the -p option was not the culprit.
+           <br/>
+           <br/>
+           I tried again.  This time, I reverted to using exactly the command I had used in the first try (above), changing only the output directory.  Oh, and somewhere in this process, I shortened the target URL.  This gave me none of those funky messages.  So it seemed that the order of options on the command line did matter, and that the order used in the first version (above) was superior to that in the second version.  To sum up, then, the command that worked best for me, for purposes of backing up my Blogger.com (blogspot) blog, was this:
+           <br/>
+           <br/>
+           <blockquote>
+            wget -r -l1 -np -A.html -N -w5 http://raywoodcockslatest.blogspot.com --directory-prefix=/media/Partition1/BlogBackup1
+            <br/>
+           </blockquote>
+           <br/>
+           Since there are other blog hosts out there, I wanted to see if exactly the same approach would work elsewhere.  I also had
+           <a href="https://web.archive.org/web/20151130171514/http://raywoodcock.wordpress.com/">
+            a WordPress blog
+           </a>
+           .  I tried the first version of the wget command (above), changing only the source URL and target folder, as follows:
+           <br/>
+           <br/>
+           <blockquote>
+            wget -r -l1 -np -A.html -N -w5 http://raywoodcock.wordpress.com/ --directory-prefix=/media/Partition1/WordPressBackup
+            <br/>
+           </blockquote>
+           <br/>
+           This did not work too well.  The script repeatedly produced messages saying "Last-modified header missing -- time-stamps turned off," so then wget would download the page again.  As far as I could tell from the pages I examined in
+           <a href="https://web.archive.org/web/20151130171514/http://www.google.com/search?hl=en&amp;safe=off&amp;rlz=1B3GGGL_enUS318US318&amp;num=50&amp;newwindow=1&amp;q=%22last+modified+header+missing%22+wget&amp;btnG=Search">
+            a search
+           </a>
+           , there was no way around this; apparently WordPress did not maintain time stamps.
+           <br/>
+           <br/>
+           The other problem was that it did not download all of the pages.  It would download only one index.html file for each month.  That index.html file would contain an actual post, which was good, but what about all the other posts from that month?  I modified the command to specify the year and month (e.g., http://raywoodcock.wordpress.com/2009/03/).  This worked.  Now the index.html file at the top of the subtree (e.g., http://raywoodcock.wordpress.com/2009/03/index.html) would display all of the posts from that month, and beneath it (in e.g., .../2009/03/01) I had named subfolders for each post, each of which contained the index.html file displaying that particular post.  So at this rate, I would have to write wget lines for each month in which I had posted blog entries.  But then I found that removing the -A.html option solved the problem.  But if I ran it at the year level, it worked only for some months, and skipped others.  I tried what appeared to be
+           <a href="https://web.archive.org/web/20151130171514/http://savannah.gnu.org/bugs/index.php?27473">
+            the suggestion
+           </a>
+           of running it twice at the year level (i.e., at .../wordpress.com/ with an ending slash), with --save-cookies=cookies.txt --load-cookies=cookies.txt --keep-session-cookies.  That didn't seem to make a difference.  So the best I could do with a WordPress blog, at this point, was to enter separate wget commands for each month, like this:
+           <br/>
+           <br/>
+           <blockquote>
+            wget -r -l1 -np -N -A.html -w5 http://raywoodcock.wordpress.com/2009/01 --directory-prefix=/media/Partition1/WordPressBackup
+            <br/>
+           </blockquote>
+           <br/>
+           I added back the -A.html option, as shown, because it didn't seem to hurt anything; html pages were the only ones that had been downloaded anyway.
+           <br/>
+           <br/>
+           Since these monthly commands would re-download everything, I would run the older ones only occasionally, to pick up the infrequent revision of an older post.  I created a bunch of these, for the past and also for some months into the future.  I put the historical ones in a script called backup-hist.sh, which I planned to run only occasionally, and I put the current and future ones into my backup-day.sh, to run daily.
+           <br/>
+           <br/>
+           But, ah, not so fast.  When I tried this on another, unrelated WordPress blog, it did not consistently download all posts for each month.  I also noticed that it duplicated some posts, in the sense that the higher-level (e.g., month-level) index.html file seemed to contain everything that would appear on the month-level webpage on WordPress.  So, for example, if you had your WordPress blog set up to show a maximum of three posts per page, this higher-level webpage would show all three of those.  The pages looked good; it was just that I was not sure how I would use this mix in an effective backup-and-restore operation.  This raised the question for my own blog:  if I ever did have to restore my blog, was I going to examine the HTML for each webpage manually, to re-post only those portions of text and code that belonged on a given blog page?
+           <br/>
+           <br/>
+           I decided to combine approaches.  First, since it was yearend, I made a special-case backup of all posts in each blog.  I did this by setting the blogs to display 999 posts on one page, and then printed that page as a yearend backup PDF.  Second, I noticed that rerunning these scripts seemed to catch additional posts on the subsquent passes.  So instead of separating the current and historical posts, I decided to stay with the original idea of running one command to download each WordPress post.  I would hope that this got most of them, and for any that fell through the crack, I would refer to the most recent PDF-style copy of the posts.  The command I decided to use for this purpose was of this form:
+           <br/>
+           <br/>
+           <blockquote>
+            wget -r -l1 -np -N -A.html -w5 [URL] --directory-prefix=/media/Backups/Blogs/WordPress
+            <br/>
+           </blockquote>
+           <br/>
+           I had recently started one other blog.  This one was on Livejournal.com.  I tried the following command with that:
+           <br/>
+           <br/>
+           <blockquote>
+            wget -r -l1 -np -N -A.html -w5 http://rwclippings.livejournal.com/ --directory-prefix=/media/Backups/Blogs//LiveJournal
+            <br/>
+           </blockquote>
+           <br/>
+           This was as far as I was able to get into this process at this point.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151130171514/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=377979435437311573&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/backing%20up" rel="tag">
+             backing up
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/backup" rel="tag">
+             backup
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/Blogger" rel="tag">
+             Blogger
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/Blogspot" rel="tag">
+             Blogspot
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/copying" rel="tag">
+             copying
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/LiveJournal" rel="tag">
+             LiveJournal
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/rsync" rel="tag">
+             rsync
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/ubuntu" rel="tag">
+             ubuntu
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/webpages" rel="tag">
+             webpages
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/websites" rel="tag">
+             websites
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/wget" rel="tag">
+             wget
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/search/label/WordPress" rel="tag">
+             WordPress
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151130171514/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=377979435437311573" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151130171514/http://raywoodcockslatest.blogspot.com/feeds/377979435437311573/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 17:15:14 Nov 30, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:16:09 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.486
+  exclusion.robots: 0.063
+  exclusion.robots.policy: 0.055
+  esindex: 0.008
+  cdx.remote: 77.5
+  LoadShardBlock: 94.227 (3)
+  PetaboxLoader3.datanode: 106.984 (4)
+  load_resource: 218.84
+  PetaboxLoader3.resolve: 175.306
+-->

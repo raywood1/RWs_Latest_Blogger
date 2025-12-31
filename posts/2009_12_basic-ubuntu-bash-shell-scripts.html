@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <link href="https://web.archive.org/web/20190906053729cs_/https://www.blogger.com/static/v1/widgets/2549344219-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20190906053729im_/https://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20190906053729/http://raywoodcockslatest.blogspot.com/2009/12/basic-ubuntu-bash-shell-scripts.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/feeds/3734403202130745431/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--Can't find substitution for tag [blog.ieCssRetrofitLinks]-->
+  <meta content="https://web.archive.org/web/20190906053729/http://raywoodcockslatest.blogspot.com/2009/12/basic-ubuntu-bash-shell-scripts.html" property="og:url"/>
+  <meta content="Basic Ubuntu (Bash) Shell Scripts" property="og:title"/>
+  <meta content="In Ubuntu 9.04, I wanted to write a script that would execute an rsync command, so that I could put a brief reference to the script into my ..." property="og:description"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Basic Ubuntu (Bash) Shell Scripts
+  </title>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("//web.archive.org/web/20190906053729im_/https://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("//web.archive.org/web/20190906053729im_/https://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("//web.archive.org/web/20190906053729im_/https://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("//web.archive.org/web/20190906053729im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("//web.archive.org/web/20190906053729im_/https://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("//web.archive.org/web/20190906053729im_/https://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("//web.archive.org/web/20190906053729im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("//web.archive.org/web/20190906053729im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("//web.archive.org/web/20190906053729im_/https://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("//web.archive.org/web/20190906053729im_/https://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("//web.archive.org/web/20190906053729im_/https://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("//web.archive.org/web/20190906053729im_/https://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("//web.archive.org/web/20190906053729im_/https://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("//web.archive.org/web/20190906053729im_/https://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("//web.archive.org/web/20190906053729im_/https://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("//web.archive.org/web/20190906053729im_/https://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("//web.archive.org/web/20190906053729im_/https://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("//web.archive.org/web/20190906053729im_/https://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+  <link href="https://web.archive.org/web/20190906053729cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" media="none" onload="if(media!='all')media='all'" rel="stylesheet"/>
+  <noscript>
+   <link href="https://web.archive.org/web/20190906053729cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=6d97b02d-fddb-4409-bdb0-32fa82dd0860" rel="stylesheet"/>
+  </noscript>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" data-version="1" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" data-version="1" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" data-version="1" id="Blog1">
+       <div class="blog-posts">
+        <!--Can't find substitution for tag [adStart]-->
+        <h2 class="date-header">
+         Tuesday, December 29, 2009
+        </h2>
+        <div class="post">
+         <a name="3734403202130745431">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/2009/12/basic-ubuntu-bash-shell-scripts.html">
+           Basic Ubuntu (Bash) Shell Scripts
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           In Ubuntu 9.04, I wanted to write a script that would execute an rsync command, so that I could put a brief reference to the script into
+           <a href="https://web.archive.org/web/20190906053729/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-schedule-items-with-cron.html">
+            my crontab file
+           </a>
+           , instead of putting
+           <a href="https://web.archive.org/web/20190906053729/http://raywoodcockslatest.blogspot.com/2009/12/ubuntu-backup-with-rsync.html">
+            the whole long rsync command
+           </a>
+           there.
+           <br/>
+           <br/>
+           For a brief, tiny moment, I was almost tempted to consider learning the GAMBAS (Gambas Almost Means BASIC) programming language, just because (pre-Visual) BASIC was the only programming language I ever learned.  Instead, I moved toward
+           <a href="https://web.archive.org/web/20190906053729/http://linuxcommand.org/writing_shell_scripts.php">
+            basic instructions
+           </a>
+           on writing a shell script.  Here's what I wrote:
+           <br/>
+           <blockquote>
+            #!/bin/bash
+            <br/>
+            # This is backup-hour.sh
+            <br/>
+            # It backs up CURRENT to CURRBACKUP every few hours
+            <br/>
+            rsync -qhlEtrip --progress --delete-after --ignore-errors --force --exclude=/.Trash-1000/ --exclude=/lost+found/ /media/CURRENT/ /media/CURRBACKUP
+            <br/>
+           </blockquote>
+           <br/>
+           As
+           <a href="https://web.archive.org/web/20190906053729/http://linuxcommand.org/wss0010.php">
+            the instructions
+           </a>
+           said, the first line was essential to tell the computer to use BASH to interpret the following lines.  The next two lines were comments, and the final line (wrapping over onto multiple lines here) was exactly the rsync line I'd been using to do the backup.  In other words, learning how to write the command was almost all I needed to write the script.
+           <br/>
+           <br/>
+           The next step was to save it somewhere.  I had previously heard, and the instructions said, that the common place to put it is in your bin folder.  I went with that, but made a note that I would need to be sure to back up my bin folder, because I didn't want to go to the trouble of writing all these scripts and then see them vanish.
+           <br/>
+           <br/>
+           The usual location for the user's bin folder is at /home/[username]/bin.  In my case, that's /home/ray/bin.  Getting there in Nautilus (i.e., Ubuntu's File Browser, also started by typing "nautilus" in Terminal) can be confusing:  you can get there via the Home Folder option (assuming you're showing Tree rather than Places or something else (or nothing) at the left side of the file browser), or you can go to File System/home/[username]/bin.  Same thing, either way.  So I saved the script (above) in my bin folder as backup-hour.sh.  That turned the comment lines (beginning with #) blue in gedit.
+           <br/>
+           <br/>
+           Next, the instructions said, I needed to set permissions.  This was a confusing aspect of Ubuntu.
+           <a href="https://web.archive.org/web/20190906053729/https://help.ubuntu.com/community/FilePermissions">
+            The documentation
+           </a>
+           seemed to say that there were ten permissions that a person could set.  These were represented by ten hyphens or minus signs:  ----------.  I couldn't tell what the first one was for, but the remaining nine were divided into three sets of three.  The first three belonged to the owner, the second three to the group, and the last three to "other."  Within each set of three, the first one was for read, the second was for write, and the third was for execute (i.e., run it as a program).  So if you set the owner's permissions to read (r), write (w), and execute (x), your ten hyphens would now change to this:  -rwx------.  If you set all
+           <a href="https://web.archive.org/web/20190906053729/http://linux.about.com/od/ubuntu_doc/a/ubudg24t3.htm">
+            three parties
+           </a>
+           (i.e., owner, group, and other) the same, they would look like this:  -rwxrwxrwx.
+           <br/>
+           <br/>
+           You could set the permissions using the chmod command.  I found an Ubuntu manual
+           <a href="https://web.archive.org/web/20190906053729/http://manpages.ubuntu.com/manpages/jaunty/man1/chmod.1.html">
+            page on chmod
+           </a>
+           .  It was not really that complicated, but it looked like it was going to require a time investment to make sure I had it right, and at this point I was getting impatient.  The basic idea seemed to be that you could use chmod to enter values of 4 (for read permission), 2 (for write permission), and/or 1 (for execute permission).  So, for example, you could type "chmod 755" and that would give a value of 7 to the first of the three users mentioned above (i.e., the owner), a value of 5 to the second of the three (i.e., the group), and a value of five to the third of the three (i.e., other).  The 7 would mean that you gave read + write + execute (4 + 2 + 1) permissions to the owner, whereas the 5 would mean that you gave only read + execute (4 + 1) permissions to the rest.  Since that's what
+           <a href="https://web.archive.org/web/20190906053729/http://linuxcommand.org/wss0010.php">
+            the instructions
+           </a>
+           suggested, I went with that.  To set the script with those permissions, I typed "chmod 755 backup-hour.sh."
+           <br/>
+           <br/>
+           I wasn't too sure of who the owner was (i.e., me or root), not to mention the group or other.  I mean, this was for my home computer.  Not a lot of people milling around, waiting to take my hard drive for a spin.  These kinds of options seemed to be set up for networked computers, where
+           <a href="https://web.archive.org/web/20190906053729/http://www.yolinux.com/TUTORIALS/LinuxTutorialManagingGroups.html">
+            the "accounting" department
+           </a>
+           might be a group that would own a file.  I found what looked like
+           <a href="https://web.archive.org/web/20190906053729/http://www.freesoftwaremagazine.com/articles/users_in_ubuntu">
+            a good tutorial
+           </a>
+           on file owners, and another interesting (yawn!)
+           <a href="https://web.archive.org/web/20190906053729/http://www.linuxforums.org/articles/file-permissions_94.html">
+            page about permissions
+           </a>
+           , but fortunately I did not have time to work through them.
+           <br/>
+           <br/>
+           When I typed "chmod 755 backup-hour.sh," I got "cannot access 'backup-hour.sh': No such file or directory."  One solution was to use a change directory (cd) command to get the Terminal prompt into the bin subfolder, so it would see what I was looking for.  But since I planned to put more scripts into that folder, and anyway since I wanted cron or other programs to know right away what I was talking about when I referred to something like backup-hour.sh, I decided to figure out how to put the bin folder in my "path."  The path is the list of folders where the operating system looks for guidance on what a command means.  To change my path so that the system would always know to look in bin, they said I needed to find and edit my .bash_profile file.  Unfortunately, they didn't say where it was.  It
+           <a href="https://web.archive.org/web/20190906053729/http://ubuntuforums.org/showthread.php?t=609376">
+            wasn't easy to find
+           </a>
+           .  I ran searches in Nautilus (both user and root), but while those were grinding away, I found that I could just type "locate .bash_profile."  That turned up nothing, but very quickly.  Then I got
+           <a href="https://web.archive.org/web/20190906053729/http://ubuntuforums.org/showpost.php?p=3747706&amp;postcount=4">
+            some advice
+           </a>
+           that, if it didn't exist, I could create it by using "touch ~/.bash_profile."  So I did that, and then tried again with "chmod 755 backup-hour.sh."  Still no joy.  Ah, but maybe that was because I hadn't rebooted; backup-hour.sh would run only on startup.  OK, so I used the other approach after all:  I changed directory to the bin folder and tried again.  Now I got "Permission denied."  What if I gave everybody full permissions with
+           <a href="https://web.archive.org/web/20190906053729/http://www.ax697.org/writing-a-basic-ubuntu-script-200786.html">
+            chmod 777
+           </a>
+           ?  I tried that instead of chmod 755.  That seemed to do it.  The hard drive was doing its thing now.
+           <br/>
+           <br/>
+           I wanted to see what was going on, so I decided to create a log file.  I wanted it to store only the error messages, not to list the thousands of files that backup-hour.sh was backing up successfully, so I put this on the end of (that is, on the same command line as) my rsync command in backup-hour.sh (above):
+           <br/>
+           <blockquote>
+            2&gt; /media/CURRENT/backup-hour.log
+            <br/>
+           </blockquote>
+           <br/>
+           The log filename thus matched the script filename.  I put "backup" first so that I could see all of my backup scripts in the same part of the folder's directory listing, and then I set up a backup-day.sh script along the same lines.  New problem:  these backup scripts would generate empty log files if there were no errors, and I didn't want to have to delete them manually.  So I found
+           <a href="https://web.archive.org/web/20190906053729/http://www.unix.com/shell-programming-scripting/125304-deleting-all-empty-files-sub-directories-command.html#post302377529">
+            a forum post
+           </a>
+           with advice on how to delete them automatically, using
+           <a href="https://web.archive.org/web/20190906053729/http://www.unix.com/shell-programming-scripting/125304-deleting-all-empty-files-sub-directories-command.html#post302377529">
+            the "find" command
+           </a>
+           .  In my version, it looked like this:
+           <br/>
+           <blockquote>
+            find /media/CURRENT/ -name "*.log" -size 0c -exec rm -f {} \;
+            <br/>
+           </blockquote>
+           <br/>
+           I put that at the end of the backup-day.sh script, and it seemed to work.  It said, basically, look in the CURRENT folder for files whose name ends with .log and have zero bytes; and if you find any files like that, execute the "remove" command without asking for permission.  I didn't know what that ending punctuation is about, but that's what the advisor suggested.
+           <br/>
+           <br/>
+           In my backup-day.sh (not backup-hour.sh) script, I included the instructions for updating my USB jump drive (above).  I also included a set of commands to save my e-mail (I was using Thunderbird in Ubuntu) as a .tar compressed file. Actually, as seven .tar files, one for each day of the week.  That part of backup-day.sh looked like this:
+           <br/>
+           <blockquote>
+            # Assign Thunderbird mail &amp; profile to be backed up
+            <br/>
+            backup_files="/home/ray/.mozilla-thunderbird"
+            <br/>
+            dest="/media/BACKROOM/Backups/Tbird"
+            <br/>
+            # Create archive filename
+            <br/>
+            day=$(date +%A)
+            <br/>
+            hostname=$(hostname -s)
+            <br/>
+            archive_file="$hostname-$day.tgz"
+            <br/>
+            # Back up to a tgz file
+            <br/>
+            tar zcvf $dest/$archive_file $backup_files 2&gt;&gt; /media/CURRENT/A-INCOMING/T-bird-Backup.log
+            <br/>
+           </blockquote>
+           So these seemed to be the basic kinds of tools I needed to set up rsync scripts and crontab entries.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20190906053729/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=3734403202130745431&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/back%20up%20files" rel="tag">
+             back up files
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/backup" rel="tag">
+             backup
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/bash" rel="tag">
+             bash
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/bash_profile" rel="tag">
+             bash_profile
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/chmod" rel="tag">
+             chmod
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/crontab" rel="tag">
+             crontab
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/e-mail" rel="tag">
+             e-mail
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/email" rel="tag">
+             email
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/gedit" rel="tag">
+             gedit
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/path" rel="tag">
+             path
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/permissions" rel="tag">
+             permissions
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/rsync" rel="tag">
+             rsync
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/scripts" rel="tag">
+             scripts
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/search/label/thunderbird" rel="tag">
+             thunderbird
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          0
+comments:
+         </h4>
+         <dl id="comments-block">
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20190906053729/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=3734403202130745431" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+        <!--Can't find substitution for tag [adEnd]-->
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20190906053729/https://raywoodcockslatest.blogspot.com/feeds/3734403202130745431/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--Es liegt in deiner Verantwortung, deine Besucher \xfcber die in deinem Blog verwendeten Cookies und die dort erfassten Daten zu informieren. Blogger stellt daf\xfcr eine Standardbenachrichtigung zur Verf\xfcgung, die du \xfcbernehmen, anpassen oder durch deine eigene Mitteilung ersetzen kannst. Weitere Informationen findest du unter http://www.blogger.com/go/cookiechoices.-->
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 05:37:29 Sep 06, 2019 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:15:50 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.671
+  exclusion.robots: 0.082
+  exclusion.robots.policy: 0.072
+  esindex: 0.021
+  cdx.remote: 5.413
+  LoadShardBlock: 98.355 (3)
+  PetaboxLoader3.datanode: 110.908 (4)
+  load_resource: 19.342
+-->

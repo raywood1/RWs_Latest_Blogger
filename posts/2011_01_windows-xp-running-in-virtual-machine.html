@@ -1,0 +1,968 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" xmlns:b="http://www.google.com/2005/gml/b" xmlns:data="http://www.google.com/2005/gml/data" xmlns:expr="http://www.google.com/2005/gml/expr">
+ <head>
+  <link href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" rel="stylesheet" type="text/css"/>
+  <link href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" rel="stylesheet" type="text/css"/>
+  <!-- End Wayback Rewrite JS Include -->
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta content="blogger" name="generator"/>
+  <link href="https://web.archive.org/web/20151205114413im_/http://raywoodcockslatest.blogspot.com/favicon.ico" rel="icon" type="image/x-icon"/>
+  <link href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/2011/01/windows-xp-running-in-virtual-machine.html" rel="canonical"/>
+  <link href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/feeds/posts/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/feeds/posts/default?alt=rss" rel="alternate" title="Ray Woodcock's Latest - RSS" type="application/rss+xml"/>
+  <link href="https://www.blogger.com/feeds/3377753575825500498/posts/default" rel="service.post" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <link href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/feeds/868387970048826226/comments/default" rel="alternate" title="Ray Woodcock's Latest - Atom" type="application/atom+xml"/>
+  <!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+  <title>
+   Ray Woodcock's Latest: Windows 7 as Host:  Choosing a Virtualization Program
+  </title>
+  <link href="https://web.archive.org/web/20151205114413cs_/https://www.blogger.com/static/v1/widgets/537653047-widget_css_bundle.css" rel="stylesheet" type="text/css"/>
+  <link href="https://web.archive.org/web/20151205114413cs_/https://www.blogger.com/dyn-css/authorization.css?targetBlogID=3377753575825500498&amp;zx=feb18bc8-2e5b-4618-80ec-7a11fcac2353" rel="stylesheet" type="text/css"/>
+  <style id="page-skin-1" type="text/css">
+   <!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Rounders 4
+Date:     27 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="mainBgColor" description="Main Background Color"
+type="color" default="#466">
+<Variable name="mainTextColor" description="Text Color" type="color"
+default="#ced">
+<Variable name="postTitleColor" description="Post Title Color" type="color"
+default="#fff">
+<Variable name="dateHeaderColor" description="Date Header Color"
+type="color" default="#cf4">
+<Variable name="borderColor" description="Post Border Color" type="color"
+default="#bbb">
+<Variable name="mainLinkColor" description="Link Color" type="color"
+default="#fff">
+<Variable name="mainVisitedLinkColor" description="Visited Link Color"
+type="color" default="#fff">
+<Variable name="titleTextColor" description="Blog Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarHeaderColor"
+description="Top Sidebar Title Color"
+type="color" default="#fff">
+<Variable name="topSidebarBgColor"
+description="Top Sidebar Background Color"
+type="color" default="#9b5">
+<Variable name="topSidebarTextColor" description="Top Sidebar Text Color"
+type="color" default="#fff">
+<Variable name="topSidebarLinkColor" description="Top Sidebar Link Color"
+type="color" default="#fff">
+<Variable name="topSidebarVisitedLinkColor"
+description="Top Sidebar Visited Link Color"
+type="color" default="#eee">
+<Variable name="bottomSidebarBgColor"
+description="Bottom Sidebar Background Color"
+type="color" default="#fff">
+<Variable name="bottomSidebarTextColor"
+description="Bottom Sidebar Text Color"
+type="color" default="#666">
+<Variable name="bottomSidebarLinkColor"
+description="Bottom Sidebar Link Color"
+type="color" default="#475">
+<Variable name="bottomSidebarVisitedLinkColor"
+description="Bottom Sidebar Visited Link Color"
+type="color" default="#798">
+<Variable name="bodyFont" description="Text Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="pageTitleFont" description="Blog Title Font" type="font"
+default="normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="descriptionFont" description="Description Font" type="font"
+default="normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="headerFont" description="Sidebar Title Font" type="font"
+default="normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="postTitleFont" description="Post Title Font" type="font"
+default="normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif">
+<Variable name="startSide" description="Start side in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="End side in blog language"
+type="automatic" default="right">
+*/
+body {
+background:#bca;
+margin:0;
+text-align:center;
+line-height: 1.5em;
+font: x-small Trebuchet MS, Verdana, Arial, Sans-serif;
+color:#e6ffa2;
+font-size/* */:/**/small;
+font-size: /**/small;
+}
+/* Page Structure
+----------------------------------------------- */
+/* The images which help create rounded corners depend on the
+following widths and measurements. If you want to change
+these measurements, the images will also need to change.
+*/
+#outer-wrapper {
+width:740px;
+margin:0 auto;
+text-align:left;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#main-wrap1 {
+width:485px;
+float:left;
+background:#446666 url("https://web.archive.org/web/20151205114413im_/http://www1.blogblog.com/rounders4/corners_main_bot.gif") no-repeat left bottom;
+margin:15px 0 0;
+padding:0 0 10px;
+color:#e6ffa2;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#main-wrap2 {
+float:left;
+width:100%;
+background:url("https://web.archive.org/web/20151205114413im_/http://www1.blogblog.com/rounders4/corners_main_top.gif") no-repeat left top;
+padding:10px 0 0;
+}
+#main {
+background:url("https://web.archive.org/web/20151205114413im_/http://www.blogblog.com/rounders4/rails_main.gif") repeat-y left;
+padding:0;
+width:485px;
+}
+#sidebar-wrap {
+width:240px;
+float:right;
+margin:15px 0 0;
+font-size:97%;
+line-height:1.5em;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+.main .widget {
+margin-top: 0;
+margin-right: 13px;
+margin-bottom: 4px;
+margin-left: 13px;
+}
+.main .Blog {
+margin: 0;
+}
+/* Links
+----------------------------------------------- */
+a:link {
+color: #ffff66;
+}
+a:visited {
+color: #f3ffd1;
+}
+a:hover {
+color: #f3ffd1;
+}
+a img {
+border-width:0;
+}
+/* Blog Header
+----------------------------------------------- */
+#header-wrapper {
+background: #476 url("https://web.archive.org/web/20151205114413im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+margin-top:22px;
+margin-right:0;
+margin-bottom:0;
+margin-left:0;
+padding-top:8px;
+padding-right:0;
+padding-bottom:0;
+padding-left:0;
+color:#ffffff;
+}
+#header {
+background:url("https://web.archive.org/web/20151205114413im_/http://www1.blogblog.com/rounders4/bg_hdr_bot.jpg") no-repeat left bottom;
+padding:0 15px 8px;
+}
+#header h1 {
+margin:0;
+padding:10px 30px 5px;
+line-height:1.2em;
+font: normal bold 200% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+#header a,
+#header a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+#header .description {
+margin:0;
+padding:5px 30px 10px;
+line-height:1.5em;
+font: normal normal 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+/* Posts
+----------------------------------------------- */
+h2.date-header {
+margin-top:0;
+margin-right:28px;
+margin-bottom:0;
+margin-left:43px;
+font-size:85%;
+line-height:2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#ccff44;
+}
+.post {
+margin:.3em 0 25px;
+padding:0 13px;
+line-height:1.5em;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+}
+.post h3 {
+margin:0;
+background:url("https://web.archive.org/web/20151205114413im_/http://www2.blogblog.com/rounders4/icon_arrow.gif") no-repeat 10px .5em;
+display:block;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+color: #ffffff;
+font: normal bold 135% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.post h3 a, .post h3 a:visited {
+text-decoration:none;
+color: #ffffff;
+}
+.post h3 a:hover {
+background-color: #bbbbbb;
+color: #ffffff;
+}
+.post-body {
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+border-bottom-color:#446666;
+padding-top:10px;
+padding-right:14px;
+padding-bottom:1px;
+padding-left:29px;
+}
+html>body .post-body {
+border-bottom-width:0;
+}
+.post-body {
+margin:0 0 .75em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+background: #577;
+margin:0;
+padding-top:2px;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border:1px dotted #bbbbbb;
+border-width:1px;
+font-size:100%;
+line-height:1.5em;
+color: #acb;
+}
+/*
+The first line of the post footer might only have floated text, so we need to give it a height.
+The height comes from the post-footer line-height
+*/
+.post-footer-line-1 {
+min-height:1.5em;
+_height:1.5em;
+}
+.post-footer p {
+margin: 0;
+}
+html>body .post-footer {
+border-bottom-color:transparent;
+}
+.uncustomized-post-template .post-footer {
+text-align: right;
+}
+.uncustomized-post-template .post-author,
+.uncustomized-post-template .post-timestamp {
+display: block;
+float: left;
+text-align:left;
+margin-right: 4px;
+}
+.post-footer a {
+color: #fff;
+}
+.post-footer a:hover {
+color: #eee;
+}
+a.comment-link {
+/* IE5.0/Win doesn't apply padding to inline elements,
+so we hide these two declarations from it */
+background/* */:/**/url("https://web.archive.org/web/20151205114413im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+html>body a.comment-link {
+/* Respecified, for IE5/Mac's benefit */
+background:url("https://web.archive.org/web/20151205114413im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat left 45%;
+padding-left:14px;
+}
+.post img, table.tr-caption-container {
+margin-top:0;
+margin-right:0;
+margin-bottom:5px;
+margin-left:0;
+padding:4px;
+border:1px solid #bbbbbb;
+}
+.tr-caption-container img {
+border: none;
+margin: 0;
+padding: 0;
+}
+blockquote {
+margin:.75em 0;
+border:1px dotted #bbbbbb;
+border-width:1px 0;
+padding:5px 15px;
+color: #ccff44;
+}
+.post blockquote p {
+margin:.5em 0;
+}
+#blog-pager-newer-link {
+float: left;
+margin-left: 13px;
+}
+#blog-pager-older-link {
+float: right;
+margin-right: 13px;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+margin-left: 13px;
+}
+/* Comments
+----------------------------------------------- */
+#comments {
+margin:-25px 13px 0;
+border:1px dotted #bbbbbb;
+border-width:0 1px 1px;
+padding-top:20px;
+padding-right:0;
+padding-bottom:15px;
+padding-left:0;
+}
+#comments h4 {
+margin:0 0 10px;
+padding-top:0;
+padding-right:14px;
+padding-bottom:2px;
+padding-left:29px;
+border-bottom:1px dotted #bbbbbb;
+font-size:120%;
+line-height:1.4em;
+color:#ffffff;
+}
+#comments-block {
+margin-top:0;
+margin-right:15px;
+margin-bottom:0;
+margin-left:9px;
+}
+.comment-author {
+background:url("https://web.archive.org/web/20151205114413im_/http://www.blogblog.com/rounders4/icon_comment_left.gif") no-repeat 2px .3em;
+margin:.5em 0;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+font-weight:bold;
+}
+.comment-body {
+margin:0 0 1.25em;
+padding-top:0;
+padding-right:0;
+padding-bottom:0;
+padding-left:20px;
+}
+.comment-body p {
+margin:0 0 .5em;
+}
+.comment-footer {
+margin:0 0 .5em;
+padding-top:0;
+padding-right:0;
+padding-bottom:.75em;
+padding-left:20px;
+}
+.comment-footer a:link {
+color: #ced;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+.comment-form {
+padding-left:20px;
+padding-right:5px;
+}
+#comments .comment-form h4 {
+padding-left:0px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 5px;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+border: 4px solid #ffffff;
+}
+.profile-datablock {
+margin-top: 0;
+margin-right: 15px;
+margin-bottom: .5em;
+margin-left: 0;
+padding-top: 8px;
+}
+.profile-link {
+background:url("https://web.archive.org/web/20151205114413im_/http://www.blogblog.com/rounders4/icon_profile_left.gif") no-repeat left .1em;
+padding-left:15px;
+font-weight:bold;
+}
+.profile-textblock {
+clear: both;
+margin: 0;
+}
+.sidebar .clear, .main .widget .clear {
+clear: both;
+}
+#sidebartop-wrap {
+background:#99bb55 url("https://web.archive.org/web/20151205114413im_/http://www.blogblog.com/rounders4/corners_prof_bot.gif") no-repeat left bottom;
+margin:0px 0px 15px;
+padding:0px 0px 10px;
+color:#ffffff;
+}
+#sidebartop-wrap2 {
+background:url("https://web.archive.org/web/20151205114413im_/http://www2.blogblog.com/rounders4/corners_prof_top.gif") no-repeat left top;
+padding: 10px 0 0;
+margin:0;
+border-width:0;
+}
+#sidebartop h2 {
+line-height:1.5em;
+color:#ffffff;
+border-bottom: 1px dotted #ffffff;
+font: normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+margin-bottom: 0.5em;
+}
+#sidebartop a {
+color: #ffffff;
+}
+#sidebartop a:hover {
+color: #eeeeee;
+}
+#sidebartop a:visited {
+color: #eeeeee;
+}
+/* Sidebar Boxes
+----------------------------------------------- */
+.sidebar .widget {
+margin:.5em 13px 1.25em;
+padding:0 0px;
+}
+.widget-content {
+margin-top: 0.5em;
+}
+#sidebarbottom-wrap1 {
+background: #ffffff url("https://web.archive.org/web/20151205114413im_/http://www.blogblog.com/rounders4/corners_side_top.gif") no-repeat left top;
+margin:0 0 15px;
+padding:10px 0 0;
+color: #666666;
+}
+#sidebarbottom-wrap2 {
+background:url("https://web.archive.org/web/20151205114413im_/http://www1.blogblog.com/rounders4/corners_side_bot.gif") no-repeat left bottom;
+padding:0 0 8px;
+}
+#sidebar {
+background:url("https://web.archive.org/web/20151205114413im_/http://www1.blogblog.com/rounders4/rails_side.gif") repeat-y;
+}
+#sidebar {
+color: #666666;
+}
+#sidebar h2 {
+color: #666666;
+border-bottom: 1px dotted #666666;
+margin-bottom: 0.5em;
+}
+#sidebar a {
+color: #447755;
+}
+#sidebar a:hover,
+#sidebar a:visited {
+color: #779988;
+}
+.sidebar h2 {
+margin:0;
+padding:0 0 .2em;
+line-height:1.5em;
+font:normal bold 100% 'Trebuchet MS',Verdana,Arial,Sans-serif;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 1.25em;
+padding:0;
+}
+.sidebar ul li {
+background:url("https://web.archive.org/web/20151205114413im_/http://www2.blogblog.com/rounders4/icon_arrow_sm.gif") no-repeat 2px .25em;
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:3px;
+padding-left:16px;
+margin-bottom:3px;
+border-bottom:1px dotted #bbbbbb;
+line-height:1.4em;
+}
+.sidebar p {
+margin:0 0 .6em;
+}
+/* Footer
+----------------------------------------------- */
+#footer-wrap1 {
+clear:both;
+margin:0 0 10px;
+padding:15px 0 0;
+}
+#footer-wrap2 {
+background:#447766 url("https://web.archive.org/web/20151205114413im_/http://www2.blogblog.com/rounders4/corners_cap_top.gif") no-repeat left top;
+color:#ffffff;
+}
+#footer {
+background:url("https://web.archive.org/web/20151205114413im_/http://www.blogblog.com/rounders4/corners_cap_bot.gif") no-repeat left bottom;
+padding:8px 15px;
+}
+#footer hr {display:none;}
+#footer p {margin:0;}
+#footer a {color:#ffffff;}
+#footer .widget-content {
+margin:0;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #main-wrap1,
+body#layout #sidebar-wrap,
+body#layout #header-wrapper {
+margin-top: 0;
+}
+body#layout #header, body#layout #header-wrapper,
+body#layout #outer-wrapper {
+margin-left:0,
+margin-right: 0;
+padding: 0;
+}
+body#layout #outer-wrapper {
+width: 730px;
+}
+body#layout #footer-wrap1 {
+padding-top: 0;
+}
+
+-->
+  </style>
+ </head>
+ <body>
+  <div class="navbar section" id="navbar">
+   <div class="widget Navbar" id="Navbar1">
+    <div id="navbar-iframe-container">
+    </div>
+   </div>
+  </div>
+  <div id="outer-wrapper">
+   <div id="header-wrapper">
+    <div class="header section" id="header">
+     <div class="widget Header" id="Header1">
+      <div id="header-inner">
+       <div class="titlewrapper">
+        <h1 class="title">
+         <a href="../index.html">
+          Ray Woodcock's Latest
+         </a>
+        </h1>
+       </div>
+       <div class="descriptionwrapper">
+        <p class="description">
+         <span>
+         </span>
+        </p>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div id="main-wrap1">
+    <div id="main-wrap2">
+     <div class="main section" id="main">
+      <div class="widget Blog" id="Blog1">
+       <div class="blog-posts">
+        <h2 class="date-header">
+         Monday, January 3, 2011
+        </h2>
+        <div class="post">
+         <a name="868387970048826226">
+         </a>
+         <h3 class="post-title">
+          <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/2011/01/windows-xp-running-in-virtual-machine.html">
+           Windows 7 as Host:  Choosing a Virtualization Program
+          </a>
+         </h3>
+         <div class="post-header-line-1">
+         </div>
+         <div class="post-body">
+          <p>
+           I had previously used VMware Workstation to run Windows XP in a virtual machine (VM) on Ubuntu Linux.  Now I was switching from Ubuntu to Windows 7.  I had found that WinXP was actually more stable in a VM than when running natively.  I also didn't want to go cold-turkey from WinXP; that is, I wanted to continue to have access to my familiar programs and other arrangements until Win7 felt natural.
+           <br/>
+           <br/>
+           I couldn't use my Linux-based copy of Workstation on Win7, so I would have to come up with a new virtualization tool.  I didn't want to shell out for another copy of Workstation.  I wondered if there were good free alternatives that would let me run WinXP in a VM on Win7.  I did
+           <a href="https://web.archive.org/web/20151205114413/http://www.google.com/search?num=50&amp;hl=en&amp;lr=&amp;newwindow=1&amp;client=firefox-a&amp;hs=p4M&amp;rlz=1R1GGLL_en___US408&amp;tbs=qdr%3Ay&amp;q=comparison+%22Windows+7%22+VirtualBox+%22Virtual+PC%22+VMware&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+            a search
+           </a>
+           , viewed some random remarks, and came up with some comparisons of several leading virtualization products.  These comparisons confirmed my sense that the main free contenders were
+           <a href="https://web.archive.org/web/20151205114413/http://www.microsoft.com/windows/virtual-pc/">
+            Microsoft Virtual PC
+           </a>
+           ,
+           <a href="https://web.archive.org/web/20151205114413/http://www.virtualbox.org/">
+            Sun Virtual Box
+           </a>
+           , and
+           <a href="https://web.archive.org/web/20151205114413/http://www.vmware.com/products/player/">
+            VMware Player
+           </a>
+           .
+           <br/>
+           <br/>
+           Looking first at comparisons against Virtual PC,
+           <a href="https://web.archive.org/web/20151205114413/http://www.brighthub.com/computing/windows-platform/articles/97789.aspx">
+            one reviewer
+           </a>
+           suggested that Virtual PC was easiest for a purely Windows setup like mine, Virtual Box was more oriented toward Linux hosts, and Player was the most popular.
+           <a href="https://web.archive.org/web/20151205114413/http://www.brighthub.com/computing/smb-security/articles/47775.aspx">
+            Another reviewer
+           </a>
+           said that VirtualBox and VMware Workstation (not necessarily Player) had more advanced customization options, such as unity mode, snapshots, USB drive support, the ability to move VMs, and the option of allocating two CPU cores.
+           <a href="https://web.archive.org/web/20151205114413/http://www.sysprobs.com/virtual-pc-2007-virtualbox-32">
+            Another reviewer
+           </a>
+           , comparing VirtualBox and Virtual PC, found that Virtual PC had the advantage of presumably greater Microsoft compatibility, better disk technology, a free WinXP license, support for Win7 and Vista guests, lower resource consumption on host, and easier physical drive configuration.  He favored VirtualBox nonetheless, though, because he found that VirtualBox supported more operating systems (especially Linux and Mac), supported 64-bit guests and multiple processor cores (i.e., better performance) as well as multiple kinds of virtual disks, and offered snapshots, unity mode, remote display, and 3D support.
+           <a href="https://web.archive.org/web/20151205114413/http://www.vistaclues.com/microsoft-virtual-pc-vs-sun-virtualbox/">
+            Another reviewer
+           </a>
+           , offering a video demonstration, said Virtual PC was better in supporting Aero, automatic login, USB device sharing, and integration into Windows Explorer (which he actually disliked), but favored VirtualBox for running on multiple operating systems and for other reasons stated by some of the other reviewers.  In short, there seemed to be some consensus that Virtual PC was the worst of the three.  I did a quick search to see if perchance Microsoft had upgraded it recently.  It didn't seem to have done so.
+           <br/>
+           <br/>
+           At about this point, I realized that probably I could continue to use my copy of VMware Workstation for Linux to make virtual machines containing WinXP, and use those in Player on a Win7 host.  So I wasn't sure if I should be comparing VirtualBox against VMware Player or Workstation.  I found both sorts of comparisons.  In what were probably the most professional reviews I saw, PCMag rated
+           <a href="https://web.archive.org/web/20151205114413/http://www.pcmag.com/article2/0,2817,2158154,00.asp?tab=FullReview">
+            Workstation 6.0
+           </a>
+           (I was now using 7.1) at 4.5 stars, versus 3.5 for
+           <a href="https://web.archive.org/web/20151205114413/http://www.pcmag.com/article2/0,2817,2368593,00.asp">
+            Virtual Box
+           </a>
+           .  (At this writing, Workstation was
+           <a href="https://web.archive.org/web/20151205114413/http://store.vmware.com/store?Action=DisplayPage&amp;Env=BASE&amp;Locale=en_US&amp;SiteID=vmware&amp;id=ProductDetailsPage&amp;productID=221027300">
+            on sale
+           </a>
+           for $142 (with a free copy of VMware ThinApp Starter Edition thrown in) instead of its usual $189.)  One of
+           <a href="https://web.archive.org/web/20151205114413/http://www.brighthub.com/computing/smb-security/articles/47775.aspx">
+            the reviewers
+           </a>
+           cited above encountered freezes in VirtualBox, and found that Workstation was the best performer.  She reported large differences in size between Workstation (~500MB) and the other two (~40MB), presumably reflecting more sophistication but also more resource demands in the former.
+           <a href="https://web.archive.org/web/20151205114413/http://www.sysprobs.com/virtualbox-316-vmware-player-3-desktop-virtualization-software">
+            Another reviewer
+           </a>
+           also compared VirtualBox against VMware Player.  He found VirtualBox faster in the guest, less burdensome for the host, and better in snapshots; but inferior in networking, and in support for Windows Aero, USB, 64-bit CPUs, and hardware virtualization.
+           <a href="https://web.archive.org/web/20151205114413/http://www.sysprobs.com/8-advantages-sun-virtualbox-vmware-workstation">
+            Another reviewer
+           </a>
+           favored VirtualBox because (s/he claimed) it was free, open source, more frequently patched, used fewer resources, ran faster, resumed faster, and was able to use its competitor's VMs.  The remark (above) that VirtualBox was more oriented toward Linux hosts was echoed in
+           <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/2010/07/using-vmware-workstation-time-to-try.html">
+            my own previous look
+           </a>
+           at VirtualBox, where I cited a source indicating that VIrtualBox did far better in Linux hosts.
+           <br/>
+           <br/>
+           It seemed that VMware was ahead of the game or at least a solid contender in most ways, but that it was not a clear and obvious winner, especially when price was considered.  Having already played with VirtualBox a bit, and having learned VMware's approach, it seemed that I should start with whatever I could pull together from Workstation and Player.  If I ran into performance issues with a Windows host as I had with an Ubuntu host, maybe then it would be time -- especially before investing another $140-190 in VMware -- to give VirtualBox a more extended look, and that might also be true if I reached the point of having to build another WinXP VM from scratch.  I could do that in VirtualBox, and in that event might find it a relatively problem-free alternative.
+           <br/>
+           <br/>
+           Before proceeding to try VMware Player in a Windows host with my existing VMware VMs that I had created using Workstation on a Linux host, I looked into the recollection that VMware Server was also free.  Posts in
+           <a href="https://web.archive.org/web/20151205114413/http://forums.whirlpool.net.au/archive/591605">
+            one thread
+           </a>
+           said that Server could create VMs too, but was not as fast as Player and did not have as many capabilities for an already existing VM.  I found
+           <a href="https://web.archive.org/web/20151205114413/http://www.easyvmx.com/easyvmx.shtml">
+            EasyVMX.com
+           </a>
+           and gathered that there were
+           <a href="https://web.archive.org/web/20151205114413/http://www.google.com/search?num=50&amp;hl=en&amp;lr=&amp;newwindow=1&amp;client=firefox-a&amp;rlz=1R1GGLL_en___US408&amp;tbs=qdr%3Ay&amp;q=create+virtual+%22virtual+machine%22+OR+VM+%22Windows+host%22+-intitle%3AVMware+-intitle%3AUbuntu+-intitle%3ALinux+-intitle%3AMac&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;gs_rfai=">
+            other ways
+           </a>
+           to make VMs as well, though there didn't seem to be a point in doing so unless if I had been short of system resources to run Server.
+           <br/>
+           <br/>
+           I discovered at this point that VMware offered another free virtualization product, called the VMware vSphere Hypervisor, or
+           <a href="https://web.archive.org/web/20151205114413/http://www.vmware.com/products/vsphere-hypervisor/index.html">
+            ESXi
+           </a>
+           for short.  This one differed from the others in being a "bare metal" hypervisor -- that is, not requiring a host at all.  In other words, I would install this first, before installing the operating system, and then I could install one or more operating systems, each in its own VM, without devoting resources to non-virtualization services being provided by the host (though it began to sound like ESXi would only run one operating system at a time).  In the long run, this sort of thing could be the end of dual-booting, and I could have Ubuntu, Win7, WinXP, and any other operating systems ready to run as needed, including those already packaged in
+           <a href="https://web.archive.org/web/20151205114413/http://www.petri.co.il/virtual_top_5_free_vmware_appliances.htm">
+            free VMware appliances
+           </a>
+           .  ESXi was said to offer
+           <a href="https://web.archive.org/web/20151205114413/http://en.wikipedia.org/wiki/VMware#Server_software">
+            better performance
+           </a>
+           than Server.  It wasn't clear that it could be made to work on a PC as distinct from a dedicated server, though.  VMware's
+           <a href="https://web.archive.org/web/20151205114413/http://www.vmware.com/resources/compatibility/search.php?action=base&amp;deviceCategory=server">
+            Hardware Compatibility Guide
+           </a>
+           was not going to provide information for my puny little AMD Athlon (as distinct from Opteron or Xeon) CPU.
+           <a href="https://web.archive.org/web/20151205114413/http://searchvmware.techtarget.com/news/article/0,289142,sid179_gci1390561_mem1,00.html?ShortReg=1&amp;mboxConv=searchVMware_RegActivate_Submit&amp;">
+            Another source
+           </a>
+           made it sound like a home PC could run it, though.  Managing ESXi seemed to be the sticking point; for example, VMware's
+           <a href="https://web.archive.org/web/20151205114413/http://www.vcritical.com/2009/02/new-vmware-esxi-management-kit/">
+            ESXi Management Kit
+           </a>
+           cost $995.
+           <a href="https://web.archive.org/web/20151205114413/http://robertbchase.blogspot.com/2009/02/easy-vmware-esxi-management-with-veeam.html">
+            Veeam
+           </a>
+           offered a free ESXi manager, but there appeared to be a network administrator type of learning curve involved here.  Some people seemed to be using a minimal
+           <a href="https://web.archive.org/web/20151205114413/http://communities.vmware.com/message/1039303">
+            Linux to manage it
+           </a>
+           .  It also sounded like there might be
+           <a href="https://web.archive.org/web/20151205114413/http://www.windowsitpro.com/article/interoperability/vmware-esxi101039.aspx">
+            an ESXi manager
+           </a>
+           within ESXi itself.
+           <a href="https://web.archive.org/web/20151205114413/http://www.vmware.com/files/pdf/vmware_esxi_management_wp.pdf">
+            Apparently
+           </a>
+           part of the reason Server was slower was that it was more user-friendly.
+           <a href="https://web.archive.org/web/20151205114413/http://www.vmware.com/products/vsphere-hypervisor/index.html">
+            The purpose
+           </a>
+           of the free ESXi seemed to be to get new system administrators into the VMware world and ready to upgrade to more powerful VMware server products.  Apparently there were ways to run
+           <a href="https://web.archive.org/web/20151205114413/http://www.google.com/search?q=ESXi+%22on+a+PC%22+OR+%22in+WIndows+7%22+OR+%22on+Windows+7%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGLL_en___US408">
+            ESXi in Workstation
+           </a>
+           in Windows 7, but this seemed like the opposite of a bare-metal approach.  Basically, I liked the idea of a bare-metal hypervisor, but the sparse results I was getting on
+           <a href="https://web.archive.org/web/20151205114413/http://www.google.com/search?q=%22ESXi+for+home%22+OR+%22ESXi+for+a+home%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGLL_en___US408">
+            my searches
+           </a>
+           told me that I was looking into something that was not happening for end users, at least not yet.  It
+           <a href="https://web.archive.org/web/20151205114413/http://opensourcegeek.org/2009/11/23/hypervisor-shootout/">
+            could be done
+           </a>
+           , but servers remained something that other people used for
+           <a href="https://web.archive.org/web/20151205114413/http://arstechnica.com/phpbb/viewtopic.php?f=21&amp;t=39731">
+            other purposes
+           </a>
+           .
+           <br/>
+           <br/>
+           I wasn't quite ready to give up on the idea of a bare-metal hypervisor for home use, so I did
+           <a href="https://web.archive.org/web/20151205114413/http://www.google.com/search?q=%22bare-metal+hypervisor%22+%22home+pc%22&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;client=firefox-a&amp;rlz=1R1GGLL_en___US408">
+            another search
+           </a>
+           .
+           <a href="https://web.archive.org/web/20151205114413/http://searchvirtualdesktop.techtarget.com/tip/Bare-metal-hypervisors-not-just-for-servers-anymore">
+            Brad Maltz
+           </a>
+           gave me a nice chart to compare the options.  His bottom line:  "You can expect plenty of hurdles and years for perfecting this technology, but the client-side hypervisor is the catalyst to many greater things to come."  My goal for the coming months, it seemed, would be to continue to focus on the usual multi-layered host-virtualization-guest scenario.  For that purpose, I would start with VMware Player and my existing VMs.  If I needed to adjust them, I would try to do so in either Workstation for Linux or Server.  If I had to build a new VM, I would consider doing it in VirtualBox as an alternative to Workstation or Server.
+          </p>
+          <div style="clear: both;">
+          </div>
+         </div>
+         <div class="post-footer">
+          <p class="post-footer-line post-footer-line-1">
+           <span class="post-author">
+            Posted by
+raywood
+           </span>
+           <span class="post-timestamp">
+           </span>
+           <span class="post-comment-link">
+           </span>
+           <span class="post-icons">
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151205114413/https://www.blogger.com/post-edit.g?blogID=3377753575825500498&amp;postID=868387970048826226&amp;from=pencil" title="Edit Post">
+              <span class="quick-edit-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-2">
+           <span class="post-labels">
+            Labels:
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/appliances" rel="tag">
+             appliances
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/bare%20metal" rel="tag">
+             bare metal
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/comparison" rel="tag">
+             comparison
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/ESXi" rel="tag">
+             ESXi
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/hypervisor" rel="tag">
+             hypervisor
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/machine" rel="tag">
+             machine
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/microsoft" rel="tag">
+             microsoft
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/Oracle" rel="tag">
+             Oracle
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/Sun" rel="tag">
+             Sun
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/virtual" rel="tag">
+             virtual
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/virtualbox" rel="tag">
+             virtualbox
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/virtualization" rel="tag">
+             virtualization
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/Virtual%20PC" rel="tag">
+             Virtual PC
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/VM" rel="tag">
+             VM
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/vmware" rel="tag">
+             vmware
+            </a>
+            ,
+            <a href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/search/label/workstation" rel="tag">
+             workstation
+            </a>
+           </span>
+          </p>
+          <p class="post-footer-line post-footer-line-3">
+          </p>
+         </div>
+        </div>
+        <div class="comments" id="comments">
+         <a name="comments">
+         </a>
+         <h4>
+          1 comments:
+         </h4>
+         <dl id="comments-block">
+          <dt class="comment-author" id="comment-1479136028325341105">
+           <a name="comment-1479136028325341105">
+           </a>
+           <a href="https://web.archive.org/web/20151205114413/https://www.blogger.com/profile/05411560299249509335" rel="nofollow">
+            raywood
+           </a>
+          </dt>
+          <dd class="comment-body">
+           <p>
+            Having decided to stay with VMware if possible, I made a further discovery when VMware responded to an email question I had sent them just before the new year holiday.  They said that I would be able to use my Workstation license in Workstation for Windows if I was not using it in Workstation for Linux.  If that worked out, I would probably use Workstation rather than Player, at least to start.
+           </p>
+          </dd>
+          <dd class="comment-footer">
+           <span class="comment-timestamp">
+            <a href="#comment-1479136028325341105" title="comment permalink">
+             January 4, 2011 at 9:21 AM
+            </a>
+            <span class="item-control blog-admin pid-1700258349">
+             <a href="https://web.archive.org/web/20151205114413/https://www.blogger.com/delete-comment.g?blogID=3377753575825500498&amp;postID=1479136028325341105" title="Delete Comment">
+              <span class="delete-comment-icon">
+              </span>
+             </a>
+            </span>
+           </span>
+          </dd>
+         </dl>
+         <p class="comment-footer">
+          <a href="https://web.archive.org/web/20151205114413/https://www.blogger.com/comment.g?blogID=3377753575825500498&amp;postID=868387970048826226" onclick="">
+           Post a Comment
+          </a>
+         </p>
+         <div id="backlinks-container">
+          <div id="Blog1_backlinks-container">
+          </div>
+         </div>
+        </div>
+       </div>
+       <div class="clear">
+       </div>
+       <div class="post-feeds">
+        <div class="feed-links">
+         Subscribe to:
+         <a class="feed-link" href="https://web.archive.org/web/20151205114413/http://raywoodcockslatest.blogspot.com/feeds/868387970048826226/comments/default" target="_blank" type="application/atom+xml">
+          Post Comments (Atom)
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </body>
+</html>
+<!--
+     FILE ARCHIVED ON 11:44:13 Dec 05, 2015 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 00:27:14 Dec 28, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 14.15
+  exclusion.robots: 0.133
+  exclusion.robots.policy: 0.12
+  esindex: 0.013
+  cdx.remote: 25.107
+  LoadShardBlock: 60.254 (3)
+  PetaboxLoader3.datanode: 76.627 (4)
+  load_resource: 102.631
+  PetaboxLoader3.resolve: 59.539
+-->
