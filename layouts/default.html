@@ -20,23 +20,24 @@
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Grab the post title from the <title> tag
-  const fullTitle = document.title;
-  // If your titles are followed by " - Site Name", remove the suffix
-  const pageTitle = fullTitle.split(' - ')[0];
+  const fullTitle = document.title || '';
+  const pageTitle = fullTitle.split(' | ')[0].trim();
+  if (!pageTitle) return;
 
-  // Create an <h1> element for the post title
+  // Create the <h1> for the title
   const h1 = document.createElement('h1');
   h1.textContent = pageTitle;
   h1.className = 'post-title';
 
-  // Insert the <h1> at the top of the .post-body container
-  const postBody = document.querySelector('.post-body');
-  if (postBody) {
-    postBody.insertBefore(h1, postBody.firstChild);
+  // Insert it at the top of the content container
+  const mainWrap = document.querySelector('#main-wrap2');
+  if (mainWrap) {
+    mainWrap.insertBefore(h1, mainWrap.firstChild);
   }
 });
 </script>
+
+
 
 </body>
 </html>
